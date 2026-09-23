@@ -69,6 +69,7 @@ def build_publication_stage(
     required_return_window: int = 252,
     tickers: set[str] | None = None,
     dry_run: bool = False,
+    data_run_id: int | None = None,
 ) -> PublicationSummary:
     """Build *all* JSON into an isolated stage directory.
 
@@ -84,8 +85,96 @@ def build_publication_stage(
     if not rows:
         raise PublicationError("No active EQUITY securities selected for publication")
 
+    status_by_security: dict[int, tuple[str, str | None]] = {}
+    if data_run_id is not None:
+        status_rows = conn.execute(
+            """SELECT security_id,status,message
+               FROM security_data_status
+               WHERE run_id=?""",
+            (data_run_id,),
+        ).fetchall()
+        status_by_security = {
+            int(item["security_id"]): (item["status"], item["message"])
+            for item in status_rows
+        }
+
+        expected_ids = {int(row["security_id"]) for row in rows}
+        missing_status = sorted(expected_ids - set(status_by_security))
+        if missing_status:
+            raise PublicationError(
+                "Publication data-status coverage is incomplete for run "
+                f"{data_run_id}: {missing_status[:8]}"
+            )
+
+    null_snapshot = {
+        "as_of": as_of.isoformat(),
+        "observations": None,
+        "momentum_252": None,
+        "momentum_126": None,
+        "momentum_63": None,
+        "momentum_21": None,
+        "fip_252": None,
+        "fip_126": None,
+        "fip_63": None,
+        "fip_21": None,
+        "atr14_percent": None,
+        "delta_momentum_21_63": None,
+        "delta_fip_21_63": None,
+        "completed_month": None,
+        "completed_month_momentum": None,
+        "completed_month_fip": None,
+        "completed_month_observations": None,
+    }
+
     screener: list[dict] = []
+    data_available = 0
+    provider_unavailable = 0
+
     for row in rows:
+        security_id = int(row["security_id"])
+        data_status, status_message = status_by_security.get(
+            security_id,
+            ("OK", None),
+        )
+
+        if data_status == "PROVIDER_UNAVAILABLE":
+            provider_unavailable += 1
+            screener.append(
+                {
+                    "security_id": security_id,
+                    "ticker": row["ticker"],
+                    "name": row["name"],
+                    "sector": row["sector"],
+                    "industry": row["industry"],
+                    "data_status": "PROVIDER_UNAVAILABLE",
+                    "data_status_message": status_message,
+                    **null_snapshot,
+                }
+            )
+
+            detail = {
+                "security": {
+                    "security_id": security_id,
+                    "ticker": row["ticker"],
+                    "name": row["name"],
+                    "sector": row["sector"],
+                    "industry": row["industry"],
+                    "first_trade_date": row["first_trade_date"],
+                },
+                "data_status": "PROVIDER_UNAVAILABLE",
+                "data_status_message": status_message,
+                "snapshot": dict(null_snapshot),
+                "daily": [],
+            }
+            _write_json(stage / "details" / f"{row['ticker']}.json", detail)
+            continue
+
+        if data_status != "OK":
+            raise PublicationError(
+                f"{row['ticker']}: unsupported data status {data_status!r}"
+            )
+
+        data_available += 1
         first_trade = date.fromisoformat(row["first_trade_date"]) if row["first_trade_date"] else None
         bars = load_recent_price_bars(
             conn,
@@ -117,6 +206,8 @@ def build_publication_stage(
                 "name": row["name"],
                 "sector": row["sector"],
                 "industry": row["industry"],
+                "data_status": "OK",
+                "data_status_message": None,
                 **snapshot_dict,
             }
         )
@@ -130,6 +221,8 @@ def build_publication_stage(
             snapshot=snapshot,
             bars=bars,
         )
+        detail["data_status"] = "OK"
+        detail["data_status_message"] = None
         _write_json(stage / "details" / f"{row['ticker']}.json", detail)
 
     _write_json(stage / "screener.json", screener)
@@ -141,6 +234,12 @@ def build_publication_stage(
         "dry_run": dry_run,
         "securities_expected": len(rows),
         "securities_published": len(screener),
+        "data_available": data_available,
+        "provider_unavailable": provider_unavailable,
+        "data_status_counts": {
+            "OK": data_available,
+            "PROVIDER_UNAVAILABLE": provider_unavailable,
+        },
         "required_return_window": required_return_window,
         "files": {
             "screener": "screener.json",

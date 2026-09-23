@@ -35,6 +35,7 @@ class FetchRequest:
 class SecurityPlan:
     security: SecurityForUpdate
     latest: date
+    required_dates: tuple[date, ...]
     existing: tuple[PriceBar, ...]
     periods: tuple
     requests: tuple[FetchRequest, ...]
@@ -43,7 +44,8 @@ class SecurityPlan:
 @dataclass(frozen=True)
 class SecurityStage:
     security: SecurityForUpdate
-    fetched_bars: tuple[PriceBar, ...]
+    primary_bars: tuple[PriceBar, ...]
+    fallback_bars: tuple[PriceBar, ...]
     ticker_at_date: dict[date, str]
     quality: QualityReport
 
@@ -57,6 +59,7 @@ class UpdateSummary:
     prices_updated: int
     fetched_bars: int
     provider_calls: int
+    provider_unavailable: int
     validation_status: str
     error_message: str | None = None
 
@@ -176,7 +179,14 @@ def _build_plan(
     missing = [day for day in expected_dates if day not in existing_dates]
     periods = tuple(identifier_periods(conn, security.security_id))
     requests = tuple(_contiguous_requests(missing, periods, calendar))
-    return SecurityPlan(security, latest, tuple(existing), periods, requests)
+    return SecurityPlan(
+        security,
+        latest,
+        tuple(expected_dates),
+        tuple(existing),
+        periods,
+        requests,
+    )
 
 
 def _fetch_all(
@@ -229,6 +239,8 @@ def run_incremental_update(
     as_of: date,
     required_return_window: int = 252,
     securities: Iterable[SecurityForUpdate] | None = None,
+    max_provider_unavailable: int = 5,
+    fallback_provider: MarketDataProvider | None = None,
 ) -> UpdateSummary:
     """Stage, validate, then atomically commit market-data updates.
 
@@ -242,6 +254,10 @@ def run_incremental_update(
     stages: list[SecurityStage] = []
     fetched_total = 0
     provider_calls = 0
+    unavailable: dict[int, str] = {}
+
+    if max_provider_unavailable < 0:
+        raise ValueError("max_provider_unavailable must be >= 0")
 
     try:
         plans = [
@@ -264,6 +280,23 @@ def run_incremental_update(
                 )
             fetched_total += len(fetched)
 
+            # A security can be classified as PROVIDER_UNAVAILABLE only when:
+            # - canonical history is completely empty,
+            # - the pipeline genuinely requested required sessions, and
+            # - the provider returned zero bars for every request.
+            #
+            # Existing securities that merely miss a recent session are NOT
+            # quarantined here; they continue into strict history validation.
+            if plan.requests and not plan.existing and not fetched:
+                ranges = ", ".join(
+                    f"{request.ticker}:{request.start.isoformat()}..{request.end.isoformat()}"
+                    for request in plan.requests
+                )
+                unavailable[plan.security.security_id] = (
+                    f"provider returned no bars for required range(s): {ranges}"
+                )
+                continue
+
             fetched_issues = validate_ohlcv_structure(sorted(fetched, key=lambda bar: bar.date))
             fetched_errors = [issue for issue in fetched_issues if issue.severity == Severity.ERROR]
             if fetched_errors:
@@ -274,7 +307,58 @@ def run_incremental_update(
                     f"{plan.security.ticker}: provider data failed structure checks: {preview}"
                 )
 
-            staged = _merge_bars(plan.existing, fetched)
+            # Recovery is deliberately attempted only after the primary provider
+            # returned at least some data, or canonical history already exists.
+            # A never-seen security for which the primary provider returned
+            # nothing remains PROVIDER_UNAVAILABLE and is not masked by fallback.
+            primary_staged = _merge_bars(plan.existing, fetched)
+            staged_dates = {bar.date for bar in primary_staged}
+            missing_after_primary = [
+                day for day in plan.required_dates if day not in staged_dates
+            ]
+
+            fallback_bars: list[PriceBar] = []
+            if fallback_provider is not None and missing_after_primary:
+                for day in missing_after_primary:
+                    ticker = ticker_for_date(plan.periods, day)
+                    if ticker is None:
+                        raise UpdatePipelineError(
+                            f"{plan.security.ticker}: no ticker identifier for fallback date "
+                            f"{day.isoformat()}"
+                        )
+
+                    try:
+                        recovered = fallback_provider.fetch(ticker, day, day)
+                    except Exception as exc:
+                        raise UpdatePipelineError(
+                            f"{plan.security.ticker}: fallback provider failed for "
+                            f"{day.isoformat()}: {exc}"
+                        ) from exc
+
+                    provider_calls += 1
+                    fallback_bars.extend(
+                        bar for bar in recovered if bar.date == day
+                    )
+
+                fallback_bars = _merge_bars([], fallback_bars)
+                fetched_total += len(fallback_bars)
+
+                fallback_issues = validate_ohlcv_structure(fallback_bars)
+                fallback_errors = [
+                    issue for issue in fallback_issues
+                    if issue.severity == Severity.ERROR
+                ]
+                if fallback_errors:
+                    preview = "; ".join(
+                        f"{issue.code}@{issue.date}: {issue.message}"
+                        for issue in fallback_errors[:8]
+                    )
+                    raise UpdatePipelineError(
+                        f"{plan.security.ticker}: fallback data failed structure checks: "
+                        f"{preview}"
+                    )
+
+            staged = _merge_bars(primary_staged, fallback_bars)
             report = validate_price_history(
                 staged,
                 calendar,
@@ -289,14 +373,40 @@ def run_incremental_update(
                 raise UpdatePipelineError(f"{plan.security.ticker}: validation failed: {preview}")
 
             ticker_map: dict[date, str] = {}
-            for bar in fetched:
+            for bar in [*fetched, *fallback_bars]:
                 ticker = ticker_for_date(plan.periods, bar.date)
                 if ticker is None:
                     raise UpdatePipelineError(
-                        f"{plan.security.ticker}: no ticker identifier for fetched date {bar.date.isoformat()}"
+                        f"{plan.security.ticker}: no ticker identifier for fetched date "
+                        f"{bar.date.isoformat()}"
                     )
                 ticker_map[bar.date] = ticker
-            stages.append(SecurityStage(plan.security, tuple(fetched), ticker_map, report))
+
+            stages.append(
+                SecurityStage(
+                    plan.security,
+                    tuple(fetched),
+                    tuple(fallback_bars),
+                    ticker_map,
+                    report,
+                )
+            )
+
+        # Circuit breaker: a small number of isolated, never-seen provider
+        # misses can be represented explicitly. A broad provider failure must
+        # still fail closed.
+        unavailable_count = len(unavailable)
+        if unavailable_count:
+            if unavailable_count == len(selected):
+                raise UpdatePipelineError(
+                    "Provider-unavailable circuit breaker: all selected securities returned no data"
+                )
+            if unavailable_count > max_provider_unavailable:
+                raise UpdatePipelineError(
+                    "Provider-unavailable circuit breaker: "
+                    f"{unavailable_count} securities exceeded limit "
+                    f"{max_provider_unavailable}"
+                )
 
         inserted = 0
         updated = 0
@@ -307,12 +417,43 @@ def run_incremental_update(
                 add, replace = upsert_price_bars(
                     conn,
                     stage.security.security_id,
-                    stage.fetched_bars,
+                    stage.primary_bars,
                     ticker_at_date=stage.ticker_at_date,
                     source=provider.source_name,
                 )
                 inserted += add
                 updated += replace
+
+                if fallback_provider is not None and stage.fallback_bars:
+                    add, replace = upsert_price_bars(
+                        conn,
+                        stage.security.security_id,
+                        stage.fallback_bars,
+                        ticker_at_date=stage.ticker_at_date,
+                        source=fallback_provider.source_name,
+                    )
+                    inserted += add
+                    updated += replace
+
+            recorded_at = datetime.now().astimezone().isoformat()
+            for security in selected:
+                message = unavailable.get(security.security_id)
+                data_status = "PROVIDER_UNAVAILABLE" if message is not None else "OK"
+                conn.execute(
+                    """INSERT INTO security_data_status
+                       (run_id,security_id,as_of_date,provider,status,message,recorded_at)
+                       VALUES (?,?,?,?,?,?,?)""",
+                    (
+                        run_id,
+                        security.security_id,
+                        as_of.isoformat(),
+                        provider.source_name,
+                        data_status,
+                        message,
+                        recorded_at,
+                    ),
+                )
+
             conn.commit()
         except Exception:
             conn.rollback()
@@ -326,6 +467,7 @@ def run_incremental_update(
             prices_updated=updated,
             fetched_bars=fetched_total,
             provider_calls=provider_calls,
+            provider_unavailable=len(unavailable),
             validation_status="PASS",
         )
         _finish_run(conn, summary)
@@ -342,6 +484,7 @@ def run_incremental_update(
             prices_updated=0,
             fetched_bars=fetched_total,
             provider_calls=provider_calls,
+            provider_unavailable=len(unavailable),
             validation_status="FAIL",
             error_message=str(exc),
         )

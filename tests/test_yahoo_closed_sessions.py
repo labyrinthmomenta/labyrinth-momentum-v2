@@ -42,27 +42,39 @@ def test_single_and_batch_remove_only_verified_holiday_placeholders(monkeypatch,
 
 
 @pytest.mark.parametrize('column,value', [('Volume', 1), ('Volume', None), ('High', 10), ('Close', None), ('Open', -1)])
-def test_suspicious_closed_session_row_is_retained_and_rejected(column, value):
+def test_suspicious_closed_session_row_is_discarded_by_authoritative_calendar(column, value):
     source = frame()
     source.loc['2026-05-27', column] = value
     provider = YahooProvider()
     bars = provider._frame_to_bars(source, START, END)
-    assert date(2026, 5, 27) in [b.date for b in bars]
-    report = validate_price_history(bars, provider.calendar, as_of=END, required_return_window=1)
-    assert not report.passed
-    assert any(i.code == 'BAR_ON_CLOSED_SESSION' for i in report.errors)
+
+    assert date(2026, 5, 27) not in [b.date for b in bars]
+
+    report = validate_price_history(
+        bars,
+        provider.calendar,
+        as_of=END,
+        required_return_window=1,
+    )
+    assert report.passed
 
 
-def test_flat_zero_volume_closed_bar_with_changed_price_is_not_discarded():
+def test_flat_zero_volume_closed_bar_with_changed_price_is_discarded():
     source = frame()
     source.loc['2026-05-27', ['Open', 'High', 'Low', 'Close']] = 9.86
     bars = YahooProvider()._frame_to_bars(source, START, END)
-    assert date(2026, 5, 27) in [b.date for b in bars]
+
+    assert date(2026, 5, 27) not in [b.date for b in bars]
 
 
-def test_no_preceding_close_means_no_automatic_removal():
-    bars = YahooProvider()._frame_to_bars(frame().iloc[1:], date(2026, 5, 27), END)
-    assert len(bars) == 4
+def test_closed_sessions_do_not_require_preceding_close_for_removal():
+    bars = YahooProvider()._frame_to_bars(
+        frame().iloc[1:],
+        date(2026, 5, 27),
+        END,
+    )
+
+    assert [bar.date for bar in bars] == [END]
 
 
 def test_open_session_zero_volume_flat_bar_is_kept():
@@ -84,3 +96,196 @@ def test_missing_open_session_still_fails():
     bars = provider._frame_to_bars(frame().iloc[:-1], START, END)
     report = validate_price_history(bars, provider.calendar, as_of=END, required_return_window=1)
     assert any(i.code == 'MISSING_TRADING_SESSION' for i in report.errors)
+
+def test_closed_session_all_nan_ohlc_is_removed():
+    source = frame()
+    source.loc[
+        '2026-05-27',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+    source.loc['2026-05-27', 'Volume'] = float('nan')
+
+    bars = YahooProvider()._frame_to_bars(source, START, END)
+
+    assert date(2026, 5, 27) not in [b.date for b in bars]
+
+
+def test_open_session_all_nan_ohlc_is_not_removed():
+    source = frame()
+    source.loc[
+        '2026-06-01',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+    source.loc['2026-06-01', 'Volume'] = float('nan')
+
+    provider = YahooProvider()
+    bars = provider._frame_to_bars(source, START, END)
+
+    assert date(2026, 6, 1) in [b.date for b in bars]
+
+    report = validate_price_history(
+        bars,
+        provider.calendar,
+        as_of=END,
+        required_return_window=1,
+    )
+    assert not report.passed
+    assert any(i.code == 'NON_FINITE_OHLC' for i in report.errors)
+
+
+def test_closed_session_partial_nan_ohlc_is_removed():
+    source = frame()
+    source.loc['2026-05-27', 'Open'] = float('nan')
+
+    bars = YahooProvider()._frame_to_bars(source, START, END)
+
+    assert date(2026, 5, 27) not in [b.date for b in bars]
+
+
+def test_closed_session_all_nan_with_positive_volume_is_removed():
+    source = frame()
+    source.loc[
+        '2026-05-27',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+    source.loc['2026-05-27', 'Volume'] = 100
+
+    bars = YahooProvider()._frame_to_bars(source, START, END)
+
+    assert date(2026, 5, 27) not in [b.date for b in bars]
+
+
+
+def test_batch_nonfinite_result_retries_single_ticker(monkeypatch):
+    calls = []
+
+    good = frame()
+    bad = frame().copy()
+    bad.loc[
+        '2026-05-26',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+
+    def download(symbols, **kwargs):
+        calls.append((symbols, kwargs.get('threads')))
+
+        if isinstance(symbols, str):
+            source = good
+            return pd.concat({symbols: source}, axis=1).swaplevel(axis=1)
+
+        payload = {}
+        for symbol in symbols:
+            payload[symbol] = bad if symbol == 'ASELS.IS' else good
+
+        return pd.concat(payload, axis=1)
+
+    monkeypatch.setitem(
+        sys.modules,
+        'yfinance',
+        types.SimpleNamespace(download=download),
+    )
+
+    result = YahooProvider().fetch_many(
+        ['ASELS', 'THYAO'],
+        START,
+        END,
+    )
+
+    assert result.provider_calls == 2
+
+    asels = result.bars_by_ticker['ASELS']
+    assert [bar.date for bar in asels] == [START, END]
+    assert all(
+        all(
+            pd.notna(value)
+            for value in (bar.open, bar.high, bar.low, bar.close)
+        )
+        for bar in asels
+    )
+
+    # Both the batch request and the single-symbol retry are non-threaded.
+    assert calls[0][1] is False
+    assert calls[1][0] == 'ASELS.IS'
+    assert calls[1][1] is False
+
+
+def test_batch_empty_result_retries_single_ticker_and_can_remain_empty(monkeypatch):
+    calls = []
+    good = frame()
+
+    def download(symbols, **kwargs):
+        calls.append((symbols, kwargs.get('threads')))
+
+        if isinstance(symbols, str):
+            if symbols == 'ISKUR.IS':
+                return pd.DataFrame()
+            return pd.concat({symbols: good}, axis=1).swaplevel(axis=1)
+
+        # Simulate a multi-ticker response in which Yahoo completely omits
+        # ISKUR while returning healthy data for ASELS.
+        return pd.concat({'ASELS.IS': good}, axis=1)
+
+    monkeypatch.setitem(
+        sys.modules,
+        'yfinance',
+        types.SimpleNamespace(download=download),
+    )
+
+    result = YahooProvider().fetch_many(
+        ['ASELS', 'ISKUR'],
+        START,
+        END,
+    )
+
+    assert result.provider_calls == 2
+    assert [bar.date for bar in result.bars_by_ticker['ASELS']] == [START, END]
+    assert result.bars_by_ticker['ISKUR'] == []
+
+    assert calls[0][1] is False
+    assert calls[1][0] == 'ISKUR.IS'
+    assert calls[1][1] is False
+
+
+
+def test_official_closed_session_is_removed_even_when_price_differs_from_previous_close():
+    from datetime import date
+    from src.calculation.engine import PriceBar
+
+    provider = YahooProvider()
+
+    bars = [
+        PriceBar(
+            date(2026, 4, 30),
+            15.65,
+            15.74,
+            15.27,
+            15.46,
+            6873982.0,
+        ),
+        # Yahoo MERKO-style synthetic/adjusted row on official 1 May holiday.
+        # Its value differs materially from the previous close, so the old
+        # carry-forward-only rule would incorrectly retain it.
+        PriceBar(
+            date(2026, 5, 1),
+            2.0938899517059326,
+            2.0938899517059326,
+            2.0938899517059326,
+            2.0938899517059326,
+            0.0,
+        ),
+        PriceBar(
+            date(2026, 5, 4),
+            2.146712064743042,
+            2.198179006576538,
+            2.092535972595215,
+            2.092535972595215,
+            99634631.0,
+        ),
+    ]
+
+    cleaned = provider._remove_closed_session_placeholders(bars, "MERKO")
+
+    assert [bar.date for bar in cleaned] == [
+        date(2026, 4, 30),
+        date(2026, 5, 4),
+    ]

@@ -66,7 +66,12 @@ class UniverseManager:
             (name,),
         ).fetchone()
 
-    def upsert(self, record: UniverseRecord, as_of: Optional[str] = None) -> int:
+    def upsert(
+        self,
+        record: UniverseRecord,
+        as_of: Optional[str] = None,
+        active_snapshot_tickers: Optional[set[str]] = None,
+    ) -> int:
         ticker = self.normalize_ticker(record.ticker)
         as_of = self.normalize_date(as_of) or date.today().isoformat()
         first_trade = self.normalize_date(record.first_trade_date)
@@ -87,9 +92,26 @@ class UniverseManager:
             )
             return int(current["security_id"])
 
-        # If the ticker is new but the company name already exists, treat it as
-        # a ticker change rather than creating a second security identity.
+        # A matching company name alone is not sufficient evidence of a ticker
+        # change. BIST issuers can have multiple share classes trading
+        # concurrently (for example ISATR/ISBTR/ISCTR/ISKUR and
+        # KRDMA/KRDMB/KRDMD).
+        #
+        # During an authoritative snapshot sync, only treat the new ticker as a
+        # rename candidate when the existing current ticker is absent from the
+        # same active snapshot.
         by_name = self._find_security_by_name(record.name)
+        if by_name and active_snapshot_tickers is not None:
+            existing_identifier = self.conn.execute(
+                """SELECT ticker FROM security_identifiers
+                   WHERE security_id=? AND is_current=1""",
+                (int(by_name["security_id"]),),
+            ).fetchone()
+            if existing_identifier:
+                existing_ticker = self.normalize_ticker(existing_identifier["ticker"])
+                if existing_ticker in active_snapshot_tickers:
+                    by_name = None
+
         if by_name:
             security_id = int(by_name["security_id"])
             old = self.conn.execute(
@@ -165,8 +187,20 @@ class UniverseManager:
 
     def sync(self, records: Iterable[UniverseRecord], as_of: Optional[str] = None) -> dict:
         records = list(records)
-        equity_tickers = [r.ticker for r in records if r.instrument_type == "EQUITY" and r.active]
-        ids = [self.upsert(r, as_of=as_of) for r in records]
+        equity_tickers = [
+            self.normalize_ticker(r.ticker)
+            for r in records
+            if r.instrument_type == "EQUITY" and r.active
+        ]
+        active_snapshot_tickers = set(equity_tickers)
+        ids = [
+            self.upsert(
+                r,
+                as_of=as_of,
+                active_snapshot_tickers=active_snapshot_tickers,
+            )
+            for r in records
+        ]
         inactive = self.mark_missing_inactive(equity_tickers, as_of=as_of)
         self.conn.commit()
         return {"records": len(records), "securities_upserted": len(ids), "marked_inactive": inactive}

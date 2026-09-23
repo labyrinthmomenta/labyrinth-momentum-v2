@@ -41,3 +41,36 @@ def test_missing_does_not_mark_other_instrument_types():
     m.mark_missing_inactive([], as_of="2026-09-22")
     assert c.execute("select active from securities where name='Equity'").fetchone()[0] == 0
     assert c.execute("select active from securities where name='Fund'").fetchone()[0] == 1
+
+def test_sync_keeps_parallel_share_classes_as_separate_securities():
+    c = db()
+    m = UniverseManager(c)
+
+    records = [
+        UniverseRecord("ISCTR", "TÜRKİYE İŞ BANKASI A.Ş.", first_trade_date="1987-11-25"),
+        UniverseRecord("ISATR", "TÜRKİYE İŞ BANKASI A.Ş."),
+        UniverseRecord("ISBTR", "TÜRKİYE İŞ BANKASI A.Ş."),
+        UniverseRecord("ISKUR", "TÜRKİYE İŞ BANKASI A.Ş."),
+    ]
+
+    m.sync(records, as_of="2026-09-22")
+
+    rows = c.execute(
+        """
+        SELECT s.security_id, si.ticker
+        FROM securities s
+        JOIN security_identifiers si
+          ON si.security_id = s.security_id
+        WHERE si.is_current=1
+        ORDER BY si.ticker
+        """
+    ).fetchall()
+
+    assert [row[1] for row in rows] == [
+        "ISATR",
+        "ISBTR",
+        "ISCTR",
+        "ISKUR",
+    ]
+    assert len({row[0] for row in rows}) == 4
+

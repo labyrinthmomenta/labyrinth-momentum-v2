@@ -5,6 +5,7 @@ from datetime import date
 from pathlib import Path
 
 from src.data.calendar import BISTTradingCalendar
+from src.data.providers.bist_thb import BISTTHBProvider
 from src.data.providers.yahoo import YahooProvider
 from src.data.storage.database import Database
 from src.data.universe.manager import parse_bist_csv
@@ -111,6 +112,7 @@ def main() -> int:
                 YahooProvider(),
                 as_of=as_of,
                 required_return_window=args.window,
+                fallback_provider=BISTTHBProvider(),
             )
             print(
                 "SUCCESS "
@@ -155,6 +157,7 @@ def main() -> int:
             tickers=_tickers(args.tickers),
             dry_run=dry,
             dry_run_dir=args.dry_run_dir,
+            fallback_provider=BISTTHBProvider(),
         )
         print(
             f"{'DRY-RUN' if dry else 'SUCCESS'} as_of={summary.as_of} "

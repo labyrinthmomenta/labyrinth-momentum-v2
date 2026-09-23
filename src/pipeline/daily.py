@@ -64,6 +64,7 @@ def run_daily_pipeline(
     tickers: set[str] | None = None,
     dry_run: bool = False,
     dry_run_dir: str | Path | None = None,
+    fallback_provider: MarketDataProvider | None = None,
 ) -> DailyRunSummary:
     """Run the complete V2 daily flow behind a publication gate.
 
@@ -107,6 +108,7 @@ def run_daily_pipeline(
             as_of=as_of,
             required_return_window=required_return_window,
             securities=selected,
+            fallback_provider=fallback_provider,
         )
 
         if dry_run:
@@ -122,6 +124,7 @@ def run_daily_pipeline(
                 required_return_window=required_return_window,
                 tickers=tickers or None,
                 dry_run=True,
+                data_run_id=update.run_id,
             )
             promoted = False
         else:
@@ -138,6 +141,7 @@ def run_daily_pipeline(
                 stage_dir=stage,
                 required_return_window=required_return_window,
                 dry_run=False,
+                data_run_id=update.run_id,
             )
             if publication.securities_published != len(all_active):
                 raise DailyPipelineError("Publication count does not match the active EQUITY universe")
