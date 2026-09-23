@@ -1,0 +1,11 @@
+{
+  "stage": "BIST Trading Calendar + Data Quality",
+  "official_calendar_coverage": [2023, 2024, 2025, 2026],
+  "session_types": ["FULL", "HALF", "CLOSED"],
+  "required_closes_for_252_returns": 253,
+  "missing_session_policy": "BLOCK",
+  "future_calendar_policy": "FAIL_CLOSED",
+  "tests_passed": 31,
+  "tests_failed": 0,
+  "official_source": "https://www.borsaistanbul.com/resmi-tatil-gunleri"
+}

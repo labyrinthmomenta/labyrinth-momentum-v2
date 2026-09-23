@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+venv/
+
+# Local configuration / credentials
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# SQLite transient files (canonical data/labyrinth.db is intentionally tracked)
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Non-public dry-run output
+migration/dry_runs/
+
+# Temporary publication staging
+.docs.stage/
+docs/.data.stage/

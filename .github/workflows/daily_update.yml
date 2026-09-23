@@ -1,0 +1,116 @@
+name: Daily Production Update
+
+on:
+  workflow_dispatch:
+    inputs:
+      as_of:
+        description: "Optional YYYY-MM-DD override; leave blank for today's completed BIST session"
+        required: false
+        type: string
+  schedule:
+    - cron: "15 20 * * 1-5"
+      timezone: "Europe/Istanbul"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: labyrinth-v2-daily
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Unit and integration tests
+        run: python -m pytest -q
+
+      - name: Live source preflight
+        env:
+          INPUT_AS_OF: ${{ inputs.as_of }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          ARGS=(preflight --tickers A1CAP,ASELS,THYAO)
+          if [[ -n "${INPUT_AS_OF:-}" ]]; then
+            ARGS+=(--as-of "$INPUT_AS_OF")
+          fi
+          python run.py "${ARGS[@]}"
+
+      - name: Run full official-source production pipeline
+        env:
+          INPUT_AS_OF: ${{ inputs.as_of }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          ARGS=(daily --official-universe)
+          if [[ -n "${INPUT_AS_OF:-}" ]]; then
+            ARGS+=(--as-of "$INPUT_AS_OF")
+          fi
+          python run.py "${ARGS[@]}"
+
+      - name: V1 legacy audit report
+        shell: bash
+        run: |
+          set -euo pipefail
+          if compgen -G "migration/legacy/json/*.json" > /dev/null; then
+            EXTRA=()
+            if [[ -f migration/legacy/excel/Claude_Momentum_Screener_BIST_Labyrinth.xlsx ]]; then
+              EXTRA+=(--legacy-excel migration/legacy/excel/Claude_Momentum_Screener_BIST_Labyrinth.xlsx)
+            fi
+            python run.py legacy-report \
+              --legacy-detail-dir migration/legacy/json \
+              --legacy-report-out migration/reports/v1_v2_comparison.json \
+              "${EXTRA[@]}"
+          else
+            echo "No checked-in V1 detail fixtures; legacy report skipped."
+          fi
+
+      - name: Verify publication gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("docs/data/manifest.json")
+          if not path.exists():
+              raise SystemExit("manifest.json missing")
+          manifest = json.loads(path.read_text(encoding="utf-8"))
+          if manifest.get("status") != "PASS" or manifest.get("dry_run") is not False:
+              raise SystemExit(f"publication gate not PASS: {manifest}")
+          if manifest.get("securities_published") != manifest.get("securities_expected"):
+              raise SystemExit("partial publication detected")
+          print(f"PASS: {manifest['securities_published']} securities")
+          PY
+
+      - name: Commit canonical DB and derived site data
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/labyrinth.db docs/data migration/reports 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: daily momentum update"
+          git push

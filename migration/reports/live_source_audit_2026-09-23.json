@@ -1,0 +1,38 @@
+{
+  "audit_date": "2026-09-23",
+  "status": "PARTIAL_LIVE_PASS",
+  "official_universe": {
+    "source": "https://www.kap.org.tr/tr/Pazarlar",
+    "verified_via_web": true,
+    "equity_market_counts": {
+      "YILDIZ PAZAR": 278,
+      "ANA PAZAR": 267,
+      "ALT PAZAR": 49,
+      "YAKIN IZLEME PAZARI": 18,
+      "PIYASA ONCESI ISLEM PLATFORMU": 19
+    },
+    "equity_total": 631,
+    "excluded_non_equity_market": {
+      "GIRISIM SERMAYESI PAZARI": 31,
+      "reason": "Current KAP page lists investment funds in this market; it must not be treated as ordinary EQUITY universe."
+    },
+    "sample_tickers_confirmed": ["A1CAP", "ASELS", "THYAO"]
+  },
+  "first_trade_metadata": {
+    "source": "Borsa Istanbul data-format documentation",
+    "verified": true,
+    "documented_file": "ilkislem.zip -> ilkislem.xlsx",
+    "fields_used": ["Cari Kod", "Ilk Islem Gunu"]
+  },
+  "yahoo_runtime_preflight": {
+    "command": "python run.py preflight --as-of 2026-09-21 --tickers A1CAP,ASELS,THYAO",
+    "status": "ENVIRONMENT_BLOCKED",
+    "reason": "The current execution container cannot resolve external DNS. The preflight failed closed before any database/public-output mutation.",
+    "code_path_verified_by_tests": true
+  },
+  "regression": {
+    "unit_integration_tests": "55/55 PASS",
+    "v1_excel_json_regression": "594/594 PASS",
+    "legacy_as_of": "2026-09-21"
+  }
+}
