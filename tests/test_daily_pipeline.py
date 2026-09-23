@@ -16,13 +16,21 @@ from src.pipeline.daily import DailyPipelineError, run_daily_pipeline
 class CalendarProvider:
     source_name = "TEST"
 
-    def __init__(self, calendar: BISTTradingCalendar, broken_ticker: str | None = None):
+    def __init__(
+        self,
+        calendar: BISTTradingCalendar,
+        broken_ticker: str | None = None,
+        unavailable_ticker: str | None = None,
+    ):
         self.calendar = calendar
         self.broken_ticker = broken_ticker
+        self.unavailable_ticker = unavailable_ticker
         self.calls: list[tuple[str, date, date]] = []
 
     def fetch(self, ticker: str, start: date, end: date) -> list[PriceBar]:
         self.calls.append((ticker, start, end))
+        if ticker == self.unavailable_ticker:
+            return []
         days = self.calendar.trading_days(start, end)
         bars = []
         for i, day in enumerate(days):
@@ -189,3 +197,87 @@ def test_second_full_run_is_idempotent_for_market_data(tmp_path):
     assert second.update.prices_inserted == 0
     assert second.update.prices_updated == 0
     assert len(provider.calls) == calls_after_first
+
+
+def test_provider_unavailable_security_remains_in_full_publication(tmp_path):
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar, unavailable_ticker="BBB"),
+        as_of=date(2026, 9, 23),
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+    )
+
+    assert summary.public_promoted is True
+    assert summary.securities_selected == 2
+    assert summary.update.provider_unavailable == 1
+
+    manifest = json.loads(
+        (public / "manifest.json").read_text(encoding="utf-8")
+    )
+
+    assert manifest["securities_expected"] == 2
+    assert manifest["securities_published"] == 2
+    assert manifest["data_available"] == 1
+    assert manifest["provider_unavailable"] == 1
+    assert manifest["data_status_counts"] == {
+        "OK": 1,
+        "PROVIDER_UNAVAILABLE": 1,
+    }
+
+    screener = json.loads(
+        (public / "screener.json").read_text(encoding="utf-8")
+    )
+    by_ticker = {row["ticker"]: row for row in screener}
+
+    assert set(by_ticker) == {"AAA", "BBB"}
+    assert by_ticker["AAA"]["data_status"] == "OK"
+
+    unavailable = by_ticker["BBB"]
+    assert unavailable["data_status"] == "PROVIDER_UNAVAILABLE"
+    assert unavailable["observations"] is None
+    assert unavailable["momentum_252"] is None
+    assert unavailable["fip_252"] is None
+    assert unavailable["atr14_percent"] is None
+
+    detail = json.loads(
+        (public / "details" / "BBB.json").read_text(encoding="utf-8")
+    )
+
+    assert detail["data_status"] == "PROVIDER_UNAVAILABLE"
+    assert detail["daily"] == []
+    assert detail["snapshot"]["observations"] is None
+    assert detail["snapshot"]["momentum_252"] is None
+
+    db = Database(db_path)
+    bbb = db.conn.execute(
+        """SELECT s.security_id
+           FROM securities s
+           JOIN security_identifiers si
+             ON si.security_id=s.security_id
+           WHERE si.ticker='BBB' AND si.is_current=1"""
+    ).fetchone()
+
+    assert bbb is not None
+    assert db.conn.execute(
+        "SELECT COUNT(*) FROM daily_prices WHERE security_id=?",
+        (bbb[0],),
+    ).fetchone()[0] == 0
+
+    status = db.conn.execute(
+        """SELECT status
+           FROM security_data_status
+           WHERE security_id=?
+           ORDER BY run_id DESC
+           LIMIT 1""",
+        (bbb[0],),
+    ).fetchone()
+
+    assert status[0] == "PROVIDER_UNAVAILABLE"
+    db.close()

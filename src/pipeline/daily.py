@@ -122,6 +122,7 @@ def run_daily_pipeline(
                 required_return_window=required_return_window,
                 tickers=tickers or None,
                 dry_run=True,
+                data_run_id=update.run_id,
             )
             promoted = False
         else:
@@ -138,6 +139,7 @@ def run_daily_pipeline(
                 stage_dir=stage,
                 required_return_window=required_return_window,
                 dry_run=False,
+                data_run_id=update.run_id,
             )
             if publication.securities_published != len(all_active):
                 raise DailyPipelineError("Publication count does not match the active EQUITY universe")

@@ -93,6 +93,22 @@ CREATE TABLE IF NOT EXISTS pipeline_runs (
     error_message TEXT
 );
 
+CREATE TABLE IF NOT EXISTS security_data_status (
+    run_id INTEGER NOT NULL,
+    security_id INTEGER NOT NULL,
+    as_of_date TEXT NOT NULL,
+    provider TEXT NOT NULL,
+    status TEXT NOT NULL
+        CHECK (status IN ('OK', 'PROVIDER_UNAVAILABLE')),
+    message TEXT,
+    recorded_at TEXT NOT NULL,
+    PRIMARY KEY (run_id, security_id),
+    FOREIGN KEY (run_id) REFERENCES pipeline_runs(run_id),
+    FOREIGN KEY (security_id) REFERENCES securities(security_id)
+);
+CREATE INDEX IF NOT EXISTS idx_security_data_status_security_date
+ON security_data_status(security_id, as_of_date);
+
 -- Legacy V1 audit layer.
 -- V1 Excel/JSON contain daily returns, not OHLCV. Never reverse-engineer prices
 -- from these returns; preserve them separately for migration and regression tests.

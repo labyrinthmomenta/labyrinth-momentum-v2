@@ -273,3 +273,139 @@ def test_batch_provider_reports_underlying_vendor_call_count(db, calendar):
         db.conn, calendar, provider, as_of=as_of, required_return_window=1
     )
     assert summary.provider_calls == 3
+
+
+def test_never_seen_empty_security_is_provider_unavailable(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    sid_ok = add_security(
+        db, ticker="AAA", name="AAA AS", first_trade=days[0].isoformat()
+    )
+    sid_missing = add_security(
+        db, ticker="BBB", name="BBB AS", first_trade=days[0].isoformat()
+    )
+
+    provider = FakeProvider(
+        {
+            "AAA": [mkbar(day, 100 + i) for i, day in enumerate(days)],
+            "BBB": [],
+        }
+    )
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.provider_unavailable == 1
+    assert count_prices(db, sid_ok) == 4
+    assert count_prices(db, sid_missing) == 0
+
+    statuses = db.conn.execute(
+        """SELECT sds.status, si.ticker
+           FROM security_data_status sds
+           JOIN security_identifiers si
+             ON si.security_id=sds.security_id
+            AND si.is_current=1
+           WHERE sds.run_id=?
+           ORDER BY si.ticker""",
+        (summary.run_id,),
+    ).fetchall()
+
+    assert [tuple(row) for row in statuses] == [
+        ("OK", "AAA"),
+        ("PROVIDER_UNAVAILABLE", "BBB"),
+    ]
+
+
+def test_all_selected_empty_trips_provider_circuit_breaker(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    add_security(db, ticker="AAA", name="AAA AS", first_trade=days[0].isoformat())
+    add_security(db, ticker="BBB", name="BBB AS", first_trade=days[0].isoformat())
+
+    provider = FakeProvider({"AAA": [], "BBB": []})
+
+    with pytest.raises(UpdatePipelineError, match="circuit breaker"):
+        run_incremental_update(
+            db.conn,
+            calendar,
+            provider,
+            as_of=as_of,
+            required_return_window=3,
+        )
+
+    assert db.conn.execute("SELECT COUNT(*) FROM daily_prices").fetchone()[0] == 0
+    assert db.conn.execute("SELECT COUNT(*) FROM security_data_status").fetchone()[0] == 0
+
+
+def test_existing_history_missing_latest_is_not_provider_unavailable(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    sid = add_security(
+        db, ticker="AAA", name="AAA AS", first_trade=days[0].isoformat()
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "AAA",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:-1])],
+    )
+
+    provider = FakeProvider({"AAA": []})
+
+    with pytest.raises(UpdatePipelineError, match="MISSING_TRADING_SESSION"):
+        run_incremental_update(
+            db.conn,
+            calendar,
+            provider,
+            as_of=as_of,
+            required_return_window=3,
+        )
+
+    assert db.conn.execute("SELECT COUNT(*) FROM security_data_status").fetchone()[0] == 0
+
+
+def test_provider_unavailable_limit_trips_circuit_breaker(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 2)
+
+    good = add_security(
+        db, ticker="GOOD", name="Good AS", first_trade=days[0].isoformat()
+    )
+
+    data = {
+        "GOOD": [mkbar(day, 100 + i) for i, day in enumerate(days)],
+    }
+
+    for i in range(6):
+        ticker = f"M{i}"
+        add_security(
+            db,
+            ticker=ticker,
+            name=f"Missing {i} AS",
+            first_trade=days[0].isoformat(),
+        )
+        data[ticker] = []
+
+    provider = FakeProvider(data)
+
+    with pytest.raises(UpdatePipelineError, match="exceeded limit"):
+        run_incremental_update(
+            db.conn,
+            calendar,
+            provider,
+            as_of=as_of,
+            required_return_window=1,
+        )
+
+    assert count_prices(db, good) == 0
+    assert db.conn.execute("SELECT COUNT(*) FROM security_data_status").fetchone()[0] == 0

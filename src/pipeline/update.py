@@ -57,6 +57,7 @@ class UpdateSummary:
     prices_updated: int
     fetched_bars: int
     provider_calls: int
+    provider_unavailable: int
     validation_status: str
     error_message: str | None = None
 
@@ -229,6 +230,7 @@ def run_incremental_update(
     as_of: date,
     required_return_window: int = 252,
     securities: Iterable[SecurityForUpdate] | None = None,
+    max_provider_unavailable: int = 5,
 ) -> UpdateSummary:
     """Stage, validate, then atomically commit market-data updates.
 
@@ -242,6 +244,10 @@ def run_incremental_update(
     stages: list[SecurityStage] = []
     fetched_total = 0
     provider_calls = 0
+    unavailable: dict[int, str] = {}
+
+    if max_provider_unavailable < 0:
+        raise ValueError("max_provider_unavailable must be >= 0")
 
     try:
         plans = [
@@ -263,6 +269,23 @@ def run_incremental_update(
                     fetched_by_request.get((request.ticker, request.start, request.end), [])
                 )
             fetched_total += len(fetched)
+
+            # A security can be classified as PROVIDER_UNAVAILABLE only when:
+            # - canonical history is completely empty,
+            # - the pipeline genuinely requested required sessions, and
+            # - the provider returned zero bars for every request.
+            #
+            # Existing securities that merely miss a recent session are NOT
+            # quarantined here; they continue into strict history validation.
+            if plan.requests and not plan.existing and not fetched:
+                ranges = ", ".join(
+                    f"{request.ticker}:{request.start.isoformat()}..{request.end.isoformat()}"
+                    for request in plan.requests
+                )
+                unavailable[plan.security.security_id] = (
+                    f"provider returned no bars for required range(s): {ranges}"
+                )
+                continue
 
             fetched_issues = validate_ohlcv_structure(sorted(fetched, key=lambda bar: bar.date))
             fetched_errors = [issue for issue in fetched_issues if issue.severity == Severity.ERROR]
@@ -298,6 +321,22 @@ def run_incremental_update(
                 ticker_map[bar.date] = ticker
             stages.append(SecurityStage(plan.security, tuple(fetched), ticker_map, report))
 
+        # Circuit breaker: a small number of isolated, never-seen provider
+        # misses can be represented explicitly. A broad provider failure must
+        # still fail closed.
+        unavailable_count = len(unavailable)
+        if unavailable_count:
+            if unavailable_count == len(selected):
+                raise UpdatePipelineError(
+                    "Provider-unavailable circuit breaker: all selected securities returned no data"
+                )
+            if unavailable_count > max_provider_unavailable:
+                raise UpdatePipelineError(
+                    "Provider-unavailable circuit breaker: "
+                    f"{unavailable_count} securities exceeded limit "
+                    f"{max_provider_unavailable}"
+                )
+
         inserted = 0
         updated = 0
         # One explicit transaction for the canonical market-data mutation.
@@ -313,6 +352,26 @@ def run_incremental_update(
                 )
                 inserted += add
                 updated += replace
+
+            recorded_at = datetime.now().astimezone().isoformat()
+            for security in selected:
+                message = unavailable.get(security.security_id)
+                data_status = "PROVIDER_UNAVAILABLE" if message is not None else "OK"
+                conn.execute(
+                    """INSERT INTO security_data_status
+                       (run_id,security_id,as_of_date,provider,status,message,recorded_at)
+                       VALUES (?,?,?,?,?,?,?)""",
+                    (
+                        run_id,
+                        security.security_id,
+                        as_of.isoformat(),
+                        provider.source_name,
+                        data_status,
+                        message,
+                        recorded_at,
+                    ),
+                )
+
             conn.commit()
         except Exception:
             conn.rollback()
@@ -326,6 +385,7 @@ def run_incremental_update(
             prices_updated=updated,
             fetched_bars=fetched_total,
             provider_calls=provider_calls,
+            provider_unavailable=len(unavailable),
             validation_status="PASS",
         )
         _finish_run(conn, summary)
@@ -342,6 +402,7 @@ def run_incremental_update(
             prices_updated=0,
             fetched_bars=fetched_total,
             provider_calls=provider_calls,
+            provider_unavailable=len(unavailable),
             validation_status="FAIL",
             error_message=str(exc),
         )
