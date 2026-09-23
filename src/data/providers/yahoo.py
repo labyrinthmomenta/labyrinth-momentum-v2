@@ -91,56 +91,40 @@ class YahooProvider:
         )
 
     def _remove_closed_session_placeholders(self, bars: list[PriceBar], ticker: str) -> list[PriceBar]:
-        """Remove only verified Yahoo carry-forward rows on closed BIST days.
+        """Discard Yahoo rows dated on official BIST closed sessions.
 
-        A valid preceding trading close must be present in this response. No
-        dates are shifted and no prices are synthesized. Ambiguous rows stay
-        visible to the strict downstream quality checks.
+        The BIST trading calendar is authoritative for whether a market
+        session exists. Yahoo can emit carry-forward, adjusted, empty, or
+        otherwise synthetic rows on closed dates; none belong in canonical
+        daily prices.
+
+        No dates are shifted and no prices are synthesized. Calendar dates
+        outside verified coverage remain visible to downstream validation.
         """
         kept: list[PriceBar] = []
         removed: list[date] = []
-        previous_close = None
+
         for bar in bars:
             try:
                 trading = self.calendar.is_trading_day(bar.date)
             except CalendarCoverageError:
                 kept.append(bar)
-                previous_close = None
                 continue
-            prices = (bar.open, bar.high, bar.low, bar.close)
-            valid = all(math.isfinite(value) and value > 0 for value in prices)
-            all_ohlc_missing = all(not math.isfinite(value) for value in prices)
-            volume_missing_or_zero = (
-                bar.volume is None
-                or (math.isfinite(bar.volume) and bar.volume == 0)
-            )
 
-            # Yahoo can emit completely empty rows on official BIST closed
-            # sessions. They contain no market information and may be removed.
-            # Mixed/partial malformed rows are deliberately retained so the
-            # downstream quality layer can reject them.
-            if not trading and all_ohlc_missing and volume_missing_or_zero:
+            if not trading:
                 removed.append(bar.date)
                 continue
 
-            if (not trading and valid and bar.volume == 0 and
-                    previous_close is not None and
-                    all(value == previous_close for value in prices)):
-                removed.append(bar.date)
-                continue
             kept.append(bar)
-            if trading:
-                previous_close = bar.close if (valid and
-                    bar.low <= min(bar.open, bar.close) and
-                    bar.high >= max(bar.open, bar.close)) else None
-            else:
-                # An unexplained closed-day row breaks the carry-forward chain.
-                previous_close = None
+
         if removed:
             logger.warning(
                 "YAHOO_CLOSED_SESSION_PLACEHOLDER ticker=%s removed=%d dates=%s",
-                ticker, len(removed), ",".join(day.isoformat() for day in removed),
+                ticker,
+                len(removed),
+                ",".join(day.isoformat() for day in removed),
             )
+
         return kept
 
     def fetch(self, ticker: str, start: date, end: date) -> list[PriceBar]:
