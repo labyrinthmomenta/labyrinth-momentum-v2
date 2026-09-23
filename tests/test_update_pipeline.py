@@ -409,3 +409,181 @@ def test_provider_unavailable_limit_trips_circuit_breaker(db, calendar):
 
     assert count_prices(db, good) == 0
     assert db.conn.execute("SELECT COUNT(*) FROM security_data_status").fetchone()[0] == 0
+
+
+
+def test_fallback_recovers_only_missing_required_session_and_preserves_source(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+    sid = add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    missing = days[1]
+    primary_bars = [
+        mkbar(day, 100 + i)
+        for i, day in enumerate(days)
+        if day != missing
+    ]
+
+    provider = FakeProvider({"TEST": primary_bars})
+    fallback = FakeProvider({"TEST": [mkbar(missing, 150)]})
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.prices_inserted == 4
+    assert summary.provider_calls == 2
+    assert fallback.calls == [("TEST", missing, missing)]
+    assert count_prices(db, sid) == 4
+
+    sources = dict(
+        db.conn.execute(
+            "SELECT date, source FROM daily_prices WHERE security_id=? ORDER BY date",
+            (sid,),
+        ).fetchall()
+    )
+
+    assert sources[missing.isoformat()] == "BIST_THB"
+    for day in days:
+        if day != missing:
+            assert sources[day.isoformat()] == "FAKE"
+
+
+def test_fallback_is_not_called_when_primary_history_is_complete(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    provider = FakeProvider({
+        "TEST": [mkbar(day, 100 + i) for i, day in enumerate(days)]
+    })
+    fallback = FakeProvider({})
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.provider_calls == 1
+    assert fallback.calls == []
+
+
+def test_never_seen_primary_empty_remains_provider_unavailable_without_fallback(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    add_security(
+        db,
+        ticker="GOOD",
+        name="Good AS",
+        first_trade=days[0].isoformat(),
+    )
+    add_security(
+        db,
+        ticker="MISS",
+        name="Missing AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    provider = FakeProvider({
+        "GOOD": [mkbar(day, 100 + i) for i, day in enumerate(days)],
+        "MISS": [],
+    })
+
+    fallback = FakeProvider({
+        "MISS": [mkbar(day, 200 + i) for i, day in enumerate(days)]
+    })
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.provider_unavailable == 1
+    assert fallback.calls == []
+
+    statuses = db.conn.execute(
+        """
+        SELECT sds.status, si.ticker
+        FROM security_data_status sds
+        JOIN security_identifiers si
+          ON si.security_id=sds.security_id AND si.is_current=1
+        WHERE sds.run_id=?
+        ORDER BY si.ticker
+        """,
+        (summary.run_id,),
+    ).fetchall()
+
+    assert [tuple(row) for row in statuses] == [
+        ("OK", "GOOD"),
+        ("PROVIDER_UNAVAILABLE", "MISS"),
+    ]
+
+
+def test_fallback_miss_still_fails_closed(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "TEST",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:-1])],
+    )
+
+    provider = FakeProvider({"TEST": []})
+    fallback = FakeProvider({})
+    fallback.source_name = "BIST_THB"
+
+    with pytest.raises(UpdatePipelineError, match="MISSING_TRADING_SESSION"):
+        run_incremental_update(
+            db.conn,
+            calendar,
+            provider,
+            as_of=as_of,
+            required_return_window=3,
+            fallback_provider=fallback,
+        )
+
+    assert fallback.calls == [("TEST", days[-1], days[-1])]
+    assert count_prices(db, sid) == 3
+    assert db.conn.execute(
+        "SELECT COUNT(*) FROM security_data_status"
+    ).fetchone()[0] == 0

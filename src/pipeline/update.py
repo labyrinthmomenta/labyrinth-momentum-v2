@@ -35,6 +35,7 @@ class FetchRequest:
 class SecurityPlan:
     security: SecurityForUpdate
     latest: date
+    required_dates: tuple[date, ...]
     existing: tuple[PriceBar, ...]
     periods: tuple
     requests: tuple[FetchRequest, ...]
@@ -43,7 +44,8 @@ class SecurityPlan:
 @dataclass(frozen=True)
 class SecurityStage:
     security: SecurityForUpdate
-    fetched_bars: tuple[PriceBar, ...]
+    primary_bars: tuple[PriceBar, ...]
+    fallback_bars: tuple[PriceBar, ...]
     ticker_at_date: dict[date, str]
     quality: QualityReport
 
@@ -177,7 +179,14 @@ def _build_plan(
     missing = [day for day in expected_dates if day not in existing_dates]
     periods = tuple(identifier_periods(conn, security.security_id))
     requests = tuple(_contiguous_requests(missing, periods, calendar))
-    return SecurityPlan(security, latest, tuple(existing), periods, requests)
+    return SecurityPlan(
+        security,
+        latest,
+        tuple(expected_dates),
+        tuple(existing),
+        periods,
+        requests,
+    )
 
 
 def _fetch_all(
@@ -231,6 +240,7 @@ def run_incremental_update(
     required_return_window: int = 252,
     securities: Iterable[SecurityForUpdate] | None = None,
     max_provider_unavailable: int = 5,
+    fallback_provider: MarketDataProvider | None = None,
 ) -> UpdateSummary:
     """Stage, validate, then atomically commit market-data updates.
 
@@ -297,7 +307,58 @@ def run_incremental_update(
                     f"{plan.security.ticker}: provider data failed structure checks: {preview}"
                 )
 
-            staged = _merge_bars(plan.existing, fetched)
+            # Recovery is deliberately attempted only after the primary provider
+            # returned at least some data, or canonical history already exists.
+            # A never-seen security for which the primary provider returned
+            # nothing remains PROVIDER_UNAVAILABLE and is not masked by fallback.
+            primary_staged = _merge_bars(plan.existing, fetched)
+            staged_dates = {bar.date for bar in primary_staged}
+            missing_after_primary = [
+                day for day in plan.required_dates if day not in staged_dates
+            ]
+
+            fallback_bars: list[PriceBar] = []
+            if fallback_provider is not None and missing_after_primary:
+                for day in missing_after_primary:
+                    ticker = ticker_for_date(plan.periods, day)
+                    if ticker is None:
+                        raise UpdatePipelineError(
+                            f"{plan.security.ticker}: no ticker identifier for fallback date "
+                            f"{day.isoformat()}"
+                        )
+
+                    try:
+                        recovered = fallback_provider.fetch(ticker, day, day)
+                    except Exception as exc:
+                        raise UpdatePipelineError(
+                            f"{plan.security.ticker}: fallback provider failed for "
+                            f"{day.isoformat()}: {exc}"
+                        ) from exc
+
+                    provider_calls += 1
+                    fallback_bars.extend(
+                        bar for bar in recovered if bar.date == day
+                    )
+
+                fallback_bars = _merge_bars([], fallback_bars)
+                fetched_total += len(fallback_bars)
+
+                fallback_issues = validate_ohlcv_structure(fallback_bars)
+                fallback_errors = [
+                    issue for issue in fallback_issues
+                    if issue.severity == Severity.ERROR
+                ]
+                if fallback_errors:
+                    preview = "; ".join(
+                        f"{issue.code}@{issue.date}: {issue.message}"
+                        for issue in fallback_errors[:8]
+                    )
+                    raise UpdatePipelineError(
+                        f"{plan.security.ticker}: fallback data failed structure checks: "
+                        f"{preview}"
+                    )
+
+            staged = _merge_bars(primary_staged, fallback_bars)
             report = validate_price_history(
                 staged,
                 calendar,
@@ -312,14 +373,24 @@ def run_incremental_update(
                 raise UpdatePipelineError(f"{plan.security.ticker}: validation failed: {preview}")
 
             ticker_map: dict[date, str] = {}
-            for bar in fetched:
+            for bar in [*fetched, *fallback_bars]:
                 ticker = ticker_for_date(plan.periods, bar.date)
                 if ticker is None:
                     raise UpdatePipelineError(
-                        f"{plan.security.ticker}: no ticker identifier for fetched date {bar.date.isoformat()}"
+                        f"{plan.security.ticker}: no ticker identifier for fetched date "
+                        f"{bar.date.isoformat()}"
                     )
                 ticker_map[bar.date] = ticker
-            stages.append(SecurityStage(plan.security, tuple(fetched), ticker_map, report))
+
+            stages.append(
+                SecurityStage(
+                    plan.security,
+                    tuple(fetched),
+                    tuple(fallback_bars),
+                    ticker_map,
+                    report,
+                )
+            )
 
         # Circuit breaker: a small number of isolated, never-seen provider
         # misses can be represented explicitly. A broad provider failure must
@@ -346,12 +417,23 @@ def run_incremental_update(
                 add, replace = upsert_price_bars(
                     conn,
                     stage.security.security_id,
-                    stage.fetched_bars,
+                    stage.primary_bars,
                     ticker_at_date=stage.ticker_at_date,
                     source=provider.source_name,
                 )
                 inserted += add
                 updated += replace
+
+                if fallback_provider is not None and stage.fallback_bars:
+                    add, replace = upsert_price_bars(
+                        conn,
+                        stage.security.security_id,
+                        stage.fallback_bars,
+                        ticker_at_date=stage.ticker_at_date,
+                        source=fallback_provider.source_name,
+                    )
+                    inserted += add
+                    updated += replace
 
             recorded_at = datetime.now().astimezone().isoformat()
             for security in selected:

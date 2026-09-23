@@ -64,6 +64,7 @@ def run_daily_pipeline(
     tickers: set[str] | None = None,
     dry_run: bool = False,
     dry_run_dir: str | Path | None = None,
+    fallback_provider: MarketDataProvider | None = None,
 ) -> DailyRunSummary:
     """Run the complete V2 daily flow behind a publication gate.
 
@@ -107,6 +108,7 @@ def run_daily_pipeline(
             as_of=as_of,
             required_return_window=required_return_window,
             securities=selected,
+            fallback_provider=fallback_provider,
         )
 
         if dry_run:
