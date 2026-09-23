@@ -31,6 +31,7 @@ from .manager import UniverseRecord, UniverseManager
 
 KAP_MARKETS_URL = "https://www.kap.org.tr/tr/Pazarlar"
 BIST_DATA_PATHS_URL = "https://www.borsaistanbul.com/files/DataFilePaths.zip"
+BIST_EQUITY_DATA_URL = "https://www.borsaistanbul.com/en/data/equity-market-data"
 
 # Company-share markets. Instrument/fund-only markets are intentionally omitted.
 EQUITY_MARKETS = {
@@ -160,23 +161,99 @@ def parse_kap_markets_html(html: str) -> list[MarketRow]:
     return output
 
 
+def _is_data_member(name: str) -> bool:
+    parts = PurePosixPath(name).parts
+    return not name.endswith("/") and not any(
+        part == "__MACOSX" or part.startswith(".") for part in parts
+    )
+
+
+def _validate_zip(data: bytes, source: str, content_type: str = "") -> None:
+    mime = content_type.split(";", 1)[0].strip().lower()
+    allowed = {"", "application/zip", "application/x-zip-compressed",
+               "application/octet-stream", "binary/octet-stream"}
+    if (mime not in allowed or not data.startswith((b"PK\x03\x04", b"PK\x05\x06"))
+            or not zipfile.is_zipfile(BytesIO(data))):
+        raise OfficialUniverseError(
+            f"Invalid ZIP from {source}: content-type={mime or 'missing'}, "
+            f"bytes={len(data)}, magic={data[:8].hex()}"
+        )
+
+
+class _ReportLinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links: list[str] = []
+
+    def handle_starttag(self, tag, attrs):
+        for key, value in attrs:
+            if key in {"href", "dosya-yolu"} and value:
+                self.links.append(value)
+
+
+def _discover_report_from_page(html: bytes) -> str:
+    parser = _ReportLinkParser()
+    parser.feed(html.decode("utf-8", errors="replace"))
+    for link in parser.links:
+        url = urllib.parse.urljoin(BIST_EQUITY_DATA_URL, link)
+        parsed = urllib.parse.urlsplit(url)
+        if (parsed.scheme == "https" and parsed.hostname in
+                {"borsaistanbul.com", "www.borsaistanbul.com"}
+                and not parsed.username and not parsed.password
+                and parsed.port in {None, 443}
+                and parsed.path.lower().endswith("/ilkislem.zip")):
+            return url
+    raise OfficialUniverseError("Official BIST equity page has no trusted ilkislem.zip link")
+
+
+def _fetch_first_trade(http_get, data_paths_url):
+    failures = []
+    attempted = set()
+    try:
+        url = discover_ilkislem_url(http_get(data_paths_url), base_url=data_paths_url)
+        attempted.add(url)
+        data = http_get(url)
+        _validate_zip(data, url)
+        return parse_first_trade_zip(data), url
+    except Exception as exc:
+        failures.append(f"catalogue/report via {data_paths_url}: {exc}")
+    # Only an explicitly linked report on the official page is an acceptable
+    # fallback. Never publish a KAP-only or cached/stale universe on failure.
+    try:
+        url = _discover_report_from_page(http_get(BIST_EQUITY_DATA_URL))
+        if url in attempted:
+            raise OfficialUniverseError(f"Fallback repeats failed report URL: {url}")
+        data = http_get(url)
+        _validate_zip(data, url)
+        return parse_first_trade_zip(data), url
+    except Exception as exc:
+        failures.append(f"fallback via {BIST_EQUITY_DATA_URL}: {exc}")
+    raise OfficialUniverseError("Official first-trade sources failed: " + " | ".join(failures))
+
+
 def _iter_text_from_xlsx(data: bytes) -> Iterable[str]:
     workbook = load_workbook(BytesIO(data), read_only=True, data_only=True)
     try:
         for sheet in workbook.worksheets:
             for row in sheet.iter_rows(values_only=True):
-                for value in row:
-                    if value is not None:
-                        yield str(value)
+                # Directory and filename are separate cells in the live catalogue.
+                values = [str(value).strip() for value in row if value is not None]
+                for index, value in enumerate(values):
+                    if value.lower() == "ilkislem.zip" and index:
+                        directory = values[index - 1]
+                        if directory.endswith("/"):
+                            yield directory + value
+                yield from values
     finally:
         workbook.close()
 
 
 def _iter_catalog_strings(data: bytes) -> Iterable[str]:
     """Yield strings from DataFilePaths.zip without assuming its inner format."""
+    _validate_zip(data, "BIST catalogue")
     with zipfile.ZipFile(BytesIO(data)) as archive:
         for name in archive.namelist():
-            if name.endswith("/"):
+            if not _is_data_member(name):
                 continue
             raw = archive.read(name)
             suffix = PurePosixPath(name).suffix.lower()
@@ -206,6 +283,10 @@ def discover_ilkislem_url(catalog_zip: bytes, *, base_url: str = BIST_DATA_PATHS
             if "ilkislem" in cleaned.lower() and cleaned.lower().endswith(".zip"):
                 candidates.append(cleaned)
     for candidate in candidates:
+        # A bare filename provides no directory; never infer /files/ from the
+        # catalogue URL. Use the official market page fallback instead.
+        if "/" not in candidate:
+            continue
         url = urllib.parse.urljoin(base_url, candidate)
         if "ilkislem" in url.lower() and url.lower().endswith(".zip"):
             return url
@@ -228,11 +309,22 @@ def _parse_date(value: object) -> str | None:
     return None
 
 
+def _first_trade_ticker(value: object) -> str:
+    ticker = str(value or "").strip().upper()
+    # BIST equity instruments carry .E; .F funds and other instrument
+    # suffixes must not be collapsed into equity identities.
+    for suffix in (".IS", ".E"):
+        if ticker.endswith(suffix):
+            return ticker[:-len(suffix)]
+    return ticker
+
+
 def parse_first_trade_zip(data: bytes) -> dict[str, str]:
     """Parse BIST ilkislem.zip -> current ticker -> first trading date."""
     result: dict[str, str] = {}
+    _validate_zip(data, "BIST first-trade report")
     with zipfile.ZipFile(BytesIO(data)) as archive:
-        members = [n for n in archive.namelist() if not n.endswith("/")]
+        members = [n for n in archive.namelist() if _is_data_member(n)]
         if not members:
             raise OfficialUniverseError("ilkislem.zip is empty")
         target = next((n for n in members if n.lower().endswith((".xlsx", ".xlsm"))), None)
@@ -244,7 +336,7 @@ def parse_first_trade_zip(data: bytes) -> dict[str, str]:
                         values = list(row)
                         if len(values) < 5:
                             continue
-                        ticker = str(values[1] or "").strip().upper().replace(".IS", "")
+                        ticker = _first_trade_ticker(values[1])
                         first_day = _parse_date(values[4])
                         if _TICKER_RE.fullmatch(ticker) and first_day:
                             result[ticker] = first_day
@@ -266,7 +358,7 @@ def parse_first_trade_zip(data: bytes) -> dict[str, str]:
             for row in reader:
                 if len(row) < 5:
                     continue
-                ticker = row[1].strip().upper().replace(".IS", "")
+                ticker = _first_trade_ticker(row[1])
                 first_day = _parse_date(row[4])
                 if _TICKER_RE.fullmatch(ticker) and first_day:
                     result[ticker] = first_day
@@ -281,7 +373,13 @@ def default_http_get(url: str, timeout: int = 30) -> bytes:
         headers={"User-Agent": "LabyrinthMomentumV2/1.0 (+https://github.com/)"},
     )
     with urllib.request.urlopen(request, timeout=timeout) as response:
-        return response.read()
+        final_url = response.geturl()
+        if urllib.parse.urlsplit(final_url).scheme != "https":
+            raise OfficialUniverseError(f"Unsafe HTTP redirect: {url} -> {final_url}")
+        data = response.read()
+        if urllib.parse.urlsplit(url).path.lower().endswith(".zip"):
+            _validate_zip(data, f"{url} -> {final_url}", response.headers.get("Content-Type", ""))
+        return data
 
 
 def fetch_official_universe(
@@ -298,9 +396,7 @@ def fetch_official_universe(
             raise OfficialUniverseError(
                 f"KAP equity universe unexpectedly small: {len(market_rows)} < {min_equities}"
             )
-        catalogue = http_get(data_paths_url)
-        first_trade_url = discover_ilkislem_url(catalogue, base_url=data_paths_url)
-        first_trade = parse_first_trade_zip(http_get(first_trade_url))
+        first_trade, first_trade_url = _fetch_first_trade(http_get, data_paths_url)
     except OfficialUniverseError:
         raise
     except Exception as exc:
