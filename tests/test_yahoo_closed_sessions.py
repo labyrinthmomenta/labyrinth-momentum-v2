@@ -84,3 +84,61 @@ def test_missing_open_session_still_fails():
     bars = provider._frame_to_bars(frame().iloc[:-1], START, END)
     report = validate_price_history(bars, provider.calendar, as_of=END, required_return_window=1)
     assert any(i.code == 'MISSING_TRADING_SESSION' for i in report.errors)
+
+def test_closed_session_all_nan_ohlc_is_removed():
+    source = frame()
+    source.loc[
+        '2026-05-27',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+    source.loc['2026-05-27', 'Volume'] = float('nan')
+
+    bars = YahooProvider()._frame_to_bars(source, START, END)
+
+    assert date(2026, 5, 27) not in [b.date for b in bars]
+
+
+def test_open_session_all_nan_ohlc_is_not_removed():
+    source = frame()
+    source.loc[
+        '2026-06-01',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+    source.loc['2026-06-01', 'Volume'] = float('nan')
+
+    provider = YahooProvider()
+    bars = provider._frame_to_bars(source, START, END)
+
+    assert date(2026, 6, 1) in [b.date for b in bars]
+
+    report = validate_price_history(
+        bars,
+        provider.calendar,
+        as_of=END,
+        required_return_window=1,
+    )
+    assert not report.passed
+    assert any(i.code == 'NON_FINITE_OHLC' for i in report.errors)
+
+
+def test_closed_session_partial_nan_ohlc_is_not_removed():
+    source = frame()
+    source.loc['2026-05-27', 'Open'] = float('nan')
+
+    bars = YahooProvider()._frame_to_bars(source, START, END)
+
+    assert date(2026, 5, 27) in [b.date for b in bars]
+
+
+def test_closed_session_all_nan_with_positive_volume_is_not_removed():
+    source = frame()
+    source.loc[
+        '2026-05-27',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+    source.loc['2026-05-27', 'Volume'] = 100
+
+    bars = YahooProvider()._frame_to_bars(source, START, END)
+
+    assert date(2026, 5, 27) in [b.date for b in bars]
+
