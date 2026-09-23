@@ -198,7 +198,7 @@ class YahooProvider:
                 progress=False,
                 actions=False,
                 group_by="ticker",
-                threads=True,
+                threads=False,
             )
             if frame is None or frame.empty:
                 continue
@@ -237,6 +237,38 @@ class YahooProvider:
                     output[ticker].extend(self._frame_to_bars(sub, start, end, ticker))
                 except (KeyError, ValueError):
                     continue
+
+        # yfinance multi-symbol downloads can occasionally return an empty
+        # ticker slice or non-finite OHLC even though a single-symbol request is
+        # healthy. Retry only those suspicious ticker results once through the
+        # conservative single-ticker path (threads=False).
+        #
+        # A genuinely unsupported ticker remains empty after this retry and is
+        # handled explicitly by the pipeline as PROVIDER_UNAVAILABLE.
+        for ticker in clean:
+            bars = output.get(ticker, [])
+
+            if not bars:
+                retry_reason = "empty"
+            elif any(
+                not all(
+                    math.isfinite(value)
+                    for value in (bar.open, bar.high, bar.low, bar.close)
+                )
+                for bar in bars
+            ):
+                retry_reason = "nonfinite_ohlc"
+            else:
+                continue
+
+            logger.warning(
+                "YAHOO_BATCH_RETRY ticker=%s reason=%s",
+                ticker,
+                retry_reason,
+            )
+
+            calls += 1
+            output[ticker] = self.fetch(ticker, start, end)
 
         return BatchFetchResult(output, calls)
 

@@ -142,3 +142,93 @@ def test_closed_session_all_nan_with_positive_volume_is_not_removed():
 
     assert date(2026, 5, 27) in [b.date for b in bars]
 
+
+
+def test_batch_nonfinite_result_retries_single_ticker(monkeypatch):
+    calls = []
+
+    good = frame()
+    bad = frame().copy()
+    bad.loc[
+        '2026-05-26',
+        ['Open', 'High', 'Low', 'Close'],
+    ] = float('nan')
+
+    def download(symbols, **kwargs):
+        calls.append((symbols, kwargs.get('threads')))
+
+        if isinstance(symbols, str):
+            source = good
+            return pd.concat({symbols: source}, axis=1).swaplevel(axis=1)
+
+        payload = {}
+        for symbol in symbols:
+            payload[symbol] = bad if symbol == 'ASELS.IS' else good
+
+        return pd.concat(payload, axis=1)
+
+    monkeypatch.setitem(
+        sys.modules,
+        'yfinance',
+        types.SimpleNamespace(download=download),
+    )
+
+    result = YahooProvider().fetch_many(
+        ['ASELS', 'THYAO'],
+        START,
+        END,
+    )
+
+    assert result.provider_calls == 2
+
+    asels = result.bars_by_ticker['ASELS']
+    assert [bar.date for bar in asels] == [START, END]
+    assert all(
+        all(
+            pd.notna(value)
+            for value in (bar.open, bar.high, bar.low, bar.close)
+        )
+        for bar in asels
+    )
+
+    # Both the batch request and the single-symbol retry are non-threaded.
+    assert calls[0][1] is False
+    assert calls[1][0] == 'ASELS.IS'
+    assert calls[1][1] is False
+
+
+def test_batch_empty_result_retries_single_ticker_and_can_remain_empty(monkeypatch):
+    calls = []
+    good = frame()
+
+    def download(symbols, **kwargs):
+        calls.append((symbols, kwargs.get('threads')))
+
+        if isinstance(symbols, str):
+            if symbols == 'ISKUR.IS':
+                return pd.DataFrame()
+            return pd.concat({symbols: good}, axis=1).swaplevel(axis=1)
+
+        # Simulate a multi-ticker response in which Yahoo completely omits
+        # ISKUR while returning healthy data for ASELS.
+        return pd.concat({'ASELS.IS': good}, axis=1)
+
+    monkeypatch.setitem(
+        sys.modules,
+        'yfinance',
+        types.SimpleNamespace(download=download),
+    )
+
+    result = YahooProvider().fetch_many(
+        ['ASELS', 'ISKUR'],
+        START,
+        END,
+    )
+
+    assert result.provider_calls == 2
+    assert [bar.date for bar in result.bars_by_ticker['ASELS']] == [START, END]
+    assert result.bars_by_ticker['ISKUR'] == []
+
+    assert calls[0][1] is False
+    assert calls[1][0] == 'ISKUR.IS'
+    assert calls[1][1] is False
