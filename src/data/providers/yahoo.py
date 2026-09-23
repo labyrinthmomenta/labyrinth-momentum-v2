@@ -2,9 +2,13 @@ from __future__ import annotations
 
 from datetime import date, timedelta
 import math
+import logging
 from typing import Iterable
 
 from src.calculation.engine import PriceBar
+from src.data.calendar import BISTTradingCalendar, CalendarCoverageError
+
+logger = logging.getLogger(__name__)
 from src.data.providers.base import BatchFetchResult
 
 
@@ -22,7 +26,9 @@ class YahooProvider:
 
     source_name = "Yahoo Finance"
 
-    def __init__(self, suffix: str = ".IS", batch_size: int = 50):
+    def __init__(self, suffix: str = ".IS", batch_size: int = 50,
+                 calendar: BISTTradingCalendar | None = None):
+        self.calendar = calendar if calendar is not None else BISTTradingCalendar.from_csv()
         self.suffix = suffix
         self.batch_size = max(1, int(batch_size))
 
@@ -44,7 +50,7 @@ class YahooProvider:
         for index in range(0, len(values), size):
             yield values[index : index + size]
 
-    def _frame_to_bars(self, frame, start: date, end: date) -> list[PriceBar]:
+    def _frame_to_bars(self, frame, start: date, end: date, ticker: str = "unknown") -> list[PriceBar]:
         if frame is None or frame.empty:
             return []
 
@@ -80,7 +86,48 @@ class YahooProvider:
                     volume,
                 )
             )
-        return sorted(bars, key=lambda item: item.date)
+        return self._remove_closed_session_placeholders(
+            sorted(bars, key=lambda item: item.date), ticker
+        )
+
+    def _remove_closed_session_placeholders(self, bars: list[PriceBar], ticker: str) -> list[PriceBar]:
+        """Remove only verified Yahoo carry-forward rows on closed BIST days.
+
+        A valid preceding trading close must be present in this response. No
+        dates are shifted and no prices are synthesized. Ambiguous rows stay
+        visible to the strict downstream quality checks.
+        """
+        kept: list[PriceBar] = []
+        removed: list[date] = []
+        previous_close = None
+        for bar in bars:
+            try:
+                trading = self.calendar.is_trading_day(bar.date)
+            except CalendarCoverageError:
+                kept.append(bar)
+                previous_close = None
+                continue
+            prices = (bar.open, bar.high, bar.low, bar.close)
+            valid = all(math.isfinite(value) and value > 0 for value in prices)
+            if (not trading and valid and bar.volume == 0 and
+                    previous_close is not None and
+                    all(value == previous_close for value in prices)):
+                removed.append(bar.date)
+                continue
+            kept.append(bar)
+            if trading:
+                previous_close = bar.close if (valid and
+                    bar.low <= min(bar.open, bar.close) and
+                    bar.high >= max(bar.open, bar.close)) else None
+            else:
+                # An unexplained closed-day row breaks the carry-forward chain.
+                previous_close = None
+        if removed:
+            logger.warning(
+                "YAHOO_CLOSED_SESSION_PLACEHOLDER ticker=%s removed=%d dates=%s",
+                ticker, len(removed), ",".join(day.isoformat() for day in removed),
+            )
+        return kept
 
     def fetch(self, ticker: str, start: date, end: date) -> list[PriceBar]:
         if end < start:
@@ -109,7 +156,7 @@ class YahooProvider:
             except (KeyError, ValueError):
                 frame = frame.copy()
                 frame.columns = frame.columns.get_level_values(0)
-        return self._frame_to_bars(frame, start, end)
+        return self._frame_to_bars(frame, start, end, ticker)
 
     def fetch_many(self, tickers: list[str], start: date, end: date) -> BatchFetchResult:
         """Download one date range for many BIST tickers in bounded chunks."""
@@ -156,7 +203,7 @@ class YahooProvider:
                         except (KeyError, ValueError):
                             sub = frame.copy()
                             sub.columns = sub.columns.get_level_values(-1)
-                output[ticker].extend(self._frame_to_bars(sub, start, end))
+                output[ticker].extend(self._frame_to_bars(sub, start, end, ticker))
                 continue
 
             if getattr(frame.columns, "nlevels", 1) < 2:
@@ -173,7 +220,7 @@ class YahooProvider:
                         # Missing symbols are represented by an empty result and
                         # will fail the downstream missing-session validation.
                         continue
-                    output[ticker].extend(self._frame_to_bars(sub, start, end))
+                    output[ticker].extend(self._frame_to_bars(sub, start, end, ticker))
                 except (KeyError, ValueError):
                     continue
 
