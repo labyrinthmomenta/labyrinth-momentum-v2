@@ -297,21 +297,60 @@ def run_incremental_update(
                 )
                 continue
 
-            fetched_issues = validate_ohlcv_structure(sorted(fetched, key=lambda bar: bar.date))
-            fetched_errors = [issue for issue in fetched_issues if issue.severity == Severity.ERROR]
-            if fetched_errors:
+            fetched_issues = validate_ohlcv_structure(
+                sorted(fetched, key=lambda bar: bar.date)
+            )
+            fetched_errors = [
+                issue for issue in fetched_issues
+                if issue.severity == Severity.ERROR
+            ]
+
+            # Without a fallback provider preserve the original fail-closed
+            # behaviour for malformed primary-provider data.
+            if fetched_errors and fallback_provider is None:
                 preview = "; ".join(
-                    f"{issue.code}@{issue.date}: {issue.message}" for issue in fetched_errors[:8]
+                    f"{issue.code}@{issue.date}: {issue.message}"
+                    for issue in fetched_errors[:8]
                 )
                 raise UpdatePipelineError(
-                    f"{plan.security.ticker}: provider data failed structure checks: {preview}"
+                    f"{plan.security.ticker}: provider data failed structure checks: "
+                    f"{preview}"
                 )
+
+            # When an authoritative fallback exists, malformed primary bars are
+            # removed before staging. Their required dates then become ordinary
+            # recovery candidates below. This prevents invalid Yahoo OHLC from
+            # ever reaching canonical daily_prices.
+            primary_bars = list(fetched)
+            if fetched_errors:
+                undated_errors = [
+                    issue for issue in fetched_errors
+                    if issue.date is None
+                ]
+                if undated_errors:
+                    preview = "; ".join(
+                        f"{issue.code}@{issue.date}: {issue.message}"
+                        for issue in undated_errors[:8]
+                    )
+                    raise UpdatePipelineError(
+                        f"{plan.security.ticker}: provider data failed structure checks: "
+                        f"{preview}"
+                    )
+
+                invalid_dates = {
+                    issue.date for issue in fetched_errors
+                    if issue.date is not None
+                }
+                primary_bars = [
+                    bar for bar in fetched
+                    if bar.date not in invalid_dates
+                ]
 
             # Recovery is deliberately attempted only after the primary provider
             # returned at least some data, or canonical history already exists.
             # A never-seen security for which the primary provider returned
             # nothing remains PROVIDER_UNAVAILABLE and is not masked by fallback.
-            primary_staged = _merge_bars(plan.existing, fetched)
+            primary_staged = _merge_bars(plan.existing, primary_bars)
             staged_dates = {bar.date for bar in primary_staged}
             missing_after_primary = [
                 day for day in plan.required_dates if day not in staged_dates
@@ -373,7 +412,7 @@ def run_incremental_update(
                 raise UpdatePipelineError(f"{plan.security.ticker}: validation failed: {preview}")
 
             ticker_map: dict[date, str] = {}
-            for bar in [*fetched, *fallback_bars]:
+            for bar in [*primary_bars, *fallback_bars]:
                 ticker = ticker_for_date(plan.periods, bar.date)
                 if ticker is None:
                     raise UpdatePipelineError(
@@ -385,7 +424,7 @@ def run_incremental_update(
             stages.append(
                 SecurityStage(
                     plan.security,
-                    tuple(fetched),
+                    tuple(primary_bars),
                     tuple(fallback_bars),
                     ticker_map,
                     report,

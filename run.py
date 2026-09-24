@@ -78,6 +78,7 @@ def main() -> int:
             summary = run_live_preflight(
                 calendar=calendar,
                 provider=YahooProvider(),
+                fallback_provider=BISTTHBProvider(),
                 as_of=as_of,
                 universe_fetcher=fetch_official_universe,
                 tickers=_tickers(args.tickers) or {"A1CAP", "ASELS", "THYAO"},

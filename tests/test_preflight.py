@@ -82,3 +82,47 @@ def test_live_preflight_fails_on_stale_provider():
             universe_fetcher=snapshot,
             tickers=("THYAO",),
         )
+
+
+
+def test_live_preflight_recovers_nonfinite_latest_bar_from_fallback():
+    cal = calendar()
+    as_of = date(2026, 9, 23)
+    latest = cal.latest_trading_day_on_or_before(as_of)
+    prior = cal.previous_trading_days(latest, 3)
+
+    primary_rows = [
+        bar(prior[0]),
+        bar(prior[1]),
+        PriceBar(
+            latest,
+            4.85,
+            5.07,
+            4.66,
+            float("nan"),
+            7525447,
+        ),
+    ]
+
+    fallback_rows = [
+        PriceBar(
+            latest,
+            4.85,
+            5.07,
+            4.66,
+            4.66,
+            7525447,
+        )
+    ]
+
+    summary = run_live_preflight(
+        calendar=cal,
+        provider=FakeProvider({"A1CAP": primary_rows}),
+        fallback_provider=FakeProvider({"A1CAP": fallback_rows}),
+        as_of=as_of,
+        universe_fetcher=snapshot,
+        tickers=("A1CAP",),
+    )
+
+    assert summary.status == "PASS"
+    assert summary.probes[0].last_bar == latest

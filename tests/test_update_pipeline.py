@@ -587,3 +587,66 @@ def test_fallback_miss_still_fails_closed(db, calendar):
     assert db.conn.execute(
         "SELECT COUNT(*) FROM security_data_status"
     ).fetchone()[0] == 0
+
+
+
+def test_fallback_replaces_malformed_primary_bar_and_preserves_source(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    bad_day = days[1]
+    primary = []
+    for i, day in enumerate(days):
+        if day == bad_day:
+            primary.append(
+                PriceBar(
+                    day,
+                    100.0,
+                    102.0,
+                    99.0,
+                    float("nan"),
+                    1000.0,
+                )
+            )
+        else:
+            primary.append(mkbar(day, 100 + i))
+
+    provider = FakeProvider({"TEST": primary})
+    fallback = FakeProvider({
+        "TEST": [mkbar(bad_day, 150)]
+    })
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.prices_inserted == 4
+    assert fallback.calls == [
+        ("TEST", bad_day, bad_day)
+    ]
+
+    row = db.conn.execute(
+        """
+        SELECT close, source
+        FROM daily_prices
+        WHERE security_id=? AND date=?
+        """,
+        (sid, bad_day.isoformat()),
+    ).fetchone()
+
+    assert row[0] == 150
+    assert row[1] == "BIST_THB"
