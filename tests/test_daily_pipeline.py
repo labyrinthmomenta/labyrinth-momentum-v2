@@ -226,9 +226,11 @@ def test_provider_unavailable_security_remains_in_full_publication(tmp_path):
     assert manifest["securities_published"] == 2
     assert manifest["data_available"] == 1
     assert manifest["provider_unavailable"] == 1
+    assert manifest["insufficient_trading_data"] == 0
     assert manifest["data_status_counts"] == {
         "OK": 1,
         "PROVIDER_UNAVAILABLE": 1,
+        "INSUFFICIENT_TRADING_DATA": 0,
     }
 
     screener = json.loads(
@@ -280,4 +282,110 @@ def test_provider_unavailable_security_remains_in_full_publication(tmp_path):
     ).fetchone()
 
     assert status[0] == "PROVIDER_UNAVAILABLE"
+    db.close()
+
+
+
+def test_insufficient_trading_data_remains_in_full_publication(tmp_path):
+    calendar = BISTTradingCalendar.from_csv()
+    as_of = date(2026, 9, 23)
+    latest = calendar.latest_trading_day_on_or_before(as_of)
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    class MissingLatestProvider(CalendarProvider):
+        def fetch(self, ticker, start, end):
+            bars = super().fetch(ticker, start, end)
+            if ticker == "BBB":
+                return [bar for bar in bars if bar.date != latest]
+            return bars
+
+    class NoTradeFallback:
+        source_name = "BIST_THB"
+
+        def fetch(self, ticker, start, end):
+            if ticker == "BBB" and start <= latest <= end:
+                return [
+                    PriceBar(
+                        latest,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                    )
+                ]
+            return []
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=MissingLatestProvider(calendar),
+        fallback_provider=NoTradeFallback(),
+        as_of=as_of,
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+    )
+
+    assert summary.public_promoted is True
+    assert summary.securities_selected == 2
+
+    manifest = json.loads(
+        (public / "manifest.json").read_text(encoding="utf-8")
+    )
+
+    assert manifest["securities_expected"] == 2
+    assert manifest["securities_published"] == 2
+    assert manifest["data_available"] == 1
+    assert manifest["provider_unavailable"] == 0
+    assert manifest["insufficient_trading_data"] == 1
+    assert manifest["data_status_counts"] == {
+        "OK": 1,
+        "PROVIDER_UNAVAILABLE": 0,
+        "INSUFFICIENT_TRADING_DATA": 1,
+    }
+
+    screener = json.loads(
+        (public / "screener.json").read_text(encoding="utf-8")
+    )
+    by_ticker = {row["ticker"]: row for row in screener}
+
+    assert by_ticker["AAA"]["data_status"] == "OK"
+
+    insufficient = by_ticker["BBB"]
+    assert insufficient["data_status"] == "INSUFFICIENT_TRADING_DATA"
+    assert insufficient["observations"] is None
+    assert insufficient["momentum_252"] is None
+    assert insufficient["fip_252"] is None
+    assert insufficient["atr14_percent"] is None
+
+    detail = json.loads(
+        (public / "details" / "BBB.json").read_text(encoding="utf-8")
+    )
+
+    assert detail["data_status"] == "INSUFFICIENT_TRADING_DATA"
+    assert detail["daily"] == []
+    assert detail["snapshot"]["observations"] is None
+
+    db = Database(db_path)
+
+    status = db.conn.execute(
+        """
+        SELECT sds.status, sds.provider
+        FROM security_data_status sds
+        JOIN securities s
+          ON s.security_id=sds.security_id
+        JOIN security_identifiers si
+          ON si.security_id=s.security_id
+        WHERE si.ticker='BBB'
+          AND si.is_current=1
+        ORDER BY sds.run_id DESC
+        LIMIT 1
+        """
+    ).fetchone()
+
+    assert status["status"] == "INSUFFICIENT_TRADING_DATA"
+    assert status["provider"] == "BIST_THB"
+
     db.close()

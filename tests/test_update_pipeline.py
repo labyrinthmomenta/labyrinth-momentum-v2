@@ -650,3 +650,136 @@ def test_fallback_replaces_malformed_primary_bar_and_preserves_source(db, calend
 
     assert row[0] == 150
     assert row[1] == "BIST_THB"
+
+
+
+def test_official_no_trade_fallback_is_quarantined(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+    missing = days[-1]
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        first_trade=days[0].isoformat(),
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "TEST",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:-1])],
+    )
+
+    # Primary has no usable bar for the required latest session.
+    provider = FakeProvider({"TEST": []})
+
+    # Official bulletin explicitly reports no trade / no price formation.
+    fallback = FakeProvider({
+        "TEST": [
+            PriceBar(
+                missing,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+            )
+        ]
+    })
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert fallback.calls == [("TEST", missing, missing)]
+
+    row = db.conn.execute(
+        """
+        SELECT status, provider, message
+        FROM security_data_status
+        WHERE security_id=?
+        ORDER BY run_id DESC
+        LIMIT 1
+        """,
+        (sid,),
+    ).fetchone()
+
+    assert row["status"] == "INSUFFICIENT_TRADING_DATA"
+    assert row["provider"] == "BIST_THB"
+    assert missing.isoformat() in row["message"]
+
+    # Never fabricate/carry forward an official zero row.
+    assert db.conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM daily_prices
+        WHERE security_id=? AND date=?
+        """,
+        (sid, missing.isoformat()),
+    ).fetchone()[0] == 0
+
+    # Previously valid canonical history remains untouched.
+    assert count_prices(db, sid) == len(days) - 1
+
+
+def test_official_zero_price_with_activity_still_fails_closed(db, calendar):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+    missing = days[-1]
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        first_trade=days[0].isoformat(),
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "TEST",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:-1])],
+    )
+
+    provider = FakeProvider({"TEST": []})
+
+    # Zero OHLC plus positive activity is contradictory, not "no trade".
+    fallback = FakeProvider({
+        "TEST": [
+            PriceBar(
+                missing,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+            )
+        ]
+    })
+    fallback.source_name = "BIST_THB"
+
+    with pytest.raises(
+        UpdatePipelineError,
+        match="fallback data failed structure checks",
+    ):
+        run_incremental_update(
+            db.conn,
+            calendar,
+            provider,
+            as_of=as_of,
+            required_return_window=3,
+            fallback_provider=fallback,
+        )
+
+    assert db.conn.execute(
+        "SELECT COUNT(*) FROM security_data_status"
+    ).fetchone()[0] == 0
+
+    assert count_prices(db, sid) == len(days) - 1

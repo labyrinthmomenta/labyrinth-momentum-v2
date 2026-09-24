@@ -36,6 +36,72 @@ class Database:
         if "provider_calls" not in columns:
             self.conn.execute("ALTER TABLE pipeline_runs ADD COLUMN provider_calls INTEGER DEFAULT 0")
 
+        self._migrate_security_data_status_check()
+
+    def _migrate_security_data_status_check(self) -> None:
+        """Allow newer data-status values in databases created by older V2 builds."""
+        row = self.conn.execute(
+            """SELECT sql
+               FROM sqlite_master
+               WHERE type='table' AND name='security_data_status'"""
+        ).fetchone()
+
+        if row is None:
+            return
+
+        table_sql = row["sql"] or ""
+        if "INSUFFICIENT_TRADING_DATA" in table_sql:
+            return
+
+        # SQLite cannot ALTER an existing CHECK constraint in place, so rebuild
+        # this small audit table while preserving all existing status history.
+        self.conn.execute(
+            "ALTER TABLE security_data_status RENAME TO security_data_status_legacy"
+        )
+
+        self.conn.execute(
+            """
+            CREATE TABLE security_data_status (
+                run_id INTEGER NOT NULL,
+                security_id INTEGER NOT NULL,
+                as_of_date TEXT NOT NULL,
+                provider TEXT NOT NULL,
+                status TEXT NOT NULL
+                    CHECK (
+                        status IN (
+                            'OK',
+                            'PROVIDER_UNAVAILABLE',
+                            'INSUFFICIENT_TRADING_DATA'
+                        )
+                    ),
+                message TEXT,
+                recorded_at TEXT NOT NULL,
+                PRIMARY KEY (run_id, security_id),
+                FOREIGN KEY (run_id) REFERENCES pipeline_runs(run_id),
+                FOREIGN KEY (security_id) REFERENCES securities(security_id)
+            )
+            """
+        )
+
+        self.conn.execute(
+            """
+            INSERT INTO security_data_status
+                (run_id, security_id, as_of_date, provider, status, message, recorded_at)
+            SELECT
+                run_id, security_id, as_of_date, provider, status, message, recorded_at
+            FROM security_data_status_legacy
+            """
+        )
+
+        self.conn.execute("DROP TABLE security_data_status_legacy")
+
+        self.conn.execute(
+            """
+            CREATE INDEX IF NOT EXISTS idx_security_data_status_security_date
+            ON security_data_status(security_id, as_of_date)
+            """
+        )
+
     def execute(self, sql: str, params: tuple = ()):
         cur = self.conn.execute(sql, params)
         self.conn.commit()

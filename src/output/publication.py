@@ -129,6 +129,7 @@ def build_publication_stage(
     screener: list[dict] = []
     data_available = 0
     provider_unavailable = 0
+    insufficient_trading_data = 0
 
     for row in rows:
         security_id = int(row["security_id"])
@@ -137,8 +138,15 @@ def build_publication_stage(
             ("OK", None),
         )
 
-        if data_status == "PROVIDER_UNAVAILABLE":
-            provider_unavailable += 1
+        if data_status in {
+            "PROVIDER_UNAVAILABLE",
+            "INSUFFICIENT_TRADING_DATA",
+        }:
+            if data_status == "PROVIDER_UNAVAILABLE":
+                provider_unavailable += 1
+            else:
+                insufficient_trading_data += 1
+
             screener.append(
                 {
                     "security_id": security_id,
@@ -146,7 +154,7 @@ def build_publication_stage(
                     "name": row["name"],
                     "sector": row["sector"],
                     "industry": row["industry"],
-                    "data_status": "PROVIDER_UNAVAILABLE",
+                    "data_status": data_status,
                     "data_status_message": status_message,
                     **null_snapshot,
                 }
@@ -161,7 +169,7 @@ def build_publication_stage(
                     "industry": row["industry"],
                     "first_trade_date": row["first_trade_date"],
                 },
-                "data_status": "PROVIDER_UNAVAILABLE",
+                "data_status": data_status,
                 "data_status_message": status_message,
                 "snapshot": dict(null_snapshot),
                 "daily": [],
@@ -236,9 +244,11 @@ def build_publication_stage(
         "securities_published": len(screener),
         "data_available": data_available,
         "provider_unavailable": provider_unavailable,
+        "insufficient_trading_data": insufficient_trading_data,
         "data_status_counts": {
             "OK": data_available,
             "PROVIDER_UNAVAILABLE": provider_unavailable,
+            "INSUFFICIENT_TRADING_DATA": insufficient_trading_data,
         },
         "required_return_window": required_return_window,
         "files": {

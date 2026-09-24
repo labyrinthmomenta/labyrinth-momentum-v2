@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS security_data_status (
     as_of_date TEXT NOT NULL,
     provider TEXT NOT NULL,
     status TEXT NOT NULL
-        CHECK (status IN ('OK', 'PROVIDER_UNAVAILABLE')),
+        CHECK (status IN ('OK', 'PROVIDER_UNAVAILABLE', 'INSUFFICIENT_TRADING_DATA')),
     message TEXT,
     recorded_at TEXT NOT NULL,
     PRIMARY KEY (run_id, security_id),

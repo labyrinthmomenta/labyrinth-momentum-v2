@@ -71,6 +71,17 @@ def _merge_bars(existing: Iterable[PriceBar], incoming: Iterable[PriceBar]) -> l
     return [merged[key] for key in sorted(merged)]
 
 
+def _is_official_no_trade_bar(bar: PriceBar) -> bool:
+    """Return True only for an explicit zero-price / zero-activity THB row."""
+    return (
+        bar.open == 0
+        and bar.high == 0
+        and bar.low == 0
+        and bar.close == 0
+        and bar.volume == 0
+    )
+
+
 def _contiguous_requests(missing_dates: list[date], periods, calendar: BISTTradingCalendar) -> list[FetchRequest]:
     """Group missing trading dates by ticker and adjacent market sessions.
 
@@ -255,6 +266,7 @@ def run_incremental_update(
     fetched_total = 0
     provider_calls = 0
     unavailable: dict[int, str] = {}
+    insufficient: dict[int, str] = {}
 
     if max_provider_unavailable < 0:
         raise ValueError("max_provider_unavailable must be >= 0")
@@ -382,6 +394,29 @@ def run_incremental_update(
                 fallback_bars = _merge_bars([], fallback_bars)
                 fetched_total += len(fallback_bars)
 
+                # BIST THB can explicitly contain a listed security with
+                # OHLC=0 and traded quantity=0 when no price was formed in
+                # that session. This is not a usable PriceBar and must never
+                # be written to canonical daily_prices. It is also distinct
+                # from malformed data: only the exact all-zero/no-activity
+                # representation from the official fallback is quarantined.
+                if fallback_provider.source_name == "BIST_THB":
+                    no_trade_days = [
+                        bar.date
+                        for bar in fallback_bars
+                        if _is_official_no_trade_bar(bar)
+                    ]
+                    if no_trade_days:
+                        insufficient[plan.security.security_id] = (
+                            "official BIST THB reports no trading activity for "
+                            "required session(s): "
+                            + ", ".join(
+                                day.isoformat()
+                                for day in no_trade_days
+                            )
+                        )
+                        continue
+
                 fallback_issues = validate_ohlcv_structure(fallback_bars)
                 fallback_errors = [
                     issue for issue in fallback_issues
@@ -477,7 +512,19 @@ def run_incremental_update(
             recorded_at = datetime.now().astimezone().isoformat()
             for security in selected:
                 message = unavailable.get(security.security_id)
-                data_status = "PROVIDER_UNAVAILABLE" if message is not None else "OK"
+                status_provider = provider.source_name
+
+                if message is not None:
+                    data_status = "PROVIDER_UNAVAILABLE"
+                else:
+                    message = insufficient.get(security.security_id)
+                    if message is not None:
+                        data_status = "INSUFFICIENT_TRADING_DATA"
+                        if fallback_provider is not None:
+                            status_provider = fallback_provider.source_name
+                    else:
+                        data_status = "OK"
+
                 conn.execute(
                     """INSERT INTO security_data_status
                        (run_id,security_id,as_of_date,provider,status,message,recorded_at)
@@ -486,7 +533,7 @@ def run_incremental_update(
                         run_id,
                         security.security_id,
                         as_of.isoformat(),
-                        provider.source_name,
+                        status_provider,
                         data_status,
                         message,
                         recorded_at,
