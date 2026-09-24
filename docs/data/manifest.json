@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-24T19:08:02.356175+00:00",
+  "as_of": "2026-09-24",
+  "status": "PASS",
+  "dry_run": false,
+  "securities_expected": 631,
+  "securities_published": 631,
+  "data_available": 628,
+  "provider_unavailable": 0,
+  "insufficient_trading_data": 3,
+  "data_status_counts": {
+    "OK": 628,
+    "PROVIDER_UNAVAILABLE": 0,
+    "INSUFFICIENT_TRADING_DATA": 3
+  },
+  "required_return_window": 252,
+  "files": {
+    "screener": "screener.json",
+    "details": 631
+  }
+}
