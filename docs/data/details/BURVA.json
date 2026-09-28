@@ -3,24 +3,29 @@
     "security_id": 552,
     "ticker": "BURVA",
     "name": "BURÇELİK VANA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-05-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 2.688461538461538,
-    "momentum_126": -0.30507246376811525,
-    "momentum_63": -0.44470179502026597,
-    "momentum_21": -0.373202614379085,
+    "momentum_12_1": 4.95676533955722,
+    "fip_12_1": 0.012987012987012988,
+    "momentum_252": 2.456765370099234,
+    "momentum_126": -0.4311594202898553,
+    "momentum_63": -0.5452869931542917,
+    "momentum_21": -0.41969086021505386,
     "fip_252": 0.047619047619047616,
-    "fip_126": -0.23809523809523808,
-    "fip_63": -0.3492063492063492,
+    "fip_126": -0.25396825396825395,
+    "fip_63": -0.38095238095238093,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 13.114900747961267,
-    "delta_momentum_21_63": 0.07149918064118099,
-    "delta_fip_21_63": -0.07936507936507936,
+    "atr14_percent": 14.314953067012556,
+    "delta_momentum_21_63": 0.12559613293923788,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.01489361702127634,
     "completed_month_fip": 0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 130.0,
-      "volume": 267657.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 124.9000015258789,
       "volume": 117270.0,
-      "return": -0.03923075749323923
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 479.5,
       "volume": 26714.0,
       "return": 0.04295812941816202
+    },
+    {
+      "date": "2026-09-28",
+      "close": 431.75,
+      "volume": 17963.0,
+      "return": -0.09958289885297189
     }
   ],
   "data_status": "OK",

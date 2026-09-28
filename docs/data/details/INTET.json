@@ -3,13 +3,18 @@
     "security_id": 131,
     "ticker": "INTET",
     "name": "İNTETRA TEKNOLOJİ VE BİLİŞİM HİZMETLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2026-09-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
-    "observations": 18,
+    "as_of": "2026-09-28",
+    "observations": 19,
+    "momentum_12_1": null,
+    "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
@@ -18,7 +23,7 @@
     "fip_126": null,
     "fip_63": null,
     "fip_21": null,
-    "atr14_percent": 11.499506282847474,
+    "atr14_percent": 11.610247161305914,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-08",
@@ -140,6 +145,12 @@
       "close": 51.04999923706055,
       "volume": 4365275.0,
       "return": 0.0049212599164296655
+    },
+    {
+      "date": "2026-09-28",
+      "close": 49.400001525878906,
+      "volume": 10319324.0,
+      "return": -0.03232120932107285
     }
   ],
   "data_status": "OK",

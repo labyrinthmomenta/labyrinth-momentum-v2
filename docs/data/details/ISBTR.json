@@ -3,24 +3,29 @@
     "security_id": 590,
     "ticker": "ISBTR",
     "name": "TÜRKİYE İŞ BANKASI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "BANKALAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.21499107939339768,
-    "momentum_126": 0.07316463414634211,
-    "momentum_63": -0.09091425619834714,
-    "momentum_21": -0.15385502954312746,
-    "fip_252": -0.1865079365079365,
+    "momentum_12_1": -0.12964492155243634,
+    "fip_12_1": -0.16883116883116883,
+    "momentum_252": -0.3261767134599505,
+    "momentum_126": 0.019999999999999796,
+    "momentum_63": -0.2336589030803906,
+    "momentum_21": -0.22580645161290291,
+    "fip_252": -0.19444444444444445,
     "fip_126": 0.1746031746031746,
-    "fip_63": -0.20634920634920634,
-    "fip_21": -0.38095238095238093,
-    "atr14_percent": 2.1777800415326043,
-    "delta_momentum_21_63": -0.06294077334478032,
-    "delta_fip_21_63": -0.1746031746031746,
+    "fip_63": -0.23809523809523808,
+    "fip_21": -0.47619047619047616,
+    "atr14_percent": 2.7409980741377957,
+    "delta_momentum_21_63": 0.007852451467487698,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1089843729173221,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 560500.0,
-      "volume": 15.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 605500.0,
       "volume": 8.0,
-      "return": 0.08028545941123988
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 439997.5,
       "volume": 2.0,
       "return": -0.014535681290069657
+    },
+    {
+      "date": "2026-09-28",
+      "close": 408000.0,
+      "volume": 6.0,
+      "return": -0.07272200410229601
     }
   ],
   "data_status": "OK",

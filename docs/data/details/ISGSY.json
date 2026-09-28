@@ -3,24 +3,29 @@
     "security_id": 415,
     "ticker": "ISGSY",
     "name": "İŞ GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-10-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.06483603356911538,
-    "momentum_126": -0.41604518189746176,
-    "momentum_63": -0.35126875470216423,
-    "momentum_21": -0.2017964482200557,
-    "fip_252": -0.11904761904761904,
+    "momentum_12_1": 0.05713089378827085,
+    "fip_12_1": 0.09956709956709957,
+    "momentum_252": -0.18019718535747298,
+    "momentum_126": -0.41933256567209687,
+    "momentum_63": -0.39027581890241536,
+    "momentum_21": -0.22450207494671637,
+    "fip_252": -0.12698412698412698,
     "fip_126": -0.2698412698412698,
-    "fip_63": -0.3333333333333333,
+    "fip_63": -0.36507936507936506,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.26004698978479,
-    "delta_momentum_21_63": 0.14947230648210852,
-    "delta_fip_21_63": -0.09523809523809523,
+    "atr14_percent": 5.5114704080741985,
+    "delta_momentum_21_63": 0.165773743955699,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.008636724546836838,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 14.25418472290039,
-      "volume": 3206680.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 15.674501419067383,
       "volume": 10951359.0,
-      "return": 0.09964208572975419
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 13.329999923706055,
       "volume": 3108236.0,
       "return": -0.006706419677811604
+    },
+    {
+      "date": "2026-09-28",
+      "close": 12.850000381469727,
+      "volume": 4024004.0,
+      "return": -0.03600896811579857
     }
   ],
   "data_status": "OK",

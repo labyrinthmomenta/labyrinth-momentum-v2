@@ -3,24 +3,29 @@
     "security_id": 273,
     "ticker": "YYLGD",
     "name": "YAYLA AGRO GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-05-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.20402565724125876,
-    "momentum_126": -0.21195653629287958,
-    "momentum_63": -0.2126697141091587,
-    "momentum_21": -0.1462217696246576,
+    "momentum_12_1": -0.05974269902275542,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.28033089693506785,
+    "momentum_126": -0.28558395105353673,
+    "momentum_63": -0.28688522311984643,
+    "momentum_21": -0.23460407878040068,
     "fip_252": -0.16666666666666666,
     "fip_126": -0.23015873015873015,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 3.7809230171837904,
-    "delta_momentum_21_63": 0.06644794448450109,
-    "delta_fip_21_63": -0.12698412698412698,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 4.694602967806377,
+    "delta_momentum_21_63": 0.05228114433944575,
+    "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.03790982345104643,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10.930000305175781,
-      "volume": 7055487.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.880000114440918,
       "volume": 6493140.0,
-      "return": -0.00457458273914102
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.699999809265137,
       "volume": 3328884.0,
       "return": 0.017543814641410194
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.829999923706055,
+      "volume": 2932973.0,
+      "return": -0.09999998903822604
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 603,
     "ticker": "EKIZ",
     "name": "EKİZ KİMYA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-07-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5261999893188487,
-    "momentum_126": -0.5069718853234515,
-    "momentum_63": -0.43561640511641164,
-    "momentum_21": -0.21621173746679534,
+    "momentum_12_1": -0.37437438393022027,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": -0.5579579662371429,
+    "momentum_126": -0.5419087225267611,
+    "momentum_63": -0.4676310853276303,
+    "momentum_21": -0.29344000244140656,
     "fip_252": -0.13095238095238096,
-    "fip_126": -0.1349206349206349,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.1746031746031746,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 5.757245004847641,
-    "delta_momentum_21_63": 0.2194046676496163,
-    "delta_fip_21_63": 0.2222222222222222,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 6.463699518818719,
+    "delta_momentum_21_63": 0.17419108288622376,
+    "delta_fip_21_63": 0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11674004590856679,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 100.0,
-      "volume": 24960.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 99.9000015258789,
       "volume": 43185.0,
-      "return": -0.0009999847412109908
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 47.380001068115234,
       "volume": 13144.0,
       "return": 0.018924754153015755
+    },
+    {
+      "date": "2026-09-28",
+      "close": 44.15999984741211,
+      "volume": 18755.0,
+      "return": -0.06796118928055606
     }
   ],
   "data_status": "OK",

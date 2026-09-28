@@ -3,24 +3,29 @@
     "security_id": 397,
     "ticker": "HATEK",
     "name": "HATEKS HATAY TEKSTİL İŞLETMELERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-01-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.48281990661900875,
-    "momentum_126": -0.4264126551201066,
-    "momentum_63": -0.45437502861022927,
-    "momentum_21": -0.32220501050707717,
+    "momentum_12_1": -0.20973557086121408,
+    "fip_12_1": 0.0,
+    "momentum_252": -0.5162259323313033,
+    "momentum_126": -0.4651162731751576,
+    "momentum_63": -0.48726112811897837,
+    "momentum_21": -0.38783266735679345,
     "fip_252": -0.04365079365079365,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.14285714285714285,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 8.322782647606509,
-    "delta_momentum_21_63": 0.1321700181031521,
-    "delta_fip_21_63": -0.2857142857142857,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 9.170829772132452,
+    "delta_momentum_21_63": 0.09942846076218492,
+    "delta_fip_21_63": -0.380952380952381,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.02566038887455746,
     "completed_month_fip": 0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.8799991607666,
-      "volume": 1781644.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 16.639999389648438,
       "volume": 1707251.0,
-      "return": -0.014217996626207485
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.729999542236328,
       "volume": 2619823.0,
       "return": -0.02566969809502495
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.050000190734863,
+      "volume": 1591983.0,
+      "return": -0.07789225511543063
     }
   ],
   "data_status": "OK",

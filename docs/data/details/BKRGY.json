@@ -3,13 +3,18 @@
     "security_id": 40,
     "ticker": "BKRGY",
     "name": "BAKIRCI GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2026-09-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
-    "observations": 17,
+    "as_of": "2026-09-28",
+    "observations": 18,
+    "momentum_12_1": null,
+    "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
@@ -18,7 +23,7 @@
     "fip_126": null,
     "fip_63": null,
     "fip_21": null,
-    "atr14_percent": 10.772853319782314,
+    "atr14_percent": 11.29684484679061,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-08",
@@ -134,6 +139,12 @@
       "close": 5.849999904632568,
       "volume": 11294362.0,
       "return": 0.008620640043698113
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.489999771118164,
+      "volume": 11977948.0,
+      "return": -0.06153848536464468
     }
   ],
   "data_status": "OK",

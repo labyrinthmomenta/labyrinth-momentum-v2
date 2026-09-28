@@ -3,23 +3,28 @@
     "security_id": 488,
     "ticker": "PINSU",
     "name": "PINAR SU VE İÇECEK SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1987-08-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.24006619510313432,
-    "momentum_126": -0.21201711538477275,
-    "momentum_63": -0.18181817409111756,
-    "momentum_21": -0.1130434814658241,
+    "momentum_12_1": -0.13361338234311282,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.26134451734220787,
+    "momentum_126": -0.24807525428800603,
+    "momentum_63": -0.19872381514227877,
+    "momentum_21": -0.14742971832198826,
     "fip_252": -0.1626984126984127,
-    "fip_126": -0.1984126984126984,
+    "fip_126": -0.21428571428571427,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.38095238095238093,
-    "atr14_percent": 4.327894880161999,
-    "delta_momentum_21_63": 0.06877469262529345,
+    "atr14_percent": 4.603372299429036,
+    "delta_momentum_21_63": 0.05129409682029051,
     "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.023923445412730837,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 12.079999923706055,
-      "volume": 22495076.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.899999618530273,
       "volume": 4885672.0,
-      "return": -0.014900687608660035
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 9.180000305175781,
       "volume": 1806935.0,
       "return": -0.003257299983380646
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.789999961853027,
+      "volume": 1871413.0,
+      "return": -0.04248369611740288
     }
   ],
   "data_status": "OK",

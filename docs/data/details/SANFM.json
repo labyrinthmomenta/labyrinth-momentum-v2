@@ -3,24 +3,29 @@
     "security_id": 498,
     "ticker": "SANFM",
     "name": "SANİFOAM ENDÜSTRİ VE TÜKETİM ÜRÜNLERİ SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-04-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.36243383490169234,
-    "momentum_126": -0.32303367287443474,
-    "momentum_63": -0.44597697961690996,
-    "momentum_21": -0.5681003371358389,
+    "momentum_12_1": 0.5594594342069434,
+    "fip_12_1": 0.004329004329004329,
+    "momentum_252": -0.4135135004518674,
+    "momentum_126": -0.39638385006276833,
+    "momentum_63": -0.49884523913879386,
+    "momentum_21": -0.6239167966261414,
     "fip_252": -0.051587301587301584,
-    "fip_126": 0.03968253968253968,
+    "fip_126": 0.023809523809523808,
     "fip_63": -0.07936507936507936,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 10.999689236084397,
-    "delta_momentum_21_63": -0.12212335751892889,
-    "delta_fip_21_63": -0.3968253968253968,
+    "fip_21": -0.5714285714285714,
+    "atr14_percent": 12.133649241654279,
+    "delta_momentum_21_63": -0.12507155748734755,
+    "delta_fip_21_63": -0.49206349206349204,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.13304255800201403,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.559999942779541,
-      "volume": 10285987.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.400000095367432,
       "volume": 65443995.0,
-      "return": -0.021164001140624777
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.820000171661377,
       "volume": 17539734.0,
       "return": 0.023354592913693795
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.340000152587891,
+      "volume": 3754225.0,
+      "return": -0.09958506265115707
     }
   ],
   "data_status": "OK",

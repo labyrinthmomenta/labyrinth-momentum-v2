@@ -3,23 +3,28 @@
     "security_id": 533,
     "ticker": "VRGYO",
     "name": "VERA KONSEPT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-10-27"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6294117779055263,
-    "momentum_126": -0.4324324440427839,
-    "momentum_63": -0.3913043328028616,
-    "momentum_21": -0.2960893758014994,
-    "fip_252": -0.14682539682539683,
-    "fip_126": -0.10317460317460317,
+    "momentum_12_1": -0.4507462430568602,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": -0.5880596911888611,
+    "momentum_126": -0.3783783885374358,
+    "momentum_63": -0.3365384394953229,
+    "momentum_21": -0.25000001619691425,
+    "fip_252": -0.1388888888888889,
+    "fip_126": -0.09523809523809523,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 6.555182908300029,
-    "delta_momentum_21_63": 0.09521495700136218,
+    "atr14_percent": 6.282292659973708,
+    "delta_momentum_21_63": 0.08653842329840866,
     "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": 2.220446049250313e-16,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.4000000953674316,
-      "volume": 39326233.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.3499999046325684,
       "volume": 28853975.0,
-      "return": -0.014705938038939936
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.2599999904632568,
       "volume": 31541603.0,
       "return": 0.09565218833533962
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.3799999952316284,
+      "volume": 41860419.0,
+      "return": 0.0952380997433595
     }
   ],
   "data_status": "OK",

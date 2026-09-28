@@ -3,24 +3,29 @@
     "security_id": 71,
     "ticker": "DSTKF",
     "name": "DESTEK FİNANS FAKTORİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-02-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.7252020573107993,
-    "momentum_126": -0.3664328116567733,
-    "momentum_63": -0.6692957746478871,
-    "momentum_21": -0.4622079706825467,
-    "fip_252": -0.2976190476190476,
+    "momentum_12_1": 1.6252505010020033,
+    "fip_12_1": -0.3116883116883117,
+    "momentum_252": 0.41215764863059423,
+    "momentum_126": -0.42803030303030365,
+    "momentum_63": -0.7082125603864735,
+    "momentum_21": -0.46208651399491085,
+    "fip_252": -0.2896825396825397,
     "fip_126": 0.29365079365079366,
-    "fip_63": 0.12698412698412698,
+    "fip_63": 0.09523809523809523,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 14.477871887216157,
-    "delta_momentum_21_63": 0.20708780396534043,
-    "delta_fip_21_63": -0.07936507936507936,
+    "atr14_percent": 15.722481468222796,
+    "delta_momentum_21_63": 0.24612604639156266,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.22196124486200808,
     "completed_month_fip": -0.6190476190476191,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 680.5,
-      "volume": 1678000.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 748.5,
       "volume": 3067309.0,
-      "return": 0.09992652461425422
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1174.0,
       "volume": 282.0,
       "return": -0.09969325153374231
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1057.0,
+      "volume": 755.0,
+      "return": -0.09965928449744466
     }
   ],
   "data_status": "OK",

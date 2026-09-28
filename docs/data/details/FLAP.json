@@ -3,24 +3,29 @@
     "security_id": 561,
     "ticker": "FLAP",
     "name": "FLAP KONGRE TOPLANTI HİZMETLERİ OTOMOTİV VE TURİZM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İDARİ VE DESTEK HİZMET FAALİYETLERİ",
+    "industry": "BÜRO YÖNETİMİ, BÜRO DESTEĞİ VE DİĞER ŞİRKET DESTEK FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-06-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.035653657539430395,
-    "momentum_126": 0.19140625800355426,
-    "momentum_63": 0.0806022896799683,
-    "momentum_21": 0.10909089175137643,
-    "fip_252": 0.13095238095238096,
+    "momentum_12_1": -0.050921853048588095,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": 0.08604034352034429,
+    "momentum_126": 0.1792183179657525,
+    "momentum_63": 0.12659384346746916,
+    "momentum_21": 0.14431076830593637,
+    "fip_252": 0.12301587301587301,
     "fip_126": 0.07142857142857142,
-    "fip_63": 0.12698412698412698,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 6.584325358605354,
-    "delta_momentum_21_63": 0.02848860207140813,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_63": 0.09523809523809523,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 6.642071496095046,
+    "delta_momentum_21_63": 0.017716924838467207,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.11322646956632121,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.779999732971191,
-      "volume": 6319100.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.390000343322754,
       "volume": 4235882.0,
-      "return": -0.03310690988870424
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 12.199999809265137,
       "volume": 613680.0,
       "return": 0.016666650772094727
+    },
+    {
+      "date": "2026-09-28",
+      "close": 12.369999885559082,
+      "volume": 1272313.0,
+      "return": 0.013934432700961175
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 446,
     "ticker": "MARMR",
     "name": "MARMARA HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-09-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.46180559349832573,
-    "momentum_126": -0.345991549720839,
-    "momentum_63": -0.3775100616948768,
-    "momentum_21": -0.34322032999355345,
-    "fip_252": -0.15873015873015872,
+    "momentum_12_1": -0.2594937181610292,
+    "fip_12_1": -0.1341991341991342,
+    "momentum_252": -0.5443037917380569,
+    "momentum_126": -0.38461533759002253,
+    "momentum_63": -0.39748954225330724,
+    "momentum_21": -0.3846153375900222,
+    "fip_252": -0.16666666666666666,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 6.663749779542163,
-    "delta_momentum_21_63": 0.03428973170132332,
+    "atr14_percent": 7.354888254512244,
+    "delta_momentum_21_63": 0.012874204663285038,
     "delta_fip_21_63": -0.3015873015873016,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.022624412422276752,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.880000114440918,
-      "volume": 4588355.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.1600000858306885,
       "volume": 375604398.0,
-      "return": 0.0972222084248513
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.5499999523162842,
       "volume": 38678379.0,
       "return": 0.01307188320294328
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.440000057220459,
+      "volume": 47387648.0,
+      "return": -0.07096767643859847
     }
   ],
   "data_status": "OK",

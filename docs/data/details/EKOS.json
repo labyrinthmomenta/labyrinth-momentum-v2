@@ -3,23 +3,28 @@
     "security_id": 367,
     "ticker": "EKOS",
     "name": "EKOS TEKNOLOJİ VE ELEKTRİK A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-11-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4009584883561852,
-    "momentum_126": -0.3131868179853191,
-    "momentum_63": -0.47552448251998347,
-    "momentum_21": -0.3303571314531927,
+    "momentum_12_1": -0.10593897999863311,
+    "fip_12_1": -0.12121212121212122,
+    "momentum_252": -0.457463867721852,
+    "momentum_126": -0.39317773603716877,
+    "momentum_63": -0.5129682872373573,
+    "momentum_21": -0.3931777360371683,
     "fip_252": -0.15873015873015872,
-    "fip_126": -0.19047619047619047,
+    "fip_126": -0.20634920634920634,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 6.113982787077752,
-    "delta_momentum_21_63": 0.1451673510667908,
+    "atr14_percent": 7.080655925669481,
+    "delta_momentum_21_63": 0.119790551200189,
     "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.020370394735506503,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.260000228881836,
-      "volume": 14587180.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.230000019073486,
       "volume": 12623568.0,
-      "return": -0.004792365608860094
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.75,
       "volume": 8667108.0,
       "return": 0.0273972334300725
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.380000114440918,
+      "volume": 11618217.0,
+      "return": -0.09866663614908855
     }
   ],
   "data_status": "OK",

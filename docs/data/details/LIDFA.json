@@ -3,24 +3,29 @@
     "security_id": 437,
     "ticker": "LIDFA",
     "name": "LİDER FAKTORİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2014-06-19"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.19107934300665108,
-    "momentum_126": -0.33489586459215526,
-    "momentum_63": -0.20187506955139822,
-    "momentum_21": -0.1229394140039316,
+    "momentum_12_1": 0.37853470960815083,
+    "fip_12_1": 0.0,
+    "momentum_252": 0.162281905231775,
+    "momentum_126": -0.34870673740417035,
+    "momentum_63": -0.20866762106542525,
+    "momentum_21": -0.15687149759025365,
     "fip_252": 0.027777777777777776,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.15873015873015872,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.337515664459938,
-    "delta_momentum_21_63": 0.07893565554746662,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.445031848769344,
+    "delta_momentum_21_63": 0.051796123475171596,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03610112917931385,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.3265279531478882,
-      "volume": 20303453.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.316375970840454,
       "volume": 13802472.0,
-      "return": -0.007653048157291509
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.5800000429153442,
       "volume": 7406559.0,
       "return": -0.006289302046118661
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.5299999713897705,
+      "volume": 8980423.0,
+      "return": -0.031645614030057834
     }
   ],
   "data_status": "OK",

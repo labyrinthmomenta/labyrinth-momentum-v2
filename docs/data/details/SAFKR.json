@@ -3,23 +3,28 @@
     "security_id": 218,
     "ticker": "SAFKR",
     "name": "SAFKAR EGE SOĞUTMACILIK KLİMA SOĞUK HAVA TESİSLERİ İHRACAT İTHALAT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2018-01-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.42489711944250463,
-    "momentum_126": -0.562597787997897,
-    "momentum_63": -0.5074889898934056,
-    "momentum_21": -0.38907099610504814,
-    "fip_252": -0.027777777777777776,
-    "fip_126": -0.06349206349206349,
+    "momentum_12_1": -0.10539214013402909,
+    "fip_12_1": -0.008658008658008658,
+    "momentum_252": -0.4612745109497244,
+    "momentum_126": -0.5779570128753356,
+    "momentum_63": -0.5045085834127063,
+    "momentum_21": -0.3978082317195527,
+    "fip_252": -0.03571428571428571,
+    "fip_126": -0.07936507936507936,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.163356722125861,
-    "delta_momentum_21_63": 0.11841799378835749,
+    "atr14_percent": 7.208646486587739,
+    "delta_momentum_21_63": 0.10670035169315362,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.07995896707540917,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 19.440000534057617,
-      "volume": 7723910.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 20.399999618530273,
       "volume": 14430711.0,
-      "return": 0.04938266759770915
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 11.180000305175781,
       "volume": 3220304.0,
       "return": 0.022872826442796645
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.989999771118164,
+      "volume": 2469527.0,
+      "return": -0.01699468057882403
     }
   ],
   "data_status": "OK",

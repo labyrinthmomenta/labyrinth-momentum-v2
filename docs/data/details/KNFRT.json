@@ -3,24 +3,29 @@
     "security_id": 427,
     "ticker": "KNFRT",
     "name": "KONFRUT TARIM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TARIM, ORMANCILIK VE BALIKÇILIK",
+    "industry": "TARIM VE HAYVANCILIK AVCILIK VE İLGİLİ HİZMET FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1996-06-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5451832697062617,
-    "momentum_126": -0.012037047420835001,
-    "momentum_63": -0.17286818668064396,
-    "momentum_21": -0.18237548503107726,
+    "momentum_12_1": -0.44102563517359605,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.5568376045037557,
+    "momentum_126": -0.02811623135799024,
+    "momentum_63": -0.18538882494434517,
+    "momentum_21": -0.20718654846743545,
     "fip_252": -0.12301587301587301,
     "fip_126": -0.07142857142857142,
     "fip_63": -0.06349206349206349,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 6.767767025531348,
-    "delta_momentum_21_63": -0.00950729835043329,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 6.844999326302865,
+    "delta_momentum_21_63": -0.021797723523090284,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.19887956179778343,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 23.459999084472656,
-      "volume": 1017236.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 23.399999618530273,
       "volume": 1669426.0,
-      "return": -0.002557522092236364
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.670000076293945,
       "volume": 1934750.0,
       "return": 0.024976006982984744
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.369999885559082,
+      "volume": 2648304.0,
+      "return": -0.02811623135799113
     }
   ],
   "data_status": "OK",

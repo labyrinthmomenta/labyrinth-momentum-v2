@@ -3,24 +3,29 @@
     "security_id": 521,
     "ticker": "TUCLK",
     "name": "TUĞÇELİK ALÜMİNYUM VE METAL MAMÜLLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2014-06-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5765503861641816,
-    "momentum_126": 0.023419181517388754,
-    "momentum_63": 0.08168315020346983,
-    "momentum_21": 0.09798991573281057,
+    "momentum_12_1": -0.6095423514951794,
+    "fip_12_1": -0.12987012987012986,
+    "momentum_252": -0.6017526805954496,
+    "momentum_126": -0.028503535503980437,
+    "momentum_63": 0.019950104523650092,
+    "momentum_21": 0.019950104523650092,
     "fip_252": -0.1349206349206349,
-    "fip_126": 0.10317460317460317,
+    "fip_126": -0.10317460317460317,
     "fip_63": 0.09523809523809523,
-    "fip_21": 0.09523809523809523,
-    "atr14_percent": 5.966679526747681,
-    "delta_momentum_21_63": 0.01630676552934074,
-    "delta_fip_21_63": 0.0,
+    "fip_21": 0.19047619047619047,
+    "atr14_percent": 6.565962782235701,
+    "delta_momentum_21_63": 0.0,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.012987062850235098,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10.319999694824219,
-      "volume": 9255844.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.270000457763672,
       "volume": 13681663.0,
-      "return": -0.004844887455338065
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.369999885559082,
       "volume": 22500919.0,
       "return": 0.09798991573281057
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.090000152587891,
+      "volume": 16276822.0,
+      "return": -0.0640731671175706
     }
   ],
   "data_status": "OK",

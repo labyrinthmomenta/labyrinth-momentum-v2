@@ -3,24 +3,29 @@
     "security_id": 58,
     "ticker": "BFREN",
     "name": "BOSCH FREN SİSTEMLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4168420892012741,
-    "momentum_126": -0.20743919432722246,
-    "momentum_63": -0.1834929584116467,
-    "momentum_21": -0.15095783102101312,
-    "fip_252": -0.1746031746031746,
-    "fip_126": -0.14285714285714285,
+    "momentum_12_1": -0.32889343213086675,
+    "fip_12_1": -0.16883116883116883,
+    "momentum_252": -0.447233590098421,
+    "momentum_126": -0.22818312467467206,
+    "momentum_63": -0.20074072943793397,
+    "momentum_21": -0.17633586621466502,
+    "fip_252": -0.18253968253968253,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.461364949376727,
-    "delta_momentum_21_63": 0.03253512739063358,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 3.618264554629153,
+    "delta_momentum_21_63": 0.024404863223268958,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.02728733200253708,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 190.0,
-      "volume": 468985.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 195.1999969482422,
       "volume": 477524.0,
-      "return": 0.02736840499074833
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 110.80000305175781,
       "volume": 118307.0,
       "return": 0.0036232021770863376
+    },
+    {
+      "date": "2026-09-28",
+      "close": 107.9000015258789,
+      "volume": 122452.0,
+      "return": -0.026173298249136612
     }
   ],
   "data_status": "OK",

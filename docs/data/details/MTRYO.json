@@ -3,24 +3,29 @@
     "security_id": 572,
     "ticker": "MTRYO",
     "name": "METRO YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1999-01-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.013317149349785229,
-    "momentum_126": -0.11801895812133534,
-    "momentum_63": -0.21555765457255072,
-    "momentum_21": -0.09219092807506446,
-    "fip_252": 0.08333333333333333,
-    "fip_126": -0.1111111111111111,
-    "fip_63": -0.23809523809523808,
+    "momentum_12_1": 0.09506617592800137,
+    "fip_12_1": 0.06926406926406926,
+    "momentum_252": -0.05174491979094287,
+    "momentum_126": -0.1740041775733575,
+    "momentum_63": -0.2723914893856838,
+    "momentum_21": -0.13406595778974784,
+    "fip_252": -0.09126984126984126,
+    "fip_126": -0.12698412698412698,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.8058740081197655,
-    "delta_momentum_21_63": 0.12336672649748626,
-    "delta_fip_21_63": -0.09523809523809523,
+    "atr14_percent": 7.156880961676859,
+    "delta_momentum_21_63": 0.13832553159593597,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.010022183017969422,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.260000228881836,
-      "volume": 372635.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8.3100004196167,
       "volume": 290409.0,
-      "return": 0.006053291688786322
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.369999885559082,
       "volume": 81758.0,
       "return": -0.010638315860764913
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.880000114440918,
+      "volume": 161502.0,
+      "return": -0.05854238683605839
     }
   ],
   "data_status": "OK",

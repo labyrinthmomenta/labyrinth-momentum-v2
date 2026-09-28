@@ -3,24 +3,29 @@
     "security_id": 233,
     "ticker": "TNZTP",
     "name": "TAPDİ OKSİJEN ÖZEL SAĞLIK VE EĞİTİM HİZMETLERİ SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "EĞİTİM SAĞLIK SPOR VE EĞLENCE HİZMETLERİ",
+    "industry": "İNSAN SAĞLIĞI VE SOSYAL HİZMETLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-01-11"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.11755603002429216,
-    "momentum_126": 0.3124431888165966,
-    "momentum_63": 0.12102400499550625,
-    "momentum_21": -0.04557467096504608,
+    "momentum_12_1": 0.29136396744514603,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": 0.05004034450194483,
+    "momentum_126": 0.1816530389121631,
+    "momentum_63": 0.03665338893672465,
+    "momentum_21": -0.18687498569488525,
     "fip_252": -0.01984126984126984,
-    "fip_126": -0.11904761904761904,
+    "fip_126": -0.1111111111111111,
     "fip_63": -0.047619047619047616,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 6.090704330274235,
-    "delta_momentum_21_63": -0.16659867596055233,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 7.072245130902798,
+    "delta_momentum_21_63": -0.2235283746316099,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1299435150011088,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 25.860000610351562,
-      "volume": 1813266.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 24.780000686645508,
       "volume": 2045531.0,
-      "return": -0.041763337131312306
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 28.899999618530273,
       "volume": 2849047.0,
       "return": 0.0532069626842957
+    },
+    {
+      "date": "2026-09-28",
+      "close": 26.020000457763672,
+      "volume": 3482923.0,
+      "return": -0.09965395151493317
     }
   ],
   "data_status": "OK",

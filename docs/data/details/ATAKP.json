@@ -3,23 +3,28 @@
     "security_id": 34,
     "ticker": "ATAKP",
     "name": "ATAKEY PATATES GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-07-27"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3393665158371032,
-    "momentum_126": -0.3000958977558751,
-    "momentum_63": -0.3100189234939046,
-    "momentum_21": -0.20131292361815933,
-    "fip_252": -0.12698412698412698,
+    "momentum_12_1": -0.19290781513761202,
+    "fip_12_1": -0.09090909090909091,
+    "momentum_252": -0.38687941674633186,
+    "momentum_126": -0.3304936919754281,
+    "momentum_63": -0.34569531070114634,
+    "momentum_21": -0.2403338865705814,
+    "fip_252": -0.1349206349206349,
     "fip_126": -0.18253968253968253,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 4.15063813057845,
-    "delta_momentum_21_63": 0.10870599987574525,
+    "atr14_percent": 4.642397655161876,
+    "delta_momentum_21_63": 0.10536142413056493,
     "delta_fip_21_63": -0.3015873015873016,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11979166189065305,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 55.25,
-      "volume": 1261581.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 56.400001525878906,
       "volume": 1253088.0,
-      "return": 0.020814507255726866
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 36.5,
       "volume": 480812.0,
       "return": 0.03399435662535666
+    },
+    {
+      "date": "2026-09-28",
+      "close": 34.58000183105469,
+      "volume": 364400.0,
+      "return": -0.05260268956014558
     }
   ],
   "data_status": "OK",

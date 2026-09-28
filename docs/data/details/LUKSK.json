@@ -3,23 +3,28 @@
     "security_id": 440,
     "ticker": "LUKSK",
     "name": "LÜKS KADİFE TİCARET VE SANAYİİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-05-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.47913505359388964,
-    "momentum_126": -0.2893374470987171,
-    "momentum_63": -0.3430621863552257,
-    "momentum_21": -0.19472138972576047,
+    "momentum_12_1": -0.3461538461538449,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.5150000058687638,
+    "momentum_126": -0.3366649425279049,
+    "momentum_63": -0.39082126341004275,
+    "momentum_21": -0.25823530309340526,
     "fip_252": -0.17063492063492064,
     "fip_126": -0.15079365079365079,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.816248986241545,
-    "delta_momentum_21_63": 0.1483407966294652,
+    "atr14_percent": 5.605824359440533,
+    "delta_momentum_21_63": 0.1325859603166375,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08360834264625805,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 131.8000030517578,
-      "volume": 1521033.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 130.0,
       "volume": 782722.0,
-      "return": -0.013657078983912885
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 68.6500015258789,
       "volume": 43241.0,
       "return": 0.033885541389981455
+    },
+    {
+      "date": "2026-09-28",
+      "close": 63.04999923706055,
+      "volume": 105163.0,
+      "return": -0.08157322890528029
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 114,
     "ticker": "GRTHO",
     "name": "GRAINTURK HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-04-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7736842135007387,
-    "momentum_126": -0.5198511289957695,
-    "momentum_63": -0.535600006103516,
-    "momentum_21": -0.47773280755605896,
-    "fip_252": -0.14285714285714285,
+    "momentum_12_1": -0.516798418972332,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.7569169960474309,
+    "momentum_126": -0.5060240963855422,
+    "momentum_63": -0.5080000000000003,
+    "momentum_21": -0.4969325153374232,
+    "fip_252": -0.1349206349206349,
     "fip_126": -0.09523809523809523,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 13.059231757316322,
-    "delta_momentum_21_63": 0.05786719854745703,
-    "delta_fip_21_63": -0.1746031746031746,
+    "atr14_percent": 12.613413543483217,
+    "delta_momentum_21_63": 0.01106748466257712,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.1045565363269364,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 513.0,
-      "volume": 399344.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 506.0,
       "volume": 207097.0,
-      "return": -0.013645224171540016
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 116.0999984741211,
       "volume": 1738187.0,
       "return": 0.09943181961856928
+    },
+    {
+      "date": "2026-09-28",
+      "close": 123.0,
+      "volume": 3407087.0,
+      "return": 0.0594315384716988
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 399,
     "ticker": "HEDEF",
     "name": "HEDEF HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-10-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6358106903145698,
-    "momentum_126": -0.8508058297481587,
-    "momentum_63": -0.9254723154372424,
-    "momentum_21": -0.890000004034776,
+    "momentum_12_1": 2.043959976307489,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": -0.6650343071829752,
+    "momentum_126": -0.8711335284661555,
+    "momentum_63": -0.933203629088319,
+    "momentum_21": -0.8899572611255688,
     "fip_252": 0.007936507936507936,
-    "fip_126": 0.007936507936507936,
-    "fip_63": -0.25396825396825395,
+    "fip_126": -0.007936507936507936,
+    "fip_63": -0.2857142857142857,
     "fip_21": -1.0,
-    "atr14_percent": 61.79539327412329,
-    "delta_momentum_21_63": 0.03547231140246643,
-    "delta_fip_21_63": -0.746031746031746,
+    "atr14_percent": 64.52295643936804,
+    "delta_momentum_21_63": 0.043246367962750165,
+    "delta_fip_21_63": -0.7142857142857143,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.7230895645028761,
     "completed_month_fip": -0.5238095238095238,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 31.412233352661133,
-      "volume": 12206673.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 30.749418258666992,
       "volume": 12330340.0,
-      "return": -0.021100540243439547
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 11.4399995803833,
       "volume": 396624.0,
       "return": -0.0999213575099901
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.300000190734863,
+      "volume": 337077.0,
+      "return": -0.0996502999530916
     }
   ],
   "data_status": "OK",

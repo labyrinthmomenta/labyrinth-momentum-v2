@@ -3,24 +3,29 @@
     "security_id": 83,
     "ticker": "EGPRO",
     "name": "EGE PROFİL TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1993-12-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.08056261173583956,
-    "momentum_126": 0.11184209411824497,
-    "momentum_63": -0.12706616292697603,
-    "momentum_21": -0.17601172940349485,
+    "momentum_12_1": 0.25975690274407204,
+    "fip_12_1": -0.004329004329004329,
+    "momentum_252": 0.04606527586417308,
+    "momentum_126": 0.09218437473781038,
+    "momentum_63": -0.1615384419759116,
+    "momentum_21": -0.16962925657674466,
     "fip_252": 0.023809523809523808,
     "fip_126": 0.031746031746031744,
-    "fip_63": -0.1111111111111111,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.3764311531582045,
-    "delta_momentum_21_63": -0.04894556647651882,
-    "delta_fip_21_63": -0.2222222222222222,
+    "atr14_percent": 5.501099809311037,
+    "delta_momentum_21_63": -0.008090814600833052,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1494321618890977,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 31.280000686645508,
-      "volume": 4703002.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 31.260000228881836,
       "volume": 1845608.0,
-      "return": -0.0006394008096108905
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 33.79999923706055,
       "volume": 488524.0,
       "return": 0.011370469447492093
+    },
+    {
+      "date": "2026-09-28",
+      "close": 32.70000076293945,
+      "volume": 761366.0,
+      "return": -0.03254433428847481
     }
   ],
   "data_status": "OK",

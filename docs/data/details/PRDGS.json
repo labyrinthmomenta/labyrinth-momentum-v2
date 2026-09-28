@@ -3,24 +3,29 @@
     "security_id": 479,
     "ticker": "PRDGS",
     "name": "PARDUS GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-06-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4421199501482379,
-    "momentum_126": -0.38271605119965335,
-    "momentum_63": -0.442119950148238,
-    "momentum_21": -0.49811792907163754,
-    "fip_252": -0.06746031746031746,
+    "momentum_12_1": 0.19772401493619496,
+    "fip_12_1": 0.008658008658008658,
+    "momentum_252": -0.4253200794764743,
+    "momentum_126": -0.39064858339090625,
+    "momentum_63": -0.4317862326317431,
+    "momentum_21": -0.5201900326310649,
+    "fip_252": -0.05952380952380952,
     "fip_126": -0.047619047619047616,
-    "fip_63": -0.14285714285714285,
+    "fip_63": -0.1111111111111111,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 9.823502753239977,
-    "delta_momentum_21_63": -0.05599797892339953,
-    "delta_fip_21_63": -0.4761904761904762,
+    "atr14_percent": 9.738722313478391,
+    "delta_momentum_21_63": -0.0884037999993218,
+    "delta_fip_21_63": -0.5079365079365079,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.09357543164419324,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.170000076293945,
-      "volume": 4279421.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.03000020980835,
       "volume": 3083886.0,
-      "return": -0.019525783123556018
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.0,
       "volume": 2296734.0,
       "return": 0.012658215623466695
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.039999961853027,
+      "volume": 6592835.0,
+      "return": 0.009999990463256836
     }
   ],
   "data_status": "OK",

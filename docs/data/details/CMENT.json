@@ -3,24 +3,29 @@
     "security_id": 616,
     "ticker": "CMENT",
     "name": "ÇİMENTAŞ İZMİR ÇİMENTO FABRİKASI T.A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-02-25"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.41315789473684295,
-    "momentum_126": -0.32475397426192276,
-    "momentum_63": -0.20143240823634756,
-    "momentum_21": -0.14230769230769225,
+    "momentum_12_1": -0.2953784326858675,
+    "fip_12_1": -0.1774891774891775,
+    "momentum_252": -0.4239785666443401,
+    "momentum_126": -0.3484848484848484,
+    "momentum_63": -0.21675774134790549,
+    "momentum_21": -0.18250950570342217,
     "fip_252": -0.20634920634920634,
     "fip_126": -0.2777777777777778,
     "fip_63": -0.30158730158730157,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 3.602826316908743,
-    "delta_momentum_21_63": 0.059124715928655314,
-    "delta_fip_21_63": -0.12698412698412698,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 3.9350808942533533,
+    "delta_momentum_21_63": 0.034248235644483316,
+    "delta_fip_21_63": -0.22222222222222227,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05987488829311882,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 380.0,
-      "volume": 7979.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 373.25,
       "volume": 5497.0,
-      "return": -0.017763157894736814
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 223.0,
       "volume": 1840.0,
       "return": -0.008448172290119738
+    },
+    {
+      "date": "2026-09-28",
+      "close": 215.0,
+      "volume": 12677.0,
+      "return": -0.0358744394618834
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 56,
     "ticker": "BRSAN",
     "name": "BORUSAN BİRLEŞİK BORU FABRİKALARI SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-09-12"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.4624591947769294,
-    "momentum_126": 0.32544378698224796,
-    "momentum_63": 0.1789473684210523,
-    "momentum_21": -0.08196721311475397,
+    "momentum_12_1": 0.592328767123288,
+    "fip_12_1": 0.05627705627705628,
+    "momentum_252": 0.4235616438356167,
+    "momentum_126": 0.252651880424301,
+    "momentum_63": 0.14955752212389317,
+    "momentum_21": -0.10598761183757721,
     "fip_252": 0.07936507936507936,
-    "fip_126": 0.07936507936507936,
+    "fip_126": 0.09523809523809523,
     "fip_63": 0.14285714285714285,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.13525881993759,
-    "delta_momentum_21_63": -0.26091458153580627,
+    "atr14_percent": 4.374312223576616,
+    "delta_momentum_21_63": -0.2555451339614704,
     "delta_fip_21_63": -0.47619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.38830297219558907,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 459.5,
-      "volume": 1278051.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 456.25,
       "volume": 864989.0,
-      "return": -0.007072905331882429
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 672.0,
       "volume": 1191968.0,
       "return": 0.03863987635239563
+    },
+    {
+      "date": "2026-09-28",
+      "close": 649.5,
+      "volume": 1483776.0,
+      "return": -0.033482142857142905
     }
   ],
   "data_status": "OK",

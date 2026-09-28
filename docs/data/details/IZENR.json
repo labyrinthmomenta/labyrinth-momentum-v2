@@ -3,23 +3,28 @@
     "security_id": 136,
     "ticker": "IZENR",
     "name": "İZDEMİR ENERJİ ELEKTRİK ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-08-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5872548905027593,
-    "momentum_126": -0.5848126335696542,
-    "momentum_63": -0.5798403347491872,
-    "momentum_21": -0.4939903614700889,
-    "fip_252": 0.14682539682539683,
-    "fip_126": 0.12698412698412698,
+    "momentum_12_1": -0.2104761941092358,
+    "fip_12_1": 0.19047619047619047,
+    "momentum_252": -0.6390476226806642,
+    "momentum_126": -0.6284313693407724,
+    "momentum_63": -0.6210000038146969,
+    "momentum_21": -0.5428226804230449,
+    "fip_252": 0.1388888888888889,
+    "fip_126": 0.1111111111111111,
     "fip_63": -0.09523809523809523,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 9.444495488599642,
-    "delta_momentum_21_63": 0.08584997327909827,
+    "atr14_percent": 10.533306741065877,
+    "delta_momentum_21_63": 0.07817732339165195,
     "delta_fip_21_63": -0.3333333333333333,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11627912005583663,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10.199999809265137,
-      "volume": 113273289.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.5,
       "volume": 83533665.0,
-      "return": 0.029411783955364257
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.210000038146973,
       "volume": 14462649.0,
       "return": 0.052500009536743164
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.7899999618530273,
+      "volume": 14068824.0,
+      "return": -0.09976248752691408
     }
   ],
   "data_status": "OK",

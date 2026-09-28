@@ -3,23 +3,28 @@
     "security_id": 160,
     "ticker": "KOTON",
     "name": "KOTON MAĞAZACILIK TEKSTİL SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-05-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4407656253345633,
-    "momentum_126": -0.28268078045619394,
-    "momentum_63": -0.2651257381656372,
-    "momentum_21": -0.1678213541118342,
+    "momentum_12_1": -0.3303895925546615,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.47116881531554333,
+    "momentum_126": -0.31262660251570373,
+    "momentum_63": -0.2945252882964666,
+    "momentum_21": -0.21024049386862909,
     "fip_252": -0.11507936507936507,
     "fip_126": -0.15873015873015872,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 2.989575804023864,
-    "delta_momentum_21_63": 0.09730438405380304,
+    "atr14_percent": 3.39689253838147,
+    "delta_momentum_21_63": 0.08428479442783754,
     "delta_fip_21_63": -0.22222222222222227,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.01045857693074903,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 19.329999923706055,
-      "volume": 4234502.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 19.25,
       "volume": 3112345.0,
-      "return": -0.004138640663311377
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.8100004196167,
       "volume": 541240.0,
       "return": -0.0009241474574442909
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.180000305175781,
+      "volume": 2098799.0,
+      "return": -0.058279379277143106
     }
   ],
   "data_status": "OK",

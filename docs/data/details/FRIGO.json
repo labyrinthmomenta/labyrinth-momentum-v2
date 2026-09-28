@@ -3,23 +3,28 @@
     "security_id": 385,
     "ticker": "FRIGO",
     "name": "FRİGO-PAK GIDA MADDELERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-04-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.13258298560411252,
-    "momentum_126": -0.5199952354442388,
-    "momentum_63": -0.13661201865423434,
-    "momentum_21": -0.4148148092549854,
-    "fip_252": 0.15873015873015872,
+    "momentum_12_1": 0.47531615660477344,
+    "fip_12_1": -0.2077922077922078,
+    "momentum_252": -0.21023966366591307,
+    "momentum_126": -0.558347629625833,
+    "momentum_63": -0.18181814487315429,
+    "momentum_21": -0.4646840049853411,
+    "fip_252": 0.15079365079365079,
     "fip_126": -0.047619047619047616,
     "fip_63": -0.031746031746031744,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 9.301222741829543,
-    "delta_momentum_21_63": -0.27820279060075104,
+    "atr14_percent": 10.319797013519567,
+    "delta_momentum_21_63": -0.28286586011218684,
     "delta_fip_21_63": -0.4444444444444444,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.24882626427880994,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.8214999437332153,
-      "volume": 81701455.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.8233380317687988,
       "volume": 70895954.0,
-      "return": 0.0010091068308331064
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.5800000429153442,
       "volume": 13991435.0,
       "return": -0.006289302046118661
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.440000057220459,
+      "volume": 17426255.0,
+      "return": -0.08860758347611408
     }
   ],
   "data_status": "OK",

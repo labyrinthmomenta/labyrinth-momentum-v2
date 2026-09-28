@@ -3,24 +3,29 @@
     "security_id": 203,
     "ticker": "PSGYO",
     "name": "PASİFİK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-12-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.45098037120504597,
-    "momentum_126": -0.1967213146790998,
-    "momentum_63": -0.4351584951046894,
-    "momentum_21": -0.4096385308560685,
+    "momentum_12_1": -0.045714310237340405,
+    "fip_12_1": -0.1038961038961039,
+    "momentum_252": -0.49428571973528235,
+    "momentum_126": -0.33955226237430214,
+    "momentum_63": -0.4913793186134069,
+    "momentum_21": -0.47005987233184443,
     "fip_252": -0.11507936507936507,
-    "fip_126": -0.023809523809523808,
-    "fip_63": -0.07936507936507936,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 8.904551462873584,
-    "delta_momentum_21_63": 0.025519964248620908,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_126": -0.03968253968253968,
+    "fip_63": -0.1111111111111111,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 9.922840359251209,
+    "delta_momentum_21_63": 0.02131944628156246,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08022921794402427,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.569999933242798,
-      "volume": 339764455.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.5,
       "volume": 215153547.0,
-      "return": -0.01960782480441492
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.9600000381469727,
       "volume": 97493113.0,
       "return": 0.037037065069791986
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.7699999809265137,
+      "volume": 91433568.0,
+      "return": -0.09693880281762102
     }
   ],
   "data_status": "OK",

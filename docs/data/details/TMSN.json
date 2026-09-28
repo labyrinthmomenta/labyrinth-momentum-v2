@@ -3,24 +3,29 @@
     "security_id": 248,
     "ticker": "TMSN",
     "name": "TÜMOSAN MOTOR VE TRAKTÖR SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-12-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.45780053862353265,
-    "momentum_126": -0.383720926794035,
-    "momentum_63": -0.2668588072147423,
-    "momentum_21": -0.16260696471834313,
-    "fip_252": -0.11507936507936507,
+    "momentum_12_1": -0.3480851193691824,
+    "fip_12_1": -0.11255411255411256,
+    "momentum_252": -0.49404254669838765,
+    "momentum_126": -0.42169261675014214,
+    "momentum_63": -0.3282485789498366,
+    "momentum_21": -0.22389031400536752,
+    "fip_252": -0.12301587301587301,
     "fip_126": -0.2222222222222222,
-    "fip_63": -0.19047619047619047,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.347981051592606,
-    "delta_momentum_21_63": 0.10425184249639918,
-    "delta_fip_21_63": 0.047619047619047616,
+    "fip_63": -0.2222222222222222,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 5.877340215984207,
+    "delta_momentum_21_63": 0.10435826494446909,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08149511826262956,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 117.30000305175781,
-      "volume": 888282.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 117.5,
       "volume": 532438.0,
-      "return": 0.0017050037769730242
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 63.599998474121094,
       "volume": 260429.0,
       "return": 0.0007867700654728971
+    },
+    {
+      "date": "2026-09-28",
+      "close": 59.45000076293945,
+      "volume": 566891.0,
+      "return": -0.06525153790483629
     }
   ],
   "data_status": "OK",

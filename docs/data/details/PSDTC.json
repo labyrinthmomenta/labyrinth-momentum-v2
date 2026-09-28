@@ -3,24 +3,29 @@
     "security_id": 485,
     "ticker": "PSDTC",
     "name": "PERGAMON STATUS DIŞ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "TOPTAN TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2014-11-12"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.41207762732136677,
-    "momentum_126": -0.3142335989179398,
-    "momentum_63": -0.2573122770889954,
-    "momentum_21": -0.4407738276890346,
+    "momentum_12_1": 0.16666673088716055,
+    "fip_12_1": 0.18614718614718614,
+    "momentum_252": -0.4570706861503949,
+    "momentum_126": -0.36624906459797835,
+    "momentum_63": -0.3596426057648229,
+    "momentum_21": -0.534632042317047,
     "fip_252": -0.21428571428571427,
     "fip_126": -0.2222222222222222,
-    "fip_63": -0.23809523809523808,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 10.883125062950228,
-    "delta_momentum_21_63": -0.1834615506000392,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_63": -0.2698412698412698,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 11.882977180977699,
+    "delta_momentum_21_63": -0.1749894365522241,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.13181820163479085,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 159.8000030517578,
-      "volume": 76177.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 158.39999389648438,
       "volume": 62084.0,
-      "return": -0.008761008313748153
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 93.94999694824219,
       "volume": 221009.0,
       "return": 0.004275722965642936
+    },
+    {
+      "date": "2026-09-28",
+      "close": 86.0,
+      "volume": 199097.0,
+      "return": -0.08461944871187066
     }
   ],
   "data_status": "OK",

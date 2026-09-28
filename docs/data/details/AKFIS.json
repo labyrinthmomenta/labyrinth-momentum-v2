@@ -3,23 +3,28 @@
     "security_id": 12,
     "ticker": "AKFIS",
     "name": "AKFEN İNŞAAT TURİZM VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İNŞAAT VE BAYINDIRLIK",
+    "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-01-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 2.95397511628143,
-    "momentum_126": 1.049002776470405,
-    "momentum_63": 0.18793212955776606,
-    "momentum_21": -0.18939785112589513,
+    "momentum_12_1": 3.7175383620762386,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": 2.946037627521788,
+    "momentum_126": 0.8461539329698977,
+    "momentum_63": 0.28571433062830476,
+    "momentum_21": -0.16353883643140277,
     "fip_252": -0.09523809523809523,
-    "fip_126": -0.12698412698412698,
+    "fip_126": -0.1111111111111111,
     "fip_63": -0.1111111111111111,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 8.615720936019487,
-    "delta_momentum_21_63": -0.3773299806836612,
+    "atr14_percent": 8.43438090611907,
+    "delta_momentum_21_63": -0.4492531670597075,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1633986284418214,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.983333110809326,
-      "volume": 18802716.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.9533329010009766,
       "volume": 11657088.0,
-      "return": -0.00753143384542454
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.75,
       "volume": 13471985.0,
       "return": 0.050000000000000044
+    },
+    {
+      "date": "2026-09-28",
+      "close": 15.600000381469727,
+      "volume": 13561048.0,
+      "return": -0.009523785303509391
     }
   ],
   "data_status": "OK",

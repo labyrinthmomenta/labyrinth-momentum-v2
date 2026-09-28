@@ -3,24 +3,29 @@
     "security_id": 562,
     "ticker": "GRNYO",
     "name": "GARANTİ YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1996-11-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.47105262745120213,
-    "momentum_126": -0.47105262745120213,
-    "momentum_63": -0.5550636359913212,
-    "momentum_21": -0.41313868074540583,
+    "momentum_12_1": -0.060833925930340205,
+    "fip_12_1": -0.1645021645021645,
+    "momentum_252": -0.5017088240035459,
+    "momentum_126": -0.5287653628946474,
+    "momentum_63": -0.5929648227827102,
+    "momentum_21": -0.46943230834859273,
     "fip_252": -0.19444444444444445,
-    "fip_126": -0.1746031746031746,
+    "fip_126": -0.19047619047619047,
     "fip_63": -0.3968253968253968,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 9.787319341274255,
-    "delta_momentum_21_63": 0.14192495524591542,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 10.807080521102554,
+    "delta_momentum_21_63": 0.1235325144341175,
+    "delta_fip_21_63": -0.12698412698412703,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03207000914679303,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 15.199999809265137,
-      "volume": 108096.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.630000114440918,
       "volume": 145135.0,
-      "return": -0.037499980393208676
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.039999961853027,
       "volume": 477555.0,
       "return": -0.006180493175747204
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.289999961853027,
+      "volume": 769795.0,
+      "return": -0.09328358253215008
     }
   ],
   "data_status": "OK",

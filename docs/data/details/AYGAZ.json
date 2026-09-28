@@ -3,24 +3,29 @@
     "security_id": 39,
     "ticker": "AYGAZ",
     "name": "AYGAZ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1988-01-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.6219512195121939,
-    "momentum_126": 0.19700000000000117,
-    "momentum_63": 0.43318963422534584,
-    "momentum_21": -0.06338028169014132,
-    "fip_252": -0.1111111111111111,
+    "momentum_12_1": 0.7293529165958317,
+    "fip_12_1": -0.1341991341991342,
+    "momentum_252": 0.5320883253491582,
+    "momentum_126": 0.20202227128237515,
+    "momentum_63": 0.3641686182669792,
+    "momentum_21": -0.11406844106463898,
+    "fip_252": -0.10317460317460317,
     "fip_126": 0.007936507936507936,
-    "fip_63": -0.06349206349206349,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.540632585750476,
-    "delta_momentum_21_63": -0.49656991591548716,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_63": -0.031746031746031744,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 4.558968955674471,
+    "delta_momentum_21_63": -0.4782370593316182,
+    "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.2653446647780928,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 184.5,
-      "volume": 235168.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 190.10000610351562,
       "volume": 487541.0,
-      "return": 0.030352336604420715
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 299.25,
       "volume": 397631.0,
       "return": -0.020458265139116194
+    },
+    {
+      "date": "2026-09-28",
+      "close": 291.25,
+      "volume": 309263.0,
+      "return": -0.026733500417710943
     }
   ],
   "data_status": "OK",

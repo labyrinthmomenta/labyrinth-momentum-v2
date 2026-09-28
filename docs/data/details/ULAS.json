@@ -3,23 +3,28 @@
     "security_id": 592,
     "ticker": "ULAS",
     "name": "ULAŞLAR TURİZM ENERJİ TARIM GIDA VE İNŞAAT YATIRIMLARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "KONAKLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-08-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.40572880946382417,
-    "momentum_126": -0.48749219436348024,
-    "momentum_63": -0.34282281320457275,
-    "momentum_21": -0.23267795312208717,
+    "momentum_12_1": -0.20802378772655294,
+    "fip_12_1": -0.12121212121212122,
+    "momentum_252": -0.4446508258954185,
+    "momentum_126": -0.5339775886548437,
+    "momentum_63": -0.3937550729208926,
+    "momentum_21": -0.29878048671386737,
     "fip_252": -0.15079365079365079,
-    "fip_126": -0.24603174603174602,
+    "fip_126": -0.2619047619047619,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 6.839486415000752,
-    "delta_momentum_21_63": 0.11014486008248559,
+    "atr14_percent": 7.650689424213397,
+    "delta_momentum_21_63": 0.09497458620702526,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.011331433789427914,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 27.579999923706055,
-      "volume": 321118.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 26.920000076293945,
       "volume": 462245.0,
-      "return": -0.023930378870117952
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 16.389999389648438,
       "volume": 123916.0,
       "return": -0.0012187969500088158
+    },
+    {
+      "date": "2026-09-28",
+      "close": 14.949999809265137,
+      "volume": 233758.0,
+      "return": -0.08785842794434595
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 407,
     "ticker": "IHLGM",
     "name": "İHLAS GAYRİMENKUL PROJE GELİŞTİRME VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "GAYRİMENKUL FAALİYETLERİ",
+    "industry": "GAYRİMENKUL FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1989-12-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5903225741947118,
-    "momentum_126": -0.3774509781005525,
-    "momentum_63": -0.3135135326705939,
-    "momentum_21": -0.19620256554982896,
+    "momentum_12_1": -0.46732025303535674,
+    "fip_12_1": -0.1774891774891775,
+    "momentum_252": -0.6045751435381159,
+    "momentum_126": -0.3980099284139328,
+    "momentum_63": -0.33149167049760997,
+    "momentum_21": -0.25766868608178894,
     "fip_252": -0.19047619047619047,
     "fip_126": -0.19047619047619047,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.3881664162134255,
-    "delta_momentum_21_63": 0.11731096712076494,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.90074523685337,
+    "delta_momentum_21_63": 0.07382298441582102,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.00632910771622841,
     "completed_month_fip": 0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.0999999046325684,
-      "volume": 37750165.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.059999942779541,
       "volume": 24540748.0,
-      "return": -0.012903213897927035
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.2699999809265137,
       "volume": 15141724.0,
       "return": 0.007936500427734305
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.2100000381469727,
+      "volume": 18188522.0,
+      "return": -0.047244050142243865
     }
   ],
   "data_status": "OK",

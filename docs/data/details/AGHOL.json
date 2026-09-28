@@ -3,24 +3,29 @@
     "security_id": 4,
     "ticker": "AGHOL",
     "name": "AG ANADOLU GRUBU HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-02-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.23636363636363744,
-    "momentum_126": 0.22655125693383482,
-    "momentum_63": 0.018573963812033245,
-    "momentum_21": 0.12359549711927897,
+    "momentum_12_1": 0.14317674109925482,
+    "fip_12_1": 0.04329004329004329,
+    "momentum_252": 0.22818788223423625,
+    "momentum_126": 0.1908893278533732,
+    "momentum_63": -0.04742634810599888,
+    "momentum_21": 0.07436395272811125,
     "fip_252": 0.027777777777777776,
     "fip_126": 0.07936507936507936,
-    "fip_63": 0.047619047619047616,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.6098856519838565,
-    "delta_momentum_21_63": 0.10502153330724573,
-    "delta_fip_21_63": -0.2857142857142857,
+    "fip_63": -0.07936507936507936,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 3.737465101389274,
+    "delta_momentum_21_63": 0.12179030083411013,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0985915492957743,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 27.5,
-      "volume": 4278287.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 26.81999969482422,
       "volume": 5997581.0,
-      "return": -0.024727283824573898
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 34.0,
       "volume": 1824472.0,
       "return": -0.0029325067036874986
+    },
+    {
+      "date": "2026-09-28",
+      "close": 32.939998626708984,
+      "volume": 2977015.0,
+      "return": -0.03117651097914753
     }
   ],
   "data_status": "OK",

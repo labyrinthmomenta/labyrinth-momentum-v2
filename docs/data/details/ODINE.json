@@ -3,24 +3,29 @@
     "security_id": 191,
     "ticker": "ODINE",
     "name": "ODİNE SOLUTİONS TEKNOLOJİ TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-03-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.8172757475083063,
-    "momentum_126": -0.6493589743589736,
-    "momentum_63": -0.8552910052910052,
-    "momentum_21": -0.85366506153023,
-    "fip_252": -0.20238095238095238,
-    "fip_126": 0.12698412698412698,
-    "fip_63": -0.14285714285714285,
+    "momentum_12_1": 11.159468438538209,
+    "fip_12_1": -0.2987012987012987,
+    "momentum_252": 0.6358803783936364,
+    "momentum_126": -0.7040865421295164,
+    "momentum_63": -0.8717040140967993,
+    "momentum_21": -0.8654644825419441,
+    "fip_252": -0.1984126984126984,
+    "fip_126": 0.1111111111111111,
+    "fip_63": -0.1746031746031746,
     "fip_21": -0.9047619047619048,
-    "atr14_percent": 41.32727777543985,
-    "delta_momentum_21_63": 0.0016259437607751837,
-    "delta_fip_21_63": -0.7619047619047619,
+    "atr14_percent": 43.42263499334059,
+    "delta_momentum_21_63": 0.006239531554855238,
+    "delta_fip_21_63": -0.7301587301587302,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.19479999999999986,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 150.5,
-      "volume": 1071928.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 150.5,
       "volume": 1035892.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 273.5,
       "volume": 2049.0,
       "return": -0.09958847736625509
+    },
+    {
+      "date": "2026-09-28",
+      "close": 246.1999969482422,
+      "volume": 2745.0,
+      "return": -0.09981719580167392
     }
   ],
   "data_status": "OK",

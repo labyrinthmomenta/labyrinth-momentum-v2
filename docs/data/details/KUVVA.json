@@ -3,24 +3,29 @@
     "security_id": 569,
     "ticker": "KUVVA",
     "name": "KUVVA GIDA TİCARET VE SANAYİ YATIRIMLARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "TOPTAN TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1998-08-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.16926500325849525,
-    "momentum_126": -0.17720587113324193,
-    "momentum_63": -0.1766003932927792,
-    "momentum_21": -0.38176794737083475,
+    "momentum_12_1": 0.421722869301554,
+    "fip_12_1": 0.1038961038961039,
+    "momentum_252": -0.2449437973651114,
+    "momentum_126": -0.25055759812819445,
+    "momentum_63": -0.295597492994926,
+    "momentum_21": -0.4689146394572501,
     "fip_252": -0.13095238095238096,
     "fip_126": -0.19047619047619047,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 12.351592377101584,
-    "delta_momentum_21_63": -0.20516755407805554,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 13.518892400855579,
+    "delta_momentum_21_63": -0.1733171464623241,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.14008494213781897,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 134.6999969482422,
-      "volume": 30320.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 133.5,
       "volume": 46278.0,
-      "return": -0.008908663514693882
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 111.9000015258789,
       "volume": 238719.0,
       "return": 0.034195976728230715
+    },
+    {
+      "date": "2026-09-28",
+      "close": 100.80000305175781,
+      "volume": 150703.0,
+      "return": -0.09919569546702833
     }
   ],
   "data_status": "OK",

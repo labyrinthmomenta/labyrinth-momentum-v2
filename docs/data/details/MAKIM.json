@@ -3,23 +3,28 @@
     "security_id": 443,
     "ticker": "MAKIM",
     "name": "MAKİM MAKİNA TEKNOLOJİLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-06-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.27405094277378805,
-    "momentum_126": -0.08936724673041507,
-    "momentum_63": -0.2748051928235338,
-    "momentum_21": -0.15393939162745618,
+    "momentum_12_1": -0.1492693441089903,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.30793317669713727,
+    "momentum_126": -0.21352314656853733,
+    "momentum_63": -0.30393696798237335,
+    "momentum_21": -0.18650301536621006,
     "fip_252": -0.15476190476190477,
-    "fip_126": -0.1349206349206349,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.581634784776819,
-    "delta_momentum_21_63": 0.1208658011960776,
+    "atr14_percent": 6.178383316255889,
+    "delta_momentum_21_63": 0.1174339526161633,
     "delta_fip_21_63": 0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.02187502384185791,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 19.229999542236328,
-      "volume": 3761143.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 19.15999984741211,
       "volume": 1305163.0,
-      "return": -0.0036401298227008994
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 13.960000038146973,
       "volume": 5234847.0,
       "return": 0.09490196377623317
+    },
+    {
+      "date": "2026-09-28",
+      "close": 13.260000228881836,
+      "volume": 974669.0,
+      "return": -0.05014325267566788
     }
   ],
   "data_status": "OK",

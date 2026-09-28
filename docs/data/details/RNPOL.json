@@ -3,23 +3,28 @@
     "security_id": 577,
     "ticker": "RNPOL",
     "name": "RAİNBOW POLİKARBONAT SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-12-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.06995880534141108,
-    "momentum_126": 0.13043472063789352,
-    "momentum_63": -0.13333339956071388,
-    "momentum_21": -0.20000000000000007,
+    "momentum_12_1": 0.3490813500474159,
+    "fip_12_1": 0.08658008658008658,
+    "momentum_252": 0.0183727487434846,
+    "momentum_126": 0.08379893774531144,
+    "momentum_63": -0.1709401160772488,
+    "momentum_21": -0.2451361448976428,
     "fip_252": 0.10714285714285714,
     "fip_126": 0.06349206349206349,
     "fip_63": -0.09523809523809523,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.267086033146396,
-    "delta_momentum_21_63": -0.06666660043928618,
+    "atr14_percent": 7.8608979618412445,
+    "delta_momentum_21_63": -0.074196028820394,
     "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.08849559669366203,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.944000005722046,
-      "volume": 4897040.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.9049999713897705,
       "volume": 2969740.0,
-      "return": -0.020061745996646674
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.0799999237060547,
       "volume": 3228750.0,
       "return": 0.04522608730552857
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.940000057220459,
+      "volume": 1829324.0,
+      "return": -0.06730763058690403
     }
   ],
   "data_status": "OK",

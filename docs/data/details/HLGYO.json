@@ -3,24 +3,29 @@
     "security_id": 119,
     "ticker": "HLGYO",
     "name": "HALK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-02-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.056847615900388115,
-    "momentum_126": -0.17206475602974525,
-    "momentum_63": -0.309121604750329,
-    "momentum_21": -0.0808988027207792,
+    "momentum_12_1": 0.1528497228507486,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": 0.018134759990619864,
+    "momentum_126": -0.21242480019662113,
+    "momentum_63": -0.327054800672275,
+    "momentum_21": -0.11685387972944783,
     "fip_252": -0.01984126984126984,
-    "fip_126": -0.031746031746031744,
+    "fip_126": -0.047619047619047616,
     "fip_63": -0.30158730158730157,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 4.341568740235142,
-    "delta_momentum_21_63": 0.2282228020295498,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.631792786604507,
+    "delta_momentum_21_63": 0.21020092094282716,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05194800369332098,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.869999885559082,
-      "volume": 77732599.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.859999895095825,
       "volume": 38695188.0,
-      "return": -0.002583976940302213
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.090000152587891,
       "volume": 24461725.0,
       "return": 0.0073892143426512735
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.930000066757202,
+      "volume": 23733343.0,
+      "return": -0.03911982392701152
     }
   ],
   "data_status": "OK",

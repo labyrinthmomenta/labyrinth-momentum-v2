@@ -3,24 +3,29 @@
     "security_id": 550,
     "ticker": "AVTUR",
     "name": "AVRASYA PETROL VE TURİSTİK TESİSLER YATIRIMLAR A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "KONAKLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2007-05-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3107382066646859,
-    "momentum_126": -0.45168175607240524,
-    "momentum_63": -0.3813252878459039,
-    "momentum_21": -0.17110571644992678,
+    "momentum_12_1": -0.15868671087445052,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": -0.3310533646015005,
+    "momentum_126": -0.47277627303444836,
+    "momentum_63": -0.4143713002292244,
+    "momentum_21": -0.2048780828200225,
     "fip_252": -0.10714285714285714,
     "fip_126": -0.18253968253968253,
-    "fip_63": -0.25396825396825395,
+    "fip_63": -0.2857142857142857,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 6.865658658833896,
-    "delta_momentum_21_63": 0.21021957139597713,
-    "delta_fip_21_63": 0.06349206349206349,
+    "atr14_percent": 7.315470311470111,
+    "delta_momentum_21_63": 0.2094932174092019,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.24464061780779356,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 14.899999618530273,
-      "volume": 512814.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.619999885559082,
       "volume": 323291.0,
-      "return": -0.018791928868439167
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.270000457763672,
       "volume": 193808.0,
       "return": -0.012499919762975265
+    },
+    {
+      "date": "2026-09-28",
+      "close": 9.779999732971191,
+      "volume": 222186.0,
+      "return": -0.04771185033609826
     }
   ],
   "data_status": "OK",

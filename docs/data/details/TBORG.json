@@ -3,23 +3,28 @@
     "security_id": 525,
     "ticker": "TBORG",
     "name": "TÜRK TUBORG BİRA VE MALT SANAYİİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1989-09-08"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.27334855330869845,
-    "momentum_126": -0.120000010523302,
-    "momentum_63": -0.036253743532013494,
-    "momentum_21": -0.20200122986417124,
+    "momentum_12_1": -0.1010273816013314,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.2888127817095193,
+    "momentum_126": -0.13532273978799492,
+    "momentum_63": -0.05102821341897157,
+    "momentum_21": -0.20888889857700899,
     "fip_252": -0.1746031746031746,
     "fip_126": -0.1746031746031746,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 4.158817991661785,
-    "delta_momentum_21_63": -0.16574748633215775,
+    "atr14_percent": 4.189777084028861,
+    "delta_momentum_21_63": -0.15786068515803742,
     "delta_fip_21_63": -0.33333333333333337,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.23750954993728812,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 175.60000610351562,
-      "volume": 292467.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 175.1999969482422,
       "volume": 255808.0,
-      "return": -0.0022779563859333107
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 127.5999984741211,
       "volume": 65386.0,
       "return": -0.002345606318832738
+    },
+    {
+      "date": "2026-09-28",
+      "close": 124.5999984741211,
+      "volume": 64672.0,
+      "return": -0.023510972067985136
     }
   ],
   "data_status": "OK",

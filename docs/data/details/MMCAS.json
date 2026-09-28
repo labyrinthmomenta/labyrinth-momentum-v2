@@ -3,24 +3,29 @@
     "security_id": 610,
     "ticker": "MMCAS",
     "name": "MMC SANAYİ VE TİCARİ YATIRIMLAR A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-12-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7942331232176238,
-    "momentum_126": -0.7983162940466779,
-    "momentum_63": -0.7292978167678081,
-    "momentum_21": -0.6679207830145808,
+    "momentum_12_1": -0.3575063488502862,
+    "fip_12_1": -0.12987012987012986,
+    "momentum_252": -0.8078880321296524,
+    "momentum_126": -0.8261370103999589,
+    "momentum_63": -0.7489609310321779,
+    "momentum_21": -0.700990091456045,
     "fip_252": -0.17063492063492064,
-    "fip_126": -0.2222222222222222,
+    "fip_126": -0.23809523809523808,
     "fip_63": -0.2857142857142857,
-    "fip_21": -0.5714285714285714,
-    "atr14_percent": 17.263903128538182,
-    "delta_momentum_21_63": 0.06137703375322734,
-    "delta_fip_21_63": -0.2857142857142857,
+    "fip_21": -0.6190476190476191,
+    "atr14_percent": 18.593678018568234,
+    "delta_momentum_21_63": 0.047970839576132907,
+    "delta_fip_21_63": -0.33333333333333337,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.2199672497930012,
     "completed_month_fip": -0.19047619047619047,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 81.5,
-      "volume": 33147.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 78.5999984741211,
       "volume": 28840.0,
-      "return": -0.035582840808330185
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 16.770000457763672,
       "volume": 246014.0,
       "return": -0.09983890428293463
+    },
+    {
+      "date": "2026-09-28",
+      "close": 15.100000381469727,
+      "volume": 306757.0,
+      "return": -0.099582589785847
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 2,
     "ticker": "A1CAP",
     "name": "A1 CAPİTAL YATIRIM MENKUL DEĞERLER A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "ARACI KURUMLAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-06-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5622529764392501,
-    "momentum_126": -0.6998645149293321,
-    "momentum_63": -0.5924563132494665,
-    "momentum_21": -0.4726190441049416,
+    "momentum_12_1": -0.2237196536851297,
+    "fip_12_1": -0.10822510822510822,
+    "momentum_252": -0.5992812226156027,
+    "momentum_126": -0.6951469580820699,
+    "momentum_63": -0.5703275540486642,
+    "momentum_21": -0.48379631239322907,
     "fip_252": -0.1388888888888889,
-    "fip_126": -0.15079365079365079,
-    "fip_63": -0.2222222222222222,
+    "fip_126": -0.1349206349206349,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 9.407250470310471,
-    "delta_momentum_21_63": 0.11983726914452486,
-    "delta_fip_21_63": -0.25396825396825395,
+    "atr14_percent": 9.42926898216823,
+    "delta_momentum_21_63": 0.08653124165543513,
+    "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08656028454688025,
     "completed_month_fip": 0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10.119999885559082,
-      "volume": 39682856.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.130000114440918,
       "volume": 44857031.0,
-      "return": 0.09980239528688872
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.429999828338623,
       "volume": 6456252.0,
       "return": 0.049763044689022484
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.460000038146973,
+      "volume": 13846269.0,
+      "return": 0.006772056652562197
     }
   ],
   "data_status": "OK",

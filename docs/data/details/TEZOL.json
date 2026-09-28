@@ -3,23 +3,28 @@
     "security_id": 95,
     "ticker": "TEZOL",
     "name": "EUROPAP TEZOL KAĞIT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-09-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5168612339556042,
-    "momentum_126": -0.5807541014434665,
-    "momentum_63": -0.5421020528791582,
-    "momentum_21": -0.22957603407585792,
+    "momentum_12_1": -0.3640552920167782,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.5279789154468806,
+    "momentum_126": -0.5974171650030108,
+    "momentum_63": -0.5282894627456848,
+    "momentum_21": -0.25776395553310805,
     "fip_252": -0.12698412698412698,
-    "fip_126": -0.20634920634920634,
+    "fip_126": -0.2222222222222222,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.064739270589084,
-    "delta_momentum_21_63": 0.31252601880330033,
+    "atr14_percent": 5.295078350449094,
+    "delta_momentum_21_63": 0.27052550721257673,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09311348196653702,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 15.420000076293945,
-      "volume": 5341099.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 15.1899995803833,
       "volume": 8487172.0,
-      "return": -0.014915725990445217
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.449999809265137,
       "volume": 3140552.0,
       "return": 0.005398105624387695
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.170000076293945,
+      "volume": 3092493.0,
+      "return": -0.037583857736878334
     }
   ],
   "data_status": "OK",

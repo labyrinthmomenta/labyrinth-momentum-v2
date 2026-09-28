@@ -3,24 +3,29 @@
     "security_id": 258,
     "ticker": "SISE",
     "name": "TÜRKİYE ŞİŞE VE CAM FABRİKALARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.011586878479409757,
-    "momentum_126": -0.17284985635782835,
-    "momentum_63": -0.12683571700989216,
-    "momentum_21": -0.019980000468739267,
-    "fip_252": -0.01984126984126984,
+    "momentum_12_1": 0.00450451224474091,
+    "fip_12_1": 0.008658008658008658,
+    "momentum_252": -0.03953949080472585,
+    "momentum_126": -0.1861746990607488,
+    "momentum_63": -0.13363427248081727,
+    "momentum_21": -0.04384649597147461,
+    "fip_252": -0.027777777777777776,
     "fip_126": -0.15079365079365079,
     "fip_63": -0.15873015873015872,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.206945587321583,
-    "delta_momentum_21_63": 0.10685571654115289,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 4.224758578500166,
+    "delta_momentum_21_63": 0.08978777650934266,
+    "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05079067228872958,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 39.70000076293945,
-      "volume": 83039501.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 39.959999084472656,
       "volume": 64909465.0,
-      "return": 0.0065490759832911305
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 39.2400016784668,
       "volume": 25524407.0,
       "return": 0.002554989534435448
+    },
+    {
+      "date": "2026-09-28",
+      "close": 38.380001068115234,
+      "volume": 39468704.0,
+      "return": -0.021916426441528247
     }
   ],
   "data_status": "OK",

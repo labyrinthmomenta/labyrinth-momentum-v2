@@ -3,24 +3,29 @@
     "security_id": 612,
     "ticker": "YYAPI",
     "name": "YEŞİL YAPI ENDÜSTRİSİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İNŞAAT VE BAYINDIRLIK",
+    "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-05-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.698979611076051,
-    "momentum_126": -0.5163934754607683,
-    "momentum_63": -0.33707867049761564,
-    "momentum_21": -0.28048783058498983,
+    "momentum_12_1": -0.5661375666381512,
+    "fip_12_1": -0.21645021645021645,
+    "momentum_252": -0.7089947004847656,
+    "momentum_126": -0.5895522401337634,
+    "momentum_63": -0.3604651130554547,
+    "momentum_21": -0.32926827229466327,
     "fip_252": -0.24206349206349206,
-    "fip_126": -0.2857142857142857,
+    "fip_126": -0.30158730158730157,
     "fip_63": -0.2698412698412698,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 3.685721277099906,
-    "delta_momentum_21_63": 0.05659083991262581,
-    "delta_fip_21_63": -0.20634920634920634,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 4.320711096091772,
+    "delta_momentum_21_63": 0.031196840760791433,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09195400330141235,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.9600000381469727,
-      "volume": 194913860.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.8899999856948853,
       "volume": 246087610.0,
-      "return": -0.035714311780456365
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 0.5899999737739563,
       "volume": 3418885.0,
       "return": -0.032786950921536606
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.550000011920929,
+      "volume": 4979228.0,
+      "return": -0.06779654852722472
     }
   ],
   "data_status": "OK",

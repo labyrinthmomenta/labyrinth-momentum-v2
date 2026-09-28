@@ -3,24 +3,29 @@
     "security_id": 491,
     "ticker": "PLTUR",
     "name": "PLATFORM TURİZM TAŞIMACILIK GIDA İNŞAAT TEMİZLİK HİZMETLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İDARİ VE DESTEK HİZMET FAALİYETLERİ",
+    "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-12-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.39140102465202153,
-    "momentum_126": -0.3106632961098742,
-    "momentum_63": -0.2728077886725292,
-    "momentum_21": -0.2218009583206365,
+    "momentum_12_1": -0.20634917888854776,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.4293272523077767,
+    "momentum_126": -0.3568994601423435,
+    "momentum_63": -0.35580204618468847,
+    "momentum_21": -0.28095236278715585,
     "fip_252": -0.09126984126984126,
     "fip_126": -0.0873015873015873,
-    "fip_63": -0.09523809523809523,
+    "fip_63": -0.12698412698412698,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.225521899537037,
-    "delta_momentum_21_63": 0.051006830351892685,
-    "delta_fip_21_63": -0.047619047619047616,
+    "atr14_percent": 5.933963635093738,
+    "delta_momentum_21_63": 0.07484968339753262,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.029041645009735495,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 26.979999542236328,
-      "volume": 2394314.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 26.459999084472656,
       "volume": 1852198.0,
-      "return": -0.01927355324634561
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 16.420000076293945,
       "volume": 1065324.0,
       "return": 0.014833112891931899
+    },
+    {
+      "date": "2026-09-28",
+      "close": 15.100000381469727,
+      "volume": 1219341.0,
+      "return": -0.0803897496157715
     }
   ],
   "data_status": "OK",

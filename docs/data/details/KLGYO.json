@@ -3,24 +3,29 @@
     "security_id": 152,
     "ticker": "KLGYO",
     "name": "KİLER GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-04-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.39680000305175755,
-    "momentum_126": -0.29532709380759625,
-    "momentum_63": -0.2578740083570402,
-    "momentum_21": -0.2549407068064924,
+    "momentum_12_1": -0.1762820424647943,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": -0.43269229299688083,
+    "momentum_126": -0.3333333333333327,
+    "momentum_63": -0.30724073006659736,
+    "momentum_21": -0.3112840362244106,
     "fip_252": -0.11904761904761904,
     "fip_126": -0.047619047619047616,
-    "fip_63": -0.12698412698412698,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 6.141562448383703,
-    "delta_momentum_21_63": 0.002933301550547829,
-    "delta_fip_21_63": -0.15873015873015872,
+    "fip_63": -0.15873015873015872,
+    "fip_21": -0.38095238095238093,
+    "atr14_percent": 6.698909856581908,
+    "delta_momentum_21_63": -0.004043306157813231,
+    "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.10514547854344691,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.25,
-      "volume": 11493098.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.239999771118164,
       "volume": 9116247.0,
-      "return": -0.0016000366210937589
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.7699999809265137,
       "volume": 9225035.0,
       "return": 0.005333328247070224
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.5399999618530273,
+      "volume": 13361546.0,
+      "return": -0.06100796292761823
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 334,
     "ticker": "CATES",
     "name": "ÇATES ELEKTRİK ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-12-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.031590996087361045,
-    "momentum_126": -0.3179611214130055,
-    "momentum_63": -0.1678183405784648,
-    "momentum_21": -0.504117629107307,
+    "momentum_12_1": 0.985208754553327,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": -0.060324769256724364,
+    "momentum_126": -0.3135593008015628,
+    "momentum_63": -0.20353979147446988,
+    "momentum_21": -0.5266617535369964,
     "fip_252": 0.01984126984126984,
     "fip_126": 0.12698412698412698,
-    "fip_63": 0.15873015873015872,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 13.074402451695914,
-    "delta_momentum_21_63": -0.33629928852884217,
-    "delta_fip_21_63": -0.3968253968253968,
+    "fip_63": 0.12698412698412698,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 13.137775271371027,
+    "delta_momentum_21_63": -0.3231219620625265,
+    "delta_fip_21_63": -0.4603174603174603,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.46548125878308166,
     "completed_month_fip": -0.6190476190476191,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 34.81999969482422,
-      "volume": 1910404.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 34.47999954223633,
       "volume": 855468.0,
-      "return": -0.009764507626874863
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 33.720001220703125,
       "volume": 4272697.0,
       "return": 0.08774197486139124
+    },
+    {
+      "date": "2026-09-28",
+      "close": 32.400001525878906,
+      "volume": 2010161.0,
+      "return": -0.03914589700589266
     }
   ],
   "data_status": "OK",

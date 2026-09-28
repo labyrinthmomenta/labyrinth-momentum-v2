@@ -3,24 +3,29 @@
     "security_id": 527,
     "ticker": "ULUFA",
     "name": "ULUSAL FAKTORİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-11-11"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.23514208638810952,
-    "momentum_126": -0.30679155705646977,
-    "momentum_63": -0.20000000000000062,
-    "momentum_21": -0.11377242089446271,
+    "momentum_12_1": -0.12435227816061667,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": -0.2590673645536914,
+    "momentum_126": -0.3901919274621909,
+    "momentum_63": -0.21857928196012422,
+    "momentum_21": -0.15384621353218697,
     "fip_252": -0.051587301587301584,
-    "fip_126": -0.1111111111111111,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.12698412698412698,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 4.23975059290179,
-    "delta_momentum_21_63": 0.08622757910553791,
-    "delta_fip_21_63": 0.031746031746031744,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 4.474166336739836,
+    "delta_momentum_21_63": 0.06473306842793725,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.029585840137668296,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.934999942779541,
-      "volume": 40152060.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.9299999475479126,
       "volume": 38106840.0,
-      "return": -0.002583976940302213
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.4800000190734863,
       "volume": 19279538.0,
       "return": -0.01986753084718018
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.4299999475479126,
+      "volume": 20629150.0,
+      "return": -0.033783831676485354
     }
   ],
   "data_status": "OK",

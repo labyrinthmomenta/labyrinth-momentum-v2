@@ -3,24 +3,29 @@
     "security_id": 377,
     "ticker": "ETILR",
     "name": "ETİLER GIDA VE TİCARİ YATIRIMLAR SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "YİYECEK VE İÇECEK HİZMETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-07-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.4411134709047677,
-    "momentum_126": 0.7804232989449245,
-    "momentum_63": 0.2819047655378075,
-    "momentum_21": 0.13490728733444102,
-    "fip_252": 0.03968253968253968,
-    "fip_126": -0.12698412698412698,
-    "fip_63": -0.1111111111111111,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 7.093468520874098,
-    "delta_momentum_21_63": -0.1469974782033665,
-    "delta_fip_21_63": 0.15873015873015872,
+    "momentum_12_1": 0.27032966318949647,
+    "fip_12_1": 0.03896103896103896,
+    "momentum_252": 0.6263735791563314,
+    "momentum_126": 0.9892473221652196,
+    "momentum_63": 0.43410858802229524,
+    "momentum_21": 0.28027678663575695,
+    "fip_252": 0.031746031746031744,
+    "fip_126": -0.14285714285714285,
+    "fip_63": -0.14285714285714285,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 6.637138624344341,
+    "delta_momentum_21_63": -0.1538318013865383,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.032646056978760996,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.670000076293945,
-      "volume": 8800409.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.550000190734863,
       "volume": 7950035.0,
-      "return": -0.025695906552171244
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 6.730000019073486,
       "volume": 13184131.0,
       "return": 0.09967322629429742
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.400000095367432,
+      "volume": 27515877.0,
+      "return": 0.09955424582393735
     }
   ],
   "data_status": "OK",

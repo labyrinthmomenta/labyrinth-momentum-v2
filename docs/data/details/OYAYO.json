@@ -3,24 +3,29 @@
     "security_id": 574,
     "ticker": "OYAYO",
     "name": "OYAK YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2007-05-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.024651612445561688,
-    "momentum_126": -0.3563218034135034,
-    "momentum_63": -0.27170864627322466,
-    "momentum_21": -0.14714148862213827,
+    "momentum_12_1": 0.1898734589132225,
+    "fip_12_1": 0.15584415584415584,
+    "momentum_252": -0.05063291537869885,
+    "momentum_126": -0.3839285714285714,
+    "momentum_63": -0.3016194547701243,
+    "momentum_21": -0.20212769054584112,
     "fip_252": -0.19444444444444445,
     "fip_126": -0.3333333333333333,
     "fip_63": -0.36507936507936506,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 6.230529882867828,
-    "delta_momentum_21_63": 0.12456715765108639,
-    "delta_fip_21_63": -0.15873015873015878,
+    "fip_21": -0.6190476190476191,
+    "atr14_percent": 6.696246225795963,
+    "delta_momentum_21_63": 0.09949176422428319,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.003294103285845784,
     "completed_month_fip": 0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 37.31999969482422,
-      "volume": 121999.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 36.34000015258789,
       "volume": 105591.0,
-      "return": -0.02625936629823289
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 36.400001525878906,
       "volume": 44852.0,
       "return": -0.000549056674128523
+    },
+    {
+      "date": "2026-09-28",
+      "close": 34.5,
+      "volume": 97810.0,
+      "return": -0.05219784192943189
     }
   ],
   "data_status": "OK",

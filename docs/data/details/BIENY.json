@@ -3,24 +3,29 @@
     "security_id": 49,
     "ticker": "BIENY",
     "name": "BİEN YAPI ÜRÜNLERİ SANAYİ TURİZM VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-05-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6119367195506333,
-    "momentum_126": -0.29053458586462344,
-    "momentum_63": -0.28044442070855025,
-    "momentum_21": -0.2810834722485015,
+    "momentum_12_1": -0.448242165854026,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.6264648307442258,
+    "momentum_126": -0.32180848612906876,
+    "momentum_63": -0.3199999915228948,
+    "momentum_21": -0.32300885254498934,
     "fip_252": -0.13095238095238096,
     "fip_126": -0.1111111111111111,
-    "fip_63": -0.23809523809523808,
-    "fip_21": -0.6190476190476191,
-    "atr14_percent": 5.55914591212368,
-    "delta_momentum_21_63": -0.000639051539951252,
-    "delta_fip_21_63": -0.380952380952381,
+    "fip_63": -0.25396825396825395,
+    "fip_21": -0.7142857142857143,
+    "atr14_percent": 6.01789689919055,
+    "delta_momentum_21_63": -0.0030088610220945222,
+    "delta_fip_21_63": -0.46031746031746035,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.07594933770246737,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 41.720001220703125,
-      "volume": 12001994.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 40.959999084472656,
       "volume": 7247466.0,
-      "return": -0.01821673331719187
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 16.190000534057617,
       "volume": 1270924.0,
       "return": 0.02145111321166815
+    },
+    {
+      "date": "2026-09-28",
+      "close": 15.300000190734863,
+      "volume": 1307062.0,
+      "return": -0.054972224457345176
     }
   ],
   "data_status": "OK",

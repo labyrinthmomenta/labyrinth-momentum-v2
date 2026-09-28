@@ -3,24 +3,29 @@
     "security_id": 182,
     "ticker": "MOPAS",
     "name": "MOPAŞ MARKETÇİLİK GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-01-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.380074950103355,
-    "momentum_126": -0.4773564870795961,
-    "momentum_63": -0.4056886384843542,
-    "momentum_21": -0.28954903357022244,
-    "fip_252": -0.13095238095238096,
-    "fip_126": -0.2222222222222222,
+    "momentum_12_1": -0.14803619145217428,
+    "fip_12_1": -0.11255411255411256,
+    "momentum_252": -0.4410875875277145,
+    "momentum_126": -0.5157068159551408,
+    "momentum_63": -0.4349419959814015,
+    "momentum_21": -0.34397164895425214,
+    "fip_252": -0.1388888888888889,
+    "fip_126": -0.23809523809523808,
     "fip_63": -0.2857142857142857,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.172981966782827,
-    "delta_momentum_21_63": 0.11613960491413178,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 5.775629658219855,
+    "delta_momentum_21_63": 0.09097034702714935,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09832634814565566,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 32.02000045776367,
-      "volume": 2230596.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 33.099998474121094,
       "volume": 14293158.0,
-      "return": 0.03372885699305361
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.850000381469727,
       "volume": 1307559.0,
       "return": -0.011454160513456713
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.5,
+      "volume": 1640862.0,
+      "return": -0.06801009347737708
     }
   ],
   "data_status": "OK",

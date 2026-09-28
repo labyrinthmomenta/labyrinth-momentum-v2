@@ -3,24 +3,29 @@
     "security_id": 482,
     "ticker": "PEKGY",
     "name": "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2018-02-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.36670837450206695,
-    "momentum_126": -0.6436619710742515,
-    "momentum_63": -0.6383130789447383,
-    "momentum_21": -0.6933333368012402,
-    "fip_252": 0.2222222222222222,
-    "fip_126": 0.11904761904761904,
+    "momentum_12_1": 1.1084336864877318,
+    "fip_12_1": -0.27705627705627706,
+    "momentum_252": -0.45060242915779924,
+    "momentum_126": -0.6908474615064717,
+    "momentum_63": -0.6735862665985921,
+    "momentum_21": -0.739428574698312,
+    "fip_252": 0.21428571428571427,
+    "fip_126": 0.10317460317460317,
     "fip_63": 0.047619047619047616,
-    "fip_21": -0.38095238095238093,
-    "atr14_percent": 16.016411060493688,
-    "delta_momentum_21_63": -0.055020257856501886,
-    "delta_fip_21_63": -0.42857142857142855,
+    "fip_21": -0.47619047619047616,
+    "atr14_percent": 17.28633334455391,
+    "delta_momentum_21_63": -0.06584230809971992,
+    "delta_fip_21_63": -0.5238095238095237,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.06924646907414655,
     "completed_month_fip": -0.19047619047619047,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.989999771118164,
-      "volume": 926334124.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8.300000190734863,
       "volume": 792875838.0,
-      "return": 0.03879855175181257
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.059999942779541,
       "volume": 390449.0,
       "return": -0.09964411996137112
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.559999942779541,
+      "volume": 450107.0,
+      "return": -0.09881423036644177
     }
   ],
   "data_status": "OK",

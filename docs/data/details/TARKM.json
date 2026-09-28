@@ -3,24 +3,29 @@
     "security_id": 234,
     "ticker": "TARKM",
     "name": "TARKİM BİTKİ KORUMA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-09-12"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.0232419547079884,
-    "momentum_126": 0.10668467251856795,
-    "momentum_63": -0.19101678183613002,
-    "momentum_21": -0.24190564292321914,
+    "momentum_12_1": 0.32853717026378826,
+    "fip_12_1": 0.1774891774891775,
+    "momentum_252": -0.09352517985611508,
+    "momentum_126": 0.022312373225151116,
+    "momentum_63": -0.2667313288069836,
+    "momentum_21": -0.3176895306859201,
     "fip_252": -0.21428571428571427,
     "fip_126": 0.1746031746031746,
-    "fip_63": -0.25396825396825395,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 6.677188713181688,
-    "delta_momentum_21_63": -0.05088886108708912,
-    "delta_fip_21_63": -0.2698412698412699,
+    "fip_63": -0.2857142857142857,
+    "fip_21": -0.6190476190476191,
+    "atr14_percent": 7.40603080075461,
+    "delta_momentum_21_63": -0.050958201878936515,
+    "delta_fip_21_63": -0.33333333333333337,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.21706263498920042,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 419.5,
-      "volume": 149249.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 417.0,
       "volume": 118548.0,
-      "return": -0.005959475566150174
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 409.75,
       "volume": 112600.0,
       "return": 0.03472222222222232
+    },
+    {
+      "date": "2026-09-28",
+      "close": 378.0,
+      "volume": 129619.0,
+      "return": -0.07748627211714465
     }
   ],
   "data_status": "OK",

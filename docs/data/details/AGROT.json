@@ -3,23 +3,28 @@
     "security_id": 6,
     "ticker": "AGROT",
     "name": "AGROTECH YÜKSEK TEKNOLOJİ VE YATIRIM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TARIM, ORMANCILIK VE BALIKÇILIK",
+    "industry": "TARIM VE HAYVANCILIK AVCILIK VE İLGİLİ HİZMET FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-11-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6446078248044147,
-    "momentum_126": -0.5034246541787589,
-    "momentum_63": -0.4669117527823752,
-    "momentum_21": -0.3127961517657495,
+    "momentum_12_1": -0.48768474063522993,
+    "fip_12_1": -0.15151515151515152,
+    "momentum_252": -0.6674876741703537,
+    "momentum_126": -0.5328719810248519,
+    "momentum_63": -0.49814126575268725,
+    "momentum_21": -0.35096150319251684,
     "fip_252": -0.1865079365079365,
     "fip_126": -0.18253968253968253,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 6.267411628473899,
-    "delta_momentum_21_63": 0.1541156010166257,
+    "atr14_percent": 6.938661921994147,
+    "delta_momentum_21_63": 0.1471797625601704,
     "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.1576763904180265,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.079999923706055,
-      "volume": 67724914.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.059999942779541,
       "volume": 44405666.0,
-      "return": -0.004901956201103785
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.4500000476837158,
       "volume": 27299383.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.350000023841858,
+      "volume": 24613604.0,
+      "return": -0.0689655314160863
     }
   ],
   "data_status": "OK",

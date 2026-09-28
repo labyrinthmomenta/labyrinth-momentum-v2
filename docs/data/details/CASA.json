@@ -3,24 +3,29 @@
     "security_id": 601,
     "ticker": "CASA",
     "name": "CASA EMTİA PETROL KİMYEVİ VE TÜREVLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-07-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4890219329109705,
-    "momentum_126": -0.44287268865255014,
-    "momentum_63": -0.32631577943500756,
-    "momentum_21": -0.24705881230971405,
+    "momentum_12_1": -0.3196598091422356,
+    "fip_12_1": -0.19480519480519481,
+    "momentum_252": -0.5389694523460902,
+    "momentum_126": -0.4952902487316234,
+    "momentum_63": -0.3908790363303394,
+    "momentum_21": -0.3223529142491959,
     "fip_252": -0.21428571428571427,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.38095238095238093,
-    "atr14_percent": 3.8182384647488696,
-    "delta_momentum_21_63": 0.07925696712529351,
-    "delta_fip_21_63": -0.1746031746031746,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 4.733102873258328,
+    "delta_momentum_21_63": 0.0685261220811435,
+    "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.011144130252463746,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 100.19999694824219,
-      "volume": 27141.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 99.94999694824219,
       "volume": 43675.0,
-      "return": -0.0024950100560295896
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 51.20000076293945,
       "volume": 16751.0,
       "return": -0.015384600712702867
+    },
+    {
+      "date": "2026-09-28",
+      "close": 46.08000183105469,
+      "volume": 34666.0,
+      "return": -0.09999997764825852
     }
   ],
   "data_status": "OK",

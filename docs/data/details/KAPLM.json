@@ -3,23 +3,28 @@
     "security_id": 422,
     "ticker": "KAPLM",
     "name": "KAPLAMİN AMBALAJ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-09-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6684210641043525,
-    "momentum_126": -0.5897674560546871,
-    "momentum_63": -0.6766269589432001,
-    "momentum_21": -0.5923743641906771,
+    "momentum_12_1": -0.14650000000000007,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.6823999938964843,
+    "momentum_126": -0.6532751025070791,
+    "momentum_63": -0.7037313375900041,
+    "momentum_21": -0.6278851715248792,
     "fip_252": -0.16666666666666666,
-    "fip_126": -0.2222222222222222,
+    "fip_126": -0.23809523809523808,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.7142857142857143,
-    "atr14_percent": 13.71444850931165,
-    "delta_momentum_21_63": 0.084252594752523,
+    "atr14_percent": 14.937914130366318,
+    "delta_momentum_21_63": 0.07584616606512484,
     "delta_fip_21_63": -0.41269841269841273,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05821917808219157,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 532.0,
-      "volume": 1019439.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 500.0,
       "volume": 487720.0,
-      "return": -0.06015037593984962
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 176.39999389648438,
       "volume": 1444298.0,
       "return": 0.09975062723709183
+    },
+    {
+      "date": "2026-09-28",
+      "close": 158.8000030517578,
+      "volume": 50155.0,
+      "return": -0.09977319418193775
     }
   ],
   "data_status": "OK",

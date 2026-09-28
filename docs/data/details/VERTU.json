@@ -3,24 +3,29 @@
     "security_id": 535,
     "ticker": "VERTU",
     "name": "VERUSATURK GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2015-11-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.36571430024646645,
-    "momentum_126": -0.3062500434617187,
-    "momentum_63": -0.323857909697019,
-    "momentum_21": -0.2558659229782767,
-    "fip_252": -0.17063492063492064,
-    "fip_126": -0.19047619047619047,
-    "fip_63": -0.25396825396825395,
+    "momentum_12_1": -0.19512194281468898,
+    "fip_12_1": -0.1471861471861472,
+    "momentum_252": -0.41734417460907147,
+    "momentum_126": -0.33125977157696807,
+    "momentum_63": -0.3740902844975599,
+    "momentum_21": -0.276094285103885,
+    "fip_252": -0.17857142857142858,
+    "fip_126": -0.20634920634920634,
+    "fip_63": -0.2857142857142857,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 4.246220990231133,
-    "delta_momentum_21_63": 0.06799198671874229,
-    "delta_fip_21_63": -0.2698412698412699,
+    "atr14_percent": 4.436742059662777,
+    "delta_momentum_21_63": 0.09799599939367487,
+    "delta_fip_21_63": -0.23809523809523814,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.037222226460775,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 42.0,
-      "volume": 1685515.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 44.279998779296875,
       "volume": 7750720.0,
-      "return": 0.05428568522135424
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 26.639999389648438,
       "volume": 291442.0,
       "return": 0.012927762830836187
+    },
+    {
+      "date": "2026-09-28",
+      "close": 25.799999237060547,
+      "volume": 255338.0,
+      "return": -0.03153153798172725
     }
   ],
   "data_status": "OK",

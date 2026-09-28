@@ -3,23 +3,28 @@
     "security_id": 331,
     "ticker": "CRFSA",
     "name": "CARREFOURSA CARREFOUR SABANCI TİCARET MERKEZİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2015-08-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.721673313682214,
-    "momentum_126": 1.0085763294432817,
-    "momentum_63": 0.5571808939662248,
-    "momentum_21": -0.15221720561722263,
+    "momentum_12_1": 2.1308411773047293,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": 1.462616901979127,
+    "momentum_126": 0.7925170560112409,
+    "momentum_63": 0.4195286400791769,
+    "momentum_21": -0.21343282443373945,
     "fip_252": 0.0,
-    "fip_126": -0.015873015873015872,
+    "fip_126": 0.0,
     "fip_63": -0.015873015873015872,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 9.808641097473787,
-    "delta_momentum_21_63": -0.7093980995834475,
+    "atr14_percent": 10.911963685304723,
+    "delta_momentum_21_63": -0.6329614645129163,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.5917861616069007,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 86.05000305175781,
-      "volume": 406867.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 85.5999984741211,
       "volume": 405674.0,
-      "return": -0.0052295707341932784
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 234.1999969482422,
       "volume": 1399099.0,
       "return": -0.06244998363864451
+    },
+    {
+      "date": "2026-09-28",
+      "close": 210.8000030517578,
+      "volume": 870677.0,
+      "return": -0.09991457814431881
     }
   ],
   "data_status": "OK",

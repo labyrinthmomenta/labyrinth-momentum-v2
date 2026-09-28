@@ -3,24 +3,29 @@
     "security_id": 434,
     "ticker": "KZGYO",
     "name": "KUZUGRUP GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-08-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3892508010514951,
-    "momentum_126": -0.3023255813953494,
-    "momentum_63": -0.3297586880031774,
-    "momentum_21": -0.2522432502818951,
+    "momentum_12_1": -0.15416322076805367,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": -0.39406431695888366,
+    "momentum_126": -0.3685567278484775,
+    "momentum_63": -0.3518518689829797,
+    "momentum_21": -0.28362575627022246,
     "fip_252": -0.05952380952380952,
-    "fip_126": 0.007936507936507936,
-    "fip_63": 0.09523809523809523,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 11.296586360888883,
-    "delta_momentum_21_63": 0.07751543772128233,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_126": -0.007936507936507936,
+    "fip_63": 0.06349206349206349,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 11.238262431843724,
+    "delta_momentum_21_63": 0.06822611271275725,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0030611971823789608,
     "completed_month_fip": 0.19047619047619047,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 24.559999465942383,
-      "volume": 1534294.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 24.260000228881836,
       "volume": 730749.0,
-      "return": -0.01221495291465946
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.0,
       "volume": 1968082.0,
       "return": -0.020887708955524942
+    },
+    {
+      "date": "2026-09-28",
+      "close": 14.699999809265137,
+      "volume": 1853202.0,
+      "return": -0.020000012715657545
     }
   ],
   "data_status": "OK",

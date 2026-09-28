@@ -3,24 +3,29 @@
     "security_id": 97,
     "ticker": "EUPWR",
     "name": "EUROPOWER ENERJİ VE OTOMASYON TEKNOLOJİLERİ SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-04-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.0651443445929463,
-    "momentum_126": 0.757142857142858,
-    "momentum_63": -0.24074074074074114,
-    "momentum_21": -0.40349174674879384,
+    "momentum_12_1": 2.6254295057391164,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": 0.9020617783004146,
+    "momentum_126": 0.4689489921930319,
+    "momentum_63": -0.3398926716593331,
+    "momentum_21": -0.4753554647002739,
     "fip_252": 0.011904761904761904,
-    "fip_126": -0.06349206349206349,
-    "fip_63": -0.047619047619047616,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 10.583557400133694,
-    "delta_momentum_21_63": -0.1627510060080527,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_126": -0.047619047619047616,
+    "fip_63": -0.07936507936507936,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 11.713194662456349,
+    "delta_momentum_21_63": -0.13546279304094078,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.20564042671894733,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 29.780000686645508,
-      "volume": 5961344.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 29.100000381469727,
       "volume": 3987859.0,
-      "return": -0.022834126578133995
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 61.5,
       "volume": 12452764.0,
       "return": 0.019900510416622552
+    },
+    {
+      "date": "2026-09-28",
+      "close": 55.349998474121094,
+      "volume": 21849119.0,
+      "return": -0.10000002481103909
     }
   ],
   "data_status": "OK",

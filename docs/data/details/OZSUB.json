@@ -3,24 +3,29 @@
     "security_id": 475,
     "ticker": "OZSUB",
     "name": "ÖZSU BALIK ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TARIM, ORMANCILIK VE BALIKÇILIK",
+    "industry": "BALIKÇILIK VE SU ÜRÜNLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-11-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.0739958520207957,
-    "momentum_126": 0.8526912706832042,
-    "momentum_63": 0.2029430706115447,
-    "momentum_21": -0.11181526918482754,
+    "momentum_12_1": 1.3748667115777162,
+    "fip_12_1": 0.04329004329004329,
+    "momentum_252": 0.9084131438862915,
+    "momentum_126": 0.7280617429175402,
+    "momentum_63": 0.13561472620632387,
+    "momentum_21": -0.1964125251397968,
     "fip_252": 0.05952380952380952,
     "fip_126": -0.07142857142857142,
     "fip_63": -0.06349206349206349,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.140476182253905,
-    "delta_momentum_21_63": -0.31475833979637224,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 7.984893513016546,
+    "delta_momentum_21_63": -0.33202725134612066,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.24000004359653992,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 18.920000076293945,
-      "volume": 889494.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 18.780000686645508,
       "volume": 1010345.0,
-      "return": -0.00739954487758443
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 39.2400016784668,
       "volume": 873403.0,
       "return": 0.03481022081384233
+    },
+    {
+      "date": "2026-09-28",
+      "close": 35.84000015258789,
+      "volume": 1260055.0,
+      "return": -0.08664631448639004
     }
   ],
   "data_status": "OK",

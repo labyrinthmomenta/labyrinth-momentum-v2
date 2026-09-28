@@ -3,24 +3,29 @@
     "security_id": 169,
     "ticker": "LRSHO",
     "name": "LORAS HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2009-12-31"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6407942196318854,
-    "momentum_126": -0.43943660950239805,
-    "momentum_63": -0.4041915986001836,
-    "momentum_21": -0.21343872251365947,
+    "momentum_12_1": -0.5357798055169279,
+    "fip_12_1": -0.10822510822510822,
+    "momentum_252": -0.6550458603621272,
+    "momentum_126": -0.4643874642907043,
+    "momentum_63": -0.43202416080620354,
+    "momentum_21": -0.2569169895290895,
     "fip_252": -0.15476190476190477,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.38095238095238093,
-    "fip_21": -0.6190476190476191,
-    "atr14_percent": 5.472426438201151,
-    "delta_momentum_21_63": 0.19075287608652414,
-    "delta_fip_21_63": -0.23809523809523814,
+    "fip_21": -0.6666666666666666,
+    "atr14_percent": 6.02475946856671,
+    "delta_momentum_21_63": 0.17510717127711406,
+    "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11428569239013053,
     "completed_month_fip": -0.19047619047619047,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 5.539999961853027,
-      "volume": 59817218.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 5.449999809265137,
       "volume": 43839203.0,
-      "return": -0.01624551501942384
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.9900000095367432,
       "volume": 9521244.0,
       "return": -0.014851471125267302
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.8799999952316284,
+      "volume": 19509916.0,
+      "return": -0.055276388833144785
     }
   ],
   "data_status": "OK",

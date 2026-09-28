@@ -3,24 +3,29 @@
     "security_id": 342,
     "ticker": "DGATE",
     "name": "DATAGATE BİLGİSAYAR MALZEMELERİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2006-02-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.09933774834437203,
-    "momentum_126": -0.1757575757575759,
-    "momentum_63": -0.44262295081967207,
-    "momentum_21": -0.3260654214900154,
+    "momentum_12_1": 0.33421928938044987,
+    "fip_12_1": 0.008658008658008658,
+    "momentum_252": -0.18671095331641974,
+    "momentum_126": -0.24491056806182165,
+    "momentum_63": -0.4987714862591853,
+    "momentum_21": -0.39043824867707155,
     "fip_252": -0.05555555555555555,
     "fip_126": -0.06349206349206349,
-    "fip_63": -0.2698412698412698,
+    "fip_63": -0.30158730158730157,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 9.039305271026898,
-    "delta_momentum_21_63": 0.11655752932965668,
-    "delta_fip_21_63": -0.30158730158730157,
+    "atr14_percent": 10.119917923430858,
+    "delta_momentum_21_63": 0.10833323758211377,
+    "delta_fip_21_63": -0.2698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09999997147889894,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 75.5,
-      "volume": 540461.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 75.25,
       "volume": 354498.0,
-      "return": -0.0033112582781457123
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 68.0,
       "volume": 520173.0,
       "return": 0.04938266662867674
+    },
+    {
+      "date": "2026-09-28",
+      "close": 61.20000076293945,
+      "volume": 450154.0,
+      "return": -0.09999998878030214
     }
   ],
   "data_status": "OK",

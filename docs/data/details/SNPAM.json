@@ -3,23 +3,28 @@
     "security_id": 626,
     "ticker": "SNPAM",
     "name": "SÖNMEZ PAMUKLU SANAYİİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-12-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.1897871950839427,
-    "momentum_126": -0.09763030467769529,
-    "momentum_63": -0.09333328973679389,
-    "momentum_21": -0.06666660433501104,
+    "momentum_12_1": -0.1379897714772098,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": -0.2163543450913641,
+    "momentum_126": -0.12547534135555838,
+    "momentum_63": -0.10068424037739776,
+    "momentum_21": -0.0909090994760543,
     "fip_252": -0.10317460317460317,
     "fip_126": -0.07936507936507936,
     "fip_63": -0.15873015873015872,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 2.3120850142504876,
-    "delta_momentum_21_63": 0.026666685401782853,
+    "atr14_percent": 2.470059989988629,
+    "delta_momentum_21_63": 0.00977514090134346,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05155179013345923,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 23.5,
-      "volume": 216001.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 23.479999542236328,
       "volume": 58174.0,
-      "return": -0.0008510833090924486
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.040000915527344,
       "volume": 22708.0,
       "return": 0.0021053113435443027
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.399999618530273,
+      "volume": 38049.0,
+      "return": -0.03361351188145911
     }
   ],
   "data_status": "OK",

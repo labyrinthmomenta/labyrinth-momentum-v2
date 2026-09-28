@@ -3,24 +3,29 @@
     "security_id": 266,
     "ticker": "VAKFN",
     "name": "VAKIF FİNANSAL KİRALAMA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-04-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.42028986308484984,
-    "momentum_126": -0.33701641389812587,
-    "momentum_63": -0.26380349576722073,
-    "momentum_21": -0.1596639059532915,
+    "momentum_12_1": -0.2871285600178627,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.42970288342299623,
+    "momentum_126": -0.3635357715682852,
+    "momentum_63": -0.29325137173359506,
+    "momentum_21": -0.2000000496705352,
     "fip_252": -0.12301587301587301,
-    "fip_126": -0.18253968253968253,
-    "fip_63": -0.15873015873015872,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 3.692612609969311,
-    "delta_momentum_21_63": 0.10413958981392923,
-    "delta_fip_21_63": 0.06349206349206349,
+    "fip_126": -0.19047619047619047,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 4.018152179348814,
+    "delta_momentum_21_63": 0.09325132206305986,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.033057917191121944,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.725000023841858,
-      "volume": 203521804.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.6833330392837524,
       "volume": 117984709.0,
-      "return": -0.02415477332302074
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.0,
       "volume": 15387821.0,
       "return": 0.010101000370632551
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.9599999785423279,
+      "volume": 47901599.0,
+      "return": -0.04000002145767212
     }
   ],
   "data_status": "OK",

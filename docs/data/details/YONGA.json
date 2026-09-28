@@ -3,23 +3,28 @@
     "security_id": 631,
     "ticker": "YONGA",
     "name": "YONGA MOBİLYA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ORMAN ÜRÜNLERİ VE MOBİLYA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2015-02-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.487096757954652,
-    "momentum_126": -0.3697297379777239,
-    "momentum_63": -0.3412429275438823,
-    "momentum_21": -0.23790853203971574,
+    "momentum_12_1": -0.32941178714527874,
+    "fip_12_1": -0.1341991341991342,
+    "momentum_252": -0.5038235047284298,
+    "momentum_126": -0.3865454240278763,
+    "momentum_63": -0.3627950671894614,
+    "momentum_21": -0.26008765773062636,
     "fip_252": -0.15873015873015872,
     "fip_126": -0.1984126984126984,
     "fip_63": -0.38095238095238093,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 3.4875694091232488,
-    "delta_momentum_21_63": 0.10333439550416657,
+    "atr14_percent": 3.619986859860718,
+    "delta_momentum_21_63": 0.10270740945883505,
     "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11921572217754262,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 68.19999694824219,
-      "volume": 78678.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 68.0,
       "volume": 32997.0,
-      "return": -0.0029325067036874986
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 34.97999954223633,
       "volume": 13444.0,
       "return": 0.03921567738586029
+    },
+    {
+      "date": "2026-09-28",
+      "close": 33.7400016784668,
+      "volume": 12132.0,
+      "return": -0.03544876729550284
     }
   ],
   "data_status": "OK",

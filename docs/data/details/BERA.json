@@ -3,24 +3,29 @@
     "security_id": 45,
     "ticker": "BERA",
     "name": "BERA HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-11-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3580247039114146,
-    "momentum_126": -0.33255542661848736,
-    "momentum_63": -0.2889994113180099,
-    "momentum_21": -0.14880952845557738,
+    "momentum_12_1": -0.2278123552843745,
+    "fip_12_1": -0.008658008658008658,
+    "momentum_252": -0.37704917325765763,
+    "momentum_126": -0.35214577839614414,
+    "momentum_63": -0.30865741857825857,
+    "momentum_21": -0.19326496479782818,
     "fip_252": -0.027777777777777776,
     "fip_126": -0.09523809523809523,
     "fip_63": -0.1111111111111111,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.675959842101302,
-    "delta_momentum_21_63": 0.1401898828624325,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 4.9093121580112715,
+    "delta_momentum_21_63": 0.11539245378043039,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.06416280638746885,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 17.81999969482422,
-      "volume": 6574373.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 17.690000534057617,
       "volume": 4853830.0,
-      "return": -0.00729512699174506
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 11.4399995803833,
       "volume": 6802519.0,
       "return": -0.006944520329984494
+    },
+    {
+      "date": "2026-09-28",
+      "close": 11.020000457763672,
+      "volume": 5808569.0,
+      "return": -0.036713211365830944
     }
   ],
   "data_status": "OK",

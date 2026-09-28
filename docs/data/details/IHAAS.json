@@ -3,24 +3,29 @@
     "security_id": 409,
     "ticker": "IHAAS",
     "name": "İHLAS HABER AJANSI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "BİLGİ VE İLETİŞİM",
+    "industry": "BİLGİ HİZMET FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-11-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.2815642496794003,
-    "momentum_126": -0.7204347900722337,
-    "momentum_63": -0.5713333447774251,
-    "momentum_21": -0.5237037164193613,
-    "fip_252": 0.047619047619047616,
+    "momentum_12_1": 0.5446927490382008,
+    "fip_12_1": -0.10822510822510822,
+    "momentum_252": -0.35307261617378394,
+    "momentum_126": -0.7202898672245832,
+    "momentum_63": -0.6077900059840036,
+    "momentum_21": -0.5811934870355133,
+    "fip_252": 0.04365079365079365,
     "fip_126": -0.047619047619047616,
     "fip_63": -0.15873015873015872,
-    "fip_21": -0.5714285714285714,
-    "atr14_percent": 13.228605597630139,
-    "delta_momentum_21_63": 0.047629628358063836,
-    "delta_fip_21_63": -0.4126984126984127,
+    "fip_21": -0.6666666666666666,
+    "atr14_percent": 14.431027718317397,
+    "delta_momentum_21_63": 0.026596518948490244,
+    "delta_fip_21_63": -0.5079365079365079,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.06280686636127797,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 35.79999923706055,
-      "volume": 1428059.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 35.79999923706055,
       "volume": 1250893.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 25.719999313354492,
       "volume": 158611.0,
       "return": -0.0994397831125513
+    },
+    {
+      "date": "2026-09-28",
+      "close": 23.15999984741211,
+      "volume": 80098.0,
+      "return": -0.09953341890694234
     }
   ],
   "data_status": "OK",

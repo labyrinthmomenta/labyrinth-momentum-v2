@@ -3,24 +3,29 @@
     "security_id": 378,
     "ticker": "EYGYO",
     "name": "EYG GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-12-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5072115318485977,
-    "momentum_126": -0.3027211182252829,
-    "momentum_63": -0.13502107539862218,
-    "momentum_21": -0.25182483752513507,
-    "fip_252": -0.03968253968253968,
+    "momentum_12_1": -0.3853006389405843,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.5567928483343407,
+    "momentum_126": -0.30902780192317636,
+    "momentum_63": -0.16033750817363346,
+    "momentum_21": -0.2789855012996836,
+    "fip_252": -0.047619047619047616,
     "fip_126": -0.07936507936507936,
-    "fip_63": 0.031746031746031744,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 7.128343248144269,
-    "delta_momentum_21_63": -0.11680376212651289,
-    "delta_fip_21_63": -0.12698412698412698,
+    "fip_63": 0.015873015873015872,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 7.141792289676441,
+    "delta_momentum_21_63": -0.11864799312605012,
+    "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.2883720270036194,
     "completed_month_fip": -0.38095238095238093,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.159999847412109,
-      "volume": 22899055.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.489999771118164,
       "volume": 24343319.0,
-      "return": 0.07932690764672601
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.049999952316284,
       "volume": 2917946.0,
       "return": 0.00985220749181659
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.9900000095367432,
+      "volume": 4671265.0,
+      "return": -0.029268265451297903
     }
   ],
   "data_status": "OK",

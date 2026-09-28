@@ -3,24 +3,29 @@
     "security_id": 522,
     "ticker": "MARBL",
     "name": "TUREKS TURUNÇ MADENCİLİK İÇ VE DIŞ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-11-08"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.35719107440713604,
-    "momentum_126": -0.30561630698212683,
-    "momentum_63": -0.26599843779767873,
-    "momentum_21": -0.2462390838081886,
-    "fip_252": -0.08333333333333333,
+    "momentum_12_1": -0.13978494003420272,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": -0.38911289766952906,
+    "momentum_126": -0.32011965367284756,
+    "momentum_63": -0.28649919027509685,
+    "momentum_21": -0.28984374866122387,
+    "fip_252": -0.09126984126984126,
     "fip_126": -0.09523809523809523,
     "fip_63": -0.07936507936507936,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.963147838063267,
-    "delta_momentum_21_63": 0.019759353989490136,
-    "delta_fip_21_63": -0.25396825396825395,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 5.526003677214504,
+    "delta_momentum_21_63": -0.0033445583861270167,
+    "delta_fip_21_63": -0.3492063492063492,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.04962146189044603,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 14.8100004196167,
-      "volume": 2119893.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.880000114440918,
       "volume": 3046197.0,
-      "return": 0.004726515384260166
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 9.520000457763672,
       "volume": 900379.0,
       "return": 0.02255639405820986
+    },
+    {
+      "date": "2026-09-28",
+      "close": 9.09000015258789,
+      "volume": 1093936.0,
+      "return": -0.04516809711128855
     }
   ],
   "data_status": "OK",

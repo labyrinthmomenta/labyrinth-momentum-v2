@@ -3,24 +3,29 @@
     "security_id": 246,
     "ticker": "TUREX",
     "name": "TUREKS TURİZM TAŞIMACILIK A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-04-08"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3174061403823796,
-    "momentum_126": -0.1825613248952659,
-    "momentum_63": -0.18809200156949768,
-    "momentum_21": -0.09090907777308088,
+    "momentum_12_1": -0.24133945872704554,
+    "fip_12_1": -0.21212121212121213,
+    "momentum_252": -0.3533487294106564,
+    "momentum_126": -0.22651932573643063,
+    "momentum_63": -0.24221921436979466,
+    "momentum_21": -0.14764082826249358,
     "fip_252": -0.2222222222222222,
     "fip_126": -0.2222222222222222,
-    "fip_63": -0.23809523809523808,
+    "fip_63": -0.25396825396825395,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.732689256164041,
-    "delta_momentum_21_63": 0.0971829237964168,
-    "delta_fip_21_63": -0.09523809523809523,
+    "atr14_percent": 5.448338799276434,
+    "delta_momentum_21_63": 0.09457838610730107,
+    "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.038805934245719986,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.789999961853027,
-      "volume": 22920594.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8.65999984741211,
       "volume": 15680346.0,
-      "return": -0.014789546644493057
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 6.0,
       "volume": 23520917.0,
       "return": 0.0810810439279559
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.599999904632568,
+      "volume": 23470473.0,
+      "return": -0.06666668256123864
     }
   ],
   "data_status": "OK",

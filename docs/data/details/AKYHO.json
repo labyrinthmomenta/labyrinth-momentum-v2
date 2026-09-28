@@ -3,24 +3,29 @@
     "security_id": 546,
     "ticker": "AKYHO",
     "name": "AKDENİZ YATIRIM HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-07-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.53846156617291,
-    "momentum_126": -0.3538461503192507,
-    "momentum_63": -0.3142857490406088,
-    "momentum_21": -0.2466368012651794,
+    "momentum_12_1": -0.37499998306686144,
+    "fip_12_1": -0.1645021645021645,
+    "momentum_252": -0.5568181956725666,
+    "momentum_126": -0.3976833998159116,
+    "momentum_63": -0.3658536916305771,
+    "momentum_21": -0.29090913228752113,
     "fip_252": -0.19047619047619047,
     "fip_126": -0.19047619047619047,
-    "fip_63": -0.2857142857142857,
+    "fip_63": -0.31746031746031744,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 6.822082555732941,
-    "delta_momentum_21_63": 0.0676489477754294,
-    "delta_fip_21_63": -0.19047619047619047,
+    "atr14_percent": 7.371533185409213,
+    "delta_momentum_21_63": 0.074944559343056,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05357148369051978,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.640000104904175,
-      "volume": 5412205.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.5199999809265137,
       "volume": 3048167.0,
-      "return": -0.03296706607672484
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.6799999475479126,
       "volume": 433070.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.559999942779541,
+      "volume": 1256804.0,
+      "return": -0.07142857649699375
     }
   ],
   "data_status": "OK",

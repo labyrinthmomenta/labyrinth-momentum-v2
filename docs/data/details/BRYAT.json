@@ -3,23 +3,28 @@
     "security_id": 57,
     "ticker": "BRYAT",
     "name": "BORUSAN YATIRIM VE PAZARLAMA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1996-11-11"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3629505448449296,
-    "momentum_126": -0.29005137786081236,
-    "momentum_63": -0.19406150583244963,
-    "momentum_21": -0.1100702576112409,
-    "fip_252": -0.1746031746031746,
-    "fip_126": -0.1984126984126984,
+    "momentum_12_1": -0.2854750941816675,
+    "fip_12_1": -0.18614718614718614,
+    "momentum_252": -0.39305148597739736,
+    "momentum_126": -0.32870370370370394,
+    "momentum_63": -0.2254273504273504,
+    "momentum_21": -0.15055653192735763,
+    "fip_252": -0.18253968253968253,
+    "fip_126": -0.21428571428571427,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.6521407708774807,
-    "delta_momentum_21_63": 0.08399124822120874,
+    "atr14_percent": 3.9392266811825984,
+    "delta_momentum_21_63": 0.07487081849999278,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.01755412521942712,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2386.0,
-      "volume": 80286.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2389.0,
       "volume": 51718.0,
-      "return": 0.0012573344509638762
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1520.0,
       "volume": 45970.0,
       "return": 0.01333333333333342
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1450.0,
+      "volume": 57396.0,
+      "return": -0.046052631578947345
     }
   ],
   "data_status": "OK",

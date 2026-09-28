@@ -3,24 +3,29 @@
     "security_id": 100,
     "ticker": "FZLGY",
     "name": "FUZUL GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-07-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6516516322150621,
-    "momentum_126": -0.6741572786891501,
-    "momentum_63": -0.5703703562418623,
-    "momentum_21": -0.4228855641135305,
+    "momentum_12_1": -0.39323079035832376,
+    "fip_12_1": -0.025974025974025976,
+    "momentum_252": -0.6744615408090449,
+    "momentum_126": -0.7120304997180511,
+    "momentum_63": -0.6149927183424895,
+    "momentum_21": -0.4634888290010629,
     "fip_252": -0.03571428571428571,
-    "fip_126": -0.15873015873015872,
-    "fip_63": -0.23809523809523808,
+    "fip_126": -0.1746031746031746,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 12.131324434253095,
-    "delta_momentum_21_63": 0.14748479212833177,
-    "delta_fip_21_63": 0.09523809523809523,
+    "atr14_percent": 13.201484071889585,
+    "delta_momentum_21_63": 0.15150388934142656,
+    "delta_fip_21_63": 0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.15225229513315086,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.649999618530273,
-      "volume": 9731313.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 16.25,
       "volume": 17128310.0,
-      "return": -0.024024001663345507
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.800000190734863,
       "volume": 17007197.0,
       "return": -0.0660225193065298
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.289999961853027,
+      "volume": 12866265.0,
+      "return": -0.08793107105350262
     }
   ],
   "data_status": "OK",

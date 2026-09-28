@@ -3,23 +3,28 @@
     "security_id": 615,
     "ticker": "BASCM",
     "name": "BAŞTAŞ BAŞKENT ÇİMENTO SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-08-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.33353511357152343,
-    "momentum_126": -0.23541663051755213,
-    "momentum_63": -0.23541663051755213,
-    "momentum_21": -0.23647710328504412,
-    "fip_252": -0.15079365079365079,
+    "momentum_12_1": -0.12990934849808067,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.34984889879711367,
+    "momentum_126": -0.24438199425357587,
+    "momentum_63": -0.23957593505578845,
+    "momentum_21": -0.25277774208857595,
+    "fip_252": -0.15873015873015872,
     "fip_126": -0.15079365079365079,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 3.1072216486571986,
-    "delta_momentum_21_63": -0.0010604727674919934,
+    "atr14_percent": 3.118272935865604,
+    "delta_momentum_21_63": -0.013201807032787505,
     "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.04117643016432515,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.520000457763672,
-      "volume": 122166.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 16.549999237060547,
       "volume": 72144.0,
-      "return": 0.0018159066867808882
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 11.010000228881836,
       "volume": 74152.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.760000228881836,
+      "volume": 126767.0,
+      "return": -0.02270662986402039
     }
   ],
   "data_status": "OK",

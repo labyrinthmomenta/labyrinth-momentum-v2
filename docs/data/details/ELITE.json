@@ -3,24 +3,29 @@
     "security_id": 369,
     "ticker": "ELITE",
     "name": "ELİTE NATUREL ORGANİK GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-11-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.37619047510921333,
-    "momentum_126": -0.2476669553020462,
-    "momentum_63": -0.3871345433656901,
-    "momentum_21": -0.24332135353167295,
-    "fip_252": -0.12301587301587301,
+    "momentum_12_1": -0.15252229022646313,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": -0.4169139711076877,
+    "momentum_126": -0.2890738041807096,
+    "momentum_63": -0.4176052566390035,
+    "momentum_21": -0.3119747904070249,
+    "fip_252": -0.13095238095238096,
     "fip_126": -0.12698412698412698,
     "fip_63": -0.3492063492063492,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 4.631825768453472,
-    "delta_momentum_21_63": 0.14381318983401714,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 5.154779372593476,
+    "delta_momentum_21_63": 0.10563046623197858,
+    "delta_fip_21_63": -0.17460317460317465,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.048882669286518854,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 33.599998474121094,
-      "volume": 1013037.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 33.70000076293945,
       "volume": 684184.0,
-      "return": 0.0029762587309454247
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 20.959999084472656,
       "volume": 521455.0,
       "return": 0.014520776344445485
+    },
+    {
+      "date": "2026-09-28",
+      "close": 19.649999618530273,
+      "volume": 1062919.0,
+      "return": -0.062499977250134564
     }
   ],
   "data_status": "OK",

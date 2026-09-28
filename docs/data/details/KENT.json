@@ -3,23 +3,28 @@
     "security_id": 620,
     "ticker": "KENT",
     "name": "KENT GIDA MADDELERİ SANAYİİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1990-11-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6588235294117649,
-    "momentum_126": -0.3212404915155056,
-    "momentum_63": -0.21302578018995943,
-    "momentum_21": -0.2812887236679059,
+    "momentum_12_1": -0.5270921131848286,
+    "fip_12_1": -0.19480519480519481,
+    "momentum_252": -0.6730885009030706,
+    "momentum_126": -0.36416861826697944,
+    "momentum_63": -0.24267782426778228,
+    "momentum_21": -0.30872056015276894,
     "fip_252": -0.2261904761904762,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.1111111111111111,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 4.281789750708171,
-    "delta_momentum_21_63": -0.06826294347794648,
+    "atr14_percent": 4.799354738991,
+    "delta_momentum_21_63": -0.06604273588498666,
     "delta_fip_21_63": -0.4603174603174603,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.16851265822784822,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 850.0,
-      "volume": 3827.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 830.5,
       "volume": 2441.0,
-      "return": -0.022941176470588243
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 290.0,
       "volume": 4135.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 271.5,
+      "volume": 4613.0,
+      "return": -0.06379310344827582
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 501,
     "ticker": "SAYAS",
     "name": "SAY YENİLENEBİLİR ENERJİ EKİPMANLARI SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-06-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.17747503348167848,
-    "momentum_126": 0.04572747291278567,
-    "momentum_63": -0.1216294966160939,
-    "momentum_21": -0.26553126263444415,
+    "momentum_12_1": 0.10258785967272477,
+    "fip_12_1": 0.08658008658008658,
+    "momentum_252": -0.2107208508820001,
+    "momentum_126": 0.002347471652590416,
+    "momentum_63": -0.16764129828501517,
+    "momentum_21": -0.28415759143921837,
     "fip_252": -0.11507936507936507,
     "fip_126": 0.07142857142857142,
     "fip_63": -0.1746031746031746,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.463332662118229,
-    "delta_momentum_21_63": -0.14390176601835025,
+    "atr14_percent": 6.842716670970541,
+    "delta_momentum_21_63": -0.1165162931542032,
     "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.20524563743637803,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 55.04999923706055,
-      "volume": 972567.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 54.099998474121094,
       "volume": 1060735.0,
-      "return": -0.01725705315359749
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 45.279998779296875,
       "volume": 879440.0,
       "return": 0.016614230995930512
+    },
+    {
+      "date": "2026-09-28",
+      "close": 42.70000076293945,
+      "volume": 1088149.0,
+      "return": -0.05697875631430138
     }
   ],
   "data_status": "OK",

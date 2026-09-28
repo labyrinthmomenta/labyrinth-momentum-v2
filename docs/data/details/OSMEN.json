@@ -3,24 +3,29 @@
     "security_id": 471,
     "ticker": "OSMEN",
     "name": "OSMANLI YATIRIM MENKUL DEĞERLER A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "ARACI KURUMLAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-02-27"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.40793825068996836,
-    "momentum_126": -0.2643835965409046,
-    "momentum_63": -0.34512194994302936,
-    "momentum_21": -0.3016905272299749,
-    "fip_252": -0.0873015873015873,
+    "momentum_12_1": -0.16846656382913172,
+    "fip_12_1": -0.08225108225108226,
+    "momentum_252": -0.4449244341858658,
+    "momentum_126": -0.293956082643999,
+    "momentum_63": -0.361490714944147,
+    "momentum_21": -0.3324675332717779,
+    "fip_252": -0.09523809523809523,
     "fip_126": -0.023809523809523808,
     "fip_63": -0.14285714285714285,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.118879415892623,
-    "delta_momentum_21_63": 0.043431422713054446,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 6.491925858543314,
+    "delta_momentum_21_63": 0.02902318167236906,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08333334352216126,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 9.069999694824219,
-      "volume": 2010356.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 9.260000228881836,
       "volume": 2751380.0,
-      "return": 0.02094824040248211
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.369999885559082,
       "volume": 2237878.0,
       "return": 0.024809183228871934
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.139999866485596,
+      "volume": 3211641.0,
+      "return": -0.04283054450187207
     }
   ],
   "data_status": "OK",

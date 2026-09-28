@@ -3,23 +3,28 @@
     "security_id": 472,
     "ticker": "OSTIM",
     "name": "OSTİM ENDÜSTRİYEL YATIRIMLAR VE İŞLETME A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-05-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5194292000652825,
-    "momentum_126": -0.35456186924262134,
-    "momentum_63": -0.31413614362685016,
-    "momentum_21": -0.18633544649690958,
+    "momentum_12_1": -0.4070440544482036,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.5263811171494915,
+    "momentum_126": -0.376545420667158,
+    "momentum_63": -0.3280423330481771,
+    "momentum_21": -0.20125789039898156,
     "fip_252": -0.16666666666666666,
-    "fip_126": -0.1349206349206349,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 5.265813135345647,
-    "delta_momentum_21_63": 0.12780069712994058,
+    "atr14_percent": 5.493632597600846,
+    "delta_momentum_21_63": 0.12678444264919553,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.025477757787233046,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.7259249687194824,
-      "volume": 18564966.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2.681480884552002,
       "volume": 16051525.0,
-      "return": -0.016304221384478623
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.309999942779541,
       "volume": 6921133.0,
       "return": -0.022388126755056525
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.2699999809265137,
+      "volume": 7353107.0,
+      "return": -0.030534323358943016
     }
   ],
   "data_status": "OK",

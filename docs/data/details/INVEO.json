@@ -3,24 +3,29 @@
     "security_id": 125,
     "ticker": "INVEO",
     "name": "INVEO YATIRIM HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1999-04-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4640350580729129,
-    "momentum_126": -0.15840221199890403,
-    "momentum_63": -0.30960453444639124,
-    "momentum_21": -0.13700562155993667,
+    "momentum_12_1": -0.3665480399871244,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.4804270221077669,
+    "momentum_126": -0.1911356894329127,
+    "momentum_63": -0.2972322674254134,
+    "momentum_21": -0.17977524628438712,
     "fip_252": -0.10714285714285714,
     "fip_126": -0.07936507936507936,
     "fip_63": -0.23809523809523808,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 4.996043991328254,
-    "delta_momentum_21_63": 0.17259891288645457,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.22059431511302,
+    "delta_momentum_21_63": 0.1174570211410263,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03792134624526222,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.399999618530273,
-      "volume": 6513111.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.239999771118164,
       "volume": 5637063.0,
-      "return": -0.01403507480404087
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 6.110000133514404,
       "volume": 4766362.0,
       "return": 0.014950191507149935
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.840000152587891,
+      "volume": 4171993.0,
+      "return": -0.04418984861318043
     }
   ],
   "data_status": "OK",

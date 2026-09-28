@@ -3,23 +3,28 @@
     "security_id": 226,
     "ticker": "SUNTK",
     "name": "SUN TEKSTİL SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-05-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.46200000762939464,
-    "momentum_126": -0.21482776017467042,
-    "momentum_63": -0.04270465290565584,
-    "momentum_21": -0.26702999838369124,
+    "momentum_12_1": -0.2866293025868937,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": -0.4947958319926665,
+    "momentum_126": -0.26627910896660123,
+    "momentum_63": -0.09012256743429736,
+    "momentum_21": -0.29180695276753965,
     "fip_252": -0.0873015873015873,
-    "fip_126": -0.07936507936507936,
+    "fip_126": -0.09523809523809523,
     "fip_63": -0.07936507936507936,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 8.249347787700389,
-    "delta_momentum_21_63": -0.2243253454780354,
+    "atr14_percent": 8.797817749938927,
+    "delta_momentum_21_63": -0.2016843853332423,
     "delta_fip_21_63": -0.3492063492063492,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.3101626402356741,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 50.0,
-      "volume": 4893058.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 49.959999084472656,
       "volume": 5224252.0,
-      "return": -0.0008000183105468794
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 26.899999618530273,
       "volume": 531776.0,
       "return": 0.0717131159244686
+    },
+    {
+      "date": "2026-09-28",
+      "close": 25.239999771118164,
+      "volume": 597011.0,
+      "return": -0.06171003237742079
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 23,
     "ticker": "ALTNY",
     "name": "ALTINAY SAVUNMA TEKNOLOJİLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "SAVUNMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-05-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.27475536417868185,
-    "momentum_126": -0.11020407527747123,
-    "momentum_63": -0.20966764189233855,
-    "momentum_21": -0.295258604521629,
+    "momentum_12_1": 0.03945107942627746,
+    "fip_12_1": 0.1038961038961039,
+    "momentum_252": -0.30853171263021606,
+    "momentum_126": -0.16040952143254428,
+    "momentum_63": -0.26347307611919635,
+    "momentum_21": -0.3347755358035337,
     "fip_252": -0.1349206349206349,
     "fip_126": -0.1349206349206349,
-    "fip_63": -0.19047619047619047,
+    "fip_63": -0.2222222222222222,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 6.644423241123501,
-    "delta_momentum_21_63": -0.08559096262929045,
-    "delta_fip_21_63": -0.2857142857142857,
+    "atr14_percent": 7.072112158903641,
+    "delta_momentum_21_63": -0.07130245968433735,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.15344601034569205,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 18.035293579101562,
-      "volume": 21899476.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 17.78823471069336,
       "volume": 15156609.0,
-      "return": -0.013698633034423313
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 13.079999923706055,
       "volume": 10893698.0,
       "return": 0.002298830079136005
+    },
+    {
+      "date": "2026-09-28",
+      "close": 12.300000190734863,
+      "volume": 46569528.0,
+      "return": -0.059633007455720866
     }
   ],
   "data_status": "OK",

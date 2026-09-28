@@ -3,24 +3,29 @@
     "security_id": 294,
     "ticker": "ALKLC",
     "name": "ALTINKILIÇ GIDA VE SÜT SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-06-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.5770114591751918,
-    "momentum_126": -0.27148660617955456,
-    "momentum_63": -0.34587892939973053,
-    "momentum_21": -0.4674584395528689,
+    "momentum_12_1": 4.107591060447504,
+    "fip_12_1": -0.17316017316017315,
+    "momentum_252": 1.4124327480057053,
+    "momentum_126": -0.3399836367890182,
+    "momentum_63": -0.401630828608576,
+    "momentum_21": -0.5276769969531705,
     "fip_252": -0.15873015873015872,
     "fip_126": 0.1111111111111111,
     "fip_63": 0.07936507936507936,
-    "fip_21": 0.09523809523809523,
-    "atr14_percent": 10.68451679607918,
-    "delta_momentum_21_63": -0.12157951015313839,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_21": 0.0,
+    "atr14_percent": 11.815478944651268,
+    "delta_momentum_21_63": -0.12604616834459448,
+    "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.07377049180327822,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 87.0,
-      "volume": 3214180.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 83.6500015258789,
       "volume": 1207315.0,
-      "return": -0.03850572958759879
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 224.1999969482422,
       "volume": 1325.0,
       "return": -0.0999598897838887
+    },
+    {
+      "date": "2026-09-28",
+      "close": 201.8000030517578,
+      "volume": 1489.0,
+      "return": -0.09991076807041854
     }
   ],
   "data_status": "OK",

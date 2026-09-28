@@ -3,24 +3,29 @@
     "security_id": 554,
     "ticker": "CRDFA",
     "name": "CREDITWEST FAKTORİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1997-12-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.43522095433249297,
-    "momentum_126": -0.6365734900177413,
-    "momentum_63": -0.7283378730308706,
-    "momentum_21": -0.6177147125692154,
-    "fip_252": -0.01984126984126984,
+    "momentum_12_1": 2.4162304761237814,
+    "fip_12_1": -0.06493506493506493,
+    "momentum_252": 0.17539263078117417,
+    "momentum_126": -0.6696505271755089,
+    "momentum_63": -0.7615507281300904,
+    "momentum_21": -0.6559387198855415,
+    "fip_252": -0.011904761904761904,
     "fip_126": -0.11904761904761904,
-    "fip_63": -0.25396825396825395,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 16.690208356338754,
-    "delta_momentum_21_63": 0.11062316046165521,
-    "delta_fip_21_63": -0.2222222222222222,
+    "fip_63": -0.2857142857142857,
+    "fip_21": -0.5714285714285714,
+    "atr14_percent": 17.994099196560395,
+    "delta_momentum_21_63": 0.10561200824454886,
+    "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.4084240181509552,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.9466657638549805,
-      "volume": 3021762.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.639999866485596,
       "volume": 8301828.0,
-      "return": 0.09980818513511669
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 9.970000267028809,
       "volume": 142786.0,
       "return": -0.0993676113929538
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.979999542236328,
+      "volume": 799646.0,
+      "return": -0.0992979637188629
     }
   ],
   "data_status": "OK",

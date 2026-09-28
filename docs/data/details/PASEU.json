@@ -3,24 +3,29 @@
     "security_id": 202,
     "ticker": "PASEU",
     "name": "PASİFİK EURASİA LOJİSTİK DIŞ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-06-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7086222330729167,
-    "momentum_126": -0.7290909191793644,
-    "momentum_63": -0.7144599485374756,
-    "momentum_21": -0.8729457411655159,
+    "momentum_12_1": 1.449725742797217,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": -0.7301645334001146,
+    "momentum_126": -0.7560330540680685,
+    "momentum_63": -0.7145067696118415,
+    "momentum_21": -0.8898507445605833,
     "fip_252": -0.06746031746031746,
-    "fip_126": -0.09523809523809523,
+    "fip_126": -0.10317460317460317,
     "fip_63": -0.12698412698412698,
-    "fip_21": -0.9047619047619048,
-    "atr14_percent": 33.592839828195594,
-    "delta_momentum_21_63": -0.1584857926280403,
-    "delta_fip_21_63": -0.7777777777777778,
+    "fip_21": -1.0,
+    "atr14_percent": 35.426954716589314,
+    "delta_momentum_21_63": -0.17534397494874188,
+    "delta_fip_21_63": -0.873015873015873,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.556129012569305,
     "completed_month_fip": -0.38095238095238093,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 112.5,
-      "volume": 2444451.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 109.4000015258789,
       "volume": 1181117.0,
-      "return": -0.02755554199218746
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 32.779998779296875,
       "volume": 229147.0,
       "return": -0.0999450733842211
+    },
+    {
+      "date": "2026-09-28",
+      "close": 29.520000457763672,
+      "volume": 94531.0,
+      "return": -0.09945083718527004
     }
   ],
   "data_status": "OK",

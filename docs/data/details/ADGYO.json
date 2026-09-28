@@ -3,24 +3,29 @@
     "security_id": 3,
     "ticker": "ADGYO",
     "name": "ADRA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-09-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.01459852642697701,
-    "momentum_126": -0.06816222106878056,
-    "momentum_63": 0.01028997622469463,
-    "momentum_21": -0.10521952998630224,
+    "momentum_12_1": 0.12546468579408754,
+    "fip_12_1": 0.13852813852813853,
+    "momentum_252": -0.09665429064462605,
+    "momentum_126": -0.15989628770928854,
+    "momentum_63": -0.10907425932459203,
+    "momentum_21": -0.19735757082595085,
     "fip_252": -0.14285714285714285,
     "fip_126": -0.1349206349206349,
-    "fip_63": 0.12698412698412698,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 6.579589856300064,
-    "delta_momentum_21_63": -0.11550950621099687,
-    "delta_fip_21_63": -0.2222222222222222,
+    "fip_63": -0.15873015873015872,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 7.582116983446702,
+    "delta_momentum_21_63": -0.08828331150135882,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1922917957199759,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 54.79999923706055,
-      "volume": 1623283.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 53.79999923706055,
       "volume": 1007012.0,
-      "return": -0.01824817543653745
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 54.0,
       "volume": 1721211.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 48.599998474121094,
+      "volume": 1660127.0,
+      "return": -0.10000002825701682
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 628,
     "ticker": "KLNMA",
     "name": "TÜRKİYE KALKINMA VE YATIRIM BANKASI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "BANKALAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-03-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3054393034969193,
-    "momentum_126": -0.16999998092651303,
-    "momentum_63": -0.06741566893398221,
-    "momentum_21": -0.0828729264301925,
-    "fip_252": -0.1626984126984127,
+    "momentum_12_1": -0.2550000349680567,
+    "fip_12_1": -0.1471861471861472,
+    "momentum_252": -0.3291666507720932,
+    "momentum_126": -0.1785714250959386,
+    "momentum_63": -0.10555553436279275,
+    "momentum_21": -0.09955250910764335,
+    "fip_252": -0.17063492063492064,
     "fip_126": -0.18253968253968253,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 1.621551964426738,
-    "delta_momentum_21_63": -0.015457257496210297,
-    "delta_fip_21_63": -0.2698412698412698,
+    "atr14_percent": 1.7743163857378408,
+    "delta_momentum_21_63": 0.006003025255149397,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.01441242880747573,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.949999809265137,
-      "volume": 296943.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 12.0,
       "volume": 223782.0,
-      "return": 0.004184116446269481
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.300000190734863,
       "volume": 188925.0,
       "return": 0.004842610259641944
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.050000190734863,
+      "volume": 139270.0,
+      "return": -0.03012048123553901
     }
   ],
   "data_status": "OK",

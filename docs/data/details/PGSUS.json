@@ -3,23 +3,28 @@
     "security_id": 206,
     "ticker": "PGSUS",
     "name": "PEGASUS HAVA TAŞIMACILIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-04-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.34712951072254083,
-    "momentum_126": -0.18044694442322828,
-    "momentum_63": -0.1716544783036572,
-    "momentum_21": -0.03168318846044793,
+    "momentum_12_1": -0.3264850059733496,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": -0.35819561918041476,
+    "momentum_126": -0.20166668362087659,
+    "momentum_63": -0.17932614540693015,
+    "momentum_21": -0.04708226763814327,
     "fip_252": -0.17063492063492064,
-    "fip_126": -0.1746031746031746,
+    "fip_126": -0.19047619047619047,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 3.1270404707050545,
-    "delta_momentum_21_63": 0.13997128984320928,
+    "atr14_percent": 3.2227756817367865,
+    "delta_momentum_21_63": 0.13224387776878688,
     "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03921568627451011,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 224.6999969482422,
-      "volume": 20650469.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 223.89999389648438,
       "volume": 13213749.0,
-      "return": -0.0035603162555541967
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 146.6999969482422,
       "volume": 4204148.0,
       "return": 0.006863418125912846
+    },
+    {
+      "date": "2026-09-28",
+      "close": 143.6999969482422,
+      "volume": 6480425.0,
+      "return": -0.020449898175924575
     }
   ],
   "data_status": "OK",

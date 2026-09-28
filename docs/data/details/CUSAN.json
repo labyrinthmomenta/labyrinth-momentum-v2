@@ -3,24 +3,29 @@
     "security_id": 339,
     "ticker": "CUSAN",
     "name": "ÇUHADAROĞLU METAL SANAYİ VE PAZARLAMA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2016-02-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.434349359869853,
-    "momentum_126": -0.182203435377291,
-    "momentum_63": -0.16953530864290767,
-    "momentum_21": -0.18150978373594606,
+    "momentum_12_1": -0.27108433111985153,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.43373497575196973,
+    "momentum_126": -0.19658121608801327,
+    "momentum_63": -0.19520553313985511,
+    "momentum_21": -0.22314055188579252,
     "fip_252": -0.0992063492063492,
     "fip_126": -0.023809523809523808,
-    "fip_63": 0.0,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.972706695357413,
-    "delta_momentum_21_63": -0.011974475093038395,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_63": -0.031746031746031744,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 6.396474762437306,
+    "delta_momentum_21_63": -0.0279350187459374,
+    "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.020408143405366896,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 34.119998931884766,
-      "volume": 427155.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 33.20000076293945,
       "volume": 268284.0,
-      "return": -0.0269636048577242
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.299999237060547,
       "volume": 567429.0,
       "return": 0.023329724945368557
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.799999237060547,
+      "volume": 580455.0,
+      "return": -0.025906736775402672
     }
   ],
   "data_status": "OK",

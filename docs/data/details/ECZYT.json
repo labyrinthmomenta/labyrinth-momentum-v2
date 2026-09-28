@@ -3,24 +3,29 @@
     "security_id": 79,
     "ticker": "ECZYT",
     "name": "ECZACIBAŞI YATIRIM HOLDİNG ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.0053652622178473885,
-    "momentum_126": -0.1795744680851067,
-    "momentum_63": -0.1617391304347835,
-    "momentum_21": -0.2515527950310562,
-    "fip_252": 0.08333333333333333,
+    "momentum_12_1": 0.28202581926514236,
+    "fip_12_1": -0.10822510822510822,
+    "momentum_252": -0.10148958511125417,
+    "momentum_126": -0.21184670052877308,
+    "momentum_63": -0.24600001017252615,
+    "momentum_21": -0.2991479567831383,
+    "fip_252": 0.07539682539682539,
     "fip_126": 0.023809523809523808,
-    "fip_63": -0.031746031746031744,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 6.288357789519656,
-    "delta_momentum_21_63": -0.08981366459627271,
-    "delta_fip_21_63": -0.15873015873015872,
+    "fip_63": -0.06349206349206349,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 6.811742121240799,
+    "delta_momentum_21_63": -0.05314794661061217,
+    "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.013470681458004119,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 242.3000030517578,
-      "volume": 840960.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 251.75,
       "volume": 890090.0,
-      "return": 0.03900122504836934
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 241.0,
       "volume": 1514466.0,
       "return": 0.0347789021717011
+    },
+    {
+      "date": "2026-09-28",
+      "close": 226.1999969482422,
+      "volume": 491245.0,
+      "return": -0.06141080104463825
     }
   ],
   "data_status": "OK",

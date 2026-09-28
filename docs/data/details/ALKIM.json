@@ -3,24 +3,29 @@
     "security_id": 292,
     "ticker": "ALKIM",
     "name": "ALKİM ALKALİ KİMYA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-03-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4172062954500557,
-    "momentum_126": -0.27377521011890693,
-    "momentum_63": -0.29372195775222765,
-    "momentum_21": -0.2005076016192614,
+    "momentum_12_1": -0.25095417485510163,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": -0.41030533413364345,
+    "momentum_126": -0.2788798076537876,
+    "momentum_63": -0.30717491306275024,
+    "momentum_21": -0.212738865806663,
     "fip_252": -0.15476190476190477,
     "fip_126": -0.1349206349206349,
-    "fip_63": -0.3333333333333333,
+    "fip_63": -0.3492063492063492,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 4.412040956461687,
-    "delta_momentum_21_63": 0.09321435613296625,
-    "delta_fip_21_63": -0.14285714285714285,
+    "atr14_percent": 4.6445469001012505,
+    "delta_momentum_21_63": 0.09443604725608723,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.004501649365910798,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 21.6200008392334,
-      "volume": 8742797.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 20.959999084472656,
       "volume": 5110217.0,
-      "return": -0.030527369525492842
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 12.600000381469727,
       "volume": 607155.0,
       "return": -0.007873970810807207
+    },
+    {
+      "date": "2026-09-28",
+      "close": 12.359999656677246,
+      "volume": 2029710.0,
+      "return": -0.019047675994156243
     }
   ],
   "data_status": "OK",

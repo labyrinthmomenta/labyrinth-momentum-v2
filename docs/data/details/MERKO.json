@@ -3,24 +3,29 @@
     "security_id": 456,
     "ticker": "MERKO",
     "name": "MERKO GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-10-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.9365179132526804,
-    "momentum_126": -0.9368750005960464,
-    "momentum_63": -0.38036810219761186,
-    "momentum_21": -0.2518518721288773,
+    "momentum_12_1": -0.909933776162412,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": -0.937748346101411,
+    "momentum_126": -0.9410658301657294,
+    "momentum_63": -0.40880504535688444,
+    "momentum_21": -0.30882353843495913,
     "fip_252": -0.07936507936507936,
     "fip_126": -0.2777777777777778,
     "fip_63": -0.30158730158730157,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 4.960428134538218,
-    "delta_momentum_21_63": 0.12851623006873458,
-    "delta_fip_21_63": -0.12698412698412698,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 5.784985999106182,
+    "delta_momentum_21_63": 0.09998150692192531,
+    "delta_fip_21_63": -0.22222222222222227,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05109492861930476,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 15.90999984741211,
-      "volume": 14316145.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 15.100000381469727,
       "volume": 11494340.0,
-      "return": -0.05091134341362902
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.0099999904632568,
       "volume": 35507301.0,
       "return": 0.04123707285899503
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.9399999976158142,
+      "volume": 20209763.0,
+      "return": -0.06930692426574747
     }
   ],
   "data_status": "OK",

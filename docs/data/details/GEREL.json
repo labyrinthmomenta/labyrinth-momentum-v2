@@ -3,23 +3,28 @@
     "security_id": 389,
     "ticker": "GEREL",
     "name": "GERSAN ELEKTRİK TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2003-05-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.4094412286265079,
-    "momentum_126": 0.01809326589787319,
-    "momentum_63": -0.32580647004276186,
-    "momentum_21": -0.2535714372601522,
+    "momentum_12_1": 0.9204770267355848,
+    "fip_12_1": 0.06060606060606061,
+    "momentum_252": 0.30914508220226655,
+    "momentum_126": -0.07578946833025069,
+    "momentum_63": -0.3256528615844081,
+    "momentum_21": -0.31832296664983095,
     "fip_252": 0.09126984126984126,
-    "fip_126": 0.023809523809523808,
+    "fip_126": -0.023809523809523808,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 8.546820875418861,
-    "delta_momentum_21_63": 0.07223503278260968,
+    "atr14_percent": 9.808655261050513,
+    "delta_momentum_21_63": 0.007329894934577141,
     "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08766079907822089,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 20.760000228881836,
-      "volume": 5112052.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 20.1200008392334,
       "volume": 5932478.0,
-      "return": -0.03082848663739679
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 29.260000228881836,
       "volume": 8645863.0,
       "return": 0.09999999282951655
+    },
+    {
+      "date": "2026-09-28",
+      "close": 26.34000015258789,
+      "volume": 5428445.0,
+      "return": -0.09979494372702313
     }
   ],
   "data_status": "OK",

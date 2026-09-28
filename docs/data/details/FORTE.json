@@ -3,23 +3,28 @@
     "security_id": 384,
     "ticker": "FORTE",
     "name": "FORTE BİLGİ İLETİŞİM TEKNOLOJİLERİ VE SAVUNMA SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-06-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.25557010773344424,
-    "momentum_126": -0.12110088943341513,
-    "momentum_63": 0.003666905340033111,
-    "momentum_21": -0.24388314633588515,
+    "momentum_12_1": 0.6032064455083332,
+    "fip_12_1": 0.008658008658008658,
+    "momentum_252": 0.22912494155638896,
+    "momentum_126": -0.1958042065306419,
+    "momentum_63": 0.0021786159214993717,
+    "momentum_21": -0.23333333333333306,
     "fip_252": 0.027777777777777776,
-    "fip_126": -0.047619047619047616,
+    "fip_126": -0.06349206349206349,
     "fip_63": -0.015873015873015872,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 7.188813153577671,
-    "delta_momentum_21_63": -0.24755005167591826,
+    "atr14_percent": 7.4440596213069945,
+    "delta_momentum_21_63": -0.23551194925483243,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05064456793073169,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 76.30000305175781,
-      "volume": 1577839.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 74.8499984741211,
       "volume": 1216445.0,
-      "return": -0.01900399108310802
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 95.80000305175781,
       "volume": 603724.0,
       "return": 0.014830524398827594
+    },
+    {
+      "date": "2026-09-28",
+      "close": 92.0,
+      "volume": 1375181.0,
+      "return": -0.039666001364371484
     }
   ],
   "data_status": "OK",

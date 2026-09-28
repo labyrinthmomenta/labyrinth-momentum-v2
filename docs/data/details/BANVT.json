@@ -3,24 +3,29 @@
     "security_id": 311,
     "ticker": "BANVT",
     "name": "BANVİT BANDIRMA VİTAMİNLİ YEM SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1992-11-27"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3208993563161209,
-    "momentum_126": -0.13137258891186732,
-    "momentum_63": -0.2537900654577182,
-    "momentum_21": -0.1540420831752578,
-    "fip_252": -0.2261904761904762,
+    "momentum_12_1": -0.19724063079538623,
+    "fip_12_1": -0.21212121212121213,
+    "momentum_252": -0.349003558954714,
+    "momentum_126": -0.15907589751895013,
+    "momentum_63": -0.284671548793596,
+    "momentum_21": -0.18905158130972277,
+    "fip_252": -0.23015873015873015,
     "fip_126": -0.2222222222222222,
-    "fip_63": -0.3968253968253968,
-    "fip_21": -0.38095238095238093,
-    "atr14_percent": 3.763068122096538,
-    "delta_momentum_21_63": 0.0997479822824604,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_63": -0.4126984126984127,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 4.015166797781473,
+    "delta_momentum_21_63": 0.09561996748387325,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.02236421725239568,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 195.6999969482422,
-      "volume": 293907.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 195.6999969482422,
       "volume": 140874.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 132.89999389648438,
       "volume": 45939.0,
       "return": -0.003000818800567684
+    },
+    {
+      "date": "2026-09-28",
+      "close": 127.4000015258789,
+      "volume": 80336.0,
+      "return": -0.04138444411735187
     }
   ],
   "data_status": "OK",

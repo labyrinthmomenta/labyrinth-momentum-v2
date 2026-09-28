@@ -3,23 +3,28 @@
     "security_id": 555,
     "ticker": "DOGUB",
     "name": "DOĞUSAN BORU SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1987-07-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.1839926422314897,
-    "momentum_126": -0.5990654050673916,
-    "momentum_63": -0.7172981997981249,
-    "momentum_21": -0.6272266671469338,
+    "momentum_12_1": 2.067757135333428,
+    "fip_12_1": 0.1038961038961039,
+    "momentum_252": 0.0831776036623939,
+    "momentum_126": -0.6716713766832084,
+    "momentum_63": -0.7405707811859727,
+    "momentum_21": -0.6469154643349349,
     "fip_252": 0.1388888888888889,
-    "fip_126": -0.21428571428571427,
+    "fip_126": -0.23015873015873015,
     "fip_63": -0.38095238095238093,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 19.453387008572943,
-    "delta_momentum_21_63": 0.09007153265119117,
+    "atr14_percent": 20.847689396964274,
+    "delta_momentum_21_63": 0.0936553168510379,
     "delta_fip_21_63": -0.1428571428571429,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.24351051163624138,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 21.739999771118164,
-      "volume": 256317.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 21.399999618530273,
       "volume": 221529.0,
-      "return": -0.015639381608438918
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 25.739999771118164,
       "volume": 117026.0,
       "return": -0.10000002000715325
+    },
+    {
+      "date": "2026-09-28",
+      "close": 23.18000030517578,
+      "volume": 157502.0,
+      "return": -0.09945607959231051
     }
   ],
   "data_status": "OK",

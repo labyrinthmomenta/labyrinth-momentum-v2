@@ -3,24 +3,29 @@
     "security_id": 584,
     "ticker": "SKYLP",
     "name": "SKYALP FİNANSAL TEKNOLOJİLER VE DANIŞMANLIK A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MESLEKİ, BİLİMSEL VE TEKNİK FAALİYETLER",
+    "industry": "HUKUK VE MUHASEBE FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-05-30"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4906507103325969,
-    "momentum_126": -0.7350194611901903,
-    "momentum_63": -0.7400763417018279,
-    "momentum_21": -0.7182457619612463,
+    "momentum_12_1": 0.9153195900072431,
+    "fip_12_1": 0.08658008658008658,
+    "momentum_252": -0.5280985210368082,
+    "momentum_126": -0.7686792481620355,
+    "momentum_63": -0.7633204662661754,
+    "momentum_21": -0.7536173694326349,
     "fip_252": -0.14682539682539683,
-    "fip_126": -0.2619047619047619,
+    "fip_126": -0.2777777777777778,
     "fip_63": -0.3333333333333333,
-    "fip_21": -0.7142857142857143,
-    "atr14_percent": 20.483182649357847,
-    "delta_momentum_21_63": 0.021830579740581557,
-    "delta_fip_21_63": -0.380952380952381,
+    "fip_21": -0.8095238095238095,
+    "atr14_percent": 21.922350687262437,
+    "delta_momentum_21_63": 0.009703096833540537,
+    "delta_fip_21_63": -0.4761904761904762,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.17391304347826098,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 133.6999969482422,
-      "volume": 190391.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 129.89999389648438,
       "volume": 375531.0,
-      "return": -0.02842186341431907
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 68.0999984741211,
       "volume": 13139.0,
       "return": -0.09980175676764591
+    },
+    {
+      "date": "2026-09-28",
+      "close": 61.29999923706055,
+      "volume": 7008.0,
+      "return": -0.0998531481560111
     }
   ],
   "data_status": "OK",

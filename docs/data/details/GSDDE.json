@@ -3,24 +3,29 @@
     "security_id": 393,
     "ticker": "GSDDE",
     "name": "GSD DENİZCİLİK GAYRİMENKUL İNŞAAT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-02-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.21874998253770217,
-    "momentum_126": 0.31368416234066565,
-    "momentum_63": 0.01711483917180945,
-    "momentum_21": -0.11237559247693418,
-    "fip_252": 0.027777777777777776,
-    "fip_126": -0.007936507936507936,
-    "fip_63": 0.07936507936507936,
+    "momentum_12_1": 0.33172149463820944,
+    "fip_12_1": 0.012987012987012988,
+    "momentum_252": 0.11992260665564936,
+    "momentum_126": 0.21256541281963925,
+    "momentum_63": -0.05853660616779166,
+    "momentum_21": -0.15904142783255115,
+    "fip_252": 0.03571428571428571,
+    "fip_126": 0.007936507936507936,
+    "fip_63": -0.1111111111111111,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 6.218711654736684,
-    "delta_momentum_21_63": -0.12949043164874363,
-    "delta_fip_21_63": -0.36507936507936506,
+    "atr14_percent": 6.833973145055991,
+    "delta_momentum_21_63": -0.10050482166475949,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.09787926483379739,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10.239999771118164,
-      "volume": 2369663.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.34000015258789,
       "volume": 2188995.0,
-      "return": 0.009765662471182601
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 12.479999542236328,
       "volume": 2618072.0,
       "return": 0.034825796683759735
+    },
+    {
+      "date": "2026-09-28",
+      "close": 11.579999923706055,
+      "volume": 2307764.0,
+      "return": -0.07211535669407565
     }
   ],
   "data_status": "OK",

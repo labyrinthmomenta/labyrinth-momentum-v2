@@ -3,24 +3,29 @@
     "security_id": 539,
     "ticker": "YAYLA",
     "name": "YAYLA ENERJİ ÜRETİM TURİZM VE İNŞAAT TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İNŞAAT VE BAYINDIRLIK",
+    "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-11-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5744397010653368,
-    "momentum_126": -0.2904804210828553,
-    "momentum_63": -0.31012114055814244,
-    "momentum_21": -0.2683486069967499,
+    "momentum_12_1": -0.41035425232195033,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.595367845428886,
+    "momentum_126": -0.3370535431087619,
+    "momentum_63": -0.36484170596596355,
+    "momentum_21": -0.31377075784146,
     "fip_252": -0.14285714285714285,
     "fip_126": -0.14285714285714285,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 7.590020210034021,
-    "delta_momentum_21_63": 0.041772533561392544,
-    "delta_fip_21_63": -0.2698412698412698,
+    "atr14_percent": 8.219290882920262,
+    "delta_momentum_21_63": 0.051070948124503524,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.007670174627545379,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 37.47999954223633,
-      "volume": 649032.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 36.70000076293945,
       "volume": 598288.0,
-      "return": -0.020811066937658107
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.949999809265137,
       "volume": 778123.0,
       "return": 0.0296965813391854
+    },
+    {
+      "date": "2026-09-28",
+      "close": 14.850000381469727,
+      "volume": 861849.0,
+      "return": -0.06896548219119325
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 312,
     "ticker": "BEGYO",
     "name": "BATI EGE GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-12-08"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5613207699240513,
-    "momentum_126": -0.3244552337668125,
-    "momentum_63": -0.3325358668825742,
-    "momentum_21": -0.2314049934175455,
-    "fip_252": -0.15476190476190477,
+    "momentum_12_1": -0.43260190899286477,
+    "fip_12_1": -0.12987012987012986,
+    "momentum_252": -0.589341718093578,
+    "momentum_126": -0.3640776800158698,
+    "momentum_63": -0.3747017064966043,
+    "momentum_21": -0.27624310265566676,
+    "fip_252": -0.1626984126984127,
     "fip_126": -0.1111111111111111,
-    "fip_63": -0.25396825396825395,
+    "fip_63": -0.2857142857142857,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 5.3075390496672465,
-    "delta_momentum_21_63": 0.10113087346502869,
-    "delta_fip_21_63": -0.2698412698412699,
+    "atr14_percent": 5.875257641245612,
+    "delta_momentum_21_63": 0.09845860384093752,
+    "delta_fip_21_63": -0.23809523809523814,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.017291049649809764,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.360000133514404,
-      "volume": 15672365.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.380000114440918,
       "volume": 17993581.0,
-      "return": 0.003144651023059275
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.7899999618530273,
       "volume": 2445544.0,
       "return": -0.003571425226269853
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.619999885559082,
+      "volume": 3633885.0,
+      "return": -0.060931927820184195
     }
   ],
   "data_status": "OK",

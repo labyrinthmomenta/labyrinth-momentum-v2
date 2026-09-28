@@ -3,24 +3,29 @@
     "security_id": 424,
     "ticker": "KRVGD",
     "name": "KERVAN GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2020-12-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.18702282157298533,
-    "momentum_126": -0.24734976259237673,
-    "momentum_63": -0.26551722607062633,
-    "momentum_21": -0.06578941176802744,
+    "momentum_12_1": -0.1050583610661151,
+    "fip_12_1": -0.047619047619047616,
+    "momentum_252": -0.1906614872625566,
+    "momentum_126": -0.2544803038905469,
+    "momentum_63": -0.257142871739913,
+    "momentum_21": -0.09565218833533962,
     "fip_252": -0.05555555555555555,
     "fip_126": -0.1349206349206349,
     "fip_63": -0.2222222222222222,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 4.312756712449925,
-    "delta_momentum_21_63": 0.1997278143025989,
-    "delta_fip_21_63": 0.1746031746031746,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 4.513058266621197,
+    "delta_momentum_21_63": 0.1614906834045734,
+    "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.046413460087520675,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.619999885559082,
-      "volume": 52825789.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2.569999933242798,
       "volume": 34989292.0,
-      "return": -0.01908395209933933
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.130000114440918,
       "volume": 7973512.0,
       "return": -0.018433161496169914
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.0799999237060547,
+      "volume": 7093528.0,
+      "return": -0.02347426668941155
     }
   ],
   "data_status": "OK",

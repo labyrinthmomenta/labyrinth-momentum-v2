@@ -3,24 +3,29 @@
     "security_id": 154,
     "ticker": "KMPUR",
     "name": "KİMTEKS POLİÜRETAN SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-04-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.21213697928419684,
-    "momentum_126": -0.06407886575391175,
-    "momentum_63": -0.19287992419251765,
-    "momentum_21": -0.22893406131438154,
+    "momentum_12_1": 0.028481062320807382,
+    "fip_12_1": 0.11255411255411256,
+    "momentum_252": -0.278480961722248,
+    "momentum_126": -0.14819422415385275,
+    "momentum_63": -0.2871287168076365,
+    "momentum_21": -0.29846152281149807,
     "fip_252": -0.12301587301587301,
     "fip_126": -0.1111111111111111,
-    "fip_63": -0.1111111111111111,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.957479516093796,
-    "delta_momentum_21_63": -0.036054137121863894,
-    "delta_fip_21_63": -0.12698412698412698,
+    "atr14_percent": 7.962057932285872,
+    "delta_momentum_21_63": -0.01133280600386155,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0829195693596837,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 19.280000686645508,
-      "volume": 2337319.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 18.959999084472656,
       "volume": 2108838.0,
-      "return": -0.016597592882582446
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.1899995803833,
       "volume": 7335412.0,
       "return": -0.05358253567336302
+    },
+    {
+      "date": "2026-09-28",
+      "close": 13.680000305175781,
+      "volume": 2219143.0,
+      "return": -0.09940745996843647
     }
   ],
   "data_status": "OK",

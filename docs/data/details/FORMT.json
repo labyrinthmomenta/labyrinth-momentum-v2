@@ -3,23 +3,28 @@
     "security_id": 382,
     "ticker": "FORMT",
     "name": "FORMET METAL VE CAM SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2018-05-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7310704981964848,
-    "momentum_126": -0.6373239427751742,
-    "momentum_63": -0.5360360549028578,
-    "momentum_21": -0.3905325819433342,
-    "fip_252": -0.20634920634920634,
-    "fip_126": -0.1984126984126984,
+    "momentum_12_1": -0.5651041681218589,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": -0.7447916559952623,
+    "momentum_126": -0.6549295603200286,
+    "momentum_63": -0.55251141850777,
+    "momentum_21": -0.4131736261932083,
+    "fip_252": -0.21428571428571427,
+    "fip_126": -0.20634920634920634,
     "fip_63": -0.3968253968253968,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 6.129166584255871,
-    "delta_momentum_21_63": 0.1455034729595236,
+    "atr14_percent": 6.564834914296862,
+    "delta_momentum_21_63": 0.13933779231456167,
     "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.12849163350561632,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.8299999237060547,
-      "volume": 72610882.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.8399999141693115,
       "volume": 42850994.0,
-      "return": 0.002610963619440687
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.0299999713897705,
       "volume": 19974966.0,
       "return": 0.019801961500356402
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.9800000190734863,
+      "volume": 22557971.0,
+      "return": -0.048543644373911676
     }
   ],
   "data_status": "OK",

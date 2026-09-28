@@ -3,24 +3,29 @@
     "security_id": 595,
     "ticker": "ATEKS",
     "name": "AKIN TEKSTİL A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1996-05-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.0841232031488075,
-    "momentum_126": -0.13841805433767085,
-    "momentum_63": -0.2956119761413144,
-    "momentum_21": -0.036842105263157676,
+    "momentum_12_1": 0.21741776864645823,
+    "fip_12_1": 0.12554112554112554,
+    "momentum_252": 0.003045067048067507,
+    "momentum_126": -0.191854786643874,
+    "momentum_63": -0.34642858353872186,
+    "momentum_21": -0.1760880341320571,
     "fip_252": 0.15079365079365079,
     "fip_126": -0.19047619047619047,
     "fip_63": -0.2222222222222222,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.316265133037388,
-    "delta_momentum_21_63": 0.2587698708781567,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 5.550522722829446,
+    "delta_momentum_21_63": 0.17034054940666477,
+    "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.1327433628318584,
     "completed_month_fip": -0.19047619047619047,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 84.4000015258789,
-      "volume": 7671.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 82.0999984741211,
       "volume": 14468.0,
-      "return": -0.027251220499712625
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 91.5,
       "volume": 4551.0,
       "return": -0.0368421052631579
+    },
+    {
+      "date": "2026-09-28",
+      "close": 82.3499984741211,
+      "volume": 15612.0,
+      "return": -0.10000001667627223
     }
   ],
   "data_status": "OK",

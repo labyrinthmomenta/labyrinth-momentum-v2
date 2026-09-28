@@ -3,24 +3,29 @@
     "security_id": 353,
     "ticker": "DMRGD",
     "name": "DMR UNLU MAMULLER ÜRETİM GIDA TOPTAN PERAKENDE İHRACAT A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-09-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.8615169978677457,
-    "momentum_126": 1.3906975062748472,
-    "momentum_63": -0.0854092578020994,
-    "momentum_21": -0.1361344485285929,
+    "momentum_12_1": 2.4557234567006216,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": 1.6666666666666736,
+    "momentum_126": 1.035164800154936,
+    "momentum_63": -0.20719178194041377,
+    "momentum_21": -0.22833331425984693,
     "fip_252": -0.07142857142857142,
-    "fip_126": -0.15873015873015872,
-    "fip_63": 0.06349206349206349,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 8.264589575860253,
-    "delta_momentum_21_63": -0.05072519072649351,
-    "delta_fip_21_63": -0.15873015873015872,
+    "fip_126": -0.14285714285714285,
+    "fip_63": 0.031746031746031744,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 9.306384162814986,
+    "delta_momentum_21_63": -0.021141532319433165,
+    "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.009314191908820657,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.5924999713897705,
-      "volume": 630066256.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.4725000858306885,
       "volume": 41922400.0,
-      "return": -0.03340289116624817
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.279999732971191,
       "volume": 99914645.0,
       "return": 0.09013779430408686
+    },
+    {
+      "date": "2026-09-28",
+      "close": 9.260000228881836,
+      "volume": 29818905.0,
+      "return": -0.0992217442202743
     }
   ],
   "data_status": "OK",

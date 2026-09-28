@@ -3,24 +3,29 @@
     "security_id": 133,
     "ticker": "ISFIN",
     "name": "İŞ FİNANSAL KİRALAMA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-03-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.04956270556130682,
-    "momentum_126": -0.08350302650787278,
-    "momentum_63": -0.09547736959557829,
-    "momentum_21": -0.09274194246152201,
+    "momentum_12_1": 0.16371161024075165,
+    "fip_12_1": 0.08225108225108226,
+    "momentum_252": 0.054964556795648045,
+    "momentum_126": -0.10166081391275805,
+    "momentum_63": -0.1030150390129485,
+    "momentum_21": -0.0934484562052329,
     "fip_252": 0.11904761904761904,
-    "fip_126": -0.16666666666666666,
-    "fip_63": -0.2222222222222222,
+    "fip_126": -0.18253968253968253,
+    "fip_63": -0.23809523809523808,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 3.1546241233616037,
-    "delta_momentum_21_63": 0.0027354271340562786,
-    "delta_fip_21_63": -0.3015873015873016,
+    "atr14_percent": 3.3140535773136284,
+    "delta_momentum_21_63": 0.009566582807715607,
+    "delta_fip_21_63": -0.28571428571428575,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.02558957456460187,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 17.149999618530273,
-      "volume": 2032238.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 16.920000076293945,
       "volume": 1191653.0,
-      "return": -0.013411052323745731
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 18.0,
       "volume": 1363812.0,
       "return": -0.012616541306183393
+    },
+    {
+      "date": "2026-09-28",
+      "close": 17.850000381469727,
+      "volume": 1881676.0,
+      "return": -0.008333312140570759
     }
   ],
   "data_status": "OK",

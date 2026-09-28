@@ -3,24 +3,29 @@
     "security_id": 566,
     "ticker": "IHEVA",
     "name": "İHLAS EV ALETLERİ İMALAT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1996-10-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4385381851910378,
-    "momentum_126": -0.22477063969343358,
-    "momentum_63": -0.18357482525472513,
-    "momentum_21": -0.15499997138977073,
-    "fip_252": -0.11507936507936507,
+    "momentum_12_1": -0.33986927493480457,
+    "fip_12_1": -0.11255411255411256,
+    "momentum_252": -0.48692807783977143,
+    "momentum_126": -0.2629108130990967,
+    "momentum_63": -0.2378640310379334,
+    "momentum_21": -0.2227722439225096,
+    "fip_252": -0.12301587301587301,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.07936507936507936,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.4997802809829155,
-    "delta_momentum_21_63": 0.028574853864954397,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 5.043683933182155,
+    "delta_momentum_21_63": 0.015091787115423805,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.020725431165497188,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.009999990463257,
-      "volume": 11837638.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.059999942779541,
       "volume": 11236560.0,
-      "return": 0.016611279891927566
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.690000057220459,
       "volume": 1229473.0,
       "return": 0.03680985408856041
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.5700000524520874,
+      "volume": 1845453.0,
+      "return": -0.07100591757714814
     }
   ],
   "data_status": "OK",

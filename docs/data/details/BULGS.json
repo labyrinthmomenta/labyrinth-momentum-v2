@@ -3,24 +3,29 @@
     "security_id": 327,
     "ticker": "BULGS",
     "name": "BULLS GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-02-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6034183256418716,
-    "momentum_126": -0.6862969804800085,
-    "momentum_63": -0.6629739059486459,
-    "momentum_21": -0.5751086573023865,
-    "fip_252": -0.13095238095238096,
-    "fip_126": -0.25396825396825395,
-    "fip_63": -0.3492063492063492,
+    "momentum_12_1": -0.06260869122933788,
+    "fip_12_1": -0.08225108225108226,
+    "momentum_252": -0.5637681104134828,
+    "momentum_126": -0.6537045442296867,
+    "momentum_63": -0.6254355381675745,
+    "momentum_21": -0.5346320309299524,
+    "fip_252": -0.12301587301587301,
+    "fip_126": -0.23809523809523808,
+    "fip_63": -0.31746031746031744,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 13.016678974006979,
-    "delta_momentum_21_63": 0.08786524864625944,
-    "delta_fip_21_63": -0.2222222222222222,
+    "atr14_percent": 12.276118814560748,
+    "delta_momentum_21_63": 0.0908035072376221,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.1609499219849151,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 34.52000045776367,
-      "volume": 5866095.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 34.5,
       "volume": 5227593.0,
-      "return": -0.0005793875289238359
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 13.6899995803833,
       "volume": 21174287.0,
       "return": -0.010838191513787065
+    },
+    {
+      "date": "2026-09-28",
+      "close": 15.050000190734863,
+      "volume": 11977482.0,
+      "return": 0.09934263345780803
     }
   ],
   "data_status": "OK",

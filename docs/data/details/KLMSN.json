@@ -3,24 +3,29 @@
     "security_id": 425,
     "ticker": "KLMSN",
     "name": "KLİMASAN KLİMA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1997-08-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5232314510540317,
-    "momentum_126": -0.2329966295801903,
-    "momentum_63": -0.33469627424196013,
-    "momentum_21": -0.20571825508194008,
-    "fip_252": -0.13095238095238096,
+    "momentum_12_1": -0.400416652361551,
+    "fip_12_1": -0.1341991341991342,
+    "momentum_252": -0.5462499856948844,
+    "momentum_126": -0.2661724911489517,
+    "momentum_63": -0.3517856644124375,
+    "momentum_21": -0.24322445562859674,
+    "fip_252": -0.1388888888888889,
     "fip_126": -0.0873015873015873,
     "fip_63": -0.2222222222222222,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 4.701302359215558,
-    "delta_momentum_21_63": 0.12897801916002005,
-    "delta_fip_21_63": 0.12698412698412698,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 5.0513046416230925,
+    "delta_momentum_21_63": 0.10856120878384079,
+    "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.0312727494673295,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 47.779998779296875,
-      "volume": 3982434.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 48.0,
       "volume": 8030588.0,
-      "return": 0.004604462668978737
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 22.780000686645508,
       "volume": 473332.0,
       "return": 0.023360307835441185
+    },
+    {
+      "date": "2026-09-28",
+      "close": 21.780000686645508,
+      "volume": 460076.0,
+      "return": -0.043898154954237434
     }
   ],
   "data_status": "OK",

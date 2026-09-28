@@ -3,24 +3,29 @@
     "security_id": 81,
     "ticker": "EGEEN",
     "name": "EGE ENDÜSTRİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-10-31"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.33047337278106415,
-    "momentum_126": -0.0061484409310492705,
-    "momentum_63": 0.01845184518451859,
-    "momentum_21": 0.10390243902439034,
+    "momentum_12_1": -0.38647199046483915,
+    "fip_12_1": -0.1341991341991342,
+    "momentum_252": -0.38825983313468404,
+    "momentum_126": -0.10192475940507473,
+    "momentum_63": -0.08307280035730269,
+    "momentum_21": -0.0029140359397764604,
     "fip_252": -0.14285714285714285,
-    "fip_126": -0.12698412698412698,
-    "fip_63": 0.1111111111111111,
-    "fip_21": 0.14285714285714285,
-    "atr14_percent": 6.630069037397211,
-    "delta_momentum_21_63": 0.08545059383987175,
-    "delta_fip_21_63": 0.031746031746031744,
+    "fip_126": -0.14285714285714285,
+    "fip_63": -0.14285714285714285,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 7.520353522531872,
+    "delta_momentum_21_63": 0.08015876441752623,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03700189753320715,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8450.0,
-      "volume": 16092.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8390.0,
       "volume": 13841.0,
-      "return": -0.007100591715976323
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5657.5,
       "volume": 28529.0,
       "return": -0.009628008752735284
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5132.5,
+      "volume": 35265.0,
+      "return": -0.09279717189571368
     }
   ],
   "data_status": "OK",

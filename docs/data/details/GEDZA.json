@@ -3,24 +3,29 @@
     "security_id": 387,
     "ticker": "GEDZA",
     "name": "GEDİZ AMBALAJ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2014-01-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.21510449068068005,
-    "momentum_126": -0.23571893019153878,
-    "momentum_63": -0.2367212889624435,
-    "momentum_21": -0.2265780600794537,
-    "fip_252": -0.09126984126984126,
+    "momentum_12_1": -0.019762858017372875,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.2773386003629742,
+    "momentum_126": -0.2582826034264314,
+    "momentum_63": -0.2881245700420262,
+    "momentum_21": -0.26276880492880406,
+    "fip_252": -0.0992063492063492,
     "fip_126": -0.09523809523809523,
-    "fip_63": -0.1111111111111111,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.091083590858457,
-    "delta_momentum_21_63": 0.010143228882989797,
-    "delta_fip_21_63": -0.2222222222222222,
+    "atr14_percent": 4.6038727818062215,
+    "delta_momentum_21_63": 0.02535576511322213,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05506607975784239,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 29.65999984741211,
-      "volume": 955110.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 30.360000610351562,
       "volume": 2381679.0,
-      "return": 0.02360083501485688
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 23.280000686645508,
       "volume": 111469.0,
       "return": 0.012173942897630852
+    },
+    {
+      "date": "2026-09-28",
+      "close": 21.940000534057617,
+      "volume": 375623.0,
+      "return": -0.05756014231376616
     }
   ],
   "data_status": "OK",

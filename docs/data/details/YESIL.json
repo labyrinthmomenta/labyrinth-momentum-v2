@@ -3,24 +3,29 @@
     "security_id": 540,
     "ticker": "YESIL",
     "name": "YEŞİL YATIRIM HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-03-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6484375014551917,
-    "momentum_126": -0.3793103816818243,
-    "momentum_63": -0.3478261019797473,
-    "momentum_21": -0.25619839026085733,
+    "momentum_12_1": -0.4979423888500948,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.6502057611149901,
+    "momentum_126": -0.4654088012591502,
+    "momentum_63": -0.3795620285522784,
+    "momentum_21": -0.30327868532090074,
     "fip_252": -0.17063492063492064,
-    "fip_126": -0.16666666666666666,
+    "fip_126": -0.18253968253968253,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 4.809963279597367,
-    "delta_momentum_21_63": 0.09162771171888995,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.485425577759051,
+    "delta_momentum_21_63": 0.07628334323137764,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0725806715213051,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.559999942779541,
-      "volume": 52682047.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2.430000066757202,
       "volume": 64538722.0,
-      "return": -0.0507812027062744
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 0.8999999761581421,
       "volume": 11819582.0,
       "return": 0.01123594452133525
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.8500000238418579,
+      "volume": 23557658.0,
+      "return": -0.055555504045367354
     }
   ],
   "data_status": "OK",

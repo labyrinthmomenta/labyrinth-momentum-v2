@@ -3,23 +3,28 @@
     "security_id": 523,
     "ticker": "TURGG",
     "name": "TÜRKER PROJE GAYRİMENKUL VE YATIRIM GELİŞTİRME A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İNŞAAT VE BAYINDIRLIK",
+    "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-07-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.23465048214756568,
-    "momentum_126": -0.10582384795396815,
-    "momentum_63": -0.10071427481515138,
-    "momentum_21": -0.07016246764709155,
+    "momentum_12_1": -0.16002489291947264,
+    "fip_12_1": -0.1038961038961039,
+    "momentum_252": -0.26463257706442855,
+    "momentum_126": -0.17412585579764228,
+    "momentum_63": -0.1466762796669201,
+    "momentum_21": -0.1245366478877421,
     "fip_252": -0.0992063492063492,
-    "fip_126": -0.05555555555555555,
+    "fip_126": -0.07142857142857142,
     "fip_63": -0.07936507936507936,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.504382061638013,
-    "delta_momentum_21_63": 0.03055180716805983,
+    "atr14_percent": 7.985013833569579,
+    "delta_momentum_21_63": 0.022139631779177993,
     "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.08474579508961999,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 32.900001525878906,
-      "volume": 804031.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 32.119998931884766,
       "volume": 902133.0,
-      "return": -0.023708284432163218
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 25.18000030517578,
       "volume": 251605.0,
       "return": 0.01205792421738705
+    },
+    {
+      "date": "2026-09-28",
+      "close": 23.6200008392334,
+      "volume": 284092.0,
+      "return": -0.06195390973135628
     }
   ],
   "data_status": "OK",

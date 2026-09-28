@@ -3,24 +3,29 @@
     "security_id": 156,
     "ticker": "KCHOL",
     "name": "KOÇ HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.2169758708703271,
-    "momentum_126": 0.14248021108179354,
-    "momentum_63": 0.10628514755296048,
-    "momentum_21": 0.010737642784904411,
-    "fip_252": -0.023809523809523808,
+    "momentum_12_1": 0.1961990346619331,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": 0.19619903466193267,
+    "momentum_126": 0.14622390732725132,
+    "momentum_63": 0.10594315245478048,
+    "momentum_21": -1.1102230246251565e-16,
+    "fip_252": -0.015873015873015872,
     "fip_126": 0.0,
     "fip_63": 0.047619047619047616,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.222528753984788,
-    "delta_momentum_21_63": -0.09554750476805607,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 3.2208970249555255,
+    "delta_momentum_21_63": -0.10594315245478059,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.0914169657590902,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 177.89999389648438,
-      "volume": 32622126.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 178.89999389648438,
       "volume": 20087615.0,
-      "return": 0.005621135662218668
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 216.5,
       "volume": 13622064.0,
       "return": 0.0023148148148148806
+    },
+    {
+      "date": "2026-09-28",
+      "close": 214.0,
+      "volume": 20626040.0,
+      "return": -0.011547344110854452
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 580,
     "ticker": "SAMAT",
     "name": "SARAY MATBAACILIK KAĞITÇILIK KIRTASİYECİLİK TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-06-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.448366047374675,
-    "momentum_126": -0.2082551875052555,
-    "momentum_63": -0.3557252416326725,
-    "momentum_21": -0.21706866517175094,
+    "momentum_12_1": -0.26075269385753685,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.467741934450145,
+    "momentum_126": -0.2611940411369895,
+    "momentum_63": -0.4045112809989859,
+    "momentum_21": -0.27999999306418655,
     "fip_252": -0.19047619047619047,
-    "fip_126": -0.12698412698412698,
-    "fip_63": -0.2857142857142857,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 7.300076249136386,
-    "delta_momentum_21_63": 0.13865657646092155,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_126": -0.14285714285714285,
+    "fip_63": -0.31746031746031744,
+    "fip_21": -0.5714285714285714,
+    "atr14_percent": 7.728754181802783,
+    "delta_momentum_21_63": 0.12451128793479938,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.017045392457285313,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.650000095367432,
-      "volume": 20056118.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.440000057220459,
       "volume": 11250719.0,
-      "return": -0.02745098503647614
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.21999979019165,
       "volume": 328347.0,
       "return": -0.014018788942859906
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.9600000381469727,
+      "volume": 831046.0,
+      "return": -0.06161131871356562
     }
   ],
   "data_status": "OK",

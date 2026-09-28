@@ -3,24 +3,29 @@
     "security_id": 164,
     "ticker": "LIDER",
     "name": "LDR TURİZM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İDARİ VE DESTEK HİZMET FAALİYETLERİ",
+    "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-04-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.8522151892430849,
-    "momentum_126": -0.9143119252056158,
-    "momentum_63": -0.8832499980926513,
-    "momentum_21": -0.7117284039283844,
-    "fip_252": 0.05555555555555555,
-    "fip_126": -0.09523809523809523,
-    "fip_63": -0.1746031746031746,
+    "momentum_12_1": -0.5043343465311236,
+    "fip_12_1": 0.10822510822510822,
+    "momentum_252": -0.869814240773068,
+    "momentum_126": -0.9248436127548475,
+    "momentum_63": -0.9044318199157715,
+    "momentum_21": -0.7373516637357513,
+    "fip_252": 0.047619047619047616,
+    "fip_126": -0.1111111111111111,
+    "fip_63": -0.20634920634920634,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 26.803482036843224,
-    "delta_momentum_21_63": 0.17152159416426682,
-    "delta_fip_21_63": -0.4444444444444445,
+    "atr14_percent": 28.431110345613586,
+    "delta_momentum_21_63": 0.16708015618002015,
+    "delta_fip_21_63": -0.41269841269841273,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.6657421527933811,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 63.20000076293945,
-      "volume": 1387960.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 64.5999984741211,
       "volume": 1408350.0,
-      "return": 0.022151862251283294
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 9.34000015258789,
       "volume": 970109.0,
       "return": -0.09932495123799712
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.40999984741211,
+      "volume": 1638464.0,
+      "return": -0.09957176552273406
     }
   ],
   "data_status": "OK",

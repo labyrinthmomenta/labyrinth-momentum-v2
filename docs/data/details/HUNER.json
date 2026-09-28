@@ -3,24 +3,29 @@
     "security_id": 402,
     "ticker": "HUNER",
     "name": "HUN YENİLENEBİLİR ENERJİ ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-02-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.13838125858120165,
-    "momentum_126": 0.4389439520405676,
-    "momentum_63": 0.06601466280036061,
-    "momentum_21": 0.12371134147315632,
-    "fip_252": 0.10317460317460317,
+    "momentum_12_1": 0.03664924276198245,
+    "fip_12_1": 0.09090909090909091,
+    "momentum_252": 0.15183250582736751,
+    "momentum_126": 0.44736847058557827,
+    "momentum_63": 0.10831235860412103,
+    "momentum_21": 0.11111112449038041,
+    "fip_252": 0.09523809523809523,
     "fip_126": 0.07142857142857142,
-    "fip_63": 0.31746031746031744,
+    "fip_63": 0.2857142857142857,
     "fip_21": 0.14285714285714285,
-    "atr14_percent": 5.184635220204488,
-    "delta_momentum_21_63": 0.05769667867279571,
-    "delta_fip_21_63": -0.1746031746031746,
+    "atr14_percent": 5.143914422599073,
+    "delta_momentum_21_63": 0.00279876588625938,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.17647055523618405,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.8299999237060547,
-      "volume": 17964350.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.819999933242798,
       "volume": 11525074.0,
-      "return": -0.002610963619440576
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.360000133514404,
       "volume": 67344808.0,
       "return": 0.06862750368730697
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.400000095367432,
+      "volume": 94128254.0,
+      "return": 0.009174302896359121
     }
   ],
   "data_status": "OK",

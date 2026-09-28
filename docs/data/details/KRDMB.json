@@ -3,24 +3,29 @@
     "security_id": 143,
     "ticker": "KRDMB",
     "name": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1998-09-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.6819727720140345,
-    "momentum_126": 0.5090908798874865,
-    "momentum_63": -0.423611135123378,
-    "momentum_21": -0.40714286861563065,
-    "fip_252": -0.1388888888888889,
+    "momentum_12_1": 3.4560105402465684,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": 1.4513095472404114,
+    "momentum_126": 0.43137254901960964,
+    "momentum_63": -0.4733044964985156,
+    "momentum_21": -0.44988695042342264,
+    "fip_252": -0.13095238095238096,
     "fip_126": -0.14285714285714285,
-    "fip_63": -0.1111111111111111,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 10.648458161329152,
-    "delta_momentum_21_63": 0.016468266507747353,
-    "delta_fip_21_63": -0.31746031746031744,
+    "atr14_percent": 12.00117595592828,
+    "delta_momentum_21_63": 0.023417546075092943,
+    "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0052044382768933195,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 29.399999618530273,
-      "volume": 1712564.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 29.780000686645508,
       "volume": 1716113.0,
-      "return": 0.012925206566184011
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 78.8499984741211,
       "volume": 2501965.0,
       "return": 0.09972108549795689
+    },
+    {
+      "date": "2026-09-28",
+      "close": 73.0,
+      "volume": 10059424.0,
+      "return": -0.07419148493758165
     }
   ],
   "data_status": "OK",

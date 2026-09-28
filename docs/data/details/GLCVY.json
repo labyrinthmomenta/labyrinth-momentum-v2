@@ -3,24 +3,29 @@
     "security_id": 104,
     "ticker": "GLCVY",
     "name": "GELECEK VARLIK YÖNETİMİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "VARLIK YÖNETİM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-10-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3370030642400841,
-    "momentum_126": -0.3133808461970885,
-    "momentum_63": -0.2797342182585987,
-    "momentum_21": -0.18111425900677391,
+    "momentum_12_1": -0.17651635692275636,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": -0.34930018403095464,
+    "momentum_126": -0.34317112007115824,
+    "momentum_63": -0.2847863221779846,
+    "momentum_21": -0.20982059396168373,
     "fip_252": -0.12301587301587301,
-    "fip_126": -0.15079365079365079,
+    "fip_126": -0.16666666666666666,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.204873892553747,
-    "delta_momentum_21_63": 0.09861995925182476,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_21": -0.38095238095238093,
+    "atr14_percent": 5.3603583126684295,
+    "delta_momentum_21_63": 0.07496572821630088,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.02254904952703729,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 65.4000015258789,
-      "volume": 456116.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 64.30000305175781,
       "volume": 245773.0,
-      "return": -0.016819548141536744
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 43.36000061035156,
       "volume": 432678.0,
       "return": -0.014545440673828125
+    },
+    {
+      "date": "2026-09-28",
+      "close": 41.84000015258789,
+      "volume": 521788.0,
+      "return": -0.035055360617333386
     }
   ],
   "data_status": "OK",

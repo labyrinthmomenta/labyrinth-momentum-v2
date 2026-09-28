@@ -3,24 +3,29 @@
     "security_id": 227,
     "ticker": "SURGY",
     "name": "SUR TATİL EVLERİ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-12-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5289792410023191,
-    "momentum_126": -0.6121104168339628,
-    "momentum_63": -0.6763744472656954,
-    "momentum_21": -0.34239126240798856,
+    "momentum_12_1": -0.2709705732214971,
+    "fip_12_1": -0.06926406926406926,
+    "momentum_252": -0.5467720910253435,
+    "momentum_126": -0.642287710281878,
+    "momentum_63": -0.705142865862165,
+    "momentum_21": -0.3783132856825566,
     "fip_252": -0.0992063492063492,
-    "fip_126": -0.18253968253968253,
-    "fip_63": -0.25396825396825395,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 8.471642693608562,
-    "delta_momentum_21_63": 0.33398318485770684,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_126": -0.1984126984126984,
+    "fip_63": -0.2857142857142857,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 8.757825383090905,
+    "delta_momentum_21_63": 0.3268295801796084,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.5416058449849597,
     "completed_month_fip": -0.6666666666666666,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 46.2400016784668,
-      "volume": 1784988.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 45.540000915527344,
       "volume": 2603629.0,
-      "return": -0.015138424254543925
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 21.780000686645508,
       "volume": 1242198.0,
       "return": 0.005540204989786135
+    },
+    {
+      "date": "2026-09-28",
+      "close": 20.639999389648438,
+      "volume": 1317423.0,
+      "return": -0.05234165569590943
     }
   ],
   "data_status": "OK",

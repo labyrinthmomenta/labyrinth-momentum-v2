@@ -3,24 +3,29 @@
     "security_id": 486,
     "ticker": "PKENT",
     "name": "PETROKENT TURİZM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "KONAKLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-09-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5883827883667195,
-    "momentum_126": -0.3494055219886817,
-    "momentum_63": -0.3262653758134413,
-    "momentum_21": -0.21887390014350638,
+    "momentum_12_1": -0.44595745979471413,
+    "fip_12_1": -0.1038961038961039,
+    "momentum_252": -0.6051063699925199,
+    "momentum_126": -0.38745872573097173,
+    "momentum_63": -0.36438354074138524,
+    "momentum_21": -0.28725034387943826,
     "fip_252": -0.12301587301587301,
-    "fip_126": -0.1111111111111111,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 4.454754573305695,
-    "delta_momentum_21_63": 0.1073914756699349,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.875549044268582,
+    "delta_momentum_21_63": 0.07713319686194697,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.01257860465808136,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 239.3000030517578,
-      "volume": 294630.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 235.0,
       "volume": 193359.0,
-      "return": -0.017969088996742655
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 98.5,
       "volume": 162161.0,
       "return": 0.0025445292620864812
+    },
+    {
+      "date": "2026-09-28",
+      "close": 92.80000305175781,
+      "volume": 147479.0,
+      "return": -0.057867989322255675
     }
   ],
   "data_status": "OK",

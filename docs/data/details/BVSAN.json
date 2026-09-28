@@ -3,24 +3,29 @@
     "security_id": 329,
     "ticker": "BVSAN",
     "name": "BÜLBÜLOĞLU VİNÇ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-02-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.2922597689338794,
-    "momentum_126": -0.242380923316592,
-    "momentum_63": -0.3292579757569225,
-    "momentum_21": -0.23729625384304154,
+    "momentum_12_1": -0.051630475533105735,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.32563409493440676,
+    "momentum_126": -0.3042056359977363,
+    "momentum_63": -0.36638300469581075,
+    "momentum_21": -0.28892073430483345,
     "fip_252": -0.051587301587301584,
-    "fip_126": -0.03968253968253968,
+    "fip_126": -0.05555555555555555,
     "fip_63": -0.09523809523809523,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 9.107329949691064,
-    "delta_momentum_21_63": 0.09196172191388097,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 9.654942445172745,
+    "delta_momentum_21_63": 0.0774622703909773,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.02537598250860873,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 112.4000015258789,
-      "volume": 485705.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 110.4000015258789,
       "volume": 380566.0,
-      "return": -0.01779359406449399
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 79.55000305175781,
       "volume": 505387.0,
       "return": 0.012086572469203194
+    },
+    {
+      "date": "2026-09-28",
+      "close": 74.44999694824219,
+      "volume": 647263.0,
+      "return": -0.06411069651622003
     }
   ],
   "data_status": "OK",

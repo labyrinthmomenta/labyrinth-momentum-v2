@@ -3,24 +3,29 @@
     "security_id": 310,
     "ticker": "BNTAS",
     "name": "BANTAŞ BANDIRMA AMBALAJ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2015-05-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.25761768846642563,
-    "momentum_126": -0.12274958815240045,
-    "momentum_63": -0.1598746022931533,
-    "momentum_21": -0.1611893199518445,
+    "momentum_12_1": -0.09604517452913797,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.2711864543762481,
+    "momentum_126": -0.1568627542644594,
+    "momentum_63": -0.182250412962898,
+    "momentum_21": -0.19375003585591855,
     "fip_252": -0.15873015873015872,
-    "fip_126": -0.10317460317460317,
+    "fip_126": -0.11904761904761904,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.634161331265864,
-    "delta_momentum_21_63": -0.001314717658691178,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 3.989872190602803,
+    "delta_momentum_21_63": -0.011499622893020534,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.006259775068669482,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.21999979019165,
-      "volume": 5413133.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.079999923706055,
       "volume": 3270059.0,
-      "return": -0.019390563788628468
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.360000133514404,
       "volume": 2114197.0,
       "return": 0.013232546723281446
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.159999847412109,
+      "volume": 2063321.0,
+      "return": -0.03731348528365808
     }
   ],
   "data_status": "OK",

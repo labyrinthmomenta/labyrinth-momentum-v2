@@ -3,24 +3,29 @@
     "security_id": 194,
     "ticker": "OTKAR",
     "name": "OTOKAR OTOMOTİV VE SAVUNMA SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-04-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.43894542090656863,
-    "momentum_126": -0.20925684485006535,
-    "momentum_63": -0.19025367156208317,
-    "momentum_21": -0.07545731707317083,
+    "momentum_12_1": -0.3839368616527391,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": -0.44568245125348194,
+    "momentum_126": -0.2124010554089708,
+    "momentum_63": -0.20558882235528986,
+    "momentum_21": -0.10022607385079141,
     "fip_252": -0.06746031746031746,
     "fip_126": -0.031746031746031744,
-    "fip_63": -0.07936507936507936,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.812087065638501,
-    "delta_momentum_21_63": 0.11479635448891234,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_63": -0.1111111111111111,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 3.913185032141992,
+    "delta_momentum_21_63": 0.10536274850449845,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.04180327868852407,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 540.5,
-      "volume": 237572.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 538.5,
       "volume": 229556.0,
-      "return": -0.0037002775208140326
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 303.25,
       "volume": 139499.0,
       "return": -0.008986928104575131
+    },
+    {
+      "date": "2026-09-28",
+      "close": 298.5,
+      "volume": 268386.0,
+      "return": -0.015663643858202847
     }
   ],
   "data_status": "OK",

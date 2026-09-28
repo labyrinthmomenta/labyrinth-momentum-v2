@@ -3,24 +3,29 @@
     "security_id": 190,
     "ticker": "ODAS",
     "name": "ODAŞ ELEKTRİK ÜRETİM SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-05-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.21972317211535697,
-    "momentum_126": 0.15763547029453395,
-    "momentum_63": -0.16568043196820115,
-    "momentum_21": 1.1102230246251565e-15,
-    "fip_252": -0.03968253968253968,
-    "fip_126": 0.0,
+    "momentum_12_1": 0.27863250273733087,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": 0.12991457115751426,
+    "momentum_126": 0.08360659620576771,
+    "momentum_63": -0.20648256974129853,
+    "momentum_21": -0.11631014483163626,
+    "fip_252": -0.031746031746031744,
+    "fip_126": 0.015873015873015872,
     "fip_63": -0.12698412698412698,
-    "fip_21": 0.14285714285714285,
-    "atr14_percent": 4.664036003574312,
-    "delta_momentum_21_63": 0.16568043196820226,
-    "delta_fip_21_63": 0.2698412698412698,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 5.159486727054714,
+    "delta_momentum_21_63": 0.09017242490966226,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.06632652688850638,
     "completed_month_fip": -0.38095238095238093,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 5.78000020980835,
-      "volume": 38805856.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 5.849999904632568,
       "volume": 30345482.0,
-      "return": 0.012110673405414829
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.050000190734863,
       "volume": 57956258.0,
       "return": 0.029197122465218994
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.610000133514404,
+      "volume": 60852382.0,
+      "return": -0.06241135394559405
     }
   ],
   "data_status": "OK",

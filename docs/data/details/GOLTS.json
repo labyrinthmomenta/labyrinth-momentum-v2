@@ -3,24 +3,29 @@
     "security_id": 112,
     "ticker": "GOLTS",
     "name": "GÖLTAŞ GÖLLER BÖLGESİ ÇİMENTO SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-03-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.25611510791366865,
-    "momentum_126": -0.2956403269754768,
-    "momentum_63": -0.19969040247678027,
-    "momentum_21": -0.1510673234811164,
-    "fip_252": -0.05952380952380952,
-    "fip_126": -0.19047619047619047,
-    "fip_63": -0.2698412698412698,
+    "momentum_12_1": -0.10518626734842851,
+    "fip_12_1": -0.025974025974025976,
+    "momentum_252": -0.2264426588750903,
+    "momentum_126": -0.2746575342465749,
+    "momentum_63": -0.179705654531371,
+    "momentum_21": -0.1355102040816326,
+    "fip_252": -0.051587301587301584,
+    "fip_126": -0.1746031746031746,
+    "fip_63": -0.23809523809523808,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 3.430025750283801,
-    "delta_momentum_21_63": 0.04862307899566387,
-    "delta_fip_21_63": -0.06349206349206349,
+    "atr14_percent": 3.5347636695043363,
+    "delta_momentum_21_63": 0.04419545044973838,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05047867711053078,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 347.5,
-      "volume": 292880.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 342.25,
       "volume": 190816.0,
-      "return": -0.015107913669064721
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 258.5,
       "volume": 55659.0,
       "return": 0.004859086491739495
+    },
+    {
+      "date": "2026-09-28",
+      "close": 264.75,
+      "volume": 396837.0,
+      "return": 0.024177949709864643
     }
   ],
   "data_status": "OK",

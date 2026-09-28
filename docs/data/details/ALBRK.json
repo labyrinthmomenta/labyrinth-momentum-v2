@@ -3,24 +3,29 @@
     "security_id": 20,
     "ticker": "ALBRK",
     "name": "ALBARAKA TÜRK KATILIM BANKASI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "BANKALAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2007-06-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.01939392089843861,
-    "momentum_126": 0.03190187006766054,
-    "momentum_63": 0.03699139376508587,
-    "momentum_21": -0.07276735056438222,
+    "momentum_12_1": 0.10558251331614188,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": 0.00485436443739129,
+    "momentum_126": 0.0048543644373899575,
+    "momentum_63": 0.022222141114121463,
+    "momentum_21": -0.09110866684805008,
     "fip_252": -0.031746031746031744,
-    "fip_126": -0.05555555555555555,
+    "fip_126": -0.03968253968253968,
     "fip_63": -0.14285714285714285,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.769335423825118,
-    "delta_momentum_21_63": -0.10975874432946808,
-    "delta_fip_21_63": 0.19047619047619047,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 3.762089594142818,
+    "delta_momentum_21_63": -0.11333080796217154,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.09457761577206636,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.25,
-      "volume": 18984701.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8.239999771118164,
       "volume": 9420307.0,
-      "return": -0.0012121489553740261
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.40999984741211,
       "volume": 4927741.0,
       "return": 0.007185564455246318
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.279999732971191,
+      "volume": 9085793.0,
+      "return": -0.015457802235385398
     }
   ],
   "data_status": "OK",

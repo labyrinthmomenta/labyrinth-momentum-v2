@@ -3,24 +3,29 @@
     "security_id": 461,
     "ticker": "MSGYO",
     "name": "MİSTRAL GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2017-01-19"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.21850077986071093,
-    "momentum_126": -0.5020325183553229,
-    "momentum_63": -0.21095007000522314,
-    "momentum_21": -0.140350831696053,
+    "momentum_12_1": -0.06075539460192236,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": -0.2380952791086769,
+    "momentum_126": -0.47629796317331663,
+    "momentum_63": -0.24552848869372645,
+    "momentum_21": -0.1888111823986398,
     "fip_252": -0.1349206349206349,
     "fip_126": -0.23015873015873015,
     "fip_63": -0.2698412698412698,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 4.558747745939244,
-    "delta_momentum_21_63": 0.07059923830917014,
-    "delta_fip_21_63": -0.15873015873015872,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 5.070693233663241,
+    "delta_momentum_21_63": 0.056717306295086645,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11353033259133127,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.269999980926514,
-      "volume": 4642124.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.090000152587891,
       "volume": 8618195.0,
-      "return": -0.02870810668041257
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.900000095367432,
       "volume": 1271739.0,
       "return": 0.012396682001644121
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.639999866485596,
+      "volume": 1289435.0,
+      "return": -0.05306127016765694
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 571,
     "ticker": "MEPET",
     "name": "MEPET METRO PETROL VE TESİSLERİ SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-07-25"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.4574950880511841,
-    "momentum_126": -0.11435336971936638,
-    "momentum_63": 0.019056177472724478,
-    "momentum_21": 0.10098036786584963,
+    "momentum_12_1": 0.3677852135929678,
+    "fip_12_1": 0.09523809523809523,
+    "momentum_252": 0.3959731388981209,
+    "momentum_126": -0.17981077537630963,
+    "momentum_63": -0.03970455292751618,
+    "momentum_21": 0.020608444238922274,
     "fip_252": 0.10714285714285714,
-    "fip_126": -0.1746031746031746,
-    "fip_63": 0.23809523809523808,
+    "fip_126": -0.18253968253968253,
+    "fip_63": -0.23809523809523808,
     "fip_21": 0.23809523809523808,
-    "atr14_percent": 7.3139633365198815,
-    "delta_momentum_21_63": 0.08192419039312515,
-    "delta_fip_21_63": 0.0,
+    "atr14_percent": 8.205806722765157,
+    "delta_momentum_21_63": 0.06031299716643845,
+    "delta_fip_21_63": 0.47619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.10771796276529333,
     "completed_month_fip": 0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 15.40999984741211,
-      "volume": 515535.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.899999618530273,
       "volume": 502578.0,
-      "return": -0.03309540778272513
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 22.459999084472656,
       "volume": 536974.0,
       "return": -0.026019097804224844
+    },
+    {
+      "date": "2026-09-28",
+      "close": 20.799999237060547,
+      "volume": 348911.0,
+      "return": -0.07390916808005221
     }
   ],
   "data_status": "OK",

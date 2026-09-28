@@ -3,24 +3,29 @@
     "security_id": 107,
     "ticker": "GIPTA",
     "name": "GIPTA OFİS KIRTASİYE VE PROMOSYON ÜRÜNLERİ İMALAT SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-09-14"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7753209651521681,
-    "momentum_126": -0.5535081695617997,
-    "momentum_63": -0.5740364935775865,
-    "momentum_21": -0.6663135647157319,
-    "fip_252": -0.21825396825396826,
-    "fip_126": -0.2777777777777778,
-    "fip_63": -0.31746031746031744,
-    "fip_21": -0.7142857142857143,
-    "atr14_percent": 17.737527069566156,
-    "delta_momentum_21_63": -0.09227707113814543,
-    "delta_fip_21_63": -0.39682539682539686,
+    "momentum_12_1": -0.3238880622190836,
+    "fip_12_1": -0.17316017316017315,
+    "momentum_252": -0.7632711517584059,
+    "momentum_126": -0.5178962531590379,
+    "momentum_63": -0.5217391304347823,
+    "momentum_21": -0.649867374005305,
+    "fip_252": -0.21031746031746032,
+    "fip_126": -0.2619047619047619,
+    "fip_63": -0.2857142857142857,
+    "fip_21": -0.6190476190476191,
+    "atr14_percent": 16.756531200279944,
+    "delta_momentum_21_63": -0.12812824357052277,
+    "delta_fip_21_63": -0.33333333333333337,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.47693642031867856,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 140.1999969482422,
-      "volume": 1701148.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 139.39999389648438,
       "volume": 942919.0,
-      "return": -0.0057061559855322574
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 31.5,
       "volume": 19607886.0,
       "return": -0.04021936950329663
+    },
+    {
+      "date": "2026-09-28",
+      "close": 33.0,
+      "volume": 11237396.0,
+      "return": 0.04761904761904767
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 75,
     "ticker": "ARASE",
     "name": "DOĞU ARAS ENERJİ YATIRIMLARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-11-11"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.715643951907778,
-    "momentum_126": 0.027964752593480524,
-    "momentum_63": -0.15098375787421692,
-    "momentum_21": -0.1666666559902119,
+    "momentum_12_1": 1.1109185691725276,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": 0.7079723006703369,
+    "momentum_126": 0.03736845317639803,
+    "momentum_63": -0.14969800039430603,
+    "momentum_21": -0.19088669472463138,
     "fip_252": -0.01984126984126984,
     "fip_126": 0.047619047619047616,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.108172635742304,
-    "delta_momentum_21_63": -0.015682898115994992,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 6.049191591995232,
+    "delta_momentum_21_63": -0.04118869433032535,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05996468545735878,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 57.849998474121094,
-      "volume": 350160.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 57.70000076293945,
       "volume": 302660.0,
-      "return": -0.002592873208955071
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 99.25,
       "volume": 427399.0,
       "return": 0.02637024955773959
+    },
+    {
+      "date": "2026-09-28",
+      "close": 98.55000305175781,
+      "volume": 247270.0,
+      "return": -0.007052865977251299
     }
   ],
   "data_status": "OK",

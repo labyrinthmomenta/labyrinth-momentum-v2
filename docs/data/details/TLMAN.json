@@ -3,23 +3,28 @@
     "security_id": 519,
     "ticker": "TLMAN",
     "name": "TRABZON LİMAN İŞLETMECİLİĞİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2018-01-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.376318301549067,
-    "momentum_126": -0.2682789433606282,
-    "momentum_63": -0.3152631257709707,
-    "momentum_21": -0.20719072964904428,
+    "momentum_12_1": -0.21159421764134156,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": -0.40676327028136294,
+    "momentum_126": -0.30894763556171967,
+    "momentum_63": -0.33942976286412807,
+    "momentum_21": -0.24754898683789184,
     "fip_252": -0.07936507936507936,
     "fip_126": -0.0873015873015873,
     "fip_63": -0.15873015873015872,
     "fip_21": -0.38095238095238093,
-    "atr14_percent": 4.803657657606313,
-    "delta_momentum_21_63": 0.10807239612192643,
+    "atr14_percent": 5.2550180130180815,
+    "delta_momentum_21_63": 0.09188077602623623,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.019795598492362343,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 104.30000305175781,
-      "volume": 298174.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 103.5,
       "volume": 178223.0,
-      "return": -0.007670211201823429
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 65.05000305175781,
       "volume": 91914.0,
       "return": 0.005409677280133751
+    },
+    {
+      "date": "2026-09-28",
+      "close": 61.400001525878906,
+      "volume": 110148.0,
+      "return": -0.05611070491379899
     }
   ],
   "data_status": "OK",

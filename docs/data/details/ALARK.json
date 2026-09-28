@@ -3,24 +3,29 @@
     "security_id": 19,
     "ticker": "ALARK",
     "name": "ALARKO HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1989-05-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.2521943103732467,
-    "momentum_126": 0.20089788813046816,
-    "momentum_63": -0.0046511627906981046,
-    "momentum_21": -0.023722614145246235,
+    "momentum_12_1": 0.2934272405571472,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": 0.2206573207177298,
+    "momentum_126": 0.15555555555555456,
+    "momentum_63": -0.03435466158852718,
+    "momentum_21": -0.056261316877841305,
     "fip_252": -0.06746031746031746,
-    "fip_126": -0.1349206349206349,
-    "fip_63": 0.1111111111111111,
-    "fip_21": 0.23809523809523808,
-    "atr14_percent": 3.7812700619142934,
-    "delta_momentum_21_63": -0.01907145135454813,
-    "delta_fip_21_63": 0.12698412698412698,
+    "fip_126": -0.11904761904761904,
+    "fip_63": 0.07936507936507936,
+    "fip_21": 0.14285714285714285,
+    "atr14_percent": 3.955869956235632,
+    "delta_momentum_21_63": -0.021906655289314125,
+    "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.0722772579381965,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 85.44999694824219,
-      "volume": 4148253.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 85.19999694824219,
       "volume": 4006442.0,
-      "return": -0.0029256876410589383
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 107.0,
       "volume": 3184300.0,
       "return": 0.01904761904761898
+    },
+    {
+      "date": "2026-09-28",
+      "close": 104.0,
+      "volume": 3537811.0,
+      "return": -0.028037383177570097
     }
   ],
   "data_status": "OK",

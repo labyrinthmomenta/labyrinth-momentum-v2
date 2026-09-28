@@ -3,24 +3,29 @@
     "security_id": 110,
     "ticker": "GLYHO",
     "name": "GLOBAL YATIRIM HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-05-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.7810717297889573,
-    "momentum_126": 0.10000000671601428,
-    "momentum_63": -0.13125693641612424,
-    "momentum_21": -0.08117647732005395,
+    "momentum_12_1": 0.8812431001506196,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": 0.739178654631248,
+    "momentum_126": 0.043970675372951185,
+    "momentum_63": -0.13948375265677715,
+    "momentum_21": -0.07551626129977407,
     "fip_252": -0.027777777777777776,
     "fip_126": 0.05555555555555555,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 3.852154110968005,
-    "delta_momentum_21_63": 0.050080459096070284,
-    "delta_fip_21_63": -0.23809523809523808,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 3.962158778662795,
+    "delta_momentum_21_63": 0.06396749135700308,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.01658467684442555,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.770000457763672,
-      "volume": 10635840.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 9.010000228881836,
       "volume": 18215447.0,
-      "return": 0.027365992997834265
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.619999885559082,
       "volume": 5134037.0,
       "return": -0.001916915891529536
+    },
+    {
+      "date": "2026-09-28",
+      "close": 15.670000076293945,
+      "volume": 4213743.0,
+      "return": 0.003201036562176185
     }
   ],
   "data_status": "OK",

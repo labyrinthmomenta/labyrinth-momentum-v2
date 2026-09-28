@@ -3,24 +3,29 @@
     "security_id": 307,
     "ticker": "BAGFS",
     "name": "BAGFAŞ BANDIRMA GÜBRE FABRİKALARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.35532153413413703,
-    "momentum_126": -0.39141811915269353,
-    "momentum_63": -0.10123643805431881,
-    "momentum_21": -0.11558931925347371,
+    "momentum_12_1": -0.24344357097402558,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": -0.38084383752435225,
+    "momentum_126": -0.4208000183105469,
+    "momentum_63": -0.1442080365814148,
+    "momentum_21": -0.18161271423893888,
     "fip_252": -0.0992063492063492,
     "fip_126": -0.18253968253968253,
     "fip_63": -0.07936507936507936,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 5.0839898644936845,
-    "delta_momentum_21_63": -0.014352881199154899,
-    "delta_fip_21_63": 0.031746031746031744,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 5.660671338380887,
+    "delta_momentum_21_63": -0.03740467765752409,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.13281920999156482,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 36.08000183105469,
-      "volume": 914875.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 35.08000183105469,
       "volume": 881044.0,
-      "return": -0.027716184846179326
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 23.260000228881836,
       "volume": 563591.0,
       "return": 0.010425706617969377
+    },
+    {
+      "date": "2026-09-28",
+      "close": 21.719999313354492,
+      "volume": 619105.0,
+      "return": -0.06620812125423503
     }
   ],
   "data_status": "OK",

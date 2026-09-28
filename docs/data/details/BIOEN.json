@@ -3,23 +3,28 @@
     "security_id": 52,
     "ticker": "BIOEN",
     "name": "BİOTREND ÇEVRE VE ENERJİ YATIRIMLARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-04-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6100917481360701,
-    "momentum_126": -0.39429930422550263,
-    "momentum_63": -0.45657967178971504,
-    "momentum_21": -0.4631579047755192,
-    "fip_252": -0.1984126984126984,
+    "momentum_12_1": -0.2110939805662042,
+    "fip_12_1": -0.16883116883116883,
+    "momentum_252": -0.5781972189739175,
+    "momentum_126": -0.3505338426534731,
+    "momentum_63": -0.42700159814051974,
+    "momentum_21": -0.46533202861246525,
+    "fip_252": -0.19047619047619047,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.1746031746031746,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 10.944035688655159,
-    "delta_momentum_21_63": -0.006578232985804178,
+    "atr14_percent": 10.796993675547437,
+    "delta_momentum_21_63": -0.03833043047194551,
     "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.10981995337247175,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 26.15999984741211,
-      "volume": 2168554.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 25.959999084472656,
       "volume": 1580983.0,
-      "return": -0.007645289147784062
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.199999809265137,
       "volume": 7462191.0,
       "return": 0.018980976627262836
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.949999809265137,
+      "volume": 26663840.0,
+      "return": 0.07352941313966888
     }
   ],
   "data_status": "OK",

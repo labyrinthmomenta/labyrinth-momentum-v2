@@ -3,24 +3,29 @@
     "security_id": 115,
     "ticker": "GUBRF",
     "name": "GÜBRE FABRİKALARI T.A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.4822006472491924,
-    "momentum_126": -0.03882476390346157,
-    "momentum_63": 0.015521064301552201,
-    "momentum_21": -0.06147540983606503,
-    "fip_252": -0.07936507936507936,
+    "momentum_12_1": 0.5991967871485964,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": 0.4208835341365478,
+    "momentum_126": -0.0625331213566499,
+    "momentum_63": -0.0011293054771315258,
+    "momentum_21": -0.11150175791059724,
+    "fip_252": -0.07142857142857142,
     "fip_126": 0.047619047619047616,
-    "fip_63": -0.09523809523809523,
-    "fip_21": 0.0,
-    "atr14_percent": 5.204180264650069,
-    "delta_momentum_21_63": -0.07699647413761723,
-    "delta_fip_21_63": 0.09523809523809523,
+    "fip_63": 0.09523809523809523,
+    "fip_21": -0.09523809523809523,
+    "atr14_percent": 5.408332278777143,
+    "delta_momentum_21_63": -0.11037245243346572,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.20890840652446618,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 309.0,
-      "volume": 4028414.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 311.25,
       "volume": 2493552.0,
-      "return": 0.00728155339805836
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 458.0,
       "volume": 2919715.0,
       "return": 0.0644973852411388
+    },
+    {
+      "date": "2026-09-28",
+      "close": 442.25,
+      "volume": 2751469.0,
+      "return": -0.03438864628820959
     }
   ],
   "data_status": "OK",

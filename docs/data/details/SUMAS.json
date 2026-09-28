@@ -3,24 +3,29 @@
     "security_id": 627,
     "ticker": "SUMAS",
     "name": "SUMAŞ SUNİ TAHTA VE MOBİLYA SANAYİİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ORMAN ÜRÜNLERİ VE MOBİLYA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2018-02-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3152434158020757,
-    "momentum_126": -0.1820781696854149,
-    "momentum_63": -0.3573033707865165,
-    "momentum_21": -0.20037278657968327,
-    "fip_252": -0.19444444444444445,
+    "momentum_12_1": -0.14800313234142637,
+    "fip_12_1": -0.19913419913419914,
+    "momentum_252": -0.3418950474439615,
+    "momentum_126": -0.1965582940592141,
+    "momentum_63": -0.3945244780878512,
+    "momentum_21": -0.22757350697236922,
+    "fip_252": -0.20238095238095238,
     "fip_126": -0.12698412698412698,
-    "fip_63": -0.15873015873015872,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.7655713538497033,
-    "delta_momentum_21_63": 0.15693058420683326,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_63": -0.19047619047619047,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 3.8928045807786535,
+    "delta_momentum_21_63": 0.16695097111548196,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09666666666666646,
     "completed_month_fip": -0.19047619047619047,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 313.25,
-      "volume": 9024.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 319.25,
       "volume": 5180.0,
-      "return": 0.019154030327214633
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 214.5,
       "volume": 1297.0,
       "return": 0.010838845828630372
+    },
+    {
+      "date": "2026-09-28",
+      "close": 210.10000610351562,
+      "volume": 942.0,
+      "return": -0.020512792058202223
     }
   ],
   "data_status": "OK",

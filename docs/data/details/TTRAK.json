@@ -3,24 +3,29 @@
     "security_id": 261,
     "ticker": "TTRAK",
     "name": "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-06-11"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.30782312925170097,
-    "momentum_126": -0.1015452538631354,
-    "momentum_63": -0.0670487106017198,
-    "momentum_21": -0.054587688734030526,
-    "fip_252": -0.04365079365079365,
-    "fip_126": -0.07142857142857142,
+    "momentum_12_1": -0.2641025641025636,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.3029914529914526,
+    "momentum_126": -0.09639889196675921,
+    "momentum_63": -0.07012542759407159,
+    "momentum_21": -0.05284552845528501,
+    "fip_252": -0.03571428571428571,
+    "fip_126": -0.05555555555555555,
     "fip_63": -0.047619047619047616,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 2.904470629121374,
-    "delta_momentum_21_63": 0.01246102186768927,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 2.924157677546772,
+    "delta_momentum_21_63": 0.01727989913878658,
+    "delta_fip_21_63": 0.0,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.036992116434202416,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 588.0,
-      "volume": 221271.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 585.0,
       "volume": 144013.0,
-      "return": -0.005102040816326481
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 407.0,
       "volume": 41094.0,
       "return": -0.0012269938650306678
+    },
+    {
+      "date": "2026-09-28",
+      "close": 407.75,
+      "volume": 112877.0,
+      "return": 0.001842751842751733
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 291,
     "ticker": "ALCTL",
     "name": "ALCATEL LUCENT TELETAŞ TELEKOMÜNİKASYON A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1988-03-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.2371428820551662,
-    "momentum_126": -0.2761425830351121,
-    "momentum_63": -0.44540061158313227,
-    "momentum_21": -0.22319206502400235,
+    "momentum_12_1": -0.011475422343270147,
+    "fip_12_1": 0.017316017316017316,
+    "momentum_252": -0.27868852459016424,
+    "momentum_126": -0.3457249070631967,
+    "momentum_63": -0.4746268656716418,
+    "momentum_21": -0.2703150819783513,
     "fip_252": -0.011904761904761904,
-    "fip_126": -0.023809523809523808,
+    "fip_126": -0.03968253968253968,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.12962932072556,
-    "delta_momentum_21_63": 0.22220854655912992,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 6.515080749718634,
+    "delta_momentum_21_63": 0.2043117836932905,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.3583333333333334,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 122.5,
-      "volume": 523907.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 122.0,
       "volume": 273335.0,
-      "return": -0.004081632653061273
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 93.44999694824219,
       "volume": 197010.0,
       "return": 0.005920295084280269
+    },
+    {
+      "date": "2026-09-28",
+      "close": 88.0,
+      "volume": 340431.0,
+      "return": -0.058319926444306835
     }
   ],
   "data_status": "OK",

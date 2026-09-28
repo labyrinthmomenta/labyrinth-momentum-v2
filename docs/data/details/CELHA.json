@@ -3,24 +3,29 @@
     "security_id": 335,
     "ticker": "CELHA",
     "name": "ÇELİK HALAT VE TEL SANAYİİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.8768266895017587,
-    "momentum_126": 1.8858637607861315,
-    "momentum_63": 0.37250993877771843,
-    "momentum_21": 0.08163265153353616,
-    "fip_252": 0.003968253968253968,
+    "momentum_12_1": 1.5520000457763663,
+    "fip_12_1": 0.03463203463203463,
+    "momentum_252": 1.6999999999999993,
+    "momentum_126": 1.8846154904224486,
+    "momentum_63": 0.46978763018536407,
+    "momentum_21": 0.05799371142981613,
+    "fip_252": 0.011904761904761904,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.12698412698412698,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.343010466223858,
-    "delta_momentum_21_63": -0.29087728724418227,
-    "delta_fip_21_63": -0.20634920634920634,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 7.356755922296997,
+    "delta_momentum_21_63": -0.41179391875554794,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.0,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 9.579999923706055,
-      "volume": 2441922.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.0,
       "volume": 5310528.0,
-      "return": 0.04384134442993459
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 27.559999465942383,
       "volume": 1727149.0,
       "return": 0.00952381817391701
+    },
+    {
+      "date": "2026-09-28",
+      "close": 27.0,
+      "volume": 2675104.0,
+      "return": -0.020319284353920608
     }
   ],
   "data_status": "OK",

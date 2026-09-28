@@ -3,23 +3,28 @@
     "security_id": 99,
     "ticker": "FROTO",
     "name": "FORD OTOMOTİV SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.23960393018061477,
-    "momentum_126": -0.26295580325299217,
-    "momentum_63": -0.1012287209527204,
-    "momentum_21": -0.021032427796944253,
-    "fip_252": -0.10714285714285714,
-    "fip_126": -0.1984126984126984,
+    "momentum_12_1": -0.23957320381961056,
+    "fip_12_1": -0.11255411255411256,
+    "momentum_252": -0.2730359063287938,
+    "momentum_126": -0.283460821782082,
+    "momentum_63": -0.11354235076300334,
+    "momentum_21": -0.044005159572579,
+    "fip_252": -0.11507936507936507,
+    "fip_126": -0.21428571428571427,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.303413347329529,
-    "delta_momentum_21_63": 0.08019629315577614,
+    "atr14_percent": 3.4147793871519623,
+    "delta_momentum_21_63": 0.06953719119042434,
     "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03932586249544878,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 101.0,
-      "volume": 12136103.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 103.0999984741211,
       "volume": 15049014.0,
-      "return": 0.02079206410020884
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 76.80000305175781,
       "volume": 11864287.0,
       "return": -0.007751918117475554
+    },
+    {
+      "date": "2026-09-28",
+      "close": 74.94999694824219,
+      "volume": 17480354.0,
+      "return": -0.0240886201823306
     }
   ],
   "data_status": "OK",

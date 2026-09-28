@@ -3,24 +3,29 @@
     "security_id": 126,
     "ticker": "INVES",
     "name": "INVESTCO HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-03-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.7952956134774303,
-    "momentum_126": 0.6201950659781994,
-    "momentum_63": -0.012587412587413471,
-    "momentum_21": -0.17619603267211248,
+    "momentum_12_1": 1.3163841807909606,
+    "fip_12_1": -0.21212121212121213,
+    "momentum_252": 0.9604519774011293,
+    "momentum_126": 0.5808656036446462,
+    "momentum_63": -0.11760966306420939,
+    "momentum_21": -0.1536585365853662,
     "fip_252": -0.19047619047619047,
-    "fip_126": -0.4523809523809524,
-    "fip_63": 0.38095238095238093,
+    "fip_126": -0.4365079365079365,
+    "fip_63": 0.3492063492063492,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 4.687044847538213,
-    "delta_momentum_21_63": -0.163608620084699,
-    "delta_fip_21_63": -0.42857142857142855,
+    "atr14_percent": 5.050195305862101,
+    "delta_momentum_21_63": -0.03604887352115682,
+    "delta_fip_21_63": -0.3968253968253968,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.09916201117318435,
     "completed_month_fip": -0.6666666666666666,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 393.25,
-      "volume": 53905.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 354.0,
       "volume": 1992824.0,
-      "return": -0.0998092816274635
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 706.0,
       "volume": 89828.0,
       "return": -0.012587412587412583
+    },
+    {
+      "date": "2026-09-28",
+      "close": 694.0,
+      "volume": 124704.0,
+      "return": -0.016997167138810165
     }
   ],
   "data_status": "OK",

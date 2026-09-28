@@ -3,24 +3,29 @@
     "security_id": 242,
     "ticker": "TRMET",
     "name": "TR ANADOLU METAL MADENCİLİK İŞLETMELERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MADENCİLİK VE TAŞ OCAKÇILIĞI",
+    "industry": "METAL CEVHERİ MADENCİLİĞİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2003-02-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.6027396842702204,
-    "momentum_126": 0.1231999511718751,
-    "momentum_63": 0.3097014728859715,
-    "momentum_21": -0.029716676865555347,
-    "fip_252": -0.11904761904761904,
-    "fip_126": -0.09523809523809523,
-    "fip_63": -0.23809523809523808,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 4.77682959775642,
-    "delta_momentum_21_63": -0.33941814975152684,
-    "delta_fip_21_63": 0.2857142857142857,
+    "momentum_12_1": 0.6520269358857671,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": 0.5405405219639787,
+    "momentum_126": 0.05392912045779297,
+    "momentum_63": 0.23243245992574524,
+    "momentum_21": -0.06748462237512687,
+    "fip_252": -0.1111111111111111,
+    "fip_126": -0.07936507936507936,
+    "fip_63": -0.20634920634920634,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 5.011835614416381,
+    "delta_momentum_21_63": -0.2999170823008721,
+    "delta_fip_21_63": 0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1622489714718247,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 87.5999984741211,
-      "volume": 3638298.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 88.80000305175781,
       "volume": 4942719.0,
-      "return": 0.013698682631726689
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 140.39999389648438,
       "volume": 6788471.0,
       "return": 0.01665450898854237
+    },
+    {
+      "date": "2026-09-28",
+      "close": 136.8000030517578,
+      "volume": 7045399.0,
+      "return": -0.02564096154719786
     }
   ],
   "data_status": "OK",

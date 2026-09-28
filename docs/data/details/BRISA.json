@@ -3,24 +3,29 @@
     "security_id": 59,
     "ticker": "BRISA",
     "name": "BRİSA BRİDGESTONE SABANCI LASTİK SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.09216299027111086,
-    "momentum_126": -0.12665862251790394,
-    "momentum_63": -0.1658986292580239,
-    "momentum_21": -0.0729833170244033,
-    "fip_252": -0.027777777777777776,
+    "momentum_12_1": -0.030864197530864557,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": -0.1179012722439241,
+    "momentum_126": -0.13603386233545744,
+    "momentum_63": -0.16918608199718332,
+    "momentum_21": -0.08980895607334805,
+    "fip_252": -0.03571428571428571,
     "fip_126": -0.047619047619047616,
     "fip_63": -0.047619047619047616,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 3.6372181195425637,
-    "delta_momentum_21_63": 0.0929153122336206,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 3.6622514038674945,
+    "delta_momentum_21_63": 0.07937712592383528,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.04678727297078289,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 79.75,
-      "volume": 229542.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 81.0,
       "volume": 340992.0,
-      "return": 0.01567398119122254
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 72.4000015258789,
       "volume": 96424.0,
       "return": 0.014716230892964255
+    },
+    {
+      "date": "2026-09-28",
+      "close": 71.44999694824219,
+      "volume": 209184.0,
+      "return": -0.013121609911805665
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 80,
     "ticker": "EFOR",
     "name": "EFOR YATIRIM SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-07-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3209756060344414,
-    "momentum_126": 0.5213115471724861,
-    "momentum_63": -0.09019608478675645,
-    "momentum_21": -0.2685234065145127,
+    "momentum_12_1": -0.10046867134980142,
+    "fip_12_1": 0.17316017316017315,
+    "momentum_252": -0.34093744104727597,
+    "momentum_126": 0.5349345691953218,
+    "momentum_63": -0.03632623217465747,
+    "momentum_21": -0.26732673119713624,
     "fip_252": 0.1626984126984127,
     "fip_126": -0.18253968253968253,
-    "fip_63": 0.14285714285714285,
+    "fip_63": 0.1746031746031746,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 10.321593908255045,
-    "delta_momentum_21_63": -0.17832732172775623,
-    "delta_fip_21_63": -0.09523809523809523,
+    "atr14_percent": 10.230621274838677,
+    "delta_momentum_21_63": -0.23100049902247877,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.13114750932361519,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 20.5,
-      "volume": 8961222.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 21.333332061767578,
       "volume": 7147980.0,
-      "return": 0.040650344476467204
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 13.920000076293945,
       "volume": 87625294.0,
       "return": 0.054545475563070545
+    },
+    {
+      "date": "2026-09-28",
+      "close": 14.0600004196167,
+      "volume": 88508827.0,
+      "return": 0.010057495873234679
     }
   ],
   "data_status": "OK",

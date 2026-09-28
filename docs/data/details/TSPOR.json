@@ -3,24 +3,29 @@
     "security_id": 241,
     "ticker": "TSPOR",
     "name": "TRABZONSPOR SPORTİF YATIRIM VE FUTBOL İŞLETMECİLİĞİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "EĞİTİM SAĞLIK SPOR VE EĞLENCE HİZMETLERİ",
+    "industry": "SPOR FAALİYETLERİ EĞLENCE VE OYUN FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2005-04-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.320610668267287,
-    "momentum_126": -0.05319150217845425,
-    "momentum_63": -0.02197806588435236,
-    "momentum_21": -0.2880000114440918,
+    "momentum_12_1": -0.11718748399289303,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": -0.3437500058207661,
+    "momentum_126": -0.0967742286950729,
+    "momentum_63": -0.07692313234582182,
+    "momentum_21": -0.25663718821364034,
     "fip_252": -0.07539682539682539,
     "fip_126": 0.007936507936507936,
-    "fip_63": -0.015873015873015872,
+    "fip_63": -0.031746031746031744,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 5.056746672599859,
-    "delta_momentum_21_63": -0.26602194555973946,
-    "delta_fip_21_63": -0.2698412698412698,
+    "atr14_percent": 5.485251727912837,
+    "delta_momentum_21_63": -0.17971405586781852,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.17204303762956563,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.309999942779541,
-      "volume": 124262730.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.2799999713897705,
       "volume": 323815729.0,
-      "return": -0.022900742519207262
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 0.8899999856948853,
       "volume": 184957271.0,
       "return": -0.011111100809073515
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.8399999737739563,
+      "volume": 199250402.0,
+      "return": -0.05617978957818792
     }
   ],
   "data_status": "OK",

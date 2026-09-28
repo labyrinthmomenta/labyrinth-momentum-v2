@@ -3,23 +3,28 @@
     "security_id": 474,
     "ticker": "OZGYO",
     "name": "ÖZDERİCİ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-01-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.23076925188840514,
-    "momentum_126": -0.16080404568770867,
-    "momentum_63": -0.2159625035874716,
-    "momentum_21": -0.2085307866762648,
+    "momentum_12_1": -0.028584742208177083,
+    "fip_12_1": -0.012987012987012988,
+    "momentum_252": -0.25168485972753785,
+    "momentum_126": -0.19499999284744318,
+    "momentum_63": -0.24056598999271706,
+    "momentum_21": -0.22966503329019317,
     "fip_252": -0.03571428571428571,
-    "fip_126": -0.07142857142857142,
+    "fip_126": -0.0873015873015873,
     "fip_63": -0.1111111111111111,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 5.085257820244976,
-    "delta_momentum_21_63": 0.007431716911206809,
+    "atr14_percent": 5.341656337540027,
+    "delta_momentum_21_63": 0.01090095670252389,
     "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.009569369257348859,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.1710000038146973,
-      "volume": 18314938.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2.1514999866485596,
       "volume": 10245184.0,
-      "return": -0.008982043819379948
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.6699999570846558,
       "volume": 5648984.0,
       "return": 0.03726704487356014
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.6100000143051147,
+      "volume": 4902937.0,
+      "return": -0.03592811037210075
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 460,
     "ticker": "MHRGY",
     "name": "MHR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-10-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.41276587827974376,
-    "momentum_126": -0.21590888655685703,
-    "momentum_63": -0.28124997089616965,
-    "momentum_21": -0.17857141716747904,
+    "momentum_12_1": -0.25884956960036365,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": -0.41592915802761954,
+    "momentum_126": -0.23699396931717298,
+    "momentum_63": -0.3107048864764833,
+    "momentum_21": -0.21194022425724957,
     "fip_252": -0.1388888888888889,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 5.146944449486223,
-    "delta_momentum_21_63": 0.10267855372869061,
+    "atr14_percent": 5.4023910911172175,
+    "delta_momentum_21_63": 0.09876466221923375,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03273838318782918,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.1333329677581787,
-      "volume": 12373375.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.0133330821990967,
       "volume": 11054172.0,
-      "return": -0.038297840285049234
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.840000033378601,
       "volume": 2091695.0,
       "return": 0.022222267845531718
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.7599999904632568,
+      "volume": 2746519.0,
+      "return": -0.043478283404402185
     }
   ],
   "data_status": "OK",

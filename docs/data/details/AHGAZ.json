@@ -3,24 +3,29 @@
     "security_id": 8,
     "ticker": "AHGAZ",
     "name": "AHLATCI DOĞAL GAZ DAĞITIM ENERJİ VE YATIRIM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-12-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.42406687355794315,
-    "momentum_126": 0.9758928158605586,
-    "momentum_63": 0.18978487671503697,
-    "momentum_21": 0.19492433119728125,
-    "fip_252": 0.07539682539682539,
+    "momentum_12_1": 0.20481924213554326,
+    "fip_12_1": 0.12987012987012986,
+    "momentum_252": 0.31515530558578586,
+    "momentum_126": 0.8786231741650314,
+    "momentum_63": 0.03699998855590825,
+    "momentum_21": 0.09157893532200845,
+    "fip_252": 0.08333333333333333,
     "fip_126": -0.12698412698412698,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 3.798980154424566,
-    "delta_momentum_21_63": 0.005139454482244288,
-    "delta_fip_21_63": -0.380952380952381,
+    "fip_63": -0.1111111111111111,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 4.318530249853458,
+    "delta_momentum_21_63": 0.0545789467661002,
+    "delta_fip_21_63": -0.31746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.13508668802866808,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 31.079999923706055,
-      "volume": 4068574.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 31.540000915527344,
       "volume": 3585206.0,
-      "return": 0.014800546748728438
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 44.2599983215332,
       "volume": 4921812.0,
       "return": 0.0004520036688004936
+    },
+    {
+      "date": "2026-09-28",
+      "close": 41.47999954223633,
+      "volume": 7448188.0,
+      "return": -0.06281063905834716
     }
   ],
   "data_status": "OK",

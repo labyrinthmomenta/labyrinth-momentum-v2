@@ -3,24 +3,29 @@
     "security_id": 111,
     "ticker": "GOKNR",
     "name": "GÖKNUR GIDA MADDELERİ ENERJİ İMALAT İTHALAT İHRACAT TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-03-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3214897274255185,
-    "momentum_126": -0.24451855446607806,
-    "momentum_63": -0.3423236460337714,
-    "momentum_21": -0.09943181602669149,
+    "momentum_12_1": -0.21769291702843074,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": -0.3503902910162473,
+    "momentum_126": -0.2866666884649368,
+    "momentum_63": -0.3711167198087203,
+    "momentum_21": -0.16962312738339258,
     "fip_252": -0.14285714285714285,
-    "fip_126": -0.15079365079365079,
+    "fip_126": -0.16666666666666666,
     "fip_63": -0.30158730158730157,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.077343913175923,
-    "delta_momentum_21_63": 0.24289183000707992,
-    "delta_fip_21_63": 0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 6.400137525096324,
+    "delta_momentum_21_63": 0.20149359242532772,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.240517230181292,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 23.360000610351562,
-      "volume": 4139737.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 23.059999465942383,
       "volume": 2728872.0,
-      "return": -0.012842514407993666
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.850000381469727,
       "volume": 4501212.0,
       "return": 0.02721970628562209
+    },
+    {
+      "date": "2026-09-28",
+      "close": 14.979999542236328,
+      "volume": 3439897.0,
+      "return": -0.05488964153278619
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 188,
     "ticker": "NUHCM",
     "name": "NUH ÇİMENTO SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-02-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.09452956719262784,
-    "momentum_126": -0.1397089650873834,
-    "momentum_63": -0.06464739262679076,
-    "momentum_21": -0.057403216872508156,
+    "momentum_12_1": -0.03922430205328653,
+    "fip_12_1": -0.012987012987012988,
+    "momentum_252": -0.09167028802326971,
+    "momentum_126": -0.12185765324502107,
+    "momentum_63": -0.0661531085029895,
+    "momentum_21": -0.05458712796552434,
     "fip_252": -0.03968253968253968,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.15873015873015872,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 3.422386817796473,
-    "delta_momentum_21_63": 0.0072441757542826,
+    "atr14_percent": 3.391278014248668,
+    "delta_momentum_21_63": 0.01156598053746516,
     "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.002768762589645757,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 228.5,
-      "volume": 84419.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 226.89999389648438,
       "volume": 58159.0,
-      "return": -0.007002214895035608
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 206.89999389648438,
       "volume": 39276.0,
       "return": -0.00096577595913383
+    },
+    {
+      "date": "2026-09-28",
+      "close": 206.10000610351562,
+      "volume": 91062.0,
+      "return": -0.0038665433376909863
     }
   ],
   "data_status": "OK",

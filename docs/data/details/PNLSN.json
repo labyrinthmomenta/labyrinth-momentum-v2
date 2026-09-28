@@ -3,23 +3,28 @@
     "security_id": 478,
     "ticker": "PNLSN",
     "name": "PANELSAN ÇATI CEPHE SİSTEMLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-02-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.25200356536635105,
-    "momentum_126": -0.3086419849989761,
-    "momentum_63": -0.22222227127954175,
-    "momentum_21": -0.2200557788764954,
+    "momentum_12_1": -0.02318182858553719,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": -0.26454544067382746,
+    "momentum_126": -0.33140496714552636,
+    "momentum_63": -0.23966166432834168,
+    "momentum_21": -0.2470916483246708,
     "fip_252": -0.09523809523809523,
     "fip_126": -0.12698412698412698,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 5.098537249917087,
-    "delta_momentum_21_63": 0.0021664924030463384,
+    "atr14_percent": 5.29542834150485,
+    "delta_momentum_21_63": -0.007429983996329104,
     "delta_fip_21_63": -0.3174603174603175,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.12494670404473351,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 44.91999816894531,
-      "volume": 601730.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 44.0,
       "volume": 458851.0,
-      "return": -0.02048081492535181
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 33.599998474121094,
       "volume": 394908.0,
       "return": 0.0023865756343954825
+    },
+    {
+      "date": "2026-09-28",
+      "close": 32.36000061035156,
+      "volume": 426956.0,
+      "return": -0.036904700002429625
     }
   ],
   "data_status": "OK",

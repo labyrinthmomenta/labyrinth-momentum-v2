@@ -3,24 +3,29 @@
     "security_id": 167,
     "ticker": "LINK",
     "name": "LİNK BİLGİSAYAR SİSTEMLERİ YAZILIMI VE DONANIMI SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-10-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6828377038154483,
-    "momentum_126": -0.3173241730433073,
-    "momentum_63": -0.440225042990792,
-    "momentum_21": -0.29681976565896195,
+    "momentum_12_1": -0.49640582124863775,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": -0.6822666009995249,
+    "momentum_126": -0.3484573929141487,
+    "momentum_63": -0.4993026672288513,
+    "momentum_21": -0.36906856272985533,
     "fip_252": -0.1626984126984127,
     "fip_126": -0.14285714285714285,
-    "fip_63": -0.2222222222222222,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.369910911678295,
-    "delta_momentum_21_63": 0.14340527733183006,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_63": -0.25396825396825395,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 7.33345026559237,
+    "delta_momentum_21_63": 0.13023410449899597,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.060763952701729185,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 12.54878044128418,
-      "volume": 3874459.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.29878044128418,
       "volume": 59056523.0,
-      "return": -0.09961127344993859
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.9800000190734863,
       "volume": 13740338.0,
       "return": 0.039164516541892125
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.5899999141693115,
+      "volume": 16556186.0,
+      "return": -0.09798997563697598
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 31,
     "ticker": "ASGYO",
     "name": "ASCE GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-08-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.25896698460144196,
-    "momentum_126": -0.03457942917332402,
-    "momentum_63": -0.18015876103480577,
-    "momentum_21": -0.07520144555510067,
-    "fip_252": -0.08333333333333333,
-    "fip_126": -0.05555555555555555,
+    "momentum_12_1": -0.2025585991194998,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": -0.29637527837530053,
+    "momentum_126": -0.07906980292741739,
+    "momentum_63": -0.19838062245046506,
+    "momentum_21": -0.11764711382204696,
+    "fip_252": -0.09126984126984126,
+    "fip_126": -0.07142857142857142,
     "fip_63": -0.1746031746031746,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.6667121250268444,
-    "delta_momentum_21_63": 0.1049573154797051,
-    "delta_fip_21_63": 0.2222222222222222,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 3.920655208247382,
+    "delta_momentum_21_63": 0.0807335086284181,
+    "delta_fip_21_63": 0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.010156939746275073,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 13.9399995803833,
-      "volume": 9818696.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.069999694824219,
       "volume": 6796956.0,
-      "return": 0.009325689982362606
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.329999923706055,
       "volume": 3408691.0,
       "return": 0.03196800074998252
+    },
+    {
+      "date": "2026-09-28",
+      "close": 9.899999618530273,
+      "volume": 3000269.0,
+      "return": -0.041626360924648664
     }
   ],
   "data_status": "OK",

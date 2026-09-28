@@ -3,24 +3,29 @@
     "security_id": 285,
     "ticker": "AHSGY",
     "name": "AHES GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-08-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.044495553747334826,
-    "momentum_126": -0.4501807353069912,
-    "momentum_63": -0.4580152760671229,
-    "momentum_21": -0.42926046593685885,
-    "fip_252": -0.09523809523809523,
+    "momentum_12_1": 0.6056930746256732,
+    "fip_12_1": 0.0735930735930736,
+    "momentum_252": -0.17211846694313004,
+    "momentum_126": -0.5010405569616985,
+    "momentum_63": -0.5202601169388875,
+    "momentum_21": -0.48440860452121604,
+    "fip_252": -0.10317460317460317,
     "fip_126": -0.12698412698412698,
-    "fip_63": -0.2222222222222222,
+    "fip_63": -0.25396825396825395,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 12.632151349959726,
-    "delta_momentum_21_63": 0.02875481013026404,
-    "delta_fip_21_63": -0.20634920634920634,
+    "atr14_percent": 13.868026756665458,
+    "delta_momentum_21_63": 0.03585151241767148,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.10481288298691993,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.145944595336914,
-      "volume": 5693545.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.583783149719238,
       "volume": 8623738.0,
-      "return": 0.039282319289968504
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.649999618530273,
       "volume": 3927572.0,
       "return": 0.004716908986904578
+    },
+    {
+      "date": "2026-09-28",
+      "close": 9.59000015258789,
+      "volume": 2019319.0,
+      "return": -0.09953046985072711
     }
   ],
   "data_status": "OK",

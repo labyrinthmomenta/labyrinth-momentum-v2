@@ -3,23 +3,28 @@
     "security_id": 274,
     "ticker": "YGGYO",
     "name": "YENİ GİMAT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-08-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.7860152101978597,
-    "momentum_126": 0.00808367533795784,
-    "momentum_63": -0.12033195020746978,
-    "momentum_21": -0.06111604457593656,
-    "fip_252": -0.16666666666666666,
-    "fip_126": -0.18253968253968253,
+    "momentum_12_1": 0.7844073866136583,
+    "fip_12_1": -0.18614718614718614,
+    "momentum_252": 0.6531424669590142,
+    "momentum_126": -0.01934870676178324,
+    "momentum_63": -0.11949151249255252,
+    "momentum_21": -0.07356219248999563,
+    "fip_252": -0.15873015873015872,
+    "fip_126": 0.16666666666666666,
     "fip_63": 0.015873015873015872,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.5099256755053,
-    "delta_momentum_21_63": 0.05921590563153323,
+    "atr14_percent": 3.521021142997481,
+    "delta_momentum_21_63": 0.045929320002556895,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.10591013662640392,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 118.69999694824219,
-      "volume": 406387.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 125.69999694824219,
       "volume": 183195.0,
-      "return": 0.05897220033672168
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 212.0,
       "volume": 77071.0,
       "return": 0.037689656550281336
+    },
+    {
+      "date": "2026-09-28",
+      "close": 207.8000030517578,
+      "volume": 73297.0,
+      "return": -0.019811306359632908
     }
   ],
   "data_status": "OK",

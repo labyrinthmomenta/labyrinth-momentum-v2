@@ -3,23 +3,28 @@
     "security_id": 536,
     "ticker": "VKING",
     "name": "VİKİNG KAĞIT VE SELÜLOZ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-10-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4286179754800008,
-    "momentum_126": -0.2833196507446456,
-    "momentum_63": -0.273217243917697,
-    "momentum_21": -0.20822036269605004,
+    "momentum_12_1": -0.2695130102428047,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": -0.45697128301453116,
+    "momentum_126": -0.3227953383258684,
+    "momentum_63": -0.32166663805643714,
+    "momentum_21": -0.2566209602638304,
     "fip_252": -0.12698412698412698,
     "fip_126": -0.15079365079365079,
     "fip_63": -0.25396825396825395,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.0817402373695115,
-    "delta_momentum_21_63": 0.06499688122164693,
+    "atr14_percent": 6.708352941339286,
+    "delta_momentum_21_63": 0.06504567779260673,
     "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.07266437042359042,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 30.68000030517578,
-      "volume": 690134.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 29.979999542236328,
       "volume": 822144.0,
-      "return": -0.02281619152465786
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 17.530000686645508,
       "volume": 495083.0,
       "return": 0.0643595274731752
+    },
+    {
+      "date": "2026-09-28",
+      "close": 16.280000686645508,
+      "volume": 283357.0,
+      "return": -0.07130632920923152
     }
   ],
   "data_status": "OK",

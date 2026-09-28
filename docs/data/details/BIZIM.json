@@ -3,24 +3,29 @@
     "security_id": 321,
     "ticker": "BIZIM",
     "name": "BİZİM TOPTAN SATIŞ MAĞAZALARI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-02-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.2673834833860713,
-    "momentum_126": -0.2286792251299017,
-    "momentum_63": -0.21202775199556534,
-    "momentum_21": -0.17045450323165545,
-    "fip_252": -0.12301587301587301,
-    "fip_126": -0.2222222222222222,
+    "momentum_12_1": -0.13169013455471823,
+    "fip_12_1": -0.1038961038961039,
+    "momentum_252": -0.3126760309874319,
+    "momentum_126": -0.2710978358003635,
+    "momentum_63": -0.23987538061557512,
+    "momentum_21": -0.2084346886234002,
+    "fip_252": -0.13095238095238096,
+    "fip_126": -0.23809523809523808,
     "fip_63": -0.2698412698412698,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.360974690754503,
-    "delta_momentum_21_63": 0.04157324876390989,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 4.701398621422084,
+    "delta_momentum_21_63": 0.03144069199217492,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.017676770717509838,
     "completed_month_fip": 0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 27.899999618530273,
-      "volume": 482892.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 28.399999618530273,
       "volume": 3049806.0,
-      "return": 0.017921147198436405
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 20.440000534057617,
       "volume": 85506.0,
       "return": -0.007766982740254447
+    },
+    {
+      "date": "2026-09-28",
+      "close": 19.520000457763672,
+      "volume": 220412.0,
+      "return": -0.04500978729237404
     }
   ],
   "data_status": "OK",

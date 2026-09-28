@@ -3,24 +3,29 @@
     "security_id": 208,
     "ticker": "POLHO",
     "name": "POLİSAN HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-05-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.06553007523915966,
-    "momentum_126": -0.022482849709496766,
-    "momentum_63": -0.033816460731377895,
-    "momentum_21": -0.09420289542088622,
-    "fip_252": 0.027777777777777776,
+    "momentum_12_1": 0.1562499937911821,
+    "fip_12_1": 0.017316017316017316,
+    "momentum_252": -0.04375000620881764,
+    "momentum_126": -0.09645664930653886,
+    "momentum_63": -0.11389955507777716,
+    "momentum_21": -0.172972973901801,
+    "fip_252": -0.03571428571428571,
     "fip_126": 0.031746031746031744,
-    "fip_63": 0.07936507936507936,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.294760729372185,
-    "delta_momentum_21_63": -0.06038643468950833,
-    "delta_fip_21_63": -0.2222222222222222,
+    "fip_63": 0.047619047619047616,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 6.091027380502042,
+    "delta_momentum_21_63": -0.05907341882402384,
+    "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.03317530061305396,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 18.770000457763672,
-      "volume": 18533803.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 19.200000762939453,
       "volume": 19612760.0,
-      "return": 0.02290891287634067
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 20.0,
       "volume": 1321383.0,
       "return": 0.06382983040626322
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.360000610351562,
+      "volume": 2167011.0,
+      "return": -0.08199996948242183
     }
   ],
   "data_status": "OK",

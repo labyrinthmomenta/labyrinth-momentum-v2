@@ -3,23 +3,28 @@
     "security_id": 469,
     "ticker": "ONCSM",
     "name": "ONCOSEM ONKOLOJİK SİSTEMLER SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-01-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.24810127869940135,
-    "momentum_126": -0.6563163028963507,
-    "momentum_63": -0.6474777508442291,
-    "momentum_21": -0.650930466310985,
-    "fip_252": -0.08333333333333333,
+    "momentum_12_1": 1.0832631940238406,
+    "fip_12_1": 0.03463203463203463,
+    "momentum_252": -0.29352397878887226,
+    "momentum_126": -0.6633266533066137,
+    "momentum_63": -0.6640000000000004,
+    "momentum_21": -0.6608800927133152,
+    "fip_252": -0.09126984126984126,
     "fip_126": -0.1984126984126984,
     "fip_63": -0.4444444444444444,
     "fip_21": -0.7142857142857143,
-    "atr14_percent": 15.062447265384819,
-    "delta_momentum_21_63": -0.0034527154667558513,
+    "atr14_percent": 15.6180544815223,
+    "delta_momentum_21_63": 0.0031199072866852084,
     "delta_fip_21_63": -0.2698412698412699,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.11374876360039576,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 118.5,
-      "volume": 406152.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 118.9000015258789,
       "volume": 689131.0,
-      "return": 0.003375540302775537
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 89.0999984741211,
       "volume": 2059925.0,
       "return": 0.09999998116198872
+    },
+    {
+      "date": "2026-09-28",
+      "close": 84.0,
+      "volume": 1859426.0,
+      "return": -0.057239041093837706
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 538,
     "ticker": "YAPRK",
     "name": "YAPRAK SÜT VE BESİ ÇİFTLİKLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TARIM, ORMANCILIK VE BALIKÇILIK",
+    "industry": "TARIM VE HAYVANCILIK AVCILIK VE İLGİLİ HİZMET FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-05-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.36230001795101097,
-    "momentum_126": -0.40457519326085134,
-    "momentum_63": -0.25143799510546494,
-    "momentum_21": -0.18369177587491103,
+    "momentum_12_1": -0.22613060876265156,
+    "fip_12_1": -0.21645021645021645,
+    "momentum_252": -0.391457278273153,
+    "momentum_126": -0.45253167632221714,
+    "momentum_63": -0.272497950482568,
+    "momentum_21": -0.21363639831543002,
     "fip_252": -0.24603174603174602,
-    "fip_126": -0.29365079365079366,
+    "fip_126": -0.30952380952380953,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 6.086128633486181,
-    "delta_momentum_21_63": 0.0677462192305539,
+    "atr14_percent": 6.4969463807981995,
+    "delta_momentum_21_63": 0.058861552167137954,
     "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.03853560829674563,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 14.285714149475098,
-      "volume": 3617439.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.214284896850586,
       "volume": 2901129.0,
-      "return": -0.005000047731399948
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 9.109999656677246,
       "volume": 1424198.0,
       "return": -0.015135172251108497
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.649999618530273,
+      "volume": 2236136.0,
+      "return": -0.05049396876868284
     }
   ],
   "data_status": "OK",

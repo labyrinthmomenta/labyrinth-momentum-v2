@@ -3,24 +3,29 @@
     "security_id": 196,
     "ticker": "OYYAT",
     "name": "OYAK YATIRIM MENKUL DEĞERLER A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "ARACI KURUMLAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-06-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3914334000042551,
-    "momentum_126": -0.514382377260015,
-    "momentum_63": -0.31009611020073935,
-    "momentum_21": -0.22137817993200193,
-    "fip_252": 0.015873015873015872,
+    "momentum_12_1": -0.2054100017622429,
+    "fip_12_1": 0.047619047619047616,
+    "momentum_252": -0.40067623006655506,
+    "momentum_126": -0.5101899850956686,
+    "momentum_63": -0.3072789066521935,
+    "momentum_21": -0.24574463400920443,
+    "fip_252": 0.007936507936507936,
     "fip_126": -0.15873015873015872,
     "fip_63": -0.12698412698412698,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.441830288612102,
-    "delta_momentum_21_63": 0.08871793026873742,
-    "delta_fip_21_63": -0.20634920634920634,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 6.7384822935957125,
+    "delta_momentum_21_63": 0.06153427264298905,
+    "delta_fip_21_63": -0.30158730158730157,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.07458233788361857,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 47.15999984741211,
-      "volume": 1413971.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 47.31999969482422,
       "volume": 442584.0,
-      "return": 0.0033927024582229848
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 28.700000762939453,
       "volume": 1244682.0,
       "return": -0.045242805294916644
+    },
+    {
+      "date": "2026-09-28",
+      "close": 28.360000610351562,
+      "volume": 998917.0,
+      "return": -0.011846694897197918
     }
   ],
   "data_status": "OK",

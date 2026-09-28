@@ -3,24 +3,29 @@
     "security_id": 33,
     "ticker": "ASTOR",
     "name": "ASTOR ENERJİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-01-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.4833650910516072,
-    "momentum_126": 0.36209591159131005,
-    "momentum_63": -0.06025179856115115,
-    "momentum_21": -0.2514326647564472,
+    "momentum_12_1": 2.329361248043833,
+    "fip_12_1": -0.1038961038961039,
+    "momentum_252": 1.2421353053099646,
+    "momentum_126": 0.12428298460459697,
+    "momentum_63": -0.1493670996446944,
+    "momentum_21": -0.32655691639730244,
     "fip_252": -0.06746031746031746,
-    "fip_126": -0.015873015873015872,
+    "fip_126": 0.0,
     "fip_63": -0.06349206349206349,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.078548237968689,
-    "delta_momentum_21_63": -0.19118086619529606,
-    "delta_fip_21_63": -0.1746031746031746,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 7.060638380977862,
+    "delta_momentum_21_63": -0.17718981675260803,
+    "delta_fip_21_63": -0.2698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.10236886632825715,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 105.19999694824219,
-      "volume": 22126344.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 104.9000015258789,
       "volume": 13035947.0,
-      "return": -0.002851667595683227
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 261.25,
       "volume": 26169222.0,
       "return": 0.0028790786948176272
+    },
+    {
+      "date": "2026-09-28",
+      "close": 235.1999969482422,
+      "volume": 789792.0,
+      "return": -0.09971293034165674
     }
   ],
   "data_status": "OK",

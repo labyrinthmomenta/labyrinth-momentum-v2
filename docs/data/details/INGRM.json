@@ -3,24 +3,29 @@
     "security_id": 406,
     "ticker": "INGRM",
     "name": "INGRAM MİCRO BİLİŞİM SİSTEMLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2006-06-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.34865702479338934,
-    "momentum_126": -0.18116883116883176,
-    "momentum_63": -0.23109756097560996,
-    "momentum_21": -0.19834710743801676,
+    "momentum_12_1": -0.16117021276595778,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": -0.33031914893617076,
+    "momentum_126": -0.1738845144356962,
+    "momentum_63": -0.2355798421372196,
+    "momentum_21": -0.20164870006341162,
     "fip_252": -0.15079365079365079,
     "fip_126": -0.03968253968253968,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 5.329566207090808,
-    "delta_momentum_21_63": 0.032750453537593205,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 5.569475708897645,
+    "delta_momentum_21_63": 0.033931142073807985,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.013404825737265202,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 484.0,
-      "volume": 91410.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 470.0,
       "volume": 78864.0,
-      "return": -0.02892561983471076
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 315.25,
       "volume": 12489.0,
       "return": 0.004780876494023811
+    },
+    {
+      "date": "2026-09-28",
+      "close": 314.75,
+      "volume": 22815.0,
+      "return": -0.0015860428231562196
     }
   ],
   "data_status": "OK",

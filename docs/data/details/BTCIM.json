@@ -3,24 +3,29 @@
     "security_id": 43,
     "ticker": "BTCIM",
     "name": "BATIÇİM BATI ANADOLU SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-03-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5075269000242723,
-    "momentum_126": -0.6498470985916973,
-    "momentum_63": -0.6170568637877984,
-    "momentum_21": -0.4989059352659674,
-    "fip_252": -0.05555555555555555,
+    "momentum_12_1": -0.052192067221495386,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": -0.5678496973427922,
+    "momentum_126": -0.6810477648312527,
+    "momentum_63": -0.6555740674858642,
+    "momentum_21": -0.5440528743092952,
+    "fip_252": -0.06349206349206349,
     "fip_126": -0.1349206349206349,
-    "fip_63": -0.23809523809523808,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 10.907376763761162,
-    "delta_momentum_21_63": 0.11815092852183107,
-    "delta_fip_21_63": -0.28571428571428575,
+    "atr14_percent": 11.963858349074542,
+    "delta_momentum_21_63": 0.11152119317656906,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.16530610755402508,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.650000095367432,
-      "volume": 345368757.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.789999961853027,
       "volume": 396088765.0,
-      "return": 0.0301074975514668
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.2899999618530273,
       "volume": 251439502.0,
       "return": 0.004385960784535126
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.069999933242798,
+      "volume": 181451085.0,
+      "return": -0.09606988308952169
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 599,
     "ticker": "BRKO",
     "name": "BİRKO BİRLEŞİK KOYUNLULULAR MENSUCAT TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2009-04-30"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.21106094334324066,
-    "momentum_126": -0.4841328654816006,
-    "momentum_63": -0.4390048354961559,
-    "momentum_21": -0.4227910842867779,
-    "fip_252": -0.08333333333333333,
+    "momentum_12_1": 0.32205238628891175,
+    "fip_12_1": 0.05194805194805195,
+    "momentum_252": -0.2925764053474059,
+    "momentum_126": -0.5019216060666887,
+    "momentum_63": -0.5270072912927238,
+    "momentum_21": -0.4649050204142222,
+    "fip_252": -0.09126984126984126,
     "fip_126": -0.14285714285714285,
-    "fip_63": -0.19047619047619047,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 9.098347439835566,
-    "delta_momentum_21_63": 0.016213751209377958,
-    "delta_fip_21_63": -0.2857142857142857,
+    "fip_63": -0.2222222222222222,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 9.87397222455018,
+    "delta_momentum_21_63": 0.06210227087850162,
+    "delta_fip_21_63": -0.3015873015873016,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.08333329654034283,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.859999656677246,
-      "volume": 889740.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 9.15999984741211,
       "volume": 1199998.0,
-      "return": 0.03386006798643293
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 6.989999771118164,
       "volume": 389900.0,
       "return": 0.09905654471356673
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.480000019073486,
+      "volume": 1115431.0,
+      "return": -0.07296134030675294
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 466,
     "ticker": "NUGYO",
     "name": "NUROL GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1999-12-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3274956412407517,
-    "momentum_126": -0.1292516900147488,
-    "momentum_63": -0.19157896543803965,
-    "momentum_21": -0.15697034931175813,
+    "momentum_12_1": -0.17257043893790658,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": -0.3378746766299212,
+    "momentum_126": -0.1872909983460086,
+    "momentum_63": -0.23263158296283915,
+    "momentum_21": -0.19978043506184284,
     "fip_252": -0.11904761904761904,
-    "fip_126": -0.0873015873015873,
-    "fip_63": -0.1746031746031746,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 4.373637613078197,
-    "delta_momentum_21_63": 0.03460861612628152,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_126": -0.10317460317460317,
+    "fip_63": -0.19047619047619047,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.836997268179554,
+    "delta_momentum_21_63": 0.0328511479009963,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.04487180466874563,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.420000076293945,
-      "volume": 3069920.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.010000228881836,
       "volume": 3873653.0,
-      "return": -0.03590191284352107
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.679999828338623,
       "volume": 1223727.0,
       "return": 0.006553042352263283
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.289999961853027,
+      "volume": 1336620.0,
+      "return": -0.05078123375036092
     }
   ],
   "data_status": "OK",

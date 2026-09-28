@@ -3,24 +3,29 @@
     "security_id": 184,
     "ticker": "NATEN",
     "name": "NATUREL YENİLENEBİLİR ENERJİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2019-08-08"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5629552591766348,
-    "momentum_126": -0.4050991723363122,
-    "momentum_63": -0.3528505458573358,
-    "momentum_21": -0.24324330361707203,
+    "momentum_12_1": -0.4075630677216925,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": -0.5850840485556443,
+    "momentum_126": -0.4365192697984004,
+    "momentum_63": -0.38854488787019303,
+    "momentum_21": -0.29964536503703043,
     "fip_252": -0.19444444444444445,
     "fip_126": -0.15873015873015872,
     "fip_63": -0.23809523809523808,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.26231853505434,
-    "delta_momentum_21_63": 0.10960724224026375,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.774367895450068,
+    "delta_momentum_21_63": 0.0888995228331626,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.07106600459183754,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 9.609999656677246,
-      "volume": 9474621.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 9.520000457763672,
       "volume": 6764992.0,
-      "return": -0.009365161511846742
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.199999809265137,
       "volume": 2382668.0,
       "return": -0.00943395377648304
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.950000047683716,
+      "volume": 5989117.0,
+      "return": -0.05952375546063715
     }
   ],
   "data_status": "OK",

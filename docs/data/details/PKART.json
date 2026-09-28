@@ -3,24 +3,29 @@
     "security_id": 490,
     "ticker": "PKART",
     "name": "PLASTİKKART AKILLI KART İLETİŞİM SİSTEMLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-08-19"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.018338091393937495,
-    "momentum_126": 0.12397210681885329,
-    "momentum_63": -0.2937202200419211,
-    "momentum_21": -0.3394052158057912,
-    "fip_252": 0.1111111111111111,
+    "momentum_12_1": 0.5362318840579692,
+    "fip_12_1": 0.0735930735930736,
+    "momentum_252": -0.013913008095562174,
+    "momentum_126": 0.10311290188034272,
+    "momentum_63": -0.35762834612928085,
+    "momentum_21": -0.3581131845150354,
+    "fip_252": -0.1111111111111111,
     "fip_126": 0.09523809523809523,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 7.698880175226226,
-    "delta_momentum_21_63": -0.045684995763870084,
-    "delta_fip_21_63": -0.3650793650793651,
+    "atr14_percent": 7.795910988927399,
+    "delta_momentum_21_63": -0.00048483838575452687,
+    "delta_fip_21_63": -0.33333333333333337,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.023333358764648038,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 87.25,
-      "volume": 370104.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 86.25,
       "volume": 202657.0,
-      "return": -0.011461318051575908
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 88.8499984741211,
       "volume": 188566.0,
       "return": 0.015428553989955462
+    },
+    {
+      "date": "2026-09-28",
+      "close": 85.05000305175781,
+      "volume": 188559.0,
+      "return": -0.042768660524739155
     }
   ],
   "data_status": "OK",

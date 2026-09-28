@@ -3,23 +3,28 @@
     "security_id": 67,
     "ticker": "CLEBI",
     "name": "ÇELEBİ HAVA SERVİSİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1996-11-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.10543130990415361,
-    "momentum_126": -0.2134831460674157,
-    "momentum_63": -0.1239048811013772,
-    "momentum_21": -0.05660377358490598,
+    "momentum_12_1": -0.048906048906049215,
+    "fip_12_1": -0.15151515151515152,
+    "momentum_252": -0.12676962676962722,
+    "momentum_126": -0.247365501941209,
+    "momentum_63": -0.14276689829437805,
+    "momentum_21": -0.08186738836265228,
     "fip_252": -0.15873015873015872,
-    "fip_126": -0.18253968253968253,
+    "fip_126": -0.1984126984126984,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 2.747934730396793,
-    "delta_momentum_21_63": 0.06730110751647123,
+    "atr14_percent": 2.8956949209508887,
+    "delta_momentum_21_63": 0.06089950993172577,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.0020790020790020236,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1565.0,
-      "volume": 42227.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1554.0,
       "volume": 37998.0,
-      "return": -0.007028753993610248
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1400.0,
       "volume": 10457.0,
       "return": 0.013024602026049159
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1357.0,
+      "volume": 22362.0,
+      "return": -0.030714285714285694
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 326,
     "ticker": "BOSSA",
     "name": "BOSSA TİCARET VE SANAYİ İŞLETMELERİ T.A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1995-08-21"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.11682894936062416,
-    "momentum_126": -0.030534393935621407,
-    "momentum_63": -0.018547123562662637,
-    "momentum_21": -0.02457762190843238,
+    "momentum_12_1": -0.06798867180790813,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": -0.12889516356764186,
+    "momentum_126": -0.04798760695804327,
+    "momentum_63": -0.04651158492543972,
+    "momentum_21": -0.06534951874230954,
     "fip_252": -0.051587301587301584,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.14285714285714285,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 4.575999179812038,
-    "delta_momentum_21_63": -0.006030498345769741,
-    "delta_fip_21_63": 0.047619047619047616,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 4.700914270731931,
+    "delta_momentum_21_63": -0.018837933816869823,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.030351369558534236,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.190000057220459,
-      "volume": 2041739.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.059999942779541,
       "volume": 1566118.0,
-      "return": -0.018080683366666572
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 6.349999904632568,
       "volume": 1054791.0,
       "return": -0.006259775068669371
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.150000095367432,
+      "volume": 1742970.0,
+      "return": -0.03149603342816265
     }
   ],
   "data_status": "OK",

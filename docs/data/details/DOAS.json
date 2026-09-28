@@ -3,23 +3,28 @@
     "security_id": 76,
     "ticker": "DOAS",
     "name": "DOĞUŞ OTOMOTİV SERVİS VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "TOPTAN TİCARET",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-06-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.14063362229754373,
-    "momentum_126": -0.2010335601885499,
-    "momentum_63": -0.15519122347805692,
-    "momentum_21": -0.07202880888578045,
+    "momentum_12_1": -0.06464306011551291,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.14952215715198003,
+    "momentum_126": -0.22648262612176628,
+    "momentum_63": -0.15616285289140475,
+    "momentum_21": -0.09074514061653183,
     "fip_252": -0.05952380952380952,
-    "fip_126": -0.1984126984126984,
+    "fip_126": -0.21428571428571427,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 2.684186796949477,
-    "delta_momentum_21_63": 0.08316241459227647,
+    "atr14_percent": 2.7875929232766157,
+    "delta_momentum_21_63": 0.06541771227487292,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.13970583874697073,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 179.89999389648438,
-      "volume": 1868702.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 177.89999389648438,
       "volume": 1616191.0,
-      "return": -0.01111728775905807
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 154.60000610351562,
       "volume": 323650.0,
       "return": -0.0051479267978713494
+    },
+    {
+      "date": "2026-09-28",
+      "close": 151.3000030517578,
+      "volume": 843728.0,
+      "return": -0.021345426400230738
     }
   ],
   "data_status": "OK",

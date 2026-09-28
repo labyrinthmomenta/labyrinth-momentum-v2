@@ -3,24 +3,29 @@
     "security_id": 87,
     "ticker": "EKGYO",
     "name": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-12-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.05078898677374277,
-    "momentum_126": -0.022842677437151848,
-    "momentum_63": -0.07451919682279784,
-    "momentum_21": -0.061890859134127285,
+    "momentum_12_1": 0.036701934237607814,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": -0.04876819221318551,
+    "momentum_126": -0.07254899852507768,
+    "momentum_63": -0.08510639279059107,
+    "momentum_21": -0.08244426254847115,
     "fip_252": 0.03571428571428571,
-    "fip_126": -0.06349206349206349,
+    "fip_126": -0.07936507936507936,
     "fip_63": -0.1111111111111111,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 4.409918607856676,
-    "delta_momentum_21_63": 0.012628337688670555,
-    "delta_fip_21_63": 0.06349206349206349,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 4.389089936401743,
+    "delta_momentum_21_63": 0.00266213024211992,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1166945935451742,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 20.280000686645508,
-      "volume": 336696953.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 19.889999389648438,
       "volume": 142857604.0,
-      "return": -0.019230832534137376
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.25,
       "volume": 106129863.0,
       "return": -0.01685392875341718
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.920000076293945,
+      "volume": 98404555.0,
+      "return": -0.017142853179535344
     }
   ],
   "data_status": "OK",

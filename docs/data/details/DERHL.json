@@ -3,23 +3,28 @@
     "security_id": 348,
     "ticker": "DERHL",
     "name": "DERLÜKS YATIRIM HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2019-07-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5951068346593913,
-    "momentum_126": -0.4361847740192688,
-    "momentum_63": -0.39327659434324114,
-    "momentum_21": -0.28378377797860765,
+    "momentum_12_1": -0.4508295422303692,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": -0.6015321652576815,
+    "momentum_126": -0.447604237239842,
+    "momentum_63": -0.40015918469274714,
+    "momentum_21": -0.27441866344990107,
     "fip_252": -0.14285714285714285,
-    "fip_126": -0.11904761904761904,
+    "fip_126": -0.1349206349206349,
     "fip_63": -0.15873015873015872,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 5.715465942609647,
-    "delta_momentum_21_63": 0.10949281636463348,
+    "atr14_percent": 6.2334567453451655,
+    "delta_momentum_21_63": 0.12574052124284607,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.008630088238565481,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.926961898803711,
-      "volume": 78388039.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.9149959087371826,
       "volume": 47058494.0,
-      "return": -0.003047136787900473
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.590000033378601,
       "volume": 7166321.0,
       "return": 0.025806504705075506
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.559999942779541,
+      "volume": 36906830.0,
+      "return": -0.018867981112750454
     }
   ],
   "data_status": "OK",

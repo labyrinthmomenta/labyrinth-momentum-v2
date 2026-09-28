@@ -3,24 +3,29 @@
     "security_id": 428,
     "ticker": "KONKA",
     "name": "KONYA KAĞIT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-11-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5523208418303933,
-    "momentum_126": -0.49965869525111817,
-    "momentum_63": -0.4830747696789143,
-    "momentum_21": -0.35361553570761806,
+    "momentum_12_1": -0.3029302518514875,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": -0.5623194370432676,
+    "momentum_126": -0.5154215148923527,
+    "momentum_63": -0.503162305053013,
+    "momentum_21": -0.3721136742495914,
     "fip_252": -0.05952380952380952,
     "fip_126": -0.1349206349206349,
-    "fip_63": -0.23809523809523808,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 5.790253843982242,
-    "delta_momentum_21_63": 0.12945923397129622,
-    "delta_fip_21_63": -0.28571428571428575,
+    "atr14_percent": 6.079544037399774,
+    "delta_momentum_21_63": 0.13104863080342155,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.12586206811503486,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.373332977294922,
-      "volume": 2618745.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 16.15333366394043,
       "volume": 1309659.0,
-      "return": -0.013436440440047659
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.329999923706055,
       "volume": 1883604.0,
       "return": -0.0027210858756485656
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.070000171661377,
+      "volume": 1746859.0,
+      "return": -0.03547063502740411
     }
   ],
   "data_status": "OK",

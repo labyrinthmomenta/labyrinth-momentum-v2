@@ -3,24 +3,29 @@
     "security_id": 256,
     "ticker": "TSKB",
     "name": "TÜRKİYE SINAİ KALKINMA BANKASI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "BANKALAR",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-04-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.24945609788972323,
-    "momentum_126": -0.14321188353994418,
-    "momentum_63": -0.1410788201125719,
-    "momentum_21": -0.0692445604328924,
+    "momentum_12_1": -0.1777130125079286,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": -0.2687545304740976,
+    "momentum_126": -0.16680499560716244,
+    "momentum_63": -0.15488216623426254,
+    "momentum_21": -0.11071744944406903,
     "fip_252": -0.07539682539682539,
     "fip_126": -0.12698412698412698,
     "fip_63": -0.07936507936507936,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.54381204419318,
-    "delta_momentum_21_63": 0.07183425967967949,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 3.7195499014742754,
+    "delta_momentum_21_63": 0.044164716790193514,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0009140105659098952,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 13.789999961853027,
-      "volume": 17045418.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 13.729999542236328,
       "volume": 14395308.0,
-      "return": -0.004351009411361684
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.350000381469727,
       "volume": 14213630.0,
       "return": -0.009569323408671226
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.039999961853027,
+      "volume": 34152160.0,
+      "return": -0.029951730260001974
     }
   ],
   "data_status": "OK",

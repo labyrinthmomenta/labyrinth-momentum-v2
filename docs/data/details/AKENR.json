@@ -3,24 +3,29 @@
     "security_id": 286,
     "ticker": "AKENR",
     "name": "AKENERJİ ELEKTRİK ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-07-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.20934410599717235,
-    "momentum_126": -0.08808284574055414,
-    "momentum_63": -0.26298153266330626,
-    "momentum_21": -0.14975846701512474,
+    "momentum_12_1": -0.0270026324330479,
+    "fip_12_1": -0.06493506493506493,
+    "momentum_252": -0.25202514163694945,
+    "momentum_126": -0.14418121658395344,
+    "momentum_63": -0.29516535653061815,
+    "momentum_21": -0.23126733607366878,
     "fip_252": -0.06349206349206349,
-    "fip_126": -0.031746031746031744,
+    "fip_126": -0.047619047619047616,
     "fip_63": -0.1111111111111111,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 5.060550533560515,
-    "delta_momentum_21_63": 0.11322306564818152,
-    "delta_fip_21_63": 0.15873015873015872,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 5.491894444377459,
+    "delta_momentum_21_63": 0.06389802045694937,
+    "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05410831065091859,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.130000114440918,
-      "volume": 7234124.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.109999656677246,
       "volume": 6251359.0,
-      "return": -0.0017969863035061096
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.800000190734863,
       "volume": 2667453.0,
       "return": 0.005714307512555861
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.3100004196167,
+      "volume": 4480472.0,
+      "return": -0.05568179096564829
     }
   ],
   "data_status": "OK",

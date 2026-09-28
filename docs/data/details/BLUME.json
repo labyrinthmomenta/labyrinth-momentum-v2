@@ -3,24 +3,29 @@
     "security_id": 322,
     "ticker": "BLUME",
     "name": "BLUME METAL KİMYA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2002-07-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3728813559322025,
-    "momentum_126": -0.26514396978547494,
-    "momentum_63": 0.13776136159822228,
-    "momentum_21": -0.12322276466653892,
+    "momentum_12_1": -0.2809106397454588,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": -0.41646233651082243,
+    "momentum_126": -0.31944443795156274,
+    "momentum_63": -0.011275995831226182,
+    "momentum_21": -0.18850466194824744,
     "fip_252": -0.01984126984126984,
     "fip_126": -0.03968253968253968,
-    "fip_63": -0.09523809523809523,
+    "fip_63": 0.06349206349206349,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.1900808875872375,
-    "delta_momentum_21_63": -0.2609841262647612,
-    "delta_fip_21_63": 0.047619047619047616,
+    "atr14_percent": 8.23278364035992,
+    "delta_momentum_21_63": -0.17722866611702126,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.2324897478606318,
     "completed_month_fip": -0.38095238095238093,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 59.0,
-      "volume": 4702062.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 57.099998474121094,
       "volume": 2096171.0,
-      "return": -0.03220341569286278
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 37.0,
       "volume": 1742805.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 33.31999969482422,
+      "volume": 1446421.0,
+      "return": -0.09945946770745351
     }
   ],
   "data_status": "OK",

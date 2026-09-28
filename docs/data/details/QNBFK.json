@@ -3,24 +3,29 @@
     "security_id": 624,
     "ticker": "QNBFK",
     "name": "QNB FİNANSAL KİRALAMA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1993-10-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3522124163872373,
-    "momentum_126": -0.13364743471431295,
-    "momentum_63": 0.019498521406400515,
-    "momentum_21": -0.12898624285096072,
-    "fip_252": -0.23809523809523808,
-    "fip_126": -0.24603174603174602,
-    "fip_63": 0.2222222222222222,
+    "momentum_12_1": -0.261946889151514,
+    "fip_12_1": -0.23809523809523808,
+    "momentum_252": -0.3776991177449185,
+    "momentum_126": -0.16773340619705235,
+    "momentum_63": -0.1094224859400682,
+    "momentum_21": -0.15683455145976222,
+    "fip_252": -0.24206349206349206,
+    "fip_126": -0.25396825396825395,
+    "fip_63": -0.25396825396825395,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 3.417838853180178,
-    "delta_momentum_21_63": -0.14848476425736123,
-    "delta_fip_21_63": -0.5079365079365079,
+    "atr14_percent": 3.6327961338338475,
+    "delta_momentum_21_63": -0.04741206551969401,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.15365856211501705,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 56.5,
-      "volume": 52949.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 56.5,
       "volume": 76497.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 36.599998474121094,
       "volume": 11475.0,
       "return": -0.0005461621613063183
+    },
+    {
+      "date": "2026-09-28",
+      "close": 35.15999984741211,
+      "volume": 30263.0,
+      "return": -0.03934422641375712
     }
   ],
   "data_status": "OK",

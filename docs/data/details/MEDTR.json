@@ -3,24 +3,29 @@
     "security_id": 452,
     "ticker": "MEDTR",
     "name": "MEDİTERA TIBBİ MALZEME SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-07-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.39261116799781826,
-    "momentum_126": -0.2971014728117478,
-    "momentum_63": -0.322152374225789,
-    "momentum_21": -0.2468944314379623,
-    "fip_252": -0.06746031746031746,
-    "fip_126": -0.11904761904761904,
+    "momentum_12_1": -0.19763830174136443,
+    "fip_12_1": -0.025974025974025976,
+    "momentum_252": -0.4266625050350912,
+    "momentum_126": -0.33200578557797267,
+    "momentum_63": -0.3466713557905623,
+    "momentum_21": -0.28543760724219247,
+    "fip_252": -0.07539682539682539,
+    "fip_126": -0.1349206349206349,
     "fip_63": -0.3333333333333333,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 4.2106796518314455,
-    "delta_momentum_21_63": 0.07525794278782671,
-    "delta_fip_21_63": -0.19047619047619052,
+    "fip_21": -0.6190476190476191,
+    "atr14_percent": 4.614530630360063,
+    "delta_momentum_21_63": 0.061233748548369826,
+    "delta_fip_21_63": -0.28571428571428575,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.006289302046119105,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 31.940000534057617,
-      "volume": 1479177.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 32.18000030517578,
       "volume": 1506456.0,
-      "return": 0.007514081625084934
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.399999618530273,
       "volume": 94028.0,
       "return": 0.021590302914888726
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.450000762939453,
+      "volume": 322241.0,
+      "return": -0.04896901413768129
     }
   ],
   "data_status": "OK",

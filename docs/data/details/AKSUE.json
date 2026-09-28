@@ -3,24 +3,29 @@
     "security_id": 289,
     "ticker": "AKSUE",
     "name": "AKSU ENERJİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-01-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.05462189419745178,
-    "momentum_126": -0.3630573299994546,
-    "momentum_63": -0.5135135135135132,
-    "momentum_21": -0.5664739932189895,
+    "momentum_12_1": 0.9684045033516233,
+    "fip_12_1": 0.004329004329004329,
+    "momentum_252": -0.14218003623660969,
+    "momentum_126": -0.43240416437330664,
+    "momentum_63": -0.5827356420719663,
+    "momentum_21": -0.5642054454240624,
     "fip_252": -0.027777777777777776,
-    "fip_126": 0.023809523809523808,
-    "fip_63": -0.06349206349206349,
+    "fip_126": 0.007936507936507936,
+    "fip_63": -0.09523809523809523,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 12.3003455939175,
-    "delta_momentum_21_63": -0.05296047970547635,
-    "delta_fip_21_63": -0.2222222222222222,
+    "atr14_percent": 13.50644892154057,
+    "delta_momentum_21_63": 0.018530196647903896,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.18930637099455616,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 19.040000915527344,
-      "volume": 246565.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 18.989999771118164,
       "volume": 319921.0,
-      "return": -0.002626110399417181
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 18.0,
       "volume": 911182.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 16.290000915527344,
+      "volume": 2473798.0,
+      "return": -0.09499994913736975
     }
   ],
   "data_status": "OK",

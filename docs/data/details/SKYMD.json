@@ -3,23 +3,28 @@
     "security_id": 511,
     "ticker": "SKYMD",
     "name": "ŞEKER YATIRIM MENKUL DEĞERLER A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "ARACI KURUMLAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-12-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.05652172831371338,
-    "momentum_126": 0.4342327758251756,
-    "momentum_63": 0.1987315526349278,
-    "momentum_21": 0.19117650889077598,
-    "fip_252": 0.10714285714285714,
+    "momentum_12_1": -0.154150179749578,
+    "fip_12_1": -0.12121212121212122,
+    "momentum_252": -0.017504205644717774,
+    "momentum_126": 0.4658803526779247,
+    "momentum_63": 0.19917293894289156,
+    "momentum_21": 0.16154874167190192,
+    "fip_252": -0.10714285714285714,
     "fip_126": 0.007936507936507936,
     "fip_63": 0.015873015873015872,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.972269634139348,
-    "delta_momentum_21_63": -0.007555043744151835,
+    "atr14_percent": 6.813538877424749,
+    "delta_momentum_21_63": -0.037624197270989646,
     "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.022566973761447118,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.100000381469727,
-      "volume": 3509082.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 17.709999084472656,
       "volume": 21918705.0,
-      "return": 0.09999991707180045
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 17.010000228881836,
       "volume": 5006883.0,
       "return": 0.08274985280574199
+    },
+    {
+      "date": "2026-09-28",
+      "close": 17.399999618530273,
+      "volume": 7548956.0,
+      "return": 0.022927653403922
     }
   ],
   "data_status": "OK",

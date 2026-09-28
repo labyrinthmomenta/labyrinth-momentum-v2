@@ -3,24 +3,29 @@
     "security_id": 161,
     "ticker": "KOPOL",
     "name": "KOZA POLYESTER SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-04-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5552665733620159,
-    "momentum_126": -0.3968253914858252,
-    "momentum_63": -0.48725636624067337,
-    "momentum_21": -0.39682539148582485,
+    "momentum_12_1": -0.19417476948131152,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.5464632505373846,
+    "momentum_126": -0.42123895119795474,
+    "momentum_63": -0.4969230798574601,
+    "momentum_21": -0.4371772782906218,
     "fip_252": -0.1746031746031746,
     "fip_126": -0.09523809523809523,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 7.185406132737958,
-    "delta_momentum_21_63": 0.09043097475484851,
-    "delta_fip_21_63": -0.2222222222222222,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 7.6990646851809075,
+    "delta_momentum_21_63": 0.059745801566838286,
+    "delta_fip_21_63": -0.3174603174603175,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.028037401503044013,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.690000057220459,
-      "volume": 32425914.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.210000038146973,
       "volume": 37094558.0,
-      "return": -0.06241872763353162
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.4200000762939453,
       "volume": 5388450.0,
       "return": 0.002932548449136041
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.2699999809265137,
+      "volume": 11912435.0,
+      "return": -0.04385967602959184
     }
   ],
   "data_status": "OK",

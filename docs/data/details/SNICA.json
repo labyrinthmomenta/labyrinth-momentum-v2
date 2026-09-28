@@ -3,23 +3,28 @@
     "security_id": 497,
     "ticker": "SNICA",
     "name": "SANİCA ISI SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-11-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5474860114444475,
-    "momentum_126": -0.3519999821980788,
-    "momentum_63": -0.45999998516506635,
-    "momentum_21": -0.35026736348639875,
+    "momentum_12_1": -0.3286852792104794,
+    "fip_12_1": -0.11255411255411256,
+    "momentum_252": -0.5338645571593348,
+    "momentum_126": -0.3726541817148421,
+    "momentum_63": -0.47058826385104047,
+    "momentum_21": -0.3056379840852409,
     "fip_252": -0.1388888888888889,
     "fip_126": -0.09523809523809523,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.54291050094204,
-    "delta_momentum_21_63": 0.1097326216786676,
+    "atr14_percent": 5.741775502724378,
+    "delta_momentum_21_63": 0.16495027976579957,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08781868138585114,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 5.369999885559082,
-      "volume": 50662180.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 5.019999980926514,
       "volume": 43047696.0,
-      "return": -0.06517689238202451
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.430000066757202,
       "volume": 4012110.0,
       "return": -0.008163257362146625
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.3399999141693115,
+      "volume": 5869732.0,
+      "return": -0.03703709881292083
     }
   ],
   "data_status": "OK",

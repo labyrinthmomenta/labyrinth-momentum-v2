@@ -3,23 +3,28 @@
     "security_id": 356,
     "ticker": "DGNMO",
     "name": "DOĞANLAR MOBİLYA GRUBU İMALAT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ORMAN ÜRÜNLERİ VE MOBİLYA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1990-08-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.347639471803574,
-    "momentum_126": 0.1968503966571835,
-    "momentum_63": -0.4847457913869314,
-    "momentum_21": -0.4370370706140462,
+    "momentum_12_1": 0.15273774265703466,
+    "fip_12_1": 0.15584415584415584,
+    "momentum_252": -0.40778096547156173,
+    "momentum_126": 0.10187670576347818,
+    "momentum_63": -0.5345413172110891,
+    "momentum_21": -0.4862499833106996,
     "fip_252": -0.19047619047619047,
     "fip_126": 0.15873015873015872,
     "fip_63": -0.3492063492063492,
     "fip_21": -0.5714285714285714,
-    "atr14_percent": 10.254739266321506,
-    "delta_momentum_21_63": 0.04770872077288524,
+    "atr14_percent": 11.43380109064573,
+    "delta_momentum_21_63": 0.04829133390038953,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.16340617583713957,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.989999771118164,
-      "volume": 2711231.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.940000057220459,
       "volume": 2342604.0,
-      "return": -0.007153035126595819
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.559999942779541,
       "volume": 595296.0,
       "return": 0.013333320617675781
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.110000133514404,
+      "volume": 4933393.0,
+      "return": -0.09868416993681806
     }
   ],
   "data_status": "OK",

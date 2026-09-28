@@ -3,24 +3,29 @@
     "security_id": 431,
     "ticker": "KRGYO",
     "name": "KÖRFEZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2014-05-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.06606607617137228,
-    "momentum_126": 0.15185179265601922,
-    "momentum_63": 0.19157088892589513,
-    "momentum_21": -0.028125047264620173,
-    "fip_252": -0.0873015873015873,
+    "momentum_12_1": -0.021406707538561554,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.03363911184631152,
+    "momentum_126": 0.14909094030206882,
+    "momentum_63": 0.19245281966397232,
+    "momentum_21": -0.01249998789280704,
+    "fip_252": -0.07936507936507936,
     "fip_126": 0.007936507936507936,
     "fip_63": 0.0,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.23985740023358,
-    "delta_momentum_21_63": -0.2196959361905153,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": 0.0,
+    "atr14_percent": 7.339679233921684,
+    "delta_momentum_21_63": -0.20495280755677936,
+    "delta_fip_21_63": 0.0,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.2760000228881838,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.3299999237060547,
-      "volume": 17092398.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.2699999809265137,
       "volume": 14708187.0,
-      "return": -0.018018001247509186
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.109999895095825,
       "volume": 10955312.0,
       "return": 0.03322255978385491
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.1600000858306885,
+      "volume": 24911254.0,
+      "return": 0.016077232289849475
     }
   ],
   "data_status": "OK",

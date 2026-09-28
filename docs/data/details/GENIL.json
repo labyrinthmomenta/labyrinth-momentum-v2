@@ -3,24 +3,29 @@
     "security_id": 105,
     "ticker": "GENIL",
     "name": "GEN İLAÇ VE SAĞLIK ÜRÜNLERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "TOPTAN TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-08-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3514705784593063,
-    "momentum_126": -0.21474357112938425,
-    "momentum_63": -0.20108695032465895,
-    "momentum_21": -0.3895348897076446,
-    "fip_252": 0.047619047619047616,
-    "fip_126": -0.1111111111111111,
-    "fip_63": 0.031746031746031744,
+    "momentum_12_1": 0.04973668209732951,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": -0.41895847046935497,
+    "momentum_126": -0.303890670217423,
+    "momentum_63": -0.2812160848925459,
+    "momentum_21": -0.4464883056484713,
+    "fip_252": 0.03968253968253968,
+    "fip_126": -0.12698412698412698,
+    "fip_63": 0.0,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 9.995074077572198,
-    "delta_momentum_21_63": -0.18844793938298565,
-    "delta_fip_21_63": -0.1746031746031746,
+    "atr14_percent": 11.092245749999831,
+    "delta_momentum_21_63": -0.1652722207559254,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.22532193672022838,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.333333015441895,
-      "volume": 14553390.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.393333435058594,
       "volume": 9056115.0,
-      "return": 0.0052941548205587274
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.349999904632568,
       "volume": 45710472.0,
       "return": 0.08888887476038043
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.619999885559082,
+      "volume": 39714682.0,
+      "return": -0.09931973177487807
     }
   ],
   "data_status": "OK",

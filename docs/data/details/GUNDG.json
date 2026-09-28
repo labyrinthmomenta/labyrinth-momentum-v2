@@ -3,24 +3,29 @@
     "security_id": 396,
     "ticker": "GUNDG",
     "name": "GÜNDOĞDU GIDA SÜT ÜRÜNLERİ SANAYİ VE DIŞ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-08-22"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 2.3840812517489116,
-    "momentum_126": -0.5693405846363015,
-    "momentum_63": -0.8025249376558602,
-    "momentum_21": -0.8247094631986719,
-    "fip_252": -0.0992063492063492,
-    "fip_126": 0.05555555555555555,
-    "fip_63": -0.031746031746031744,
+    "momentum_12_1": 16.894736842105285,
+    "fip_12_1": -0.17316017316017315,
+    "momentum_252": 2.0026315789473736,
+    "momentum_126": -0.6246710526315784,
+    "momentum_63": -0.8281626506024093,
+    "momentum_21": -0.8322058823529412,
+    "fip_252": -0.09126984126984126,
+    "fip_126": 0.03968253968253968,
+    "fip_63": -0.06349206349206349,
     "fip_21": -0.8095238095238095,
-    "atr14_percent": 36.48232055357077,
-    "delta_momentum_21_63": -0.022184525542811695,
-    "delta_fip_21_63": -0.7777777777777778,
+    "atr14_percent": 38.40617890699109,
+    "delta_momentum_21_63": -0.004043231750531895,
+    "delta_fip_21_63": -0.746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.035321366531557485,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 93.5999984741211,
-      "volume": 710499.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 95.0,
       "volume": 711809.0,
-      "return": 0.014957281503225506
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 316.75,
       "volume": 18379.0,
       "return": -0.09950248756218905
+    },
+    {
+      "date": "2026-09-28",
+      "close": 285.25,
+      "volume": 199.0,
+      "return": -0.09944751381215466
     }
   ],
   "data_status": "OK",

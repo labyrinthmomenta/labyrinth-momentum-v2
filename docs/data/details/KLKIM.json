@@ -3,23 +3,28 @@
     "security_id": 137,
     "ticker": "KLKIM",
     "name": "KALEKİM KİMYEVİ MADDELER SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-05-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3830016044710962,
-    "momentum_126": -0.4019812260412955,
-    "momentum_63": -0.23584276534796111,
-    "momentum_21": -0.17303530197062655,
+    "momentum_12_1": -0.23146062407164103,
+    "fip_12_1": -0.10822510822510822,
+    "momentum_252": -0.3735955002000573,
+    "momentum_126": -0.43429730408693257,
+    "momentum_63": -0.25666669209798143,
+    "momentum_21": -0.1849415665355133,
     "fip_252": -0.12301587301587301,
-    "fip_126": -0.19047619047619047,
+    "fip_126": -0.20634920634920634,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 3.814150292147885,
-    "delta_momentum_21_63": 0.06280746337733456,
+    "atr14_percent": 3.9124150616274957,
+    "delta_momentum_21_63": 0.07172512556246813,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.060413373091495526,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 37.18000030517578,
-      "volume": 3474866.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 35.599998474121094,
       "volume": 2534434.0,
-      "return": -0.042496014472456545
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 22.940000534057617,
       "volume": 1066854.0,
       "return": -0.0034752355393231626
+    },
+    {
+      "date": "2026-09-28",
+      "close": 22.299999237060547,
+      "volume": 1091787.0,
+      "return": -0.027898922497708756
     }
   ],
   "data_status": "OK",

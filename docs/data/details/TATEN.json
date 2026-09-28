@@ -3,24 +3,29 @@
     "security_id": 235,
     "ticker": "TATEN",
     "name": "TATLIPINAR ENERJİ ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-08-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6913143892133387,
-    "momentum_126": -0.5951612794064336,
-    "momentum_63": -0.6472241642716465,
-    "momentum_21": -0.43276838818702523,
-    "fip_252": -0.16666666666666666,
+    "momentum_12_1": -0.5013277598413854,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.7439552912168026,
+    "momentum_126": -0.6248976323180158,
+    "momentum_63": -0.6632353091734913,
+    "momentum_21": -0.4865470981465577,
+    "fip_252": -0.1746031746031746,
     "fip_126": -0.23809523809523808,
     "fip_63": -0.42857142857142855,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 9.980698890015544,
-    "delta_momentum_21_63": 0.2144557760846213,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 10.93793540735101,
+    "delta_momentum_21_63": 0.17668821102693355,
+    "delta_fip_21_63": -0.09523809523809529,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.26334209523326413,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.262500762939453,
-      "volume": 39969336.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 17.887500762939453,
       "volume": 58328904.0,
-      "return": 0.09992313136139597
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.019999980926514,
       "volume": 10058374.0,
       "return": 0.037190046004932364
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.579999923706055,
+      "volume": 15812174.0,
+      "return": -0.08764941412195992
     }
   ],
   "data_status": "OK",

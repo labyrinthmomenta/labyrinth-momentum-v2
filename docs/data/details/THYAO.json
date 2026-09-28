@@ -3,24 +3,29 @@
     "security_id": 252,
     "ticker": "THYAO",
     "name": "TÜRK HAVA YOLLARI A.O.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1990-12-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.10262345679012341,
-    "momentum_126": -0.0008591065292082867,
-    "momentum_63": -0.11626139817629177,
-    "momentum_21": -0.05370219690805578,
-    "fip_252": -0.07539682539682539,
-    "fip_126": -0.07936507936507936,
+    "momentum_12_1": -0.06321401370906177,
+    "fip_12_1": -0.08225108225108226,
+    "momentum_252": -0.1256664127951248,
+    "momentum_126": -0.025466893039048366,
+    "momentum_63": -0.1196319018404911,
+    "momentum_21": -0.06666666666666687,
+    "fip_252": -0.08333333333333333,
+    "fip_126": -0.09523809523809523,
     "fip_63": -0.07936507936507936,
-    "fip_21": 0.0,
-    "atr14_percent": 3.1477702592350325,
-    "delta_momentum_21_63": 0.062559201268236,
-    "delta_fip_21_63": 0.07936507936507936,
+    "fip_21": -0.09523809523809523,
+    "atr14_percent": 3.1353371420890555,
+    "delta_momentum_21_63": 0.05296523517382423,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.037420382165604726,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 324.0,
-      "volume": 42762282.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 328.25,
       "volume": 39070278.0,
-      "return": 0.013117283950617287
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 290.75,
       "volume": 20893753.0,
       "return": 0.0077989601386481144
+    },
+    {
+      "date": "2026-09-28",
+      "close": 287.0,
+      "volume": 28590319.0,
+      "return": -0.012897678417884806
     }
   ],
   "data_status": "OK",

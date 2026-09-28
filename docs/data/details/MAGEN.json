@@ -3,24 +3,29 @@
     "security_id": 171,
     "ticker": "MAGEN",
     "name": "MARGÜN ENERJİ ÜRETİM SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-09-30"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3056034448030578,
-    "momentum_126": -0.6838076473186272,
-    "momentum_63": -0.47490220175670084,
-    "momentum_21": -0.5193913964693793,
-    "fip_252": 0.17063492063492064,
-    "fip_126": 0.10317460317460317,
-    "fip_63": 0.031746031746031744,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 13.574755895399901,
-    "delta_momentum_21_63": -0.044489194712678426,
-    "delta_fip_21_63": -0.2222222222222222,
+    "momentum_12_1": 0.5320239518032064,
+    "fip_12_1": -0.20346320346320346,
+    "momentum_252": -0.38087105240118635,
+    "momentum_126": -0.7156862745098038,
+    "momentum_63": -0.5376275600194433,
+    "momentum_21": -0.5958751513838323,
+    "fip_252": 0.1626984126984127,
+    "fip_126": 0.0873015873015873,
+    "fip_63": 0.0,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 14.79783889881457,
+    "delta_momentum_21_63": -0.05824759136438895,
+    "delta_fip_21_63": -0.2857142857142857,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.05799466438625689,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 23.200000762939453,
-      "volume": 10986712.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 23.420000076293945,
       "volume": 8885832.0,
-      "return": 0.00948272871205802
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 16.110000610351562,
       "volume": 214613.0,
       "return": -0.0999999467221041
+    },
+    {
+      "date": "2026-09-28",
+      "close": 14.5,
+      "volume": 114005.0,
+      "return": -0.09993796085377227
     }
   ],
   "data_status": "OK",

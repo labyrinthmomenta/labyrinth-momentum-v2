@@ -3,23 +3,28 @@
     "security_id": 210,
     "ticker": "QUAGR",
     "name": "QUA GRANITE HAYAL YAPI VE ÜRÜNLERİ SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-04-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7992733885373026,
-    "momentum_126": -0.2558922502162023,
-    "momentum_63": -0.41994748783783653,
-    "momentum_21": -0.35000000701231093,
+    "momentum_12_1": -0.6861111069412393,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.808333342899511,
+    "momentum_126": -0.3168316987497032,
+    "momentum_63": -0.4552631686268753,
+    "momentum_21": -0.3893805695615722,
     "fip_252": -0.10714285714285714,
-    "fip_126": -0.05555555555555555,
+    "fip_126": -0.07142857142857142,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 7.68895238160215,
-    "delta_momentum_21_63": 0.0699474808255256,
+    "atr14_percent": 8.278247743222263,
+    "delta_momentum_21_63": 0.06588259906530314,
     "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0674486842476012,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.010000228881836,
-      "volume": 67630217.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.800000190734863,
       "volume": 61140472.0,
-      "return": -0.01907357255053388
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.2100000381469727,
       "volume": 46478572.0,
       "return": 0.07281558229804497
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.069999933242798,
+      "volume": 22387883.0,
+      "return": -0.06334846266408267
     }
   ],
   "data_status": "OK",

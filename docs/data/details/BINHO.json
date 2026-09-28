@@ -3,24 +3,29 @@
     "security_id": 1,
     "ticker": "BINHO",
     "name": "1000 YATIRIMLAR HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-11-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3832281281807074,
-    "momentum_126": -0.18957340134402534,
-    "momentum_63": -0.31531528435437595,
-    "momentum_21": -0.39091714769333097,
+    "momentum_12_1": -0.0009268052749966671,
+    "fip_12_1": -0.06926406926406926,
+    "momentum_252": -0.417052828165831,
+    "momentum_126": -0.29720669319550697,
+    "momentum_63": -0.4271402346004173,
+    "momentum_21": -0.41651204845444156,
     "fip_252": -0.10714285714285714,
-    "fip_126": -0.007936507936507936,
-    "fip_63": -0.1111111111111111,
+    "fip_126": -0.023809523809523808,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 9.09395983690705,
-    "delta_momentum_21_63": -0.07560186333895502,
-    "delta_fip_21_63": -0.41269841269841273,
+    "atr14_percent": 9.954973454169078,
+    "delta_momentum_21_63": 0.010628186145975715,
+    "delta_fip_21_63": -0.380952380952381,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.035069067912557816,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.09000015258789,
-      "volume": 80950321.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.789999961853027,
       "volume": 34612186.0,
-      "return": -0.027051414482159197
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 6.840000152587891,
       "volume": 22047039.0,
       "return": -0.014409208041508248
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.289999961853027,
+      "volume": 24028526.0,
+      "return": -0.08040938281657384
     }
   ],
   "data_status": "OK",

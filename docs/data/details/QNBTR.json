@@ -3,24 +3,29 @@
     "security_id": 623,
     "ticker": "QNBTR",
     "name": "QNB BANK A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "BANKALAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1990-02-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4179662275215108,
-    "momentum_126": -0.4275862068965519,
-    "momentum_63": -0.17903065031948762,
-    "momentum_21": -0.1272344760069979,
+    "momentum_12_1": -0.31829981882143976,
+    "fip_12_1": -0.2510822510822511,
+    "momentum_252": -0.4403634005801986,
+    "momentum_126": -0.45270505043016473,
+    "momentum_63": -0.2175648312007833,
+    "momentum_21": -0.17905757564524716,
     "fip_252": -0.2619047619047619,
     "fip_126": -0.36507936507936506,
     "fip_63": -0.38095238095238093,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 1.8242215795894352,
-    "delta_momentum_21_63": 0.05179617431248973,
-    "delta_fip_21_63": 0.09523809523809523,
+    "fip_21": -0.38095238095238093,
+    "atr14_percent": 2.2124042503170305,
+    "delta_momentum_21_63": 0.038507255555536135,
+    "delta_fip_21_63": 0.0,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09178743961352709,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 285.2068176269531,
-      "volume": 26746.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 280.18182373046875,
       "volume": 22518.0,
-      "return": -0.01761877201356732
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 166.0,
       "volume": 10322.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 156.8000030517578,
+      "volume": 14637.0,
+      "return": -0.05542166836290474
     }
   ],
   "data_status": "OK",

@@ -3,13 +3,18 @@
     "security_id": 186,
     "ticker": "NETGL",
     "name": "NET GLOBAL ENDÜSTRİYEL YATIRIMLAR A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2026-09-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
-    "observations": 6,
+    "as_of": "2026-09-28",
+    "observations": 7,
+    "momentum_12_1": null,
+    "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
@@ -68,6 +73,12 @@
       "close": 22.31999969482422,
       "volume": 1806315.0,
       "return": -0.09927364502241676
+    },
+    {
+      "date": "2026-09-28",
+      "close": 20.100000381469727,
+      "volume": 440240.0,
+      "return": -0.09946233618763389
     }
   ],
   "data_status": "OK",

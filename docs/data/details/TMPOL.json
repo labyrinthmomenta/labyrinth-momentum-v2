@@ -3,23 +3,28 @@
     "security_id": 515,
     "ticker": "TMPOL",
     "name": "TEMAPOL POLİMER PLASTİK VE İNŞAAT SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-12-16"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.24437688114432843,
-    "momentum_126": -0.7877028128919594,
-    "momentum_63": -0.731967648405913,
-    "momentum_21": -0.729782602061396,
+    "momentum_12_1": 1.8167701863354075,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.30496893462186936,
+    "momentum_126": -0.799102331192318,
+    "momentum_63": -0.7516093195873944,
+    "momentum_21": -0.7532524773409506,
     "fip_252": -0.03571428571428571,
     "fip_126": -0.18253968253968253,
     "fip_63": -0.25396825396825395,
     "fip_21": -0.8095238095238095,
-    "atr14_percent": 22.700073110288105,
-    "delta_momentum_21_63": 0.0021850463445169943,
+    "atr14_percent": 24.20595473906726,
+    "delta_momentum_21_63": -0.0016431577535561681,
     "delta_fip_21_63": -0.5555555555555556,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03080433542498595,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 164.5,
-      "volume": 271025.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 161.0,
       "volume": 162962.0,
-      "return": -0.021276595744680882
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 124.30000305175781,
       "volume": 6322.0,
       "return": -0.0999276063855764
+    },
+    {
+      "date": "2026-09-28",
+      "close": 111.9000015258789,
+      "volume": 1524.0,
+      "return": -0.09975865825776065
     }
   ],
   "data_status": "OK",

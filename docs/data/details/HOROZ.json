@@ -3,23 +3,28 @@
     "security_id": 401,
     "ticker": "HOROZ",
     "name": "HOROZ LOJİSTİK KARGO HİZMETLERİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-06-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.1775861937424218,
-    "momentum_126": -0.12477062820294538,
-    "momentum_63": -0.29490022635561597,
-    "momentum_21": -0.2349638824331688,
-    "fip_252": -0.04365079365079365,
-    "fip_126": -0.10317460317460317,
+    "momentum_12_1": 0.042808218059588565,
+    "fip_12_1": 0.025974025974025976,
+    "momentum_252": -0.24486305955695764,
+    "momentum_126": -0.1937843170196092,
+    "momentum_63": -0.3231005764964765,
+    "momentum_21": -0.2758621121646242,
+    "fip_252": -0.051587301587301584,
+    "fip_126": -0.11904761904761904,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.41743899800116,
-    "delta_momentum_21_63": 0.05993634392244718,
+    "atr14_percent": 7.090142687106556,
+    "delta_momentum_21_63": 0.0472384643318523,
     "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.06085381172109239,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 58.0,
-      "volume": 663670.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 58.400001525878906,
       "volume": 762772.0,
-      "return": 0.006896578032394851
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 47.70000076293945,
       "volume": 968486.0,
       "return": 0.04239515980255937
+    },
+    {
+      "date": "2026-09-28",
+      "close": 44.099998474121094,
+      "volume": 699652.0,
+      "return": -0.07547174488968522
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 374,
     "ticker": "ERCB",
     "name": "ERCİYAS ÇELİK BORU SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-01-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5372262490535189,
-    "momentum_126": -0.23798072294017725,
-    "momentum_63": -0.23553050243842366,
-    "momentum_21": -0.18439105031441805,
-    "fip_252": -0.1388888888888889,
+    "momentum_12_1": -0.4407272801254739,
+    "fip_12_1": -0.12121212121212122,
+    "momentum_252": -0.5570908979936082,
+    "momentum_126": -0.25214898773894134,
+    "momentum_63": -0.24876641911916242,
+    "momentum_21": -0.20806238840728852,
+    "fip_252": -0.14682539682539683,
     "fip_126": -0.18253968253968253,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.108494052462829,
-    "delta_momentum_21_63": 0.05113945212400561,
+    "atr14_percent": 5.36838795462808,
+    "delta_momentum_21_63": 0.040704030711873895,
     "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.06314916813607263,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 82.19999694824219,
-      "volume": 265683.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 82.5,
       "volume": 1720407.0,
-      "return": 0.003649672298001505
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 38.040000915527344,
       "volume": 422495.0,
       "return": 0.02478453691043425
+    },
+    {
+      "date": "2026-09-28",
+      "close": 36.540000915527344,
+      "volume": 393377.0,
+      "return": -0.03943217570711788
     }
   ],
   "data_status": "OK",

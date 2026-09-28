@@ -3,24 +3,29 @@
     "security_id": 420,
     "ticker": "JANTS",
     "name": "JANTSA JANT SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-08-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3706445825149288,
-    "momentum_126": -0.14547605324333945,
-    "momentum_63": -0.09119495874548744,
-    "momentum_21": -0.08137315767456199,
+    "momentum_12_1": -0.3076248728294928,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.4022786798539518,
+    "momentum_126": -0.18809518078827503,
+    "momentum_63": -0.14321606294250444,
+    "momentum_21": -0.13670884945170647,
     "fip_252": -0.15476190476190477,
     "fip_126": -0.12698412698412698,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 4.66369905843209,
-    "delta_momentum_21_63": 0.009821801070925451,
-    "delta_fip_21_63": 0.09523809523809523,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 5.100941486304366,
+    "delta_momentum_21_63": 0.0065072134907979695,
+    "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.037483295538508266,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 22.959999084472656,
-      "volume": 4502975.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 22.81999969482422,
       "volume": 3465109.0,
-      "return": -0.006097534635492008
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 14.449999809265137,
       "volume": 1561697.0,
       "return": 0.00556714852770801
+    },
+    {
+      "date": "2026-09-28",
+      "close": 13.640000343322754,
+      "volume": 1801311.0,
+      "return": -0.056055327102705
     }
   ],
   "data_status": "OK",

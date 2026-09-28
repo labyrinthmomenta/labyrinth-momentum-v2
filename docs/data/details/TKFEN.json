@@ -3,24 +3,29 @@
     "security_id": 237,
     "ticker": "TKFEN",
     "name": "TEKFEN HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2007-11-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.9365079365079407,
-    "momentum_126": 2.144475920679891,
-    "momentum_63": 0.9625177650513301,
-    "momentum_21": 0.2682815179593785,
+    "momentum_12_1": 1.437948111196759,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": 1.9205735856983792,
+    "momentum_126": 1.9830985915492954,
+    "momentum_63": 0.96402072704959,
+    "momentum_21": 0.197963800904978,
     "fip_252": -0.047619047619047616,
-    "fip_126": -0.15873015873015872,
+    "fip_126": -0.14285714285714285,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.749912196148531,
-    "delta_momentum_21_63": -0.6942362470919516,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 6.028007081310967,
+    "delta_momentum_21_63": -0.766056926144612,
+    "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.3546925763867823,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 94.5,
-      "volume": 5258476.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 90.6500015258789,
       "volume": 4333268.0,
-      "return": -0.04074072459387401
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 277.5,
       "volume": 5042370.0,
       "return": 0.012773722627737127
+    },
+    {
+      "date": "2026-09-28",
+      "close": 264.75,
+      "volume": 5141075.0,
+      "return": -0.04594594594594592
     }
   ],
   "data_status": "OK",

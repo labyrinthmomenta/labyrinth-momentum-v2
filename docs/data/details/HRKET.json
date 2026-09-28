@@ -3,24 +3,29 @@
     "security_id": 120,
     "ticker": "HRKET",
     "name": "HAREKET PROJE TAŞIMACILIĞI VE YÜK MÜHENDİSLİĞİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ULAŞTIRMA VE DEPOLAMA",
+    "industry": "ULAŞTIRMA VE DEPOLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-05-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.287374243788207,
-    "momentum_126": 0.8719740979859179,
-    "momentum_63": 0.0580348763177192,
-    "momentum_21": 0.1673757900109325,
-    "fip_252": 0.0,
-    "fip_126": -0.06349206349206349,
+    "momentum_12_1": 0.14546530209368513,
+    "fip_12_1": 0.004329004329004329,
+    "momentum_252": 0.3604242330410159,
+    "momentum_126": 0.888798108309337,
+    "momentum_63": 0.049046417845190815,
+    "momentum_21": 0.1876607964941659,
+    "fip_252": -0.007936507936507936,
+    "fip_126": -0.07936507936507936,
     "fip_63": 0.1111111111111111,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.1447892640381445,
-    "delta_momentum_21_63": 0.1093409136932133,
-    "delta_fip_21_63": -0.15873015873015872,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 7.33697794422784,
+    "delta_momentum_21_63": 0.13861437864897508,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03397792021797863,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.392857074737549,
-      "volume": 36885268.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.064284801483154,
       "volume": 27593874.0,
-      "return": -0.051396780721534197
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.229999542236328,
       "volume": 82419790.0,
       "return": 0.018564309399333956
+    },
+    {
+      "date": "2026-09-28",
+      "close": 8.25,
+      "volume": 44957385.0,
+      "return": 0.0024301894138669677
     }
   ],
   "data_status": "OK",

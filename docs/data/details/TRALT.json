@@ -3,24 +3,29 @@
     "security_id": 250,
     "ticker": "TRALT",
     "name": "TÜRK ALTIN İŞLETMELERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MADENCİLİK VE TAŞ OCAKÇILIĞI",
+    "industry": "METAL CEVHERİ MADENCİLİĞİ",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-02-12"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.8950570949962644,
-    "momentum_126": 0.1431193095607679,
-    "momentum_63": 0.09538461873819526,
-    "momentum_21": -0.08213626421984621,
+    "momentum_12_1": 1.0575897092209865,
+    "fip_12_1": -0.06493506493506493,
+    "momentum_252": 0.7795576304095135,
+    "momentum_126": 0.0701835201922596,
+    "momentum_63": 0.0008580205157402432,
+    "momentum_21": -0.13512513090704448,
     "fip_252": -0.06349206349206349,
-    "fip_126": -0.05555555555555555,
-    "fip_63": -0.14285714285714285,
+    "fip_126": -0.047619047619047616,
+    "fip_63": -0.1111111111111111,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 5.039489389002854,
-    "delta_momentum_21_63": -0.17752088295804147,
-    "delta_fip_21_63": 0.19047619047619047,
+    "atr14_percent": 5.577101624465972,
+    "delta_momentum_21_63": -0.13598315142278472,
+    "delta_fip_21_63": 0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.19791670535929584,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 26.299999237060547,
-      "volume": 99212428.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 26.219999313354492,
       "volume": 62497550.0,
-      "return": -0.003041822282387141
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 49.84000015258789,
       "volume": 62057774.0,
       "return": 0.02975203680394589
+    },
+    {
+      "date": "2026-09-28",
+      "close": 46.65999984741211,
+      "volume": 84605423.0,
+      "return": -0.0638041792825047
     }
   ],
   "data_status": "OK",

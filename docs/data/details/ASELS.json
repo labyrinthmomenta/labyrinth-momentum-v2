@@ -3,24 +3,29 @@
     "security_id": 32,
     "ticker": "ASELS",
     "name": "ASELSAN ELEKTRONİK SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "SAVUNMA",
+    "is_viop": true,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1990-08-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.711494252873563,
-    "momentum_126": 0.05752840909090873,
-    "momentum_63": 0.04125874125874085,
-    "momentum_21": -0.0780185758513936,
-    "fip_252": 0.01984126984126984,
+    "momentum_12_1": 0.85066419767394,
+    "fip_12_1": 0.008658008658008658,
+    "momentum_252": 0.6823178876132532,
+    "momentum_126": 0.08814814814814698,
+    "momentum_63": 0.06449275362318785,
+    "momentum_21": -0.0909653465346536,
+    "fip_252": 0.027777777777777776,
     "fip_126": 0.023809523809523808,
     "fip_63": 0.0,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.025928059906157,
-    "delta_momentum_21_63": -0.11927731711013445,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 4.081002114040571,
+    "delta_momentum_21_63": -0.15545810015784145,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.12856099342585825,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 217.5,
-      "volume": 41049717.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 218.3000030517578,
       "volume": 35589650.0,
-      "return": 0.0036781749506107353
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 372.25,
       "volume": 18048971.0,
       "return": 0.01223657375934728
+    },
+    {
+      "date": "2026-09-28",
+      "close": 367.25,
+      "volume": 24903811.0,
+      "return": -0.013431833445265329
     }
   ],
   "data_status": "OK",

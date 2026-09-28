@@ -3,23 +3,28 @@
     "security_id": 473,
     "ticker": "OTTO",
     "name": "OTTO HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2013-05-27"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7906129142976084,
-    "momentum_126": -0.7021209644877995,
-    "momentum_63": -0.44398825189584845,
-    "momentum_21": -0.3872010024442665,
+    "momentum_12_1": -0.6568889024522566,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": -0.8071111043294268,
+    "momentum_126": -0.7333333239577331,
+    "momentum_63": -0.4836406906594246,
+    "momentum_21": -0.4378237922084901,
     "fip_252": -0.15873015873015872,
-    "fip_126": -0.3333333333333333,
+    "fip_126": -0.3492063492063492,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 8.621451914734207,
-    "delta_momentum_21_63": 0.05678724945158198,
+    "atr14_percent": 9.471756005257598,
+    "delta_momentum_21_63": 0.04581689845093451,
     "delta_fip_21_63": -0.22222222222222227,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.15553066399633597,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 452.75,
-      "volume": 87970.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 450.0,
       "volume": 45881.0,
-      "return": -0.006073992269464368
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 94.80000305175781,
       "volume": 288694.0,
       "return": 0.03043481577997631
+    },
+    {
+      "date": "2026-09-28",
+      "close": 86.80000305175781,
+      "volume": 166912.0,
+      "return": -0.084388182937423
     }
   ],
   "data_status": "OK",

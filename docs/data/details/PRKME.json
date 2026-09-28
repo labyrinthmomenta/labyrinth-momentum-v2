@@ -3,24 +3,29 @@
     "security_id": 480,
     "ticker": "PRKME",
     "name": "PARK ELEKTRİK ÜRETİM MADENCİLİK SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MADENCİLİK VE TAŞ OCAKÇILIĞI",
+    "industry": "KÖMÜR VE LİNYİT MADENCİLİĞİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1997-10-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3715710631265029,
-    "momentum_126": -0.17377046361080872,
-    "momentum_63": -0.24999999999999967,
-    "momentum_21": -0.17870722374370374,
-    "fip_252": -0.047619047619047616,
+    "momentum_12_1": -0.29894180351857524,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": -0.4712773902049062,
+    "momentum_126": -0.21227479781406533,
+    "momentum_63": -0.3419567440967065,
+    "momentum_21": -0.24582208374607795,
+    "fip_252": -0.05555555555555555,
     "fip_126": -0.031746031746031744,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.605141443549785,
-    "delta_momentum_21_63": 0.07129277625629593,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 6.242962400498256,
+    "delta_momentum_21_63": 0.09613466035062856,
+    "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.14018688673368862,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 24.059999465942383,
-      "volume": 2387696.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 26.459999084472656,
       "volume": 606846.0,
-      "return": 0.09975060980061712
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 15.119999885559082,
       "volume": 1638712.0,
       "return": 0.02231236812421944
+    },
+    {
+      "date": "2026-09-28",
+      "close": 13.989999771118164,
+      "volume": 1647038.0,
+      "return": -0.0747354578699545
     }
   ],
   "data_status": "OK",

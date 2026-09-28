@@ -3,24 +3,29 @@
     "security_id": 77,
     "ticker": "EBEBK",
     "name": "EBEBEK MAĞAZACILIK A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "PERAKENDE TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-09-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.41243439021160877,
-    "momentum_126": 0.33858923694404974,
-    "momentum_63": 0.08986488548485005,
-    "momentum_21": -0.029482514960636808,
-    "fip_252": -0.051587301587301584,
-    "fip_126": -0.1746031746031746,
-    "fip_63": -0.09523809523809523,
-    "fip_21": 0.09523809523809523,
-    "atr14_percent": 3.9208527759242315,
-    "delta_momentum_21_63": -0.11934740044548686,
-    "delta_fip_21_63": 0.19047619047619047,
+    "momentum_12_1": 0.47515258456888243,
+    "fip_12_1": -0.047619047619047616,
+    "momentum_252": 0.3931997149386759,
+    "momentum_126": 0.31739488072042565,
+    "momentum_63": 0.07032819682099989,
+    "momentum_21": -0.0555555204847894,
+    "fip_252": -0.04365079365079365,
+    "fip_126": -0.15873015873015872,
+    "fip_63": -0.06349206349206349,
+    "fip_21": 0.0,
+    "atr14_percent": 3.8492924615768427,
+    "delta_momentum_21_63": -0.1258837173057893,
+    "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03636360168457031,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 57.099998474121094,
-      "volume": 689589.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 57.349998474121094,
       "volume": 380277.0,
-      "return": 0.004378283829785223
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 80.6500015258789,
       "volume": 567575.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 79.9000015258789,
+      "volume": 299401.0,
+      "return": -0.00929944185753473
     }
   ],
   "data_status": "OK",

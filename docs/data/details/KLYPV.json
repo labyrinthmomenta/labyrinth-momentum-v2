@@ -3,24 +3,29 @@
     "security_id": 139,
     "ticker": "KLYPV",
     "name": "KALYON GÜNEŞ TEKNOLOJİLERİ ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-02-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.20789861796528075,
-    "momentum_126": -0.05427044832127215,
-    "momentum_63": -0.13011451958725473,
-    "momentum_21": -0.14135702397910066,
-    "fip_252": -0.1349206349206349,
+    "momentum_12_1": -0.05812217287435273,
+    "fip_12_1": -0.12554112554112554,
+    "momentum_252": -0.18777941521087604,
+    "momentum_126": -0.03368796940558949,
+    "momentum_63": -0.10361840980452541,
+    "momentum_21": -0.13765823825814205,
+    "fip_252": -0.13095238095238096,
     "fip_126": -0.11904761904761904,
-    "fip_63": -0.1111111111111111,
+    "fip_63": -0.07936507936507936,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 5.252028210843874,
-    "delta_momentum_21_63": -0.011242504391845931,
-    "delta_fip_21_63": -0.07936507936507936,
+    "atr14_percent": 5.479539526412884,
+    "delta_momentum_21_63": -0.03403982845361664,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05334464973035802,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 67.0999984741211,
-      "volume": 4108077.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 67.0999984741211,
       "volume": 1693671.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 53.150001525878906,
       "volume": 1748651.0,
       "return": 0.01045633208579666
+    },
+    {
+      "date": "2026-09-28",
+      "close": 54.5,
+      "volume": 2341258.0,
+      "return": 0.025399782415128858
     }
   ],
   "data_status": "OK",

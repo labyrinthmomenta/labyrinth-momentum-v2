@@ -3,24 +3,29 @@
     "security_id": 609,
     "ticker": "MEGAP",
     "name": "MEGA POLİETİLEN KÖPÜK SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-05-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7044444349077013,
-    "momentum_126": -0.4340425119620184,
-    "momentum_63": -0.36363631696895826,
-    "momentum_21": -0.23999997547694596,
+    "momentum_12_1": -0.6093750016630759,
+    "fip_12_1": -0.2597402597402597,
+    "momentum_252": -0.7209821440450543,
+    "momentum_126": -0.4791666873627226,
+    "momentum_63": -0.40191385103629385,
+    "momentum_21": -0.2857142857142856,
     "fip_252": -0.2777777777777778,
-    "fip_126": -0.2857142857142857,
-    "fip_63": -0.31746031746031744,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 3.8978697072450648,
-    "delta_momentum_21_63": 0.1236363414920123,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_126": -0.30158730158730157,
+    "fip_63": -0.3333333333333333,
+    "fip_21": -0.47619047619047616,
+    "atr14_percent": 4.479666912124238,
+    "delta_momentum_21_63": 0.11619956532200826,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.02285712105887283,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.5,
-      "volume": 1389787.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.480000019073486,
       "volume": 1169624.0,
-      "return": -0.004444440205891964
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.3300000429153442,
       "volume": 743451.0,
       "return": -0.014814800424667651
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.25,
+      "volume": 944766.0,
+      "return": -0.06015040626614199
     }
   ],
   "data_status": "OK",

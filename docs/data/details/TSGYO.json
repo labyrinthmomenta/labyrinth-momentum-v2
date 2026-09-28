@@ -3,24 +3,29 @@
     "security_id": 520,
     "ticker": "TSGYO",
     "name": "TSKB GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-04-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3913565164349112,
-    "momentum_126": -0.24441130509121467,
-    "momentum_63": -0.2511078011897555,
-    "momentum_21": -0.17292005269011612,
-    "fip_252": -0.03968253968253968,
+    "momentum_12_1": -0.287037083028275,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": -0.44907406947495176,
+    "momentum_126": -0.28205125992170155,
+    "momentum_63": -0.27328242896619037,
+    "momentum_21": -0.22727267097554127,
+    "fip_252": -0.047619047619047616,
     "fip_126": -0.06349206349206349,
     "fip_63": -0.09523809523809523,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.827654340198937,
-    "delta_momentum_21_63": 0.07818774849963939,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.340947291220582,
+    "delta_momentum_21_63": 0.0460097579906491,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05347588355755728,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.329999923706055,
-      "volume": 14675497.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8.640000343322754,
       "volume": 23438912.0,
-      "return": 0.03721493666938458
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.070000171661377,
       "volume": 616641.0,
       "return": -0.013618618023832796
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.760000228881836,
+      "volume": 2622158.0,
+      "return": -0.06114397086459222
     }
   ],
   "data_status": "OK",

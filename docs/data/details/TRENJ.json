@@ -3,24 +3,29 @@
     "security_id": 243,
     "ticker": "TRENJ",
     "name": "TR DOĞAL ENERJİ KAYNAKLARI ARAŞTIRMA VE ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MADENCİLİK VE TAŞ OCAKÇILIĞI",
+    "industry": "HAM PETROL VE DOĞAL GAZ ÇIKARTILMASI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-06-30"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.44827586206896375,
-    "momentum_126": 0.11583423700986217,
-    "momentum_63": 0.26506024096385516,
-    "momentum_21": -0.032258064516129004,
-    "fip_252": -0.03571428571428571,
-    "fip_126": -0.015873015873015872,
-    "fip_63": 0.047619047619047616,
+    "momentum_12_1": 0.4855967185859693,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": 0.3401919739817778,
+    "momentum_126": 0.0349575780616771,
+    "momentum_63": 0.1301330294636731,
+    "momentum_21": -0.09787632322087525,
+    "fip_252": -0.027777777777777776,
+    "fip_126": 0.0,
+    "fip_63": 0.07936507936507936,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.888585929285736,
-    "delta_momentum_21_63": -0.29731830547998417,
-    "delta_fip_21_63": -0.38095238095238093,
+    "atr14_percent": 5.518292171433163,
+    "delta_momentum_21_63": -0.22800935268454836,
+    "delta_fip_21_63": -0.4126984126984127,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1753711392284436,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 72.5,
-      "volume": 2924024.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 72.9000015258789,
       "volume": 2424400.0,
-      "return": 0.005517262425915881
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 105.0,
       "volume": 845607.0,
       "return": 0.03652514152790021
+    },
+    {
+      "date": "2026-09-28",
+      "close": 97.69999694824219,
+      "volume": 1900248.0,
+      "return": -0.06952383858816968
     }
   ],
   "data_status": "OK",

@@ -3,23 +3,28 @@
     "security_id": 288,
     "ticker": "AKMGY",
     "name": "AKMERKEZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2005-04-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.08346772963000981,
-    "momentum_126": -0.14948548904861536,
-    "momentum_63": -0.06460904093926756,
-    "momentum_21": -0.1643382240744199,
-    "fip_252": -0.0992063492063492,
-    "fip_126": -0.15079365079365079,
+    "momentum_12_1": 0.0918614155201316,
+    "fip_12_1": 0.08225108225108226,
+    "momentum_252": -0.1265108552883355,
+    "momentum_126": -0.23661970756423323,
+    "momentum_63": -0.1052414349105597,
+    "momentum_21": -0.199999988738901,
+    "fip_252": -0.10714285714285714,
+    "fip_126": -0.16666666666666666,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.38095238095238093,
-    "atr14_percent": 4.798551769397537,
-    "delta_momentum_21_63": -0.09972918313515233,
+    "atr14_percent": 5.060371933522253,
+    "delta_momentum_21_63": -0.09475855382834131,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.10994105633758489,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 248.0,
-      "volume": 44209.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 248.1999969482422,
       "volume": 30274.0,
-      "return": 0.0008064393074280751
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 227.3000030517578,
       "volume": 739475.0,
       "return": 0.017002250790862705
+    },
+    {
+      "date": "2026-09-28",
+      "close": 216.8000030517578,
+      "volume": 63879.0,
+      "return": -0.04619445604498773
     }
   ],
   "data_status": "OK",

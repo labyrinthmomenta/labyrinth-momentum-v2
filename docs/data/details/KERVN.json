@@ -3,23 +3,28 @@
     "security_id": 607,
     "ticker": "KERVN",
     "name": "KERVANSARAY YATIRIM HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1997-07-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.9475654159841498,
-    "momentum_126": 1.0710526274512033,
-    "momentum_63": 0.132374115329829,
-    "momentum_21": -0.28062155508022923,
-    "fip_252": -0.051587301587301584,
+    "momentum_12_1": 2.8376381815999965,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": 1.6162361818399988,
+    "momentum_126": 0.9694445390024324,
+    "momentum_63": 0.055059579456578245,
+    "momentum_21": -0.31826919109158125,
+    "fip_252": -0.04365079365079365,
     "fip_126": -0.1349206349206349,
     "fip_63": -0.06349206349206349,
     "fip_21": -0.09523809523809523,
-    "atr14_percent": 7.565495036236984,
-    "delta_momentum_21_63": -0.41299567041005825,
+    "atr14_percent": 8.614001227792137,
+    "delta_momentum_21_63": -0.3733287705481595,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1277107760943963,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.6700000762939453,
-      "volume": 726443.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2.7100000381469727,
       "volume": 831611.0,
-      "return": 0.0149812586929019
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.869999885559082,
       "volume": 363534.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.090000152587891,
+      "volume": 540717.0,
+      "return": -0.099110513889897
     }
   ],
   "data_status": "OK",

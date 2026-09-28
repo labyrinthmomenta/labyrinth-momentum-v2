@@ -3,24 +3,29 @@
     "security_id": 351,
     "ticker": "DNISI",
     "name": "DİNAMİK ISI MAKİNA YALITIM MALZEMELERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2020-09-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.23575061305199718,
-    "momentum_126": -0.07878877810175222,
-    "momentum_63": -0.17483732247744854,
-    "momentum_21": -0.1528926083937523,
+    "momentum_12_1": -0.11059364464700971,
+    "fip_12_1": -0.18614718614718614,
+    "momentum_252": -0.2711022482898384,
+    "momentum_126": -0.14466068996822545,
+    "momentum_63": -0.2601654961388341,
+    "momentum_21": -0.18046712020528088,
     "fip_252": -0.19047619047619047,
-    "fip_126": -0.1746031746031746,
-    "fip_63": -0.25396825396825395,
+    "fip_126": -0.19047619047619047,
+    "fip_63": -0.2857142857142857,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.462833694964364,
-    "delta_momentum_21_63": 0.02194471408369625,
-    "delta_fip_21_63": 0.015873015873015872,
+    "atr14_percent": 5.998686721118972,
+    "delta_momentum_21_63": 0.07969837593355322,
+    "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.058749293071391984,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 5.36474084854126,
-      "volume": 6157182.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 5.2956671714782715,
       "volume": 7886403.0,
-      "return": -0.012875491848179488
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.099999904632568,
       "volume": 3541597.0,
       "return": 0.012345607788387003
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.859999895095825,
+      "volume": 3582581.0,
+      "return": -0.058536589053470034
     }
   ],
   "data_status": "OK",

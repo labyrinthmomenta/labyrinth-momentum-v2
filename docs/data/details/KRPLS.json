@@ -3,24 +3,29 @@
     "security_id": 430,
     "ticker": "KRPLS",
     "name": "KOROPLAST TEMİZLİK AMBALAJ ÜRÜNLERİ SANAYİ VE DIŞ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-07-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.2253374922643938,
-    "momentum_126": 0.40476199126298007,
-    "momentum_63": 0.300992347052504,
-    "momentum_21": 0.13680154726765426,
+    "momentum_12_1": 0.09387755697839051,
+    "fip_12_1": 0.06060606060606061,
+    "momentum_252": 0.20816325736214658,
+    "momentum_126": 0.4045076778133039,
+    "momentum_63": 0.31263853123166974,
+    "momentum_21": 0.10447759866236539,
     "fip_252": 0.051587301587301584,
     "fip_126": -0.047619047619047616,
-    "fip_63": -0.09523809523809523,
+    "fip_63": -0.12698412698412698,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.936253256519361,
-    "delta_momentum_21_63": -0.16419079978484974,
-    "delta_fip_21_63": 0.047619047619047616,
+    "atr14_percent": 7.8995008363062125,
+    "delta_momentum_21_63": -0.20816093256930435,
+    "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.20709387494470577,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 9.630000114440918,
-      "volume": 7320780.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 9.800000190734863,
       "volume": 20045582.0,
-      "return": 0.01765317489861884
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 11.800000190734863,
       "volume": 2135707.0,
       "return": 0.03508777066574664
+    },
+    {
+      "date": "2026-09-28",
+      "close": 11.84000015258789,
+      "volume": 4516160.0,
+      "return": 0.0033898272208872093
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 309,
     "ticker": "BAKAB",
     "name": "BAK AMBALAJ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1998-06-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.1591020139237379,
-    "momentum_126": -0.13806904754794147,
-    "momentum_63": -0.29644754172042886,
-    "momentum_21": -0.13936068190474982,
+    "momentum_12_1": -0.021099039035043843,
+    "fip_12_1": -0.06060606060606061,
+    "momentum_252": -0.2080471023414262,
+    "momentum_126": -0.13920003255208369,
+    "momentum_63": -0.36331364312537007,
+    "momentum_21": -0.1909775051421928,
     "fip_252": -0.06746031746031746,
     "fip_126": -0.0873015873015873,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.0092452112692225,
-    "delta_momentum_21_63": 0.15708685981567905,
-    "delta_fip_21_63": 0.015873015873015872,
+    "atr14_percent": 5.616130222495273,
+    "delta_momentum_21_63": 0.17233613798317726,
+    "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.12659375661188155,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 40.97999954223633,
-      "volume": 393459.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 40.7599983215332,
       "volume": 268024.0,
-      "return": -0.00536850227331942
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 34.459999084472656,
       "volume": 265146.0,
       "return": 0.038577419153827064
+    },
+    {
+      "date": "2026-09-28",
+      "close": 32.279998779296875,
+      "volume": 234482.0,
+      "return": -0.06326176329348976
     }
   ],
   "data_status": "OK",

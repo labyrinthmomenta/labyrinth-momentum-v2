@@ -3,24 +3,29 @@
     "security_id": 354,
     "ticker": "DOCO",
     "name": "DO & CO AKTIENGESELLSCHAFT",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "YİYECEK VE İÇECEK HİZMETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-12-02"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.015498496414528051,
-    "momentum_126": 0.21253561253561193,
-    "momentum_63": -0.08532129808725597,
-    "momentum_21": -0.08551783412118619,
+    "momentum_12_1": 0.08861940298507398,
+    "fip_12_1": 0.04329004329004329,
+    "momentum_252": -0.01422574626865758,
+    "momentum_126": 0.20633561643835518,
+    "momentum_63": -0.08028720626631902,
+    "momentum_21": -0.09447300771208234,
     "fip_252": -0.06746031746031746,
     "fip_126": 0.07142857142857142,
     "fip_63": -0.031746031746031744,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.1603578555846203,
-    "delta_momentum_21_63": -0.0001965360339302169,
-    "delta_fip_21_63": -0.20634920634920634,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 3.1913258224191,
+    "delta_momentum_21_63": -0.014185801445763313,
+    "delta_fip_21_63": -0.30158730158730157,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.028648770584254413,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10807.5,
-      "volume": 3406.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10720.0,
       "volume": 2825.0,
-      "return": -0.008096229470275218
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10640.0,
       "volume": 3280.0,
       "return": 0.02554216867469883
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10567.5,
+      "volume": 5838.0,
+      "return": -0.006813909774436078
     }
   ],
   "data_status": "OK",

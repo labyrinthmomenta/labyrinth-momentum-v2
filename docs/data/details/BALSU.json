@@ -3,24 +3,29 @@
     "security_id": 41,
     "ticker": "BALSU",
     "name": "BALSU GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2025-02-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.7020933957362925,
-    "momentum_126": -0.47887322572081137,
-    "momentum_63": -0.5771428516932895,
-    "momentum_21": -0.31162789810535496,
+    "momentum_12_1": -0.5628642880976205,
+    "fip_12_1": -0.22943722943722944,
+    "momentum_252": -0.7227310690887396,
+    "momentum_126": -0.5273243594543983,
+    "momentum_63": -0.6215909259624712,
+    "momentum_21": -0.36571430024646534,
     "fip_252": -0.23015873015873015,
     "fip_126": -0.1984126984126984,
-    "fip_63": -0.36507936507936506,
+    "fip_63": -0.3968253968253968,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 9.638482818105503,
-    "delta_momentum_21_63": 0.26551495358793453,
-    "delta_fip_21_63": 0.12698412698412698,
+    "atr14_percent": 10.738117832458412,
+    "delta_momentum_21_63": 0.2558766257160059,
+    "delta_fip_21_63": 0.15873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.33288591712301174,
     "completed_month_fip": -0.6190476190476191,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 24.84000015258789,
-      "volume": 8365589.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 24.020000457763672,
       "volume": 6205103.0,
-      "return": -0.0330112596532649
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.400000095367432,
       "volume": 46698063.0,
       "return": 0.06782110803334396
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.659999847412109,
+      "volume": 92895941.0,
+      "return": -0.10000003221872644
     }
   ],
   "data_status": "OK",

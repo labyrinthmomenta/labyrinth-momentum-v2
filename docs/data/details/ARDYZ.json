@@ -3,24 +3,29 @@
     "security_id": 29,
     "ticker": "ARDYZ",
     "name": "ARD GRUP BİLİŞİM TEKNOLOJİLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2020-02-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.438136867397763,
-    "momentum_126": 0.6214908154607868,
-    "momentum_63": 0.18584070796460095,
-    "momentum_21": -0.2653508526099638,
+    "momentum_12_1": 2.3482143902504937,
+    "fip_12_1": -0.05627705627705628,
+    "momentum_252": 1.3939732322627738,
+    "momentum_126": 0.5596219363037973,
+    "momentum_63": 0.07249997456868429,
+    "momentum_21": -0.28500001695420984,
     "fip_252": -0.031746031746031744,
     "fip_126": -0.06349206349206349,
-    "fip_63": -0.07936507936507936,
+    "fip_63": -0.047619047619047616,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 7.708586736251147,
-    "delta_momentum_21_63": -0.4511915605745648,
-    "delta_fip_21_63": -0.15873015873015872,
+    "atr14_percent": 7.913397013256033,
+    "delta_momentum_21_63": -0.35749999152289413,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.1964038222526312,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 27.479999542236328,
-      "volume": 2716998.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 26.8799991607666,
       "volume": 2101006.0,
-      "return": -0.02183407538080684
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 67.0,
       "volume": 4905864.0,
       "return": 0.058451829502917274
+    },
+    {
+      "date": "2026-09-28",
+      "close": 64.3499984741211,
+      "volume": 4790674.0,
+      "return": -0.03955226158028213
     }
   ],
   "data_status": "OK",

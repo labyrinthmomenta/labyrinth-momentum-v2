@@ -3,24 +3,29 @@
     "security_id": 549,
     "ticker": "ATLAS",
     "name": "ATLAS MENKUL KIYMETLER YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-02-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.19414480685375934,
-    "momentum_126": -0.3918604898736424,
-    "momentum_63": -0.3072847831856228,
-    "momentum_21": -0.18025079541369327,
-    "fip_252": -0.15873015873015872,
+    "momentum_12_1": -0.06994044715264036,
+    "fip_12_1": -0.16017316017316016,
+    "momentum_252": -0.2812499889128267,
+    "momentum_126": -0.42293906932551495,
+    "momentum_63": -0.3893805288395459,
+    "momentum_21": -0.22720001220703157,
+    "fip_252": -0.16666666666666666,
     "fip_126": -0.19047619047619047,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 9.671592980927011,
-    "delta_momentum_21_63": 0.12703398777192954,
-    "delta_fip_21_63": -0.07936507936507936,
+    "atr14_percent": 10.316054859466314,
+    "delta_momentum_21_63": 0.16218051663251432,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.13841808328163097,
     "completed_month_fip": -0.38095238095238093,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.489999771118164,
-      "volume": 1285877.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.71999979019165,
       "volume": 1341775.0,
-      "return": 0.03543914132278303
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.230000019073486,
       "volume": 649253.0,
       "return": -0.024253752090054648
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.829999923706055,
+      "volume": 1082578.0,
+      "return": -0.07648185351981951
     }
   ],
   "data_status": "OK",

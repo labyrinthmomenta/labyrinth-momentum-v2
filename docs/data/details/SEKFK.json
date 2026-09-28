@@ -3,24 +3,29 @@
     "security_id": 586,
     "ticker": "SEKFK",
     "name": "ŞEKER FİNANSAL KİRALAMA A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2004-07-23"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5340909300264249,
-    "momentum_126": -0.5854398622543334,
-    "momentum_63": -0.5980392175195587,
-    "momentum_21": -0.08482145375515149,
+    "momentum_12_1": -0.47662486738816834,
+    "fip_12_1": -0.09523809523809523,
+    "momentum_252": -0.5438996817316031,
+    "momentum_126": -0.5959595803909916,
+    "momentum_63": -0.6105160835726962,
+    "momentum_21": -0.1285403339813055,
     "fip_252": -0.11507936507936507,
-    "fip_126": -0.20634920634920634,
-    "fip_63": -0.3333333333333333,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.228565364482894,
-    "delta_momentum_21_63": 0.5132177637644072,
-    "delta_fip_21_63": 0.09523809523809523,
+    "fip_126": -0.2222222222222222,
+    "fip_63": -0.36507936507936506,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.422902278058499,
+    "delta_momentum_21_63": 0.48197574959139067,
+    "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.08943090455232194,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 8.800000190734863,
-      "volume": 536752.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 8.770000457763672,
       "volume": 388638.0,
-      "return": -0.003409060491018745
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.099999904632568,
       "volume": 299873.0,
       "return": 0.004901956201103674
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.0,
+      "volume": 347683.0,
+      "return": -0.02439022120941492
     }
   ],
   "data_status": "OK",

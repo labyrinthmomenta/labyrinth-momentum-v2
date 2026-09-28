@@ -3,23 +3,28 @@
     "security_id": 381,
     "ticker": "FONET",
     "name": "FONET BİLGİ TEKNOLOJİLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2017-05-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.7019174476941306,
-    "momentum_126": -0.22654870587663445,
-    "momentum_63": -0.1981651305510187,
-    "momentum_21": -0.1723485394108154,
+    "momentum_12_1": 1.0543016956066111,
+    "fip_12_1": 0.05627705627705628,
+    "momentum_252": 0.669615927312315,
+    "momentum_126": -0.24280574074209127,
+    "momentum_63": -0.21013131361929294,
+    "momentum_21": -0.1872586529607585,
     "fip_252": 0.06746031746031746,
     "fip_126": -0.05555555555555555,
     "fip_63": -0.1111111111111111,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 5.623210415824461,
-    "delta_momentum_21_63": 0.025816591140203293,
+    "atr14_percent": 5.979887422950754,
+    "delta_momentum_21_63": 0.02287266065853444,
     "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.04942969915746709,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2.5676920413970947,
-      "volume": 29560713.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2.521538019180298,
       "volume": 20118202.0,
-      "return": -0.017974905663408203
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 4.369999885559082,
       "volume": 29447207.0,
       "return": 0.08168315020347028
+    },
+    {
+      "date": "2026-09-28",
+      "close": 4.210000038146973,
+      "volume": 24736734.0,
+      "return": -0.036613238352897426
     }
   ],
   "data_status": "OK",

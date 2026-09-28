@@ -3,24 +3,29 @@
     "security_id": 630,
     "ticker": "YBTAS",
     "name": "YİBİTAŞ YOZGAT İŞÇİ BİRLİĞİ İNŞAAT MALZEMELERİ TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-09-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6522580731299608,
-    "momentum_126": -0.43263159300151566,
-    "momentum_63": -0.3103007259090612,
-    "momentum_21": -0.23000001907348633,
+    "momentum_12_1": -0.5433333396911624,
+    "fip_12_1": -0.19913419913419914,
+    "momentum_252": -0.6763333320617678,
+    "momentum_126": -0.4913567333402743,
+    "momentum_63": -0.38505382763740903,
+    "momentum_21": -0.2912408632604342,
     "fip_252": -0.24206349206349206,
-    "fip_126": -0.23015873015873015,
-    "fip_63": -0.3333333333333333,
+    "fip_126": -0.24603174603174602,
+    "fip_63": -0.36507936507936506,
     "fip_21": -0.7142857142857143,
-    "atr14_percent": 2.8608018286236545,
-    "delta_momentum_21_63": 0.08030070683557489,
-    "delta_fip_21_63": -0.380952380952381,
+    "atr14_percent": 3.7510134749281274,
+    "delta_momentum_21_63": 0.09381296437697484,
+    "delta_fip_21_63": -0.34920634920634924,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.027387598027876048,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 31.0,
-      "volume": 170174.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 30.0,
       "volume": 150229.0,
-      "return": -0.032258064516129004
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.779999732971191,
       "volume": 51946.0,
       "return": -0.011009164198049981
+    },
+    {
+      "date": "2026-09-28",
+      "close": 9.710000038146973,
+      "volume": 80783.0,
+      "return": -0.09925785912142171
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 225,
     "ticker": "SMRTG",
     "name": "SMART GÜNEŞ ENERJİSİ TEKNOLOJİLERİ ARAŞTIRMA GELİŞTİRME ÜRETİM SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-03-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.47465889412820994,
-    "momentum_126": -0.26766307490379504,
-    "momentum_63": -0.5401024109488316,
-    "momentum_21": -0.46421474734978574,
+    "momentum_12_1": 0.013324533606540179,
+    "fip_12_1": 0.025974025974025976,
+    "momentum_252": -0.4973350646875211,
+    "momentum_126": -0.3109588933720293,
+    "momentum_63": -0.5603146508472325,
+    "momentum_21": -0.5039447692799508,
     "fip_252": -0.05952380952380952,
     "fip_126": -0.007936507936507936,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 10.500929369675134,
-    "delta_momentum_21_63": 0.07588766359904586,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 11.201363855258373,
+    "delta_momentum_21_63": 0.05636988156728173,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.0364485417383591,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 10.260000228881836,
-      "volume": 11140491.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 10.00666618347168,
       "volume": 7713861.0,
-      "return": -0.024691426877069933
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.389999866485596,
       "volume": 67520919.0,
       "return": 0.09999995134314799
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.03000020980835,
+      "volume": 42973513.0,
+      "return": -0.0667902904628408
     }
   ],
   "data_status": "OK",

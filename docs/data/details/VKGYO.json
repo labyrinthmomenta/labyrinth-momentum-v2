@@ -3,24 +3,29 @@
     "security_id": 267,
     "ticker": "VKGYO",
     "name": "VAKIF GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1997-01-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.1412898060014608,
-    "momentum_126": -0.17419057645982405,
-    "momentum_63": -0.1866553804990947,
-    "momentum_21": -0.11518320065214349,
-    "fip_252": -0.023809523809523808,
-    "fip_126": -0.023809523809523808,
-    "fip_63": -0.09523809523809523,
-    "fip_21": -0.09523809523809523,
-    "atr14_percent": 3.3148966172334813,
-    "delta_momentum_21_63": 0.0714721798469512,
-    "delta_fip_21_63": 0.0,
+    "momentum_12_1": -0.02323439351230372,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": -0.18518513826078975,
+    "momentum_126": -0.21628489233481063,
+    "momentum_63": -0.24786318360498594,
+    "momentum_21": -0.16580307872513733,
+    "fip_252": -0.031746031746031744,
+    "fip_126": -0.03968253968253968,
+    "fip_63": -0.12698412698412698,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 3.585993112971945,
+    "delta_momentum_21_63": 0.0820601048798486,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.021709874237695215,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.96806800365448,
-      "volume": 85572193.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.9759089946746826,
       "volume": 49519202.0,
-      "return": 0.0039841057349860876
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.690000057220459,
       "volume": 15925750.0,
       "return": -0.00588234716633218
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.6100000143051147,
+      "volume": 19973231.0,
+      "return": -0.047337301897445005
     }
   ],
   "data_status": "OK",

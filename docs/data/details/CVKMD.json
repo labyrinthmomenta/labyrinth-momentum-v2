@@ -3,24 +3,29 @@
     "security_id": 63,
     "ticker": "CVKMD",
     "name": "CVK MADEN İŞLETMELERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MADENCİLİK VE TAŞ OCAKÇILIĞI",
+    "industry": "METAL CEVHERİ MADENCİLİĞİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-04-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.05199998219808055,
-    "momentum_126": -0.54099417439816,
-    "momentum_63": -0.6467958057657646,
-    "momentum_21": -0.09599487089322867,
-    "fip_252": 0.051587301587301584,
-    "fip_126": 0.015873015873015872,
+    "momentum_12_1": 0.010397557940524882,
+    "fip_12_1": -0.06926406926406926,
+    "momentum_252": -0.21590217763213293,
+    "momentum_126": -0.609860028706583,
+    "momentum_63": -0.669927918525767,
+    "momentum_21": -0.22397098428654183,
+    "fip_252": 0.04365079365079365,
+    "fip_126": 0.0,
     "fip_63": -0.047619047619047616,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.891321243296372,
-    "delta_momentum_21_63": 0.5508009348725359,
-    "delta_fip_21_63": -0.09523809523809523,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 7.883495017113338,
+    "delta_momentum_21_63": 0.4459569342392252,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.556848218822818,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 15.0,
-      "volume": 69082097.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 16.350000381469727,
       "volume": 80114445.0,
-      "return": 0.09000002543131513
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 14.220000267028809,
       "volume": 35003824.0,
       "return": -0.0035038674934071423
+    },
+    {
+      "date": "2026-09-28",
+      "close": 12.819999694824219,
+      "volume": 29420666.0,
+      "return": -0.09845292165364439
     }
   ],
   "data_status": "OK",

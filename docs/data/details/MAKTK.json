@@ -3,24 +3,29 @@
     "security_id": 444,
     "ticker": "MAKTK",
     "name": "MAKİNA TAKIM ENDÜSTRİSİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-24"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6344756034168673,
-    "momentum_126": -0.4597083571660432,
-    "momentum_63": -0.4281072524876297,
-    "momentum_21": -0.3237271791504257,
-    "fip_252": -0.20634920634920634,
+    "momentum_12_1": -0.47163118408764937,
+    "fip_12_1": -0.19480519480519481,
+    "momentum_252": -0.6656534963952176,
+    "momentum_126": -0.49308758275065456,
+    "momentum_63": -0.46122449758101547,
+    "momentum_21": -0.367209998895457,
+    "fip_252": -0.21428571428571427,
     "fip_126": -0.19047619047619047,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.425846274865061,
-    "delta_momentum_21_63": 0.104380073337204,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 6.959886105775684,
+    "delta_momentum_21_63": 0.09401449868555845,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.09499492429004541,
     "completed_month_fip": -0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 19.260000228881836,
-      "volume": 9509912.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 19.739999771118164,
       "volume": 9230848.0,
-      "return": 0.024922094316309096
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.039999961853027,
       "volume": 2194584.0,
       "return": 0.03529408299799286
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.599999904632568,
+      "volume": 2350509.0,
+      "return": -0.06250000846656889
     }
   ],
   "data_status": "OK",

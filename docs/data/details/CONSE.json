@@ -3,24 +3,29 @@
     "security_id": 333,
     "ticker": "CONSE",
     "name": "CONSUS ENERJİ İŞLETMECİLİĞİ VE HİZMETLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-04-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5014409208041504,
-    "momentum_126": -0.48358206915733226,
-    "momentum_63": -0.36162361818400046,
-    "momentum_21": -0.2412280522885415,
+    "momentum_12_1": -0.3197674781261346,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.5261627999655676,
+    "momentum_126": -0.5148809386539757,
+    "momentum_63": -0.39179106170548506,
+    "momentum_21": -0.30341877990612276,
     "fip_252": -0.11507936507936507,
-    "fip_126": -0.19047619047619047,
+    "fip_126": -0.20634920634920634,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.767709125758377,
-    "delta_momentum_21_63": 0.12039556589545897,
-    "delta_fip_21_63": -0.2222222222222222,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 6.341620409993494,
+    "delta_momentum_21_63": 0.0883722817993623,
+    "delta_fip_21_63": -0.3174603174603175,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03813555854656403,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.4700000286102295,
-      "volume": 6330968.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.440000057220459,
       "volume": 5333501.0,
-      "return": -0.008645524824904882
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.7300000190734863,
       "volume": 3268515.0,
       "return": -0.011428560529436416
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.6299999952316284,
+      "volume": 4581187.0,
+      "return": -0.05780348135222202
     }
   ],
   "data_status": "OK",

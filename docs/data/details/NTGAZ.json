@@ -3,24 +3,29 @@
     "security_id": 183,
     "ticker": "NTGAZ",
     "name": "NATURELGAZ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-04-01"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.11229937906114906,
-    "momentum_126": -0.195669035338906,
-    "momentum_63": -0.08370050493482295,
-    "momentum_21": -0.07883085441363291,
-    "fip_252": 0.07539682539682539,
+    "momentum_12_1": 0.19318180026907883,
+    "fip_12_1": 0.06060606060606061,
+    "momentum_252": 0.04855364654308891,
+    "momentum_126": -0.15627598970665868,
+    "momentum_63": -0.10886748792061429,
+    "momentum_21": -0.12121216875196572,
+    "fip_252": 0.08333333333333333,
     "fip_126": -0.15079365079365079,
-    "fip_63": -0.12698412698412698,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.5678602050407737,
-    "delta_momentum_21_63": 0.004869650521190039,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_63": -0.15873015873015872,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 3.654994300816293,
+    "delta_momentum_21_63": -0.012344680831351429,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.03835863547836871,
     "completed_month_fip": 0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 9.350000381469727,
-      "volume": 5352904.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 9.680000305175781,
       "volume": 9490045.0,
-      "return": 0.035294108047317696
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 10.399999618530273,
       "volume": 2089126.0,
       "return": -0.0047847073346865
+    },
+    {
+      "date": "2026-09-28",
+      "close": 10.149999618530273,
+      "volume": 2584611.0,
+      "return": -0.024038462420187034
     }
   ],
   "data_status": "OK",

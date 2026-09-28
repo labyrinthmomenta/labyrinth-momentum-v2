@@ -3,24 +3,29 @@
     "security_id": 219,
     "ticker": "SARKY",
     "name": "SARKUYSAN ELEKTROLİTİK BAKIR SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "ANA METAL SANAYİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.4369461359288189,
-    "momentum_126": -0.2395382234533293,
-    "momentum_63": -0.20211961155062008,
-    "momentum_21": -0.1996962869556036,
-    "fip_252": 0.05952380952380952,
+    "momentum_12_1": 0.7358239396305688,
+    "fip_12_1": 0.03463203463203463,
+    "momentum_252": 0.3435623547141726,
+    "momentum_126": -0.27134588153460126,
+    "momentum_63": -0.24171687520273644,
+    "momentum_21": -0.22598005244695496,
+    "fip_252": 0.06746031746031746,
     "fip_126": -0.15873015873015872,
-    "fip_63": -0.07936507936507936,
+    "fip_63": -0.1111111111111111,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.098010628933667,
-    "delta_momentum_21_63": 0.002423324595016485,
-    "delta_fip_21_63": -0.3492063492063492,
+    "atr14_percent": 5.426510379920484,
+    "delta_momentum_21_63": 0.015736822755781477,
+    "delta_fip_21_63": -0.31746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.05471377207649675,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 14.670000076293945,
-      "volume": 6751970.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 14.989999771118164,
       "volume": 5698746.0,
-      "return": 0.021813203351056742
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 21.079999923706055,
       "volume": 2656828.0,
       "return": -0.006597520932073331
+    },
+    {
+      "date": "2026-09-28",
+      "close": 20.139999389648438,
+      "volume": 3437411.0,
+      "return": -0.04459205585672299
     }
   ],
   "data_status": "OK",

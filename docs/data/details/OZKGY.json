@@ -3,24 +3,29 @@
     "security_id": 197,
     "ticker": "OZKGY",
     "name": "ÖZAK GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-02-15"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.09851851286711599,
-    "momentum_126": -0.10316872881465611,
-    "momentum_63": -0.1998685045515225,
-    "momentum_21": -0.11875454695809984,
-    "fip_252": 0.003968253968253968,
+    "momentum_12_1": 0.029563974877975685,
+    "fip_12_1": -0.021645021645021644,
+    "momentum_252": -0.11308202240704812,
+    "momentum_126": -0.11242606555466828,
+    "momentum_63": -0.22730198285044279,
+    "momentum_21": -0.1385499111912205,
+    "fip_252": -0.003968253968253968,
     "fip_126": 0.0,
-    "fip_63": -0.1111111111111111,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 3.377176755487609,
-    "delta_momentum_21_63": 0.08111395759342266,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_63": -0.14285714285714285,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 3.3648998832692887,
+    "delta_momentum_21_63": 0.08875207165922228,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.06776994789511126,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 13.5,
-      "volume": 3345957.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 13.529999732971191,
       "volume": 2822674.0,
-      "return": 0.002222202442310417
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 12.170000076293945,
       "volume": 2403301.0,
       "return": -0.000821036833438038
+    },
+    {
+      "date": "2026-09-28",
+      "close": 12.0,
+      "volume": 3815183.0,
+      "return": -0.013968781859343582
     }
   ],
   "data_status": "OK",

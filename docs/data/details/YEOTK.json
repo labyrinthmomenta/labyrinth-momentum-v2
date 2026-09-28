@@ -3,23 +3,28 @@
     "security_id": 275,
     "ticker": "YEOTK",
     "name": "YEO TEKNOLOJİ ENERJİ VE ENDÜSTRİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MESLEKİ, BİLİMSEL VE TEKNİK FAALİYETLER",
+    "industry": "MİMARLIK VE MÜHENDİSLİK FAALİYETLERİ; TEKNİK MUAYENE VE ANALİZ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-09-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 0.9318455164725143,
-    "momentum_126": 0.4473507551530611,
-    "momentum_63": -0.2958834079929944,
-    "momentum_21": -0.12605041747426182,
+    "momentum_12_1": 1.2331328656671823,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": 0.8641035442202118,
+    "momentum_126": 0.32383550762875934,
+    "momentum_63": -0.32181094961751,
+    "momentum_21": -0.16525184287980899,
     "fip_252": 0.011904761904761904,
-    "fip_126": 0.015873015873015872,
+    "fip_126": 0.031746031746031744,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.507180735910681,
-    "delta_momentum_21_63": 0.16983299051873257,
+    "atr14_percent": 8.002209732265673,
+    "delta_momentum_21_63": 0.15655910673770101,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.12102567232572126,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 16.150360107421875,
-      "volume": 14533105.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 15.825301170349121,
       "volume": 8611539.0,
-      "return": -0.020127039577487404
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 31.200000762939453,
       "volume": 17728093.0,
       "return": 0.058344682748005416
+    },
+    {
+      "date": "2026-09-28",
+      "close": 29.5,
+      "volume": 14533326.0,
+      "return": -0.054487202607981344
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 200,
     "ticker": "PAPIL",
     "name": "PAPİLON SAVUNMA TEKNOLOJİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TEKNOLOJİ",
+    "industry": "BİLİŞİM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2019-12-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5393195712050578,
-    "momentum_126": -0.4636363354877707,
-    "momentum_63": -0.4923171483415445,
-    "momentum_21": -0.37042680633149616,
+    "momentum_12_1": -0.22492914442822387,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.5745042271277285,
+    "momentum_126": -0.5088292840014056,
+    "momentum_63": -0.5231745886424235,
+    "momentum_21": -0.4510233873284013,
     "fip_252": -0.0992063492063492,
     "fip_126": -0.05555555555555555,
     "fip_63": -0.2222222222222222,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 8.616462117199127,
-    "delta_momentum_21_63": 0.12189034201004834,
-    "delta_fip_21_63": -0.015873015873015872,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 9.522881117277649,
+    "delta_momentum_21_63": 0.0721512013140222,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.20311153357428302,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 17.93000030517578,
-      "volume": 8187987.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 17.649999618530273,
       "volume": 7167140.0,
-      "return": -0.015616323585040948
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 8.260000228881836,
       "volume": 4153994.0,
       "return": 0.013497008036841951
+    },
+    {
+      "date": "2026-09-28",
+      "close": 7.510000228881836,
+      "volume": 4898190.0,
+      "return": -0.0907990289609869
     }
   ],
   "data_status": "OK",

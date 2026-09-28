@@ -3,24 +3,29 @@
     "security_id": 510,
     "ticker": "SEGYO",
     "name": "ŞEKER GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-06-07"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.39075631178096226,
-    "momentum_126": -0.36956518358904766,
-    "momentum_63": -0.3709327524126047,
-    "momentum_21": -0.23076920158107583,
+    "momentum_12_1": -0.19873151235305608,
+    "fip_12_1": -0.06493506493506493,
+    "momentum_252": -0.4016913504663374,
+    "momentum_126": -0.39787233222281015,
+    "momentum_63": -0.38344230291354786,
+    "momentum_21": -0.2532981656489529,
     "fip_252": -0.0873015873015873,
-    "fip_126": -0.11904761904761904,
+    "fip_126": -0.1349206349206349,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.741633020410804,
-    "delta_momentum_21_63": 0.14016355083152887,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.766269322965491,
+    "delta_momentum_21_63": 0.13014413726459495,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.04738161715567246,
     "completed_month_fip": 0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.760000228881836,
-      "volume": 8971892.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.730000019073486,
       "volume": 6567229.0,
-      "return": -0.0063025647827326114
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.9000000953674316,
       "volume": 1640199.0,
       "return": 0.03202852470483175
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.8299999237060547,
+      "volume": 1946523.0,
+      "return": -0.024137989434275475
     }
   ],
   "data_status": "OK",

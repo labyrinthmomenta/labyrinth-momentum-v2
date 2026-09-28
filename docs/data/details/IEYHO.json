@@ -3,24 +3,29 @@
     "security_id": 127,
     "ticker": "IEYHO",
     "name": "IŞIKLAR ENERJİ VE YAPI HOLDİNG A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1998-08-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 2.6417032959530857,
-    "momentum_126": 0.09190972607995862,
-    "momentum_63": -0.32054796610793024,
-    "momentum_21": -0.48865980954514343,
-    "fip_252": -0.5595238095238095,
-    "fip_126": -0.40476190476190477,
-    "fip_63": 0.36507936507936506,
-    "fip_21": 0.23809523809523808,
-    "atr14_percent": 9.225283933745454,
-    "delta_momentum_21_63": -0.1681118434372132,
-    "delta_fip_21_63": -0.12698412698412698,
+    "momentum_12_1": 5.997136587799792,
+    "fip_12_1": -0.5887445887445888,
+    "momentum_252": 2.1961346222203963,
+    "momentum_126": -0.0170610396081049,
+    "momentum_63": -0.412499979922646,
+    "momentum_21": -0.5432224907838474,
+    "fip_252": -0.5515873015873016,
+    "fip_126": 0.3968253968253968,
+    "fip_63": 0.3333333333333333,
+    "fip_21": 0.14285714285714285,
+    "atr14_percent": 10.307890533079878,
+    "delta_momentum_21_63": -0.13072251086120146,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.2394030215135261,
     "completed_month_fip": -0.7142857142857143,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 27.239999771118164,
-      "volume": 48436470.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 27.940000534057617,
       "volume": 36658755.0,
-      "return": 0.02569753189504964
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 99.19999694824219,
       "volume": 3786.0,
       "return": -0.09981851456099755
+    },
+    {
+      "date": "2026-09-28",
+      "close": 89.30000305175781,
+      "volume": 498825.0,
+      "return": -0.0997983286395635
     }
   ],
   "data_status": "OK",

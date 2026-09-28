@@ -3,24 +3,29 @@
     "security_id": 598,
     "ticker": "BARMA",
     "name": "BAREM AMBALAJ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-08-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6647111967734823,
-    "momentum_126": -0.8386886754925917,
-    "momentum_63": -0.8972337549831131,
-    "momentum_21": -0.19762422843527183,
+    "momentum_12_1": -0.5637898534776903,
+    "fip_12_1": 0.15151515151515152,
+    "momentum_252": -0.6735459597667521,
+    "momentum_126": -0.8507718668690267,
+    "momentum_63": -0.895259588295119,
+    "momentum_21": -0.2516129144727459,
     "fip_252": 0.11904761904761904,
-    "fip_126": -0.05555555555555555,
+    "fip_126": -0.07142857142857142,
     "fip_63": -0.3492063492063492,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 11.417576126487496,
-    "delta_momentum_21_63": 0.6996095265478413,
-    "delta_fip_21_63": 0.20634920634920634,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 11.964528018606664,
+    "delta_momentum_21_63": 0.6436466738223731,
+    "delta_fip_21_63": 0.1111111111111111,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.6411483242672165,
     "completed_month_fip": -0.38095238095238093,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 22.15999984741211,
-      "volume": 2442690.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 21.31999969482422,
       "volume": 1960103.0,
-      "return": -0.03790614433086237
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 7.429999828338623,
       "volume": 1119644.0,
       "return": 0.03626216865803267
+    },
+    {
+      "date": "2026-09-28",
+      "close": 6.960000038146973,
+      "volume": 503779.0,
+      "return": -0.06325703917233394
     }
   ],
   "data_status": "OK",

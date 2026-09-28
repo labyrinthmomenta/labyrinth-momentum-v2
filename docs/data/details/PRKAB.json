@@ -3,23 +3,28 @@
     "security_id": 524,
     "ticker": "PRKAB",
     "name": "TÜRK PRYSMİAN KABLO VE SİSTEMLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1986-01-17"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.28376163336610627,
-    "momentum_126": -0.34565434156173513,
-    "momentum_63": -0.2794279339071182,
-    "momentum_21": -0.18022523424700632,
+    "momentum_12_1": -0.12092768968797418,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.3103258227402287,
+    "momentum_126": -0.384425864586337,
+    "momentum_63": -0.3041783153064982,
+    "momentum_21": -0.21545227944334644,
     "fip_252": -0.1746031746031746,
-    "fip_126": -0.1746031746031746,
+    "fip_126": -0.19047619047619047,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 5.383588958511568,
-    "delta_momentum_21_63": 0.09920269966011186,
+    "atr14_percent": 5.677828960882576,
+    "delta_momentum_21_63": 0.08872603586315175,
     "delta_fip_21_63": -0.28571428571428575,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.06276403023579302,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 36.58000183105469,
-      "volume": 934951.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 36.220001220703125,
       "volume": 488980.0,
-      "return": -0.009841459604464475
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 26.200000762939453,
       "volume": 311872.0,
       "return": 0.003062784116985684
+    },
+    {
+      "date": "2026-09-28",
+      "close": 24.979999542236328,
+      "volume": 456988.0,
+      "return": -0.04656493073194279
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 526,
     "ticker": "UFUK",
     "name": "UFUK YATIRIM YÖNETİM VE GAYRİMENKUL A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2006-11-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.47097625329815185,
-    "momentum_126": -0.6601694915254236,
-    "momentum_63": -0.6523121387283235,
-    "momentum_21": -0.6482456140350876,
+    "momentum_12_1": 0.5611061552185563,
+    "fip_12_1": 0.08658008658008658,
+    "momentum_252": -0.5169491525423724,
+    "momentum_126": -0.6776785714285714,
+    "momentum_63": -0.691628701594533,
+    "momentum_21": -0.6905714285714285,
     "fip_252": -0.1349206349206349,
     "fip_126": -0.19047619047619047,
-    "fip_63": -0.23809523809523808,
-    "fip_21": -0.5714285714285714,
-    "atr14_percent": 16.782128568329103,
-    "delta_momentum_21_63": 0.004066524693235873,
-    "delta_fip_21_63": -0.3333333333333333,
+    "fip_63": -0.2698412698412698,
+    "fip_21": -0.6666666666666666,
+    "atr14_percent": 18.101550491405803,
+    "delta_momentum_21_63": 0.0010572730231045435,
+    "delta_fip_21_63": -0.3968253968253968,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.088963963963964,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1137.0,
-      "volume": 129656.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1121.0,
       "volume": 80999.0,
-      "return": -0.014072119613016687
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 601.5,
       "volume": 3014.0,
       "return": -0.09955089820359286
+    },
+    {
+      "date": "2026-09-28",
+      "close": 541.5,
+      "volume": 3832.0,
+      "return": -0.09975062344139651
     }
   ],
   "data_status": "OK",

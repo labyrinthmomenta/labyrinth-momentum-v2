@@ -3,24 +3,29 @@
     "security_id": 602,
     "ticker": "DIRIT",
     "name": "DİRİTEKS DİRİLİŞ TEKSTİL SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2012-09-03"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3180645358177925,
-    "momentum_126": -0.17098041609221837,
-    "momentum_63": -0.14343601587334398,
-    "momentum_21": -0.19984862495829925,
-    "fip_252": -0.11904761904761904,
-    "fip_126": -0.10317460317460317,
+    "momentum_12_1": -0.16129032258064524,
+    "fip_12_1": -0.12121212121212122,
+    "momentum_252": -0.31290325041740186,
+    "momentum_126": -0.1647059122721357,
+    "momentum_63": -0.14936108393461034,
+    "momentum_21": -0.18076926011305583,
+    "fip_252": -0.11507936507936507,
+    "fip_126": -0.09523809523809523,
     "fip_63": -0.1111111111111111,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.529023826313838,
-    "delta_momentum_21_63": -0.05641260908495527,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 6.070779089804042,
+    "delta_momentum_21_63": -0.03140817617844549,
+    "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.15331617048083035,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 31.0,
-      "volume": 110543.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 31.0,
       "volume": 80455.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 21.139999389648438,
       "volume": 120937.0,
       "return": 0.006666637602306569
+    },
+    {
+      "date": "2026-09-28",
+      "close": 21.299999237060547,
+      "volume": 112788.0,
+      "return": 0.007568583350596292
     }
   ],
   "data_status": "OK",

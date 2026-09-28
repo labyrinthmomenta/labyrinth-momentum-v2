@@ -3,24 +3,29 @@
     "security_id": 277,
     "ticker": "ZRGYO",
     "name": "ZİRAAT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2021-05-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.16695276897095546,
-    "momentum_126": -0.11531452256430685,
-    "momentum_63": 0.07475085389761893,
-    "momentum_21": -0.004615392440404653,
-    "fip_252": -0.05952380952380952,
+    "momentum_12_1": -0.15508252058353833,
+    "fip_12_1": -0.06926406926406926,
+    "momentum_252": -0.14856646430432652,
+    "momentum_126": -0.13580246394455098,
+    "momentum_63": 0.08587264320913057,
+    "momentum_21": 0.007712062346860726,
+    "fip_252": -0.051587301587301584,
     "fip_126": -0.07142857142857142,
-    "fip_63": 0.031746031746031744,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.3267682762044037,
-    "delta_momentum_21_63": -0.07936624633802358,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_63": 0.0,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 3.2778551519182284,
+    "delta_momentum_21_63": -0.07816058086226985,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.043850249271076835,
     "completed_month_fip": 0.2857142857142857,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 23.299999237060547,
-      "volume": 850302.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 23.020000457763672,
       "volume": 1158693.0,
-      "return": -0.012017115384772792
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.40999984741211,
       "volume": 1296194.0,
       "return": 0.021578939337479452
+    },
+    {
+      "date": "2026-09-28",
+      "close": 19.600000381469727,
+      "volume": 1319152.0,
+      "return": 0.009788796267453215
     }
   ],
   "data_status": "OK",

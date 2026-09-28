@@ -3,23 +3,28 @@
     "security_id": 279,
     "ticker": "AVOD",
     "name": "A.V.O.D. KURUTULMUŞ GIDA VE TARIM ÜRÜNLERİ SANAYİ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "GIDA, İÇECEK VE TÜTÜN",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2011-12-06"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.3475609779736134,
-    "momentum_126": -0.28982299741315876,
-    "momentum_63": -0.20544552760969814,
-    "momentum_21": -0.18320611103814333,
+    "momentum_12_1": -0.16417909840769962,
+    "fip_12_1": -0.11255411255411256,
+    "momentum_252": -0.3475479945744273,
+    "momentum_126": -0.3154362222803726,
+    "momentum_63": -0.22727274916607743,
+    "momentum_21": -0.21938778489195054,
     "fip_252": -0.13095238095238096,
     "fip_126": -0.12698412698412698,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.249940255288502,
-    "delta_momentum_21_63": 0.022239416571554815,
+    "atr14_percent": 7.598973346633891,
+    "delta_momentum_21_63": 0.007884964274126882,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.02406414811225077,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.920000076293945,
-      "volume": 97334016.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.690000057220459,
       "volume": 76182345.0,
-      "return": -0.046747970631483615
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.2100000381469727,
       "volume": 5600433.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.059999942779541,
+      "volume": 5253643.0,
+      "return": -0.046729001116779356
     }
   ],
   "data_status": "OK",

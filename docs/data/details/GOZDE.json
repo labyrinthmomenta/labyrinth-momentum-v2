@@ -3,24 +3,29 @@
     "security_id": 113,
     "ticker": "GOZDE",
     "name": "GÖZDE GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-01-25"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.10326090102009333,
-    "momentum_126": -0.04162636092464833,
-    "momentum_63": -0.16385139434593565,
-    "momentum_21": -0.12466850121781081,
+    "momentum_12_1": 0.020909049294212112,
+    "fip_12_1": -0.047619047619047616,
+    "momentum_252": -0.11954541639848137,
+    "momentum_126": -0.05604286514989709,
+    "momentum_63": -0.1935886565325733,
+    "momentum_21": -0.1375778437754025,
     "fip_252": 0.01984126984126984,
     "fip_126": 0.05555555555555555,
-    "fip_63": -0.015873015873015872,
+    "fip_63": -0.047619047619047616,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 4.689908560948453,
-    "delta_momentum_21_63": 0.03918289312812484,
-    "delta_fip_21_63": -0.2698412698412698,
+    "atr14_percent": 4.753972751929095,
+    "delta_momentum_21_63": 0.05601081275717079,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.06165544649516619,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 22.079999923706055,
-      "volume": 2884676.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 22.0,
       "volume": 1839649.0,
-      "return": -0.003623184962974757
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.799999237060547,
       "volume": 605409.0,
       "return": 0.018518451291821503
+    },
+    {
+      "date": "2026-09-28",
+      "close": 19.3700008392334,
+      "volume": 420767.0,
+      "return": -0.021717091636160313
     }
   ],
   "data_status": "OK",

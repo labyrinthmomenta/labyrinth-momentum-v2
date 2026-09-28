@@ -3,24 +3,29 @@
     "security_id": 363,
     "ticker": "EDIP",
     "name": "EDİP GAYRİMENKUL YATIRIM SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İNŞAAT VE BAYINDIRLIK",
+    "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-01-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.10169497552666995,
-    "momentum_126": -0.09401707636806955,
-    "momentum_63": -0.1320960762339778,
-    "momentum_21": -0.1273325895859806,
+    "momentum_12_1": 0.05780347075725789,
+    "fip_12_1": 0.012987012987012988,
+    "momentum_252": -0.12890171332835343,
+    "momentum_126": -0.14082104286075336,
+    "momentum_63": -0.18319788229519485,
+    "momentum_21": -0.17650271458454692,
     "fip_252": -0.03571428571428571,
     "fip_126": -0.05555555555555555,
-    "fip_63": -0.1111111111111111,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 5.270297504346571,
-    "delta_momentum_21_63": 0.004763486647997195,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_63": -0.14285714285714285,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 5.7037184886285495,
+    "delta_momentum_21_63": 0.006695167710647931,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.20107391920421258,
     "completed_month_fip": -0.23809523809523808,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 35.400001525878906,
-      "volume": 1963837.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 34.599998474121094,
       "volume": 1454258.0,
-      "return": -0.022598955290241363
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 31.799999237060547,
       "volume": 668723.0,
       "return": -0.010578723056771322
+    },
+    {
+      "date": "2026-09-28",
+      "close": 30.139999389648438,
+      "volume": 574196.0,
+      "return": -0.05220125431567624
     }
   ],
   "data_status": "OK",

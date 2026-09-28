@@ -3,24 +3,29 @@
     "security_id": 101,
     "ticker": "GSRAY",
     "name": "GALATASARAY SPORTİF SINAİ VE TİCARİ YATIRIMLAR A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "EĞİTİM SAĞLIK SPOR VE EĞLENCE HİZMETLERİ",
+    "industry": "SPOR FAALİYETLERİ EĞLENCE VE OYUN FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2002-02-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.42483659366850535,
-    "momentum_126": -0.16981128043829352,
-    "momentum_63": -0.1372548905027594,
-    "momentum_21": -0.22807016993493545,
+    "momentum_12_1": -0.2697368235304083,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.4671052549024035,
+    "momentum_126": -0.24299068908647914,
+    "momentum_63": -0.20588233575413906,
+    "momentum_21": -0.27027027752674004,
     "fip_252": -0.12301587301587301,
-    "fip_126": -0.09523809523809523,
-    "fip_63": -0.14285714285714285,
+    "fip_126": -0.1111111111111111,
+    "fip_63": -0.15873015873015872,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 3.555664715446812,
-    "delta_momentum_21_63": -0.09081527943217604,
-    "delta_fip_21_63": -0.380952380952381,
+    "atr14_percent": 4.292486979131376,
+    "delta_momentum_21_63": -0.06438794177260099,
+    "delta_fip_21_63": -0.3650793650793651,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.11224491037164608,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 1.5299999713897705,
-      "volume": 523004071.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 1.5199999809265137,
       "volume": 274003059.0,
-      "return": -0.00653594160147164
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 0.8799999952316284,
       "volume": 89997425.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 0.8100000023841858,
+      "volume": 190774240.0,
+      "return": -0.07954544684857368
     }
   ],
   "data_status": "OK",

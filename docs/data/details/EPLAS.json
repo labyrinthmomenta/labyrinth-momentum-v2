@@ -3,24 +3,29 @@
     "security_id": 364,
     "ticker": "EPLAS",
     "name": "EGEPLAST EGE PLASTİK TİCARET VE SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1994-04-20"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.1720117029460264,
-    "momentum_126": -0.06270629010379547,
-    "momentum_63": 0.01792113010749885,
-    "momentum_21": -0.07642280646187982,
+    "momentum_12_1": -0.10395315462342192,
+    "fip_12_1": -0.08225108225108226,
+    "momentum_252": -0.23865302088560758,
+    "momentum_126": -0.1318864761334625,
+    "momentum_63": -0.06306312962907767,
+    "momentum_21": -0.1503268126629873,
     "fip_252": -0.07936507936507936,
     "fip_126": -0.07936507936507936,
-    "fip_63": 0.031746031746031744,
+    "fip_63": -0.031746031746031744,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.997006268195996,
-    "delta_momentum_21_63": -0.09434393656937867,
-    "delta_fip_21_63": -0.07936507936507936,
+    "atr14_percent": 7.756304260833864,
+    "delta_momentum_21_63": -0.08726368303390963,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.09208103421855562,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 6.860000133514404,
-      "volume": 4946216.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 6.829999923706055,
       "volume": 5320577.0,
-      "return": -0.004373208341758472
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 5.679999828338623,
       "volume": 5853943.0,
       "return": 0.010676146619453597
+    },
+    {
+      "date": "2026-09-28",
+      "close": 5.199999809265137,
+      "volume": 4407372.0,
+      "return": -0.08450704816550747
     }
   ],
   "data_status": "OK",

@@ -3,24 +3,29 @@
     "security_id": 347,
     "ticker": "DERIM",
     "name": "DERİMOD KONFEKSİYON AYAKKABI DERİ SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-06-10"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.32610791826221064,
-    "momentum_126": -0.22450116069136516,
-    "momentum_63": -0.23384449092228465,
-    "momentum_21": -0.24582208374607828,
+    "momentum_12_1": -0.09339290805489575,
+    "fip_12_1": -0.08225108225108226,
+    "momentum_252": -0.3323397843663166,
+    "momentum_126": -0.2436691483307546,
+    "momentum_63": -0.27508096457928266,
+    "momentum_21": -0.26356166682831217,
     "fip_252": -0.11507936507936507,
     "fip_126": -0.06349206349206349,
-    "fip_63": -0.1111111111111111,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 5.965082088697524,
-    "delta_momentum_21_63": -0.011977592823793626,
-    "delta_fip_21_63": -0.36507936507936506,
+    "atr14_percent": 6.23336261254164,
+    "delta_momentum_21_63": 0.011519297750970492,
+    "delta_fip_21_63": -0.3333333333333333,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.048566408209210765,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 41.52000045776367,
-      "volume": 1235587.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 40.2599983215332,
       "volume": 992393.0,
-      "return": -0.030346871925307606
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 27.979999542236328,
       "volume": 320070.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-09-28",
+      "close": 26.8799991607666,
+      "volume": 208719.0,
+      "return": -0.03931380984510935
     }
   ],
   "data_status": "OK",

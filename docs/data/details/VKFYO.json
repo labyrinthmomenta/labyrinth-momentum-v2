@@ -3,23 +3,28 @@
     "security_id": 593,
     "ticker": "VKFYO",
     "name": "VAKIF MENKUL KIYMET YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1991-08-28"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.21604938949928487,
-    "momentum_126": -0.43838442613769546,
-    "momentum_63": -0.2965288297366644,
-    "momentum_21": -0.20092285590893244,
+    "momentum_12_1": -0.015807032181508585,
+    "fip_12_1": -0.19047619047619047,
+    "momentum_252": -0.24667221627872826,
+    "momentum_126": -0.4525393105223371,
+    "momentum_63": -0.30719200332027474,
+    "momentum_21": -0.23457308845534908,
     "fip_252": -0.21031746031746032,
     "fip_126": -0.3253968253968254,
     "fip_63": -0.3492063492063492,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.405275532677301,
-    "delta_momentum_21_63": 0.09560597382773195,
+    "atr14_percent": 6.982197597966841,
+    "delta_momentum_21_63": 0.07261891486492567,
     "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.029288655513119544,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 24.299999237060547,
-      "volume": 358611.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 24.040000915527344,
       "volume": 164416.0,
-      "return": -0.010699519740588026
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 19.049999237060547,
       "volume": 223654.0,
       "return": 0.04098360826601155
+    },
+    {
+      "date": "2026-09-28",
+      "close": 18.110000610351562,
+      "volume": 174430.0,
+      "return": -0.04934376190841405
     }
   ],
   "data_status": "OK",

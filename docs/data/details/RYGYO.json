@@ -3,24 +3,29 @@
     "security_id": 214,
     "ticker": "RYGYO",
     "name": "REYSAŞ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "MALİ KURULUŞLAR",
+    "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2010-07-12"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": 1.477656556013923,
-    "momentum_126": 0.42003421720543455,
-    "momentum_63": 0.630718983784607,
-    "momentum_21": 0.08525450245039146,
-    "fip_252": -0.12301587301587301,
-    "fip_126": -0.15873015873015872,
+    "momentum_12_1": 1.330049311071285,
+    "fip_12_1": -0.12121212121212122,
+    "momentum_252": 1.4403942254877014,
+    "momentum_126": 0.3768760852087596,
+    "momentum_63": 0.6568562390490917,
+    "momentum_21": 0.04735733011834187,
+    "fip_252": -0.11507936507936507,
+    "fip_126": -0.14285714285714285,
     "fip_63": -0.25396825396825395,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.978704459208082,
-    "delta_momentum_21_63": -0.5454644813342155,
-    "delta_fip_21_63": 0.1111111111111111,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 5.992827589373974,
+    "delta_momentum_21_63": -0.6094989089307499,
+    "delta_fip_21_63": 0.20634920634920634,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.3263707636814923,
     "completed_month_fip": -0.47619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 20.139999389648438,
-      "volume": 2456779.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 20.299999237060547,
       "volume": 3478883.0,
-      "return": 0.007944381939472445
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 49.900001525878906,
       "volume": 1565329.0,
       "return": 0.012992351322633544
+    },
+    {
+      "date": "2026-09-28",
+      "close": 49.540000915527344,
+      "volume": 1964433.0,
+      "return": -0.007214440868601235
     }
   ],
   "data_status": "OK",

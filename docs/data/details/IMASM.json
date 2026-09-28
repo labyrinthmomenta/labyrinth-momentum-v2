@@ -3,24 +3,29 @@
     "security_id": 410,
     "ticker": "IMASM",
     "name": "İMAŞ MAKİNA SANAYİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2022-04-29"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6318181887145871,
-    "momentum_126": -0.5609756152717627,
-    "momentum_63": -0.46179401664415176,
-    "momentum_21": -0.3076922802608464,
+    "momentum_12_1": -0.4375000000000011,
+    "fip_12_1": -0.12987012987012986,
+    "momentum_252": -0.6346153757981299,
+    "momentum_126": -0.5869565344149767,
+    "momentum_63": -0.4916388039871561,
+    "momentum_21": -0.35042733475222976,
     "fip_252": -0.16666666666666666,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.3333333333333333,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 6.551950609302036,
-    "delta_momentum_21_63": 0.15410173638330538,
-    "delta_fip_21_63": -0.19047619047619052,
+    "fip_21": -0.5714285714285714,
+    "atr14_percent": 7.142109043582632,
+    "delta_momentum_21_63": 0.14121146923492633,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.09920634995722655,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 4.400000095367432,
-      "volume": 123624547.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 4.159999847412109,
       "volume": 52619613.0,
-      "return": -0.05454550971669481
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.6200000047683716,
       "volume": 16838070.0,
       "return": -0.018181801105005113
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.5199999809265137,
+      "volume": 13084016.0,
+      "return": -0.061728409597230804
     }
   ],
   "data_status": "OK",

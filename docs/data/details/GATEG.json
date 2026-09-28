@@ -3,24 +3,29 @@
     "security_id": 606,
     "ticker": "GATEG",
     "name": "GATE GROUP TEKNOLOJİ MEDYA VE SİBER GÜVENLİK HİZMETLERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "EĞİTİM SAĞLIK SPOR VE EĞLENCE HİZMETLERİ",
+    "industry": "YARATICI SANATLAR GÖSTERİ SANATLARI VE EĞLENCE FAALİYETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2015-03-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.1970833460489918,
-    "momentum_126": -0.37282344361841446,
-    "momentum_63": -0.31423488630518814,
-    "momentum_21": -0.3343696133048629,
+    "momentum_12_1": 0.19918699186991762,
+    "fip_12_1": 0.05627705627705628,
+    "momentum_252": -0.2085365977713738,
+    "momentum_126": -0.3466443055428119,
+    "momentum_63": -0.30464286804199237,
+    "momentum_21": -0.34000001034494165,
     "fip_252": -0.06746031746031746,
-    "fip_126": -0.10317460317460317,
-    "fip_63": -0.031746031746031744,
+    "fip_126": -0.0873015873015873,
+    "fip_63": 0.0,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 8.549555765081406,
-    "delta_momentum_21_63": -0.02013472699967478,
-    "delta_fip_21_63": -0.15873015873015872,
+    "atr14_percent": 8.125134810768895,
+    "delta_momentum_21_63": -0.035357142302949285,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.0387323943661968,
     "completed_month_fip": 0.0,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 240.0,
-      "volume": 24404.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 246.0,
       "volume": 41466.0,
-      "return": 0.02499999999999991
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 192.6999969482422,
       "volume": 19702.0,
       "return": 0.09988584648874088
+    },
+    {
+      "date": "2026-09-28",
+      "close": 194.6999969482422,
+      "volume": 20933.0,
+      "return": 0.010378827356894993
     }
   ],
   "data_status": "OK",

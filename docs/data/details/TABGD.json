@@ -3,24 +3,29 @@
     "security_id": 232,
     "ticker": "TABGD",
     "name": "TAB GIDA SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "YİYECEK VE İÇECEK HİZMETLERİ",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2023-10-26"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.06257980983481948,
-    "momentum_126": -0.10342023014676904,
-    "momentum_63": -0.02480073528711202,
-    "momentum_21": -0.10195758691333534,
-    "fip_252": 0.0,
-    "fip_126": 0.015873015873015872,
-    "fip_63": 0.015873015873015872,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 3.993367007265257,
-    "delta_momentum_21_63": -0.07715685162622332,
-    "delta_fip_21_63": -0.06349206349206349,
+    "momentum_12_1": 0.04957625825526457,
+    "fip_12_1": -0.004329004329004329,
+    "momentum_252": -0.08898305084745683,
+    "momentum_126": -0.13862181593523715,
+    "momentum_63": -0.04782995086710573,
+    "momentum_21": -0.1320145230162233,
+    "fip_252": -0.007936507936507936,
+    "fip_126": 0.0,
+    "fip_63": 0.0,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 4.1300372904149825,
+    "delta_momentum_21_63": -0.08418457214911756,
+    "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.03002880653425155,
     "completed_month_fip": -0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 234.89999389648438,
-      "volume": 457866.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 236.0,
       "volume": 336693.0,
-      "return": 0.004682869868444461
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 220.1999969482422,
       "volume": 670570.0,
       "return": 0.02418603231740546
+    },
+    {
+      "date": "2026-09-28",
+      "close": 215.0,
+      "volume": 573204.0,
+      "return": -0.023614882017752414
     }
   ],
   "data_status": "OK",

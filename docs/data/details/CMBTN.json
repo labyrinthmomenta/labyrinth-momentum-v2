@@ -3,24 +3,29 @@
     "security_id": 338,
     "ticker": "CMBTN",
     "name": "ÇİMBETON HAZIRBETON VE PREFABRİK YAPI ELEMANLARI SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "TAŞ VE TOPRAĞA DAYALI",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1997-12-18"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.4637860082304529,
-    "momentum_126": -0.23978996499416583,
-    "momentum_63": -0.19518221124150759,
-    "momentum_21": -0.1620578778135051,
+    "momentum_12_1": -0.34566862910008445,
+    "fip_12_1": -0.21212121212121213,
+    "momentum_252": -0.48696383515559316,
+    "momentum_126": -0.284037558685446,
+    "momentum_63": -0.23270440251572433,
+    "momentum_21": -0.21593830334190234,
     "fip_252": -0.2222222222222222,
     "fip_126": -0.2777777777777778,
     "fip_63": -0.30158730158730157,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.837669177279203,
-    "delta_momentum_21_63": 0.03312433342800247,
-    "delta_fip_21_63": 0.06349206349206349,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 6.439360545777813,
+    "delta_momentum_21_63": 0.01676609917382199,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.010249839846252495,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 2430.0,
-      "volume": 30254.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 2378.0,
       "volume": 18196.0,
-      "return": -0.02139917695473248
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1303.0,
       "volume": 33073.0,
       "return": -0.057845263919016676
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1220.0,
+      "volume": 21953.0,
+      "return": -0.06369915579432084
     }
   ],
   "data_status": "OK",

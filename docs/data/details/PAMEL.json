@@ -3,24 +3,29 @@
     "security_id": 477,
     "ticker": "PAMEL",
     "name": "PAMEL YENİLENEBİLİR ELEKTRİK ÜRETİM A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2014-06-13"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.5559502604123789,
-    "momentum_126": -0.384615384615384,
-    "momentum_63": -0.4124559236601515,
-    "momentum_21": -0.3544221824383842,
-    "fip_252": -0.18253968253968253,
+    "momentum_12_1": -0.3280977222928314,
+    "fip_12_1": -0.1341991341991342,
+    "momentum_252": -0.5888307193780166,
+    "momentum_126": -0.40878292677370065,
+    "momentum_63": -0.4746934165552593,
+    "momentum_21": -0.3880519619235746,
+    "fip_252": -0.19047619047619047,
     "fip_126": -0.2777777777777778,
-    "fip_63": -0.47619047619047616,
+    "fip_63": -0.5079365079365079,
     "fip_21": -0.8095238095238095,
-    "atr14_percent": 6.210168548561415,
-    "delta_momentum_21_63": 0.0580337412217673,
-    "delta_fip_21_63": -0.33333333333333337,
+    "atr14_percent": 6.716301112572507,
+    "delta_momentum_21_63": 0.08664145463168471,
+    "delta_fip_21_63": -0.3015873015873016,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.030729853684621333,
     "completed_month_fip": -0.3333333333333333,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 112.5999984741211,
-      "volume": 140995.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 114.5999984741211,
       "volume": 372369.0,
-      "return": 0.017761989583504834
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 50.0,
       "volume": 156324.0,
       "return": 0.015847191384643633
+    },
+    {
+      "date": "2026-09-28",
+      "close": 47.119998931884766,
+      "volume": 166311.0,
+      "return": -0.05760002136230469
     }
   ],
   "data_status": "OK",

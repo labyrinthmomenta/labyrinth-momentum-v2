@@ -3,24 +3,29 @@
     "security_id": 450,
     "ticker": "MARTI",
     "name": "MARTI OTEL İŞLETMELERİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "OTELLER VE LOKANTALAR",
+    "industry": "KONAKLAMA",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "1990-02-09"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6632911324405533,
-    "momentum_126": -0.05673753588643504,
-    "momentum_63": -0.22222221447632906,
-    "momentum_21": -0.08904109029793117,
+    "momentum_12_1": -0.6055979832093864,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": -0.6946564816030942,
+    "momentum_126": -0.1304347450506319,
+    "momentum_63": -0.2941176388090455,
+    "momentum_21": -0.22580639703216532,
     "fip_252": -0.1626984126984127,
     "fip_126": -0.09523809523809523,
     "fip_63": -0.031746031746031744,
-    "fip_21": 0.14285714285714285,
-    "atr14_percent": 15.357412842588724,
-    "delta_momentum_21_63": 0.1331811241783979,
-    "delta_fip_21_63": 0.1746031746031746,
+    "fip_21": 0.047619047619047616,
+    "atr14_percent": 16.57914672543133,
+    "delta_momentum_21_63": 0.0683112417768802,
+    "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": 0.15646259496398374,
     "completed_month_fip": -0.14285714285714285,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 3.950000047683716,
-      "volume": 25984279.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 3.930000066757202,
       "volume": 24504394.0,
-      "return": -0.005063286249386678
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 1.3300000429153442,
       "volume": 3295071.0,
       "return": -0.09523808365313047
+    },
+    {
+      "date": "2026-09-28",
+      "close": 1.2000000476837158,
+      "volume": 3352638.0,
+      "return": -0.09774435416307958
     }
   ],
   "data_status": "OK",

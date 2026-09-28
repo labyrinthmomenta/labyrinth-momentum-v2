@@ -3,24 +3,29 @@
     "security_id": 305,
     "ticker": "AYEN",
     "name": "AYEN ENERJİ A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "ELEKTRİK GAZ VE SU",
+    "industry": "ELEKTRİK GAZ VE BUHAR",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2000-07-05"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.07186035082788711,
-    "momentum_126": -0.07805204097122387,
-    "momentum_63": -0.23730689543340588,
-    "momentum_21": -0.11580296905720444,
+    "momentum_12_1": 0.07008085924255547,
+    "fip_12_1": 0.06060606060606061,
+    "momentum_252": -0.11927226681699321,
+    "momentum_126": -0.11986536302494977,
+    "momentum_63": -0.25143182244221995,
+    "momentum_21": -0.1769521662069352,
     "fip_252": -0.07936507936507936,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 4.126572122976166,
-    "delta_momentum_21_63": 0.12150392637620144,
-    "delta_fip_21_63": 0.015873015873015872,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 4.5490213987132595,
+    "delta_momentum_21_63": 0.07447965623528474,
+    "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.020382146414764435,
     "completed_month_fip": -0.09523809523809523,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 29.780000686645508,
-      "volume": 531454.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 29.68000030517578,
       "volume": 443872.0,
-      "return": -0.0033579710934852347
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 27.639999389648438,
       "volume": 466448.0,
       "return": 0.018422992308198216
+    },
+    {
+      "date": "2026-09-28",
+      "close": 26.139999389648438,
+      "volume": 533051.0,
+      "return": -0.0542691763069203
     }
   ],
   "data_status": "OK",

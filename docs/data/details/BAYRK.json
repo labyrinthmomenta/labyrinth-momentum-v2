@@ -3,24 +3,29 @@
     "security_id": 314,
     "ticker": "BAYRK",
     "name": "BAYRAK EBT TABAN SANAYİ VE TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "İMALAT",
+    "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2020-06-04"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6208629128806116,
-    "momentum_126": -0.37916668736272363,
-    "momentum_63": -0.37394960592816806,
-    "momentum_21": -0.31807778098094064,
+    "momentum_12_1": -0.43889273903868864,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.6472309608196285,
+    "momentum_126": -0.42975208606398163,
+    "momentum_63": -0.39737990470752826,
+    "momentum_21": -0.3712983885184563,
     "fip_252": -0.1746031746031746,
-    "fip_126": -0.07936507936507936,
+    "fip_126": -0.09523809523809523,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.304844104853667,
-    "delta_momentum_21_63": 0.05587182494722742,
-    "delta_fip_21_63": -0.25396825396825395,
+    "fip_21": -0.5238095238095238,
+    "atr14_percent": 7.0457986597150235,
+    "delta_momentum_21_63": 0.02608151618907195,
+    "delta_fip_21_63": -0.34920634920634924,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.004683836303478239,
     "completed_month_fip": 0.047619047619047616,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 7.859953880310059,
-      "volume": 19947882.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 7.823815822601318,
       "volume": 24772890.0,
-      "return": -0.004597744243674207
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 2.9800000190734863,
       "volume": 3010326.0,
       "return": 0.024054959167747025
+    },
+    {
+      "date": "2026-09-28",
+      "close": 2.759999990463257,
+      "volume": 4937465.0,
+      "return": -0.07382551248393276
     }
   ],
   "data_status": "OK",

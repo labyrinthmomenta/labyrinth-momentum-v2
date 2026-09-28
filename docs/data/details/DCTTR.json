@@ -3,24 +3,29 @@
     "security_id": 343,
     "ticker": "DCTTR",
     "name": "DCT TRADİNG DIŞ TİCARET A.Ş.",
-    "sector": null,
-    "industry": null,
+    "sector": "TOPTAN VE PERAKENDE TİCARET",
+    "industry": "TOPTAN TİCARET",
+    "is_viop": false,
+    "viop_source": "BIST_VIOP_UNDERLYINGS",
+    "viop_as_of": "2026-09-28",
     "first_trade_date": "2024-07-31"
   },
   "snapshot": {
-    "as_of": "2026-09-25",
+    "as_of": "2026-09-28",
     "observations": 252,
-    "momentum_252": -0.6853448297124128,
-    "momentum_126": -0.5898876121558551,
-    "momentum_63": -0.7179288861105733,
-    "momentum_21": -0.47557470181577677,
+    "momentum_12_1": -0.37844309982075053,
+    "fip_12_1": 0.030303030303030304,
+    "momentum_252": -0.6991018015364898,
+    "momentum_126": -0.6338797765796339,
+    "momentum_63": -0.7429009997478582,
+    "momentum_21": -0.5158959728759591,
     "fip_252": -0.023809523809523808,
-    "fip_126": -0.015873015873015872,
-    "fip_63": -0.3333333333333333,
+    "fip_126": -0.031746031746031744,
+    "fip_63": -0.36507936507936506,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 11.164669676873816,
-    "delta_momentum_21_63": 0.2423541842947965,
-    "delta_fip_21_63": -0.28571428571428575,
+    "atr14_percent": 11.93525852272885,
+    "delta_momentum_21_63": 0.22700502687189905,
+    "delta_fip_21_63": -0.253968253968254,
     "completed_month": "2026-08",
     "completed_month_momentum": -0.44473007911655915,
     "completed_month_fip": -0.42857142857142855,
@@ -28,16 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-09-24",
-      "close": 11.600000381469727,
-      "volume": 13521411.0,
-      "return": null
-    },
-    {
       "date": "2025-09-25",
       "close": 11.133333206176758,
       "volume": 7964829.0,
-      "return": -0.04022992758159216
+      "return": null
     },
     {
       "date": "2025-09-26",
@@ -1544,6 +1543,12 @@
       "close": 3.6500000953674316,
       "volume": 7566046.0,
       "return": 0.02528094214451615
+    },
+    {
+      "date": "2026-09-28",
+      "close": 3.3499999046325684,
+      "volume": 5094096.0,
+      "return": -0.0821918309305314
     }
   ],
   "data_status": "OK",
