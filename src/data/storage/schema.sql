@@ -5,6 +5,9 @@ CREATE TABLE IF NOT EXISTS securities (
     name TEXT NOT NULL,
     sector TEXT,
     industry TEXT,
+    is_viop INTEGER NOT NULL DEFAULT 0 CHECK (is_viop IN (0,1)),
+    viop_source TEXT,
+    viop_as_of TEXT,
     instrument_type TEXT NOT NULL DEFAULT 'EQUITY',
     status TEXT NOT NULL DEFAULT 'ACTIVE',
     first_trade_date TEXT,
@@ -62,6 +65,43 @@ CREATE TABLE IF NOT EXISTS daily_prices (
 );
 CREATE INDEX IF NOT EXISTS idx_daily_prices_date ON daily_prices(date);
 CREATE INDEX IF NOT EXISTS idx_daily_prices_security_date ON daily_prices(security_id, date);
+
+-- Market indices are intentionally stored separately from equity securities.
+-- They have their own lifecycle and must not participate in the equity universe.
+
+CREATE TABLE IF NOT EXISTS market_indices (
+    index_code TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    source TEXT,
+    active INTEGER NOT NULL DEFAULT 1 CHECK (active IN (0,1)),
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS index_daily_prices (
+    index_code TEXT NOT NULL,
+    date TEXT NOT NULL,
+    open REAL,
+    high REAL,
+    low REAL,
+    close REAL,
+    volume REAL,
+    source TEXT NOT NULL,
+    fetched_at TEXT NOT NULL,
+    PRIMARY KEY (index_code, date),
+    FOREIGN KEY (index_code) REFERENCES market_indices(index_code),
+    CHECK (open IS NULL OR open >= 0),
+    CHECK (high IS NULL OR high >= 0),
+    CHECK (low IS NULL OR low >= 0),
+    CHECK (close IS NULL OR close >= 0),
+    CHECK (volume IS NULL OR volume >= 0)
+);
+
+CREATE INDEX IF NOT EXISTS idx_index_daily_prices_date
+ON index_daily_prices(date);
+
+CREATE INDEX IF NOT EXISTS idx_index_daily_prices_code_date
+ON index_daily_prices(index_code, date);
 
 CREATE TABLE IF NOT EXISTS trading_days (
     date TEXT PRIMARY KEY,

@@ -18,6 +18,7 @@ from html.parser import HTMLParser
 from io import BytesIO
 import csv
 import io
+import json
 import re
 from pathlib import PurePosixPath
 import urllib.parse
@@ -30,8 +31,10 @@ from openpyxl import load_workbook
 from .manager import UniverseRecord, UniverseManager
 
 KAP_MARKETS_URL = "https://www.kap.org.tr/tr/Pazarlar"
+KAP_SECTORS_URL = "https://www.kap.org.tr/tr/Sektorler"
 BIST_DATA_PATHS_URL = "https://www.borsaistanbul.com/files/DataFilePaths.zip"
 BIST_EQUITY_DATA_URL = "https://www.borsaistanbul.com/en/data/equity-market-data"
+BIST_VIOP_UNDERLYINGS_URL = "https://www.borsaistanbul.com/piyasalar/viop/sozlesme-ozellikleri/dayanak-varliklar"
 
 # Company-share markets. Instrument/fund-only markets are intentionally omitted.
 EQUITY_MARKETS = {
@@ -65,6 +68,12 @@ class MarketRow:
     ticker: str
     name: str
     market: str
+
+
+@dataclass(frozen=True)
+class SectorClassification:
+    sector: str
+    industry: str | None
 
 
 class _TableParser(HTMLParser):
@@ -367,6 +376,291 @@ def parse_first_trade_zip(data: bytes) -> dict[str, str]:
     return result
 
 
+
+def parse_viop_underlyings_html(
+    html: str,
+    *,
+    min_underlyings: int = 20,
+    max_underlyings: int = 100,
+) -> set[str]:
+    """Parse equity underlyings from Borsa Istanbul's official VIOP page.
+
+    Only the ``Pay Senetleri`` section is accepted. Parsing stops when the
+    following ``Endeks`` section begins so index, FX, metals and other VIOP
+    underlyings can never enter the equity universe.
+
+    The count guard is deliberately broad. It is not a hard-coded expectation
+    of today's membership; it only prevents a broken upstream page/parser from
+    silently marking the whole equity universe as non-VIOP.
+    """
+
+    parser = _TableParser()
+    parser.feed(html)
+
+    in_equities = False
+    found_equity_section = False
+    tickers: set[str] = set()
+
+    for cells in parser.rows:
+        normalized_cells = [
+            " ".join(cell.upper().split())
+            for cell in cells
+        ]
+
+        # Official heading: "Pay Senetleri | Kod/Açıklama"
+        if any(cell == "PAY SENETLERI" for cell in normalized_cells):
+            in_equities = True
+            found_equity_section = True
+            continue
+
+        if not in_equities:
+            continue
+
+        # The official page places Endeks immediately after Pay Senetleri.
+        # Stop here rather than trying to classify all later VIOP asset types.
+        if any(cell == "ENDEKS" for cell in normalized_cells):
+            break
+
+        for raw in cells:
+            candidate = raw.strip().upper().replace(".IS", "")
+
+            if (
+                _TICKER_RE.fullmatch(candidate)
+                and not candidate.isdigit()
+                and candidate not in {"KOD", "SIRA"}
+            ):
+                tickers.add(candidate)
+
+    if not found_equity_section:
+        raise OfficialUniverseError(
+            "BIST VIOP page does not contain a Pay Senetleri section"
+        )
+
+    if not (min_underlyings <= len(tickers) <= max_underlyings):
+        raise OfficialUniverseError(
+            "BIST VIOP equity-underlying count outside safety bounds: "
+            f"{len(tickers)} not in [{min_underlyings}, {max_underlyings}]"
+        )
+
+    return tickers
+
+
+def _decode_next_f_chunks(html: str) -> list[str]:
+    """Decode string payloads embedded in Next.js Flight push records."""
+
+    pattern = re.compile(
+        r'self\.__next_f\.push\(\[1,("(?:\\.|[^"\\])*")\]\)',
+        re.DOTALL,
+    )
+
+    chunks: list[str] = []
+
+    for match in pattern.finditer(html):
+        try:
+            chunks.append(json.loads(match.group(1)))
+        except json.JSONDecodeError:
+            # Ignore unrelated or malformed Flight chunks. The sector parser
+            # below still fails closed if the expected payload cannot be found.
+            continue
+
+    return chunks
+
+
+def _json_value_after(text: str, marker: str):
+    position = text.find(marker)
+
+    if position == -1:
+        raise OfficialUniverseError(
+            f"KAP sector payload marker not found: {marker}"
+        )
+
+    try:
+        value, _ = json.JSONDecoder().raw_decode(
+            text[position + len(marker):]
+        )
+    except json.JSONDecodeError as exc:
+        raise OfficialUniverseError(
+            f"Malformed KAP sector payload after {marker}"
+        ) from exc
+
+    return value
+
+
+def parse_kap_sectors_html(
+    html: str,
+    *,
+    valid_tickers: set[str] | None = None,
+) -> dict[str, SectorClassification]:
+    """Parse KAP's embedded BIST sector hierarchy.
+
+    KAP currently renders sector metadata inside a Next.js Flight payload.
+    Each company can appear both under its specific child industry and again
+    in aggregate main-sector content. The specific non-null industry wins.
+
+    If valid_tickers is supplied, legacy ticker aliases exposed by KAP are
+    ignored and full coverage of the supplied current universe is required.
+    """
+
+    chunks = _decode_next_f_chunks(html)
+
+    sector_chunk = next(
+        (
+            chunk
+            for chunk in chunks
+            if '"sectorTitles":' in chunk
+            and '"bistSectorsTable":' in chunk
+        ),
+        None,
+    )
+
+    if sector_chunk is None:
+        raise OfficialUniverseError(
+            "KAP sector Next.js payload not found"
+        )
+
+    table_position = sector_chunk.find('"bistSectorsTable":')
+
+    sector_data = _json_value_after(
+        sector_chunk[table_position:],
+        '"data":',
+    )
+
+    if not isinstance(sector_data, list):
+        raise OfficialUniverseError(
+            "KAP sector data is not a hierarchy list"
+        )
+
+    valid = None
+
+    if valid_tickers is not None:
+        valid = {
+            str(ticker).strip().upper().replace(".IS", "")
+            for ticker in valid_tickers
+        }
+
+    result: dict[str, SectorClassification] = {}
+
+    def add_mapping(
+        stock_codes: object,
+        sector: str,
+        industry: str | None,
+    ) -> None:
+        for raw_ticker in str(stock_codes or "").split(","):
+            ticker = (
+                raw_ticker
+                .strip()
+                .upper()
+                .replace(".IS", "")
+            )
+
+            if not _TICKER_RE.fullmatch(ticker):
+                continue
+
+            if valid is not None and ticker not in valid:
+                # KAP can publish historical/current codes together, e.g.
+                # "FIN, QNBTR". Only the authoritative current universe wins.
+                continue
+
+            incoming = SectorClassification(
+                sector=sector,
+                industry=industry,
+            )
+
+            previous = result.get(ticker)
+
+            if previous is None:
+                result[ticker] = incoming
+                continue
+
+            if previous == incoming:
+                continue
+
+            if previous.sector == incoming.sector:
+                # KAP repeats companies in aggregate main-sector content.
+                # Prefer the more specific child-industry classification.
+                if (
+                    previous.industry is None
+                    and incoming.industry is not None
+                ):
+                    result[ticker] = incoming
+                    continue
+
+                if (
+                    previous.industry is not None
+                    and incoming.industry is None
+                ):
+                    continue
+
+            raise OfficialUniverseError(
+                "Conflicting KAP sector classification for "
+                f"{ticker}: "
+                f"{previous.sector!r}/{previous.industry!r} vs "
+                f"{incoming.sector!r}/{incoming.industry!r}"
+            )
+
+    for main in sector_data:
+        if not isinstance(main, dict):
+            continue
+
+        sector = " ".join(
+            str(main.get("title") or "").split()
+        )
+
+        if not sector:
+            continue
+
+        children = main.get("children")
+
+        if isinstance(children, dict):
+            for child in children.values():
+                if not isinstance(child, dict):
+                    continue
+
+                industry = " ".join(
+                    str(child.get("title") or "").split()
+                ) or None
+
+                for company in child.get("content") or []:
+                    if not isinstance(company, dict):
+                        continue
+
+                    add_mapping(
+                        company.get("stockCode"),
+                        sector,
+                        industry,
+                    )
+
+        # KAP also publishes aggregate main-sector content.
+        for company in main.get("content") or []:
+            if not isinstance(company, dict):
+                continue
+
+            add_mapping(
+                company.get("stockCode"),
+                sector,
+                None,
+            )
+
+    if not result:
+        raise OfficialUniverseError(
+            "KAP sector source produced no classifications"
+        )
+
+    if valid is not None:
+        missing = sorted(valid - set(result))
+
+        if missing:
+            preview = ", ".join(missing[:20])
+
+            raise OfficialUniverseError(
+                "KAP sector coverage incomplete: "
+                f"{len(missing)}/{len(valid)} current equities missing"
+                + (f": {preview}" if preview else "")
+            )
+
+    return result
+
+
 def default_http_get(url: str, timeout: int = 30) -> bytes:
     request = urllib.request.Request(
         url,
@@ -386,7 +680,9 @@ def fetch_official_universe(
     *,
     http_get: Callable[[str], bytes] = default_http_get,
     kap_url: str = KAP_MARKETS_URL,
+    sectors_url: str = KAP_SECTORS_URL,
     data_paths_url: str = BIST_DATA_PATHS_URL,
+    viop_url: str = BIST_VIOP_UNDERLYINGS_URL,
     min_equities: int = 400,
 ) -> OfficialUniverseSnapshot:
     try:
@@ -396,11 +692,34 @@ def fetch_official_universe(
             raise OfficialUniverseError(
                 f"KAP equity universe unexpectedly small: {len(market_rows)} < {min_equities}"
             )
-        first_trade, first_trade_url = _fetch_first_trade(http_get, data_paths_url)
+
+        current_tickers = {
+            row.ticker
+            for row in market_rows
+        }
+
+        sectors_html = http_get(
+            sectors_url
+        ).decode("utf-8", errors="replace")
+
+        sector_metadata = parse_kap_sectors_html(
+            sectors_html,
+            valid_tickers=current_tickers,
+        )
+
+        first_trade, first_trade_url = _fetch_first_trade(
+            http_get,
+            data_paths_url,
+        )
+
+        viop_html = http_get(viop_url).decode("utf-8", errors="replace")
+        viop_tickers = parse_viop_underlyings_html(viop_html)
     except OfficialUniverseError:
         raise
     except Exception as exc:
         raise OfficialUniverseError(f"Official universe download failed: {exc}") from exc
+
+    source_date = date.today().isoformat()
 
     market_counts: dict[str, int] = {}
     for row in market_rows:
@@ -411,9 +730,14 @@ def fetch_official_universe(
             ticker=row.ticker,
             name=row.name,
             instrument_type="EQUITY",
+            sector=sector_metadata[row.ticker].sector,
+            industry=sector_metadata[row.ticker].industry,
             first_trade_date=first_trade.get(row.ticker),
             status="ACTIVE",
             active=1,
+            is_viop=1 if row.ticker in viop_tickers else 0,
+            viop_source="BIST_VIOP_UNDERLYINGS",
+            viop_as_of=source_date,
         )
         for row in market_rows
     ]
@@ -422,7 +746,7 @@ def fetch_official_universe(
         kap_records=len(market_rows),
         first_trade_records=len(first_trade),
         first_trade_url=first_trade_url,
-        source_date=date.today().isoformat(),
+        source_date=source_date,
         market_counts=market_counts,
     )
 

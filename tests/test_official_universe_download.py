@@ -1,3 +1,4 @@
+import json
 """Offline regressions for the live BIST catalogue and invalid HTTP payloads."""
 from io import BytesIO
 from email.message import Message
@@ -23,6 +24,30 @@ def catalogue_with_metadata():
     })
 
 
+
+def viop_html(tickers):
+    members = list(dict.fromkeys(tickers))
+    padding_index = 0
+    while len(members) < 20:
+        candidate = f"V{padding_index:03d}"
+        padding_index += 1
+        if candidate not in members:
+            members.append(candidate)
+
+    rows = [
+        "<table>",
+        "<tr><th>Pay Senetleri</th><th>Kod/Açıklama</th></tr>",
+    ]
+    for ticker in members:
+        rows.append(f"<tr><td>{ticker} Company</td><td>{ticker}</td></tr>")
+    rows += [
+        "<tr><th>Endeks</th><th>Kod/Açıklama</th></tr>",
+        "<tr><td>BIST 30</td><td>XU030D</td></tr>",
+        "</table>",
+    ]
+    return "".join(rows)
+
+
 def test_live_catalogue_shape_ignores_appledouble_and_joins_directory():
     assert o.discover_ilkislem_url(catalogue_with_metadata()) == (
         "https://www.borsaistanbul.com/datum/ilkislem.zip"
@@ -32,6 +57,57 @@ def test_live_catalogue_shape_ignores_appledouble_and_joins_directory():
 def test_bare_filename_does_not_invent_files_directory():
     with pytest.raises(o.OfficialUniverseError, match="does not expose"):
         o.discover_ilkislem_url(zip_bytes({"paths.txt": b"ilkislem.zip"}))
+
+
+
+def simple_sector_html(tickers):
+    companies = [
+        {
+            "stockCode": ticker,
+            "title": f"{ticker} Company",
+        }
+        for ticker in tickers
+    ]
+
+    data = [
+        {
+            "title": "TEST SECTOR",
+            "children": {
+                "test-industry": {
+                    "title": "TEST INDUSTRY",
+                    "children": None,
+                    "content": companies,
+                }
+            },
+            "content": [
+                {"stockCode": ticker}
+                for ticker in tickers
+            ],
+        }
+    ]
+
+    payload = (
+        '14:["$","div",null,{"sectorTitles":[],'
+        '"bistSectorsTable":{},'
+        '"data":'
+        + json.dumps(
+            data,
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        + "}]"
+    )
+
+    encoded = json.dumps(
+        payload,
+        ensure_ascii=False,
+    )
+
+    return (
+        "<html><body><script>"
+        f"self.__next_f.push([1,{encoded}])"
+        "</script></body></html>"
+    ).encode("utf-8")
 
 
 def test_report_ignores_appledouble_before_real_workbook():
@@ -49,6 +125,8 @@ def test_invalid_catalogue_uses_official_page_fallback(bad):
     url = "https://www.borsaistanbul.com/datum/ilkislem.zip"
     mapping = {
         o.KAP_MARKETS_URL: kap_html([("AAA", "Alpha")]).encode(),
+        o.KAP_SECTORS_URL: simple_sector_html(["AAA"]),
+        o.BIST_VIOP_UNDERLYINGS_URL: viop_html(["AAA"]).encode(),
         o.BIST_DATA_PATHS_URL: bad,
         o.BIST_EQUITY_DATA_URL: b'<button dosya-yolu="/datum/ilkislem.zip"></button>',
         url: first_trade_zip([("AAA", "Alpha", "02.01.2024")]),
@@ -79,6 +157,8 @@ def test_fallback_rejects_untrusted_links(link):
 def test_both_sources_fail_closed_with_context():
     mapping = {
         o.KAP_MARKETS_URL: kap_html([("AAA", "Alpha")]).encode(),
+        o.KAP_SECTORS_URL: simple_sector_html(["AAA"]),
+        o.BIST_VIOP_UNDERLYINGS_URL: viop_html(["AAA"]).encode(),
         o.BIST_DATA_PATHS_URL: b"<html>error</html>",
         o.BIST_EQUITY_DATA_URL: b"<html>error</html>",
     }

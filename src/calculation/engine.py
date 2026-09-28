@@ -12,6 +12,22 @@ from src.indicators.momentum import momentum
 
 DEFAULT_WINDOWS = (252, 126, 63, 21)
 
+# Core momentum follows a trading-session approximation of
+# 12-minus-1 momentum:
+#
+#   latest 252 daily returns
+#   minus the most recent 21 daily returns
+#   = 231 daily returns used for the core signal
+#
+# The recent 21-session window remains available separately
+# through momentum_21 / fip_21 for swing timing.
+CORE_12_1_LOOKBACK_RETURNS = 252
+CORE_12_1_SKIP_RETURNS = 21
+CORE_12_1_WINDOW_RETURNS = (
+    CORE_12_1_LOOKBACK_RETURNS
+    - CORE_12_1_SKIP_RETURNS
+)
+
 
 @dataclass(frozen=True)
 class PriceBar:
@@ -33,6 +49,12 @@ class ReturnPoint:
 class IndicatorSnapshot:
     as_of: date
     observations: int
+
+    # Core stock-selection momentum. The most recent 21 daily
+    # returns are excluded from the 252-return lookback.
+    momentum_12_1: float | None
+    fip_12_1: float | None
+
     momentum_252: float | None
     momentum_126: float | None
     momentum_63: float | None
@@ -106,6 +128,40 @@ def _indicator_map(values: Sequence[float], windows: Iterable[int]) -> tuple[dic
     return moms, fips
 
 
+def _core_12_1(
+    values: Sequence[float],
+) -> tuple[float | None, float | None]:
+    """Return 12-minus-1 core momentum and FIP.
+
+    Exactly 252 daily returns are required. The most recent
+    21 returns are excluded, leaving a fixed 231-return sample.
+
+    Older observations are never substituted for missing
+    recent history.
+    """
+
+    if len(values) < CORE_12_1_LOOKBACK_RETURNS:
+        return None, None
+
+    sample = list(
+        values[
+            -CORE_12_1_LOOKBACK_RETURNS:
+            -CORE_12_1_SKIP_RETURNS
+        ]
+    )
+
+    if len(sample) != CORE_12_1_WINDOW_RETURNS:
+        raise DataQualityError(
+            "Unexpected 12-1 core momentum sample length: "
+            f"{len(sample)}"
+        )
+
+    return (
+        momentum(sample, CORE_12_1_WINDOW_RETURNS),
+        fip(sample, CORE_12_1_WINDOW_RETURNS),
+    )
+
+
 def compute_snapshot(
     bars: Sequence[PriceBar],
     *,
@@ -138,6 +194,8 @@ def compute_snapshot(
     values = [point.value for point in returns]
     moms, fips = _indicator_map(values, windows)
 
+    core_momentum, core_fip = _core_12_1(values)
+
     highs = [bar.high for bar in eligible]
     lows = [bar.low for bar in eligible]
     closes = [bar.close for bar in eligible]
@@ -151,6 +209,8 @@ def compute_snapshot(
     return IndicatorSnapshot(
         as_of=as_of,
         observations=len(values),
+        momentum_12_1=core_momentum,
+        fip_12_1=core_fip,
         momentum_252=moms[252],
         momentum_126=moms[126],
         momentum_63=moms[63],

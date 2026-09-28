@@ -32,7 +32,9 @@ class PublicationSummary:
 def _active_output_rows(conn: sqlite3.Connection, tickers: set[str] | None = None):
     conn.row_factory = sqlite3.Row
     sql = """
-        SELECT s.security_id, s.name, s.sector, s.industry, s.first_trade_date, si.ticker
+        SELECT s.security_id, s.name, s.sector, s.industry,
+               s.is_viop, s.viop_source, s.viop_as_of,
+               s.first_trade_date, si.ticker
         FROM securities s
         JOIN security_identifiers si ON si.security_id=s.security_id
         WHERE s.instrument_type='EQUITY' AND s.active=1 AND s.status='ACTIVE' AND si.is_current=1
@@ -109,6 +111,8 @@ def build_publication_stage(
     null_snapshot = {
         "as_of": as_of.isoformat(),
         "observations": None,
+        "momentum_12_1": None,
+        "fip_12_1": None,
         "momentum_252": None,
         "momentum_126": None,
         "momentum_63": None,
@@ -154,6 +158,9 @@ def build_publication_stage(
                     "name": row["name"],
                     "sector": row["sector"],
                     "industry": row["industry"],
+                    "is_viop": bool(row["is_viop"]),
+                    "viop_source": row["viop_source"],
+                    "viop_as_of": row["viop_as_of"],
                     "data_status": data_status,
                     "data_status_message": status_message,
                     **null_snapshot,
@@ -167,6 +174,9 @@ def build_publication_stage(
                     "name": row["name"],
                     "sector": row["sector"],
                     "industry": row["industry"],
+                    "is_viop": bool(row["is_viop"]),
+                    "viop_source": row["viop_source"],
+                    "viop_as_of": row["viop_as_of"],
                     "first_trade_date": row["first_trade_date"],
                 },
                 "data_status": data_status,
@@ -214,6 +224,9 @@ def build_publication_stage(
                 "name": row["name"],
                 "sector": row["sector"],
                 "industry": row["industry"],
+                "is_viop": bool(row["is_viop"]),
+                "viop_source": row["viop_source"],
+                "viop_as_of": row["viop_as_of"],
                 "data_status": "OK",
                 "data_status_message": None,
                 **snapshot_dict,
@@ -225,6 +238,9 @@ def build_publication_stage(
             name=row["name"],
             sector=row["sector"],
             industry=row["industry"],
+            is_viop=bool(row["is_viop"]),
+            viop_source=row["viop_source"],
+            viop_as_of=row["viop_as_of"],
             first_trade_date=first_trade,
             snapshot=snapshot,
             bars=bars,

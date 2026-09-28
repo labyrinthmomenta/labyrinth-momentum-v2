@@ -4,6 +4,22 @@ import math
 import pytest
 
 from src.calculation.engine import DataQualityError, PriceBar, compute_snapshot, derive_returns, last_completed_month
+from src.indicators.fip import fip
+from src.indicators.momentum import momentum
+
+
+def closes_from_returns(
+    returns: list[float],
+    start_price: float = 100.0,
+) -> list[float]:
+    closes = [start_price]
+
+    for value in returns:
+        closes.append(
+            closes[-1] * (1.0 + value)
+        )
+
+    return closes
 
 
 def bars_from_closes(start: date, closes: list[float]) -> list[PriceBar]:
@@ -33,12 +49,148 @@ def test_snapshot_requires_253_closes_for_252_return_window():
     assert snapshot.observations == 251
     assert snapshot.momentum_252 is None
     assert snapshot.fip_252 is None
+    assert snapshot.momentum_12_1 is None
+    assert snapshot.fip_12_1 is None
 
     bars = bars_from_closes(date(2025, 1, 1), [100.0 + i for i in range(253)])
     snapshot = compute_snapshot(bars)
     assert snapshot.observations == 252
     assert snapshot.momentum_252 is not None
     assert snapshot.fip_252 is not None
+    assert snapshot.momentum_12_1 is not None
+    assert snapshot.fip_12_1 is not None
+
+
+def test_core_12_1_uses_exactly_231_returns():
+    core_returns = [
+        0.012 if i % 4 else -0.006
+        for i in range(231)
+    ]
+
+    recent_returns = [
+        -0.025
+        for _ in range(21)
+    ]
+
+    all_returns = core_returns + recent_returns
+
+    bars = bars_from_closes(
+        date(2025, 1, 1),
+        closes_from_returns(all_returns),
+    )
+
+    snapshot = compute_snapshot(bars)
+
+    assert snapshot.observations == 252
+
+    expected_momentum = momentum(
+        core_returns,
+        231,
+    )
+
+    expected_fip = fip(
+        core_returns,
+        231,
+    )
+
+    assert math.isclose(
+        snapshot.momentum_12_1,
+        expected_momentum,
+        abs_tol=1e-12,
+    )
+
+    assert math.isclose(
+        snapshot.fip_12_1,
+        expected_fip,
+        abs_tol=1e-12,
+    )
+
+
+def test_core_12_1_is_independent_of_latest_21_returns():
+    core_returns = [
+        0.003
+        for _ in range(231)
+    ]
+
+    recent_up = [
+        0.04
+        for _ in range(21)
+    ]
+
+    recent_down = [
+        -0.04
+        for _ in range(21)
+    ]
+
+    up_snapshot = compute_snapshot(
+        bars_from_closes(
+            date(2025, 1, 1),
+            closes_from_returns(
+                core_returns + recent_up
+            ),
+        )
+    )
+
+    down_snapshot = compute_snapshot(
+        bars_from_closes(
+            date(2025, 1, 1),
+            closes_from_returns(
+                core_returns + recent_down
+            ),
+        )
+    )
+
+    assert math.isclose(
+        up_snapshot.momentum_12_1,
+        down_snapshot.momentum_12_1,
+        abs_tol=1e-12,
+    )
+
+    assert math.isclose(
+        up_snapshot.fip_12_1,
+        down_snapshot.fip_12_1,
+        abs_tol=1e-12,
+    )
+
+    # The recent swing layer must still distinguish the
+    # two very different last-21-session paths.
+    assert up_snapshot.momentum_21 > 0
+    assert down_snapshot.momentum_21 < 0
+
+    assert not math.isclose(
+        up_snapshot.momentum_21,
+        down_snapshot.momentum_21,
+        abs_tol=1e-12,
+    )
+
+
+def test_core_12_1_all_positive_path_has_best_fip_quality():
+    core_returns = [
+        0.002
+        for _ in range(231)
+    ]
+
+    recent_returns = [
+        -0.03
+        for _ in range(21)
+    ]
+
+    snapshot = compute_snapshot(
+        bars_from_closes(
+            date(2025, 1, 1),
+            closes_from_returns(
+                core_returns + recent_returns
+            ),
+        )
+    )
+
+    assert snapshot.momentum_12_1 > 0
+
+    assert math.isclose(
+        snapshot.fip_12_1,
+        -1.0,
+        abs_tol=1e-12,
+    )
 
 
 def test_delta_fields_are_short_minus_long():

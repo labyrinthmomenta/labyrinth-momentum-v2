@@ -45,8 +45,22 @@ class CalendarProvider:
 
 def records():
     return [
-        UniverseRecord("AAA", "Alpha A.S.", first_trade_date="2023-01-02"),
-        UniverseRecord("BBB", "Beta A.S.", first_trade_date="2023-01-02"),
+        UniverseRecord(
+            "AAA",
+            "Alpha A.S.",
+            first_trade_date="2023-01-02",
+            is_viop=1,
+            viop_source="BIST_VIOP_UNDERLYINGS",
+            viop_as_of="2026-09-23",
+        ),
+        UniverseRecord(
+            "BBB",
+            "Beta A.S.",
+            first_trade_date="2023-01-02",
+            is_viop=0,
+            viop_source="BIST_VIOP_UNDERLYINGS",
+            viop_as_of="2026-09-23",
+        ),
     ]
 
 
@@ -125,6 +139,24 @@ def test_full_daily_run_promotes_only_after_all_securities_pass(tmp_path):
     screener = json.loads((public / "screener.json").read_text(encoding="utf-8"))
     assert {row["ticker"] for row in screener} == {"AAA", "BBB"}
 
+    by_ticker = {row["ticker"]: row for row in screener}
+
+    assert by_ticker["AAA"]["is_viop"] is True
+    assert by_ticker["AAA"]["viop_source"] == "BIST_VIOP_UNDERLYINGS"
+    assert by_ticker["AAA"]["viop_as_of"] == "2026-09-23"
+
+    assert by_ticker["BBB"]["is_viop"] is False
+    assert by_ticker["BBB"]["viop_source"] == "BIST_VIOP_UNDERLYINGS"
+    assert by_ticker["BBB"]["viop_as_of"] == "2026-09-23"
+
+    aaa_detail = json.loads(
+        (public / "details" / "AAA.json").read_text(encoding="utf-8")
+    )
+
+    assert aaa_detail["security"]["is_viop"] is True
+    assert aaa_detail["security"]["viop_source"] == "BIST_VIOP_UNDERLYINGS"
+    assert aaa_detail["security"]["viop_as_of"] == "2026-09-23"
+
 
 def test_failed_security_blocks_public_promotion(tmp_path):
     calendar = BISTTradingCalendar.from_csv()
@@ -164,6 +196,8 @@ def test_new_listing_can_publish_with_null_long_windows(tmp_path):
     )
     assert summary.public_promoted
     payload = json.loads((tmp_path / "docs" / "data" / "details" / "NEW.json").read_text(encoding="utf-8"))
+    assert payload["snapshot"]["momentum_12_1"] is None
+    assert payload["snapshot"]["fip_12_1"] is None
     assert payload["snapshot"]["momentum_252"] is None
     assert payload["snapshot"]["fip_252"] is None
     assert payload["snapshot"]["observations"] < 252
@@ -244,17 +278,28 @@ def test_provider_unavailable_security_remains_in_full_publication(tmp_path):
     unavailable = by_ticker["BBB"]
     assert unavailable["data_status"] == "PROVIDER_UNAVAILABLE"
     assert unavailable["observations"] is None
+    assert unavailable["momentum_12_1"] is None
+    assert unavailable["fip_12_1"] is None
     assert unavailable["momentum_252"] is None
     assert unavailable["fip_252"] is None
     assert unavailable["atr14_percent"] is None
+
+    assert unavailable["is_viop"] is False
+    assert unavailable["viop_source"] == "BIST_VIOP_UNDERLYINGS"
+    assert unavailable["viop_as_of"] == "2026-09-23"
 
     detail = json.loads(
         (public / "details" / "BBB.json").read_text(encoding="utf-8")
     )
 
     assert detail["data_status"] == "PROVIDER_UNAVAILABLE"
+    assert detail["security"]["is_viop"] is False
+    assert detail["security"]["viop_source"] == "BIST_VIOP_UNDERLYINGS"
+    assert detail["security"]["viop_as_of"] == "2026-09-23"
     assert detail["daily"] == []
     assert detail["snapshot"]["observations"] is None
+    assert detail["snapshot"]["momentum_12_1"] is None
+    assert detail["snapshot"]["fip_12_1"] is None
     assert detail["snapshot"]["momentum_252"] is None
 
     db = Database(db_path)
@@ -356,6 +401,8 @@ def test_insufficient_trading_data_remains_in_full_publication(tmp_path):
     insufficient = by_ticker["BBB"]
     assert insufficient["data_status"] == "INSUFFICIENT_TRADING_DATA"
     assert insufficient["observations"] is None
+    assert insufficient["momentum_12_1"] is None
+    assert insufficient["fip_12_1"] is None
     assert insufficient["momentum_252"] is None
     assert insufficient["fip_252"] is None
     assert insufficient["atr14_percent"] is None

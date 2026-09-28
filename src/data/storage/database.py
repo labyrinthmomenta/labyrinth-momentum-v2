@@ -36,6 +36,30 @@ class Database:
         if "provider_calls" not in columns:
             self.conn.execute("ALTER TABLE pipeline_runs ADD COLUMN provider_calls INTEGER DEFAULT 0")
 
+        security_columns = {
+            row["name"]
+            for row in self.conn.execute(
+                "PRAGMA table_info(securities)"
+            ).fetchall()
+        }
+
+        if "is_viop" not in security_columns:
+            self.conn.execute(
+                """ALTER TABLE securities
+                   ADD COLUMN is_viop INTEGER NOT NULL DEFAULT 0
+                   CHECK (is_viop IN (0,1))"""
+            )
+
+        if "viop_source" not in security_columns:
+            self.conn.execute(
+                "ALTER TABLE securities ADD COLUMN viop_source TEXT"
+            )
+
+        if "viop_as_of" not in security_columns:
+            self.conn.execute(
+                "ALTER TABLE securities ADD COLUMN viop_as_of TEXT"
+            )
+
         self._migrate_security_data_status_check()
 
     def _migrate_security_data_status_check(self) -> None:

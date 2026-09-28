@@ -23,6 +23,9 @@ class UniverseRecord:
     first_trade_date: Optional[str] = None
     status: str = "ACTIVE"
     active: int = 1
+    is_viop: int = 0
+    viop_source: Optional[str] = None
+    viop_as_of: Optional[str] = None
 
 
 class UniverseManager:
@@ -79,10 +82,10 @@ class UniverseManager:
         current = self._find_current_security(ticker)
         if current:
             self.conn.execute(
-                """UPDATE securities SET name=?, sector=?, industry=?, instrument_type=?,
+                """UPDATE securities SET name=?, sector=?, industry=?, is_viop=?, viop_source=?, viop_as_of=?, instrument_type=?,
                    status=?, first_trade_date=COALESCE(first_trade_date, ?), active=?, updated_at=?
                    WHERE security_id=?""",
-                (record.name, record.sector, record.industry, record.instrument_type,
+                (record.name, record.sector, record.industry, record.is_viop, record.viop_source, record.viop_as_of, record.instrument_type,
                  record.status, first_trade, record.active, datetime.now().astimezone().isoformat(),
                  current["security_id"]),
             )
@@ -137,10 +140,10 @@ class UniverseManager:
                     (security_id, old_ticker, ticker, as_of, "ticker_change", "BIST"),
                 )
             self.conn.execute(
-                """UPDATE securities SET name=?, sector=?, industry=?, instrument_type=?,
+                """UPDATE securities SET name=?, sector=?, industry=?, is_viop=?, viop_source=?, viop_as_of=?, instrument_type=?,
                    status=?, first_trade_date=COALESCE(first_trade_date, ?), active=?, updated_at=?
                    WHERE security_id=?""",
-                (record.name, record.sector, record.industry, record.instrument_type,
+                (record.name, record.sector, record.industry, record.is_viop, record.viop_source, record.viop_as_of, record.instrument_type,
                  record.status, first_trade, record.active, datetime.now().astimezone().isoformat(), security_id),
             )
             return security_id
@@ -148,9 +151,9 @@ class UniverseManager:
         now = datetime.now().astimezone().isoformat()
         cur = self.conn.execute(
             """INSERT INTO securities
-               (name,sector,industry,instrument_type,status,first_trade_date,active,created_at,updated_at)
-               VALUES (?,?,?,?,?,?,?,?,?)""",
-            (record.name, record.sector, record.industry, record.instrument_type,
+               (name,sector,industry,is_viop,viop_source,viop_as_of,instrument_type,status,first_trade_date,active,created_at,updated_at)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
+            (record.name, record.sector, record.industry, record.is_viop, record.viop_source, record.viop_as_of, record.instrument_type,
              record.status, first_trade, record.active, now, now),
         )
         security_id = int(cur.lastrowid)
