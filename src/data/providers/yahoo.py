@@ -6,6 +6,7 @@ import logging
 from typing import Iterable
 
 from src.calculation.engine import PriceBar
+from src.data.storage.adjustments import AdjustmentRecord
 from src.data.calendar import BISTTradingCalendar, CalendarCoverageError
 
 logger = logging.getLogger(__name__)
@@ -126,6 +127,138 @@ class YahooProvider:
             )
 
         return kept
+
+    def _frame_to_adjustments(
+        self,
+        frame,
+        start: date,
+        end: date,
+        ticker: str = "unknown",
+    ) -> list[AdjustmentRecord]:
+        if frame is None or frame.empty:
+            return []
+
+        # A one-symbol slice can retain a redundant MultiIndex level.
+        if getattr(frame.columns, "nlevels", 1) > 1:
+            frame = frame.copy()
+            frame.columns = frame.columns.get_level_values(-1)
+
+        records: list[AdjustmentRecord] = []
+
+        for index, row in frame.iterrows():
+            day = (
+                index.date()
+                if hasattr(index, "date")
+                else date.fromisoformat(str(index)[:10])
+            )
+
+            if day < start or day > end:
+                continue
+
+            try:
+                trading = self.calendar.is_trading_day(day)
+            except CalendarCoverageError:
+                trading = True
+
+            if not trading:
+                continue
+
+            close = (
+                self._clean_number(row["Close"])
+                if "Close" in frame.columns
+                else None
+            )
+            adj_close = (
+                self._clean_number(row["Adj Close"])
+                if "Adj Close" in frame.columns
+                else None
+            )
+            dividend = (
+                self._clean_number(row["Dividends"])
+                if "Dividends" in frame.columns
+                else None
+            )
+            stock_split = (
+                self._clean_number(row["Stock Splits"])
+                if "Stock Splits" in frame.columns
+                else None
+            )
+
+            adjustment_factor = None
+            if (
+                close is not None
+                and adj_close is not None
+                and close > 0
+                and adj_close > 0
+            ):
+                factor = adj_close / close
+                if math.isfinite(factor) and factor > 0:
+                    adjustment_factor = factor
+
+            records.append(
+                AdjustmentRecord(
+                    date=day,
+                    adj_close=adj_close,
+                    adjustment_factor=adjustment_factor,
+                    dividend=dividend,
+                    stock_split=stock_split,
+                )
+            )
+
+        return sorted(records, key=lambda item: item.date)
+
+    def fetch_adjustments(
+        self,
+        ticker: str,
+        start: date,
+        end: date,
+    ) -> list[AdjustmentRecord]:
+        if end < start:
+            raise ValueError("end must be on or after start")
+
+        try:
+            import yfinance as yf
+        except ImportError as exc:
+            raise RuntimeError(
+                "yfinance is required for Yahoo data provider"
+            ) from exc
+
+        symbol = self._symbol(ticker)
+        vendor_end = end + timedelta(days=1)
+
+        frame = yf.download(
+            symbol,
+            start=start.isoformat(),
+            end=vendor_end.isoformat(),
+            auto_adjust=False,
+            progress=False,
+            actions=True,
+            group_by="column",
+            threads=False,
+        )
+
+        if (
+            frame is not None
+            and not frame.empty
+            and getattr(frame.columns, "nlevels", 1) > 1
+        ):
+            try:
+                frame = frame.xs(
+                    symbol,
+                    axis=1,
+                    level=-1,
+                    drop_level=True,
+                )
+            except (KeyError, ValueError):
+                frame = frame.copy()
+                frame.columns = frame.columns.get_level_values(0)
+
+        return self._frame_to_adjustments(
+            frame,
+            start,
+            end,
+            ticker,
+        )
 
     def fetch(self, ticker: str, start: date, end: date) -> list[PriceBar]:
         if end < start:
