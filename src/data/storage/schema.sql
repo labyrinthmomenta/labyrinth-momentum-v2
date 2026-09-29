@@ -66,6 +66,29 @@ CREATE TABLE IF NOT EXISTS daily_prices (
 CREATE INDEX IF NOT EXISTS idx_daily_prices_date ON daily_prices(date);
 CREATE INDEX IF NOT EXISTS idx_daily_prices_security_date ON daily_prices(security_id, date);
 
+CREATE TABLE IF NOT EXISTS price_adjustments (
+    security_id INTEGER NOT NULL,
+    date TEXT NOT NULL,
+    adj_close REAL,
+    adjustment_factor REAL,
+    dividend REAL,
+    stock_split REAL,
+    source TEXT NOT NULL,
+    fetched_at TEXT NOT NULL,
+    PRIMARY KEY (security_id, date),
+    FOREIGN KEY (security_id) REFERENCES securities(security_id),
+    CHECK (adj_close IS NULL OR adj_close >= 0),
+    CHECK (adjustment_factor IS NULL OR adjustment_factor > 0),
+    CHECK (dividend IS NULL OR dividend >= 0),
+    CHECK (stock_split IS NULL OR stock_split >= 0)
+);
+
+CREATE INDEX IF NOT EXISTS idx_price_adjustments_date
+ON price_adjustments(date);
+
+CREATE INDEX IF NOT EXISTS idx_price_adjustments_security_date
+ON price_adjustments(security_id, date);
+
 -- Market indices are intentionally stored separately from equity securities.
 -- They have their own lifecycle and must not participate in the equity universe.
 
