@@ -783,3 +783,369 @@ def test_official_zero_price_with_activity_still_fails_closed(db, calendar):
     ).fetchone()[0] == 0
 
     assert count_prices(db, sid) == len(days) - 1
+
+
+def test_batch_update_persists_adjustments_with_primary_prices(db, calendar):
+    from src.data.providers.base import BatchFetchResult
+    from src.data.storage.adjustments import AdjustmentRecord
+
+    class AdjustmentBatchProvider(FakeProvider):
+        def fetch(self, ticker, start, end):  # pragma: no cover - must not be used
+            raise AssertionError("single-ticker fetch should not be used")
+
+        def fetch_many(self, tickers, start, end):
+            bars_by_ticker = {
+                ticker: [
+                    bar
+                    for bar in self.data.get(ticker, [])
+                    if start <= bar.date <= end
+                ]
+                for ticker in tickers
+            }
+
+            adjustments_by_ticker = {
+                ticker: [
+                    AdjustmentRecord(
+                        date=bar.date,
+                        adj_close=bar.close,
+                        adjustment_factor=1.0,
+                        dividend=0.0,
+                        stock_split=0.0,
+                    )
+                    for bar in bars_by_ticker[ticker]
+                ]
+                for ticker in tickers
+            }
+
+            return BatchFetchResult(
+                bars_by_ticker,
+                provider_calls=1,
+                adjustments_by_ticker=adjustments_by_ticker,
+            )
+
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    provider = AdjustmentBatchProvider(
+        {
+            "TEST": [
+                mkbar(day, 100 + i)
+                for i, day in enumerate(days)
+            ]
+        }
+    )
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.prices_inserted == 4
+
+    rows = db.conn.execute(
+        """
+        SELECT
+            date,
+            adj_close,
+            adjustment_factor,
+            dividend,
+            stock_split,
+            source
+        FROM price_adjustments
+        WHERE security_id=?
+        ORDER BY date
+        """,
+        (sid,),
+    ).fetchall()
+
+    assert len(rows) == 4
+    assert [row["date"] for row in rows] == [
+        day.isoformat()
+        for day in days
+    ]
+    assert all(row["adjustment_factor"] == 1.0 for row in rows)
+    assert all(row["source"] == "FAKE" for row in rows)
+
+
+def test_fallback_replaced_primary_date_does_not_persist_yahoo_adjustment(
+    db,
+    calendar,
+):
+    from src.data.providers.base import BatchFetchResult
+    from src.data.storage.adjustments import AdjustmentRecord
+
+    class AdjustmentBatchProvider(FakeProvider):
+        def fetch(self, ticker, start, end):  # pragma: no cover
+            raise AssertionError(
+                "single-ticker primary fetch should not be used"
+            )
+
+        def fetch_many(self, tickers, start, end):
+            bars_by_ticker = {
+                ticker: [
+                    bar
+                    for bar in self.data.get(ticker, [])
+                    if start <= bar.date <= end
+                ]
+                for ticker in tickers
+            }
+
+            adjustments_by_ticker = {
+                ticker: [
+                    AdjustmentRecord(
+                        date=bar.date,
+                        adj_close=100.0,
+                        adjustment_factor=1.0,
+                        dividend=0.0,
+                        stock_split=0.0,
+                    )
+                    for bar in bars_by_ticker[ticker]
+                ]
+                for ticker in tickers
+            }
+
+            return BatchFetchResult(
+                bars_by_ticker,
+                provider_calls=1,
+                adjustments_by_ticker=adjustments_by_ticker,
+            )
+
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(
+        as_of,
+        4,
+    )
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    bad_day = days[1]
+
+    primary = []
+
+    for i, day in enumerate(days):
+        if day == bad_day:
+            primary.append(
+                PriceBar(
+                    day,
+                    100.0,
+                    102.0,
+                    99.0,
+                    float("nan"),
+                    1000.0,
+                )
+            )
+        else:
+            primary.append(
+                mkbar(
+                    day,
+                    100 + i,
+                )
+            )
+
+    provider = AdjustmentBatchProvider(
+        {
+            "TEST": primary,
+        }
+    )
+
+    fallback = FakeProvider(
+        {
+            "TEST": [
+                mkbar(
+                    bad_day,
+                    150.0,
+                )
+            ],
+        }
+    )
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+
+    price_row = db.conn.execute(
+        """
+        SELECT close, source
+        FROM daily_prices
+        WHERE security_id=?
+          AND date=?
+        """,
+        (
+            sid,
+            bad_day.isoformat(),
+        ),
+    ).fetchone()
+
+    assert price_row["close"] == 150.0
+    assert price_row["source"] == "BIST_THB"
+
+    adjustment_dates = [
+        row["date"]
+        for row in db.conn.execute(
+            """
+            SELECT date
+            FROM price_adjustments
+            WHERE security_id=?
+            ORDER BY date
+            """,
+            (sid,),
+        ).fetchall()
+    ]
+
+    assert adjustment_dates == [
+        day.isoformat()
+        for day in days
+        if day != bad_day
+    ]
+
+
+def test_adjustment_write_failure_rolls_back_price_and_adjustment_mutations(
+    db,
+    calendar,
+):
+    from src.data.providers.base import BatchFetchResult
+    from src.data.storage.adjustments import AdjustmentRecord
+
+    class AdjustmentBatchProvider(FakeProvider):
+        def fetch(self, ticker, start, end):  # pragma: no cover
+            raise AssertionError(
+                "single-ticker fetch should not be used"
+            )
+
+        def fetch_many(self, tickers, start, end):
+            bars_by_ticker = {
+                ticker: [
+                    bar
+                    for bar in self.data.get(ticker, [])
+                    if start <= bar.date <= end
+                ]
+                for ticker in tickers
+            }
+
+            adjustments_by_ticker = {
+                ticker: [
+                    AdjustmentRecord(
+                        date=bar.date,
+                        adj_close=bar.close,
+                        adjustment_factor=1.0,
+                        dividend=0.0,
+                        stock_split=0.0,
+                    )
+                    for bar in bars_by_ticker[ticker]
+                ]
+                for ticker in tickers
+            }
+
+            return BatchFetchResult(
+                bars_by_ticker,
+                provider_calls=1,
+                adjustments_by_ticker=adjustments_by_ticker,
+            )
+
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(
+        as_of,
+        4,
+    )
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        name="Test AS",
+        first_trade=days[0].isoformat(),
+    )
+
+    provider = AdjustmentBatchProvider(
+        {
+            "TEST": [
+                mkbar(day, 100 + i)
+                for i, day in enumerate(days)
+            ]
+        }
+    )
+
+    # Force the adjustment insert to fail after the pipeline has
+    # entered its explicit market-data transaction.
+    db.conn.execute(
+        """
+        CREATE TRIGGER fail_price_adjustment_insert
+        BEFORE INSERT ON price_adjustments
+        BEGIN
+            SELECT RAISE(
+                ABORT,
+                'forced adjustment failure'
+            );
+        END;
+        """
+    )
+    db.conn.commit()
+
+    with pytest.raises(
+        UpdatePipelineError,
+        match="forced adjustment failure",
+    ):
+        run_incremental_update(
+            db.conn,
+            calendar,
+            provider,
+            as_of=as_of,
+            required_return_window=3,
+        )
+
+    assert count_prices(
+        db,
+        sid,
+    ) == 0
+
+    adjustment_count = db.conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM price_adjustments
+        WHERE security_id=?
+        """,
+        (sid,),
+    ).fetchone()[0]
+
+    assert adjustment_count == 0
+
+    run = db.conn.execute(
+        """
+        SELECT
+            status,
+            validation_status,
+            prices_inserted
+        FROM pipeline_runs
+        ORDER BY run_id DESC
+        LIMIT 1
+        """
+    ).fetchone()
+
+    assert tuple(run) == (
+        "FAILED",
+        "FAIL",
+        0,
+    )

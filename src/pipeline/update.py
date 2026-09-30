@@ -9,6 +9,10 @@ from typing import Iterable
 from src.calculation.engine import PriceBar
 from src.data.calendar import BISTTradingCalendar
 from src.data.providers.base import BatchFetchResult, MarketDataProvider
+from src.data.storage.adjustments import (
+    AdjustmentRecord,
+    upsert_price_adjustments,
+)
 from src.data.storage.prices import (
     SecurityForUpdate,
     active_equities,
@@ -45,6 +49,7 @@ class SecurityPlan:
 class SecurityStage:
     security: SecurityForUpdate
     primary_bars: tuple[PriceBar, ...]
+    primary_adjustments: tuple[AdjustmentRecord, ...]
     fallback_bars: tuple[PriceBar, ...]
     ticker_at_date: dict[date, str]
     quality: QualityReport
@@ -203,43 +208,159 @@ def _build_plan(
 def _fetch_all(
     provider: MarketDataProvider,
     plans: list[SecurityPlan],
-) -> tuple[dict[tuple[str, date, date], list[PriceBar]], int]:
+) -> tuple[
+    dict[tuple[str, date, date], list[PriceBar]],
+    dict[tuple[str, date, date], list[AdjustmentRecord]],
+    int,
+]:
     """Fetch all unique requests, using provider batching when available."""
+
     unique: dict[tuple[str, date, date], FetchRequest] = {}
+
     for plan in plans:
         for request in plan.requests:
-            unique[(request.ticker, request.start, request.end)] = request
-    if not unique:
-        return {}, 0
+            unique[
+                (
+                    request.ticker,
+                    request.start,
+                    request.end,
+                )
+            ] = request
 
-    output: dict[tuple[str, date, date], list[PriceBar]] = {}
+    if not unique:
+        return {}, {}, 0
+
+    output: dict[
+        tuple[str, date, date],
+        list[PriceBar],
+    ] = {}
+
+    adjustment_output: dict[
+        tuple[str, date, date],
+        list[AdjustmentRecord],
+    ] = {}
+
     provider_calls = 0
-    fetch_many = getattr(provider, "fetch_many", None)
+    fetch_many = getattr(
+        provider,
+        "fetch_many",
+        None,
+    )
 
     if callable(fetch_many):
-        # Batch only requests sharing an identical date range. This covers the
-        # common full-universe case while preserving ticker-history ranges.
-        grouped: dict[tuple[date, date], list[FetchRequest]] = defaultdict(list)
+        # Batch only requests sharing an identical date range.
+        grouped: dict[
+            tuple[date, date],
+            list[FetchRequest],
+        ] = defaultdict(list)
+
         for request in unique.values():
-            grouped[(request.start, request.end)].append(request)
-        for (start, end), requests in sorted(grouped.items(), key=lambda item: item[0]):
-            tickers = sorted({request.ticker for request in requests})
-            result = fetch_many(tickers, start, end)
-            if not isinstance(result, BatchFetchResult):
-                raise UpdatePipelineError("Provider fetch_many() must return BatchFetchResult")
+            grouped[
+                (
+                    request.start,
+                    request.end,
+                )
+            ].append(request)
+
+        for (start, end), requests in sorted(
+            grouped.items(),
+            key=lambda item: item[0],
+        ):
+            tickers = sorted(
+                {
+                    request.ticker
+                    for request in requests
+                }
+            )
+
+            result = fetch_many(
+                tickers,
+                start,
+                end,
+            )
+
+            if not isinstance(
+                result,
+                BatchFetchResult,
+            ):
+                raise UpdatePipelineError(
+                    "Provider fetch_many() must return BatchFetchResult"
+                )
+
             provider_calls += result.provider_calls
+
             for request in requests:
-                bars = result.bars_by_ticker.get(request.ticker, [])
-                output[(request.ticker, request.start, request.end)] = [
-                    bar for bar in bars if request.start <= bar.date <= request.end
+                key = (
+                    request.ticker,
+                    request.start,
+                    request.end,
+                )
+
+                bars = result.bars_by_ticker.get(
+                    request.ticker,
+                    [],
+                )
+
+                output[key] = [
+                    bar
+                    for bar in bars
+                    if (
+                        request.start
+                        <= bar.date
+                        <= request.end
+                    )
                 ]
-        return output, provider_calls
+
+                adjustments = (
+                    result.adjustments_by_ticker.get(
+                        request.ticker,
+                        [],
+                    )
+                )
+
+                adjustment_output[key] = [
+                    record
+                    for record in adjustments
+                    if (
+                        request.start
+                        <= record.date
+                        <= request.end
+                    )
+                ]
+
+        return (
+            output,
+            adjustment_output,
+            provider_calls,
+        )
 
     for key, request in unique.items():
         provider_calls += 1
-        batch = provider.fetch(request.ticker, request.start, request.end)
-        output[key] = [bar for bar in batch if request.start <= bar.date <= request.end]
-    return output, provider_calls
+
+        batch = provider.fetch(
+            request.ticker,
+            request.start,
+            request.end,
+        )
+
+        output[key] = [
+            bar
+            for bar in batch
+            if (
+                request.start
+                <= bar.date
+                <= request.end
+            )
+        ]
+
+        # The minimal provider protocol has no adjustment contract.
+        adjustment_output[key] = []
+
+    return (
+        output,
+        adjustment_output,
+        provider_calls,
+    )
 
 
 def run_incremental_update(
@@ -282,14 +403,37 @@ def run_incremental_update(
             )
             for security in selected
         ]
-        fetched_by_request, provider_calls = _fetch_all(provider, plans)
+        (
+            fetched_by_request,
+            adjustments_by_request,
+            provider_calls,
+        ) = _fetch_all(provider, plans)
 
         for plan in plans:
             fetched: list[PriceBar] = []
+            fetched_adjustments: list[AdjustmentRecord] = []
+
             for request in plan.requests:
-                fetched.extend(
-                    fetched_by_request.get((request.ticker, request.start, request.end), [])
+                key = (
+                    request.ticker,
+                    request.start,
+                    request.end,
                 )
+
+                fetched.extend(
+                    fetched_by_request.get(
+                        key,
+                        [],
+                    )
+                )
+
+                fetched_adjustments.extend(
+                    adjustments_by_request.get(
+                        key,
+                        [],
+                    )
+                )
+
             fetched_total += len(fetched)
 
             # A security can be classified as PROVIDER_UNAVAILABLE only when:
@@ -432,6 +576,17 @@ def run_incremental_update(
                         f"{preview}"
                     )
 
+            accepted_primary_dates = {
+                bar.date
+                for bar in primary_bars
+            }
+
+            primary_adjustments = [
+                record
+                for record in fetched_adjustments
+                if record.date in accepted_primary_dates
+            ]
+
             staged = _merge_bars(primary_staged, fallback_bars)
             report = validate_price_history(
                 staged,
@@ -460,6 +615,7 @@ def run_incremental_update(
                 SecurityStage(
                     plan.security,
                     tuple(primary_bars),
+                    tuple(primary_adjustments),
                     tuple(fallback_bars),
                     ticker_map,
                     report,
@@ -497,6 +653,14 @@ def run_incremental_update(
                 )
                 inserted += add
                 updated += replace
+
+                if stage.primary_adjustments:
+                    upsert_price_adjustments(
+                        conn,
+                        stage.security.security_id,
+                        stage.primary_adjustments,
+                        source=provider.source_name,
+                    )
 
                 if fallback_provider is not None and stage.fallback_bars:
                     add, replace = upsert_price_bars(
