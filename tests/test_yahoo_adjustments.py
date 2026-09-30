@@ -129,3 +129,99 @@ def test_fetch_adjustments_invalid_factor_inputs_fail_closed(monkeypatch):
 
     assert records[0].adj_close == pytest.approx(95.0)
     assert records[0].adjustment_factor is None
+
+
+def test_fetch_many_returns_prices_and_adjustments_from_same_download(monkeypatch):
+    calls = []
+
+    symbols = ["AAA.IS", "BBB.IS"]
+    fields = [
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Adj Close",
+        "Volume",
+        "Dividends",
+        "Stock Splits",
+    ]
+
+    columns = pd.MultiIndex.from_product(
+        [symbols, fields]
+    )
+
+    frame = pd.DataFrame(
+        [[
+            # AAA
+            100.0, 105.0, 98.0, 100.0,
+            95.0, 1000.0, 5.0, 0.0,
+
+            # BBB
+            200.0, 205.0, 198.0, 200.0,
+            200.0, 2000.0, 0.0, 0.0,
+        ]],
+        index=pd.to_datetime(["2026-09-21"]),
+        columns=columns,
+    )
+
+    def download(requested_symbols, **kwargs):
+        calls.append(
+            (requested_symbols, kwargs)
+        )
+        return frame
+
+    monkeypatch.setitem(
+        sys.modules,
+        "yfinance",
+        types.SimpleNamespace(
+            download=download
+        ),
+    )
+
+    result = YahooProvider(
+        batch_size=10
+    ).fetch_many(
+        ["AAA", "BBB"],
+        date(2026, 9, 21),
+        date(2026, 9, 21),
+    )
+
+    # One vendor snapshot must feed both outputs.
+    assert len(calls) == 1
+    assert result.provider_calls == 1
+
+    assert len(
+        result.bars_by_ticker["AAA"]
+    ) == 1
+    assert len(
+        result.bars_by_ticker["BBB"]
+    ) == 1
+
+    assert result.adjustments_by_ticker[
+        "AAA"
+    ] == [
+        AdjustmentRecord(
+            date=date(2026, 9, 21),
+            adj_close=95.0,
+            adjustment_factor=0.95,
+            dividend=5.0,
+            stock_split=0.0,
+        )
+    ]
+
+    assert result.adjustments_by_ticker[
+        "BBB"
+    ] == [
+        AdjustmentRecord(
+            date=date(2026, 9, 21),
+            adj_close=200.0,
+            adjustment_factor=1.0,
+            dividend=0.0,
+            stock_split=0.0,
+        )
+    ]
+
+    _, kwargs = calls[0]
+
+    assert kwargs["auto_adjust"] is False
+    assert kwargs["actions"] is True

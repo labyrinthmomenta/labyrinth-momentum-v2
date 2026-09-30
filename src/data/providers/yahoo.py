@@ -302,6 +302,9 @@ class YahooProvider:
             raise RuntimeError("yfinance is required for Yahoo data provider") from exc
 
         output: dict[str, list[PriceBar]] = {ticker: [] for ticker in clean}
+        adjustments: dict[str, list[AdjustmentRecord]] = {
+            ticker: [] for ticker in clean
+        }
         calls = 0
         vendor_end = end + timedelta(days=1)
         for chunk in self._chunks(clean, self.batch_size):
@@ -313,7 +316,7 @@ class YahooProvider:
                 end=vendor_end.isoformat(),
                 auto_adjust=False,
                 progress=False,
-                actions=False,
+                actions=True,
                 group_by="ticker",
                 threads=False,
             )
@@ -334,7 +337,12 @@ class YahooProvider:
                         except (KeyError, ValueError):
                             sub = frame.copy()
                             sub.columns = sub.columns.get_level_values(-1)
-                output[ticker].extend(self._frame_to_bars(sub, start, end, ticker))
+                output[ticker].extend(
+                    self._frame_to_bars(sub, start, end, ticker)
+                )
+                adjustments[ticker].extend(
+                    self._frame_to_adjustments(sub, start, end, ticker)
+                )
                 continue
 
             if getattr(frame.columns, "nlevels", 1) < 2:
@@ -351,7 +359,12 @@ class YahooProvider:
                         # Missing symbols are represented by an empty result and
                         # will fail the downstream missing-session validation.
                         continue
-                    output[ticker].extend(self._frame_to_bars(sub, start, end, ticker))
+                    output[ticker].extend(
+                        self._frame_to_bars(sub, start, end, ticker)
+                    )
+                    adjustments[ticker].extend(
+                        self._frame_to_adjustments(sub, start, end, ticker)
+                    )
                 except (KeyError, ValueError):
                     continue
 
@@ -385,9 +398,55 @@ class YahooProvider:
             )
 
             calls += 1
-            output[ticker] = self.fetch(ticker, start, end)
+            symbol = self._symbol(ticker)
 
-        return BatchFetchResult(output, calls)
+            retry_frame = yf.download(
+                symbol,
+                start=start.isoformat(),
+                end=vendor_end.isoformat(),
+                auto_adjust=False,
+                progress=False,
+                actions=True,
+                group_by="column",
+                threads=False,
+            )
+
+            if (
+                retry_frame is not None
+                and not retry_frame.empty
+                and getattr(retry_frame.columns, "nlevels", 1) > 1
+            ):
+                try:
+                    retry_frame = retry_frame.xs(
+                        symbol,
+                        axis=1,
+                        level=-1,
+                        drop_level=True,
+                    )
+                except (KeyError, ValueError):
+                    retry_frame = retry_frame.copy()
+                    retry_frame.columns = (
+                        retry_frame.columns.get_level_values(0)
+                    )
+
+            output[ticker] = self._frame_to_bars(
+                retry_frame,
+                start,
+                end,
+                ticker,
+            )
+            adjustments[ticker] = self._frame_to_adjustments(
+                retry_frame,
+                start,
+                end,
+                ticker,
+            )
+
+        return BatchFetchResult(
+            output,
+            calls,
+            adjustments_by_ticker=adjustments,
+        )
 
 
 def fetch_ohlcv(ticker: str, calendar_days: int = 30):

@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 from typing import Protocol
 
 from src.calculation.engine import PriceBar
+from src.data.storage.adjustments import AdjustmentRecord
 
 
 @dataclass(frozen=True)
@@ -18,6 +19,9 @@ class BatchFetchResult:
 
     bars_by_ticker: dict[str, list[PriceBar]]
     provider_calls: int
+    adjustments_by_ticker: dict[str, list[AdjustmentRecord]] = field(
+        default_factory=dict
+    )
 
 
 class MarketDataProvider(Protocol):
