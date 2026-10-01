@@ -7,29 +7,29 @@
     "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2026-04-09"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 115,
+    "as_of": "2026-10-01",
+    "observations": 118,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.5037926639656745,
-    "momentum_21": -0.39568898822568244,
+    "momentum_63": -0.3954081750323206,
+    "momentum_21": -0.2286411692900726,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.2857142857142857,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 6.350985873337528,
-    "delta_momentum_21_63": 0.10810367573999202,
-    "delta_fip_21_63": -0.23809523809523814,
-    "completed_month": "2026-08",
-    "completed_month_momentum": -0.034003059864880725,
-    "completed_month_fip": 0.0,
-    "completed_month_observations": 21
+    "fip_63": -0.25396825396825395,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 5.769164098452162,
+    "delta_momentum_21_63": 0.166767005742248,
+    "delta_fip_21_63": -0.07936507936507936,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.3104000091552732,
+    "completed_month_fip": -0.45454545454545453,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -727,6 +727,24 @@
       "close": 7.849999904632568,
       "volume": 5613397.0,
       "return": -0.05875302625783241
+    },
+    {
+      "date": "2026-09-29",
+      "close": 7.840000152587891,
+      "volume": 5821324.0,
+      "return": -0.0012738537791289195
+    },
+    {
+      "date": "2026-09-30",
+      "close": 8.619999885559082,
+      "volume": 15178945.0,
+      "return": 0.09948975992222686
+    },
+    {
+      "date": "2026-10-01",
+      "close": 9.48,
+      "volume": 18380193.0,
+      "return": 0.09976799603926434
     }
   ],
   "data_status": "OK",

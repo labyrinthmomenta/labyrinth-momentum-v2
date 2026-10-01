@@ -7,29 +7,29 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2025-11-21"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 212,
+    "as_of": "2026-10-01",
+    "observations": 215,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.4276315686280048,
-    "momentum_63": -0.4276315686280048,
-    "momentum_21": -0.3649635023793564,
+    "momentum_126": -0.3986486563985584,
+    "momentum_63": -0.4026845675815057,
+    "momentum_21": -0.32061065734735106,
     "fip_252": null,
     "fip_126": -0.10317460317460317,
-    "fip_63": -0.2857142857142857,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.77185998447129,
-    "delta_momentum_21_63": 0.0626680662486484,
-    "delta_fip_21_63": -0.047619047619047616,
-    "completed_month": "2026-08",
-    "completed_month_momentum": 0.0,
-    "completed_month_fip": 0.0,
-    "completed_month_observations": 21
+    "atr14_percent": 6.804085625630616,
+    "delta_momentum_21_63": 0.08207391023415467,
+    "delta_fip_21_63": -0.06349206349206349,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.37121215884131453,
+    "completed_month_fip": -0.36363636363636365,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -1309,6 +1309,24 @@
       "close": 0.8700000047683716,
       "volume": 245554377.0,
       "return": -0.09374997477667968
+    },
+    {
+      "date": "2026-09-29",
+      "close": 0.8500000238418579,
+      "volume": 195996135.0,
+      "return": -0.022988483697581663
+    },
+    {
+      "date": "2026-09-30",
+      "close": 0.8299999833106995,
+      "volume": 490975293.0,
+      "return": -0.02352945878843815
+    },
+    {
+      "date": "2026-10-01",
+      "close": 0.89,
+      "volume": 241829125.0,
+      "return": 0.07228917818765823
     }
   ],
   "data_status": "OK",

@@ -7,54 +7,36 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "1998-07-02"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
+    "as_of": "2026-10-01",
     "observations": 252,
-    "momentum_12_1": 0.37405536999343814,
-    "fip_12_1": 0.0,
-    "momentum_252": -0.4947103506187158,
-    "momentum_126": -0.6322639826488964,
-    "momentum_63": -0.6322639826488964,
-    "momentum_21": -0.6322639826488964,
-    "fip_252": -0.011904761904761904,
+    "momentum_12_1": 0.46246649739501167,
+    "fip_12_1": -0.012987012987012988,
+    "momentum_252": -0.6075066943847551,
+    "momentum_126": -0.7316223610493879,
+    "momentum_63": -0.7316223610493879,
+    "momentum_21": -0.7316223610493879,
+    "fip_252": 0.0,
     "fip_126": -0.023809523809523808,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 10.756470094886511,
+    "atr14_percent": 45.78230749876174,
     "delta_momentum_21_63": 0.0,
     "delta_fip_21_63": -0.09523809523809523,
-    "completed_month": "2026-08",
-    "completed_month_momentum": 0.0,
-    "completed_month_fip": 0.0,
-    "completed_month_observations": 21
+    "completed_month": "2026-09",
+    "completed_month_momentum": 2.220446049250313e-16,
+    "completed_month_fip": 0.09090909090909091,
+    "completed_month_observations": 22
   },
   "daily": [
-    {
-      "date": "2025-09-25",
-      "close": 79.4000015258789,
-      "volume": 90326.0,
-      "return": null
-    },
-    {
-      "date": "2025-09-26",
-      "close": 77.5,
-      "volume": 153290.0,
-      "return": -0.02392948979049625
-    },
-    {
-      "date": "2025-09-29",
-      "close": 74.69999694824219,
-      "volume": 137346.0,
-      "return": -0.03612907163558465
-    },
     {
       "date": "2025-09-30",
       "close": 74.5999984741211,
       "volume": 95325.0,
-      "return": -0.0013386677136062453
+      "return": null
     },
     {
       "date": "2025-10-01",
@@ -1549,6 +1531,24 @@
       "close": 40.119998931884766,
       "volume": 561548.0,
       "return": -0.09964098529107224
+    },
+    {
+      "date": "2026-09-29",
+      "close": 109.0999984741211,
+      "volume": 0.0,
+      "return": 1.7193420084419673
+    },
+    {
+      "date": "2026-09-30",
+      "close": 109.0999984741211,
+      "volume": 0.0,
+      "return": 0.0
+    },
+    {
+      "date": "2026-10-01",
+      "close": 29.28,
+      "volume": 4892893.0,
+      "return": -0.7316223610493879
     }
   ],
   "data_status": "OK",

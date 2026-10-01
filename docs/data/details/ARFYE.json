@@ -7,29 +7,29 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2026-01-05"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 182,
+    "as_of": "2026-10-01",
+    "observations": 185,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.48792977608396915,
-    "momentum_63": -0.54983923381745,
-    "momentum_21": -0.3217054062985383,
+    "momentum_126": -0.4563785837551346,
+    "momentum_63": -0.5787627633004719,
+    "momentum_21": -0.315898479267238,
     "fip_252": null,
     "fip_126": -0.07936507936507936,
-    "fip_63": -0.23809523809523808,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 8.436647536624315,
-    "delta_momentum_21_63": 0.22813382751891176,
-    "delta_fip_21_63": -0.09523809523809523,
-    "completed_month": "2026-08",
-    "completed_month_momentum": -0.3276450076482732,
-    "completed_month_fip": -0.38095238095238093,
-    "completed_month_observations": 21
+    "atr14_percent": 8.498189498825969,
+    "delta_momentum_21_63": 0.2628642840332339,
+    "delta_fip_21_63": -0.06349206349206349,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.3401015483991149,
+    "completed_month_fip": -0.36363636363636365,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -1129,6 +1129,24 @@
       "close": 14.0,
       "volume": 3746080.0,
       "return": -0.020979034037302835
+    },
+    {
+      "date": "2026-09-29",
+      "close": 13.979999542236328,
+      "volume": 1694187.0,
+      "return": -0.0014286041259765625
+    },
+    {
+      "date": "2026-09-30",
+      "close": 13.0,
+      "volume": 3664669.0,
+      "return": -0.07010011261270477
+    },
+    {
+      "date": "2026-10-01",
+      "close": 13.21,
+      "volume": 3118078.0,
+      "return": 0.016153846153846185
     }
   ],
   "data_status": "OK",

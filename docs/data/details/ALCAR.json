@@ -7,54 +7,36 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "1992-01-27"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
+    "as_of": "2026-10-01",
     "observations": 252,
-    "momentum_12_1": -0.3044999999999999,
+    "momentum_12_1": -0.28593194514982334,
     "fip_12_1": -0.1645021645021645,
-    "momentum_252": -0.3765000000000003,
-    "momentum_126": -0.16364855801475564,
-    "momentum_63": -0.20370370370370416,
-    "momentum_21": -0.10352264557872048,
+    "momentum_252": -0.38090401218892933,
+    "momentum_126": -0.13790664780763906,
+    "momentum_63": -0.24285714285714322,
+    "momentum_21": -0.1330014224751067,
     "fip_252": -0.14682539682539683,
-    "fip_126": -0.12698412698412698,
-    "fip_63": -0.14285714285714285,
+    "fip_126": -0.1111111111111111,
+    "fip_63": -0.1746031746031746,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 5.46015453201858,
-    "delta_momentum_21_63": 0.10018105812498368,
-    "delta_fip_21_63": 0.19047619047619047,
-    "completed_month": "2026-08",
-    "completed_month_momentum": -0.07837837837837858,
-    "completed_month_fip": -0.3333333333333333,
-    "completed_month_observations": 21
+    "atr14_percent": 5.312167861988617,
+    "delta_momentum_21_63": 0.1098557203820365,
+    "delta_fip_21_63": 0.2222222222222222,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.12903225806451613,
+    "completed_month_fip": 0.0,
+    "completed_month_observations": 22
   },
   "daily": [
-    {
-      "date": "2025-09-25",
-      "close": 1000.0,
-      "volume": 37702.0,
-      "return": null
-    },
-    {
-      "date": "2025-09-26",
-      "close": 1001.0,
-      "volume": 28449.0,
-      "return": 0.0009999999999998899
-    },
-    {
-      "date": "2025-09-29",
-      "close": 991.0,
-      "volume": 22658.0,
-      "return": -0.009990009990009985
-    },
     {
       "date": "2025-09-30",
       "close": 984.5,
       "volume": 20728.0,
-      "return": -0.006559031281533789
+      "return": null
     },
     {
       "date": "2025-10-01",
@@ -1549,6 +1531,24 @@
       "close": 623.5,
       "volume": 19804.0,
       "return": -0.03183229813664601
+    },
+    {
+      "date": "2026-09-29",
+      "close": 603.0,
+      "volume": 27571.0,
+      "return": -0.03287890938251803
+    },
+    {
+      "date": "2026-09-30",
+      "close": 594.0,
+      "volume": 22944.0,
+      "return": -0.014925373134328401
+    },
+    {
+      "date": "2026-10-01",
+      "close": 609.5,
+      "volume": 31366.0,
+      "return": 0.02609427609427617
     }
   ],
   "data_status": "OK",

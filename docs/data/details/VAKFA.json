@@ -7,29 +7,29 @@
     "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2025-11-20"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 213,
+    "as_of": "2026-10-01",
+    "observations": 216,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.24481325830462397,
-    "momentum_63": -0.2435577237355273,
-    "momentum_21": -0.2059336517296252,
+    "momentum_126": -0.23017899809069997,
+    "momentum_63": -0.24750000000000005,
+    "momentum_21": -0.1753424513889552,
     "fip_252": null,
-    "fip_126": -0.0873015873015873,
-    "fip_63": -0.1746031746031746,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 4.6225399642074025,
-    "delta_momentum_21_63": 0.03762407200590212,
-    "delta_fip_21_63": -0.30158730158730157,
-    "completed_month": "2026-08",
-    "completed_month_momentum": 0.03237737411742181,
-    "completed_month_fip": -0.14285714285714285,
-    "completed_month_observations": 21
+    "fip_126": -0.07142857142857142,
+    "fip_63": -0.14285714285714285,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.826803034872499,
+    "delta_momentum_21_63": 0.07215754861104484,
+    "delta_fip_21_63": -0.19047619047619047,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.21236558404690864,
+    "completed_month_fip": -0.4090909090909091,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -1315,6 +1315,24 @@
       "close": 9.100000381469727,
       "volume": 5309581.0,
       "return": -0.047120397934830804
+    },
+    {
+      "date": "2026-09-29",
+      "close": 9.270000457763672,
+      "volume": 10026464.0,
+      "return": 0.018681326282152133
+    },
+    {
+      "date": "2026-09-30",
+      "close": 8.789999961853027,
+      "volume": 5833362.0,
+      "return": -0.05177998621441726
+    },
+    {
+      "date": "2026-10-01",
+      "close": 9.03,
+      "volume": 14637838.0,
+      "return": 0.027303758724519733
     }
   ],
   "data_status": "OK",

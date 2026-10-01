@@ -7,29 +7,29 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2026-02-06"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 158,
+    "as_of": "2026-10-01",
+    "observations": 161,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.014404820805747454,
-    "momentum_63": -0.2210904982613885,
-    "momentum_21": -0.3564356678713182,
+    "momentum_126": -0.011857677711749837,
+    "momentum_63": -0.2766203991148939,
+    "momentum_21": -0.37562438990092284,
     "fip_252": null,
-    "fip_126": -0.07142857142857142,
-    "fip_63": -0.15873015873015872,
-    "fip_21": -0.6190476190476191,
-    "atr14_percent": 9.59383133176869,
-    "delta_momentum_21_63": -0.1353451696099297,
-    "delta_fip_21_63": -0.46031746031746035,
-    "completed_month": "2026-08",
-    "completed_month_momentum": -0.13566375928959318,
-    "completed_month_fip": 0.0,
-    "completed_month_observations": 21
+    "fip_126": -0.047619047619047616,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.5714285714285714,
+    "atr14_percent": 9.886717906836367,
+    "delta_momentum_21_63": -0.09900399078602895,
+    "delta_fip_21_63": -0.3968253968253968,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.3981704513960378,
+    "completed_month_fip": -0.6363636363636364,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -985,6 +985,24 @@
       "close": 26.0,
       "volume": 5831607.0,
       "return": -0.05933427734671515
+    },
+    {
+      "date": "2026-09-29",
+      "close": 27.239999771118164,
+      "volume": 1742858.0,
+      "return": 0.047692298889160156
+    },
+    {
+      "date": "2026-09-30",
+      "close": 25.0,
+      "volume": 1686426.0,
+      "return": -0.08223200403596098
+    },
+    {
+      "date": "2026-10-01",
+      "close": 25.0,
+      "volume": 2410850.0,
+      "return": 0.0
     }
   ],
   "data_status": "OK",

@@ -7,29 +7,29 @@
     "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2026-09-02"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 18,
+    "as_of": "2026-10-01",
+    "observations": 21,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": null,
+    "momentum_21": -0.5309278488868678,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": null,
-    "atr14_percent": 11.29684484679061,
+    "fip_21": -0.7142857142857143,
+    "atr14_percent": 10.102243677880987,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
-    "completed_month": "2026-08",
-    "completed_month_momentum": null,
-    "completed_month_fip": null,
-    "completed_month_observations": 0
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.5558419309446414,
+    "completed_month_fip": -0.8,
+    "completed_month_observations": 20
   },
   "daily": [
     {
@@ -145,6 +145,24 @@
       "close": 5.489999771118164,
       "volume": 11977948.0,
       "return": -0.06153848536464468
+    },
+    {
+      "date": "2026-09-29",
+      "close": 5.269999980926514,
+      "volume": 8312935.0,
+      "return": -0.04007282319919703
+    },
+    {
+      "date": "2026-09-30",
+      "close": 5.170000076293945,
+      "volume": 7894289.0,
+      "return": -0.018975314040700852
+    },
+    {
+      "date": "2026-10-01",
+      "close": 5.46,
+      "volume": 10023823.0,
+      "return": 0.056092827742071805
     }
   ],
   "data_status": "OK",

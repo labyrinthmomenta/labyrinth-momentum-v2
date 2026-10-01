@@ -7,29 +7,29 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2025-11-03"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 226,
+    "as_of": "2026-10-01",
+    "observations": 229,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.10526316670059377,
-    "momentum_63": -0.23918449893734728,
-    "momentum_21": -0.15376104782645095,
+    "momentum_126": -0.2417177559188074,
+    "momentum_63": -0.3896296296296293,
+    "momentum_21": -0.2585482937353494,
     "fip_252": null,
-    "fip_126": 0.15873015873015872,
-    "fip_63": 0.06349206349206349,
+    "fip_126": 0.14285714285714285,
+    "fip_63": 0.031746031746031744,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.660378715577478,
-    "delta_momentum_21_63": 0.08542345111089633,
-    "delta_fip_21_63": -0.1111111111111111,
-    "completed_month": "2026-08",
-    "completed_month_momentum": -0.04515416859659649,
-    "completed_month_fip": 0.09523809523809523,
-    "completed_month_observations": 21
+    "atr14_percent": 8.83892725624474,
+    "delta_momentum_21_63": 0.13108133589427995,
+    "delta_fip_21_63": -0.07936507936507936,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.22837370261245138,
+    "completed_month_fip": -0.09090909090909091,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -1393,6 +1393,24 @@
       "close": 30.600000381469727,
       "volume": 2873104.0,
       "return": -0.01670952582713625
+    },
+    {
+      "date": "2026-09-29",
+      "close": 29.1200008392334,
+      "volume": 1509866.0,
+      "return": -0.04836599750935178
+    },
+    {
+      "date": "2026-09-30",
+      "close": 26.760000228881836,
+      "volume": 6628104.0,
+      "return": -0.08104397466815771
+    },
+    {
+      "date": "2026-10-01",
+      "close": 24.72,
+      "volume": 6988098.0,
+      "return": -0.07623319175760257
     }
   ],
   "data_status": "OK",

@@ -7,29 +7,29 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2026-02-19"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 149,
+    "as_of": "2026-10-01",
+    "observations": 152,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.4973776039415425,
-    "momentum_63": -0.650880374030272,
-    "momentum_21": -0.6388190972082863,
+    "momentum_126": -0.5393634678985944,
+    "momentum_63": -0.6543054649435074,
+    "momentum_21": -0.5870870776268002,
     "fip_252": null,
     "fip_126": -0.15079365079365079,
-    "fip_63": -0.19047619047619047,
+    "fip_63": -0.15873015873015872,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 14.821462561251305,
-    "delta_momentum_21_63": 0.012061276821985656,
-    "delta_fip_21_63": -0.23809523809523808,
-    "completed_month": "2026-08",
-    "completed_month_momentum": 0.04981687356625675,
-    "completed_month_fip": 0.047619047619047616,
-    "completed_month_observations": 21
+    "atr14_percent": 15.407621758235834,
+    "delta_momentum_21_63": 0.06721838731670715,
+    "delta_fip_21_63": -0.2698412698412698,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.6029309080590074,
+    "completed_month_fip": -0.36363636363636365,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -931,6 +931,24 @@
       "close": 5.75,
       "volume": 29705601.0,
       "return": -0.05891982416493602
+    },
+    {
+      "date": "2026-09-29",
+      "close": 6.320000171661377,
+      "volume": 79384078.0,
+      "return": 0.09913046463676123
+    },
+    {
+      "date": "2026-09-30",
+      "close": 5.690000057220459,
+      "volume": 67302010.0,
+      "return": -0.09968355970397169
+    },
+    {
+      "date": "2026-10-01",
+      "close": 5.5,
+      "volume": 61003589.0,
+      "return": -0.03339192536199609
     }
   ],
   "data_status": "OK",

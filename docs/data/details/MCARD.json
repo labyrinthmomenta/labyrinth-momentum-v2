@@ -7,29 +7,29 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-09-28",
+    "viop_as_of": "2026-10-01",
     "first_trade_date": "2026-03-11"
   },
   "snapshot": {
-    "as_of": "2026-09-28",
-    "observations": 135,
+    "as_of": "2026-10-01",
+    "observations": 138,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.4732801081536956,
-    "momentum_63": -0.4880597014925374,
-    "momentum_21": -0.48958333333333315,
+    "momentum_126": -0.3805755395683452,
+    "momentum_63": -0.4605263364203379,
+    "momentum_21": -0.46521739130434747,
     "fip_252": null,
     "fip_126": -0.1746031746031746,
-    "fip_63": -0.30158730158730157,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 13.378072046481664,
-    "delta_momentum_21_63": -0.001523631840795736,
-    "delta_fip_21_63": -0.031746031746031744,
-    "completed_month": "2026-08",
-    "completed_month_momentum": 0.19274375972632418,
-    "completed_month_fip": 0.047619047619047616,
-    "completed_month_observations": 21
+    "atr14_percent": 11.993824282765765,
+    "delta_momentum_21_63": -0.00469105488400956,
+    "delta_fip_21_63": -0.06349206349206349,
+    "completed_month": "2026-09",
+    "completed_month_momentum": -0.4752851619109303,
+    "completed_month_fip": -0.36363636363636365,
+    "completed_month_observations": 22
   },
   "daily": [
     {
@@ -847,6 +847,24 @@
       "close": 85.75,
       "volume": 1115402.0,
       "return": -0.06488546506277981
+    },
+    {
+      "date": "2026-09-29",
+      "close": 85.5,
+      "volume": 919614.0,
+      "return": -0.002915451895043719
+    },
+    {
+      "date": "2026-09-30",
+      "close": 82.80000305175781,
+      "volume": 1161171.0,
+      "return": -0.03157891167534721
+    },
+    {
+      "date": "2026-10-01",
+      "close": 86.1,
+      "volume": 1753888.0,
+      "return": 0.03985503413785341
     }
   ],
   "data_status": "OK",
