@@ -88,6 +88,7 @@ def load_price_bars(
     *,
     start: date | None = None,
     end: date | None = None,
+    source: str | None = None,
 ) -> list[PriceBar]:
     sql = "SELECT date, open, high, low, close, volume FROM daily_prices WHERE security_id=?"
     params: list[object] = [security_id]
@@ -97,6 +98,9 @@ def load_price_bars(
     if end is not None:
         sql += " AND date<=?"
         params.append(end.isoformat())
+    if source is not None:
+        sql += " AND source=?"
+        params.append(source)
     sql += " ORDER BY date"
     rows = conn.execute(sql, tuple(params)).fetchall()
     return [

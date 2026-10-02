@@ -87,7 +87,13 @@ def _add_security_with_ticker_history(conn):
     return security_id
 
 
-def _add_price(conn, security_id, day):
+def _add_price(
+    conn,
+    security_id,
+    day,
+    *,
+    source="TEST",
+):
     conn.execute(
         """
         INSERT INTO daily_prices(
@@ -102,12 +108,13 @@ def _add_price(conn, security_id, day):
             source,
             fetched_at
         )
-        VALUES (?, ?, 100, 101, 99, 100, 1000, ?, 'TEST', ?)
+        VALUES (?, ?, 100, 101, 99, 100, 1000, ?, ?, ?)
         """,
         (
             security_id,
             day.isoformat(),
             "OLD" if day.year == 2023 else "NEW",
+            source,
             "2026-10-01T00:00:00+03:00",
         ),
     )
@@ -237,7 +244,7 @@ def test_backfill_plan_is_empty_when_all_price_dates_have_adjustments(
 
 
 class FakeAdjustmentProvider:
-    source_name = "FAKE_ADJUSTMENTS"
+    source_name = "TEST"
 
     def __init__(self, records):
         self.records = records
@@ -383,13 +390,13 @@ def test_backfill_fetches_required_range_and_persists_only_required_dates(
             missing_day_1.isoformat(),
             101.0,
             1.01,
-            "FAKE_ADJUSTMENTS",
+            "TEST",
         ),
         (
             missing_day_2.isoformat(),
             102.0,
             1.02,
-            "FAKE_ADJUSTMENTS",
+            "TEST",
         ),
     ]
 
@@ -766,3 +773,88 @@ def test_run_backfill_passes_ticker_subset_to_planner(
         """,
         (second_id,),
     ).fetchone()[0] == 0
+
+
+
+def test_run_backfill_excludes_dates_from_other_canonical_price_sources(
+    db,
+):
+    security_id = _add_security_with_ticker_history(
+        db.conn,
+    )
+
+    yahoo_day = date(2024, 1, 2)
+    fallback_day = date(2024, 1, 3)
+
+    _add_price(
+        db.conn,
+        security_id,
+        yahoo_day,
+        source="Yahoo Finance",
+    )
+
+    _add_price(
+        db.conn,
+        security_id,
+        fallback_day,
+        source="BIST_THB",
+    )
+
+    db.conn.commit()
+
+    provider = FakeAdjustmentProvider(
+        [
+            AdjustmentRecord(
+                date=yahoo_day,
+                adj_close=100.0,
+                adjustment_factor=1.0,
+                dividend=0.0,
+                stock_split=0.0,
+            ),
+            AdjustmentRecord(
+                date=fallback_day,
+                adj_close=100.0,
+                adjustment_factor=1.0,
+                dividend=0.0,
+                stock_split=0.0,
+            ),
+        ]
+    )
+
+    provider.source_name = "Yahoo Finance"
+
+    summary = run_adjustment_backfill(
+        db.conn,
+        provider,
+        as_of=fallback_day,
+    )
+
+    assert provider.calls == [
+        (
+            "NEW",
+            yahoo_day,
+            yahoo_day,
+        )
+    ]
+
+    rows = db.conn.execute(
+        """
+        SELECT date, source
+        FROM price_adjustments
+        WHERE security_id=?
+        ORDER BY date
+        """,
+        (security_id,),
+    ).fetchall()
+
+    assert [
+        tuple(row)
+        for row in rows
+    ] == [
+        (
+            yahoo_day.isoformat(),
+            "Yahoo Finance",
+        )
+    ]
+
+    assert summary.records_accepted == 1

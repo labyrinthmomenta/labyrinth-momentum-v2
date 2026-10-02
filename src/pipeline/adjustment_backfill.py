@@ -41,6 +41,7 @@ def build_adjustment_backfill_plan(
     *,
     as_of: date,
     tickers: set[str] | None = None,
+    price_source: str | None = None,
 ) -> list[AdjustmentBackfillRequest]:
     """Plan missing adjustment metadata for existing canonical price dates.
 
@@ -73,6 +74,7 @@ def build_adjustment_backfill_plan(
             conn,
             security.security_id,
             end=as_of,
+            source=price_source,
         )
 
         if not prices:
@@ -161,10 +163,22 @@ def run_adjustment_backfill(
     Provider rows outside the plan's required dates are ignored.
     """
 
+    source = getattr(
+        provider,
+        "source_name",
+        None,
+    )
+
+    if not source:
+        raise ValueError(
+            "Adjustment provider must define source_name"
+        )
+
     plan = build_adjustment_backfill_plan(
         conn,
         as_of=as_of,
         tickers=tickers,
+        price_source=source,
     )
 
     if not plan:
@@ -175,17 +189,6 @@ def run_adjustment_backfill(
             records_accepted=0,
             records_inserted=0,
             records_updated=0,
-        )
-
-    source = getattr(
-        provider,
-        "source_name",
-        None,
-    )
-
-    if not source:
-        raise ValueError(
-            "Adjustment provider must define source_name"
         )
 
     staged: list[
