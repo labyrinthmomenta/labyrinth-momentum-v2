@@ -13,6 +13,7 @@ from src.data.universe.official import fetch_official_universe, guard_universe_c
 from src.reporting.legacy_compare import build_legacy_comparison, write_legacy_comparison
 from src.pipeline.daily import DailyPipelineError, run_daily_pipeline
 from src.pipeline.update import UpdatePipelineError, run_incremental_update
+from src.pipeline.adjustment_backfill import run_adjustment_backfill
 from src.pipeline.preflight import LivePreflightError, run_live_preflight
 from src.data.calendar_store import sync_trading_days
 
@@ -23,7 +24,20 @@ PUBLIC_DIR = ROOT / "docs" / "data"
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Labyrinth Momentum V2")
-    parser.add_argument("command", nargs="?", choices=("init", "update", "daily", "dry-run", "legacy-report", "preflight"), default="init")
+    parser.add_argument(
+        "command",
+        nargs="?",
+        choices=(
+            "init",
+            "update",
+            "daily",
+            "dry-run",
+            "legacy-report",
+            "preflight",
+            "adjustment-backfill",
+        ),
+        default="init",
+    )
     parser.add_argument("--db", default=str(DB_PATH), help="SQLite database path")
     parser.add_argument("--as-of", dest="as_of", help="YYYY-MM-DD; defaults to today")
     parser.add_argument("--window", type=int, default=252, help="Maximum return lookback")
@@ -100,6 +114,37 @@ def main() -> int:
         db.close()
         print(f"Initialized {Path(args.db).resolve()}")
         return 0
+
+    if args.command == "adjustment-backfill":
+        db = Database(args.db)
+        db.initialize()
+
+        try:
+            summary = run_adjustment_backfill(
+                db.conn,
+                YahooProvider(),
+                as_of=as_of,
+            )
+
+            print(
+                "SUCCESS adjustment-backfill "
+                f"requests={summary.requests_planned} "
+                f"provider_calls={summary.provider_calls} "
+                f"fetched={summary.records_fetched} "
+                f"accepted={summary.records_accepted} "
+                f"inserted={summary.records_inserted} "
+                f"updated={summary.records_updated}"
+            )
+            return 0
+
+        except Exception as exc:
+            print(
+                f"FAILED adjustment-backfill: {exc}"
+            )
+            return 2
+
+        finally:
+            db.close()
 
     if args.command == "update":
         db = Database(args.db)
