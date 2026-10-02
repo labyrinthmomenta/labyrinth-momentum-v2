@@ -40,6 +40,7 @@ def build_adjustment_backfill_plan(
     conn: sqlite3.Connection,
     *,
     as_of: date,
+    tickers: set[str] | None = None,
 ) -> list[AdjustmentBackfillRequest]:
     """Plan missing adjustment metadata for existing canonical price dates.
 
@@ -51,7 +52,23 @@ def build_adjustment_backfill_plan(
 
     requests: list[AdjustmentBackfillRequest] = []
 
+    selected_tickers = (
+        {
+            ticker.strip().upper().replace(".IS", "")
+            for ticker in tickers
+            if ticker.strip()
+        }
+        if tickers is not None
+        else None
+    )
+
     for security in active_equities(conn):
+        if (
+            selected_tickers is not None
+            and security.ticker.upper() not in selected_tickers
+        ):
+            continue
+
         prices = load_price_bars(
             conn,
             security.security_id,
@@ -136,6 +153,7 @@ def run_adjustment_backfill(
     provider,
     *,
     as_of: date,
+    tickers: set[str] | None = None,
 ) -> AdjustmentBackfillSummary:
     """Fetch and atomically persist missing adjustment metadata only.
 
@@ -146,6 +164,7 @@ def run_adjustment_backfill(
     plan = build_adjustment_backfill_plan(
         conn,
         as_of=as_of,
+        tickers=tickers,
     )
 
     if not plan:

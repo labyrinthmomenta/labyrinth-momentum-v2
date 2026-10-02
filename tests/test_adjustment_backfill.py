@@ -546,3 +546,223 @@ def test_backfill_write_failure_rolls_back_all_adjustments(
     ).fetchall()
 
     assert rows == []
+
+
+def test_backfill_plan_can_be_restricted_to_current_ticker_subset(
+    db,
+):
+    first_id = _add_security_with_ticker_history(
+        db.conn,
+    )
+
+    second_now = "2026-10-02T00:00:00+03:00"
+
+    cursor = db.conn.execute(
+        """
+        INSERT INTO securities(
+            name,
+            instrument_type,
+            status,
+            first_trade_date,
+            active,
+            created_at,
+            updated_at
+        )
+        VALUES (?, 'EQUITY', 'ACTIVE', ?, 1, ?, ?)
+        """,
+        (
+            "Second AS",
+            "2024-01-01",
+            second_now,
+            second_now,
+        ),
+    )
+
+    second_id = cursor.lastrowid
+
+    db.conn.execute(
+        """
+        INSERT INTO security_identifiers(
+            security_id,
+            ticker,
+            valid_from,
+            valid_to,
+            is_current
+        )
+        VALUES (?, 'SECOND', '2024-01-01', NULL, 1)
+        """,
+        (second_id,),
+    )
+
+    day = date(2024, 1, 3)
+
+    _add_price(
+        db.conn,
+        first_id,
+        day,
+    )
+
+    db.conn.execute(
+        """
+        INSERT INTO daily_prices(
+            security_id,
+            date,
+            open,
+            high,
+            low,
+            close,
+            volume,
+            ticker_at_date,
+            source,
+            fetched_at
+        )
+        VALUES (?, ?, 100, 101, 99, 100, 1000, 'SECOND', 'TEST', ?)
+        """,
+        (
+            second_id,
+            day.isoformat(),
+            second_now,
+        ),
+    )
+
+    db.conn.commit()
+
+    plan = build_adjustment_backfill_plan(
+        db.conn,
+        as_of=day,
+        tickers={"NEW"},
+    )
+
+    assert {
+        request.security_id
+        for request in plan
+    } == {
+        first_id,
+    }
+
+
+def test_run_backfill_passes_ticker_subset_to_planner(
+    db,
+):
+    first_id = _add_security_with_ticker_history(
+        db.conn,
+    )
+
+    now = "2026-10-02T00:00:00+03:00"
+
+    cursor = db.conn.execute(
+        """
+        INSERT INTO securities(
+            name,
+            instrument_type,
+            status,
+            first_trade_date,
+            active,
+            created_at,
+            updated_at
+        )
+        VALUES (?, 'EQUITY', 'ACTIVE', ?, 1, ?, ?)
+        """,
+        (
+            "Second AS",
+            "2024-01-01",
+            now,
+            now,
+        ),
+    )
+
+    second_id = cursor.lastrowid
+
+    db.conn.execute(
+        """
+        INSERT INTO security_identifiers(
+            security_id,
+            ticker,
+            valid_from,
+            valid_to,
+            is_current
+        )
+        VALUES (?, 'SECOND', '2024-01-01', NULL, 1)
+        """,
+        (second_id,),
+    )
+
+    day = date(2024, 1, 3)
+
+    _add_price(
+        db.conn,
+        first_id,
+        day,
+    )
+
+    db.conn.execute(
+        """
+        INSERT INTO daily_prices(
+            security_id,
+            date,
+            open,
+            high,
+            low,
+            close,
+            volume,
+            ticker_at_date,
+            source,
+            fetched_at
+        )
+        VALUES (?, ?, 100, 101, 99, 100, 1000, 'SECOND', 'TEST', ?)
+        """,
+        (
+            second_id,
+            day.isoformat(),
+            now,
+        ),
+    )
+
+    db.conn.commit()
+
+    provider = FakeAdjustmentProvider(
+        [
+            AdjustmentRecord(
+                date=day,
+                adj_close=100.0,
+                adjustment_factor=1.0,
+                dividend=0.0,
+                stock_split=0.0,
+            )
+        ]
+    )
+
+    summary = run_adjustment_backfill(
+        db.conn,
+        provider,
+        as_of=day,
+        tickers={"NEW"},
+    )
+
+    assert provider.calls == [
+        (
+            "NEW",
+            day,
+            day,
+        )
+    ]
+
+    assert summary.requests_planned == 1
+
+    assert db.conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM price_adjustments
+        WHERE security_id=?
+        """,
+        (first_id,),
+    ).fetchone()[0] == 1
+
+    assert db.conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM price_adjustments
+        WHERE security_id=?
+        """,
+        (second_id,),
+    ).fetchone()[0] == 0

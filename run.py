@@ -124,6 +124,7 @@ def main() -> int:
                 db.conn,
                 YahooProvider(),
                 as_of=as_of,
+                tickers=_tickers(args.tickers),
             )
 
             print(

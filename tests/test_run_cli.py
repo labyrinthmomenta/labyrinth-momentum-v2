@@ -52,10 +52,12 @@ def test_main_runs_adjustment_backfill_without_daily_pipeline(
         provider,
         *,
         as_of,
+        tickers=None,
     ):
         calls["conn"] = conn
         calls["provider"] = provider
         calls["as_of"] = as_of
+        calls["tickers"] = tickers
         return FakeSummary()
 
     def forbidden_daily_pipeline(**kwargs):
@@ -100,6 +102,8 @@ def test_main_runs_adjustment_backfill_without_daily_pipeline(
             str(db_path),
             "--as-of",
             "2026-09-30",
+            "--tickers",
+            "ASELS,THYAO",
         ],
     )
 
@@ -114,6 +118,10 @@ def test_main_runs_adjustment_backfill_without_daily_pipeline(
         FakeYahooProvider,
     )
     assert calls["as_of"].isoformat() == "2026-09-30"
+    assert calls["tickers"] == {
+        "ASELS",
+        "THYAO",
+    }
 
     output = capsys.readouterr().out
 
