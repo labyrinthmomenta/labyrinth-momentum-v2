@@ -727,3 +727,88 @@ def test_adapter_rejects_bist_thb_bridge_when_neighbor_gap_is_too_long(
             db.conn,
             security_id,
         )
+
+
+def test_adapter_does_not_use_future_yahoo_adjustment_beyond_end_for_bridge(
+    db,
+):
+    security_id = _add_security(
+        db.conn,
+    )
+
+    previous_day = date(2026, 1, 5)
+    fallback_day = date(2026, 1, 6)
+    future_day = date(2026, 1, 7)
+
+    factor = 1.0
+
+    _add_price(
+        db.conn,
+        security_id,
+        previous_day,
+        close=100.0,
+        volume=1_000_000,
+        source="Yahoo Finance",
+    )
+
+    upsert_price_adjustments(
+        db.conn,
+        security_id,
+        [
+            AdjustmentRecord(
+                date=previous_day,
+                adj_close=100.0,
+                adjustment_factor=factor,
+                dividend=0.0,
+                stock_split=0.0,
+            )
+        ],
+        source="Yahoo Finance",
+    )
+
+    _add_price(
+        db.conn,
+        security_id,
+        fallback_day,
+        close=101.0,
+        volume=1_100_000,
+        source="BIST_THB",
+    )
+
+    # This Yahoo observation exists in the database, but it is
+    # strictly AFTER the requested analysis end date.
+    _add_price(
+        db.conn,
+        security_id,
+        future_day,
+        close=102.0,
+        volume=1_200_000,
+        source="Yahoo Finance",
+    )
+
+    upsert_price_adjustments(
+        db.conn,
+        security_id,
+        [
+            AdjustmentRecord(
+                date=future_day,
+                adj_close=102.0,
+                adjustment_factor=factor,
+                dividend=0.0,
+                stock_split=0.0,
+            )
+        ],
+        source="Yahoo Finance",
+    )
+
+    db.conn.commit()
+
+    with pytest.raises(
+        ValueError,
+        match="trailing one-sided",
+    ):
+        load_technical_prices(
+            db.conn,
+            security_id,
+            end=fallback_day,
+        )

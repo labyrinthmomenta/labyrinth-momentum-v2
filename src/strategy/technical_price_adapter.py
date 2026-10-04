@@ -253,8 +253,7 @@ def load_technical_prices(
         tuple(price_params),
     ).fetchall()
 
-    adjustment_rows = conn.execute(
-        """
+    adjustment_sql = """
         SELECT
             date,
             adj_close,
@@ -264,9 +263,27 @@ def load_technical_prices(
             source
         FROM price_adjustments
         WHERE security_id = ?
-        ORDER BY date, source
-        """,
-        (security_id,),
+    """
+
+    adjustment_params: list[object] = [
+        security_id,
+    ]
+
+    # Preserve adjustment history before ``start`` so the first
+    # requested BIST_THB bar can still use a valid previous Yahoo
+    # factor. Never read beyond ``end``: that would introduce
+    # look-ahead into historical/as-of analysis.
+    if end is not None:
+        adjustment_sql += " AND date <= ?"
+        adjustment_params.append(
+            end.isoformat()
+        )
+
+    adjustment_sql += " ORDER BY date, source"
+
+    adjustment_rows = conn.execute(
+        adjustment_sql,
+        tuple(adjustment_params),
     ).fetchall()
 
     exact_adjustments: dict[
