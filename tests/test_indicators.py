@@ -2,7 +2,10 @@ import math
 
 from src.indicators.momentum import momentum
 from src.indicators.fip import fip
-from src.indicators.atr import atr_percent
+from src.indicators.atr import (
+    atr_percent,
+    atr_percent_series,
+)
 from src.indicators.acceleration import delta
 
 
@@ -32,3 +35,125 @@ def test_atr_percent():
 def test_delta():
     assert delta(0.10, 0.25) == -0.15
     assert delta(None, 0.25) is None
+
+
+def test_atr_percent_series_preserves_alignment_and_warmup():
+    closes = [
+        float(value)
+        for value in range(100, 116)
+    ]
+    highs = [
+        close + 1.0
+        for close in closes
+    ]
+    lows = [
+        close - 1.0
+        for close in closes
+    ]
+
+    result = atr_percent_series(
+        highs,
+        lows,
+        closes,
+        period=14,
+    )
+
+    assert len(result) == len(closes)
+
+    # ATR14 needs 14 True Range observations, which requires
+    # 15 price bars. Therefore indexes 0..13 are unavailable.
+    assert result[:14] == [None] * 14
+
+    expected_atr = 2.0
+
+    assert math.isclose(
+        result[14],
+        expected_atr / closes[14] * 100.0,
+        rel_tol=0,
+        abs_tol=1e-12,
+    )
+
+    assert math.isclose(
+        result[15],
+        expected_atr / closes[15] * 100.0,
+        rel_tol=0,
+        abs_tol=1e-12,
+    )
+
+
+def test_atr_percent_series_matches_causal_prefix_calculation():
+    closes = [
+        100.0,
+        101.0,
+        99.0,
+        102.0,
+        104.0,
+        103.0,
+        105.0,
+        107.0,
+        106.0,
+        110.0,
+        108.0,
+        111.0,
+        113.0,
+        112.0,
+        115.0,
+        114.0,
+        118.0,
+        117.0,
+        120.0,
+        119.0,
+    ]
+
+    highs = [
+        close + offset
+        for close, offset in zip(
+            closes,
+            [
+                1.0, 2.0, 1.5, 2.5, 1.0,
+                1.5, 2.0, 1.0, 2.5, 1.5,
+                1.0, 2.0, 1.5, 1.0, 2.5,
+                1.0, 2.0, 1.5, 2.5, 1.0,
+            ],
+        )
+    ]
+
+    lows = [
+        close - offset
+        for close, offset in zip(
+            closes,
+            [
+                1.0, 1.5, 2.0, 1.0, 2.5,
+                1.0, 1.5, 2.0, 1.0, 2.5,
+                1.5, 1.0, 2.0, 2.5, 1.0,
+                2.0, 1.0, 2.5, 1.5, 2.0,
+            ],
+        )
+    ]
+
+    result = atr_percent_series(
+        highs,
+        lows,
+        closes,
+        period=14,
+    )
+
+    for index, actual in enumerate(result):
+        expected = atr_percent(
+            highs[: index + 1],
+            lows[: index + 1],
+            closes[: index + 1],
+            period=14,
+        )
+
+        if expected is None:
+            assert actual is None
+        else:
+            assert actual is not None
+            assert math.isclose(
+                actual,
+                expected,
+                rel_tol=0,
+                abs_tol=1e-12,
+            )
+
