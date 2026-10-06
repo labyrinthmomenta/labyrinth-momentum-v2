@@ -436,3 +436,521 @@ def test_insufficient_trading_data_remains_in_full_publication(tmp_path):
     assert status["provider"] == "BIST_THB"
 
     db.close()
+
+
+def _vcp_state_config():
+    from src.strategy.vcp_state import VCPStateConfig
+
+    return VCPStateConfig(
+        tightening_range_5_max_pct=5.0,
+        tightening_true_range_compression_max=0.75,
+        tightening_final_volume_ratio_max=0.75,
+        near_pivot_max_distance_pct=5.0,
+        breakout_volume_expansion_min_ratio=1.50,
+    )
+
+
+def test_daily_publication_includes_vcp_when_config_is_explicit(
+    tmp_path,
+    monkeypatch,
+):
+    import src.output.publication as publication_module
+
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    sentinel = object()
+    calls = []
+
+    def fake_run_vcp_analysis(
+        conn,
+        security_id,
+        *,
+        as_of,
+        state_config,
+        swing_config=None,
+        atr_period=14,
+    ):
+        calls.append(
+            (
+                security_id,
+                as_of,
+                state_config,
+                swing_config,
+                atr_period,
+            )
+        )
+        return sentinel
+
+    def fake_screener_fields(result):
+        assert result is sentinel
+        return {
+            "vcp_status": "OK",
+            "vcp_status_message": None,
+            "vcp_state": "VCP_CANDIDATE",
+            "vcp_confirmed_contractions": 2,
+            "vcp_pivot": 110.0,
+            "vcp_distance_to_pivot_pct": -2.5,
+            "vcp_distance_to_pivot_atr": -0.5,
+            "vcp_range_5_pct": 3.0,
+            "vcp_true_range_compression_10_40": 0.70,
+            "vcp_final_contraction_volume_ratio_50": 0.65,
+            "vcp_pivot_broken_by_close": False,
+            "vcp_breakout_volume_ratio_20": None,
+        }
+
+    def fake_detail_payload(result):
+        assert result is sentinel
+        return {
+            "status": "OK",
+            "status_message": None,
+            "state": {
+                "state": "VCP_CANDIDATE",
+            },
+            "geometry": {
+                "confirmed_contraction_count": 2,
+            },
+            "features": {},
+            "breakout": {},
+            "follow_through": {},
+            "swings": {},
+        }
+
+    monkeypatch.setattr(
+        publication_module,
+        "run_vcp_analysis",
+        fake_run_vcp_analysis,
+        raising=False,
+    )
+    monkeypatch.setattr(
+        publication_module,
+        "build_vcp_screener_fields",
+        fake_screener_fields,
+        raising=False,
+    )
+    monkeypatch.setattr(
+        publication_module,
+        "build_vcp_detail_payload",
+        fake_detail_payload,
+        raising=False,
+    )
+
+    config = _vcp_state_config()
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar),
+        as_of=date(2026, 9, 23),
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+        vcp_state_config=config,
+    )
+
+    assert summary.public_promoted is True
+
+    screener = json.loads(
+        (public / "screener.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    by_ticker = {
+        row["ticker"]: row
+        for row in screener
+    }
+
+    assert by_ticker["AAA"]["vcp_status"] == "OK"
+    assert (
+        by_ticker["AAA"]["vcp_state"]
+        == "VCP_CANDIDATE"
+    )
+    assert by_ticker["AAA"]["vcp_pivot"] == 110.0
+
+    detail = json.loads(
+        (
+            public
+            / "details"
+            / "AAA.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    assert detail["vcp"]["status"] == "OK"
+    assert (
+        detail["vcp"]["state"]["state"]
+        == "VCP_CANDIDATE"
+    )
+
+    assert len(calls) == 2
+    assert {
+        call[1]
+        for call in calls
+    } == {date(2026, 9, 23)}
+    assert all(
+        call[2] is config
+        for call in calls
+    )
+
+
+def test_daily_publication_without_vcp_config_keeps_stable_unavailable_schema(
+    tmp_path,
+):
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar),
+        as_of=date(2026, 9, 23),
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+    )
+
+    assert summary.public_promoted is True
+
+    screener = json.loads(
+        (public / "screener.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    for row in screener:
+        assert row["vcp_status"] == "NOT_AVAILABLE"
+        assert row["vcp_state"] is None
+        assert row["vcp_pivot"] is None
+        assert (
+            row["vcp_confirmed_contractions"]
+            is None
+        )
+
+    detail = json.loads(
+        (
+            public
+            / "details"
+            / "AAA.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    assert detail["vcp"]["status"] == "NOT_AVAILABLE"
+    assert detail["vcp"]["state"] is None
+    assert detail["vcp"]["geometry"] is None
+
+
+def test_daily_publication_vcp_value_error_degrades_to_not_available(
+    tmp_path,
+    monkeypatch,
+):
+    import src.output.publication as publication_module
+
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    def fail_closed_vcp(
+        conn,
+        security_id,
+        *,
+        as_of,
+        state_config,
+        swing_config=None,
+        atr_period=14,
+    ):
+        raise ValueError(
+            "trailing one-sided BIST_THB adjustment bridge"
+        )
+
+    monkeypatch.setattr(
+        publication_module,
+        "run_vcp_analysis",
+        fail_closed_vcp,
+    )
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar),
+        as_of=date(2026, 9, 23),
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+        vcp_state_config=_vcp_state_config(),
+    )
+
+    assert summary.public_promoted is True
+
+    manifest = json.loads(
+        (public / "manifest.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert manifest["status"] == "PASS"
+
+    screener = json.loads(
+        (public / "screener.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    for row in screener:
+        assert row["data_status"] == "OK"
+        assert row["vcp_status"] == "NOT_AVAILABLE"
+        assert row["vcp_state"] is None
+        assert row["vcp_pivot"] is None
+        assert (
+            "trailing one-sided"
+            in row["vcp_status_message"]
+        )
+
+    detail = json.loads(
+        (
+            public
+            / "details"
+            / "AAA.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    assert detail["data_status"] == "OK"
+    assert detail["vcp"]["status"] == "NOT_AVAILABLE"
+    assert detail["vcp"]["state"] is None
+    assert (
+        "trailing one-sided"
+        in detail["vcp"]["status_message"]
+    )
+
+
+def test_daily_publication_vcp_programming_error_still_blocks_publication(
+    tmp_path,
+    monkeypatch,
+):
+    import src.output.publication as publication_module
+
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    def broken_vcp(
+        conn,
+        security_id,
+        *,
+        as_of,
+        state_config,
+        swing_config=None,
+        atr_period=14,
+    ):
+        raise TypeError(
+            "unexpected VCP programming error"
+        )
+
+    monkeypatch.setattr(
+        publication_module,
+        "run_vcp_analysis",
+        broken_vcp,
+    )
+
+    with pytest.raises(
+        DailyPipelineError,
+        match="unexpected VCP programming error",
+    ):
+        run_daily_pipeline(
+            db_path=db_path,
+            calendar=calendar,
+            provider=CalendarProvider(calendar),
+            as_of=date(2026, 9, 23),
+            public_dir=public,
+            authoritative_universe_records=records(),
+            dry_run=False,
+            vcp_state_config=_vcp_state_config(),
+        )
+
+
+@pytest.mark.parametrize(
+    ("scenario", "expected_status"),
+    [
+        (
+            "provider_unavailable",
+            "PROVIDER_UNAVAILABLE",
+        ),
+        (
+            "insufficient_trading_data",
+            "INSUFFICIENT_TRADING_DATA",
+        ),
+    ],
+)
+def test_non_ok_market_data_skips_vcp_analysis(
+    tmp_path,
+    monkeypatch,
+    scenario,
+    expected_status,
+):
+    import src.output.publication as publication_module
+
+    calendar = BISTTradingCalendar.from_csv()
+    as_of = date(2026, 9, 23)
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    fallback_provider = None
+
+    if scenario == "provider_unavailable":
+        provider = CalendarProvider(
+            calendar,
+            unavailable_ticker="BBB",
+        )
+
+    else:
+        latest = calendar.latest_trading_day_on_or_before(
+            as_of
+        )
+
+        class MissingLatestProvider(CalendarProvider):
+            def fetch(
+                self,
+                ticker,
+                start,
+                end,
+            ):
+                bars = super().fetch(
+                    ticker,
+                    start,
+                    end,
+                )
+                if ticker == "BBB":
+                    return [
+                        bar
+                        for bar in bars
+                        if bar.date != latest
+                    ]
+                return bars
+
+        class NoTradeFallback:
+            source_name = "BIST_THB"
+
+            def fetch(
+                self,
+                ticker,
+                start,
+                end,
+            ):
+                if (
+                    ticker == "BBB"
+                    and start <= latest <= end
+                ):
+                    return [
+                        PriceBar(
+                            latest,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                            0.0,
+                        )
+                    ]
+                return []
+
+        provider = MissingLatestProvider(
+            calendar
+        )
+        fallback_provider = NoTradeFallback()
+
+    calls = []
+
+    def fake_run_vcp_analysis(
+        conn,
+        security_id,
+        *,
+        as_of,
+        state_config,
+        swing_config=None,
+        atr_period=14,
+    ):
+        row = conn.execute(
+            """
+            SELECT si.ticker
+            FROM security_identifiers si
+            WHERE si.security_id=?
+              AND si.is_current=1
+            """,
+            (security_id,),
+        ).fetchone()
+
+        assert row is not None
+
+        calls.append(row[0])
+
+        raise ValueError(
+            "synthetic VCP unavailable"
+        )
+
+    monkeypatch.setattr(
+        publication_module,
+        "run_vcp_analysis",
+        fake_run_vcp_analysis,
+    )
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=provider,
+        fallback_provider=fallback_provider,
+        as_of=as_of,
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+        vcp_state_config=_vcp_state_config(),
+    )
+
+    assert summary.public_promoted is True
+
+    # AAA has OK market data, so VCP is attempted.
+    # BBB has non-OK market data, so VCP must be skipped.
+    assert calls == ["AAA"]
+
+    screener = json.loads(
+        (public / "screener.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    by_ticker = {
+        row["ticker"]: row
+        for row in screener
+    }
+
+    aaa = by_ticker["AAA"]
+
+    assert aaa["data_status"] == "OK"
+    assert aaa["vcp_status"] == "NOT_AVAILABLE"
+    assert (
+        aaa["vcp_status_message"]
+        == "synthetic VCP unavailable"
+    )
+
+    bbb = by_ticker["BBB"]
+
+    assert bbb["data_status"] == expected_status
+    assert bbb["vcp_status"] == "NOT_AVAILABLE"
+    assert bbb["vcp_state"] is None
+    assert bbb["vcp_pivot"] is None
+    assert (
+        bbb["vcp_status_message"]
+        == f"market data status: {expected_status}"
+    )
+
+    detail = json.loads(
+        (
+            public
+            / "details"
+            / "BBB.json"
+        ).read_text(encoding="utf-8")
+    )
+
+    assert detail["data_status"] == expected_status
+    assert detail["vcp"]["status"] == "NOT_AVAILABLE"
+    assert detail["vcp"]["state"] is None
+    assert (
+        detail["vcp"]["status_message"]
+        == f"market data status: {expected_status}"
+    )

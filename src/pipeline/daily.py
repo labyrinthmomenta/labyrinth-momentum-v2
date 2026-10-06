@@ -15,6 +15,7 @@ from src.data.storage.prices import SecurityForUpdate, active_equities
 from src.data.universe.manager import UniverseManager, UniverseRecord
 from src.output.publication import PublicationSummary, build_publication_stage, promote_publication
 from src.pipeline.update import UpdateSummary, run_incremental_update
+from src.strategy.vcp_state import VCPStateConfig
 
 
 class DailyPipelineError(RuntimeError):
@@ -65,6 +66,7 @@ def run_daily_pipeline(
     dry_run: bool = False,
     dry_run_dir: str | Path | None = None,
     fallback_provider: MarketDataProvider | None = None,
+    vcp_state_config: VCPStateConfig | None = None,
 ) -> DailyRunSummary:
     """Run the complete V2 daily flow behind a publication gate.
 
@@ -125,6 +127,7 @@ def run_daily_pipeline(
                 tickers=tickers or None,
                 dry_run=True,
                 data_run_id=update.run_id,
+                vcp_state_config=vcp_state_config,
             )
             promoted = False
         else:
@@ -142,6 +145,7 @@ def run_daily_pipeline(
                 required_return_window=required_return_window,
                 dry_run=False,
                 data_run_id=update.run_id,
+                vcp_state_config=vcp_state_config,
             )
             if publication.securities_published != len(all_active):
                 raise DailyPipelineError("Publication count does not match the active EQUITY universe")

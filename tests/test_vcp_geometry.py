@@ -325,3 +325,99 @@ def test_pivot_is_high_of_last_confirmed_contraction():
         geometry.pivot.extreme_date
         == _classic_3t()[4].extreme_date
     )
+
+
+def test_invalid_high_low_pair_resets_active_vcp_structure():
+    pivots = (
+        # Old structure.
+        _pivot("HIGH", 110.0, 0),
+        _pivot("LOW",   90.0, 3),
+
+        # A local LOW can legitimately remain above the prior
+        # local HIGH in a rising price regime. This is not a VCP
+        # contraction and terminates the previous active base.
+        _pivot("HIGH", 105.0, 6),
+        _pivot("LOW",  106.0, 9),
+
+        # New rightmost structure.
+        _pivot("HIGH", 130.0, 12),
+        _pivot("LOW",  110.0, 15),
+
+        _pivot("HIGH", 125.0, 18),
+        _pivot("LOW",  118.0, 21),
+    )
+
+    geometry = analyze_vcp_geometry(
+        pivots
+    )
+
+    assert geometry.confirmed_contraction_count == 2
+
+    assert [
+        contraction.high.price
+        for contraction in geometry.contractions
+    ] == pytest.approx(
+        [130.0, 125.0]
+    )
+
+    assert [
+        contraction.low.price
+        for contraction in geometry.contractions
+    ] == pytest.approx(
+        [110.0, 118.0]
+    )
+
+    assert [
+        contraction.index
+        for contraction in geometry.contractions
+    ] == [1, 2]
+
+    assert geometry.pivot is not None
+    assert geometry.pivot.price == pytest.approx(
+        125.0
+    )
+
+
+def test_new_high_above_active_base_anchor_starts_new_structure():
+    pivots = (
+        # First base.
+        _pivot("HIGH", 110.0, 0),
+        _pivot("LOW",   90.0, 3),
+
+        _pivot("HIGH", 105.0, 6),
+        _pivot("LOW",   95.0, 9),
+
+        # 112 exceeds the first/base HIGH of 110.
+        # The prior structure is therefore no longer the
+        # rightmost active base.
+        _pivot("HIGH", 112.0, 12),
+        _pivot("LOW",  100.0, 15),
+
+        _pivot("HIGH", 108.0, 18),
+        _pivot("LOW",  103.0, 21),
+    )
+
+    geometry = analyze_vcp_geometry(
+        pivots
+    )
+
+    assert geometry.confirmed_contraction_count == 2
+
+    assert [
+        contraction.high.price
+        for contraction in geometry.contractions
+    ] == pytest.approx(
+        [112.0, 108.0]
+    )
+
+    assert [
+        contraction.low.price
+        for contraction in geometry.contractions
+    ] == pytest.approx(
+        [100.0, 103.0]
+    )
+
+    assert geometry.pivot is not None
+    assert geometry.pivot.price == pytest.approx(
+        108.0
+    )

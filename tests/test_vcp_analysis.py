@@ -1,3 +1,4 @@
+from dataclasses import replace
 from datetime import date, timedelta
 
 from src.strategy.swing_bar_adapter import build_swing_bars
@@ -6,8 +7,15 @@ from src.strategy.swing_detector import (
     detect_swings,
 )
 from src.strategy.technical_prices import TechnicalPriceBar
-from src.strategy.vcp_analysis import analyze_vcp
-from src.strategy.vcp_breakout import detect_vcp_breakout
+from src.strategy.vcp_analysis import (
+    _resolve_base_end_date,
+    analyze_vcp,
+)
+from src.strategy.vcp_breakout import (
+    VCPBreakoutEvent,
+    detect_vcp_breakout,
+)
+from src.strategy.vcp_base_features import compute_vcp_base_features
 from src.strategy.vcp_features import compute_vcp_features
 from src.strategy.vcp_follow_through import (
     measure_vcp_follow_through,
@@ -131,6 +139,28 @@ def test_analyze_vcp_matches_manual_strategy_chain():
         geometry,
     )
 
+    if breakout.first_close_break_date is None:
+        base_end_date = bars[-1].date
+    else:
+        breakout_index = next(
+            index
+            for index, bar in enumerate(bars)
+            if bar.date == breakout.first_close_break_date
+        )
+
+        assert breakout_index > 0
+
+        base_end_date = bars[
+            breakout_index - 1
+        ].date
+
+    base_features = compute_vcp_base_features(
+        bars,
+        geometry,
+        end_date=base_end_date,
+        atr_period=14,
+    )
+
     follow_through = measure_vcp_follow_through(
         bars,
         breakout,
@@ -155,6 +185,7 @@ def test_analyze_vcp_matches_manual_strategy_chain():
     assert result.swings == swings
     assert result.geometry == geometry
     assert result.features == features
+    assert result.base_features == base_features
     assert result.breakout == breakout
     assert result.follow_through == follow_through
     assert result.state == state
@@ -172,3 +203,79 @@ def test_analyze_vcp_forwards_custom_atr_period():
     # ATR period 4 requires 5 technical price bars.
     assert result.swing_bars[0].date == bars[4].date
     assert len(result.swing_bars) == len(bars) - 4
+
+
+
+def test_analyze_vcp_exposes_structural_validity():
+    from src.strategy.vcp_validity import assess_vcp_validity
+
+    result = analyze_vcp(
+        _bars(),
+        state_config=_state_config(),
+    )
+
+    expected = assess_vcp_validity(
+        result.geometry,
+        result.features,
+    )
+
+    assert result.validity == expected
+
+
+
+def test_base_end_date_uses_previous_actual_trading_bar():
+    source = _bars()[:3]
+
+    friday = date(2026, 1, 9)
+    monday = date(2026, 1, 12)
+    tuesday = date(2026, 1, 13)
+
+    bars = (
+        replace(source[0], date=friday),
+        replace(source[1], date=monday),
+        replace(source[2], date=tuesday),
+    )
+
+    breakout = VCPBreakoutEvent(
+        has_confirmed_pivot=True,
+        pivot_price=100.0,
+        structure_ready_date=date(2026, 1, 8),
+        first_intraday_breach_date=monday,
+        first_close_break_date=monday,
+        pivot_broken_by_close=True,
+        breakout_close_pct_above_pivot=1.0,
+        breakout_volume_ratio_20=None,
+        current_close_above_pivot=True,
+    )
+
+    assert (
+        _resolve_base_end_date(
+            bars,
+            breakout,
+        )
+        == friday
+    )
+
+
+def test_base_end_date_is_latest_bar_without_close_breakout():
+    bars = _bars()[:3]
+
+    breakout = VCPBreakoutEvent(
+        has_confirmed_pivot=True,
+        pivot_price=100.0,
+        structure_ready_date=bars[0].date,
+        first_intraday_breach_date=None,
+        first_close_break_date=None,
+        pivot_broken_by_close=False,
+        breakout_close_pct_above_pivot=None,
+        breakout_volume_ratio_20=None,
+        current_close_above_pivot=False,
+    )
+
+    assert (
+        _resolve_base_end_date(
+            bars,
+            breakout,
+        )
+        == bars[-1].date
+    )

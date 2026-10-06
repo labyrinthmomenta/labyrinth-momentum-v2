@@ -6,6 +6,10 @@ import math
 
 from src.strategy.vcp_breakout import VCPBreakoutEvent
 from src.strategy.vcp_features import VCPFeatures
+from src.strategy.vcp_validity import (
+    VCPValidityResult,
+    assess_vcp_validity,
+)
 from src.strategy.vcp_geometry import VCPGeometry
 
 
@@ -14,10 +18,12 @@ class VCPState(str, Enum):
 
     NO_STRUCTURE = "NO_STRUCTURE"
     BASE_FORMING = "BASE_FORMING"
+    VCP_OUT_OF_BOUNDS = "VCP_OUT_OF_BOUNDS"
     VCP_CANDIDATE = "VCP_CANDIDATE"
     VCP_CONTRACTING = "VCP_CONTRACTING"
     VCP_TIGHTENING = "VCP_TIGHTENING"
     NEAR_PIVOT = "NEAR_PIVOT"
+    PIVOT_LOST = "PIVOT_LOST"
     PIVOT_BROKEN = "PIVOT_BROKEN"
     PIVOT_BROKEN_VOLUME_EXPANSION = (
         "PIVOT_BROKEN_VOLUME_EXPANSION"
@@ -277,21 +283,24 @@ def classify_vcp_state(
     features: VCPFeatures,
     breakout: VCPBreakoutEvent,
     *,
+    validity: VCPValidityResult | None = None,
     config: VCPStateConfig,
 ) -> VCPStateResult:
     """Classify the descriptive lifecycle state of a VCP structure.
 
-    Priority is intentionally ordered from the most advanced
-    observable event backward:
+    Classification first establishes structural eligibility,
+    then advances through the observable lifecycle:
 
-        PIVOT_BROKEN_VOLUME_EXPANSION
-        PIVOT_BROKEN
-        NEAR_PIVOT
-        VCP_TIGHTENING
-        VCP_CONTRACTING
-        VCP_CANDIDATE
-        BASE_FORMING
-        NO_STRUCTURE
+        NO_STRUCTURE / BASE_FORMING / VCP_OUT_OF_BOUNDS
+        -> VCP_CANDIDATE when structural validity fails
+        -> VCP_CONTRACTING
+        -> VCP_TIGHTENING
+        -> NEAR_PIVOT
+        -> PIVOT_BROKEN
+        -> PIVOT_BROKEN_VOLUME_EXPANSION
+
+    PIVOT_LOST describes a previously observed breakout whose
+    latest close is back below the pivot.
 
     The classifier does not compute new market indicators, assign
     a quality score, or generate a trading recommendation.
@@ -302,6 +311,15 @@ def classify_vcp_state(
         features,
         breakout,
     )
+
+    # Backward-compatible fallback for direct classifier callers.
+    # The production analysis pipeline computes validity explicitly
+    # before lifecycle classification and passes it here.
+    if validity is None:
+        validity = assess_vcp_validity(
+            geometry,
+            features,
+        )
 
     count = (
         geometry.confirmed_contraction_count
@@ -328,27 +346,53 @@ def classify_vcp_state(
         )
     )
 
-    # Breakout events have the highest lifecycle priority.
-    if breakout.pivot_broken_by_close:
-        state = (
-            VCPState.PIVOT_BROKEN_VOLUME_EXPANSION
-            if volume_expansion
-            else VCPState.PIVOT_BROKEN
-        )
-
-    elif count == 0:
+    # Structural eligibility comes before lifecycle advancement.
+    #
+    # A descriptive geometry may contain more than six confirmed
+    # contractions, but that structure is outside the supported VCP
+    # contraction-count bounds and must not advance into candidate,
+    # tightening, or breakout states.
+    if count == 0:
         state = VCPState.NO_STRUCTURE
 
     elif count == 1:
         state = VCPState.BASE_FORMING
 
-    # Two or more confirmed contractions constitute a candidate
-    # structure even when contraction depths do not decrease.
-    elif not geometry.depths_strictly_decreasing:
+    elif not geometry.count_within_bounds:
+        state = VCPState.VCP_OUT_OF_BOUNDS
+
+    # A 2-6T geometry is only allowed to advance into lifecycle
+    # states when the separate structural-validity layer accepts it.
+    #
+    # Observed breakout events remain preserved in the breakout
+    # result even when the structure itself is not a valid VCP.
+    elif not validity.structurally_valid:
         state = VCPState.VCP_CANDIDATE
 
+    # A historical breakout remains recorded in the breakout layer.
+    # The screener lifecycle state, however, describes the current
+    # relationship to the pivot.
+    elif breakout.pivot_broken_by_close:
+        if breakout.current_close_above_pivot is True:
+            state = (
+                VCPState.PIVOT_BROKEN_VOLUME_EXPANSION
+                if volume_expansion
+                else VCPState.PIVOT_BROKEN
+            )
+
+        elif breakout.current_close_above_pivot is False:
+            state = VCPState.PIVOT_LOST
+
+        else:
+            raise ValueError(
+                "historical breakout requires current pivot relation"
+            )
+
     else:
-        # A successively contracting structure exists.
+        # Structural validity has already been established.
+        #
+        # depths_strictly_decreasing remains diagnostic evidence,
+        # but it is no longer the lifecycle advancement gate.
         state = VCPState.VCP_CONTRACTING
 
         # Tightening requires all configured measurements.

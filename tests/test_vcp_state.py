@@ -320,7 +320,7 @@ def test_all_configured_tightening_conditions_are_required():
     assert result.state is VCPState.VCP_TIGHTENING
 
 
-def test_missing_tightening_metric_fails_closed_to_contracting():
+def test_missing_current_tightness_metric_fails_closed_to_contracting():
     geometry = _contracting_geometry()
 
     result = classify_vcp_state(
@@ -337,8 +337,11 @@ def test_missing_tightening_metric_fails_closed_to_contracting():
         config=_config(),
     )
 
+    # Current TR compression is readiness evidence, not
+    # structural-validity evidence. A valid structure remains
+    # CONTRACTING, but missing readiness evidence must prevent
+    # promotion to TIGHTENING.
     assert result.state is VCPState.VCP_CONTRACTING
-
 
 def test_tightening_structure_within_near_pivot_distance_is_near_pivot():
     geometry = _contracting_geometry()
@@ -479,3 +482,243 @@ def test_invalid_config_fails_closed():
             near_pivot_max_distance_pct=-1.0,
             breakout_volume_expansion_min_ratio=1.50,
         )
+
+
+def _seven_contraction_geometry():
+    """Seven valid contractions inside one active base."""
+    pivots = []
+
+    for index in range(7):
+        high = 120.0 - index
+        depth_pct = 20.0 - index
+
+        low = high * (
+            1.0 - depth_pct / 100.0
+        )
+
+        day = 1 + index * 4
+
+        pivots.extend(
+            [
+                _pivot(
+                    "HIGH",
+                    high,
+                    day,
+                    day + 1,
+                ),
+                _pivot(
+                    "LOW",
+                    low,
+                    day + 2,
+                    day + 3,
+                ),
+            ]
+        )
+
+    return analyze_vcp_geometry(
+        pivots
+    )
+
+
+def test_more_than_six_contractions_is_vcp_out_of_bounds():
+    geometry = _seven_contraction_geometry()
+
+    assert (
+        geometry.confirmed_contraction_count
+        == 7
+    )
+    assert (
+        geometry.count_within_bounds
+        is False
+    )
+
+    result = classify_vcp_state(
+        geometry,
+        _features(),
+        _no_breakout(
+            pivot_price=geometry.pivot.price,
+        ),
+        config=_config(),
+    )
+
+    assert (
+        result.state.value
+        == "VCP_OUT_OF_BOUNDS"
+    )
+
+
+def test_historical_breakout_below_pivot_is_pivot_lost():
+    geometry = _contracting_geometry()
+
+    breakout = VCPBreakoutEvent(
+        has_confirmed_pivot=True,
+        pivot_price=geometry.pivot.price,
+        structure_ready_date=_date(30),
+
+        first_intraday_breach_date=_date(35),
+        first_close_break_date=_date(35),
+
+        # Historical event remains true.
+        pivot_broken_by_close=True,
+
+        breakout_close_pct_above_pivot=1.0,
+        breakout_volume_ratio_20=1.80,
+
+        # But the latest close has fallen back
+        # below the pivot.
+        current_close_above_pivot=False,
+    )
+
+    result = classify_vcp_state(
+        geometry,
+        _features(
+            range_5_pct=7.0,
+            true_range_compression=0.90,
+            final_volume_ratio=0.90,
+            distance_to_pivot_pct=-2.0,
+        ),
+        breakout,
+        config=_config(),
+    )
+
+    # Preserve the historical event.
+    assert result.pivot_broken_by_close is True
+
+    # But do not publish it as a current
+    # PIVOT_BROKEN state.
+    assert (
+        result.state.value
+        == "PIVOT_LOST"
+    )
+
+
+
+def test_structurally_invalid_breakout_does_not_advance_lifecycle():
+    from src.strategy.vcp_validity import assess_vcp_validity
+
+    geometry = _candidate_geometry()
+
+    features = _features(
+        range_5_pct=4.0,
+        true_range_compression=0.70,
+        final_volume_ratio=0.60,
+        distance_to_pivot_pct=2.0,
+    )
+
+    validity = assess_vcp_validity(
+        geometry,
+        features,
+    )
+
+    assert validity.structurally_valid is False
+
+    breakout = _breakout(
+        pivot_price=geometry.pivot.price,
+        volume_ratio=1.80,
+    )
+
+    result = classify_vcp_state(
+        geometry,
+        features,
+        breakout,
+        validity=validity,
+        config=_config(),
+    )
+
+    # Preserve the observed breakout event...
+    assert result.pivot_broken_by_close is True
+
+    # ...but do not call it a valid VCP breakout.
+    assert result.state is VCPState.VCP_CANDIDATE
+
+
+def test_valid_non_strict_structure_can_be_vcp_contracting():
+    from src.strategy.vcp_validity import assess_vcp_validity
+
+    # Depth profile is approximately:
+    # 20% -> 14% -> 16% -> 8%
+    #
+    # There is a reasonable middle re-expansion, so the
+    # old strict-monotonic geometry flag is False.
+    geometry = analyze_vcp_geometry(
+        [
+            _pivot(
+                "HIGH",
+                100.0,
+                10,
+                12,
+            ),
+            _pivot(
+                "LOW",
+                80.0,
+                15,
+                17,
+            ),
+            _pivot(
+                "HIGH",
+                99.0,
+                20,
+                22,
+            ),
+            _pivot(
+                "LOW",
+                85.14,
+                25,
+                27,
+            ),
+            _pivot(
+                "HIGH",
+                98.0,
+                30,
+                32,
+            ),
+            _pivot(
+                "LOW",
+                82.32,
+                35,
+                37,
+            ),
+            _pivot(
+                "HIGH",
+                97.0,
+                40,
+                42,
+            ),
+            _pivot(
+                "LOW",
+                89.24,
+                45,
+                47,
+            ),
+        ]
+    )
+
+    assert geometry.depths_strictly_decreasing is False
+
+    features = _features(
+        range_5_pct=7.0,
+        true_range_compression=0.80,
+        final_volume_ratio=0.75,
+        distance_to_pivot_pct=-10.0,
+    )
+
+    validity = assess_vcp_validity(
+        geometry,
+        features,
+    )
+
+    assert validity.structurally_valid is True
+
+    result = classify_vcp_state(
+        geometry,
+        features,
+        _no_breakout(
+            pivot_price=geometry.pivot.price,
+        ),
+        validity=validity,
+        config=_config(),
+    )
+
+    # State classification must trust structural validity,
+    # not re-derive validity from strict monotonicity.
+    assert result.state is VCPState.VCP_CONTRACTING

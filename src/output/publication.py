@@ -13,6 +13,14 @@ from src.calculation.validated import compute_validated_snapshot
 from src.data.calendar import BISTTradingCalendar
 from src.data.storage.prices import load_recent_price_bars
 from src.output.build_detail import build_detail_payload
+from src.output.vcp_payload import (
+    build_vcp_detail_payload,
+    build_vcp_screener_fields,
+    unavailable_vcp_detail_payload,
+    unavailable_vcp_screener_fields,
+)
+from src.pipeline.vcp import run_vcp_analysis
+from src.strategy.vcp_state import VCPStateConfig
 
 
 class PublicationError(RuntimeError):
@@ -72,6 +80,7 @@ def build_publication_stage(
     tickers: set[str] | None = None,
     dry_run: bool = False,
     data_run_id: int | None = None,
+    vcp_state_config: VCPStateConfig | None = None,
 ) -> PublicationSummary:
     """Build *all* JSON into an isolated stage directory.
 
@@ -164,6 +173,9 @@ def build_publication_stage(
                     "data_status": data_status,
                     "data_status_message": status_message,
                     **null_snapshot,
+                    **unavailable_vcp_screener_fields(
+                        f"market data status: {data_status}"
+                    ),
                 }
             )
 
@@ -183,6 +195,9 @@ def build_publication_stage(
                 "data_status_message": status_message,
                 "snapshot": dict(null_snapshot),
                 "daily": [],
+                "vcp": unavailable_vcp_detail_payload(
+                    f"market data status: {data_status}"
+                ),
             }
             _write_json(stage / "details" / f"{row['ticker']}.json", detail)
             continue
@@ -217,6 +232,38 @@ def build_publication_stage(
 
         snapshot_dict = snapshot.as_dict()
         snapshot_dict["as_of"] = snapshot.as_of.isoformat()
+
+        if vcp_state_config is None:
+            vcp_screener = unavailable_vcp_screener_fields(
+                "VCP state config not provided"
+            )
+            vcp_detail = unavailable_vcp_detail_payload(
+                "VCP state config not provided"
+            )
+        else:
+            try:
+                vcp_result = run_vcp_analysis(
+                    conn,
+                    security_id,
+                    as_of=as_of,
+                    state_config=vcp_state_config,
+                )
+            except ValueError as exc:
+                message = str(exc)
+                vcp_screener = unavailable_vcp_screener_fields(
+                    message
+                )
+                vcp_detail = unavailable_vcp_detail_payload(
+                    message
+                )
+            else:
+                vcp_screener = build_vcp_screener_fields(
+                    vcp_result
+                )
+                vcp_detail = build_vcp_detail_payload(
+                    vcp_result
+                )
+
         screener.append(
             {
                 "security_id": int(row["security_id"]),
@@ -230,6 +277,7 @@ def build_publication_stage(
                 "data_status": "OK",
                 "data_status_message": None,
                 **snapshot_dict,
+                **vcp_screener,
             }
         )
         detail = build_detail_payload(
@@ -245,6 +293,7 @@ def build_publication_stage(
             snapshot=snapshot,
             bars=bars,
         )
+        detail["vcp"] = vcp_detail
         detail["data_status"] = "OK"
         detail["data_status_message"] = None
         _write_json(stage / "details" / f"{row['ticker']}.json", detail)

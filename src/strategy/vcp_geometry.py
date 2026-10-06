@@ -121,20 +121,50 @@ def analyze_vcp_geometry(
 
     _validate_confirmed_pivots(pivots)
 
-    # First identify all adjacent confirmed HIGH -> LOW pairs.
+    # Build only the rightmost active VCP-style structure.
+    #
+    # A local swing LOW may legitimately remain above the immediately
+    # preceding local HIGH during a strong rising regime. Such a pair is
+    # not a contraction; it terminates the previous active base instead
+    # of invalidating the whole swing history.
+    #
+    # Likewise, once a later contraction HIGH exceeds the first HIGH of
+    # the active base, the prior structure has been exceeded. The current
+    # pair becomes the anchor of a new rightmost structure.
     pairs: list[tuple[SwingPivot, SwingPivot]] = []
 
     for left, right in zip(
         pivots,
         pivots[1:],
     ):
-        if (
+        if not (
             left.kind == "HIGH"
             and right.kind == "LOW"
         ):
-            pairs.append(
-                (left, right)
-            )
+            continue
+
+        # Non-positive prices remain invalid data and must still fail
+        # closed with the existing validation messages.
+        if left.price <= 0 or right.price <= 0:
+            _depth_pct(left, right)
+
+        # This is a rising-regime swing relationship, not a contraction.
+        # Reset the stale base and wait for the next valid HIGH -> LOW.
+        if right.price >= left.price:
+            pairs.clear()
+            continue
+
+        # A new HIGH above the active base anchor means the previous
+        # rightmost structure has been exceeded. Start a new base here.
+        if (
+            pairs
+            and left.price > pairs[0][0].price
+        ):
+            pairs.clear()
+
+        pairs.append(
+            (left, right)
+        )
 
     depths = [
         _depth_pct(high, low)

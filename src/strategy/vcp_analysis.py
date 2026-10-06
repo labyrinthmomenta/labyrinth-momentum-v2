@@ -11,6 +11,10 @@ from src.strategy.swing_detector import (
     detect_swings,
 )
 from src.strategy.technical_prices import TechnicalPriceBar
+from src.strategy.vcp_base_features import (
+    VCPBaseFeatures,
+    compute_vcp_base_features,
+)
 from src.strategy.vcp_breakout import (
     VCPBreakoutEvent,
     detect_vcp_breakout,
@@ -26,6 +30,10 @@ from src.strategy.vcp_follow_through import (
 from src.strategy.vcp_geometry import (
     VCPGeometry,
     analyze_vcp_geometry,
+)
+from src.strategy.vcp_validity import (
+    VCPValidityResult,
+    assess_vcp_validity,
 )
 from src.strategy.vcp_state import (
     VCPStateConfig,
@@ -44,9 +52,53 @@ class VCPAnalysisResult:
 
     geometry: VCPGeometry
     features: VCPFeatures
+    base_features: VCPBaseFeatures
+    validity: VCPValidityResult
     breakout: VCPBreakoutEvent
     follow_through: VCPFollowThrough
     state: VCPStateResult
+
+
+def _resolve_base_end_date(
+    technical_bars: Sequence[TechnicalPriceBar],
+    breakout: VCPBreakoutEvent,
+):
+    """Resolve the causal right edge of the measured VCP base.
+
+    Without a close-confirmed breakout, the base extends through the
+    latest supplied technical bar.
+
+    Once a close-confirmed breakout exists, the base ends on the
+    immediately preceding actual trading bar. Calendar-day arithmetic
+    is deliberately avoided.
+    """
+
+    if not technical_bars:
+        raise ValueError(
+            "At least one technical price bar is required"
+        )
+
+    break_date = breakout.first_close_break_date
+
+    if break_date is None:
+        return technical_bars[-1].date
+
+    for index, bar in enumerate(technical_bars):
+        if bar.date != break_date:
+            continue
+
+        if index == 0:
+            raise ValueError(
+                "VCP breakout cannot precede all base history"
+            )
+
+        return technical_bars[
+            index - 1
+        ].date
+
+    raise ValueError(
+        "first_close_break_date must match a technical price bar"
+    )
 
 
 def analyze_vcp(
@@ -68,7 +120,9 @@ def analyze_vcp(
         -> swing detection
         -> VCP geometry
         -> VCP features
+        -> structural VCP validity
         -> breakout
+        -> causal base features
         -> follow-through
         -> VCP lifecycle state
     """
@@ -102,9 +156,26 @@ def analyze_vcp(
         atr_pct=latest_atr_pct,
     )
 
+    validity = assess_vcp_validity(
+        geometry,
+        features,
+    )
+
     breakout = detect_vcp_breakout(
         technical_bars,
         geometry,
+    )
+
+    base_end_date = _resolve_base_end_date(
+        technical_bars,
+        breakout,
+    )
+
+    base_features = compute_vcp_base_features(
+        technical_bars,
+        geometry,
+        end_date=base_end_date,
+        atr_period=atr_period,
     )
 
     follow_through = measure_vcp_follow_through(
@@ -116,6 +187,7 @@ def analyze_vcp(
         geometry,
         features,
         breakout,
+        validity=validity,
         config=state_config,
     )
 
@@ -125,6 +197,8 @@ def analyze_vcp(
         swings=swings,
         geometry=geometry,
         features=features,
+        base_features=base_features,
+        validity=validity,
         breakout=breakout,
         follow_through=follow_through,
         state=state,
