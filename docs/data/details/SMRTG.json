@@ -7,25 +7,25 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2022-03-24"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.04526162781286602,
-    "fip_12_1": -0.025974025974025976,
-    "momentum_252": -0.4356435217858605,
-    "momentum_126": -0.16874998556450116,
-    "momentum_63": -0.5262688879324782,
-    "momentum_21": -0.40888886981540273,
+    "momentum_12_1": -0.04289822678445632,
+    "fip_12_1": -0.017316017316017316,
+    "momentum_252": -0.4581830873307209,
+    "momentum_126": -0.23159508977666254,
+    "momentum_63": -0.4969879537337738,
+    "momentum_21": -0.4338983294859493,
     "fip_252": -0.051587301587301584,
-    "fip_126": 0.023809523809523808,
+    "fip_126": -0.007936507936507936,
     "fip_63": -0.19047619047619047,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 9.744135907632117,
-    "delta_momentum_21_63": 0.11738001811707544,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 9.764916597611066,
+    "delta_momentum_21_63": 0.0630896242478245,
+    "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.5421920855394953,
     "completed_month_fip": -0.5454545454545454,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 9.426666259765625,
-      "volume": 7815357.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 9.386666297912598,
-      "volume": 7074681.0,
-      "return": -0.004243277607456353
-    },
-    {
       "date": "2025-10-03",
       "close": 9.246665954589844,
       "volume": 4319367.0,
-      "return": -0.014914809888776692
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 5.320000171661377,
       "volume": 20726171.0,
       "return": 0.03703707049929372
+    },
+    {
+      "date": "2026-10-05",
+      "close": 5.059999942779541,
+      "volume": 14102422.0,
+      "return": -0.04887222189706075
+    },
+    {
+      "date": "2026-10-06",
+      "close": 5.01,
+      "volume": 10556680.0,
+      "return": -0.009881411728252965
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

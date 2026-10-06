@@ -7,23 +7,23 @@
     "industry": "SİGORTA ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-08-06"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 41,
+    "as_of": "2026-10-06",
+    "observations": 43,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.29069767073447317,
+    "momentum_21": -0.21138211382113836,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.5238095238095238,
-    "atr14_percent": 7.05277678349006,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 6.510935391337545,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -283,8 +283,30 @@
       "close": 42.70000076293945,
       "volume": 1604917.0,
       "return": 0.0190930969675287
+    },
+    {
+      "date": "2026-10-05",
+      "close": 46.959999084472656,
+      "volume": 4255259.0,
+      "return": 0.09976576687161498
+    },
+    {
+      "date": "2026-10-06",
+      "close": 48.5,
+      "volume": 7307191.0,
+      "return": 0.032793887256197696
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

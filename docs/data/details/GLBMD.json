@@ -7,25 +7,25 @@
     "industry": "ARACI KURUMLAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2011-06-29"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.12021444089238398,
-    "fip_12_1": -0.16883116883116883,
-    "momentum_252": -0.18223583751697603,
-    "momentum_126": -0.0801033056849908,
-    "momentum_63": -0.23165463321753355,
-    "momentum_21": -0.0704960384749912,
+    "momentum_12_1": -0.12939413291281088,
+    "fip_12_1": -0.16017316017316016,
+    "momentum_252": -0.1937172705855077,
+    "momentum_126": -0.11928102928263284,
+    "momentum_63": -0.1820941008805067,
+    "momentum_21": -0.07388318882791889,
     "fip_252": -0.1746031746031746,
     "fip_126": -0.16666666666666666,
-    "fip_63": -0.31746031746031744,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.653431000325306,
-    "delta_momentum_21_63": 0.16115859474254235,
-    "delta_fip_21_63": 0.07936507936507936,
+    "fip_63": -0.2857142857142857,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 6.710703289195936,
+    "delta_momentum_21_63": 0.10821091205258782,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.11989575039087408,
     "completed_month_fip": -0.2727272727272727,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 13.0600004196167,
-      "volume": 366943.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 12.899999618530273,
-      "volume": 208829.0,
-      "return": -0.012251209490475756
-    },
-    {
       "date": "2025-10-03",
       "close": 13.369999885559082,
       "volume": 321012.0,
-      "return": 0.03643413030444398
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 10.680000305175781,
       "volume": 108519.0,
       "return": 0.038910535522935996
+    },
+    {
+      "date": "2026-10-05",
+      "close": 10.65999984741211,
+      "volume": 187601.0,
+      "return": -0.001872701984285463
+    },
+    {
+      "date": "2026-10-06",
+      "close": 10.78,
+      "volume": 190193.0,
+      "return": 0.011257050122474688
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

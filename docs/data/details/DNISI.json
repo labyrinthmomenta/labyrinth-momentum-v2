@@ -7,25 +7,25 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2020-09-03"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.17498669685061752,
-    "fip_12_1": -0.19480519480519481,
-    "momentum_252": -0.20912514655169,
-    "momentum_126": -0.06111783904491841,
-    "momentum_63": -0.17074022309948333,
-    "momentum_21": -0.04137927178962186,
+    "momentum_12_1": -0.12791522664096666,
+    "fip_12_1": -0.18614718614718614,
+    "momentum_252": -0.19883204399338472,
+    "momentum_126": -0.0690016324686542,
+    "momentum_63": -0.11871515979422409,
+    "momentum_21": -0.08131871982957073,
     "fip_252": -0.18253968253968253,
     "fip_126": -0.19047619047619047,
-    "fip_63": -0.25396825396825395,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 5.4441115932422885,
-    "delta_momentum_21_63": 0.12936095130986147,
-    "delta_fip_21_63": 0.20634920634920634,
+    "fip_63": -0.2222222222222222,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 5.141866806837695,
+    "delta_momentum_21_63": 0.03739643996465336,
+    "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.1847825917945236,
     "completed_month_fip": -0.2727272727272727,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 5.272642135620117,
-      "volume": 7776095.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 5.300271987915039,
-      "volume": 5754109.0,
-      "return": 0.0052402290131288165
-    },
-    {
       "date": "2025-10-03",
       "close": 5.217382907867432,
       "volume": 4873422.0,
-      "return": -0.015638646514103405
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 4.170000076293945,
       "volume": 1899969.0,
       "return": 0.03217823670642206
+    },
+    {
+      "date": "2026-10-05",
+      "close": 4.25,
+      "volume": 1321285.0,
+      "return": 0.01918463363126688
+    },
+    {
+      "date": "2026-10-06",
+      "close": 4.18,
+      "volume": 1121704.0,
+      "return": -0.016470588235294237
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

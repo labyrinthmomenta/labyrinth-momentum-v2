@@ -7,13 +7,13 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2015-01-08"
   },
   "data_status": "INSUFFICIENT_TRADING_DATA",
-  "data_status_message": "official BIST THB reports no trading activity for required session(s): 2026-10-02",
+  "data_status_message": "official BIST THB reports no trading activity for required session(s): 2026-10-06",
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": null,
     "momentum_12_1": null,
     "fip_12_1": null,
@@ -33,5 +33,15 @@
     "completed_month_fip": null,
     "completed_month_observations": null
   },
-  "daily": []
+  "daily": [],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "market data status: INSUFFICIENT_TRADING_DATA",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  }
 }

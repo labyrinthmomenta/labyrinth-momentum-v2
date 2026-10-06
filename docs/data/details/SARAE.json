@@ -7,23 +7,23 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-07-17"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 55,
+    "as_of": "2026-10-06",
+    "observations": 57,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.4572185491094525,
+    "momentum_21": -0.518819206253964,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 14.20091785485261,
+    "atr14_percent": 14.06610714155734,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -367,8 +367,30 @@
       "close": 40.97999954223633,
       "volume": 17924685.0,
       "return": 0.07728705421231141
+    },
+    {
+      "date": "2026-10-05",
+      "close": 39.02000045776367,
+      "volume": 15894463.0,
+      "return": -0.04782818707580927
+    },
+    {
+      "date": "2026-10-06",
+      "close": 39.12,
+      "volume": 9326776.0,
+      "return": 0.0025627765521061274
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

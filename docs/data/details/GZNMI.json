@@ -7,25 +7,25 @@
     "industry": "SEYAHAT ACENTESİ, TUR OPERATÖRÜ VE DİĞER REZERVASYON HİZMETLERİ İLE İLGİLİ FAALİYETLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2022-03-08"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.8085027754637313,
-    "fip_12_1": -0.1774891774891775,
-    "momentum_252": -0.8865064666804453,
-    "momentum_126": -0.45276289486707577,
-    "momentum_63": -0.5119236881050222,
-    "momentum_21": -0.4073358838782569,
-    "fip_252": -0.21428571428571427,
+    "momentum_12_1": -0.7938000030517577,
+    "fip_12_1": -0.16883116883116883,
+    "momentum_252": -0.8779999999999999,
+    "momentum_126": -0.5044679061241105,
+    "momentum_63": -0.4479638009049772,
+    "momentum_21": -0.408341407344332,
+    "fip_252": -0.20634920634920634,
     "fip_126": -0.23809523809523808,
-    "fip_63": -0.3333333333333333,
+    "fip_63": -0.30158730158730157,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 9.372832485844391,
-    "delta_momentum_21_63": 0.10458780422676528,
-    "delta_fip_21_63": -0.28571428571428575,
+    "atr14_percent": 9.19388887499151,
+    "delta_momentum_21_63": 0.03962239356064523,
+    "delta_fip_21_63": -0.3174603174603175,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.500173917024032,
     "completed_month_fip": -0.7272727272727273,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 270.5,
-      "volume": 7628920.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 252.25,
-      "volume": 1982929.0,
-      "return": -0.0674676524953789
-    },
-    {
       "date": "2025-10-03",
       "close": 250.0,
       "volume": 398946.0,
-      "return": -0.008919722497522264
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 30.700000762939453,
       "volume": 2032110.0,
       "return": 0.024016036122063156
+    },
+    {
+      "date": "2026-10-05",
+      "close": 30.8799991607666,
+      "volume": 885768.0,
+      "return": 0.005863139848662158
+    },
+    {
+      "date": "2026-10-06",
+      "close": 30.5,
+      "volume": 1587195.0,
+      "return": -0.012305672639052245
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

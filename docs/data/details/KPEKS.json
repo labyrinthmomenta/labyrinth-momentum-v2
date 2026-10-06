@@ -7,23 +7,23 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-08-21"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 30,
+    "as_of": "2026-10-06",
+    "observations": 32,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.5077730870534782,
+    "momentum_21": -0.4440451832476361,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 16.071446207587194,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 13.304430840762342,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -217,8 +217,30 @@
       "close": 46.86000061035156,
       "volume": 10605735.0,
       "return": -0.02374998728434241
+    },
+    {
+      "date": "2026-10-05",
+      "close": 49.2599983215332,
+      "volume": 15738525.0,
+      "return": 0.051216339733710425
+    },
+    {
+      "date": "2026-10-06",
+      "close": 54.15,
+      "volume": 6672748.0,
+      "return": 0.0992692213781341
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

@@ -7,25 +7,25 @@
     "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2025-12-18"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 197,
+    "as_of": "2026-10-06",
+    "observations": 199,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.6314730945883846,
-    "momentum_63": -0.32936873567743474,
-    "momentum_21": -0.22842106066252033,
+    "momentum_126": -0.6190693443915465,
+    "momentum_63": -0.19865643580975623,
+    "momentum_21": -0.14969447459341656,
     "fip_252": null,
     "fip_126": -0.1984126984126984,
-    "fip_63": -0.12698412698412698,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 8.279598939399467,
-    "delta_momentum_21_63": 0.10094767501491442,
-    "delta_fip_21_63": -0.15873015873015872,
+    "fip_63": -0.06349206349206349,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 7.573945567694759,
+    "delta_momentum_21_63": 0.04896196121633967,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3528784544131993,
     "completed_month_fip": -0.3181818181818182,
@@ -1219,8 +1219,30 @@
       "close": 7.329999923706055,
       "volume": 4435692.0,
       "return": 0.09895051329925852
+    },
+    {
+      "date": "2026-10-05",
+      "close": 7.75,
+      "volume": 17136307.0,
+      "return": 0.05729878317401038
+    },
+    {
+      "date": "2026-10-06",
+      "close": 8.35,
+      "volume": 14897962.0,
+      "return": 0.07741935483870965
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

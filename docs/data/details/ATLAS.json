@@ -7,25 +7,25 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "1994-02-28"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.10895522982911188,
-    "fip_12_1": -0.16883116883116883,
-    "momentum_252": -0.22835817560105354,
-    "momentum_126": -0.3371794936062863,
-    "momentum_63": -0.36172841570214076,
-    "momentum_21": -0.13400330686980222,
-    "fip_252": -0.16666666666666666,
-    "fip_126": -0.1746031746031746,
-    "fip_63": -0.2222222222222222,
+    "momentum_12_1": -0.0760869943480722,
+    "fip_12_1": -0.16017316017316016,
+    "momentum_252": -0.19099379600802835,
+    "momentum_126": -0.30810094889325346,
+    "momentum_63": -0.3153745192388121,
+    "momentum_21": -0.12436971982971079,
+    "fip_252": -0.15873015873015872,
+    "fip_126": -0.15873015873015872,
+    "fip_63": -0.19047619047619047,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 8.809775195137979,
-    "delta_momentum_21_63": 0.22772510883233854,
-    "delta_fip_21_63": 0.07936507936507936,
+    "atr14_percent": 8.289949296814635,
+    "delta_momentum_21_63": 0.1910047994091013,
+    "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.2573770031753444,
     "completed_month_fip": -0.2727272727272727,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 6.699999809265137,
-      "volume": 1283948.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 6.559999942779541,
-      "volume": 820501.0,
-      "return": -0.020895503055387565
-    },
-    {
       "date": "2025-10-03",
       "close": 6.440000057220459,
       "volume": 323471.0,
-      "return": -0.018292665641127526
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 5.170000076293945,
       "volume": 963938.0,
       "return": 0.08613446980965245
+    },
+    {
+      "date": "2026-10-05",
+      "close": 5.389999866485596,
+      "volume": 596138.0,
+      "return": 0.042553150279516894
+    },
+    {
+      "date": "2026-10-06",
+      "close": 5.21,
+      "volume": 686519.0,
+      "return": -0.033395152308780984
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

@@ -7,25 +7,25 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-02-19"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 153,
+    "as_of": "2026-10-06",
+    "observations": 155,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.5757806456120849,
-    "momentum_63": -0.656172845102341,
-    "momentum_21": -0.5780302839283552,
+    "momentum_126": -0.6386075992993754,
+    "momentum_63": -0.6193333333333335,
+    "momentum_21": -0.5573643279959606,
     "fip_252": null,
     "fip_126": -0.15079365079365079,
-    "fip_63": -0.15873015873015872,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 14.5761081193505,
-    "delta_momentum_21_63": 0.07814256117398577,
-    "delta_fip_21_63": -0.1746031746031746,
+    "fip_63": -0.1111111111111111,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 13.157125435158653,
+    "delta_momentum_21_63": 0.06196900533737293,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6029309080590074,
     "completed_month_fip": -0.36363636363636365,
@@ -955,8 +955,30 @@
       "close": 5.570000171661377,
       "volume": 33138330.0,
       "return": 0.012727303938432133
+    },
+    {
+      "date": "2026-10-05",
+      "close": 5.590000152587891,
+      "volume": 26753153.0,
+      "return": 0.0035906607379059263
+    },
+    {
+      "date": "2026-10-06",
+      "close": 5.71,
+      "volume": 37207432.0,
+      "return": 0.021466877305281518
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

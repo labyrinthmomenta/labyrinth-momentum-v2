@@ -7,25 +7,25 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-02-06"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 162,
+    "as_of": "2026-10-06",
+    "observations": 164,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": 0.02521007791132912,
-    "momentum_63": -0.21151588041395186,
-    "momentum_21": -0.29738220899128154,
+    "momentum_126": 0.06160778020523083,
+    "momentum_63": -0.2061797412563604,
+    "momentum_21": -0.2716494702142438,
     "fip_252": null,
-    "fip_126": 0.047619047619047616,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.47619047619047616,
-    "atr14_percent": 9.094058419862543,
-    "delta_momentum_21_63": -0.08586632857732968,
-    "delta_fip_21_63": -0.3333333333333333,
+    "fip_126": 0.031746031746031744,
+    "fip_63": -0.1111111111111111,
+    "fip_21": -0.38095238095238093,
+    "atr14_percent": 8.69518580334766,
+    "delta_momentum_21_63": -0.06546972895788339,
+    "delta_fip_21_63": -0.2698412698412698,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3981704513960378,
     "completed_month_fip": -0.6363636363636364,
@@ -1009,8 +1009,30 @@
       "close": 26.84000015258789,
       "volume": 2538351.0,
       "return": 0.07360000610351558
+    },
+    {
+      "date": "2026-10-05",
+      "close": 28.100000381469727,
+      "volume": 2154390.0,
+      "return": 0.04694486668102149
+    },
+    {
+      "date": "2026-10-06",
+      "close": 28.26,
+      "volume": 3357832.0,
+      "return": 0.005693936525203114
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

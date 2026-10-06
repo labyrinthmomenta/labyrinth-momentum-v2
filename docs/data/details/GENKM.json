@@ -7,25 +7,25 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-03-06"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 142,
+    "as_of": "2026-10-06",
+    "observations": 144,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.43305908836295415,
-    "momentum_63": -0.4397634831259911,
-    "momentum_21": -0.2767175329390753,
+    "momentum_126": -0.4288922008926418,
+    "momentum_63": -0.4121725524587021,
+    "momentum_21": -0.30192133696584655,
     "fip_252": null,
-    "fip_126": -0.06349206349206349,
-    "fip_63": -0.23809523809523808,
-    "fip_21": -0.38095238095238093,
-    "atr14_percent": 7.266345329239324,
-    "delta_momentum_21_63": 0.1630459501869158,
-    "delta_fip_21_63": -0.14285714285714285,
+    "fip_126": -0.047619047619047616,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.2857142857142857,
+    "atr14_percent": 6.672328604489512,
+    "delta_momentum_21_63": 0.11025121549285555,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.25806450837608685,
     "completed_month_fip": -0.4090909090909091,
@@ -889,8 +889,30 @@
       "close": 7.579999923706055,
       "volume": 6354515.0,
       "return": -0.010443874189810076
+    },
+    {
+      "date": "2026-10-05",
+      "close": 7.599999904632568,
+      "volume": 6883481.0,
+      "return": 0.002638519937706807
+    },
+    {
+      "date": "2026-10-06",
+      "close": 7.63,
+      "volume": 7647556.0,
+      "return": 0.003947381018931884
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

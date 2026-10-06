@@ -7,25 +7,25 @@
     "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2011-06-24"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.23391817920711244,
-    "fip_12_1": -0.15584415584415584,
-    "momentum_252": -0.42982456018047355,
-    "momentum_126": -0.2499999541502712,
-    "momentum_63": -0.41791041695638675,
-    "momentum_21": -0.25572514013007075,
-    "fip_252": -0.1746031746031746,
-    "fip_126": -0.14285714285714285,
-    "fip_63": -0.31746031746031744,
+    "momentum_12_1": -0.19724770173966877,
+    "fip_12_1": -0.1471861471861472,
+    "momentum_252": -0.39908256530226627,
+    "momentum_126": -0.2802197852486148,
+    "momentum_63": -0.35148514239136674,
+    "momentum_21": -0.2514285714285712,
+    "fip_252": -0.16666666666666666,
+    "fip_126": -0.15873015873015872,
+    "fip_63": -0.2857142857142857,
     "fip_21": -0.38095238095238093,
-    "atr14_percent": 7.180569217358046,
-    "delta_momentum_21_63": 0.162185276826316,
-    "delta_fip_21_63": -0.06349206349206349,
+    "atr14_percent": 7.206098381319294,
+    "delta_momentum_21_63": 0.10005657096279552,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3109869410549343,
     "completed_month_fip": -0.5909090909090909,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 6.840000152587891,
-      "volume": 2317488.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 6.610000133514404,
-      "volume": 1638523.0,
-      "return": -0.03362573303254479
-    },
-    {
       "date": "2025-10-03",
       "close": 6.539999961853027,
       "volume": 1899494.0,
-      "return": -0.010590040884637553
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 3.9000000953674316,
       "volume": 390744.0,
       "return": 0.01562502483526873
+    },
+    {
+      "date": "2026-10-05",
+      "close": 3.990000009536743,
+      "volume": 725788.0,
+      "return": 0.02307690050475042
+    },
+    {
+      "date": "2026-10-06",
+      "close": 3.93,
+      "volume": 461347.0,
+      "return": -0.015037596339181336
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

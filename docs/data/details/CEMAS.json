@@ -7,25 +7,25 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2010-07-02"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.41930833190476835,
-    "fip_12_1": -0.19047619047619047,
-    "momentum_252": -0.5389048960663338,
-    "momentum_126": -0.32914044853682534,
-    "momentum_63": -0.2575405823277064,
-    "momentum_21": -0.20595536449465968,
+    "momentum_12_1": -0.38248174044312166,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": -0.5357664168944869,
+    "momentum_126": -0.3715414948694302,
+    "momentum_63": -0.23741008589472146,
+    "momentum_21": -0.2482269537444285,
     "fip_252": -0.1865079365079365,
-    "fip_126": -0.11904761904761904,
+    "fip_126": -0.1349206349206349,
     "fip_63": -0.1111111111111111,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.184554570086711,
-    "delta_momentum_21_63": 0.051585217833046704,
-    "delta_fip_21_63": -0.031746031746031744,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 6.187599851411337,
+    "delta_momentum_21_63": -0.010816867849707035,
+    "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.25853657742329483,
     "completed_month_fip": -0.36363636363636365,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 6.940000057220459,
-      "volume": 20775029.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 6.78000020980835,
-      "volume": 19397375.0,
-      "return": -0.02305473286641313
-    },
-    {
       "date": "2025-10-03",
       "close": 6.849999904632568,
       "volume": 21693855.0,
-      "return": 0.010324438445142414
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 3.200000047683716,
       "volume": 6982700.0,
       "return": 0.025641040924267777
+    },
+    {
+      "date": "2026-10-05",
+      "close": 3.140000104904175,
+      "volume": 15335986.0,
+      "return": -0.01874998183921006
+    },
+    {
+      "date": "2026-10-06",
+      "close": 3.18,
+      "volume": 7271935.0,
+      "return": 0.012738819668621115
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

@@ -7,24 +7,24 @@
     "industry": "ORMAN ÜRÜNLERİ VE MOBİLYA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2013-05-07"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.22448979591836882,
-    "fip_12_1": -0.1341991341991342,
-    "momentum_252": -0.3071428415726657,
-    "momentum_126": -0.09406265122641477,
-    "momentum_63": -0.23276834434035132,
-    "momentum_21": -0.10657892729106744,
-    "fip_252": -0.14682539682539683,
+    "momentum_12_1": -0.22985073108578313,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": -0.32388059701492633,
+    "momentum_126": -0.08361431420490362,
+    "momentum_63": -0.22030982432257984,
+    "momentum_21": -0.12209304056304537,
+    "fip_252": -0.15079365079365079,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 4.3991170035126235,
-    "delta_momentum_21_63": 0.12618941704928388,
+    "atr14_percent": 4.25998354115364,
+    "delta_momentum_21_63": 0.09821678375953447,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.18827928988408837,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 196.0,
-      "volume": 8897.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 201.0,
-      "volume": 11976.0,
-      "return": 0.025510204081632626
-    },
-    {
       "date": "2025-10-03",
       "close": 201.0,
       "volume": 13943.0,
-      "return": 0.0
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 135.8000030517578,
       "volume": 3765.0,
       "return": -0.0036683561866632797
+    },
+    {
+      "date": "2026-10-05",
+      "close": 135.6999969482422,
+      "volume": 2618.0,
+      "return": -0.0007364219533744221
+    },
+    {
+      "date": "2026-10-06",
+      "close": 135.9,
+      "volume": 3445.0,
+      "return": 0.001473861873660276
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

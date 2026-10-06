@@ -7,23 +7,23 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-08-20"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 31,
+    "as_of": "2026-10-06",
+    "observations": 33,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.372549002497193,
+    "momentum_21": -0.3295833333333331,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 11.735845537112425,
+    "atr14_percent": 10.685233092427644,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -223,8 +223,30 @@
       "close": 76.80000305175781,
       "volume": 1311789.0,
       "return": -0.0077518985561007
+    },
+    {
+      "date": "2026-10-05",
+      "close": 75.75,
+      "volume": 799177.0,
+      "return": -0.013671914193156831
+    },
+    {
+      "date": "2026-10-06",
+      "close": 80.45,
+      "volume": 2241794.0,
+      "return": 0.062046204620462175
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

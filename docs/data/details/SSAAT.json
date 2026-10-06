@@ -7,23 +7,23 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-07-16"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 56,
+    "as_of": "2026-10-06",
+    "observations": 58,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.16971910389077027,
+    "momentum_21": -0.17074664177074816,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 6.227018950662332,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 6.007297446827281,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -373,8 +373,30 @@
       "close": 27.200000762939453,
       "volume": 1401862.0,
       "return": -0.0029325233526593664
+    },
+    {
+      "date": "2026-10-05",
+      "close": 26.81999969482422,
+      "volume": 1261162.0,
+      "return": -0.01397062711237107
+    },
+    {
+      "date": "2026-10-06",
+      "close": 27.1,
+      "volume": 1038511.0,
+      "return": 0.01043998166897131
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

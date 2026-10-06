@@ -7,25 +7,25 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2012-05-10"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.41203436080542555,
-    "fip_12_1": -0.16017316017316016,
-    "momentum_252": -0.52421200230341,
-    "momentum_126": -0.3686311248451106,
-    "momentum_63": -0.34920633418880187,
-    "momentum_21": -0.19078945098161004,
-    "fip_252": -0.17063492063492064,
-    "fip_126": -0.15079365079365079,
+    "momentum_12_1": -0.3909480502183684,
+    "fip_12_1": -0.15584415584415584,
+    "momentum_252": -0.5306032900541804,
+    "momentum_126": -0.3994482567329597,
+    "momentum_63": -0.3314916915732863,
+    "momentum_21": -0.22929938880564082,
+    "fip_252": -0.17857142857142858,
+    "fip_126": -0.1746031746031746,
     "fip_63": -0.36507936507936506,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 5.676234460685314,
-    "delta_momentum_21_63": 0.15841688320719183,
-    "delta_fip_21_63": 0.07936507936507936,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 5.654068097863154,
+    "delta_momentum_21_63": 0.10219230276764546,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.23529413139668887,
     "completed_month_fip": -0.3181818181818182,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 2.5851850509643555,
-      "volume": 21208922.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 2.562962055206299,
-      "volume": 20429968.0,
-      "return": -0.008596288203727154
-    },
-    {
       "date": "2025-10-03",
       "close": 2.5777769088745117,
       "volume": 15524307.0,
-      "return": 0.005780364027675899
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 1.2300000190734863,
       "volume": 5406333.0,
       "return": -0.015999984741210893
+    },
+    {
+      "date": "2026-10-05",
+      "close": 1.2200000286102295,
+      "volume": 5775513.0,
+      "return": -0.008130073421291018
+    },
+    {
+      "date": "2026-10-06",
+      "close": 1.21,
+      "volume": 8014737.0,
+      "return": -0.008196744570261316
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

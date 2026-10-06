@@ -7,25 +7,25 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-01-15"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 178,
+    "as_of": "2026-10-06",
+    "observations": 180,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.22143772953527063,
-    "momentum_63": -0.3123582463637111,
-    "momentum_21": -0.22093767808658493,
+    "momentum_126": -0.2663347713816515,
+    "momentum_63": -0.28631963236664393,
+    "momentum_21": -0.2686104599135565,
     "fip_252": null,
-    "fip_126": -0.09523809523809523,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.25396825396825395,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.616388245792981,
-    "delta_momentum_21_63": 0.09142056827712619,
-    "delta_fip_21_63": -0.1746031746031746,
+    "fip_21": -0.6190476190476191,
+    "atr14_percent": 6.675234000864126,
+    "delta_momentum_21_63": 0.01770917245308745,
+    "delta_fip_21_63": -0.3650793650793651,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3202453716369521,
     "completed_month_fip": -0.5454545454545454,
@@ -1105,8 +1105,30 @@
       "close": 24.260000228881836,
       "volume": 1093781.0,
       "return": -0.004105080916180781
+    },
+    {
+      "date": "2026-10-05",
+      "close": 24.079999923706055,
+      "volume": 1538127.0,
+      "return": -0.007419633284318272
+    },
+    {
+      "date": "2026-10-06",
+      "close": 23.58,
+      "volume": 624163.0,
+      "return": -0.020764116498763863
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

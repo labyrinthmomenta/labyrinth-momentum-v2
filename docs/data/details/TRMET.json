@@ -7,24 +7,24 @@
     "industry": "METAL CEVHERİ MADENCİLİĞİ",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2003-02-20"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": 0.5890097936622138,
+    "momentum_12_1": 0.5262285178416608,
     "fip_12_1": -0.12554112554112554,
-    "momentum_252": 0.4745278225725098,
-    "momentum_126": 0.08235296682149618,
-    "momentum_63": 0.0697674536496864,
-    "momentum_21": -0.07204610792602839,
+    "momentum_252": 0.43014904070161775,
+    "momentum_126": 0.03105096793995954,
+    "momentum_63": 0.10778441667797312,
+    "momentum_21": -0.06295222243384291,
     "fip_252": -0.1111111111111111,
-    "fip_126": -0.09523809523809523,
+    "fip_126": -0.07936507936507936,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 5.723353974332097,
-    "delta_momentum_21_63": -0.14181356157571479,
+    "atr14_percent": 5.450374183648274,
+    "delta_momentum_21_63": -0.17073663911181602,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.07187279969469729,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 87.3499984741211,
-      "volume": 5834461.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 87.0,
-      "volume": 5408048.0,
-      "return": -0.004006851519577137
-    },
-    {
       "date": "2025-10-03",
       "close": 90.55000305175781,
       "volume": 11530225.0,
-      "return": 0.0408046327788254
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 128.8000030517578,
       "volume": 8844631.0,
       "return": 0.011783213289535022
+    },
+    {
+      "date": "2026-10-05",
+      "close": 127.69999694824219,
+      "volume": 5318732.0,
+      "return": -0.008540419855996406
+    },
+    {
+      "date": "2026-10-06",
+      "close": 129.5,
+      "volume": 6422830.0,
+      "return": 0.014095560648191396
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

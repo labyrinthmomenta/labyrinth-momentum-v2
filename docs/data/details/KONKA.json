@@ -7,24 +7,24 @@
     "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2021-11-26"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.46248793238693486,
+    "momentum_12_1": -0.45534838892122065,
     "fip_12_1": -0.04329004329004329,
-    "momentum_252": -0.5255544811621631,
-    "momentum_126": -0.4969325034923203,
-    "momentum_63": -0.43487252378237573,
-    "momentum_21": -0.1173304797700423,
+    "momentum_252": -0.4930323922823472,
+    "momentum_126": -0.4701538461538465,
+    "momentum_63": -0.38235292258428744,
+    "momentum_21": -0.0691891891891897,
     "fip_252": -0.05952380952380952,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.2698412698412698,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.163869362486014,
-    "delta_momentum_21_63": 0.31754204401233344,
+    "atr14_percent": 6.5478506284912505,
+    "delta_momentum_21_63": 0.31316373339509773,
     "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.2435897616764201,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 17.28333282470703,
-      "volume": 3639084.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 16.766666412353516,
-      "volume": 2212944.0,
-      "return": -0.02989391094840954
-    },
-    {
       "date": "2025-10-03",
       "close": 16.983333587646484,
       "volume": 3743727.0,
-      "return": 0.012922495740317785
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 8.199999809265137,
       "volume": 5036773.0,
       "return": 0.030150729807177923
+    },
+    {
+      "date": "2026-10-05",
+      "close": 9.010000228881836,
+      "volume": 5551526.0,
+      "return": 0.09878054127531621
+    },
+    {
+      "date": "2026-10-06",
+      "close": 8.61,
+      "volume": 8528979.0,
+      "return": -0.044395140812496736
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

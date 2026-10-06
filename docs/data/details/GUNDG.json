@@ -7,25 +7,25 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2024-08-22"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": 13.75409788444279,
+    "momentum_12_1": 11.096256684491987,
     "fip_12_1": -0.1645021645021645,
-    "momentum_252": 0.9799047160872807,
-    "momentum_126": -0.7797647094726562,
-    "momentum_63": -0.9004255335381689,
-    "momentum_21": -0.8658064538005432,
+    "momentum_252": 0.6224598930481293,
+    "momentum_126": -0.8103749999999998,
+    "momentum_63": -0.92415,
+    "momentum_21": -0.865870910698497,
     "fip_252": -0.07539682539682539,
     "fip_126": 0.0,
-    "fip_63": -0.15873015873015872,
+    "fip_63": -0.2222222222222222,
     "fip_21": -0.9047619047619048,
-    "atr14_percent": 46.83597543581834,
-    "delta_momentum_21_63": 0.03461907973762568,
-    "delta_fip_21_63": -0.746031746031746,
+    "atr14_percent": 51.443180007319334,
+    "delta_momentum_21_63": 0.05827908930150305,
+    "delta_fip_21_63": -0.6825396825396826,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.8612845101419473,
     "completed_month_fip": -0.8181818181818182,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 94.55000305175781,
-      "volume": 368866.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 93.5999984741211,
-      "volume": 562654.0,
-      "return": -0.010047641956359099
-    },
-    {
       "date": "2025-10-03",
       "close": 93.5,
       "volume": 521271.0,
-      "return": -0.001068359783667483
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 187.1999969482422,
       "volume": 1087.0,
       "return": -0.10000001467191255
+    },
+    {
+      "date": "2026-10-05",
+      "close": 168.5,
+      "volume": 1013.0,
+      "return": -0.09989314771950797
+    },
+    {
+      "date": "2026-10-06",
+      "close": 151.7,
+      "volume": 870.0,
+      "return": -0.09970326409495556
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

@@ -7,25 +7,25 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2021-09-22"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.11983753574180012,
-    "fip_12_1": -0.0735930735930736,
-    "momentum_252": -0.24509145071356975,
-    "momentum_126": -0.371831007406745,
-    "momentum_63": -0.2824968052830855,
-    "momentum_21": -0.14230772165151773,
-    "fip_252": -0.06349206349206349,
-    "fip_126": -0.05555555555555555,
+    "momentum_12_1": -0.10760792860894786,
+    "fip_12_1": -0.06493506493506493,
+    "momentum_252": -0.2583961695106076,
+    "momentum_126": -0.4235482292956141,
+    "momentum_63": -0.27479893132228206,
+    "momentum_21": -0.1689708433498437,
+    "fip_252": -0.07142857142857142,
+    "fip_126": -0.0873015873015873,
     "fip_63": -0.09523809523809523,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.8316744658253103,
-    "delta_momentum_21_63": 0.1401890836315678,
-    "delta_fip_21_63": 0.14285714285714285,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 4.100596226681406,
+    "delta_momentum_21_63": 0.10582808797243837,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.20539728184235628,
     "completed_month_fip": -0.09090909090909091,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 14.770000457763672,
-      "volume": 1902680.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 14.510000228881836,
-      "volume": 1725625.0,
-      "return": -0.017603264781564043
-    },
-    {
       "date": "2025-10-03",
       "close": 14.59000015258789,
       "volume": 1042345.0,
-      "return": 0.005513433662586387
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 11.149999618530273,
       "volume": 683024.0,
       "return": 0.021062236129145928
+    },
+    {
+      "date": "2026-10-05",
+      "close": 10.960000038146973,
+      "volume": 833444.0,
+      "return": -0.017040321693602478
+    },
+    {
+      "date": "2026-10-06",
+      "close": 10.82,
+      "volume": 322947.0,
+      "return": -0.01277372606384064
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

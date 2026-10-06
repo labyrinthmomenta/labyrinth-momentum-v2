@@ -7,25 +7,25 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2010-11-11"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
+    "as_of": "2026-10-06",
     "observations": 252,
-    "momentum_12_1": -0.38410595163828976,
-    "fip_12_1": 0.012987012987012988,
-    "momentum_252": -0.48013242967954395,
-    "momentum_126": -0.4119850158838566,
-    "momentum_63": -0.4097744354163084,
-    "momentum_21": -0.1559139567863762,
+    "momentum_12_1": -0.34397160722110676,
+    "fip_12_1": 0.021645021645021644,
+    "momentum_252": -0.45744679566690283,
+    "momentum_126": -0.441605841359585,
+    "momentum_63": -0.4069767266495792,
+    "momentum_21": -0.17297298363127567,
     "fip_252": -0.007936507936507936,
-    "fip_126": 0.007936507936507936,
-    "fip_63": -0.12698412698412698,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 4.992729215078668,
-    "delta_momentum_21_63": 0.2538604786299322,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_126": -0.023809523809523808,
+    "fip_63": -0.15873015873015872,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.904364887074226,
+    "delta_momentum_21_63": 0.2340037430183035,
+    "delta_fip_21_63": -0.1746031746031746,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.26829266590706136,
     "completed_month_fip": -0.36363636363636365,
@@ -33,22 +33,10 @@
   },
   "daily": [
     {
-      "date": "2025-10-01",
-      "close": 3.0199999809265137,
-      "volume": 129662098.0,
-      "return": null
-    },
-    {
-      "date": "2025-10-02",
-      "close": 2.9200000762939453,
-      "volume": 82805929.0,
-      "return": -0.033112551411966895
-    },
-    {
       "date": "2025-10-03",
       "close": 2.819999933242798,
       "volume": 133224749.0,
-      "return": -0.03424662343778684
+      "return": null
     },
     {
       "date": "2025-10-06",
@@ -1549,8 +1537,30 @@
       "close": 1.5700000524520874,
       "volume": 54203469.0,
       "return": -0.006329080726527048
+    },
+    {
+      "date": "2026-10-05",
+      "close": 1.5399999618530273,
+      "volume": 61521672.0,
+      "return": -0.01910833732279482
+    },
+    {
+      "date": "2026-10-06",
+      "close": 1.53,
+      "volume": 52463310.0,
+      "return": -0.006493481883593555
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }

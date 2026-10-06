@@ -7,25 +7,25 @@
     "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-02",
+    "viop_as_of": "2026-10-06",
     "first_trade_date": "2026-07-06"
   },
   "snapshot": {
-    "as_of": "2026-10-02",
-    "observations": 63,
+    "as_of": "2026-10-06",
+    "observations": 65,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.5290909102468779,
-    "momentum_21": -0.2485493359512343,
+    "momentum_63": -0.4330590826566014,
+    "momentum_21": -0.2746411350860072,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.25396825396825395,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.2458003792216354,
-    "delta_momentum_21_63": 0.28054157429564364,
-    "delta_fip_21_63": 0.1111111111111111,
+    "fip_63": -0.2222222222222222,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 7.0935046258876175,
+    "delta_momentum_21_63": 0.15841794757059424,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3248587426028501,
     "completed_month_fip": -0.2727272727272727,
@@ -415,8 +415,30 @@
       "close": 7.769999980926514,
       "volume": 4025309.0,
       "return": 0.03738317502356647
+    },
+    {
+      "date": "2026-10-05",
+      "close": 7.579999923706055,
+      "volume": 5945657.0,
+      "return": -0.024453031877331166
+    },
+    {
+      "date": "2026-10-06",
+      "close": 7.58,
+      "volume": 5196986.0,
+      "return": 1.0065164479655664e-08
     }
   ],
+  "vcp": {
+    "status": "NOT_AVAILABLE",
+    "status_message": "VCP state config not provided",
+    "state": null,
+    "geometry": null,
+    "features": null,
+    "breakout": null,
+    "follow_through": null,
+    "swings": null
+  },
   "data_status": "OK",
   "data_status_message": null
 }
