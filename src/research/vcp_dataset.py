@@ -30,6 +30,7 @@ class VCPResearchObservation:
     as_of: date
     security_id: int
     ticker: str
+    history_sessions: int
 
     # --------------------------------------------------
     # Causal VCP snapshot
@@ -90,6 +91,7 @@ def _snapshot_fields(
         "as_of": snapshot.as_of,
         "security_id": snapshot.security_id,
         "ticker": snapshot.ticker,
+        "history_sessions": snapshot.history_sessions,
         "vcp_state": snapshot.vcp_state,
         "contraction_count": snapshot.contraction_count,
         "structurally_valid": snapshot.structurally_valid,

@@ -216,6 +216,7 @@ class VCPReplaySnapshot:
     security_id: int
     ticker: str
     as_of: date
+    history_sessions: int
 
     vcp_state: str
     contraction_count: int
@@ -270,6 +271,7 @@ def build_replay_snapshot(
         security_id=security_id,
         ticker=ticker,
         as_of=as_of,
+        history_sessions=len(analysis.technical_bars),
 
         vcp_state=analysis.state.state.value,
 

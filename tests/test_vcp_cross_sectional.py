@@ -35,6 +35,7 @@ def _research_observation(
         as_of=as_of,
         security_id=security_id,
         ticker=ticker,
+        history_sessions=120,
         vcp_state="VCP_CONTRACTING",
         contraction_count=3,
         structurally_valid=True,

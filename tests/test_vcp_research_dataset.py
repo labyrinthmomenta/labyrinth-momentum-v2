@@ -25,6 +25,7 @@ def _snapshot(
         security_id=security_id,
         ticker=ticker,
         as_of=AS_OF,
+        history_sessions=120,
         vcp_state="VCP_CONTRACTING",
         contraction_count=3,
         structurally_valid=True,
@@ -491,3 +492,41 @@ def test_build_research_dataset_preserves_all_snapshots_across_dates():
     )
 
     assert len(dataset.observations) == 3
+
+
+
+def test_research_observation_preserves_history_sessions():
+    snapshot = _snapshot(
+        security_id=99,
+        ticker="HISTORY",
+    )
+
+    outcome = VCPForwardOutcome(
+        reference_date=AS_OF,
+        reference_close=100.0,
+        forward_return_5=0.01,
+        forward_return_10=0.02,
+        forward_return_20=0.03,
+        forward_return_40=0.04,
+        mfe_40=0.08,
+        mae_40=-0.05,
+    )
+
+    row = VCPReplayRow(
+        snapshot=snapshot,
+        outcome=outcome,
+    )
+
+    batch = VCPReplayBatch(
+        as_of=AS_OF,
+        snapshots=(snapshot,),
+        rows=(row,),
+        skips=(),
+    )
+
+    observation = build_research_observations(
+        batch
+    )[0]
+
+    assert snapshot.history_sessions == 120
+    assert observation.history_sessions == 120
