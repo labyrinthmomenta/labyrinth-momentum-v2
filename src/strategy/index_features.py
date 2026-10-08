@@ -5,7 +5,7 @@ from datetime import date, timedelta
 import math
 from typing import Sequence
 
-from src.calculation.engine import PriceBar, derive_returns
+from src.calculation.engine import PriceBar
 from src.data.calendar import BISTTradingCalendar
 from src.indicators.momentum import momentum
 from src.strategy.features import compute_strategy_features
@@ -49,6 +49,25 @@ class IndexFeatures:
 
     def as_dict(self) -> dict:
         return asdict(self)
+
+
+def _close_returns(
+    bars: Sequence[PriceBar],
+) -> list[float]:
+    """Derive close-to-close returns for market indices.
+
+    Index regime features require only valid closing prices.
+    OHLC fields may legitimately be unavailable for a
+    verified historical index close.
+    """
+
+    return [
+        float(current.close) / float(previous.close) - 1.0
+        for previous, current in zip(
+            bars,
+            bars[1:],
+        )
+    ]
 
 
 def contiguous_trading_tail(
@@ -177,15 +196,15 @@ def compute_index_features(
             sma200_slope_20=None,
         )
 
-    returns = [
-        point.value
-        for point in derive_returns(tail)
-    ]
-
+    # Validate and derive close-based trend features first.
+    # Unlike equity OHLC calculations, market-index regime
+    # features intentionally support verified close-only rows.
     trend = compute_strategy_features(
         tail,
         as_of=as_of,
     )
+
+    returns = _close_returns(tail)
 
     return IndexFeatures(
         as_of=as_of,

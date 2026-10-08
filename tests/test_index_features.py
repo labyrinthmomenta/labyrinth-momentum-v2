@@ -167,3 +167,43 @@ def test_as_of_excludes_future_bars():
 
     assert features.sma150 is not None
     assert features.sma200 is None
+
+
+def test_close_only_index_bars_support_index_features():
+    from src.data.storage.indices import IndexPriceBar
+
+    calendar = EveryDayCalendar()
+
+    bars = []
+    close = 100.0
+
+    for i in range(220):
+        close *= 1.001
+
+        bars.append(
+            IndexPriceBar(
+                date=date(2026, 1, 1) + timedelta(days=i),
+                open=None,
+                high=None,
+                low=None,
+                close=close,
+                volume=None,
+            )
+        )
+
+    features = compute_index_features(
+        bars,
+        calendar,
+        as_of=bars[-1].date,
+    )
+
+    assert features.contiguous_observations == 220
+    assert features.close == bars[-1].close
+
+    assert features.momentum_21 is not None
+    assert features.momentum_63 is not None
+    assert features.momentum_126 is not None
+
+    assert features.sma50 is not None
+    assert features.sma150 is not None
+    assert features.sma200 is not None
