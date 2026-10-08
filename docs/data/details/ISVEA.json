@@ -7,25 +7,25 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-07",
+    "viop_as_of": "2026-10-08",
     "first_trade_date": "2026-07-10"
   },
   "snapshot": {
-    "as_of": "2026-10-07",
-    "observations": 62,
+    "as_of": "2026-10-08",
+    "observations": 63,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": null,
-    "momentum_21": -0.6898850627329158,
+    "momentum_63": 0.2140992242950741,
+    "momentum_21": -0.6900000042385526,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": null,
+    "fip_63": -0.1746031746031746,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 21.772495658583107,
-    "delta_momentum_21_63": null,
-    "delta_fip_21_63": null,
+    "atr14_percent": 20.59519994901621,
+    "delta_momentum_21_63": -0.9040992285336267,
+    "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6478711180188297,
     "completed_month_fip": -0.18181818181818182,
@@ -409,6 +409,12 @@
       "close": 26.979999542236328,
       "volume": 33532031.0,
       "return": 0.09942948419870934
+    },
+    {
+      "date": "2026-10-08",
+      "close": 27.899999618530273,
+      "volume": 23009000.0,
+      "return": 0.03409933624549222
     }
   ],
   "vcp": {
