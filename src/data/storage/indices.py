@@ -16,6 +16,16 @@ class MarketIndex:
     active: bool = True
 
 
+@dataclass(frozen=True)
+class IndexPriceBar:
+    date: date
+    open: float | None
+    high: float | None
+    low: float | None
+    close: float
+    volume: float | None = None
+
+
 CORE_MARKET_INDICES = (
     MarketIndex(
         index_code="XU030",
@@ -126,7 +136,7 @@ def load_index_price_bars(
     *,
     start: date | None = None,
     end: date | None = None,
-) -> list[PriceBar]:
+) -> list[IndexPriceBar]:
     code = _normalize_code(index_code)
 
     sql = """
@@ -159,11 +169,23 @@ def load_index_price_bars(
     ).fetchall()
 
     return [
-        PriceBar(
+        IndexPriceBar(
             date=date.fromisoformat(row[0]),
-            open=float(row[1]),
-            high=float(row[2]),
-            low=float(row[3]),
+            open=(
+                None
+                if row[1] is None
+                else float(row[1])
+            ),
+            high=(
+                None
+                if row[2] is None
+                else float(row[2])
+            ),
+            low=(
+                None
+                if row[3] is None
+                else float(row[3])
+            ),
             close=float(row[4]),
             volume=(
                 None
@@ -181,7 +203,7 @@ def load_recent_index_price_bars(
     *,
     end: date,
     limit: int,
-) -> list[PriceBar]:
+) -> list[IndexPriceBar]:
     if limit <= 0:
         raise ValueError(
             "limit must be positive"
@@ -212,11 +234,23 @@ def load_recent_index_price_bars(
     ).fetchall()
 
     bars = [
-        PriceBar(
+        IndexPriceBar(
             date=date.fromisoformat(row[0]),
-            open=float(row[1]),
-            high=float(row[2]),
-            low=float(row[3]),
+            open=(
+                None
+                if row[1] is None
+                else float(row[1])
+            ),
+            high=(
+                None
+                if row[2] is None
+                else float(row[2])
+            ),
+            low=(
+                None
+                if row[3] is None
+                else float(row[3])
+            ),
             close=float(row[4]),
             volume=(
                 None
