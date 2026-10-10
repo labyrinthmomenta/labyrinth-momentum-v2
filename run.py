@@ -16,6 +16,10 @@ from src.pipeline.update import UpdatePipelineError, run_incremental_update
 from src.pipeline.adjustment_backfill import run_adjustment_backfill
 from src.pipeline.preflight import LivePreflightError, run_live_preflight
 from src.data.calendar_store import sync_trading_days
+from src.research.vcp_oos_runner import (
+    VCPOOSRunError,
+    run_frozen_vcp_oos,
+)
 
 ROOT = Path(__file__).resolve().parent
 DB_PATH = ROOT / "data" / "labyrinth.db"
@@ -35,6 +39,7 @@ def parse_args():
             "legacy-report",
             "preflight",
             "adjustment-backfill",
+            "vcp-oos",
         ),
         default="init",
     )
@@ -64,10 +69,89 @@ def _tickers(value: str | None) -> set[str] | None:
     return {item.strip().upper().replace(".IS", "") for item in value.split(",") if item.strip()}
 
 
+def _format_oos_metric(
+    value: float | None,
+    *,
+    percent: bool = False,
+) -> str:
+    if value is None:
+        return "NA"
+
+    if percent:
+        return f"{100.0 * value:+.6f}%"
+
+    return f"{value:+.6f}"
+
+
 def main() -> int:
     args = parse_args()
     as_of = date.fromisoformat(args.as_of) if args.as_of else date.today()
     calendar = BISTTradingCalendar.from_csv()
+
+    if args.command == "vcp-oos":
+        if not args.as_of:
+            print(
+                "FAILED vcp-oos: "
+                "--as-of is required"
+            )
+            return 2
+
+        try:
+            result = run_frozen_vcp_oos(
+                args.db,
+                calendar=calendar,
+                as_of=as_of,
+            )
+
+            report = result.report
+
+            performance = (
+                "READY"
+                if report.status.value == "READY"
+                else "BLOCKED"
+            )
+
+            print(
+                "OOS "
+                f"as_of={report.as_of} "
+                f"horizon_40={report.horizon_date_40} "
+                f"available_through={report.available_through} "
+                f"status={report.status.value} "
+                f"observations={report.observation_count} "
+                f"score_coverage="
+                f"{report.score_available_count}/"
+                f"{report.observation_count} "
+                f"outcome_coverage="
+                f"{report.outcome_available_count}/"
+                f"{report.observation_count} "
+                f"data_incomplete="
+                f"{report.data_incomplete_count} "
+                f"performance={performance}"
+            )
+
+            if performance == "READY":
+                print(
+                    "OOS-METRICS "
+                    f"IC40={_format_oos_metric(report.ic40)} "
+                    "Q5-Q1="
+                    f"{_format_oos_metric(
+                        report.q5_minus_q1_relative_return_40,
+                        percent=True,
+                    )} "
+                    "Q5="
+                    f"{_format_oos_metric(
+                        report.q5_mean_relative_return_40,
+                        percent=True,
+                    )}"
+                )
+
+            return 0
+
+        except VCPOOSRunError as exc:
+            print(
+                f"FAILED vcp-oos: {exc}"
+            )
+            return 2
 
     if args.command == "legacy-report":
         if not args.legacy_detail_dir:

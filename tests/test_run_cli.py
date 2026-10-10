@@ -1,4 +1,6 @@
 import sys
+from datetime import date
+from types import SimpleNamespace
 
 import run
 
@@ -127,3 +129,187 @@ def test_main_runs_adjustment_backfill_without_daily_pipeline(
 
     assert "SUCCESS adjustment-backfill" in output
     assert "inserted=3" in output
+
+
+
+def test_parse_args_accepts_vcp_oos(
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "run.py",
+            "vcp-oos",
+            "--as-of",
+            "2026-08-31",
+        ],
+    )
+
+    args = run.parse_args()
+
+    assert args.command == "vcp-oos"
+    assert args.as_of == "2026-08-31"
+
+
+def test_main_vcp_oos_requires_explicit_as_of(
+    monkeypatch,
+    capsys,
+):
+    def forbidden_runner(*args, **kwargs):
+        raise AssertionError(
+            "vcp-oos runner must not run "
+            "without explicit --as-of"
+        )
+
+    monkeypatch.setattr(
+        run,
+        "run_frozen_vcp_oos",
+        forbidden_runner,
+    )
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "run.py",
+            "vcp-oos",
+        ],
+    )
+
+    result = run.main()
+
+    assert result == 2
+
+    output = capsys.readouterr().out
+
+    assert (
+        "FAILED vcp-oos: --as-of is required"
+        in output
+    )
+
+
+def test_main_runs_vcp_oos_without_daily_pipeline(
+    monkeypatch,
+    tmp_path,
+    capsys,
+):
+    calls = {}
+
+    def fake_oos_runner(
+        db_path,
+        *,
+        calendar,
+        as_of,
+    ):
+        calls["db_path"] = db_path
+        calls["calendar"] = calendar
+        calls["as_of"] = as_of
+
+        report = SimpleNamespace(
+            as_of=date(2026, 8, 31),
+            horizon_date_40=date(
+                2026,
+                10,
+                26,
+            ),
+            available_through=date(
+                2026,
+                10,
+                9,
+            ),
+            status=SimpleNamespace(
+                value="IMMATURE"
+            ),
+            observation_count=157,
+            score_available_count=156,
+            outcome_available_count=0,
+            data_incomplete_count=0,
+            ic40=None,
+            q5_minus_q1_relative_return_40=None,
+            q5_mean_relative_return_40=None,
+        )
+
+        return SimpleNamespace(
+            report=report
+        )
+
+    def forbidden_daily_pipeline(**kwargs):
+        raise AssertionError(
+            "vcp-oos must not enter daily pipeline"
+        )
+
+    monkeypatch.setattr(
+        run,
+        "run_frozen_vcp_oos",
+        fake_oos_runner,
+    )
+
+    monkeypatch.setattr(
+        run,
+        "run_daily_pipeline",
+        forbidden_daily_pipeline,
+    )
+
+    db_path = tmp_path / "research.db"
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "run.py",
+            "vcp-oos",
+            "--db",
+            str(db_path),
+            "--as-of",
+            "2026-08-31",
+        ],
+    )
+
+    result = run.main()
+
+    assert result == 0
+
+    assert calls["db_path"] == str(
+        db_path
+    )
+
+    assert calls["as_of"] == date(
+        2026,
+        8,
+        31,
+    )
+
+    output = capsys.readouterr().out
+
+    assert (
+        "OOS as_of=2026-08-31"
+        in output
+    )
+
+    assert (
+        "horizon_40=2026-10-26"
+        in output
+    )
+
+    assert (
+        "status=IMMATURE"
+        in output
+    )
+
+    assert (
+        "score_coverage=156/157"
+        in output
+    )
+
+    assert (
+        "outcome_coverage=0/157"
+        in output
+    )
+
+    assert (
+        "performance=BLOCKED"
+        in output
+    )
+
+    assert "OOS-METRICS" not in output
