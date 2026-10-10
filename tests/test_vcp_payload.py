@@ -193,3 +193,58 @@ def test_unavailable_vcp_detail_payload_keeps_stable_schema():
         "follow_through": None,
         "swings": None,
     }
+
+
+def _nested_payload_keys(value):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            yield str(key).lower()
+            yield from _nested_payload_keys(child)
+
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            yield from _nested_payload_keys(item)
+
+
+def test_vcp_publication_payloads_exclude_research_only_fields():
+    result = _analysis()
+
+    payloads = (
+        build_vcp_screener_fields(result),
+        build_vcp_detail_payload(result),
+        unavailable_vcp_screener_fields("test"),
+        unavailable_vcp_detail_payload("test"),
+    )
+
+    forbidden_fragments = (
+        "atr_vol_eq",
+        "percentile",
+        "q5",
+        "shadow",
+        "oos",
+        "forward_return",
+        "relative_return",
+        "benchmark_return",
+        "outcome_available",
+        "outcome_error",
+        "score_available",
+        "mfe",
+        "mae",
+    )
+
+    for payload in payloads:
+        keys = set(
+            _nested_payload_keys(payload)
+        )
+
+        leaked = sorted(
+            key
+            for key in keys
+            if any(
+                fragment in key
+                for fragment in forbidden_fragments
+            )
+        )
+
+        assert leaked == []
+
