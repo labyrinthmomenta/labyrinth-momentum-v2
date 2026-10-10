@@ -1,0 +1,249 @@
+{
+  "artifact_sha256": "9eb913d0bae655fc4567981243d764fb8c4f20f6ead162f672463ade6ea8c245",
+  "artifact_type": "prospective_vcp_shadow_selection",
+  "as_of": "2026-08-31",
+  "created_at_utc": "2026-10-10T19:44:40.802492Z",
+  "horizon_date_40": "2026-10-26",
+  "outcomes_included": false,
+  "policy": {
+    "discretionary_exit": false,
+    "holding_horizon_sessions": 40,
+    "market_regime_filter": false,
+    "minimum_percentile": 0.8,
+    "name": "ATR_VOL_EQ_Q5_EQUAL_WEIGHT",
+    "score": "ATR_VOL_EQ",
+    "stop_loss": false,
+    "weighting": "EQUAL_WEIGHT"
+  },
+  "policy_git_commit": "49f17fdcbf87c205a4cf9602b6406251d7d28aad",
+  "rows": [
+    {
+      "percentile": 1.0,
+      "score": 1.0,
+      "security_id": 372,
+      "ticker": "ENSRI",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9935483870967742,
+      "score": 0.9581058726220018,
+      "security_id": 270,
+      "ticker": "VESTL",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9870967741935484,
+      "score": 0.9518817204301075,
+      "security_id": 70,
+      "ticker": "DAPGM",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9806451612903225,
+      "score": 0.9485732009925558,
+      "security_id": 479,
+      "ticker": "PRDGS",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9741935483870968,
+      "score": 0.9454094292803971,
+      "security_id": 349,
+      "ticker": "DESA",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.967741935483871,
+      "score": 0.9390198511166253,
+      "security_id": 581,
+      "ticker": "SEKUR",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9612903225806452,
+      "score": 0.9358767576509512,
+      "security_id": 260,
+      "ticker": "TTKOM",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9548387096774194,
+      "score": 0.9291356492969396,
+      "security_id": 342,
+      "ticker": "DGATE",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9483870967741935,
+      "score": 0.9166046319272125,
+      "security_id": 600,
+      "ticker": "BRMEN",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9419354838709677,
+      "score": 0.9097601323407776,
+      "security_id": 163,
+      "ticker": "KBORU",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9354838709677419,
+      "score": 0.8907568238213399,
+      "security_id": 247,
+      "ticker": "TCELL",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9290322580645162,
+      "score": 0.8842224979321753,
+      "security_id": 239,
+      "ticker": "TOASO",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9225806451612903,
+      "score": 0.8838916459884202,
+      "security_id": 343,
+      "ticker": "DCTTR",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9161290322580645,
+      "score": 0.8586021505376344,
+      "security_id": 43,
+      "ticker": "BTCIM",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9096774193548387,
+      "score": 0.8549627791563276,
+      "security_id": 473,
+      "ticker": "OTTO",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.9032258064516129,
+      "score": 0.8523779983457402,
+      "security_id": 582,
+      "ticker": "SEYKM",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.896774193548387,
+      "score": 0.8518196856906535,
+      "security_id": 326,
+      "ticker": "BOSSA",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8903225806451613,
+      "score": 0.8394334160463193,
+      "security_id": 512,
+      "ticker": "TATGD",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8838709677419355,
+      "score": 0.835545905707196,
+      "security_id": 81,
+      "ticker": "EGEEN",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8774193548387097,
+      "score": 0.807402812241522,
+      "security_id": 578,
+      "ticker": "RODRG",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8709677419354839,
+      "score": 0.806782464846981,
+      "security_id": 184,
+      "ticker": "NATEN",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.864516129032258,
+      "score": 0.8067411083540116,
+      "security_id": 466,
+      "ticker": "NUGYO",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8580645161290322,
+      "score": 0.7976633581472291,
+      "security_id": 4,
+      "ticker": "AGHOL",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8516129032258064,
+      "score": 0.7973738626964433,
+      "security_id": 529,
+      "ticker": "ULUUN",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8451612903225807,
+      "score": 0.7947477253928867,
+      "security_id": 68,
+      "ticker": "CIMSA",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8387096774193549,
+      "score": 0.7937138130686517,
+      "security_id": 88,
+      "ticker": "ENDAE",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.832258064516129,
+      "score": 0.784387923904053,
+      "security_id": 363,
+      "ticker": "EDIP",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8258064516129032,
+      "score": 0.7843258891645988,
+      "security_id": 101,
+      "ticker": "GSRAY",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8193548387096774,
+      "score": 0.7686517783291977,
+      "security_id": 590,
+      "ticker": "ISBTR",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8129032258064516,
+      "score": 0.7654880066170389,
+      "security_id": 180,
+      "ticker": "MOBTL",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8064516129032258,
+      "score": 0.7550661703887511,
+      "security_id": 31,
+      "ticker": "ASGYO",
+      "weight": 0.03125
+    },
+    {
+      "percentile": 0.8,
+      "score": 0.7464640198511165,
+      "security_id": 87,
+      "ticker": "EKGYO",
+      "weight": 0.03125
+    }
+  ],
+  "schema_version": 1,
+  "score_available_count": 156,
+  "selected_count": 32,
+  "source_snapshot_sha256": "42ddd45085098acba90944761fe7eccffe5eb6beb92f625388d01d23eecaa164"
+}

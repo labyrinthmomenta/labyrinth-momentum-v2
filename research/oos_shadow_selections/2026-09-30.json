@@ -1,0 +1,207 @@
+{
+  "artifact_sha256": "dc1239b083e9338e5243863119ae0604d3a78e051bc4a2785276c55b8d067f76",
+  "artifact_type": "prospective_vcp_shadow_selection",
+  "as_of": "2026-09-30",
+  "created_at_utc": "2026-10-10T19:44:40.809369Z",
+  "horizon_date_40": "2026-11-26",
+  "outcomes_included": false,
+  "policy": {
+    "discretionary_exit": false,
+    "holding_horizon_sessions": 40,
+    "market_regime_filter": false,
+    "minimum_percentile": 0.8,
+    "name": "ATR_VOL_EQ_Q5_EQUAL_WEIGHT",
+    "score": "ATR_VOL_EQ",
+    "stop_loss": false,
+    "weighting": "EQUAL_WEIGHT"
+  },
+  "policy_git_commit": "49f17fdcbf87c205a4cf9602b6406251d7d28aad",
+  "rows": [
+    {
+      "percentile": 1.0,
+      "score": 1.0,
+      "security_id": 372,
+      "ticker": "ENSRI",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9918032786885246,
+      "score": 0.971311475409836,
+      "security_id": 479,
+      "ticker": "PRDGS",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9795081967213115,
+      "score": 0.9672131147540983,
+      "security_id": 43,
+      "ticker": "BTCIM",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9795081967213115,
+      "score": 0.9672131147540983,
+      "security_id": 349,
+      "ticker": "DESA",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9672131147540983,
+      "score": 0.9631147540983607,
+      "security_id": 270,
+      "ticker": "VESTL",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9590163934426229,
+      "score": 0.9385245901639344,
+      "security_id": 581,
+      "ticker": "SEKUR",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9508196721311475,
+      "score": 0.9221311475409836,
+      "security_id": 501,
+      "ticker": "SAYAS",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9426229508196722,
+      "score": 0.9180327868852459,
+      "security_id": 400,
+      "ticker": "HKTM",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9344262295081968,
+      "score": 0.8975409836065573,
+      "security_id": 227,
+      "ticker": "SURGY",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9262295081967213,
+      "score": 0.8811475409836065,
+      "security_id": 578,
+      "ticker": "RODRG",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9180327868852459,
+      "score": 0.8647540983606558,
+      "security_id": 70,
+      "ticker": "DAPGM",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9098360655737705,
+      "score": 0.8565573770491803,
+      "security_id": 4,
+      "ticker": "AGHOL",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.9016393442622951,
+      "score": 0.8483606557377049,
+      "security_id": 590,
+      "ticker": "ISBTR",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8934426229508197,
+      "score": 0.8319672131147541,
+      "security_id": 240,
+      "ticker": "TRGYO",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8852459016393442,
+      "score": 0.8237704918032787,
+      "security_id": 110,
+      "ticker": "GLYHO",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8770491803278688,
+      "score": 0.8155737704918034,
+      "security_id": 316,
+      "ticker": "BEYAZ",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8688524590163934,
+      "score": 0.7868852459016393,
+      "security_id": 424,
+      "ticker": "KRVGD",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.860655737704918,
+      "score": 0.7827868852459017,
+      "security_id": 559,
+      "ticker": "EUYO",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8524590163934426,
+      "score": 0.7745901639344261,
+      "security_id": 29,
+      "ticker": "ARDYZ",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8442622950819673,
+      "score": 0.7663934426229508,
+      "security_id": 68,
+      "ticker": "CIMSA",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8360655737704918,
+      "score": 0.7622950819672132,
+      "security_id": 272,
+      "ticker": "YATAS",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8278688524590164,
+      "score": 0.7581967213114754,
+      "security_id": 130,
+      "ticker": "INDES",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.819672131147541,
+      "score": 0.7418032786885246,
+      "security_id": 357,
+      "ticker": "DOKTA",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8032786885245902,
+      "score": 0.7377049180327869,
+      "security_id": 303,
+      "ticker": "AVGYO",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8032786885245902,
+      "score": 0.7377049180327869,
+      "security_id": 62,
+      "ticker": "CCOLA",
+      "weight": 0.038461538461538464
+    },
+    {
+      "percentile": 0.8032786885245902,
+      "score": 0.7377049180327869,
+      "security_id": 529,
+      "ticker": "ULUUN",
+      "weight": 0.038461538461538464
+    }
+  ],
+  "schema_version": 1,
+  "score_available_count": 123,
+  "selected_count": 26,
+  "source_snapshot_sha256": "27f131325f09c62a016d991cd5a2cb2986170097e7645a5f08f4ee6a0173df98"
+}
