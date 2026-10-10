@@ -34,6 +34,7 @@ from src.research.vcp_oos_report import (
     build_oos_date_reports,
 )
 from src.research.vcp_quality import (
+    VCPQualityResearchObservation,
     build_vcp_quality_scores,
     is_frozen_vcp_quality_cohort_member,
 )
@@ -70,6 +71,11 @@ class VCPOOSRunResult:
 
     all_observation_count: int
     frozen_cohort_count: int
+
+    quality_observations: tuple[
+        VCPQualityResearchObservation,
+        ...
+    ]
 
     report: VCPOOSDateReport
 
@@ -205,6 +211,9 @@ def run_frozen_vcp_oos(
         ),
         frozen_cohort_count=len(
             cohort
+        ),
+        quality_observations=tuple(
+            quality
         ),
         report=reports[0],
     )

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from datetime import date
 from pathlib import Path
+import subprocess
 
 from src.data.calendar import BISTTradingCalendar
 from src.data.providers.bist_thb import BISTTHBProvider
@@ -17,8 +18,14 @@ from src.pipeline.adjustment_backfill import run_adjustment_backfill
 from src.pipeline.preflight import LivePreflightError, run_live_preflight
 from src.data.calendar_store import sync_trading_days
 from src.research.vcp_oos_runner import (
+    FROZEN_RESEARCH_VCP_STATE_CONFIG,
     VCPOOSRunError,
     run_frozen_vcp_oos,
+)
+from src.research.vcp_oos_snapshot import (
+    VCPOOSSnapshotError,
+    build_oos_snapshot_payload,
+    write_oos_snapshot,
 )
 
 ROOT = Path(__file__).resolve().parent
@@ -40,6 +47,7 @@ def parse_args():
             "preflight",
             "adjustment-backfill",
             "vcp-oos",
+            "vcp-oos-snapshot",
         ),
         default="init",
     )
@@ -50,6 +58,11 @@ def parse_args():
     parser.add_argument("--universe-csv", help="Authoritative full BIST universe CSV snapshot")
     parser.add_argument("--tickers", help="Comma-separated ticker subset; dry-run only")
     parser.add_argument("--dry-run-dir", help="Non-public output directory for dry-run JSON")
+    parser.add_argument(
+        "--snapshot-dir",
+        default="research/oos_snapshots",
+        help="Write-once prospective OOS snapshot directory",
+    )
     parser.add_argument("--official-universe", action="store_true", help="Fetch current EQUITY universe from official KAP/BIST sources")
     parser.add_argument("--legacy-detail-dir", help="V1 detail JSON directory for regression/comparison report")
     parser.add_argument("--legacy-excel", help="V1 source-of-truth Excel workbook for exact legacy regression")
@@ -67,6 +80,38 @@ def _tickers(value: str | None) -> set[str] | None:
     if not value:
         return None
     return {item.strip().upper().replace(".IS", "") for item in value.split(",") if item.strip()}
+
+
+def _current_git_commit() -> str:
+    try:
+        result = subprocess.run(
+            [
+                "git",
+                "rev-parse",
+                "HEAD",
+            ],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except (
+        OSError,
+        subprocess.CalledProcessError,
+    ) as exc:
+        raise VCPOOSSnapshotError(
+            "could not determine git commit"
+        ) from exc
+
+    commit = result.stdout.strip()
+
+    if len(commit) != 40:
+        raise VCPOOSSnapshotError(
+            "git rev-parse HEAD did not return "
+            "a full commit SHA"
+        )
+
+    return commit
 
 
 def _format_oos_metric(
@@ -87,6 +132,62 @@ def main() -> int:
     args = parse_args()
     as_of = date.fromisoformat(args.as_of) if args.as_of else date.today()
     calendar = BISTTradingCalendar.from_csv()
+
+    if args.command == "vcp-oos-snapshot":
+        if not args.as_of:
+            print(
+                "FAILED vcp-oos-snapshot: "
+                "--as-of is required"
+            )
+            return 2
+
+        try:
+            result = run_frozen_vcp_oos(
+                args.db,
+                calendar=calendar,
+                as_of=as_of,
+            )
+
+            payload = build_oos_snapshot_payload(
+                observations=(
+                    result.quality_observations
+                ),
+                report=result.report,
+                vcp_state_config=(
+                    FROZEN_RESEARCH_VCP_STATE_CONFIG
+                ),
+                git_commit=_current_git_commit(),
+            )
+
+            output = write_oos_snapshot(
+                payload,
+                args.snapshot_dir,
+            )
+
+            print(
+                "SNAPSHOT "
+                f"as_of={result.report.as_of} "
+                f"status={result.report.status.value} "
+                f"observations="
+                f"{result.report.observation_count} "
+                f"score_coverage="
+                f"{result.report.score_available_count}/"
+                f"{result.report.observation_count} "
+                f"sha256="
+                f"{payload['snapshot_sha256']} "
+                f"output={output}"
+            )
+
+            return 0
+
+        except (
+            VCPOOSRunError,
+            VCPOOSSnapshotError,
+        ) as exc:
+            print(
+                f"FAILED vcp-oos-snapshot: {exc}"
+            )
+            return 2
 
     if args.command == "vcp-oos":
         if not args.as_of:
