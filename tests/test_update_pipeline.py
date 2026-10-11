@@ -1149,3 +1149,285 @@ def test_adjustment_write_failure_rolls_back_price_and_adjustment_mutations(
         "FAIL",
         0,
     )
+
+
+def test_suspicious_flat_zero_volume_primary_is_quarantined_when_thb_reports_no_trade(
+    db,
+    calendar,
+):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+    latest = days[-1]
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        first_trade=days[0].isoformat(),
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "TEST",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:-1])],
+    )
+
+    provider = FakeProvider({
+        "TEST": [
+            PriceBar(
+                latest,
+                150.0,
+                150.0,
+                150.0,
+                150.0,
+                0.0,
+            )
+        ]
+    })
+
+    fallback = FakeProvider({
+        "TEST": [
+            PriceBar(
+                latest,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+            )
+        ]
+    })
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.prices_inserted == 0
+    assert provider.calls == [("TEST", latest, latest)]
+    assert fallback.calls == [("TEST", latest, latest)]
+
+    row = db.conn.execute(
+        """
+        SELECT status, provider, message
+        FROM security_data_status
+        WHERE security_id=?
+        ORDER BY run_id DESC
+        LIMIT 1
+        """,
+        (sid,),
+    ).fetchone()
+
+    assert row["status"] == "INSUFFICIENT_TRADING_DATA"
+    assert row["provider"] == "BIST_THB"
+    assert latest.isoformat() in row["message"]
+
+    assert count_prices(db, sid) == len(days) - 1
+
+    stored_latest = db.conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM daily_prices
+        WHERE security_id=? AND date=?
+        """,
+        (sid, latest.isoformat()),
+    ).fetchone()[0]
+
+    assert stored_latest == 0
+
+
+def test_suspicious_flat_zero_volume_primary_is_replaced_by_real_thb_bar(
+    db,
+    calendar,
+):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+    latest = days[-1]
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        first_trade=days[0].isoformat(),
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "TEST",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:-1])],
+    )
+
+    provider = FakeProvider({
+        "TEST": [
+            PriceBar(
+                latest,
+                150.0,
+                150.0,
+                150.0,
+                150.0,
+                0.0,
+            )
+        ]
+    })
+
+    official = PriceBar(
+        latest,
+        151.0,
+        153.0,
+        150.0,
+        152.0,
+        5000.0,
+    )
+
+    fallback = FakeProvider({
+        "TEST": [official]
+    })
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+    assert summary.prices_inserted == 1
+    assert fallback.calls == [("TEST", latest, latest)]
+
+    row = db.conn.execute(
+        """
+        SELECT open, high, low, close, volume, source
+        FROM daily_prices
+        WHERE security_id=? AND date=?
+        """,
+        (sid, latest.isoformat()),
+    ).fetchone()
+
+    assert tuple(row) == (
+        151.0,
+        153.0,
+        150.0,
+        152.0,
+        5000.0,
+        "BIST_THB",
+    )
+
+    status = db.conn.execute(
+        """
+        SELECT status
+        FROM security_data_status
+        WHERE security_id=?
+        ORDER BY run_id DESC
+        LIMIT 1
+        """,
+        (sid,),
+    ).fetchone()
+
+    assert status["status"] == "OK"
+
+
+def test_repeated_flat_zero_volume_primary_bars_fail_closed_after_one_thb_check(
+    db,
+    calendar,
+):
+    as_of = date(2026, 9, 21)
+    days = calendar.previous_trading_days(as_of, 4)
+    suspicious_days = days[-2:]
+    latest = suspicious_days[-1]
+
+    sid = add_security(
+        db,
+        ticker="TEST",
+        first_trade=days[0].isoformat(),
+    )
+
+    insert_bars(
+        db,
+        sid,
+        "TEST",
+        [mkbar(day, 100 + i) for i, day in enumerate(days[:2])],
+    )
+
+    provider = FakeProvider({
+        "TEST": [
+            PriceBar(
+                day,
+                150.0,
+                150.0,
+                150.0,
+                150.0,
+                0.0,
+            )
+            for day in suspicious_days
+        ]
+    })
+
+    fallback = FakeProvider({
+        "TEST": [
+            PriceBar(
+                latest,
+                151.0,
+                153.0,
+                150.0,
+                152.0,
+                5000.0,
+            )
+        ]
+    })
+    fallback.source_name = "BIST_THB"
+
+    summary = run_incremental_update(
+        db.conn,
+        calendar,
+        provider,
+        as_of=as_of,
+        required_return_window=3,
+        fallback_provider=fallback,
+    )
+
+    assert summary.status == "SUCCESS"
+
+    # Only the newest suspicious session is checked authoritatively.
+    assert fallback.calls == [("TEST", latest, latest)]
+
+    row = db.conn.execute(
+        """
+        SELECT status, provider, message
+        FROM security_data_status
+        WHERE security_id=?
+        ORDER BY run_id DESC
+        LIMIT 1
+        """,
+        (sid,),
+    ).fetchone()
+
+    assert row["status"] == "INSUFFICIENT_TRADING_DATA"
+    assert row["provider"] == "BIST_THB"
+    assert "repeated flat zero-volume bars" in row["message"]
+
+    # Fail closed: neither suspicious Yahoo placeholder is committed.
+    assert count_prices(db, sid) == 2
+
+    stored_suspicious = db.conn.execute(
+        """
+        SELECT COUNT(*)
+        FROM daily_prices
+        WHERE security_id=? AND date IN (?, ?)
+        """,
+        (
+            sid,
+            suspicious_days[0].isoformat(),
+            suspicious_days[1].isoformat(),
+        ),
+    ).fetchone()[0]
+
+    assert stored_suspicious == 0

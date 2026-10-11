@@ -87,6 +87,15 @@ def _is_official_no_trade_bar(bar: PriceBar) -> bool:
     )
 
 
+def _is_suspicious_primary_flat_zero_volume_bar(bar: PriceBar) -> bool:
+    """Flag a positive flat OHLC / zero-volume primary row for confirmation."""
+    return (
+        bar.volume == 0
+        and bar.open > 0
+        and bar.open == bar.high == bar.low == bar.close
+    )
+
+
 def _contiguous_requests(missing_dates: list[date], periods, calendar: BISTTradingCalendar) -> list[FetchRequest]:
     """Group missing trading dates by ticker and adjacent market sessions.
 
@@ -502,6 +511,43 @@ def run_incremental_update(
                     if bar.date not in invalid_dates
                 ]
 
+            # A positive flat OHLC row with zero reported volume is ambiguous:
+            # it can be a valid-looking Yahoo carry-forward placeholder on an
+            # otherwise open BIST session. Do not reject such rows inside the
+            # Yahoo adapter because the provider alone cannot know whether the
+            # security actually traded.
+            #
+            # When the authoritative BIST THB fallback is available, remove only
+            # the most recent suspicious required session from the primary stage.
+            # That deliberately creates one missing date, so the existing fallback
+            # machinery confirms the session without issuing one request for every
+            # suspicious historical row.
+            suspicious_primary_dates: list[date] = []
+            primary_verification_day: date | None = None
+
+            if (
+                fallback_provider is not None
+                and fallback_provider.source_name == "BIST_THB"
+            ):
+                suspicious_primary_dates = sorted(
+                    {
+                        bar.date
+                        for bar in primary_bars
+                        if (
+                            bar.date in plan.required_dates
+                            and _is_suspicious_primary_flat_zero_volume_bar(bar)
+                        )
+                    }
+                )
+
+                if suspicious_primary_dates:
+                    primary_verification_day = suspicious_primary_dates[-1]
+                    primary_bars = [
+                        bar
+                        for bar in primary_bars
+                        if bar.date != primary_verification_day
+                    ]
+
             # Recovery is deliberately attempted only after the primary provider
             # returned at least some data, or canonical history already exists.
             # A never-seen security for which the primary provider returned
@@ -560,6 +606,30 @@ def run_incremental_update(
                             )
                         )
                         continue
+
+                    if primary_verification_day is not None:
+                        authoritative_confirmation = [
+                            bar
+                            for bar in fallback_bars
+                            if bar.date == primary_verification_day
+                        ]
+
+                        if not authoritative_confirmation:
+                            insufficient[plan.security.security_id] = (
+                                "official BIST THB could not confirm suspicious "
+                                "flat zero-volume primary session: "
+                                f"{primary_verification_day.isoformat()}"
+                            )
+                            continue
+
+                        if len(suspicious_primary_dates) > 1:
+                            insufficient[plan.security.security_id] = (
+                                "primary provider returned repeated flat "
+                                "zero-volume bars; authoritative verification "
+                                "required for "
+                                f"{len(suspicious_primary_dates)} required sessions"
+                            )
+                            continue
 
                 fallback_issues = validate_ohlcv_structure(fallback_bars)
                 fallback_errors = [
