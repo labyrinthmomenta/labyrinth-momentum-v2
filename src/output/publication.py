@@ -20,6 +20,7 @@ from src.output.vcp_payload import (
     unavailable_vcp_screener_fields,
 )
 from src.pipeline.vcp import run_vcp_analysis
+from src.strategy.ranking import compute_cross_sectional_ranks
 from src.strategy.vcp_state import VCPStateConfig
 
 
@@ -68,6 +69,44 @@ def _write_json(path: Path, payload) -> None:
         json.dumps(payload, ensure_ascii=False, indent=2, default=_json_default),
         encoding="utf-8",
     )
+
+
+
+_RANKING_PUBLICATION_FIELDS = (
+    "core_ready",
+    "core_momentum_pct_all",
+    "core_quality_pct_all",
+    "momentum_126_pct_all",
+    "momentum_63_pct_all",
+    "momentum_21_pct_all",
+    "acceleration_21_63_all",
+    "acceleration_63_126_all",
+    "core_momentum_pct_viop",
+    "core_quality_pct_viop",
+    "momentum_126_pct_viop",
+    "momentum_63_pct_viop",
+    "momentum_21_pct_viop",
+    "acceleration_21_63_viop",
+    "acceleration_63_126_viop",
+    "momentum_63_pct_sector",
+    "sector_momentum_63_median",
+    "momentum_63_vs_sector_median",
+)
+
+
+def _unavailable_ranking_fields(
+    message: str,
+) -> dict:
+    """Stable null schema when full-universe ranking is unavailable."""
+
+    return {
+        "ranking_status": "NOT_AVAILABLE",
+        "ranking_status_message": message,
+        **{
+            field: None
+            for field in _RANKING_PUBLICATION_FIELDS
+        },
+    }
 
 
 def build_publication_stage(
@@ -297,6 +336,62 @@ def build_publication_stage(
         detail["data_status"] = "OK"
         detail["data_status_message"] = None
         _write_json(stage / "details" / f"{row['ticker']}.json", detail)
+
+    # Cross-sectional ranks are meaningful only against the
+    # complete publication universe. Never create subset-relative
+    # ranks for ticker-scoped dry runs.
+    if tickers:
+        unavailable_ranks = _unavailable_ranking_fields(
+            "cross-sectional ranks require full equity universe"
+        )
+
+        for item in screener:
+            item.update(unavailable_ranks)
+
+    else:
+        try:
+            ranks = compute_cross_sectional_ranks(
+                screener
+            )
+        except ValueError as exc:
+            raise PublicationError(
+                f"cross-sectional ranking failed: {exc}"
+            ) from exc
+
+        expected_tickers = {
+            item["ticker"]
+            for item in screener
+        }
+
+        if set(ranks) != expected_tickers:
+            raise PublicationError(
+                "cross-sectional ranking coverage mismatch"
+            )
+
+        for item in screener:
+            ticker = item["ticker"]
+
+            rank_payload = ranks[
+                ticker
+            ].as_dict()
+
+            rank_ticker = rank_payload.pop(
+                "ticker",
+                None,
+            )
+
+            if rank_ticker != ticker:
+                raise PublicationError(
+                    "cross-sectional ranking ticker mismatch"
+                )
+
+            item.update(
+                {
+                    "ranking_status": "OK",
+                    "ranking_status_message": None,
+                    **rank_payload,
+                }
+            )
 
     _write_json(stage / "screener.json", screener)
     manifest = {

@@ -954,3 +954,124 @@ def test_non_ok_market_data_skips_vcp_analysis(
         detail["vcp"]["status_message"]
         == f"market data status: {expected_status}"
     )
+
+
+def test_full_publication_exposes_cross_sectional_ranks(
+    tmp_path,
+):
+    from src.strategy.ranking import (
+        compute_cross_sectional_ranks,
+    )
+
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    public = tmp_path / "docs" / "data"
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar),
+        as_of=date(2026, 9, 23),
+        public_dir=public,
+        authoritative_universe_records=records(),
+        dry_run=False,
+    )
+
+    assert summary.public_promoted is True
+
+    screener = json.loads(
+        (public / "screener.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    expected = compute_cross_sectional_ranks(
+        screener
+    )
+
+    assert {
+        row["ticker"]
+        for row in screener
+    } == set(expected)
+
+    for row in screener:
+        assert row["ranking_status"] == "OK"
+        assert row["ranking_status_message"] is None
+
+        expected_payload = expected[
+            row["ticker"]
+        ].as_dict()
+
+        expected_payload.pop(
+            "ticker"
+        )
+
+        for key, value in expected_payload.items():
+            assert row[key] == value
+
+
+def test_subset_dry_run_never_publishes_subset_relative_ranks(
+    tmp_path,
+):
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+    dry = tmp_path / "dry"
+
+    run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar),
+        as_of=date(2026, 9, 23),
+        public_dir=tmp_path / "public",
+        authoritative_universe_records=records(),
+        tickers={"AAA"},
+        dry_run=True,
+        dry_run_dir=dry,
+    )
+
+    screener = json.loads(
+        (dry / "screener.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert len(screener) == 1
+
+    row = screener[0]
+
+    assert row["ticker"] == "AAA"
+    assert (
+        row["ranking_status"]
+        == "NOT_AVAILABLE"
+    )
+    assert (
+        "full equity universe"
+        in row["ranking_status_message"]
+    )
+
+    rank_fields = (
+        "core_ready",
+        "core_momentum_pct_all",
+        "core_quality_pct_all",
+        "momentum_126_pct_all",
+        "momentum_63_pct_all",
+        "momentum_21_pct_all",
+        "acceleration_21_63_all",
+        "acceleration_63_126_all",
+        "core_momentum_pct_viop",
+        "core_quality_pct_viop",
+        "momentum_126_pct_viop",
+        "momentum_63_pct_viop",
+        "momentum_21_pct_viop",
+        "acceleration_21_63_viop",
+        "acceleration_63_126_viop",
+        "momentum_63_pct_sector",
+        "sector_momentum_63_median",
+        "momentum_63_vs_sector_median",
+    )
+
+    assert all(
+        row[field] is None
+        for field in rank_fields
+    )
+
