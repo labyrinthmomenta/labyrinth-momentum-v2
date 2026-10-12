@@ -2,7 +2,7 @@
 
 Labyrinth Momentum V2 is the next-generation BIST momentum screener architecture. It replaces the V1 Excel-centric calculation flow with a canonical SQLite/OHLCV data model, explicit validation gates, reproducible indicator calculations, and guarded GitHub Actions automation.
 
-> **Status:** repository-ready release candidate. V1 remains untouched and is retained only as an immutable migration/regression reference.
+> **Status:** production-ready V2 decision-support release. V1 remains untouched and is retained only as an immutable migration/regression reference.
 
 ## Architecture
 
@@ -167,6 +167,115 @@ Official universe
 
 A production run with a partial ticker subset is rejected.
 
+
+## Cross-sectional ranking
+
+Production publication includes descriptive cross-sectional percentile ranks.
+
+The ranking layer does **not** create autonomous Long/Short, Buy/Sell, or execution decisions.
+
+Published ranking context includes:
+
+- Core momentum percentile across the full eligible BIST equity universe
+- Core momentum percentile within the VIOP subset
+- FIP-based momentum-quality percentile
+- 126 / 63 / 21-session momentum percentiles
+- 21-vs-63 and 63-vs-126 acceleration context
+- 63-session sector-relative momentum context
+
+The full-universe ranking is calculated only when the complete active equity universe is available. Partial dry-run subsets do not receive misleading production ranks.
+
+`core_ready` means that the required published momentum/FIP inputs are available for descriptive ranking. It does **not** mean that the security is trade-ready.
+
+## Trader View
+
+Trader View is a read-only presentation layer over the published production artifacts.
+
+It does not fetch market data, update SQLite, recompute indicators, modify rankings, or publish new JSON.
+
+Default full-universe view:
+
+```bash
+python run.py trader-view
+```
+
+Show a different number of names:
+
+```bash
+python run.py trader-view --top 15
+```
+
+VIOP-only view:
+
+```bash
+python run.py trader-view --viop --top 15
+```
+
+Trader View requires:
+
+- production manifest status `PASS`
+- `dry_run = false`
+- screener and manifest `as_of` consistency
+- `data_status = OK`
+- `ranking_status = OK`
+- `core_ready = true`
+
+If these publication-contract conditions are not met, Trader View fails closed.
+
+The `STRONG MOMENTUM` and `WEAK MOMENTUM` sections are descriptive ends of the published momentum-ranking distribution. They are **not** Buy/Sell or Long/Short signals.
+
+Key columns:
+
+- `Mom%` — published core momentum percentile
+- `FIP-Q%` — published FIP-based momentum-quality percentile
+- `M126%` — 126-session momentum percentile
+- `M63%` — 63-session momentum percentile
+- `M21%` — 21-session momentum percentile
+- `FIP12-1` — published 12-1 FIP value
+- `VCP` — production VCP status/state when available
+
+With `--viop`, VIOP-specific published percentile fields are used.
+
+## VCP production boundary
+
+VCP is structurally integrated into the publication contract but remains independent from the production momentum ranking.
+
+VCP does not increase, decrease, or otherwise alter the published momentum rank.
+
+When no explicit production VCP configuration is supplied, VCP is published as `NOT_AVAILABLE` / `N/A` rather than silently applying research thresholds.
+
+Research-only VCP quality scores, shadow-selection fields, prospective OOS outcomes, forward returns, benchmark-relative returns, MFE/MAE, and similar outcome variables are prohibited from leaking into production publication.
+
+## Prospective OOS research boundary
+
+Prospective VCP validation is intentionally separated from production ranking.
+
+The repository contains write-once prospective snapshots and sealed shadow selections. OOS results must not be evaluated before their pre-registered maturity horizon.
+
+Research findings do not automatically change production defaults. They must pass the explicit production-integration boundary before affecting published behavior.
+
+## Intended use
+
+Labyrinth Momentum V2 is a decision-support screener for discretionary swing-trading research.
+
+Typical workflow:
+
+1. Complete the production update after the most recently completed BIST session.
+2. Confirm manifest and data-quality status.
+3. Review the full-universe Trader View.
+4. Review the VIOP-specific Trader View when selecting futures candidates.
+5. Use momentum rank, FIP quality, shorter-horizon momentum, acceleration, sector context, VCP context, and market regime as separate descriptive inputs.
+6. Perform chart review, entry planning, stop placement, position sizing, execution, and trade management outside the screener.
+
+The system intentionally does **not**:
+
+- place orders
+- size positions
+- choose entries or stops
+- manage open trades
+- issue autonomous Buy/Sell or Long/Short signals
+- convert research/OOS outcomes directly into production rules
+
 ## GitHub Actions
 
 Two workflows are included:
@@ -188,7 +297,7 @@ src/data/                 universe, calendar, providers, storage
 src/indicators/           Momentum, FIP, ATR, acceleration
 src/output/               JSON generation and publication gate
 src/pipeline/             preflight, incremental and daily orchestration
-src/reporting/            V1/V2 audit reporting
+src/reporting/            audit reporting and read-only Trader View
 src/validation/           quality and regression rules
 tests/                    unit/integration tests
 migration/legacy/         immutable V1 audit material
@@ -211,4 +320,4 @@ run.py                    CLI entry point
 
 ## Important publication note
 
-`docs/data` is generated data output. A full V2 web frontend/`docs/index.html` is intentionally not enabled in this repository-ready milestone. GitHub Pages should be enabled only after the V2 frontend is added and its data contract is validated.
+`docs/data` is generated production data output. The supported human-facing decision-support interface for this release is the read-only CLI Trader View. A web frontend/`docs/index.html` is not part of the frozen V2 production release unless it is separately reviewed, validated, and committed.
