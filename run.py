@@ -12,6 +12,11 @@ from src.data.storage.database import Database
 from src.data.universe.manager import parse_bist_csv
 from src.data.universe.official import fetch_official_universe, guard_universe_change, OfficialUniverseError
 from src.reporting.legacy_compare import build_legacy_comparison, write_legacy_comparison
+from src.reporting.trader_view import (
+    TraderViewError,
+    load_trader_view,
+    render_trader_view,
+)
 from src.pipeline.daily import DailyPipelineError, run_daily_pipeline
 from src.pipeline.update import UpdatePipelineError, run_incremental_update
 from src.pipeline.adjustment_backfill import run_adjustment_backfill
@@ -45,6 +50,7 @@ def parse_args():
             "dry-run",
             "legacy-report",
             "preflight",
+            "trader-view",
             "adjustment-backfill",
             "vcp-oos",
             "vcp-oos-snapshot",
@@ -67,6 +73,17 @@ def parse_args():
     parser.add_argument("--legacy-detail-dir", help="V1 detail JSON directory for regression/comparison report")
     parser.add_argument("--legacy-excel", help="V1 source-of-truth Excel workbook for exact legacy regression")
     parser.add_argument("--legacy-report-out", default="migration/reports/v1_v2_comparison.json", help="Legacy comparison report path")
+    parser.add_argument(
+        "--viop",
+        action="store_true",
+        help="Use VIOP-only published ranking universe for trader-view",
+    )
+    parser.add_argument(
+        "--top",
+        type=int,
+        default=10,
+        help="Number of strong/weak rows shown by trader-view",
+    )
     return parser.parse_args()
 
 
@@ -252,6 +269,19 @@ def main() -> int:
             print(
                 f"FAILED vcp-oos: {exc}"
             )
+            return 2
+
+    if args.command == "trader-view":
+        try:
+            view = load_trader_view(
+                args.public_dir,
+                viop=args.viop,
+                top=args.top,
+            )
+            print(render_trader_view(view))
+            return 0
+        except TraderViewError as exc:
+            print(f"FAILED trader-view: {exc}")
             return 2
 
     if args.command == "legacy-report":

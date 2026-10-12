@@ -525,3 +525,145 @@ def test_main_runs_vcp_oos_snapshot_without_daily_pipeline(
     assert "status=IMMATURE" in output
     assert "observations=2" in output
     assert "sha256=" in output
+
+
+
+def test_parse_args_accepts_trader_view(
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "run.py",
+            "trader-view",
+            "--viop",
+            "--top",
+            "15",
+        ],
+    )
+
+    args = run.parse_args()
+
+    assert args.command == "trader-view"
+    assert args.viop is True
+    assert args.top == 15
+
+
+def test_main_runs_trader_view_without_daily_pipeline(
+    monkeypatch,
+    tmp_path,
+    capsys,
+):
+    calls = {}
+
+    fake_view = SimpleNamespace(
+        as_of="2026-10-09",
+        universe="VIOP",
+        eligible_count=42,
+    )
+
+    def fake_load(
+        data_dir,
+        *,
+        viop,
+        top,
+    ):
+        calls["data_dir"] = data_dir
+        calls["viop"] = viop
+        calls["top"] = top
+        return fake_view
+
+    def fake_render(view):
+        assert view is fake_view
+        return "TRADER VIEW OUTPUT"
+
+    def forbidden_daily_pipeline(**kwargs):
+        raise AssertionError(
+            "trader-view must not enter daily pipeline"
+        )
+
+    monkeypatch.setattr(
+        run,
+        "load_trader_view",
+        fake_load,
+    )
+    monkeypatch.setattr(
+        run,
+        "render_trader_view",
+        fake_render,
+    )
+    monkeypatch.setattr(
+        run,
+        "run_daily_pipeline",
+        forbidden_daily_pipeline,
+    )
+
+    public_dir = tmp_path / "published"
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "run.py",
+            "trader-view",
+            "--public-dir",
+            str(public_dir),
+            "--viop",
+            "--top",
+            "15",
+        ],
+    )
+
+    result = run.main()
+
+    assert result == 0
+    assert calls["data_dir"] == str(public_dir)
+    assert calls["viop"] is True
+    assert calls["top"] == 15
+
+    output = capsys.readouterr().out
+    assert "TRADER VIEW OUTPUT" in output
+
+
+def test_main_trader_view_fails_closed(
+    monkeypatch,
+    capsys,
+):
+    def fake_load(*args, **kwargs):
+        raise run.TraderViewError(
+            "unsafe production publication"
+        )
+
+    def forbidden_daily_pipeline(**kwargs):
+        raise AssertionError(
+            "failed trader-view must not enter daily pipeline"
+        )
+
+    monkeypatch.setattr(
+        run,
+        "load_trader_view",
+        fake_load,
+    )
+    monkeypatch.setattr(
+        run,
+        "run_daily_pipeline",
+        forbidden_daily_pipeline,
+    )
+
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "run.py",
+            "trader-view",
+        ],
+    )
+
+    result = run.main()
+
+    assert result == 2
+    assert (
+        "FAILED trader-view: unsafe production publication"
+        in capsys.readouterr().out
+    )
