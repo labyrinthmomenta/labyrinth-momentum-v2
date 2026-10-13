@@ -7,25 +7,25 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-12",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2021-09-30"
   },
   "snapshot": {
-    "as_of": "2026-10-12",
+    "as_of": "2026-10-13",
     "observations": 252,
-    "momentum_12_1": 0.6304347882424062,
+    "momentum_12_1": 0.5972726995294777,
     "fip_12_1": -0.23376623376623376,
-    "momentum_252": -0.6195652333534807,
-    "momentum_126": -0.8571428617768434,
-    "momentum_63": -0.7773064860369139,
-    "momentum_21": -0.7666666772630479,
+    "momentum_252": -0.6563636389645655,
+    "momentum_126": -0.8764705907102275,
+    "momentum_63": -0.802301265404059,
+    "momentum_21": -0.7848605556604941,
     "fip_252": 0.15476190476190477,
-    "fip_126": -0.023809523809523808,
-    "fip_63": -0.12698412698412698,
+    "fip_126": -0.03968253968253968,
+    "fip_63": -0.15873015873015872,
     "fip_21": -0.7142857142857143,
-    "atr14_percent": 19.902438704758964,
-    "delta_momentum_21_63": 0.010639808773865944,
-    "delta_fip_21_63": -0.5873015873015873,
+    "atr14_percent": 21.375153180677216,
+    "delta_momentum_21_63": 0.01744070974356493,
+    "delta_fip_21_63": -0.5555555555555556,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6619677627337202,
     "completed_month_fip": -0.3181818181818182,
@@ -33,10 +33,82 @@
   },
   "daily": [
     {
+      "date": "2025-09-23",
+      "close": 23.600000381469727,
+      "volume": 4034297.0,
+      "return": null
+    },
+    {
+      "date": "2025-09-24",
+      "close": 23.200000762939453,
+      "volume": 10986712.0,
+      "return": -0.016949136104436047
+    },
+    {
+      "date": "2025-09-25",
+      "close": 23.420000076293945,
+      "volume": 8885832.0,
+      "return": 0.00948272871205802
+    },
+    {
+      "date": "2025-09-26",
+      "close": 23.399999618530273,
+      "volume": 9752480.0,
+      "return": -0.0008539905080494625
+    },
+    {
+      "date": "2025-09-29",
+      "close": 23.0,
+      "volume": 5219537.0,
+      "return": -0.017094001070560583
+    },
+    {
+      "date": "2025-09-30",
+      "close": 22.520000457763672,
+      "volume": 7801313.0,
+      "return": -0.020869545314622928
+    },
+    {
+      "date": "2025-10-01",
+      "close": 22.440000534057617,
+      "volume": 4697407.0,
+      "return": -0.0035523944085211756
+    },
+    {
+      "date": "2025-10-02",
+      "close": 21.799999237060547,
+      "volume": 5417462.0,
+      "return": -0.02852055622840688
+    },
+    {
+      "date": "2025-10-03",
+      "close": 22.0,
+      "volume": 2465051.0,
+      "return": 0.009174347244904846
+    },
+    {
+      "date": "2025-10-06",
+      "close": 21.5,
+      "volume": 5338023.0,
+      "return": -0.022727272727272707
+    },
+    {
+      "date": "2025-10-07",
+      "close": 22.200000762939453,
+      "volume": 4309513.0,
+      "return": 0.032558175020439784
+    },
+    {
+      "date": "2025-10-08",
+      "close": 21.940000534057617,
+      "volume": 3694994.0,
+      "return": -0.011711721619211746
+    },
+    {
       "date": "2025-10-09",
       "close": 22.079999923706055,
       "volume": 8112789.0,
-      "return": null
+      "return": 0.006381011223364208
     },
     {
       "date": "2025-10-10",
@@ -1549,6 +1621,183 @@
       "close": 8.399999618530273,
       "volume": 57694884.0,
       "return": -0.024390249305540124
+    },
+    {
+      "date": "2026-10-13",
+      "close": 7.559999942779541,
+      "volume": 33029141.0,
+      "return": -0.09999996594020144
+    }
+  ],
+  "monthly_history": [
+    {
+      "month": "2025-10",
+      "is_current": false,
+      "momentum": 0.3134990818132277,
+      "fip": -0.09090909090909091,
+      "positive": 12,
+      "negative": 10,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2025-11",
+      "is_current": false,
+      "momentum": 0.06423257685702577,
+      "fip": -0.2,
+      "positive": 12,
+      "negative": 8,
+      "flat": 0,
+      "classified_returns": 20,
+      "sessions": 20,
+      "expected_sessions": 20,
+      "session_gap": 0
+    },
+    {
+      "month": "2025-12",
+      "is_current": false,
+      "momentum": 0.2109275567408968,
+      "fip": -0.30434782608695654,
+      "positive": 15,
+      "negative": 8,
+      "flat": 0,
+      "classified_returns": 23,
+      "sessions": 23,
+      "expected_sessions": 23,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-01",
+      "is_current": false,
+      "momentum": 0.08342078683837362,
+      "fip": -0.42857142857142855,
+      "positive": 15,
+      "negative": 6,
+      "flat": 0,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-02",
+      "is_current": false,
+      "momentum": 0.2048425966284544,
+      "fip": -0.4,
+      "positive": 14,
+      "negative": 6,
+      "flat": 0,
+      "classified_returns": 20,
+      "sessions": 20,
+      "expected_sessions": 20,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-03",
+      "is_current": false,
+      "momentum": 0.05405953641767258,
+      "fip": -0.23809523809523808,
+      "positive": 13,
+      "negative": 8,
+      "flat": 0,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-04",
+      "is_current": false,
+      "momentum": 0.22116305281381043,
+      "fip": -0.5238095238095238,
+      "positive": 16,
+      "negative": 5,
+      "flat": 0,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-05",
+      "is_current": false,
+      "momentum": -0.04605783664448637,
+      "fip": 0.125,
+      "positive": 9,
+      "negative": 7,
+      "flat": 0,
+      "classified_returns": 16,
+      "sessions": 16,
+      "expected_sessions": 16,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-06",
+      "is_current": false,
+      "momentum": -0.4867430213826588,
+      "fip": -0.18181818181818182,
+      "positive": 9,
+      "negative": 13,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-07",
+      "is_current": false,
+      "momentum": 0.17665818902116515,
+      "fip": -0.09090909090909091,
+      "positive": 12,
+      "negative": 10,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-08",
+      "is_current": false,
+      "momentum": -0.05799466438625689,
+      "fip": 0.14285714285714285,
+      "positive": 12,
+      "negative": 9,
+      "flat": 0,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-09",
+      "is_current": false,
+      "momentum": -0.6619677627337202,
+      "fip": -0.3181818181818182,
+      "positive": 7,
+      "negative": 14,
+      "flat": 1,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-10",
+      "is_current": true,
+      "momentum": -0.3565957495506774,
+      "fip": -0.5555555555555556,
+      "positive": 2,
+      "negative": 7,
+      "flat": 0,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
+      "session_gap": 0
     }
   ],
   "vcp": {

@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Labyrinth Momentum V2 — BIST momentum screener">
+  <title>Labyrinth Momentum V2</title>
+  <link rel="stylesheet" href="./assets/app.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span>LM</span>
+        </div>
+
+        <div>
+          <div class="eyebrow">BIST MOMENTUM RESEARCH</div>
+          <h1>Labyrinth Momentum <span>V2</span></h1>
+          <p class="subtitle">
+            Momentum · FIP · ATR · Daily canonical market data
+          </p>
+        </div>
+      </div>
+
+      <div class="run-state">
+        <span id="statusBadge" class="status-badge loading">LOADING</span>
+        <div>
+          <div class="run-label">Data as of</div>
+          <div id="asOfDate" class="run-date">—</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-grid" aria-label="Data summary">
+        <article class="summary-card">
+          <div class="summary-label">Official Universe</div>
+          <div id="universeCount" class="summary-value">—</div>
+          <div class="summary-note">BIST equities</div>
+        </article>
+
+        <article class="summary-card">
+          <div class="summary-label">Data Available</div>
+          <div id="availableCount" class="summary-value">—</div>
+          <div class="summary-note">Calculation-ready</div>
+        </article>
+
+        <article class="summary-card">
+          <div class="summary-label">Insufficient Data</div>
+          <div id="insufficientCount" class="summary-value">—</div>
+          <div class="summary-note">Excluded from screener</div>
+        </article>
+
+        <article class="summary-card">
+          <div class="summary-label">Provider Unavailable</div>
+          <div id="unavailableCount" class="summary-value">—</div>
+          <div class="summary-note">Upstream unavailable</div>
+        </article>
+      </section>
+
+      <nav class="primary-nav" aria-label="Ana görünüm">
+        <button
+          type="button"
+          class="primary-nav-button active"
+          data-page-view="screener"
+          aria-pressed="true"
+        >
+          Screener
+        </button>
+
+        <button
+          type="button"
+          class="primary-nav-button"
+          data-page-view="strategy"
+          aria-pressed="false"
+        >
+          Strateji
+        </button>
+      </nav>
+
+      <section id="screenerView" class="workspace page-view">
+        <div class="workspace-header">
+          <div>
+            <div class="section-kicker">EQUITY SCREENER</div>
+            <h2>Momentum Dashboard</h2>
+            <p>
+              Only securities with <code>data_status = OK</code> are shown.
+            </p>
+          </div>
+
+          <div class="workspace-actions">
+            <div class="trade-filter" aria-label="İşlem tipi filtresi">
+              <span class="filter-label">İşlem Tipi</span>
+
+              <div class="segment-control" role="group" aria-label="İşlem Tipi">
+                <button
+                  type="button"
+                  class="segment-button active"
+                  data-trade-filter="all"
+                  aria-pressed="true"
+                >
+                  Tümü
+                </button>
+
+                <button
+                  type="button"
+                  class="segment-button"
+                  data-trade-filter="viop"
+                  aria-pressed="false"
+                >
+                  VİOP
+                </button>
+
+                <button
+                  type="button"
+                  class="segment-button"
+                  data-trade-filter="spot"
+                  aria-pressed="false"
+                >
+                  Hisse
+                </button>
+              </div>
+            </div>
+
+            <div class="sector-filter">
+              <span class="filter-label">Sektör</span>
+
+              <select
+                id="sectorFilter"
+                class="sector-select"
+                aria-label="Sektör filtresi"
+              >
+                <option value="all">Tüm Sektörler</option>
+              </select>
+            </div>
+
+            <div class="download-actions" aria-label="Published data downloads">
+              <span class="filter-label">Data</span>
+              <div class="download-control">
+                <button id="csvDownload" type="button" class="download-button">
+                  ↓ CSV
+                </button>
+                <button id="jsonDownload" type="button" class="download-button">
+                  ↓ JSON
+                </button>
+              </div>
+            </div>
+
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Ticker veya şirket ara..."
+                autocomplete="off"
+              >
+            </label>
+          </div>
+        </div>
+
+        <div class="table-meta">
+          <div>
+            <strong id="visibleCount">—</strong>
+            <span> securities shown</span>
+          </div>
+
+          <div class="legend">
+            <span><i class="dot positive"></i> Positive momentum</span>
+            <span><i class="dot negative"></i> Negative momentum</span>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table id="screenerTable">
+            <thead>
+              <tr class="group-row">
+                <th colspan="2" class="stock-group">Security</th>
+                <th colspan="4">Momentum</th>
+                <th colspan="4">FIP</th>
+                <th colspan="3">Risk / Change</th>
+                <th colspan="4">Current Month</th>
+              </tr>
+
+              <tr>
+                <th data-key="ticker" class="sortable sticky-col">
+                  Ticker <span class="sort-indicator"></span>
+                </th>
+                <th data-key="name" class="sortable company-col">
+                  Company <span class="sort-indicator"></span>
+                </th>
+
+                <th data-key="momentum_252" class="sortable numeric" title="252 trading sessions">
+                  12M <span class="sort-indicator"></span>
+                </th>
+                <th data-key="momentum_126" class="sortable numeric" title="126 trading sessions">
+                  6M <span class="sort-indicator"></span>
+                </th>
+                <th data-key="momentum_63" class="sortable numeric" title="63 trading sessions">
+                  3M <span class="sort-indicator"></span>
+                </th>
+                <th data-key="momentum_21" class="sortable numeric" title="21 trading sessions">
+                  1M <span class="sort-indicator"></span>
+                </th>
+
+                <th data-key="fip_252" class="sortable numeric">
+                  12M <span class="sort-indicator"></span>
+                </th>
+                <th data-key="fip_126" class="sortable numeric">
+                  6M <span class="sort-indicator"></span>
+                </th>
+                <th data-key="fip_63" class="sortable numeric">
+                  3M <span class="sort-indicator"></span>
+                </th>
+                <th data-key="fip_21" class="sortable numeric">
+                  1M <span class="sort-indicator"></span>
+                </th>
+
+                <th data-key="atr14_percent" class="sortable numeric">
+                  ATR14% <span class="sort-indicator"></span>
+                </th>
+                <th data-key="delta_momentum_21_63" class="sortable numeric" title="Momentum 21 - Momentum 63">
+                  Δ Mom <span class="sort-indicator"></span>
+                </th>
+                <th data-key="delta_fip_21_63" class="sortable numeric" title="FIP 21 - FIP 63">
+                  Δ FIP <span class="sort-indicator"></span>
+                </th>
+
+                <th
+                  data-key="current_month_negative"
+                  class="sortable numeric month-negative"
+                  title="Negative close-to-close sessions in current calendar month"
+                >
+                  NEG <span class="sort-indicator"></span>
+                </th>
+
+                <th
+                  data-key="current_month_positive"
+                  class="sortable numeric month-positive"
+                  title="Positive close-to-close sessions in current calendar month"
+                >
+                  POS <span class="sort-indicator"></span>
+                </th>
+
+                <th
+                  data-key="current_month_flat"
+                  class="sortable numeric"
+                  title="Flat close-to-close sessions in current calendar month"
+                >
+                  FLAT <span class="sort-indicator"></span>
+                </th>
+
+                <th
+                  data-key="current_month_session_gap"
+                  class="sortable numeric"
+                  title="Expected official BIST sessions minus observed sessions"
+                >
+                  GAP <span class="sort-indicator"></span>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody id="screenerBody">
+              <tr>
+                <td colspan="17" class="loading-row">
+                  Loading screener data…
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="errorBox" class="error-box" hidden></div>
+      </section>
+
+      <section
+        id="strategyView"
+        class="workspace page-view strategy-view"
+        hidden
+      >
+        <div class="workspace-header strategy-header">
+          <div>
+            <div class="section-kicker">PRODUCTION STRATEGY VIEW</div>
+            <h2>Momentum & VCP Strategy Lens</h2>
+            <p>
+              Published production data only. Indicators and rankings are not
+              recomputed in the browser.
+            </p>
+          </div>
+
+          <div class="strategy-controls">
+            <div class="trade-filter">
+              <span class="filter-label">Strateji</span>
+              <div class="segment-control" role="group">
+                <button
+                  type="button"
+                  class="segment-button active"
+                  data-strategy-mode="strong"
+                  aria-pressed="true"
+                >
+                  Strong
+                </button>
+                <button
+                  type="button"
+                  class="segment-button"
+                  data-strategy-mode="weak"
+                  aria-pressed="false"
+                >
+                  Weak
+                </button>
+                <button
+                  type="button"
+                  class="segment-button"
+                  data-strategy-mode="vcp"
+                  aria-pressed="false"
+                >
+                  VCP
+                </button>
+              </div>
+            </div>
+
+            <div class="trade-filter">
+              <span class="filter-label">Evren</span>
+              <div class="segment-control" role="group">
+                <button
+                  type="button"
+                  class="segment-button active"
+                  data-strategy-universe="all"
+                  aria-pressed="true"
+                >
+                  ALL
+                </button>
+                <button
+                  type="button"
+                  class="segment-button"
+                  data-strategy-universe="viop"
+                  aria-pressed="false"
+                >
+                  VİOP
+                </button>
+              </div>
+            </div>
+
+            <div class="trade-filter">
+              <span class="filter-label">Göster</span>
+              <div class="segment-control" role="group">
+                <button
+                  type="button"
+                  class="segment-button active"
+                  data-strategy-limit="10"
+                  aria-pressed="true"
+                >
+                  10
+                </button>
+                <button
+                  type="button"
+                  class="segment-button"
+                  data-strategy-limit="20"
+                  aria-pressed="false"
+                >
+                  20
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy-guide-grid">
+          <article class="strategy-guide-card strong">
+            <div class="strategy-guide-number">01</div>
+            <div>
+              <h3>Strong Momentum</h3>
+              <p>
+                Production Core Momentum percentile sıralamasının güçlü ucu.
+                Yüksek Core% seçili evrende daha güçlü göreli momentum anlamına gelir.
+              </p>
+              <span>Descriptive only · Buy/Long sinyali değildir.</span>
+            </div>
+          </article>
+
+          <article class="strategy-guide-card weak">
+            <div class="strategy-guide-number">02</div>
+            <div>
+              <h3>Weak Momentum</h3>
+              <p>
+                Production Core Momentum percentile sıralamasının zayıf ucu.
+                Düşük Core% seçili evrende daha zayıf göreli momentum anlamına gelir.
+              </p>
+              <span>Descriptive only · Sell/Short sinyali değildir.</span>
+            </div>
+          </article>
+
+          <article class="strategy-guide-card vcp">
+            <div class="strategy-guide-number">03</div>
+            <div>
+              <h3>VCP</h3>
+              <p>
+                Momentum ranking'den bağımsız structural setup görünümüdür.
+                VCP, Core% veya FIP-Q% skoruna eklenmez.
+              </p>
+              <span>Bağımsız entry/setup araştırma bağlamıdır.</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="metric-guide-bar">
+          <button
+            id="metricGuideToggle"
+            class="metric-guide-toggle"
+            type="button"
+            aria-expanded="false"
+          >
+            ? Metrikleri Açıkla
+          </button>
+        </div>
+
+        <div id="metricGuidePanel" class="metric-guide-panel" hidden>
+          <div class="metric-guide-grid">
+            <div>
+              <strong>Core%</strong>
+              <span>
+                Published Core Momentum percentile rank. 100 güçlü uç,
+                0 zayıf uçtur. Ham getiri değildir.
+              </span>
+            </div>
+            <div>
+              <strong>FIP-Q%</strong>
+              <span>
+                FIP tabanlı momentum yol kalitesinin seçili evrendeki
+                percentile sıralamasıdır.
+              </span>
+            </div>
+            <div>
+              <strong>M126%</strong>
+              <span>126-session momentum percentile rank.</span>
+            </div>
+            <div>
+              <strong>M63%</strong>
+              <span>63-session momentum percentile rank.</span>
+            </div>
+            <div>
+              <strong>M21%</strong>
+              <span>21-session momentum percentile rank.</span>
+            </div>
+            <div>
+              <strong>FIP12-1</strong>
+              <span>
+                Published ham 12-1 FIP değeridir. Daha negatif değer,
+                daha iyi path quality bağlamını temsil eder.
+              </span>
+            </div>
+            <div>
+              <strong>VCP</strong>
+              <span>
+                Momentum ranking'den bağımsız structural setup durumu.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy-explainer">
+          <div id="strategyTitle" class="strategy-explainer-title">
+            Strong Momentum
+          </div>
+          <div id="strategyDescription" class="strategy-explainer-text">
+            Published core momentum percentile dağılımının güçlü ucu.
+            Bu görünüm bir Buy/Long sinyali değildir.
+          </div>
+        </div>
+
+        <div class="table-meta">
+          <div>
+            <strong id="strategyCount">—</strong>
+            <span> rows shown</span>
+          </div>
+          <div id="strategyContext" class="strategy-context">
+            Production ranking · descriptive only
+          </div>
+        </div>
+
+        <div class="table-wrap strategy-table-wrap">
+          <table id="strategyTable" class="strategy-table">
+            <thead id="strategyHead"></thead>
+            <tbody id="strategyBody">
+              <tr>
+                <td colspan="12" class="loading-row">
+                  Loading strategy view…
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <div id="detailBackdrop" class="detail-backdrop" hidden></div>
+
+      <aside
+        id="detailDrawer"
+        class="detail-drawer"
+        aria-hidden="true"
+        aria-label="Security detail"
+      >
+        <div class="detail-header">
+          <div>
+            <div class="section-kicker">SECURITY DETAIL</div>
+            <div class="detail-title-row">
+              <h2 id="detailTicker">—</h2>
+              <span id="detailStatus" class="detail-status">—</span>
+            </div>
+            <div id="detailName" class="detail-name">—</div>
+          </div>
+
+          <button
+            id="detailClose"
+            class="detail-close"
+            type="button"
+            aria-label="Close detail panel"
+          >
+            ×
+          </button>
+        </div>
+
+        <div id="detailLoading" class="detail-loading">
+          Loading security detail…
+        </div>
+
+        <div id="detailContent" hidden>
+          <section class="detail-section">
+            <div class="detail-section-heading">
+              <div>
+                <div class="section-kicker">PRICE HISTORY</div>
+                <h3>Daily Close</h3>
+              </div>
+
+              <div class="chart-summary">
+                <span>Latest</span>
+                <strong id="detailLastClose">—</strong>
+              </div>
+            </div>
+
+            <div id="priceChart" class="price-chart"></div>
+
+            <div class="chart-axis-meta">
+              <span id="chartStartDate">—</span>
+              <span id="chartObservationCount">—</span>
+              <span id="chartEndDate">—</span>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <div class="detail-section-heading">
+              <div>
+                <div class="section-kicker">MOMENTUM</div>
+                <h3>Return Windows</h3>
+              </div>
+            </div>
+
+            <div class="metric-grid">
+              <article class="metric-card">
+                <span>12M · 252</span>
+                <strong id="detailMom252">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>6M · 126</span>
+                <strong id="detailMom126">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>3M · 63</span>
+                <strong id="detailMom63">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>1M · 21</span>
+                <strong id="detailMom21">—</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <div class="detail-section-heading">
+              <div>
+                <div class="section-kicker">FIP</div>
+                <h3>Path Quality</h3>
+              </div>
+            </div>
+
+            <div class="metric-grid">
+              <article class="metric-card">
+                <span>FIP 12M</span>
+                <strong id="detailFip252">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>FIP 6M</span>
+                <strong id="detailFip126">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>FIP 3M</span>
+                <strong id="detailFip63">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>FIP 1M</span>
+                <strong id="detailFip21">—</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <div class="detail-section-heading">
+              <div>
+                <div class="section-kicker">RISK / CHANGE</div>
+                <h3>Current Dynamics</h3>
+              </div>
+            </div>
+
+            <div class="metric-grid metric-grid-three">
+              <article class="metric-card">
+                <span>ATR14%</span>
+                <strong id="detailAtr">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>Δ Momentum</span>
+                <strong id="detailDeltaMom">—</strong>
+              </article>
+              <article class="metric-card">
+                <span>Δ FIP</span>
+                <strong id="detailDeltaFip">—</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="detail-section security-meta-section">
+            <div class="security-meta-grid">
+              <div>
+                <span>First trade</span>
+                <strong id="detailFirstTrade">—</strong>
+              </div>
+              <div>
+                <span>Sector</span>
+                <strong id="detailSector">—</strong>
+              </div>
+              <div>
+                <span>Industry</span>
+                <strong id="detailIndustry">—</strong>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div id="detailError" class="detail-error" hidden></div>
+      </aside>
+
+      <footer>
+        <div>
+          <strong>Labyrinth Momentum V2</strong>
+          <span>Quantitative research dashboard</span>
+        </div>
+
+        <div id="generatedAt">
+          Generated —
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>

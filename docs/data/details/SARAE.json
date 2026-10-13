@@ -7,23 +7,23 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-12",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-07-17"
   },
   "snapshot": {
-    "as_of": "2026-10-12",
-    "observations": 61,
+    "as_of": "2026-10-13",
+    "observations": 62,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.5124842577599983,
+    "momentum_21": -0.5706422025572822,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 12.494157679046099,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 12.346066424911653,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -403,6 +403,66 @@
       "close": 38.65999984741211,
       "volume": 8660744.0,
       "return": -0.03974164284217885
+    },
+    {
+      "date": "2026-10-13",
+      "close": 37.439998626708984,
+      "volume": 6392336.0,
+      "return": -0.03155719672835933
+    }
+  ],
+  "monthly_history": [
+    {
+      "month": "2026-07",
+      "is_current": false,
+      "momentum": -0.04805190841872964,
+      "fip": 0.0,
+      "positive": 5,
+      "negative": 5,
+      "flat": 0,
+      "classified_returns": 10,
+      "sessions": 11,
+      "expected_sessions": 11,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-08",
+      "is_current": false,
+      "momentum": 0.20532052927387068,
+      "fip": -0.047619047619047616,
+      "positive": 11,
+      "negative": 10,
+      "flat": 0,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-09",
+      "is_current": false,
+      "momentum": -0.5963780366350836,
+      "fip": -0.45454545454545453,
+      "positive": 6,
+      "negative": 16,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-10",
+      "is_current": true,
+      "momentum": 0.04991583810749933,
+      "fip": -0.1111111111111111,
+      "positive": 5,
+      "negative": 4,
+      "flat": 0,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
+      "session_gap": 0
     }
   ],
   "vcp": {

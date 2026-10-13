@@ -7,23 +7,23 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-12",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-07-29"
   },
   "snapshot": {
-    "as_of": "2026-10-12",
-    "observations": 53,
+    "as_of": "2026-10-13",
+    "observations": 54,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.2969657518247566,
+    "momentum_21": -0.3170890192057859,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 7.769521622398838,
+    "atr14_percent": 7.7948294990176175,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -355,6 +355,66 @@
       "close": 21.780000686645508,
       "volume": 2488617.0,
       "return": -0.021563321531935076
+    },
+    {
+      "date": "2026-10-13",
+      "close": 21.020000457763672,
+      "volume": 2006265.0,
+      "return": -0.03489440793947418
+    }
+  ],
+  "monthly_history": [
+    {
+      "month": "2026-07",
+      "is_current": false,
+      "momentum": -0.1893333435058594,
+      "fip": -1.0,
+      "positive": 0,
+      "negative": 2,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 3,
+      "expected_sessions": 3,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-08",
+      "is_current": false,
+      "momentum": 0.13157901176125164,
+      "fip": -0.14285714285714285,
+      "positive": 12,
+      "negative": 9,
+      "flat": 0,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-09",
+      "is_current": false,
+      "momentum": -0.3831395822063898,
+      "fip": -0.5454545454545454,
+      "positive": 5,
+      "negative": 17,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-10",
+      "is_current": true,
+      "momentum": -0.009425017062321683,
+      "fip": -0.3333333333333333,
+      "positive": 3,
+      "negative": 6,
+      "flat": 0,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
+      "session_gap": 0
     }
   ],
   "vcp": {

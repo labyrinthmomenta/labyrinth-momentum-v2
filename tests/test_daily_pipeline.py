@@ -1075,3 +1075,60 @@ def test_subset_dry_run_never_publishes_subset_relative_ranks(
         for field in rank_fields
     )
 
+
+
+def test_publication_exposes_web_diagnostics_and_csv(tmp_path):
+    calendar = BISTTradingCalendar.from_csv()
+    db_path = tmp_path / "canonical.db"
+
+    summary = run_daily_pipeline(
+        db_path=db_path,
+        calendar=calendar,
+        provider=CalendarProvider(calendar),
+        as_of=date(2026, 9, 23),
+        public_dir=tmp_path / "docs" / "data",
+        authoritative_universe_records=records(),
+        dry_run=False,
+    )
+
+    assert summary.public_promoted is True
+
+    public = tmp_path / "docs" / "data"
+
+    assert (public / "screener.csv").exists()
+
+    manifest = json.loads(
+        (public / "manifest.json").read_text(encoding="utf-8")
+    )
+    assert manifest["files"]["screener_csv"] == "screener.csv"
+
+    screener = json.loads(
+        (public / "screener.json").read_text(encoding="utf-8")
+    )
+    aaa = next(row for row in screener if row["ticker"] == "AAA")
+
+    assert aaa["current_month"] == "2026-09"
+    assert isinstance(aaa["current_month_positive"], int)
+    assert isinstance(aaa["current_month_negative"], int)
+    assert isinstance(aaa["current_month_flat"], int)
+    assert isinstance(aaa["current_month_sessions"], int)
+    assert isinstance(aaa["current_month_expected_sessions"], int)
+    assert isinstance(aaa["current_month_session_gap"], int)
+
+    detail = json.loads(
+        (public / "details" / "AAA.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert detail["daily"]
+    assert detail["monthly_history"]
+
+    current = detail["monthly_history"][-1]
+    assert current["month"] == "2026-09"
+    assert (
+        current["positive"]
+        + current["negative"]
+        + current["flat"]
+        == current["classified_returns"]
+    )

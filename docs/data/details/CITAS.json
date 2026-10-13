@@ -7,23 +7,23 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-12",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-08-18"
   },
   "snapshot": {
-    "as_of": "2026-10-12",
-    "observations": 39,
+    "as_of": "2026-10-13",
+    "observations": 40,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.3705202223937639,
+    "momentum_21": -0.44479048888432704,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 13.126273763251259,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 14.568270411770918,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -271,6 +271,53 @@
       "close": 108.9000015258789,
       "volume": 12579880.0,
       "return": -0.08487393675732013
+    },
+    {
+      "date": "2026-10-13",
+      "close": 98.05000305175781,
+      "volume": 6450223.0,
+      "return": -0.09963267513401008
+    }
+  ],
+  "monthly_history": [
+    {
+      "month": "2026-08",
+      "is_current": false,
+      "momentum": 0.5792719948234961,
+      "fip": -0.5555555555555556,
+      "positive": 7,
+      "negative": 2,
+      "flat": 0,
+      "classified_returns": 9,
+      "sessions": 10,
+      "expected_sessions": 10,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-09",
+      "is_current": false,
+      "momentum": -0.010156273841858243,
+      "fip": 0.09090909090909091,
+      "positive": 12,
+      "negative": 10,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-10",
+      "is_current": true,
+      "momentum": -0.22612466129883257,
+      "fip": -0.5555555555555556,
+      "positive": 2,
+      "negative": 7,
+      "flat": 0,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
+      "session_gap": 0
     }
   ],
   "vcp": {

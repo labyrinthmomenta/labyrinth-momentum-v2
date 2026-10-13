@@ -11,8 +11,13 @@ import uuid
 
 from src.calculation.validated import compute_validated_snapshot
 from src.data.calendar import BISTTradingCalendar
-from src.data.storage.prices import load_recent_price_bars
+from src.data.storage.prices import load_price_bars, load_recent_price_bars
 from src.output.build_detail import build_detail_payload
+from src.output.web_diagnostics import (
+    build_web_diagnostics,
+    unavailable_web_screener_fields,
+    write_screener_csv,
+)
 from src.output.vcp_payload import (
     build_vcp_detail_payload,
     build_vcp_screener_fields,
@@ -212,6 +217,7 @@ def build_publication_stage(
                     "data_status": data_status,
                     "data_status_message": status_message,
                     **null_snapshot,
+                    **unavailable_web_screener_fields(as_of),
                     **unavailable_vcp_screener_fields(
                         f"market data status: {data_status}"
                     ),
@@ -234,6 +240,7 @@ def build_publication_stage(
                 "data_status_message": status_message,
                 "snapshot": dict(null_snapshot),
                 "daily": [],
+                "monthly_history": [],
                 "vcp": unavailable_vcp_detail_payload(
                     f"market data status: {data_status}"
                 ),
@@ -271,6 +278,22 @@ def build_publication_stage(
 
         snapshot_dict = snapshot.as_dict()
         snapshot_dict["as_of"] = snapshot.as_of.isoformat()
+
+        # Web/detail diagnostics use canonical stored history and remain
+        # separate from the validated calculation window above.
+        history_bars = load_price_bars(
+            conn,
+            security_id,
+            end=as_of,
+        )
+
+        web_diagnostics = build_web_diagnostics(
+            history_bars,
+            calendar,
+            as_of=as_of,
+            listing_start=first_trade,
+            months=13,
+        )
 
         if vcp_state_config is None:
             vcp_screener = unavailable_vcp_screener_fields(
@@ -316,6 +339,7 @@ def build_publication_stage(
                 "data_status": "OK",
                 "data_status_message": None,
                 **snapshot_dict,
+                **web_diagnostics["screener"],
                 **vcp_screener,
             }
         )
@@ -330,8 +354,9 @@ def build_publication_stage(
             viop_as_of=row["viop_as_of"],
             first_trade_date=first_trade,
             snapshot=snapshot,
-            bars=bars,
+            bars=history_bars,
         )
+        detail["monthly_history"] = web_diagnostics["monthly_history"]
         detail["vcp"] = vcp_detail
         detail["data_status"] = "OK"
         detail["data_status_message"] = None
@@ -394,6 +419,8 @@ def build_publication_stage(
             )
 
     _write_json(stage / "screener.json", screener)
+    write_screener_csv(stage / "screener.csv", screener)
+
     manifest = {
         "schema_version": 1,
         "generated_at": datetime.now().astimezone().isoformat(),
@@ -413,6 +440,7 @@ def build_publication_stage(
         "required_return_window": required_return_window,
         "files": {
             "screener": "screener.json",
+            "screener_csv": "screener.csv",
             "details": len(screener),
         },
     }

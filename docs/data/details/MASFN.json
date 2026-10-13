@@ -7,23 +7,23 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-12",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-07-30"
   },
   "snapshot": {
-    "as_of": "2026-10-12",
-    "observations": 52,
+    "as_of": "2026-10-13",
+    "observations": 53,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.035374871034937194,
+    "momentum_21": -0.02318050757479584,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 4.652846258894243,
+    "atr14_percent": 4.525770734712277,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -349,6 +349,66 @@
       "close": 36.540000915527344,
       "volume": 2839725.0,
       "return": -0.03943217570711788
+    },
+    {
+      "date": "2026-10-13",
+      "close": 36.2400016784668,
+      "volume": 3871260.0,
+      "return": -0.008210159538695194
+    }
+  ],
+  "monthly_history": [
+    {
+      "month": "2026-07",
+      "is_current": false,
+      "momentum": 0.0,
+      "fip": 0.0,
+      "positive": 0,
+      "negative": 0,
+      "flat": 1,
+      "classified_returns": 1,
+      "sessions": 2,
+      "expected_sessions": 2,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-08",
+      "is_current": false,
+      "momentum": -0.12921597778352356,
+      "fip": -0.09523809523809523,
+      "positive": 9,
+      "negative": 11,
+      "flat": 1,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-09",
+      "is_current": false,
+      "momentum": -0.08752514308713222,
+      "fip": -0.18181818181818182,
+      "positive": 9,
+      "negative": 13,
+      "flat": 0,
+      "classified_returns": 22,
+      "sessions": 22,
+      "expected_sessions": 22,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-10",
+      "is_current": true,
+      "momentum": -0.0011024559585401938,
+      "fip": 0.1111111111111111,
+      "positive": 5,
+      "negative": 4,
+      "flat": 0,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
+      "session_gap": 0
     }
   ],
   "vcp": {
