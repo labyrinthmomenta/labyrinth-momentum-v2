@@ -7,23 +7,23 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-09-01"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
-    "observations": 30,
+    "as_of": "2026-10-14",
+    "observations": 31,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.25756336233833976,
+    "momentum_21": -0.23543856436746124,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 11.19539439484002,
+    "atr14_percent": 11.203569108765505,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -217,6 +217,12 @@
       "close": 45.400001525878906,
       "volume": 2829044.0,
       "return": -0.05887230625565254
+    },
+    {
+      "date": "2026-10-14",
+      "close": 43.58000183105469,
+      "volume": 2234378.0,
+      "return": -0.04008809765759114
     }
   ],
   "monthly_history": [
@@ -236,14 +242,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.03842635540413131,
-      "fip": 0.1111111111111111,
+      "momentum": -0.003202181741525978,
+      "fip": -0.2,
       "positive": 4,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

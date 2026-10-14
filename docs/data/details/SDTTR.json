@@ -7,24 +7,24 @@
     "industry": "SAVUNMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2023-01-04"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": 0.1519686633301438,
+    "momentum_12_1": 0.16375950644347892,
     "fip_12_1": 0.017316017316017316,
-    "momentum_252": -0.11711277469752956,
-    "momentum_126": -0.21516561986034421,
-    "momentum_63": -0.3193443977307412,
-    "momentum_21": -0.233583991121603,
+    "momentum_252": -0.1133261146835618,
+    "momentum_126": -0.23549742658937223,
+    "momentum_63": -0.3255871521564354,
+    "momentum_21": -0.23809525902291595,
     "fip_252": -0.03571428571428571,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.09523809523809523,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.133569647609252,
-    "delta_momentum_21_63": 0.0857604066091382,
+    "atr14_percent": 6.068402491784335,
+    "delta_momentum_21_63": 0.08749189313351946,
     "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3139013132651741,
@@ -1627,6 +1627,12 @@
       "close": 15.289999961853027,
       "volume": 3462990.0,
       "return": 0.007910341790083875
+    },
+    {
+      "date": "2026-10-14",
+      "close": 14.880000114440918,
+      "volume": 1745629.0,
+      "return": -0.02681490179431112
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.0006536097226903514,
-      "fip": 0.1111111111111111,
+      "momentum": -0.027450985036475695,
+      "fip": 0.0,
       "positive": 5,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

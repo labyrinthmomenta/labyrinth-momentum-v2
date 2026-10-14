@@ -7,24 +7,24 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2014-11-12"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": -0.0997458548732062,
+    "momentum_12_1": -0.10308599234175109,
     "fip_12_1": -0.22077922077922077,
-    "momentum_252": -0.4612451947899864,
-    "momentum_126": -0.3183279581060381,
-    "momentum_63": -0.33749997615814253,
-    "momentum_21": -0.4015525414391353,
+    "momentum_252": -0.4550229918787776,
+    "momentum_126": -0.3731117535783822,
+    "momentum_63": -0.340222591522106,
+    "momentum_21": -0.3923865571638224,
     "fip_252": -0.2222222222222222,
-    "fip_126": -0.20634920634920634,
+    "fip_126": -0.2222222222222222,
     "fip_63": -0.25396825396825395,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 10.28893336931208,
-    "delta_momentum_21_63": -0.06405256528099279,
+    "atr14_percent": 10.01938084746397,
+    "delta_momentum_21_63": -0.05216396564171644,
     "delta_fip_21_63": 0.015873015873015872,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.4463568656889545,
@@ -1627,6 +1627,12 @@
       "close": 84.80000305175781,
       "volume": 151932.0,
       "return": 0.0011807096472120637
+    },
+    {
+      "date": "2026-10-14",
+      "close": 83.0,
+      "volume": 133691.0,
+      "return": -0.021226450318158285
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.12124349169162896,
-      "fip": -0.3333333333333333,
+      "momentum": -0.13989637305699487,
+      "fip": -0.4,
       "positive": 3,
-      "negative": 6,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

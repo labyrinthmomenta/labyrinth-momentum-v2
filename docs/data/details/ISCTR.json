@@ -7,24 +7,24 @@
     "industry": "BANKALAR",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "1987-11-25"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": 0.13815792156718842,
+    "momentum_12_1": 0.11055693709293091,
     "fip_12_1": 0.04329004329004329,
-    "momentum_252": 0.07319081862588739,
-    "momentum_126": -0.09185801707282859,
-    "momentum_63": -0.06719082171279911,
-    "momentum_21": -0.057080921469882306,
+    "momentum_252": 0.08146305217486627,
+    "momentum_126": -0.11556762779446561,
+    "momentum_63": -0.048976612671599695,
+    "momentum_21": -0.02619756263395434,
     "fip_252": 0.051587301587301584,
-    "fip_126": -0.14285714285714285,
+    "fip_126": -0.15873015873015872,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.201548926847568,
-    "delta_momentum_21_63": 0.010109900242916803,
+    "atr14_percent": 3.102792935118461,
+    "delta_momentum_21_63": 0.022779050037645354,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.03481016788817226,
@@ -1627,6 +1627,12 @@
       "close": 13.050000190734863,
       "volume": 429063051.0,
       "return": 0.027559085568992447
+    },
+    {
+      "date": "2026-10-14",
+      "close": 13.010000228881836,
+      "volume": 296240027.0,
+      "return": -0.003065131131678167
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.0696721635048061,
-      "fip": -0.3333333333333333,
+      "momentum": 0.06639347805575802,
+      "fip": -0.2,
       "positive": 6,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

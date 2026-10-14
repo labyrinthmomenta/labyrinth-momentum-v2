@@ -7,24 +7,24 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-02-19"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
-    "observations": 160,
+    "as_of": "2026-10-14",
+    "observations": 161,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.5783581898349981,
-    "momentum_63": -0.6525215242413333,
-    "momentum_21": -0.5938173862439986,
+    "momentum_126": -0.6390773233195371,
+    "momentum_63": -0.6651982343161541,
+    "momentum_21": -0.5804416369383025,
     "fip_252": null,
-    "fip_126": -0.12698412698412698,
+    "fip_126": -0.14285714285714285,
     "fip_63": -0.15873015873015872,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 11.78374655174063,
-    "delta_momentum_21_63": 0.05870413799733465,
+    "atr14_percent": 12.130990616604977,
+    "delta_momentum_21_63": 0.08475659737785157,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6029309080590074,
@@ -997,6 +997,12 @@
       "close": 5.650000095367432,
       "volume": 17826033.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-10-14",
+      "close": 5.320000171661377,
+      "volume": 15478077.0,
+      "return": -0.0584070651568005
     }
   ],
   "monthly_history": [
@@ -1107,14 +1113,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.007029870202245103,
-      "fip": 0.2222222222222222,
+      "momentum": -0.06502634127209928,
+      "fip": 0.1,
       "positive": 5,
-      "negative": 3,
+      "negative": 4,
       "flat": 1,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

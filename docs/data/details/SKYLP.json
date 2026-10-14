@@ -7,24 +7,24 @@
     "industry": "HUKUK VE MUHASEBE FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2012-05-30"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": 0.14752955740060236,
+    "momentum_12_1": 0.1391492680346622,
     "fip_12_1": 0.12121212121212122,
-    "momentum_252": -0.3385525047297475,
-    "momentum_126": -0.6505514593685373,
-    "momentum_63": -0.6182730801134224,
-    "momentum_21": -0.4235900147369003,
+    "momentum_252": -0.3832011179951076,
+    "momentum_126": -0.6828544835894055,
+    "momentum_63": -0.6509587885704639,
+    "momentum_21": -0.4585442844825456,
     "fip_252": -0.13095238095238096,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 11.291995673212055,
-    "delta_momentum_21_63": 0.19468306537652214,
+    "atr14_percent": 12.643361241633617,
+    "delta_momentum_21_63": 0.19241450408791827,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.7821052618194044,
@@ -1627,6 +1627,12 @@
       "close": 95.05000305175781,
       "volume": 301047.0,
       "return": 0.09947954201391673
+    },
+    {
+      "date": "2026-10-14",
+      "close": 85.55000305175781,
+      "volume": 122969.0,
+      "return": -0.09994739289831422
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.9132448161811961,
-      "fip": -0.7777777777777778,
+      "momentum": 0.7220209848276711,
+      "fip": -0.6,
       "positive": 8,
-      "negative": 1,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

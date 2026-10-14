@@ -7,24 +7,24 @@
     "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "1994-12-26"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": -0.20600330146994428,
+    "momentum_12_1": -0.23206750307791302,
     "fip_12_1": -0.12554112554112554,
-    "momentum_252": -0.1776315686280039,
-    "momentum_126": -0.03567983506676142,
-    "momentum_63": -0.014778288095343872,
-    "momentum_21": 0.035732809587830205,
+    "momentum_252": -0.20886078496165839,
+    "momentum_126": -0.10714285714285765,
+    "momentum_63": -0.06809149016345617,
+    "momentum_21": 0.030219737033226224,
     "fip_252": -0.10317460317460317,
-    "fip_126": -0.06349206349206349,
+    "fip_126": -0.07936507936507936,
     "fip_63": -0.1746031746031746,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 2.5235204176980255,
-    "delta_momentum_21_63": 0.05051109768317408,
+    "atr14_percent": 2.9947246955527804,
+    "delta_momentum_21_63": 0.0983112271966824,
     "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.09154577011802012,
@@ -1627,6 +1627,12 @@
       "close": 20.0,
       "volume": 55793.0,
       "return": 0.025115313447961363
+    },
+    {
+      "date": "2026-10-14",
+      "close": 18.75,
+      "volume": 32583.0,
+      "return": -0.0625
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.10132159515684735,
-      "fip": -0.1111111111111111,
+      "momentum": 0.03248899545954442,
+      "fip": 0.0,
       "positive": 5,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

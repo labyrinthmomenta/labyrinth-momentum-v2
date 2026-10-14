@@ -7,24 +7,24 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2021-07-05"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": 2.4198019416808374,
+    "momentum_12_1": 2.4033613411705645,
     "fip_12_1": -0.03463203463203463,
-    "momentum_252": -0.2415842021683715,
-    "momentum_126": -0.7971398255321457,
-    "momentum_63": -0.7721594262114189,
-    "momentum_21": -0.7782281515815311,
+    "momentum_252": -0.22268910298920697,
+    "momentum_126": -0.8149999976158142,
+    "momentum_63": -0.7788403975539422,
+    "momentum_21": -0.7716049460844372,
     "fip_252": -0.027777777777777776,
-    "fip_126": -0.20634920634920634,
+    "fip_126": -0.2222222222222222,
     "fip_63": -0.3968253968253968,
     "fip_21": -0.7142857142857143,
-    "atr14_percent": 19.851885675487164,
-    "delta_momentum_21_63": -0.006068725370112271,
+    "atr14_percent": 19.448365576815153,
+    "delta_momentum_21_63": 0.007235451469504994,
     "delta_fip_21_63": -0.3174603174603175,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.7130711911301192,
@@ -1627,6 +1627,12 @@
       "close": 3.8299999237060547,
       "volume": 10006111.0,
       "return": -0.037688465992105846
+    },
+    {
+      "date": "2026-10-14",
+      "close": 3.700000047683716,
+      "volume": 6991234.0,
+      "return": -0.03394252705272793
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.29074076739521804,
-      "fip": -0.3333333333333333,
+      "momentum": -0.31481481808530287,
+      "fip": -0.4,
       "positive": 3,
-      "negative": 6,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

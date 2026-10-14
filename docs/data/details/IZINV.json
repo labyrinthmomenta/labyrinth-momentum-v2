@@ -7,24 +7,24 @@
     "industry": "TARIM VE HAYVANCILIK AVCILIK VE İLGİLİ HİZMET FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2013-11-12"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": -0.31574465704302435,
+    "momentum_12_1": -0.27477205155800866,
     "fip_12_1": -0.24675324675324675,
-    "momentum_252": -0.5696453879065552,
-    "momentum_126": -0.5413454353327813,
-    "momentum_63": -0.5086639651402771,
-    "momentum_21": -0.37106137858757693,
+    "momentum_252": -0.5410334443421787,
+    "momentum_126": -0.5479042008495129,
+    "momentum_63": -0.5012386268626893,
+    "momentum_21": -0.36714165988249636,
     "fip_252": -0.2619047619047619,
-    "fip_126": -0.2619047619047619,
+    "fip_126": -0.2777777777777778,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.798331486318693,
-    "delta_momentum_21_63": 0.1376025865527002,
+    "atr14_percent": 6.606901443984854,
+    "delta_momentum_21_63": 0.1340969669801929,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.43181817360817554,
@@ -1627,6 +1627,12 @@
       "close": 30.34000015258789,
       "volume": 109953.0,
       "return": -0.003939557960982887
+    },
+    {
+      "date": "2026-10-14",
+      "close": 30.200000762939453,
+      "volume": 141391.0,
+      "return": -0.004614350327763472
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.01133333841959594,
-      "fip": 0.1111111111111111,
+      "momentum": 0.00666669209798143,
+      "fip": 0.2,
       "positive": 4,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

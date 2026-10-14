@@ -7,24 +7,24 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2022-01-13"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": -0.4278145594312657,
+    "momentum_12_1": -0.4182566649857913,
     "fip_12_1": -0.12121212121212122,
-    "momentum_252": -0.4540397189310843,
-    "momentum_126": -0.27173140756267067,
-    "momentum_63": -0.1772454595583448,
-    "momentum_21": -0.04583332192750622,
+    "momentum_252": -0.450926549926979,
+    "momentum_126": -0.2901508237241537,
+    "momentum_63": -0.1889699868713154,
+    "momentum_21": -0.05615858914892369,
     "fip_252": -0.12301587301587301,
     "fip_126": -0.1984126984126984,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.931041413892119,
-    "delta_momentum_21_63": 0.1314121376308386,
+    "atr14_percent": 5.9827644868698275,
+    "delta_momentum_21_63": 0.1328113977223917,
     "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.23946784040930047,
@@ -1627,6 +1627,12 @@
       "close": 41.220001220703125,
       "volume": 3986837.0,
       "return": 0.09394906812251502
+    },
+    {
+      "date": "2026-10-14",
+      "close": 40.0,
+      "volume": 6297378.0,
+      "return": -0.02959731161022794
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.2017493334567091,
-      "fip": -0.3333333333333333,
+      "momentum": 0.16618078395700708,
+      "fip": -0.2,
       "positive": 6,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

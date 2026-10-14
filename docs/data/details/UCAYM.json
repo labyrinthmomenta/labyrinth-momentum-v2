@@ -7,24 +7,24 @@
     "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2026-01-22"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
-    "observations": 180,
+    "as_of": "2026-10-14",
+    "observations": 181,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.48902264794159966,
-    "momentum_63": -0.534516119187878,
-    "momentum_21": -0.31285712832496315,
+    "momentum_126": -0.5110556494113746,
+    "momentum_63": -0.5399328728473041,
+    "momentum_21": -0.327941162033477,
     "fip_252": null,
     "fip_126": -0.1746031746031746,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.554398277046563,
-    "delta_momentum_21_63": 0.22165899086291485,
+    "atr14_percent": 6.791391412142262,
+    "delta_momentum_21_63": 0.21199171081382706,
     "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3906379283317287,
@@ -1117,6 +1117,12 @@
       "close": 14.430000305175781,
       "volume": 1157630.0,
       "return": -0.022357718061570386
+    },
+    {
+      "date": "2026-10-14",
+      "close": 13.710000038146973,
+      "volume": 1305766.0,
+      "return": -0.049896067345927775
     }
   ],
   "monthly_history": [
@@ -1240,14 +1246,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.019034652090080373,
-      "fip": -0.1111111111111111,
+      "momentum": -0.06798096515341523,
+      "fip": -0.2,
       "positive": 4,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-13",
+    "viop_as_of": "2026-10-14",
     "first_trade_date": "2024-02-29"
   },
   "snapshot": {
-    "as_of": "2026-10-13",
+    "as_of": "2026-10-14",
     "observations": 252,
-    "momentum_12_1": -0.6620689700531475,
+    "momentum_12_1": -0.6825962848874243,
     "fip_12_1": -0.14285714285714285,
-    "momentum_252": -0.7758620845576949,
-    "momentum_126": -0.8257372726985672,
-    "momentum_63": -0.7379032374358699,
-    "momentum_21": -0.3367347311149379,
+    "momentum_252": -0.7895863071885754,
+    "momentum_126": -0.8426666736602784,
+    "momentum_63": -0.7581967377303844,
+    "momentum_21": -0.3370786704976161,
     "fip_252": -0.15873015873015872,
-    "fip_126": -0.3253968253968254,
+    "fip_126": -0.3412698412698413,
     "fip_63": -0.3968253968253968,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 9.301823621031389,
-    "delta_momentum_21_63": 0.40116850632093204,
+    "atr14_percent": 10.242180475359461,
+    "delta_momentum_21_63": 0.42111806723276834,
     "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6111111249084822,
@@ -1627,6 +1627,12 @@
       "close": 0.6499999761581421,
       "volume": 4775645.0,
       "return": -0.09722229120907688
+    },
+    {
+      "date": "2026-10-14",
+      "close": 0.5899999737739563,
+      "volume": 3868865.0,
+      "return": -0.09230769936149663
     }
   ],
   "monthly_history": [
@@ -1789,14 +1795,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.16071423819782815,
-      "fip": -0.1111111111111111,
+      "momentum": 0.05357137725365435,
+      "fip": 0.0,
       "positive": 5,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],
