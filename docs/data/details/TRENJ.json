@@ -7,24 +7,24 @@
     "industry": "HAM PETROL VE DOĞAL GAZ ÇIKARTILMASI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-14",
+    "viop_as_of": "2026-10-15",
     "first_trade_date": "2000-06-30"
   },
   "snapshot": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-15",
     "observations": 252,
-    "momentum_12_1": 0.4799999782017317,
+    "momentum_12_1": 0.464153744532692,
     "fip_12_1": -0.04329004329004329,
-    "momentum_252": 0.322857121058874,
-    "momentum_126": -0.033907147122985815,
-    "momentum_63": 0.007616941638952213,
-    "momentum_21": -0.10617760774144958,
+    "momentum_252": 0.3466370498051161,
+    "momentum_126": -0.05252213179007159,
+    "momentum_63": 0.00941826564123116,
+    "momentum_21": -0.08026253743255851,
     "fip_252": -0.027777777777777776,
-    "fip_126": -0.047619047619047616,
+    "fip_126": -0.06349206349206349,
     "fip_63": 0.1746031746031746,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.357352583214213,
-    "delta_momentum_21_63": -0.11379454938040179,
+    "atr14_percent": 5.346699656712476,
+    "delta_momentum_21_63": -0.08968080307378967,
     "delta_fip_21_63": -0.31746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.10336766037447387,
@@ -1633,6 +1633,12 @@
       "close": 92.5999984741211,
       "volume": 854257.0,
       "return": -0.04830425930343085
+    },
+    {
+      "date": "2026-10-15",
+      "close": 91.0999984741211,
+      "volume": 1084214.0,
+      "return": -0.016198704370596784
     }
   ],
   "monthly_history": [
@@ -1795,14 +1801,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.03390714712298604,
-      "fip": 0.0,
+      "momentum": -0.049556599641287225,
+      "fip": -0.09090909090909091,
       "positive": 5,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 11,
+      "sessions": 11,
+      "expected_sessions": 11,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-14",
+    "viop_as_of": "2026-10-15",
     "first_trade_date": "2024-07-04"
   },
   "snapshot": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-15",
     "observations": 252,
-    "momentum_12_1": 0.7453905672988823,
+    "momentum_12_1": 0.6635687023949464,
     "fip_12_1": -0.004329004329004329,
-    "momentum_252": -0.27568044325508356,
-    "momentum_126": -0.7198641838277307,
-    "momentum_63": -0.6597938144329896,
-    "momentum_21": -0.5850100428433888,
+    "momentum_252": -0.24488849189882067,
+    "momentum_126": -0.7198275862068966,
+    "momentum_63": -0.6601840212525385,
+    "momentum_21": -0.5460893758014994,
     "fip_252": -0.03968253968253968,
     "fip_126": -0.15873015873015872,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 17.772951343763165,
-    "delta_momentum_21_63": 0.07478377158960081,
+    "atr14_percent": 17.08702444671414,
+    "delta_momentum_21_63": 0.11409464545103909,
     "delta_fip_21_63": -0.3174603174603175,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.5846638426152027,
@@ -1633,6 +1633,12 @@
       "close": 16.5,
       "volume": 3982252.0,
       "return": -0.06568515614013981
+    },
+    {
+      "date": "2026-10-15",
+      "close": 16.25,
+      "volume": 3176519.0,
+      "return": -0.015151515151515138
     }
   ],
   "monthly_history": [
@@ -1795,14 +1801,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.16540214375561857,
-      "fip": -0.4,
+      "momentum": -0.17804756581992742,
+      "fip": -0.45454545454545453,
       "positive": 3,
-      "negative": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 11,
+      "sessions": 11,
+      "expected_sessions": 11,
       "session_gap": 0
     }
   ],

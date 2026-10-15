@@ -7,24 +7,24 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-14",
+    "viop_as_of": "2026-10-15",
     "first_trade_date": "2002-07-23"
   },
   "snapshot": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-15",
     "observations": 252,
-    "momentum_12_1": -0.3363308895942868,
+    "momentum_12_1": -0.3220338788230842,
     "fip_12_1": -0.03463203463203463,
-    "momentum_252": -0.43201437427368017,
-    "momentum_126": -0.27066973486972523,
-    "momentum_63": -0.05731343511325249,
-    "momentum_21": -0.14417347919191248,
+    "momentum_252": -0.43013180605589973,
+    "momentum_126": -0.27259612166317115,
+    "momentum_63": -0.09074515207896394,
+    "momentum_21": -0.15944443808661524,
     "fip_252": -0.047619047619047616,
     "fip_126": -0.07142857142857142,
     "fip_63": 0.0,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 6.514825194057954,
-    "delta_momentum_21_63": -0.08686004407865999,
+    "atr14_percent": 6.695770461879734,
+    "delta_momentum_21_63": -0.0686992860076513,
     "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.199140399710673,
@@ -1633,6 +1633,12 @@
       "close": 31.579999923706055,
       "volume": 561392.0,
       "return": -0.019254683992026123
+    },
+    {
+      "date": "2026-10-15",
+      "close": 30.260000228881836,
+      "volume": 517570.0,
+      "return": -0.04179859715051293
     }
   ],
   "monthly_history": [
@@ -1795,14 +1801,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.05843771432080935,
-      "fip": -0.4,
+      "momentum": -0.09779369699203,
+      "fip": -0.45454545454545453,
       "positive": 3,
-      "negative": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 11,
+      "sessions": 11,
+      "expected_sessions": 11,
       "session_gap": 0
     }
   ],

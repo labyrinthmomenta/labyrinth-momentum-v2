@@ -7,24 +7,24 @@
     "industry": "GAYRİMENKUL FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-14",
+    "viop_as_of": "2026-10-15",
     "first_trade_date": "1991-09-23"
   },
   "snapshot": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-15",
     "observations": 252,
-    "momentum_12_1": 0.07303369651333624,
+    "momentum_12_1": 0.04827031257192904,
     "fip_12_1": 0.19480519480519481,
-    "momentum_252": -0.04494380852889168,
-    "momentum_126": -0.14511492378662116,
-    "momentum_63": -0.10052912127715241,
-    "momentum_21": -0.10994762366324373,
+    "momentum_252": -0.07079648299037844,
+    "momentum_126": -0.15631844302831532,
+    "momentum_63": -0.11222140982759787,
+    "momentum_21": -0.11358405759882395,
     "fip_252": -0.21428571428571427,
     "fip_126": -0.2777777777777778,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.305449392760269,
-    "delta_momentum_21_63": -0.00941850238609132,
+    "atr14_percent": 6.27985789492973,
+    "delta_momentum_21_63": -0.0013626477712260776,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.20646586953231394,
@@ -1633,6 +1633,12 @@
       "close": 119.0,
       "volume": 6484.0,
       "return": -0.02218567802750615
+    },
+    {
+      "date": "2026-10-15",
+      "close": 115.5,
+      "volume": 11921.0,
+      "return": -0.02941176470588236
     }
   ],
   "monthly_history": [
@@ -1795,14 +1801,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.10185185185185186,
-      "fip": 0.0,
+      "momentum": 0.06944444444444442,
+      "fip": 0.09090909090909091,
       "positive": 5,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 11,
+      "sessions": 11,
+      "expected_sessions": 11,
       "session_gap": 0
     }
   ],

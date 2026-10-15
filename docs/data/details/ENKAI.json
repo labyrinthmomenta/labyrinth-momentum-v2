@@ -7,24 +7,24 @@
     "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-14",
+    "viop_as_of": "2026-10-15",
     "first_trade_date": "2002-07-22"
   },
   "snapshot": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-15",
     "observations": 252,
-    "momentum_12_1": 0.23275869156319406,
+    "momentum_12_1": 0.17913664673729635,
     "fip_12_1": 0.004329004329004329,
-    "momentum_252": 0.14583335845406586,
-    "momentum_126": -0.2196672956811503,
-    "momentum_63": -0.12072764406475989,
-    "momentum_21": -0.07051285357307291,
+    "momentum_252": 0.11942450434183804,
+    "momentum_126": -0.2243270121177302,
+    "momentum_63": -0.13266437348209503,
+    "momentum_21": -0.05064056194053812,
     "fip_252": 0.007936507936507936,
     "fip_126": -0.0873015873015873,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 3.1019102704733905,
-    "delta_momentum_21_63": 0.05021479049168698,
+    "atr14_percent": 3.163703309933344,
+    "delta_momentum_21_63": 0.08202381154155691,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.05663620699332661,
@@ -1633,6 +1633,12 @@
       "close": 79.75,
       "volume": 8631887.0,
       "return": -0.011159349148804565
+    },
+    {
+      "date": "2026-10-15",
+      "close": 77.80000305175781,
+      "volume": 9516212.0,
+      "return": -0.024451372391751547
     }
   ],
   "monthly_history": [
@@ -1795,14 +1801,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.03274708366498902,
-      "fip": 0.0,
+      "momentum": -0.05639774491930405,
+      "fip": -0.09090909090909091,
       "positive": 5,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 11,
+      "sessions": 11,
+      "expected_sessions": 11,
       "session_gap": 0
     }
   ],

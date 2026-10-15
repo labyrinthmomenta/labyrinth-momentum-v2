@@ -7,24 +7,24 @@
     "industry": "BANKALAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-14",
+    "viop_as_of": "2026-10-15",
     "first_trade_date": "1991-03-06"
   },
   "snapshot": {
-    "as_of": "2026-10-14",
+    "as_of": "2026-10-15",
     "observations": 252,
-    "momentum_12_1": -0.41434266606423475,
+    "momentum_12_1": -0.39606737923462476,
     "fip_12_1": -0.18181818181818182,
-    "momentum_252": -0.5152722451968788,
-    "momentum_126": -0.23958334368136147,
-    "momentum_63": -0.2073832616179221,
-    "momentum_21": -0.1723355506442168,
+    "momentum_252": -0.49297753467416505,
+    "momentum_126": -0.22780754057501462,
+    "momentum_63": -0.19509480766345855,
+    "momentum_21": -0.16046517791458925,
     "fip_252": -0.19444444444444445,
     "fip_126": -0.1984126984126984,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 2.5473576656752206,
-    "delta_momentum_21_63": 0.03504771097370529,
+    "atr14_percent": 2.4707587579959687,
+    "delta_momentum_21_63": 0.034629629748869295,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.16872895600772408,
@@ -1633,6 +1633,12 @@
       "close": 7.300000190734863,
       "volume": 56646.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "close": 7.21999979019165,
+      "volume": 95863.0,
+      "return": -0.010958958692185994
     }
   ],
   "monthly_history": [
@@ -1795,14 +1801,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.012178576099695082,
-      "fip": -0.2,
+      "momentum": -0.02300407027947482,
+      "fip": -0.2727272727272727,
       "positive": 3,
-      "negative": 5,
+      "negative": 6,
       "flat": 2,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 11,
+      "sessions": 11,
+      "expected_sessions": 11,
       "session_gap": 0
     }
   ],
