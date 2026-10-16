@@ -7,24 +7,24 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-15",
+    "viop_as_of": "2026-10-16",
     "first_trade_date": "2022-02-18"
   },
   "snapshot": {
-    "as_of": "2026-10-15",
+    "as_of": "2026-10-16",
     "observations": 252,
-    "momentum_12_1": -0.04374680227067651,
+    "momentum_12_1": -0.04300517909411272,
     "fip_12_1": -0.05627705627705628,
-    "momentum_252": -0.17653115035011457,
-    "momentum_126": -0.27437639212667086,
-    "momentum_63": -0.3277310708865332,
-    "momentum_21": -0.13885898462325874,
+    "momentum_252": -0.20932638175554608,
+    "momentum_126": -0.31261262592581485,
+    "momentum_63": -0.34786322745075704,
+    "momentum_21": -0.17379530069347116,
     "fip_252": -0.07936507936507936,
-    "fip_126": -0.1111111111111111,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.2698412698412698,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 4.524189507089713,
-    "delta_momentum_21_63": 0.18887208626327445,
+    "atr14_percent": 5.083464620591254,
+    "delta_momentum_21_63": 0.17406792675728588,
     "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.23635478914595953,
@@ -1639,6 +1639,12 @@
       "close": 32.0,
       "volume": 205787.0,
       "return": 0.006289332318799801
+    },
+    {
+      "date": "2026-10-16",
+      "close": 30.520000457763672,
+      "volume": 371596.0,
+      "return": -0.046249985694885254
     }
   ],
   "monthly_history": [
@@ -1801,14 +1807,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.021059344103341315,
-      "fip": -0.09090909090909091,
+      "momentum": -0.026164635955067128,
+      "fip": 0.0,
       "positive": 6,
-      "negative": 5,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 11,
-      "sessions": 11,
-      "expected_sessions": 11,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

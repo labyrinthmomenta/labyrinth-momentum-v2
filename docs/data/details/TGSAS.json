@@ -7,24 +7,24 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-15",
+    "viop_as_of": "2026-10-16",
     "first_trade_date": "2012-06-07"
   },
   "snapshot": {
-    "as_of": "2026-10-15",
+    "as_of": "2026-10-16",
     "observations": 252,
-    "momentum_12_1": -0.03675677325274518,
+    "momentum_12_1": -0.13062333931444692,
     "fip_12_1": -0.09090909090909091,
-    "momentum_252": -0.41243244892842035,
-    "momentum_126": -0.3632103169796711,
-    "momentum_63": -0.41274990078902196,
-    "momentum_21": -0.39001123002368,
+    "momentum_252": -0.44281841164358837,
+    "momentum_126": -0.3836930385435352,
+    "momentum_63": -0.4385581669853148,
+    "momentum_21": -0.3591022009757634,
     "fip_252": -0.09523809523809523,
     "fip_126": 0.0,
     "fip_63": -0.06349206349206349,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 13.667417966647838,
-    "delta_momentum_21_63": 0.022738670765341973,
+    "atr14_percent": 14.16997410709645,
+    "delta_momentum_21_63": 0.0794559660095514,
     "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.5893626196068605,
@@ -1639,6 +1639,12 @@
       "close": 108.69999694824219,
       "volume": 1178679.0,
       "return": 0.02547166932303946
+    },
+    {
+      "date": "2026-10-16",
+      "close": 102.80000305175781,
+      "volume": 779837.0,
+      "return": -0.05427777426059799
     }
   ],
   "monthly_history": [
@@ -1801,14 +1807,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.14001047391463173,
-      "fip": -0.2727272727272727,
+      "momentum": 0.07813324275677602,
+      "fip": -0.16666666666666666,
       "positive": 7,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 11,
-      "sessions": 11,
-      "expected_sessions": 11,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

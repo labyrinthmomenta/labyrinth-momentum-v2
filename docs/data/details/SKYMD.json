@@ -7,24 +7,24 @@
     "industry": "ARACI KURUMLAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-15",
+    "viop_as_of": "2026-10-16",
     "first_trade_date": "2023-12-06"
   },
   "snapshot": {
-    "as_of": "2026-10-15",
+    "as_of": "2026-10-16",
     "observations": 252,
-    "momentum_12_1": 0.24258164457038167,
+    "momentum_12_1": 0.12789828367866707,
     "fip_12_1": 0.09523809523809523,
-    "momentum_252": -0.05860534040655885,
-    "momentum_126": 0.025040344351916932,
-    "momentum_63": -0.13673471122189873,
-    "momentum_21": -0.24238808475323548,
+    "momentum_252": -0.11967086323789389,
+    "momentum_126": -0.056134706838456117,
+    "momentum_63": -0.1893939334230258,
+    "momentum_21": -0.2194959869156894,
     "fip_252": -0.08333333333333333,
     "fip_126": -0.007936507936507936,
     "fip_63": 0.015873015873015872,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 8.787087371175735,
-    "delta_momentum_21_63": -0.10565337353133675,
+    "atr14_percent": 9.543668216411852,
+    "delta_momentum_21_63": -0.030102053492663594,
     "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": 0.3724137667951912,
@@ -1639,6 +1639,12 @@
       "close": 12.6899995803833,
       "volume": 2723475.0,
       "return": -0.0047059152640548385
+    },
+    {
+      "date": "2026-10-16",
+      "close": 11.770000457763672,
+      "volume": 2480553.0,
+      "return": -0.07249796320259927
     }
   ],
   "monthly_history": [
@@ -1801,14 +1807,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.36231156665114916,
-      "fip": -0.2727272727272727,
+      "momentum": -0.4085426792267973,
+      "fip": -0.3333333333333333,
       "positive": 4,
-      "negative": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 11,
-      "sessions": 11,
-      "expected_sessions": 11,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],
