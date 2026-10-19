@@ -7,24 +7,24 @@
     "industry": "DİĞER İMALAT SANAYİİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "1996-06-17"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
+    "as_of": "2026-10-19",
     "observations": 252,
-    "momentum_12_1": -0.014617957756855593,
+    "momentum_12_1": -0.033557047838994714,
     "fip_12_1": -0.1341991341991342,
-    "momentum_252": -0.18803985965716397,
-    "momentum_126": -0.4316278945567992,
-    "momentum_63": -0.21008402998716957,
-    "momentum_21": -0.17599458328419215,
+    "momentum_252": -0.2127516884196169,
+    "momentum_126": -0.461926607671846,
+    "momentum_63": -0.23929964434503903,
+    "momentum_21": -0.1854166768767216,
     "fip_252": -0.15079365079365079,
-    "fip_126": -0.21428571428571427,
+    "fip_126": -0.23015873015873015,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.893912398885888,
-    "delta_momentum_21_63": 0.03408944670297742,
+    "atr14_percent": 6.133887394064426,
+    "delta_momentum_21_63": 0.053882967468317444,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.26979469991979055,
@@ -1645,6 +1645,12 @@
       "close": 24.440000534057617,
       "volume": 1608885.0,
       "return": -0.008116836872765654
+    },
+    {
+      "date": "2026-10-19",
+      "close": 23.459999084472656,
+      "volume": 1216205.0,
+      "return": -0.04009825810843615
     }
   ],
   "monthly_history": [
@@ -1807,14 +1813,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.01847385909718402,
-      "fip": -0.3333333333333333,
+      "momentum": -0.057831347635282415,
+      "fip": -0.38461538461538464,
       "positive": 4,
-      "negative": 8,
+      "negative": 9,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

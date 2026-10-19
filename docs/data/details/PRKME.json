@@ -7,24 +7,24 @@
     "industry": "KÖMÜR VE LİNYİT MADENCİLİĞİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "1997-10-24"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
+    "as_of": "2026-10-19",
     "observations": 252,
-    "momentum_12_1": -0.0564159547603903,
+    "momentum_12_1": -0.04938980356413858,
     "fip_12_1": -0.004329004329004329,
-    "momentum_252": -0.27876106101331843,
-    "momentum_126": -0.31906004064694515,
-    "momentum_63": -0.28154268672601945,
-    "momentum_21": -0.23563889976167074,
+    "momentum_252": -0.27019168577709707,
+    "momentum_126": -0.3608142156006756,
+    "momentum_63": -0.30492525557627725,
+    "momentum_21": -0.23227384162384856,
     "fip_252": -0.031746031746031744,
-    "fip_126": -0.1111111111111111,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.1746031746031746,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.392841426205105,
-    "delta_momentum_21_63": 0.045903786964348714,
+    "atr14_percent": 7.525218434249795,
+    "delta_momentum_21_63": 0.07265141395242869,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3007172490561457,
@@ -1645,6 +1645,12 @@
       "close": 13.039999961853027,
       "volume": 1520981.0,
       "return": -0.050254887355292266
+    },
+    {
+      "date": "2026-10-19",
+      "close": 12.5600004196167,
+      "volume": 1287899.0,
+      "return": -0.03680978095402687
     }
   ],
   "monthly_history": [
@@ -1807,14 +1813,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.044688620785685584,
-      "fip": -0.16666666666666666,
+      "momentum": -0.07985342339745383,
+      "fip": -0.23076923076923078,
       "positive": 5,
-      "negative": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "MİMARLIK VE MÜHENDİSLİK FAALİYETLERİ; TEKNİK MUAYENE VE ANALİZ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "2020-10-19"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
+    "as_of": "2026-10-19",
     "observations": 252,
-    "momentum_12_1": -0.8993610168642528,
+    "momentum_12_1": -0.9067629678420762,
     "fip_12_1": -0.21645021645021645,
-    "momentum_252": -0.9456868981111397,
-    "momentum_126": -0.8277608847624197,
-    "momentum_63": -0.6761904671078635,
-    "momentum_21": -0.4603174615188641,
+    "momentum_252": -0.9468154939770113,
+    "momentum_126": -0.8506912490496218,
+    "momentum_63": -0.6575052857852425,
+    "momentum_21": -0.42957744587037594,
     "fip_252": -0.25,
-    "fip_126": -0.2857142857142857,
+    "fip_126": -0.30158730158730157,
     "fip_63": -0.4444444444444444,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 7.197559652774886,
-    "delta_momentum_21_63": 0.21587300558899936,
+    "atr14_percent": 7.366229143948723,
+    "delta_momentum_21_63": 0.22792783991486654,
     "delta_fip_21_63": -0.17460317460317465,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.43977589988823707,
@@ -1645,6 +1645,12 @@
       "close": 1.7000000476837158,
       "volume": 5667941.0,
       "return": -0.09090906772789709
+    },
+    {
+      "date": "2026-10-19",
+      "close": 1.6200000047683716,
+      "volume": 3329289.0,
+      "return": -0.04705884745376676
     }
   ],
   "monthly_history": [
@@ -1807,14 +1813,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.1499999761581421,
-      "fip": -0.5,
+      "momentum": -0.1899999976158142,
+      "fip": -0.5384615384615384,
       "positive": 3,
-      "negative": 9,
+      "negative": 10,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

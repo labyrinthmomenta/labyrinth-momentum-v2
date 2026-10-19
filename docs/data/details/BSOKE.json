@@ -7,24 +7,24 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "2000-05-03"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
+    "as_of": "2026-10-19",
     "observations": 252,
-    "momentum_12_1": -0.004383259068757583,
+    "momentum_12_1": -0.07077917051387561,
     "fip_12_1": -0.04329004329004329,
-    "momentum_252": -0.6499686875942735,
-    "momentum_126": -0.8434173660189125,
-    "momentum_63": -0.841822294044938,
-    "momentum_21": -0.6484276549243965,
+    "momentum_252": -0.6727272646204778,
+    "momentum_126": -0.855587398864073,
+    "momentum_63": -0.8571428521999385,
+    "momentum_21": -0.6477987524660743,
     "fip_252": -0.09126984126984126,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.4603174603174603,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 17.427991214560098,
-    "delta_momentum_21_63": 0.19339463912054156,
+    "atr14_percent": 18.82783667198201,
+    "delta_momentum_21_63": 0.20934409973386414,
     "delta_fip_21_63": -0.15873015873015878,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.7307984741790676,
@@ -1645,6 +1645,12 @@
       "close": 5.590000152587891,
       "volume": 17499265.0,
       "return": -0.04931972044367916
+    },
+    {
+      "date": "2026-10-19",
+      "close": 5.04,
+      "volume": 18969907.0,
+      "return": -0.098390006721783
     }
   ],
   "monthly_history": [
@@ -1807,14 +1813,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.21045194734101313,
-      "fip": -0.3333333333333333,
+      "momentum": -0.2881355855493015,
+      "fip": -0.38461538461538464,
       "positive": 4,
-      "negative": 8,
+      "negative": 9,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

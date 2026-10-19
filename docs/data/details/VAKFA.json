@@ -7,24 +7,24 @@
     "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "2025-11-20"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
-    "observations": 227,
+    "as_of": "2026-10-19",
+    "observations": 228,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.34707646637790435,
-    "momentum_63": -0.2561912886615777,
-    "momentum_21": -0.18825718455420803,
+    "momentum_126": -0.3767790668850709,
+    "momentum_63": -0.2802768691335311,
+    "momentum_21": -0.18511266760639222,
     "fip_252": null,
-    "fip_126": -0.1349206349206349,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 3.7295643097502404,
-    "delta_momentum_21_63": 0.06793410410736966,
+    "atr14_percent": 3.9946653178844436,
+    "delta_momentum_21_63": 0.09516420152713889,
     "delta_fip_21_63": -0.23809523809523808,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.21236558404690864,
@@ -1399,6 +1399,12 @@
       "close": 8.710000038146973,
       "volume": 3596712.0,
       "return": -0.02572701935478916
+    },
+    {
+      "date": "2026-10-19",
+      "close": 8.319999694824219,
+      "volume": 3005035.0,
+      "return": -0.04477615862395856
     }
   ],
   "monthly_history": [
@@ -1548,14 +1554,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.009101242781938468,
-      "fip": -0.16666666666666666,
+      "momentum": -0.05346988271541775,
+      "fip": -0.23076923076923078,
       "positive": 5,
-      "negative": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "1996-10-01"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
+    "as_of": "2026-10-19",
     "observations": 252,
-    "momentum_12_1": 0.657692307692308,
+    "momentum_12_1": 0.5891166809968542,
     "fip_12_1": 0.025974025974025976,
-    "momentum_252": 0.4630768996018628,
-    "momentum_126": -0.044701199811346015,
-    "momentum_63": -0.21078839440563402,
-    "momentum_21": -0.11740140627265827,
+    "momentum_252": 0.43533119573909396,
+    "momentum_126": -0.056994818652851054,
+    "momentum_63": -0.24229807530256986,
+    "momentum_21": -0.09677419354838745,
     "fip_252": 0.03571428571428571,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.67210236128102,
-    "delta_momentum_21_63": 0.09338698813297575,
+    "atr14_percent": 5.865321847897416,
+    "delta_momentum_21_63": 0.1455238817541824,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.15078705392218483,
@@ -1645,6 +1645,12 @@
       "close": 190.1999969482422,
       "volume": 374465.0,
       "return": -0.02561475449882189
+    },
+    {
+      "date": "2026-10-19",
+      "close": 182.0,
+      "volume": 263122.0,
+      "return": -0.04311249779080484
     }
   ],
   "monthly_history": [
@@ -1807,14 +1813,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.07219513683784307,
-      "fip": -0.16666666666666666,
+      "momentum": -0.1121951219512195,
+      "fip": -0.23076923076923078,
       "positive": 5,
-      "negative": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

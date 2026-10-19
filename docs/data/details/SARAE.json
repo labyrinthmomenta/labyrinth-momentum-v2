@@ -7,25 +7,25 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "2026-07-17"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
-    "observations": 65,
+    "as_of": "2026-10-19",
+    "observations": 66,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.6317767184627333,
-    "momentum_21": -0.46069182295629696,
+    "momentum_63": -0.6876953216240511,
+    "momentum_21": -0.4413973879085359,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.1746031746031746,
+    "fip_63": -0.20634920634920634,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 11.900123844947812,
-    "delta_momentum_21_63": 0.17108489550643635,
-    "delta_fip_21_63": -0.06349206349206349,
+    "atr14_percent": 12.423535516353915,
+    "delta_momentum_21_63": 0.24629793371551523,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.5963780366350836,
     "completed_month_fip": -0.45454545454545453,
@@ -427,6 +427,12 @@
       "close": 34.29999923706055,
       "volume": 7310618.0,
       "return": -0.05561675315904624
+    },
+    {
+      "date": "2026-10-19",
+      "close": 31.979999542236328,
+      "volume": 5201866.0,
+      "return": -0.06763847657225308
     }
   ],
   "monthly_history": [
@@ -472,14 +478,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.03813798699301629,
-      "fip": 0.0,
+      "momentum": -0.10319686822552931,
+      "fip": -0.07692307692307693,
       "positive": 6,
-      "negative": 6,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],

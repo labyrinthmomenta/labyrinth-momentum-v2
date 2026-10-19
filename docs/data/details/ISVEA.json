@@ -7,25 +7,25 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-16",
+    "viop_as_of": "2026-10-19",
     "first_trade_date": "2026-07-10"
   },
   "snapshot": {
-    "as_of": "2026-10-16",
-    "observations": 69,
+    "as_of": "2026-10-19",
+    "observations": 70,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.4906850545474215,
-    "momentum_21": -0.7846251407851161,
+    "momentum_63": -0.5696721132068783,
+    "momentum_21": -0.7776993600676945,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": 0.015873015873015872,
+    "fip_63": -0.015873015873015872,
     "fip_21": -0.7142857142857143,
-    "atr14_percent": 26.80808824668809,
-    "delta_momentum_21_63": -0.29394008623769463,
-    "delta_fip_21_63": -0.7301587301587302,
+    "atr14_percent": 27.991666543759976,
+    "delta_momentum_21_63": -0.2080272468608162,
+    "delta_fip_21_63": -0.6984126984126984,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6478711180188297,
     "completed_month_fip": -0.18181818181818182,
@@ -451,6 +451,12 @@
       "close": 16.950000762939453,
       "volume": 4496508.0,
       "return": -0.05042014561885233
+    },
+    {
+      "date": "2026-10-19",
+      "close": 15.75,
+      "volume": 16462779.0,
+      "return": -0.07079650200153442
     }
   ],
   "monthly_history": [
@@ -496,14 +502,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.4460784133452571,
-      "fip": -0.5,
+      "momentum": -0.48529412406355277,
+      "fip": -0.5384615384615384,
       "positive": 3,
-      "negative": 9,
+      "negative": 10,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 13,
+      "sessions": 13,
+      "expected_sessions": 13,
       "session_gap": 0
     }
   ],
