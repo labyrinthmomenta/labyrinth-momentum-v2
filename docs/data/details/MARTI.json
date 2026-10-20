@@ -7,24 +7,24 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-19",
+    "viop_as_of": "2026-10-20",
     "first_trade_date": "1990-02-09"
   },
   "snapshot": {
-    "as_of": "2026-10-19",
+    "as_of": "2026-10-20",
     "observations": 252,
-    "momentum_12_1": -0.27831712588478175,
+    "momentum_12_1": -0.3344370850470646,
     "fip_12_1": -0.10822510822510822,
-    "momentum_252": -0.5275080651452164,
-    "momentum_126": -0.3047618550237857,
-    "momentum_63": -0.18435750320599675,
-    "momentum_21": -0.3452914683141709,
+    "momentum_252": -0.5364238460264377,
+    "momentum_126": -0.354838743347352,
+    "momentum_63": -0.1764706253592928,
+    "momentum_21": -0.3034825956215673,
     "fip_252": -0.1111111111111111,
-    "fip_126": -0.09523809523809523,
+    "fip_126": -0.1111111111111111,
     "fip_63": 0.047619047619047616,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 12.774509858801371,
-    "delta_momentum_21_63": -0.16093396510817415,
+    "atr14_percent": 12.982663683259219,
+    "delta_momentum_21_63": -0.1270119702622745,
     "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.4235294167145721,
@@ -1651,6 +1651,12 @@
       "close": 1.4600000381469727,
       "volume": 169568068.0,
       "return": -0.09876541120398075
+    },
+    {
+      "date": "2026-10-20",
+      "close": 1.399999976158142,
+      "volume": 167663333.0,
+      "return": -0.04109593179530491
     }
   ],
   "monthly_history": [
@@ -1813,14 +1819,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.48979592829731655,
-      "fip": -0.38461538461538464,
+      "momentum": 0.42857137643908705,
+      "fip": -0.2857142857142857,
       "positive": 9,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 13,
-      "sessions": 13,
-      "expected_sessions": 13,
+      "classified_returns": 14,
+      "sessions": 14,
+      "expected_sessions": 14,
       "session_gap": 0
     }
   ],

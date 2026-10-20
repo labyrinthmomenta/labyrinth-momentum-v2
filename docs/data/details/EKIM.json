@@ -7,25 +7,25 @@
     "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-19",
+    "viop_as_of": "2026-10-20",
     "first_trade_date": "2026-07-09"
   },
   "snapshot": {
-    "as_of": "2026-10-19",
-    "observations": 71,
+    "as_of": "2026-10-20",
+    "observations": 72,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.29528306402231386,
-    "momentum_21": -0.05443041771960644,
+    "momentum_63": -0.2657992632600169,
+    "momentum_21": 0.07923496039678546,
     "fip_252": null,
     "fip_126": null,
     "fip_63": -0.14285714285714285,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 9.445854860634714,
-    "delta_momentum_21_63": 0.24085264630270742,
-    "delta_fip_21_63": 0.0,
+    "fip_21": 0.047619047619047616,
+    "atr14_percent": 8.980894240201334,
+    "delta_momentum_21_63": 0.34503422365680236,
+    "delta_fip_21_63": 0.19047619047619047,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3925729667082166,
     "completed_month_fip": -0.2727272727272727,
@@ -463,6 +463,12 @@
       "close": 14.9399995803833,
       "volume": 9280914.0,
       "return": -0.07492260475093981
+    },
+    {
+      "date": "2026-10-20",
+      "close": 15.800000190734863,
+      "volume": 9624628.0,
+      "return": 0.05756363015436561
     }
   ],
   "monthly_history": [
@@ -508,14 +514,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.3048034785375384,
-      "fip": -0.23076923076923078,
-      "positive": 8,
+      "momentum": 0.379912703400203,
+      "fip": -0.2857142857142857,
+      "positive": 9,
       "negative": 5,
       "flat": 0,
-      "classified_returns": 13,
-      "sessions": 13,
-      "expected_sessions": 13,
+      "classified_returns": 14,
+      "sessions": 14,
+      "expected_sessions": 14,
       "session_gap": 0
     }
   ],
