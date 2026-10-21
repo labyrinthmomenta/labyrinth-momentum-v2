@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-20",
+    "viop_as_of": "2026-10-21",
     "first_trade_date": "2012-05-10"
   },
   "snapshot": {
-    "as_of": "2026-10-20",
+    "as_of": "2026-10-21",
     "observations": 252,
-    "momentum_12_1": -0.42261530372629685,
+    "momentum_12_1": -0.41781238923312836,
     "fip_12_1": -0.15584415584415584,
-    "momentum_252": -0.5389230016409179,
-    "momentum_126": -0.4629030164768452,
-    "momentum_63": -0.3693181702728605,
-    "momentum_21": -0.20143883041106192,
+    "momentum_252": -0.5570311843068216,
+    "momentum_126": -0.5043705572622281,
+    "momentum_63": -0.38953492159840786,
+    "momentum_21": -0.2391304667069617,
     "fip_252": -0.18253968253968253,
-    "fip_126": -0.21428571428571427,
+    "fip_126": -0.23015873015873015,
     "fip_63": -0.38095238095238093,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 5.519206322703119,
-    "delta_momentum_21_63": 0.1678793398617986,
+    "atr14_percent": 6.030078615928523,
+    "delta_momentum_21_63": 0.15040445489144616,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.23529413139668887,
@@ -1657,6 +1657,12 @@
       "close": 1.1100000143051147,
       "volume": 7722018.0,
       "return": 0.009090900224102638
+    },
+    {
+      "date": "2026-10-21",
+      "close": 1.0499999523162842,
+      "volume": 5883794.0,
+      "return": -0.05405410920322551
     }
   ],
   "monthly_history": [
@@ -1819,14 +1825,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.05128200425668883,
-      "fip": -0.35714285714285715,
+      "momentum": -0.10256411040166302,
+      "fip": -0.4,
       "positive": 4,
-      "negative": 9,
+      "negative": 10,
       "flat": 1,
-      "classified_returns": 14,
-      "sessions": 14,
-      "expected_sessions": 14,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

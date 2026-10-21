@@ -7,24 +7,24 @@
     "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-20",
+    "viop_as_of": "2026-10-21",
     "first_trade_date": "2023-10-19"
   },
   "snapshot": {
-    "as_of": "2026-10-20",
+    "as_of": "2026-10-21",
     "observations": 252,
-    "momentum_12_1": -0.9203703668382432,
+    "momentum_12_1": -0.9202127686557106,
     "fip_12_1": -0.30735930735930733,
-    "momentum_252": -0.8948148179937292,
-    "momentum_126": -0.5111876175319484,
-    "momentum_63": -0.521079258620319,
-    "momentum_21": 0.3209301340444637,
+    "momentum_252": -0.8955167161137626,
+    "momentum_126": -0.5696400536057504,
+    "momentum_63": -0.5217391304347827,
+    "momentum_21": 0.30952386899329953,
     "fip_252": -0.2777777777777778,
-    "fip_126": -0.25396825396825395,
+    "fip_126": -0.2698412698412698,
     "fip_63": -0.3492063492063492,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 8.314474460681842,
-    "delta_momentum_21_63": 0.8420093926647827,
+    "atr14_percent": 9.27195818021113,
+    "delta_momentum_21_63": 0.8312629994280822,
     "delta_fip_21_63": 0.30158730158730157,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6453900725209569,
@@ -1657,6 +1657,12 @@
       "close": 2.8399999141693115,
       "volume": 15727247.0,
       "return": 0.09652506338583455
+    },
+    {
+      "date": "2026-10-21",
+      "close": 2.75,
+      "volume": 166488402.0,
+      "return": -0.03169011158073787
     }
   ],
   "monthly_history": [
@@ -1819,14 +1825,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.893333276112874,
-      "fip": -0.5714285714285714,
+      "momentum": 0.833333333333333,
+      "fip": -0.4666666666666667,
       "positive": 11,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 14,
-      "sessions": 14,
-      "expected_sessions": 14,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "BÜRO YÖNETİMİ, BÜRO DESTEĞİ VE DİĞER ŞİRKET DESTEK FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-20",
+    "viop_as_of": "2026-10-21",
     "first_trade_date": "2012-06-29"
   },
   "snapshot": {
-    "as_of": "2026-10-20",
+    "as_of": "2026-10-21",
     "observations": 252,
-    "momentum_12_1": 0.16428567605532862,
+    "momentum_12_1": 0.19842823610352278,
     "fip_12_1": 0.10822510822510822,
-    "momentum_252": 0.022449006402753824,
-    "momentum_126": -0.29436615546812295,
-    "momentum_63": -0.041148264052618955,
-    "momentum_21": -0.12182291045023119,
+    "momentum_252": 0.003929269219441256,
+    "momentum_126": -0.3191205788682284,
+    "momentum_63": -0.03311252960270117,
+    "momentum_21": -0.1622950469829223,
     "fip_252": 0.1349206349206349,
     "fip_126": -0.23015873015873015,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.985328583397796,
-    "delta_momentum_21_63": -0.08067464639761224,
+    "atr14_percent": 5.994191270641134,
+    "delta_momentum_21_63": -0.12918251738022113,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-09",
     "completed_month_momentum": 0.0666067279622038,
@@ -1657,6 +1657,12 @@
       "close": 10.020000457763672,
       "volume": 978296.0,
       "return": -0.0009969367371615023
+    },
+    {
+      "date": "2026-10-21",
+      "close": 10.220000267028809,
+      "volume": 1789785.0,
+      "return": 0.019960059893028514
     }
   ],
   "monthly_history": [
@@ -1819,14 +1825,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.15443036833717638,
-      "fip": -0.5714285714285714,
-      "positive": 3,
+      "momentum": -0.13755274784546034,
+      "fip": -0.4666666666666667,
+      "positive": 4,
       "negative": 11,
       "flat": 0,
-      "classified_returns": 14,
-      "sessions": 14,
-      "expected_sessions": 14,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

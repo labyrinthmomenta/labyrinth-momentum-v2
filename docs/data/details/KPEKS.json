@@ -7,23 +7,23 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-20",
+    "viop_as_of": "2026-10-21",
     "first_trade_date": "2026-08-21"
   },
   "snapshot": {
-    "as_of": "2026-10-20",
-    "observations": 42,
+    "as_of": "2026-10-21",
+    "observations": 43,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.26487662693512803,
+    "momentum_21": -0.24383563665023444,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 11.114234820749491,
+    "atr14_percent": 11.79997659204771,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -289,6 +289,12 @@
       "close": 50.650001525878906,
       "volume": 3299144.0,
       "return": 0.07674320876043916
+    },
+    {
+      "date": "2026-10-21",
+      "close": 46.91999816894531,
+      "volume": 2436597.0,
+      "return": -0.0736427096656217
     }
   ],
   "monthly_history": [
@@ -321,14 +327,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.06273608241795192,
-      "fip": -0.14285714285714285,
+      "momentum": -0.015526682350733512,
+      "fip": 0.06666666666666667,
       "positive": 8,
-      "negative": 6,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 14,
-      "sessions": 14,
-      "expected_sessions": 14,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],
