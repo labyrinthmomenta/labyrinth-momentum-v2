@@ -7,24 +7,24 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-21",
+    "viop_as_of": "2026-10-22",
     "first_trade_date": "2026-02-11"
   },
   "snapshot": {
-    "as_of": "2026-10-21",
-    "observations": 172,
+    "as_of": "2026-10-22",
+    "observations": 173,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.21096879721127082,
-    "momentum_63": -0.3897832956646733,
-    "momentum_21": -0.14229767288522088,
+    "momentum_126": -0.2700701615894473,
+    "momentum_63": -0.3954164035186333,
+    "momentum_21": -0.17706505475037448,
     "fip_252": null,
-    "fip_126": -0.14285714285714285,
+    "fip_126": -0.15873015873015872,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 8.535751066804833,
-    "delta_momentum_21_63": 0.2474856227794524,
+    "atr14_percent": 9.484842708571264,
+    "delta_momentum_21_63": 0.2183513487682588,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.4176618207303263,
@@ -1069,6 +1069,12 @@
       "close": 19.709999084472656,
       "volume": 12641591.0,
       "return": 0.01913127864351427
+    },
+    {
+      "date": "2026-10-22",
+      "close": 18.729999542236328,
+      "volume": 6652811.0,
+      "return": -0.04972093291512947
     }
   ],
   "monthly_history": [
@@ -1179,14 +1185,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.06368042925533057,
-      "fip": -0.2,
+      "momentum": 0.010793245989190181,
+      "fip": -0.125,
       "positive": 9,
-      "negative": 6,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 15,
-      "sessions": 15,
-      "expected_sessions": 15,
+      "classified_returns": 16,
+      "sessions": 16,
+      "expected_sessions": 16,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "BÜRO YÖNETİMİ, BÜRO DESTEĞİ VE DİĞER ŞİRKET DESTEK FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-21",
+    "viop_as_of": "2026-10-22",
     "first_trade_date": "2012-06-29"
   },
   "snapshot": {
-    "as_of": "2026-10-21",
+    "as_of": "2026-10-22",
     "observations": 252,
-    "momentum_12_1": 0.19842823610352278,
+    "momentum_12_1": 0.22266792917710565,
     "fip_12_1": 0.10822510822510822,
-    "momentum_252": 0.003929269219441256,
-    "momentum_126": -0.3191205788682284,
-    "momentum_63": -0.03311252960270117,
-    "momentum_21": -0.1622950469829223,
+    "momentum_252": 0.005015064131966618,
+    "momentum_126": -0.3737499713897693,
+    "momentum_63": -0.02623901895921199,
+    "momentum_21": -0.1780147003541891,
     "fip_252": 0.1349206349206349,
-    "fip_126": -0.23015873015873015,
+    "fip_126": -0.24603174603174602,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 5.994191270641134,
-    "delta_momentum_21_63": -0.12918251738022113,
+    "atr14_percent": 6.076335017134485,
+    "delta_momentum_21_63": -0.1517756813949771,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-09",
     "completed_month_momentum": 0.0666067279622038,
@@ -1663,6 +1663,12 @@
       "close": 10.220000267028809,
       "volume": 1789785.0,
       "return": 0.019960059893028514
+    },
+    {
+      "date": "2026-10-22",
+      "close": 10.020000457763672,
+      "volume": 939392.0,
+      "return": -0.019569452450051816
     }
   ],
   "monthly_history": [
@@ -1825,14 +1831,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.13755274784546034,
-      "fip": -0.4666666666666667,
+      "momentum": -0.1544303683371765,
+      "fip": -0.5,
       "positive": 4,
-      "negative": 11,
+      "negative": 12,
       "flat": 0,
-      "classified_returns": 15,
-      "sessions": 15,
-      "expected_sessions": 15,
+      "classified_returns": 16,
+      "sessions": 16,
+      "expected_sessions": 16,
       "session_gap": 0
     }
   ],

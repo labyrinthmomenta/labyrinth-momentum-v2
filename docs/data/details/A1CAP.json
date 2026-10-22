@@ -7,24 +7,24 @@
     "industry": "ARACI KURUMLAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-21",
+    "viop_as_of": "2026-10-22",
     "first_trade_date": "2023-06-15"
   },
   "snapshot": {
-    "as_of": "2026-10-21",
+    "as_of": "2026-10-22",
     "observations": 252,
-    "momentum_12_1": -0.6001648920960366,
+    "momentum_12_1": -0.6145575030108972,
     "fip_12_1": -0.13852813852813853,
-    "momentum_252": -0.7320692523217012,
-    "momentum_126": -0.7860434437274689,
-    "momentum_63": -0.657172979226397,
-    "momentum_21": -0.3298968940399971,
+    "momentum_252": -0.757650948736338,
+    "momentum_126": -0.8020270250677799,
+    "momentum_63": -0.6822125833081552,
+    "momentum_21": -0.37124460027947126,
     "fip_252": -0.14682539682539683,
     "fip_126": -0.18253968253968253,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 9.842202160147915,
-    "delta_momentum_21_63": 0.32727608518639983,
+    "atr14_percent": 10.917431124443313,
+    "delta_momentum_21_63": 0.3109679830286839,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.48379056980253465,
@@ -1663,6 +1663,12 @@
       "close": 3.25,
       "volume": 8411984.0,
       "return": -0.09972296552830484
+    },
+    {
+      "date": "2026-10-22",
+      "close": 2.930000066757202,
+      "volume": 6331507.0,
+      "return": -0.09846151792086089
     }
   ],
   "monthly_history": [
@@ -1825,14 +1831,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.21497582009371097,
-      "fip": -0.2,
+      "momentum": -0.2922704924518632,
+      "fip": -0.25,
       "positive": 6,
-      "negative": 9,
+      "negative": 10,
       "flat": 0,
-      "classified_returns": 15,
-      "sessions": 15,
-      "expected_sessions": 15,
+      "classified_returns": 16,
+      "sessions": 16,
+      "expected_sessions": 16,
       "session_gap": 0
     }
   ],

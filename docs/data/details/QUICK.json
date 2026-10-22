@@ -7,23 +7,23 @@
     "industry": "SİGORTA ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-21",
+    "viop_as_of": "2026-10-22",
     "first_trade_date": "2026-08-06"
   },
   "snapshot": {
-    "as_of": "2026-10-21",
-    "observations": 54,
+    "as_of": "2026-10-22",
+    "observations": 55,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.22534655580426244,
+    "momentum_21": -0.1761826922583276,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.5206841671946245,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 7.395189287070782,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -361,6 +361,12 @@
       "close": 39.119998931884766,
       "volume": 873379.0,
       "return": -0.04398825311841259
+    },
+    {
+      "date": "2026-10-22",
+      "close": 40.400001525878906,
+      "volume": 2626064.0,
+      "return": 0.03271990360283139
     }
   ],
   "monthly_history": [
@@ -393,14 +399,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.021021025321151687,
-      "fip": 0.06666666666666667,
-      "positive": 8,
+      "momentum": 0.01101107235953891,
+      "fip": -0.125,
+      "positive": 9,
       "negative": 7,
       "flat": 0,
-      "classified_returns": 15,
-      "sessions": 15,
-      "expected_sessions": 15,
+      "classified_returns": 16,
+      "sessions": 16,
+      "expected_sessions": 16,
       "session_gap": 0
     }
   ],
