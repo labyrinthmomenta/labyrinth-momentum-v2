@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "2018-01-16"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": -0.46699506889287157,
+    "momentum_12_1": -0.4770334686759963,
     "fip_12_1": -0.047619047619047616,
-    "momentum_252": -0.43842364300595893,
-    "momentum_126": -0.5668693103833109,
-    "momentum_63": -0.383783804403769,
-    "momentum_21": 0.05360443068991039,
+    "momentum_252": -0.39999998904871614,
+    "momentum_126": -0.5154559348282244,
+    "momentum_63": -0.34585289775208516,
+    "momentum_21": 0.14730097437067968,
     "fip_252": -0.031746031746031744,
-    "fip_126": -0.07936507936507936,
+    "fip_126": -0.06349206349206349,
     "fip_63": -0.07936507936507936,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.5631423483515405,
-    "delta_momentum_21_63": 0.4373882350936794,
+    "atr14_percent": 6.235233910205359,
+    "delta_momentum_21_63": 0.49315387212276485,
     "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3537604518981572,
@@ -1669,6 +1669,12 @@
       "close": 11.399999618530273,
       "volume": 1553012.0,
       "return": 0.010638287978706584
+    },
+    {
+      "date": "2026-10-23",
+      "close": 12.54,
+      "volume": 4564998.0,
+      "return": 0.10000003680848346
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.01724144451399645,
-      "fip": 0.0,
-      "positive": 8,
+      "momentum": 0.08103444720845587,
+      "fip": -0.058823529411764705,
+      "positive": 9,
       "negative": 8,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

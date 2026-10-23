@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "2007-11-23"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": 2.4058899513057086,
+    "momentum_12_1": 2.4552331583286864,
     "fip_12_1": -0.05194805194805195,
-    "momentum_252": 1.1805378537643358,
-    "momentum_126": 0.3232323783212334,
-    "momentum_63": 0.13989297194854378,
-    "momentum_21": -0.3597744246174518,
+    "momentum_252": 1.2042874694174777,
+    "momentum_126": 0.3142857372312624,
+    "momentum_63": 0.15915119041319103,
+    "momentum_21": -0.36204378448263586,
     "fip_252": -0.027777777777777776,
     "fip_126": -0.06349206349206349,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 10.48397344913839,
-    "delta_momentum_21_63": -0.49966739656599557,
+    "atr14_percent": 9.901302921022623,
+    "delta_momentum_21_63": -0.5211949748958269,
     "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-09",
     "completed_month_momentum": 0.1055900168298678,
@@ -1669,6 +1669,12 @@
       "close": 170.3000030517578,
       "volume": 5076111.0,
       "return": -0.03073418866387123
+    },
+    {
+      "date": "2026-10-23",
+      "close": 174.8000030517578,
+      "volume": 3731453.0,
+      "return": 0.02642395724815305
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.2640449112200902,
-      "fip": -0.25,
-      "positive": 6,
+      "momentum": -0.2445980654176092,
+      "fip": -0.17647058823529413,
+      "positive": 7,
       "negative": 10,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

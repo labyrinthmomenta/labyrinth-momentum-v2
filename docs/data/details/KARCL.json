@@ -7,23 +7,23 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "2026-07-31"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
-    "observations": 59,
+    "as_of": "2026-10-23",
+    "observations": 60,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.7567741947789345,
+    "momentum_21": -0.7245519696109451,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": -0.8095238095238095,
-    "atr14_percent": 25.947826281260088,
+    "fip_21": -0.7142857142857143,
+    "atr14_percent": 24.80161668453898,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-09",
@@ -391,6 +391,12 @@
       "close": 30.15999984741211,
       "volume": 11538084.0,
       "return": -0.0997014970921758
+    },
+    {
+      "date": "2026-10-23",
+      "close": 30.739999771118164,
+      "volume": 38065916.0,
+      "return": 0.01923076679842306
     }
   ],
   "monthly_history": [
@@ -436,14 +442,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.5888207160896809,
-      "fip": -0.75,
-      "positive": 2,
+      "momentum": -0.580913423168459,
+      "fip": -0.6470588235294118,
+      "positive": 3,
       "negative": 14,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

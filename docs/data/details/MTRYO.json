@@ -7,24 +7,24 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "1999-01-26"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": 0.0615199313906698,
+    "momentum_12_1": 0.02545455007842312,
     "fip_12_1": 0.06926406926406926,
-    "momentum_252": -0.11700841913813642,
-    "momentum_126": -0.26726723329623625,
-    "momentum_63": -0.25760644761237594,
-    "momentum_21": -0.1681818167040171,
+    "momentum_252": -0.16000002080743758,
+    "momentum_126": -0.29285717413654666,
+    "momentum_63": -0.2818652743745823,
+    "momentum_21": -0.180851087814353,
     "fip_252": -0.09126984126984126,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.223757721569473,
-    "delta_momentum_21_63": 0.08942463090835884,
+    "atr14_percent": 7.662469736712013,
+    "delta_momentum_21_63": 0.10101418656022931,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.16085492125428869,
@@ -1669,6 +1669,12 @@
       "close": 7.320000171661377,
       "volume": 75345.0,
       "return": -0.012145705479624791
+    },
+    {
+      "date": "2026-10-23",
+      "close": 6.929999828338623,
+      "volume": 161790.0,
+      "return": -0.053278734177165665
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.01876673803883344,
-      "fip": -0.125,
+      "momentum": -0.07104560416865557,
+      "fip": -0.17647058823529413,
       "positive": 7,
-      "negative": 9,
+      "negative": 10,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

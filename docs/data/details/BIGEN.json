@@ -7,24 +7,24 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "2025-02-05"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": 7.111650631512941,
+    "momentum_12_1": 6.336585068121192,
     "fip_12_1": -0.11688311688311688,
-    "momentum_252": -0.10776704755307032,
-    "momentum_126": -0.27063497601963216,
-    "momentum_63": -0.935053006499058,
-    "momentum_21": -0.8900059934804521,
+    "momentum_252": -0.19219514800281023,
+    "momentum_126": -0.4025974070654319,
+    "momentum_63": -0.9350078521679667,
+    "momentum_21": -0.8898936161038669,
     "fip_252": 0.023809523809523808,
-    "fip_126": 0.14285714285714285,
+    "fip_126": 0.12698412698412698,
     "fip_63": -0.2222222222222222,
     "fip_21": -1.0,
-    "atr14_percent": 52.131509400822594,
-    "delta_momentum_21_63": 0.04504701301860592,
+    "atr14_percent": 54.51303772361179,
+    "delta_momentum_21_63": 0.04511423606409981,
     "delta_fip_21_63": -0.7777777777777778,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.7311207978868819,
@@ -1669,6 +1669,12 @@
       "close": 9.1899995803833,
       "volume": 295867.0,
       "return": -0.09990210126862964
+    },
+    {
+      "date": "2026-10-23",
+      "close": 8.279999732971191,
+      "volume": 404094.0,
+      "return": -0.09902066256396447
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.8140428992132553,
+      "momentum": -0.8324564945416327,
       "fip": -1.0,
       "positive": 0,
-      "negative": 16,
+      "negative": 17,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

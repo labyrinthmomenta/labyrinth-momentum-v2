@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "2021-11-15"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": -0.34823093716997333,
+    "momentum_12_1": -0.3575870663732421,
     "fip_12_1": -0.11255411255411256,
-    "momentum_252": -0.4810677008102977,
-    "momentum_126": -0.457142865989559,
-    "momentum_63": -0.4474554135199251,
-    "momentum_21": -0.20380955650692878,
+    "momentum_252": -0.4869402960731748,
+    "momentum_126": -0.4625407299690195,
+    "momentum_63": -0.44816052807658724,
+    "momentum_21": -0.20135526999692566,
     "fip_252": -0.12301587301587301,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.30158730158730157,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.2398848518051775,
-    "delta_momentum_21_63": 0.24364585701299635,
+    "atr14_percent": 5.48026567882,
+    "delta_momentum_21_63": 0.24680525807966158,
     "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.30212920746652794,
@@ -1669,6 +1669,12 @@
       "close": 16.719999313354492,
       "volume": 393393.0,
       "return": -0.0368664328626489
+    },
+    {
+      "date": "2026-10-23",
+      "close": 16.5,
+      "volume": 530750.0,
+      "return": -0.0131578542098848
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.12046296096557396,
-      "fip": -0.25,
+      "momentum": -0.13203578109738268,
+      "fip": -0.29411764705882354,
       "positive": 6,
-      "negative": 10,
+      "negative": 11,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

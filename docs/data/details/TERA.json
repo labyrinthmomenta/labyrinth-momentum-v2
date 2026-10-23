@@ -7,24 +7,24 @@
     "industry": "ARACI KURUMLAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "2022-12-22"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": -0.4194216282581801,
+    "momentum_12_1": -0.47071155594407355,
     "fip_12_1": 0.2727272727272727,
-    "momentum_252": -0.928986301741462,
-    "momentum_126": -0.9591023845057334,
-    "momentum_63": -0.9116363640987512,
-    "momentum_21": -0.8776845612669198,
+    "momentum_252": -0.9352324591484462,
+    "momentum_126": -0.959096572852209,
+    "momentum_63": -0.9200365386207671,
+    "momentum_21": -0.8776328076327504,
     "fip_252": 0.17063492063492064,
     "fip_126": 0.007936507936507936,
     "fip_63": -0.031746031746031744,
     "fip_21": -0.9523809523809523,
-    "atr14_percent": 36.125201013447786,
-    "delta_momentum_21_63": 0.0339518028318313,
+    "atr14_percent": 38.03813786848265,
+    "delta_momentum_21_63": 0.04240373098801664,
     "delta_fip_21_63": -0.9206349206349206,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6239999999999999,
@@ -1669,6 +1669,12 @@
       "close": 14.579999923706055,
       "volume": 20760.0,
       "return": -0.10000004709502575
+    },
+    {
+      "date": "2026-10-23",
+      "close": 13.130000114440918,
+      "volume": 25972.0,
+      "return": -0.09945129059346147
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.7931914904438858,
-      "fip": -0.9375,
+      "momentum": -0.8137588636249515,
+      "fip": -0.9411764705882353,
       "positive": 0,
-      "negative": 15,
+      "negative": 16,
       "flat": 1,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],

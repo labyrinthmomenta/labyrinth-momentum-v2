@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-22",
+    "viop_as_of": "2026-10-23",
     "first_trade_date": "1995-05-29"
   },
   "snapshot": {
-    "as_of": "2026-10-22",
+    "as_of": "2026-10-23",
     "observations": 252,
-    "momentum_12_1": -0.33812949640287726,
+    "momentum_12_1": -0.34629365582605165,
     "fip_12_1": -0.18181818181818182,
-    "momentum_252": -0.4928057553956833,
-    "momentum_126": -0.6705607476635509,
-    "momentum_63": -0.42448979591836755,
-    "momentum_21": -0.23369565217391342,
+    "momentum_252": -0.48873549888364665,
+    "momentum_126": -0.663397136487459,
+    "momentum_63": -0.40381357225321113,
+    "momentum_21": -0.21789882311390274,
     "fip_252": -0.19444444444444445,
     "fip_126": -0.30952380952380953,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 11.290577806479973,
-    "delta_momentum_21_63": 0.19079414374445414,
+    "atr14_percent": 11.044588399954442,
+    "delta_momentum_21_63": 0.1859147491393084,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.36926790345102745,
@@ -1669,6 +1669,12 @@
       "close": 70.5,
       "volume": 50793.0,
       "return": -0.09615384615384615
+    },
+    {
+      "date": "2026-10-23",
+      "close": 70.3499984741211,
+      "volume": 36120.0,
+      "return": -0.0021276812181405536
     }
   ],
   "monthly_history": [
@@ -1831,14 +1837,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.10076532362402102,
-      "fip": -0.125,
+      "momentum": -0.1026786083556469,
+      "fip": -0.17647058823529413,
       "positive": 7,
-      "negative": 9,
+      "negative": 10,
       "flat": 0,
-      "classified_returns": 16,
-      "sessions": 16,
-      "expected_sessions": 16,
+      "classified_returns": 17,
+      "sessions": 17,
+      "expected_sessions": 17,
       "session_gap": 0
     }
   ],
