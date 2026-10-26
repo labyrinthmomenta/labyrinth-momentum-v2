@@ -7,24 +7,24 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-23",
+    "viop_as_of": "2026-10-26",
     "first_trade_date": "2023-12-07"
   },
   "snapshot": {
-    "as_of": "2026-10-23",
+    "as_of": "2026-10-26",
     "observations": 252,
-    "momentum_12_1": -0.031249999999998557,
-    "fip_12_1": 0.03463203463203463,
-    "momentum_252": -0.276875019073485,
-    "momentum_126": -0.4704805724105905,
-    "momentum_63": -0.4978298943110345,
-    "momentum_21": -0.25354840678553425,
+    "momentum_12_1": 0.045905690607481286,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.272332572484272,
+    "momentum_126": -0.4716216604001958,
+    "momentum_63": -0.4915474773557118,
+    "momentum_21": -0.30427051497053703,
     "fip_252": -0.003968253968253968,
     "fip_126": 0.015873015873015872,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 10.016016839521656,
-    "delta_momentum_21_63": 0.24428148752550027,
+    "atr14_percent": 9.569535806620006,
+    "delta_momentum_21_63": 0.18727696238517477,
     "delta_fip_21_63": -0.38095238095238093,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.5728765342924116,
@@ -1675,6 +1675,12 @@
       "close": 23.139999389648438,
       "volume": 1082490.0,
       "return": -0.05086135413464776
+    },
+    {
+      "date": "2026-10-26",
+      "close": 23.459999084472656,
+      "volume": 836048.0,
+      "return": 0.013828854937972368
     }
   ],
   "monthly_history": [
@@ -1837,14 +1843,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.2266043004464232,
-      "fip": -0.4117647058823529,
-      "positive": 5,
+      "momentum": -0.21590912350764513,
+      "fip": -0.3333333333333333,
+      "positive": 6,
       "negative": 12,
       "flat": 0,
-      "classified_returns": 17,
-      "sessions": 17,
-      "expected_sessions": 17,
+      "classified_returns": 18,
+      "sessions": 18,
+      "expected_sessions": 18,
       "session_gap": 0
     }
   ],

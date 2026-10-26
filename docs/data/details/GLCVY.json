@@ -7,24 +7,24 @@
     "industry": "VARLIK YÖNETİM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-23",
+    "viop_as_of": "2026-10-26",
     "first_trade_date": "2021-10-21"
   },
   "snapshot": {
-    "as_of": "2026-10-23",
+    "as_of": "2026-10-26",
     "observations": 252,
-    "momentum_12_1": -0.3323217150044955,
+    "momentum_12_1": -0.3344589471248427,
     "fip_12_1": -0.11255411255411256,
-    "momentum_252": -0.48952961136976625,
-    "momentum_126": -0.46046511286426095,
-    "momentum_63": -0.3549377103478141,
-    "momentum_21": -0.23545455932617165,
+    "momentum_252": -0.4934766043421852,
+    "momentum_126": -0.4720000000000003,
+    "momentum_63": -0.35357491688181797,
+    "momentum_21": -0.2389299000120001,
     "fip_252": -0.14682539682539683,
-    "fip_126": -0.23809523809523808,
+    "fip_126": -0.25396825396825395,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 4.72548588051925,
-    "delta_momentum_21_63": 0.11948315102164242,
+    "atr14_percent": 5.2998905254156154,
+    "delta_momentum_21_63": 0.11464501686981787,
     "delta_fip_21_63": -0.3015873015873016,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.24180249743797144,
@@ -1675,6 +1675,12 @@
       "close": 33.63999938964844,
       "volume": 451954.0,
       "return": -0.019813528881771236
+    },
+    {
+      "date": "2026-10-26",
+      "close": 33.0,
+      "volume": 1723153.0,
+      "return": -0.01902495247503999
     }
   ],
   "monthly_history": [
@@ -1837,14 +1843,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.14921601894960967,
-      "fip": -0.4117647058823529,
+      "momentum": -0.16540214375561868,
+      "fip": -0.4444444444444444,
       "positive": 5,
-      "negative": 12,
+      "negative": 13,
       "flat": 0,
-      "classified_returns": 17,
-      "sessions": 17,
-      "expected_sessions": 17,
+      "classified_returns": 18,
+      "sessions": 18,
+      "expected_sessions": 18,
       "session_gap": 0
     }
   ],

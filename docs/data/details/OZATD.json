@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-23",
+    "viop_as_of": "2026-10-26",
     "first_trade_date": "2024-09-05"
   },
   "snapshot": {
-    "as_of": "2026-10-23",
+    "as_of": "2026-10-26",
     "observations": 252,
-    "momentum_12_1": 9.613333333333317,
+    "momentum_12_1": 8.750566893424027,
     "fip_12_1": -0.18614718614718614,
-    "momentum_252": 0.1688888888888873,
-    "momentum_126": 0.054530899905154806,
-    "momentum_63": -0.9302387267904509,
-    "momentum_21": -0.8898659966499163,
+    "momentum_252": 0.07346937391492969,
+    "momentum_126": -0.05697212371218219,
+    "momentum_63": -0.9356356228556785,
+    "momentum_21": -0.8899069781636083,
     "fip_252": -0.0873015873015873,
-    "fip_126": -0.1349206349206349,
+    "fip_126": 0.11904761904761904,
     "fip_63": -0.4126984126984127,
     "fip_21": -1.0,
-    "atr14_percent": 45.23110733228441,
-    "delta_momentum_21_63": 0.04037273014053466,
+    "atr14_percent": 47.46066700095405,
+    "delta_momentum_21_63": 0.045728644692070164,
     "delta_fip_21_63": -0.5873015873015873,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6756980351602895,
@@ -1675,6 +1675,12 @@
       "close": 263.0,
       "volume": 1078.0,
       "return": -0.09931506849315064
+    },
+    {
+      "date": "2026-10-26",
+      "close": 236.6999969482422,
+      "volume": 616.0,
+      "return": -0.10000001160364191
     }
   ],
   "monthly_history": [
@@ -1837,14 +1843,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.8322704081632653,
+      "momentum": -0.8490433692932129,
       "fip": -1.0,
       "positive": 0,
-      "negative": 17,
+      "negative": 18,
       "flat": 0,
-      "classified_returns": 17,
-      "sessions": 17,
-      "expected_sessions": 17,
+      "classified_returns": 18,
+      "sessions": 18,
+      "expected_sessions": 18,
       "session_gap": 0
     }
   ],

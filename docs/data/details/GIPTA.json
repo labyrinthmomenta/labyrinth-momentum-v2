@@ -7,24 +7,24 @@
     "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-23",
+    "viop_as_of": "2026-10-26",
     "first_trade_date": "2023-09-14"
   },
   "snapshot": {
-    "as_of": "2026-10-23",
+    "as_of": "2026-10-26",
     "observations": 252,
-    "momentum_12_1": -0.7298765457216114,
+    "momentum_12_1": -0.7307692307692307,
     "fip_12_1": -0.23376623376623376,
-    "momentum_252": -0.8245267514829283,
-    "momentum_126": -0.7546605371637984,
-    "momentum_63": -0.6446666717529295,
-    "momentum_21": -0.35039610319720904,
+    "momentum_252": -0.8211965805444962,
+    "momentum_126": -0.7509523800441197,
+    "momentum_63": -0.6489932783240318,
+    "momentum_21": -0.33587301345098586,
     "fip_252": -0.23809523809523808,
     "fip_126": -0.30158730158730157,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 13.07258325930708,
-    "delta_momentum_21_63": 0.2942705685557204,
+    "atr14_percent": 13.026485674953921,
+    "delta_momentum_21_63": 0.3131202648730459,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.6645845657480731,
@@ -1675,6 +1675,12 @@
       "close": 21.31999969482422,
       "volume": 2386761.0,
       "return": -0.008372107217478164
+    },
+    {
+      "date": "2026-10-26",
+      "close": 20.920000076293945,
+      "volume": 1671977.0,
+      "return": -0.018761708454779202
     }
   ],
   "monthly_history": [
@@ -1837,14 +1843,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.25087841248539977,
-      "fip": -0.23529411764705882,
+      "momentum": -0.26493321330753006,
+      "fip": -0.2777777777777778,
       "positive": 6,
-      "negative": 10,
+      "negative": 11,
       "flat": 1,
-      "classified_returns": 17,
-      "sessions": 17,
-      "expected_sessions": 17,
+      "classified_returns": 18,
+      "sessions": 18,
+      "expected_sessions": 18,
       "session_gap": 0
     }
   ],

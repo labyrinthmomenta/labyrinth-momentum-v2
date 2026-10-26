@@ -7,24 +7,24 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-23",
+    "viop_as_of": "2026-10-26",
     "first_trade_date": "1999-01-26"
   },
   "snapshot": {
-    "as_of": "2026-10-23",
+    "as_of": "2026-10-26",
     "observations": 252,
-    "momentum_12_1": 0.02545455007842312,
+    "momentum_12_1": 0.026993899058425308,
     "fip_12_1": 0.06926406926406926,
-    "momentum_252": -0.16000002080743758,
-    "momentum_126": -0.29285717413654666,
-    "momentum_63": -0.2818652743745823,
-    "momentum_21": -0.180851087814353,
+    "momentum_252": -0.17423308784312064,
+    "momentum_126": -0.31396536888869453,
+    "momentum_63": -0.27478445983546007,
+    "momentum_21": -0.1959378600846955,
     "fip_252": -0.09126984126984126,
-    "fip_126": -0.14285714285714285,
+    "fip_126": -0.15873015873015872,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 7.662469736712013,
-    "delta_momentum_21_63": 0.10101418656022931,
+    "atr14_percent": 7.644999985709425,
+    "delta_momentum_21_63": 0.07884659975076458,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.16085492125428869,
@@ -1675,6 +1675,12 @@
       "close": 6.929999828338623,
       "volume": 161790.0,
       "return": -0.053278734177165665
+    },
+    {
+      "date": "2026-10-26",
+      "close": 6.730000019073486,
+      "volume": 82316.0,
+      "return": -0.028860002051844802
     }
   ],
   "monthly_history": [
@@ -1837,14 +1843,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.07104560416865557,
-      "fip": -0.17647058823529413,
+      "momentum": -0.09785522993841844,
+      "fip": -0.2222222222222222,
       "positive": 7,
-      "negative": 10,
+      "negative": 11,
       "flat": 0,
-      "classified_returns": 17,
-      "sessions": 17,
-      "expected_sessions": 17,
+      "classified_returns": 18,
+      "sessions": 18,
+      "expected_sessions": 18,
       "session_gap": 0
     }
   ],
