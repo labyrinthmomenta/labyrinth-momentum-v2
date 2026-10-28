@@ -7,24 +7,24 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-27",
+    "viop_as_of": "2026-10-28",
     "first_trade_date": "1990-03-16"
   },
   "snapshot": {
-    "as_of": "2026-10-27",
+    "as_of": "2026-10-28",
     "observations": 252,
-    "momentum_12_1": -0.3193825252264686,
+    "momentum_12_1": -0.36581469648562204,
     "fip_12_1": -0.12121212121212122,
-    "momentum_252": -0.5152658557401106,
-    "momentum_126": -0.5152658557401106,
-    "momentum_63": -0.40505261872944043,
-    "momentum_21": -0.2878023820631699,
+    "momentum_252": -0.5035143964968541,
+    "momentum_126": -0.4705281298245849,
+    "momentum_63": -0.3495186359702487,
+    "momentum_21": -0.21712849422426017,
     "fip_252": -0.1388888888888889,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.416599038601613,
-    "delta_momentum_21_63": 0.11725023666627055,
+    "atr14_percent": 6.065752256626999,
+    "delta_momentum_21_63": 0.1323901417459885,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.23872256707288542,
@@ -1687,6 +1687,12 @@
       "close": 141.3000030517578,
       "volume": 29674.0,
       "return": -0.04397834821237301
+    },
+    {
+      "date": "2026-10-28",
+      "close": 155.39999389648438,
+      "volume": 23496.0,
+      "return": 0.09978761882660248
     }
   ],
   "monthly_history": [
@@ -1849,14 +1855,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.2590455935344984,
-      "fip": -0.3684210526315789,
-      "positive": 6,
+      "momentum": -0.1851075176542275,
+      "fip": -0.3,
+      "positive": 7,
       "negative": 13,
       "flat": 0,
-      "classified_returns": 19,
-      "sessions": 19,
-      "expected_sessions": 19,
+      "classified_returns": 20,
+      "sessions": 20,
+      "expected_sessions": 20,
       "session_gap": 0
     }
   ],
