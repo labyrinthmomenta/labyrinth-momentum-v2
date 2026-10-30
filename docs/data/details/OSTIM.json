@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "2012-05-10"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.5039156054166412,
+    "momentum_12_1": -0.5213635553653407,
     "fip_12_1": -0.17316017316017315,
-    "momentum_252": -0.5933734565986227,
-    "momentum_126": -0.5360823567785742,
-    "momentum_63": -0.3630573461203642,
-    "momentum_21": -0.180327888074596,
+    "momentum_252": -0.6031817247699905,
+    "momentum_126": -0.5372790887873451,
+    "momentum_63": -0.37820508705793643,
+    "momentum_21": -0.17094011607724813,
     "fip_252": -0.19444444444444445,
     "fip_126": -0.25396825396825395,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.006505324708883,
-    "delta_momentum_21_63": 0.18272945804576823,
+    "atr14_percent": 6.118156711584569,
+    "delta_momentum_21_63": 0.2072649709806883,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.23529413139668887,
@@ -1693,6 +1693,12 @@
       "close": 1.0,
       "volume": 734450.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-10-30",
+      "close": 0.9700000286102295,
+      "volume": 4599039.0,
+      "return": -0.029999971389770508
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.1452991139489037,
-      "fip": -0.4,
+      "momentum": -0.17094011607724813,
+      "fip": -0.42857142857142855,
       "positive": 5,
-      "negative": 13,
+      "negative": 14,
       "flat": 2,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

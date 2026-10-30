@@ -7,24 +7,24 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "1994-04-20"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.21174651158968572,
+    "momentum_12_1": -0.20376178172667347,
     "fip_12_1": -0.06060606060606061,
-    "momentum_252": -0.2596599509764217,
-    "momentum_126": -0.21475409233771903,
-    "momentum_63": -0.11786369921146211,
-    "momentum_21": -0.06078430364242848,
+    "momentum_252": -0.2931034250808868,
+    "momentum_126": -0.2570016307516121,
+    "momentum_63": -0.16481478717919051,
+    "momentum_21": -0.11220466602062129,
     "fip_252": -0.06746031746031746,
     "fip_126": -0.10317460317460317,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.030354714025679,
-    "delta_momentum_21_63": 0.05707939556903363,
+    "atr14_percent": 7.55115849276273,
+    "delta_momentum_21_63": 0.05261012115856922,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.14333894253597446,
@@ -1693,6 +1693,12 @@
       "close": 4.789999961853027,
       "volume": 2586666.0,
       "return": -0.028397539829686957
+    },
+    {
+      "date": "2026-10-30",
+      "close": 4.510000228881836,
+      "volume": 1874231.0,
+      "return": -0.05845505954093422
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.05708660752133676,
-      "fip": -0.1,
+      "momentum": -0.11220466602062129,
+      "fip": -0.14285714285714285,
       "positive": 9,
-      "negative": 11,
+      "negative": 12,
       "flat": 0,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

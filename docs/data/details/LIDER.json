@@ -7,24 +7,24 @@
     "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "2022-04-04"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.8851289833629421,
+    "momentum_12_1": -0.8878125026822092,
     "fip_12_1": 0.047619047619047616,
-    "momentum_252": -0.8798179075430861,
-    "momentum_126": -0.9394495421138486,
-    "momentum_63": -0.9186440657377171,
-    "momentum_21": 0.04623512505888816,
+    "momentum_252": -0.8823437467217448,
+    "momentum_126": -0.9406619375944393,
+    "momentum_63": -0.9141391052242303,
+    "momentum_21": 0.04874657240078406,
     "fip_252": 0.03968253968253968,
     "fip_126": -0.1349206349206349,
     "fip_63": -0.36507936507936506,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 12.574885915369622,
-    "delta_momentum_21_63": 0.9648791907966052,
+    "atr14_percent": 12.71779728423148,
+    "delta_momentum_21_63": 0.9628856776250143,
     "delta_fip_21_63": 0.4126984126984127,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.7793485056445559,
@@ -1693,6 +1693,12 @@
       "close": 7.920000076293945,
       "volume": 5417614.0,
       "return": -0.018587314027592505
+    },
+    {
+      "date": "2026-10-30",
+      "close": 7.53000020980835,
+      "volume": 11774294.0,
+      "return": -0.04924240691018922
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": 0.10306410385061948,
-      "fip": 0.0,
+      "momentum": 0.04874657240078406,
+      "fip": 0.047619047619047616,
       "positive": 10,
-      "negative": 10,
+      "negative": 11,
       "flat": 0,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

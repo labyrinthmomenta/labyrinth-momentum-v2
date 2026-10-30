@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "1986-01-24"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.5608108164708581,
+    "momentum_12_1": -0.566390043956736,
     "fip_12_1": -0.19480519480519481,
-    "momentum_252": -0.6587837752937145,
-    "momentum_126": -0.6036106529465316,
-    "momentum_63": -0.4841674963828082,
-    "momentum_21": -0.2230768937330978,
+    "momentum_252": -0.6597510329658043,
+    "momentum_126": -0.6156249997671691,
+    "momentum_63": -0.4912099237356421,
+    "momentum_21": -0.21531099022955325,
     "fip_252": -0.21428571428571427,
-    "fip_126": -0.2222222222222222,
+    "fip_126": -0.23809523809523808,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 7.125573128766607,
-    "delta_momentum_21_63": 0.2610906026497104,
+    "atr14_percent": 7.1253468151790305,
+    "delta_momentum_21_63": 0.27589893350608885,
     "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.415111956646963,
@@ -1693,6 +1693,12 @@
       "close": 5.050000190734863,
       "volume": 256405.0,
       "return": 0.014056259315918584
+    },
+    {
+      "date": "2026-10-30",
+      "close": 4.920000076293945,
+      "volume": 872638.0,
+      "return": -0.025742595946714353
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.19457731960174118,
-      "fip": -0.4,
+      "momentum": -0.21531099022955325,
+      "fip": -0.42857142857142855,
       "positive": 6,
-      "negative": 14,
+      "negative": 15,
       "flat": 0,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

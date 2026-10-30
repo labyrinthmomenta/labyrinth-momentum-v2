@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "2013-06-28"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.21923079857459438,
+    "momentum_12_1": -0.22168442254938747,
     "fip_12_1": -0.12121212121212122,
-    "momentum_252": -0.3980769377488359,
-    "momentum_126": -0.3210412088271263,
-    "momentum_63": -0.3484596452839809,
-    "momentum_21": -0.22906402922621982,
+    "momentum_252": -0.4191674905378523,
+    "momentum_126": -0.40828403257284895,
+    "momentum_63": -0.36842105263157887,
+    "momentum_21": -0.2537313574467115,
     "fip_252": -0.1388888888888889,
-    "fip_126": -0.16666666666666666,
+    "fip_126": -0.18253968253968253,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.501020739118873,
-    "delta_momentum_21_63": 0.11939561605776106,
+    "atr14_percent": 6.731583921530351,
+    "delta_momentum_21_63": 0.11468969518486738,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3056994869858213,
@@ -1693,6 +1693,12 @@
       "close": 31.299999237060547,
       "volume": 203880.0,
       "return": 0.005784010056973488
+    },
+    {
+      "date": "2026-10-30",
+      "close": 30.0,
+      "volume": 418618.0,
+      "return": -0.041533522963198455
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.22139306858132857,
-      "fip": -0.3,
+      "momentum": -0.2537313574467115,
+      "fip": -0.3333333333333333,
       "positive": 7,
-      "negative": 13,
+      "negative": 14,
       "flat": 0,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "2000-10-26"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.553879397999848,
+    "momentum_12_1": -0.5529594836278219,
     "fip_12_1": -0.1471861471861472,
-    "momentum_252": -0.6451313434385454,
-    "momentum_126": -0.4936709139088219,
-    "momentum_63": -0.5138889164836307,
-    "momentum_21": -0.20454546378171135,
+    "momentum_252": -0.6564174243939935,
+    "momentum_126": -0.4971962420240066,
+    "momentum_63": -0.5255731885318228,
+    "momentum_21": -0.2314285550798686,
     "fip_252": -0.1626984126984127,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.25396825396825395,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.869382293846958,
-    "delta_momentum_21_63": 0.3093434527019193,
+    "atr14_percent": 7.064404962712728,
+    "delta_momentum_21_63": 0.2941446334519542,
     "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.3530498893314692,
@@ -1693,6 +1693,12 @@
       "close": 2.799999952316284,
       "volume": 2729489.0,
       "return": -0.0070921919858044635
+    },
+    {
+      "date": "2026-10-30",
+      "close": 2.690000057220459,
+      "volume": 7020224.0,
+      "return": -0.03928567748896872
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.2000000136239185,
-      "fip": -0.3,
+      "momentum": -0.2314285550798686,
+      "fip": -0.3333333333333333,
       "positive": 7,
-      "negative": 13,
+      "negative": 14,
       "flat": 0,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

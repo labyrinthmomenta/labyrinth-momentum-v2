@@ -7,24 +7,24 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "2013-05-21"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": 0.04347826086956608,
+    "momentum_12_1": 0.04409171016509128,
     "fip_12_1": -0.03896103896103896,
-    "momentum_252": -0.20521736145019476,
-    "momentum_126": -0.3462088238480253,
-    "momentum_63": -0.4170918261841008,
-    "momentum_21": -0.23833330472310377,
+    "momentum_252": -0.2504409271934427,
+    "momentum_126": -0.3902438840843727,
+    "momentum_63": -0.4444444513701836,
+    "momentum_21": -0.2820946038465939,
     "fip_252": -0.007936507936507936,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.38095238095238093,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 5.525067921590675,
-    "delta_momentum_21_63": 0.17875852146099702,
+    "atr14_percent": 6.104946821323621,
+    "delta_momentum_21_63": 0.16234984752358972,
     "delta_fip_21_63": -0.1428571428571429,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.1912568391442645,
@@ -1693,6 +1693,12 @@
       "close": 4.570000171661377,
       "volume": 8941285.0,
       "return": -0.006521681215901576
+    },
+    {
+      "date": "2026-10-30",
+      "close": 4.25,
+      "volume": 26474629.0,
+      "return": -0.07002191677052916
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.22804052149230714,
-      "fip": -0.5,
+      "momentum": -0.2820946038465939,
+      "fip": -0.5238095238095238,
       "positive": 5,
-      "negative": 15,
+      "negative": 16,
       "flat": 0,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-29",
+    "viop_as_of": "2026-10-30",
     "first_trade_date": "1990-11-07"
   },
   "snapshot": {
-    "as_of": "2026-10-28",
+    "as_of": "2026-10-30",
     "observations": 252,
-    "momentum_12_1": -0.21118721461187184,
+    "momentum_12_1": -0.24855491329479762,
     "fip_12_1": -0.11688311688311688,
-    "momentum_252": -0.38184931506849273,
-    "momentum_126": -0.30754475703324746,
-    "momentum_63": -0.2940026075619291,
-    "momentum_21": -0.21635311143270586,
+    "momentum_252": -0.39710982658959504,
+    "momentum_126": -0.3046666666666664,
+    "momentum_63": -0.3138157894736837,
+    "momentum_21": -0.1976923076923075,
     "fip_252": -0.14285714285714285,
     "fip_126": -0.1746031746031746,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 6.302279012198141,
-    "delta_momentum_21_63": 0.07764949612922323,
+    "atr14_percent": 6.46690770220474,
+    "delta_momentum_21_63": 0.11612348178137621,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-09",
     "completed_month_momentum": -0.2053789731051343,
@@ -1693,6 +1693,12 @@
       "close": 1083.0,
       "volume": 5260.0,
       "return": 0.0055710306406684396
+    },
+    {
+      "date": "2026-10-30",
+      "close": 1043.0,
+      "volume": 10947.0,
+      "return": -0.03693444136657431
     }
   ],
   "monthly_history": [
@@ -1855,14 +1861,14 @@
     {
       "month": "2026-10",
       "is_current": true,
-      "momentum": -0.16692307692307673,
-      "fip": -0.4,
+      "momentum": -0.1976923076923075,
+      "fip": -0.42857142857142855,
       "positive": 5,
-      "negative": 13,
+      "negative": 14,
       "flat": 2,
-      "classified_returns": 20,
-      "sessions": 20,
-      "expected_sessions": 20,
+      "classified_returns": 21,
+      "sessions": 21,
+      "expected_sessions": 21,
       "session_gap": 0
     }
   ],
