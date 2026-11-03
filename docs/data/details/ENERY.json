@@ -7,29 +7,29 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2023-08-23"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-03",
     "observations": 252,
-    "momentum_12_1": 0.35450819231623876,
-    "fip_12_1": -0.03896103896103896,
-    "momentum_252": 0.36885239173891415,
-    "momentum_126": 0.49107138390595995,
-    "momentum_63": 0.5130237567510534,
-    "momentum_21": 0.010589968745885692,
-    "fip_252": -0.07142857142857142,
-    "fip_126": -0.25396825396825395,
-    "fip_63": -0.38095238095238093,
+    "momentum_12_1": 0.3961105122041031,
+    "fip_12_1": -0.047619047619047616,
+    "momentum_252": 0.40736943252378777,
+    "momentum_126": 0.544943886443743,
+    "momentum_63": 0.6233765721973654,
+    "momentum_21": 0.008064490755756548,
+    "fip_252": -0.07936507936507936,
+    "fip_126": -0.2698412698412698,
+    "fip_63": -0.4444444444444444,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 4.946016896429335,
-    "delta_momentum_21_63": -0.5024337880051677,
-    "delta_fip_21_63": -0.047619047619047616,
-    "completed_month": "2026-09",
-    "completed_month_momentum": 0.33805669169032226,
-    "completed_month_fip": -0.5909090909090909,
-    "completed_month_observations": 22
+    "atr14_percent": 4.546684158879158,
+    "delta_momentum_21_63": -0.6153120814416089,
+    "delta_fip_21_63": 0.015873015873015872,
+    "completed_month": "2026-10",
+    "completed_month_momentum": 0.010589968745885692,
+    "completed_month_fip": -0.42857142857142855,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1699,22 +1699,21 @@
       "close": 13.359999656677246,
       "volume": 34636221.0,
       "return": 0.004511237976085214
+    },
+    {
+      "date": "2026-11-02",
+      "close": 13.649999618530273,
+      "volume": 42375711.0,
+      "return": 0.021706584528846662
+    },
+    {
+      "date": "2026-11-03",
+      "close": 13.75,
+      "volume": 28900320.0,
+      "return": 0.007326035477244419
     }
   ],
   "monthly_history": [
-    {
-      "month": "2025-10",
-      "is_current": false,
-      "momentum": 0.024109066753703612,
-      "fip": 0.0,
-      "positive": 11,
-      "negative": 11,
-      "flat": 0,
-      "classified_returns": 22,
-      "sessions": 22,
-      "expected_sessions": 22,
-      "session_gap": 0
-    },
     {
       "month": "2025-11",
       "is_current": false,
@@ -1860,7 +1859,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": 0.010589968745885692,
       "fip": -0.42857142857142855,
       "positive": 15,
@@ -1869,6 +1868,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.029191643214439233,
+      "fip": -1.0,
+      "positive": 2,
+      "negative": 0,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

@@ -7,29 +7,29 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2006-05-26"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-03",
     "observations": 252,
-    "momentum_12_1": -0.6369565235419176,
+    "momentum_12_1": -0.6187500062088171,
     "fip_12_1": -0.19047619047619047,
-    "momentum_252": -0.7369565079928794,
-    "momentum_126": -0.7224770639693431,
-    "momentum_63": -0.5925925836730797,
-    "momentum_21": -0.2754490603345352,
-    "fip_252": -0.1865079365079365,
-    "fip_126": -0.20634920634920634,
+    "momentum_252": -0.7333333498901786,
+    "momentum_126": -0.6783919685287477,
+    "momentum_63": -0.5733333428700762,
+    "momentum_21": -0.3005464801243267,
+    "fip_252": -0.19444444444444445,
+    "fip_126": -0.19047619047619047,
     "fip_63": -0.20634920634920634,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 10.528045934043725,
-    "delta_momentum_21_63": 0.31714352333854445,
-    "delta_fip_21_63": 0.06349206349206349,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.47812502118758815,
-    "completed_month_fip": -0.5909090909090909,
-    "completed_month_observations": 22
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 10.275351346872984,
+    "delta_momentum_21_63": 0.2727868627457495,
+    "delta_fip_21_63": -0.031746031746031744,
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.2754490603345352,
+    "completed_month_fip": -0.14285714285714285,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1699,22 +1699,21 @@
       "close": 1.2100000381469727,
       "volume": 7165021.0,
       "return": -0.05468744906829559
+    },
+    {
+      "date": "2026-11-02",
+      "close": 1.2000000476837158,
+      "volume": 9290681.0,
+      "return": -0.00826445466776271
+    },
+    {
+      "date": "2026-11-03",
+      "close": 1.2799999713897705,
+      "volume": 3076005.0,
+      "return": 0.06666660043928618
     }
   ],
   "monthly_history": [
-    {
-      "month": "2025-10",
-      "is_current": false,
-      "momentum": 0.12149531669060298,
-      "fip": -0.18181818181818182,
-      "positive": 13,
-      "negative": 9,
-      "flat": 0,
-      "classified_returns": 22,
-      "sessions": 22,
-      "expected_sessions": 22,
-      "session_gap": 0
-    },
     {
       "month": "2025-11",
       "is_current": false,
@@ -1860,7 +1859,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.2754490603345352,
       "fip": -0.14285714285714285,
       "positive": 8,
@@ -1869,6 +1868,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.057851182674339086,
+      "fip": 0.0,
+      "positive": 1,
+      "negative": 1,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

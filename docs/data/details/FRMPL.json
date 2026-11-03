@@ -7,29 +7,29 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2026-01-15"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
-    "observations": 197,
+    "as_of": "2026-11-03",
+    "observations": 199,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.5109954008395642,
-    "momentum_63": -0.47903821411953096,
-    "momentum_21": -0.23736463290166088,
+    "momentum_126": -0.4764065714792428,
+    "momentum_63": -0.5017271551638469,
+    "momentum_21": -0.2864798308890939,
     "fip_252": null,
     "fip_126": -0.21428571428571427,
-    "fip_63": -0.3492063492063492,
+    "fip_63": -0.38095238095238093,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 7.666279311950655,
-    "delta_momentum_21_63": 0.24167358121787008,
-    "delta_fip_21_63": -0.07936507936507936,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.3202453716369521,
-    "completed_month_fip": -0.5454545454545454,
-    "completed_month_observations": 22
+    "atr14_percent": 7.394174805170664,
+    "delta_momentum_21_63": 0.21524732427475302,
+    "delta_fip_21_63": -0.047619047619047616,
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.23736463290166088,
+    "completed_month_fip": -0.42857142857142855,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1219,6 +1219,18 @@
       "close": 16.899999618530273,
       "volume": 1136621.0,
       "return": -0.0505617784890926
+    },
+    {
+      "date": "2026-11-02",
+      "close": 16.860000610351562,
+      "volume": 1210797.0,
+      "return": -0.002366805271099115
+    },
+    {
+      "date": "2026-11-03",
+      "close": 17.309999465942383,
+      "volume": 1156231.0,
+      "return": 0.026690322615678497
     }
   ],
   "monthly_history": [
@@ -1341,7 +1353,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.23736463290166088,
       "fip": -0.42857142857142855,
       "positive": 6,
@@ -1350,6 +1362,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.024260346548325318,
+      "fip": 0.0,
+      "positive": 1,
+      "negative": 1,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

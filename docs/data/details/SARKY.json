@@ -7,29 +7,29 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-03",
     "observations": 252,
-    "momentum_12_1": 0.3059601864351158,
-    "fip_12_1": 0.08225108225108226,
-    "momentum_252": -0.005960274855245307,
-    "momentum_126": -0.4257842165510586,
-    "momentum_63": -0.37249163122881446,
-    "momentum_21": -0.23884377527756906,
-    "fip_252": -0.10317460317460317,
-    "fip_126": -0.15873015873015872,
-    "fip_63": -0.20634920634920634,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.705489915087508,
-    "delta_momentum_21_63": 0.1336478559512454,
-    "delta_fip_21_63": -0.12698412698412698,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.2130885980203302,
-    "completed_month_fip": -0.36363636363636365,
-    "completed_month_observations": 22
+    "momentum_12_1": 0.3594770573699906,
+    "fip_12_1": 0.08658008658008658,
+    "momentum_252": 0.0941176184595931,
+    "momentum_126": -0.36734692553555004,
+    "momentum_63": -0.32281552442945605,
+    "momentum_21": -0.195192289176071,
+    "fip_252": 0.0992063492063492,
+    "fip_126": -0.14285714285714285,
+    "fip_63": -0.1746031746031746,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 5.783550496978898,
+    "delta_momentum_21_63": 0.12762323525338504,
+    "delta_fip_21_63": -0.06349206349206349,
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.23884377527756906,
+    "completed_month_fip": -0.3333333333333333,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1699,22 +1699,21 @@
       "close": 15.010000228881836,
       "volume": 1684920.0,
       "return": -0.04394901839273313
+    },
+    {
+      "date": "2026-11-02",
+      "close": 16.510000228881836,
+      "volume": 3801890.0,
+      "return": 0.09993337622432152
+    },
+    {
+      "date": "2026-11-03",
+      "close": 16.739999771118164,
+      "volume": 7918716.0,
+      "return": 0.013930923019248587
     }
   ],
   "monthly_history": [
-    {
-      "month": "2025-10",
-      "is_current": false,
-      "momentum": 0.01932045019526507,
-      "fip": -0.09090909090909091,
-      "positive": 11,
-      "negative": 9,
-      "flat": 2,
-      "classified_returns": 22,
-      "sessions": 22,
-      "expected_sessions": 22,
-      "session_gap": 0
-    },
     {
       "month": "2025-11",
       "is_current": false,
@@ -1860,7 +1859,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.23884377527756906,
       "fip": -0.3333333333333333,
       "positive": 7,
@@ -1869,6 +1868,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.11525646341480478,
+      "fip": -1.0,
+      "positive": 2,
+      "negative": 0,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

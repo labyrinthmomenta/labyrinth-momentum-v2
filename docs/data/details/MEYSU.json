@@ -7,29 +7,29 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2026-01-13"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
-    "observations": 199,
+    "as_of": "2026-11-03",
+    "observations": 201,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.6364588789026466,
-    "momentum_63": -0.363886328663272,
-    "momentum_21": -0.13788821207631252,
+    "momentum_126": -0.6239406663011589,
+    "momentum_63": -0.3320790377991458,
+    "momentum_21": -0.17728855034985902,
     "fip_252": null,
     "fip_126": -0.23015873015873015,
     "fip_63": -0.25396825396825395,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 7.43057010394905,
-    "delta_momentum_21_63": 0.22599811658695945,
+    "atr14_percent": 7.367791378558003,
+    "delta_momentum_21_63": 0.1547904874492868,
     "delta_fip_21_63": -0.2222222222222222,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.32916665077209506,
-    "completed_month_fip": -0.36363636363636365,
-    "completed_month_observations": 22
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.13788821207631252,
+    "completed_month_fip": -0.47619047619047616,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1231,6 +1231,18 @@
       "close": 6.940000057220459,
       "volume": 23723691.0,
       "return": -0.03744798096803614
+    },
+    {
+      "date": "2026-11-02",
+      "close": 6.829999923706055,
+      "volume": 6571080.0,
+      "return": -0.01585016319992083
+    },
+    {
+      "date": "2026-11-03",
+      "close": 7.099999904632568,
+      "volume": 6851826.0,
+      "return": 0.03953147641911059
     }
   ],
   "monthly_history": [
@@ -1353,7 +1365,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.13788821207631252,
       "fip": -0.47619047619047616,
       "positive": 5,
@@ -1362,6 +1374,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.02305473286641302,
+      "fip": 0.0,
+      "positive": 1,
+      "negative": 1,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

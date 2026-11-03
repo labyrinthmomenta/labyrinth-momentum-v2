@@ -7,29 +7,29 @@
     "industry": "TARIM VE HAYVANCILIK AVCILIK VE İLGİLİ HİZMET FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2011-05-13"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-03",
     "observations": 252,
-    "momentum_12_1": -0.3692250367897483,
+    "momentum_12_1": -0.3118255566950566,
     "fip_12_1": -0.23809523809523808,
-    "momentum_252": -0.5513283957142469,
-    "momentum_126": -0.5956703851086151,
-    "momentum_63": -0.4301181054320764,
-    "momentum_21": -0.28869782338491334,
+    "momentum_252": -0.5285013607919481,
+    "momentum_126": -0.5681341965673988,
+    "momentum_63": -0.4511545557088932,
+    "momentum_21": -0.31485592963364095,
     "fip_252": -0.23809523809523808,
-    "fip_126": -0.29365079365079366,
+    "fip_126": -0.2777777777777778,
     "fip_63": -0.3492063492063492,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 7.822727942550786,
-    "delta_momentum_21_63": 0.14142028204716306,
+    "atr14_percent": 7.759244476173846,
+    "delta_momentum_21_63": 0.13629862607525223,
     "delta_fip_21_63": 0.1111111111111111,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.24489790863109817,
-    "completed_month_fip": -0.5909090909090909,
-    "completed_month_observations": 22
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.28869782338491334,
+    "completed_month_fip": -0.23809523809523808,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1699,22 +1699,21 @@
       "close": 5.789999961853027,
       "volume": 1368451.0,
       "return": -0.0661290096814866
+    },
+    {
+      "date": "2026-11-02",
+      "close": 6.0,
+      "volume": 6442977.0,
+      "return": 0.03626943687919559
+    },
+    {
+      "date": "2026-11-03",
+      "close": 6.179999828338623,
+      "volume": 2158342.0,
+      "return": 0.029999971389770508
     }
   ],
   "monthly_history": [
-    {
-      "month": "2025-10",
-      "is_current": false,
-      "momentum": -0.04427080616975654,
-      "fip": -0.2727272727272727,
-      "positive": 8,
-      "negative": 14,
-      "flat": 0,
-      "classified_returns": 22,
-      "sessions": 22,
-      "expected_sessions": 22,
-      "session_gap": 0
-    },
     {
       "month": "2025-11",
       "is_current": false,
@@ -1860,7 +1859,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.28869782338491334,
       "fip": -0.23809523809523808,
       "positive": 8,
@@ -1869,6 +1868,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.06735749033766503,
+      "fip": -1.0,
+      "positive": 2,
+      "negative": 0,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

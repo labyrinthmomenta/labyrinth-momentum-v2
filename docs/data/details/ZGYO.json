@@ -7,29 +7,29 @@
     "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2026-01-16"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
-    "observations": 196,
+    "as_of": "2026-11-03",
+    "observations": 198,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.652815955861648,
-    "momentum_63": -0.703866437099507,
-    "momentum_21": -0.48732251477155475,
+    "momentum_126": -0.6431411415222332,
+    "momentum_63": -0.6811722662238694,
+    "momentum_21": -0.39528350473233465,
     "fip_252": null,
-    "fip_126": -0.2222222222222222,
-    "fip_63": -0.31746031746031744,
-    "fip_21": -0.6190476190476191,
-    "atr14_percent": 14.548436479088442,
-    "delta_momentum_21_63": 0.21654392232795228,
-    "delta_fip_21_63": -0.3015873015873016,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.2580888122664474,
-    "completed_month_fip": -0.2727272727272727,
-    "completed_month_observations": 22
+    "fip_126": -0.20634920634920634,
+    "fip_63": -0.25396825396825395,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 13.291981976178647,
+    "delta_momentum_21_63": 0.28588876149153475,
+    "delta_fip_21_63": -0.1746031746031746,
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.48732251477155475,
+    "completed_month_fip": -0.6190476190476191,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1213,6 +1213,18 @@
       "close": 10.109999656677246,
       "volume": 11087267.0,
       "return": -0.03897345848344036
+    },
+    {
+      "date": "2026-11-02",
+      "close": 10.40999984741211,
+      "volume": 15212706.0,
+      "return": 0.02967361037808991
+    },
+    {
+      "date": "2026-11-03",
+      "close": 10.770000457763672,
+      "volume": 9016655.0,
+      "return": 0.03458219170301491
     }
   ],
   "monthly_history": [
@@ -1335,7 +1347,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.48732251477155475,
       "fip": -0.6190476190476191,
       "positive": 4,
@@ -1344,6 +1356,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.06528198056372059,
+      "fip": -1.0,
+      "positive": 2,
+      "negative": 0,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

@@ -7,29 +7,29 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "2026-02-19"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
-    "observations": 172,
+    "as_of": "2026-11-03",
+    "observations": 174,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.7441549862800223,
-    "momentum_63": -0.7206418735923132,
-    "momentum_21": -0.32688929961505253,
+    "momentum_126": -0.7354166636312445,
+    "momentum_63": -0.7262931090590974,
+    "momentum_21": -0.3159784873681388,
     "fip_252": null,
     "fip_126": -0.15079365079365079,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 11.650363364777439,
-    "delta_momentum_21_63": 0.3937525739772607,
+    "atr14_percent": 11.249839968186622,
+    "delta_momentum_21_63": 0.41031462169095856,
     "delta_fip_21_63": 0.06349206349206349,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.6029309080590074,
-    "completed_month_fip": -0.36363636363636365,
-    "completed_month_observations": 22
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.32688929961505253,
+    "completed_month_fip": -0.14285714285714285,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1069,6 +1069,18 @@
       "close": 3.8299999237060547,
       "volume": 10436945.0,
       "return": -0.01794876152555125
+    },
+    {
+      "date": "2026-11-02",
+      "close": 3.6600000858306885,
+      "volume": 18496879.0,
+      "return": -0.04438638153049046
+    },
+    {
+      "date": "2026-11-03",
+      "close": 3.809999942779541,
+      "volume": 15360676.0,
+      "return": 0.04098356651125812
     }
   ],
   "monthly_history": [
@@ -1178,7 +1190,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.32688929961505253,
       "fip": -0.14285714285714285,
       "positive": 8,
@@ -1187,6 +1199,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": -0.005221927238881263,
+      "fip": 0.0,
+      "positive": 1,
+      "negative": 1,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],

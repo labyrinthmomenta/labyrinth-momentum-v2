@@ -7,29 +7,29 @@
     "industry": "TARIM VE HAYVANCILIK AVCILIK VE İLGİLİ HİZMET FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-10-30",
+    "viop_as_of": "2026-11-03",
     "first_trade_date": "1996-06-10"
   },
   "snapshot": {
-    "as_of": "2026-10-30",
+    "as_of": "2026-11-03",
     "observations": 252,
-    "momentum_12_1": -0.2130401482439397,
-    "fip_12_1": -0.09523809523809523,
-    "momentum_252": -0.5398028533155574,
-    "momentum_126": -0.4979321674895032,
-    "momentum_63": -0.42789817454505674,
-    "momentum_21": -0.41522156987102177,
-    "fip_252": -0.1388888888888889,
-    "fip_126": -0.1984126984126984,
+    "momentum_12_1": -0.1146953010517412,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.5340501728406537,
+    "momentum_126": -0.4565217408638831,
+    "momentum_63": -0.45101352058857214,
+    "momentum_21": -0.47368422678328215,
+    "fip_252": -0.13095238095238096,
+    "fip_126": -0.16666666666666666,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.6190476190476191,
-    "atr14_percent": 10.478373827638917,
-    "delta_momentum_21_63": 0.012676604674034975,
+    "atr14_percent": 9.791232960122496,
+    "delta_momentum_21_63": -0.02267070619471001,
     "delta_fip_21_63": -0.41269841269841273,
-    "completed_month": "2026-09",
-    "completed_month_momentum": -0.1915887857408759,
-    "completed_month_fip": -0.13636363636363635,
-    "completed_month_observations": 22
+    "completed_month": "2026-10",
+    "completed_month_momentum": -0.41522156987102177,
+    "completed_month_fip": -0.6190476190476191,
+    "completed_month_observations": 21
   },
   "daily": [
     {
@@ -1699,22 +1699,21 @@
       "close": 6.070000171661377,
       "volume": 1297660.0,
       "return": -0.05304207236260694
+    },
+    {
+      "date": "2026-11-02",
+      "close": 6.25,
+      "volume": 2362437.0,
+      "return": 0.0296540071249054
+    },
+    {
+      "date": "2026-11-03",
+      "close": 6.5,
+      "volume": 1460806.0,
+      "return": 0.040000000000000036
     }
   ],
   "monthly_history": [
-    {
-      "month": "2025-10",
-      "is_current": false,
-      "momentum": -0.36417504695998293,
-      "fip": -0.2727272727272727,
-      "positive": 8,
-      "negative": 14,
-      "flat": 0,
-      "classified_returns": 22,
-      "sessions": 22,
-      "expected_sessions": 22,
-      "session_gap": 0
-    },
     {
       "month": "2025-11",
       "is_current": false,
@@ -1860,7 +1859,7 @@
     },
     {
       "month": "2026-10",
-      "is_current": true,
+      "is_current": false,
       "momentum": -0.41522156987102177,
       "fip": -0.6190476190476191,
       "positive": 4,
@@ -1869,6 +1868,19 @@
       "classified_returns": 21,
       "sessions": 21,
       "expected_sessions": 21,
+      "session_gap": 0
+    },
+    {
+      "month": "2026-11",
+      "is_current": true,
+      "momentum": 0.07084016740990173,
+      "fip": -1.0,
+      "positive": 2,
+      "negative": 0,
+      "flat": 0,
+      "classified_returns": 2,
+      "sessions": 2,
+      "expected_sessions": 2,
       "session_gap": 0
     }
   ],
