@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.21646657325391383,
+    "momentum_12_1": -0.22950819672131229,
     "fip_12_1": 0.04329004329004329,
-    "momentum_252": -0.4943396435798141,
-    "momentum_126": -0.6069333496093748,
-    "momentum_63": -0.542236043799738,
-    "momentum_21": -0.35464099021259565,
+    "momentum_252": -0.4727868752401392,
+    "momentum_126": -0.5779527478956488,
+    "momentum_63": -0.5112461913320432,
+    "momentum_21": -0.31574466786486066,
     "fip_252": -0.003968253968253968,
     "fip_126": -0.16666666666666666,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 7.46676428363124,
-    "delta_momentum_21_63": 0.18759505358714235,
+    "atr14_percent": 6.95087675367674,
+    "delta_momentum_21_63": 0.19550152346718253,
     "delta_fip_21_63": -0.23809523809523814,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.35412930015510136,
@@ -1711,6 +1711,12 @@
       "close": 147.39999389648438,
       "volume": 401284.0,
       "return": 0.010973873876796603
+    },
+    {
+      "date": "2026-11-04",
+      "close": 160.8000030517578,
+      "volume": 587608.0,
+      "return": 0.09090915678520273
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.02432244717479093,
+      "momentum": 0.11744273712360664,
       "fip": -1.0,
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],

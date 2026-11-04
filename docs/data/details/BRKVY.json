@@ -7,24 +7,24 @@
     "industry": "VARLIK YÖNETİM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "2022-12-15"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.386035778117662,
+    "momentum_12_1": -0.44123821306616595,
     "fip_12_1": -0.10822510822510822,
-    "momentum_252": -0.7029428815020766,
-    "momentum_126": -0.7331259659351677,
-    "momentum_63": -0.659072850713667,
-    "momentum_21": -0.5161654247747807,
+    "momentum_252": -0.7030430395506838,
+    "momentum_126": -0.7330188751220703,
+    "momentum_63": -0.6290956998014356,
+    "momentum_21": -0.46854461526646873,
     "fip_252": -0.12698412698412698,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.1111111111111111,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 12.939797444244228,
-    "delta_momentum_21_63": 0.14290742593888628,
+    "atr14_percent": 11.574747718836614,
+    "delta_momentum_21_63": 0.16055108453496691,
     "delta_fip_21_63": -0.2222222222222222,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.5452991232146422,
@@ -1711,6 +1711,12 @@
       "close": 25.739999771118164,
       "volume": 110138.0,
       "return": 0.10000000815106258
+    },
+    {
+      "date": "2026-11-04",
+      "close": 28.299999237060547,
+      "volume": 60624.0,
+      "return": 0.09945607959231051
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.20958641637975006,
+      "momentum": 0.3298871392809921,
       "fip": -1.0,
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],

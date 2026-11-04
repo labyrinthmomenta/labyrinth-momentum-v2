@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "2000-08-11"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.23484844489312162,
-    "fip_12_1": -0.05194805194805195,
-    "momentum_252": -0.3318181952825927,
-    "momentum_126": -0.2846715531711713,
-    "momentum_63": -0.16635162963832306,
-    "momentum_21": -0.12673273646542638,
-    "fip_252": -0.06746031746031746,
+    "momentum_12_1": -0.22744504135251975,
+    "fip_12_1": -0.04329004329004329,
+    "momentum_252": -0.27899920155983227,
+    "momentum_126": -0.23614454822685094,
+    "momentum_63": -0.10283019937370519,
+    "momentum_21": -0.06673202939188838,
+    "fip_252": -0.05952380952380952,
     "fip_126": -0.12698412698412698,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 4.875040454566461,
-    "delta_momentum_21_63": 0.039618893172896685,
+    "atr14_percent": 4.7842284256711,
+    "delta_momentum_21_63": 0.03609816998181681,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.11451941882812555,
@@ -1711,6 +1711,12 @@
       "close": 8.819999694824219,
       "volume": 951775.0,
       "return": 0.007999965122767794
+    },
+    {
+      "date": "2026-11-04",
+      "close": 9.510000228881836,
+      "volume": 1243055.0,
+      "return": 0.0782313557745955
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.01847573328305807,
+      "momentum": 0.09815247072131705,
       "fip": -1.0,
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],

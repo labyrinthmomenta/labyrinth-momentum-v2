@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "1995-04-24"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.18228802390181886,
+    "momentum_12_1": -0.11464564144063238,
     "fip_12_1": 0.1038961038961039,
-    "momentum_252": -0.09865835851352844,
-    "momentum_126": -0.39274784074148983,
-    "momentum_63": -0.11415524815889688,
-    "momentum_21": 0.10227276575713184,
+    "momentum_252": -0.0458357262672453,
+    "momentum_126": -0.35033339141805686,
+    "momentum_63": -0.09170307495422103,
+    "momentum_21": 0.07772019701281296,
     "fip_252": 0.11904761904761904,
     "fip_126": -0.05555555555555555,
     "fip_63": 0.047619047619047616,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 6.867953986077834,
-    "delta_momentum_21_63": 0.21642801391602873,
+    "atr14_percent": 6.497589161440702,
+    "delta_momentum_21_63": 0.169423271967034,
     "delta_fip_21_63": -0.3333333333333333,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.28859056697697927,
@@ -1711,6 +1711,12 @@
       "close": 1.940000057220459,
       "volume": 25917920.0,
       "return": 0.0430107754301452
+    },
+    {
+      "date": "2026-11-04",
+      "close": 2.0799999237060547,
+      "volume": 22031192.0,
+      "return": 0.0721648775032413
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.010416719053562673,
-      "fip": 0.0,
-      "positive": 1,
+      "momentum": 0.08333331781129005,
+      "fip": -0.3333333333333333,
+      "positive": 2,
       "negative": 1,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "1996-11-18"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.47739726609015165,
+    "momentum_12_1": -0.44437085222734674,
     "fip_12_1": -0.17316017316017315,
-    "momentum_252": -0.5369862977906769,
-    "momentum_126": -0.6231884042562581,
-    "momentum_63": -0.5624595267096404,
-    "momentum_21": -0.11402357437878341,
+    "momentum_252": -0.536423852770878,
+    "momentum_126": -0.6138995960271179,
+    "momentum_63": -0.5492594899960914,
+    "momentum_21": -0.1656734548800105,
     "fip_252": -0.1865079365079365,
     "fip_126": -0.2698412698412698,
     "fip_63": -0.3968253968253968,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 8.669962329287717,
-    "delta_momentum_21_63": 0.448435952330857,
+    "atr14_percent": 8.284860347873165,
+    "delta_momentum_21_63": 0.3835860351160809,
     "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.1316146275785275,
@@ -1711,6 +1711,12 @@
       "close": 6.760000228881836,
       "volume": 290854.0,
       "return": 0.06793053876121169
+    },
+    {
+      "date": "2026-11-04",
+      "close": 7.0,
+      "volume": 369730.0,
+      "return": 0.03550292351955475
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.05625002002343504,
-      "fip": 0.0,
-      "positive": 1,
+      "momentum": 0.09374998370185517,
+      "fip": -0.3333333333333333,
+      "positive": 2,
       "negative": 1,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],

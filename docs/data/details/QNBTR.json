@@ -7,24 +7,24 @@
     "industry": "BANKALAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "1990-02-02"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.4856805229097446,
+    "momentum_12_1": -0.45787198212221536,
     "fip_12_1": -0.2943722943722944,
-    "momentum_252": -0.5025860839899121,
-    "momentum_126": -0.3805668016194329,
-    "momentum_63": -0.2035398483144567,
-    "momentum_21": -0.03286976642574391,
+    "momentum_252": -0.4784144103691782,
+    "momentum_126": -0.3217863277941895,
+    "momentum_63": -0.1721854433331106,
+    "momentum_21": -0.03789220916376579,
     "fip_252": -0.3055555555555556,
-    "fip_126": -0.3888888888888889,
+    "fip_126": -0.373015873015873,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 3.6226310192360027,
-    "delta_momentum_21_63": 0.1706700818887128,
+    "atr14_percent": 3.7782032926958564,
+    "delta_momentum_21_63": 0.1342932341693448,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.20390179446823253,
@@ -1711,6 +1711,12 @@
       "close": 153.0,
       "volume": 32504.0,
       "return": 0.09992806101058149
+    },
+    {
+      "date": "2026-11-04",
+      "close": 162.5,
+      "volume": 34244.0,
+      "return": 0.06209150326797386
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.20948616600790526,
+      "momentum": 0.2845849802371543,
       "fip": -1.0,
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],

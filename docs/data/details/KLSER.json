@@ -7,24 +7,24 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-03",
+    "viop_as_of": "2026-11-04",
     "first_trade_date": "2023-07-27"
   },
   "snapshot": {
-    "as_of": "2026-11-03",
+    "as_of": "2026-11-04",
     "observations": 252,
-    "momentum_12_1": -0.3908338846857816,
+    "momentum_12_1": -0.41040640737608347,
     "fip_12_1": -0.1471861471861472,
-    "momentum_252": -0.5751113950482636,
-    "momentum_126": -0.4950832174604636,
-    "momentum_63": -0.4559902403445727,
-    "momentum_21": -0.3025078147484096,
+    "momentum_252": -0.5732758666251215,
+    "momentum_126": -0.4673328434726526,
+    "momentum_63": -0.4388664279932668,
+    "momentum_21": -0.27624021238800545,
     "fip_252": -0.15476190476190477,
-    "fip_126": -0.1984126984126984,
+    "fip_126": -0.18253968253968253,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.1990392836484,
-    "delta_momentum_21_63": 0.1534824255961631,
+    "atr14_percent": 6.1010270419765495,
+    "delta_momentum_21_63": 0.16262621560526136,
     "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.3445651809975412,
@@ -1711,6 +1711,12 @@
       "close": 13.35,
       "volume": 1168186.0,
       "return": 0.09967047960939879
+    },
+    {
+      "date": "2026-11-04",
+      "close": 13.859999656677246,
+      "volume": 1632698.0,
+      "return": 0.038202221473951026
     }
   ],
   "monthly_history": [
@@ -1873,14 +1879,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.10696513561351106,
+      "momentum": 0.14925366288816067,
       "fip": -1.0,
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 2,
-      "sessions": 2,
-      "expected_sessions": 2,
+      "classified_returns": 3,
+      "sessions": 3,
+      "expected_sessions": 3,
       "session_gap": 0
     }
   ],
