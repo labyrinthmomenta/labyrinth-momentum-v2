@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-04",
+    "viop_as_of": "2026-11-05",
     "first_trade_date": "2007-02-23"
   },
   "snapshot": {
-    "as_of": "2026-11-04",
+    "as_of": "2026-11-05",
     "observations": 252,
-    "momentum_12_1": 0.020446096654274326,
+    "momentum_12_1": 0.020370370370371038,
     "fip_12_1": 0.0,
-    "momentum_252": 0.03624535315985078,
-    "momentum_126": 0.026703499079190562,
-    "momentum_63": 0.019195612431444742,
-    "momentum_21": 0.015482695810564495,
+    "momentum_252": 0.07777777777777839,
+    "momentum_126": 0.05434782608695765,
+    "momentum_63": 0.05626134301270436,
+    "momentum_21": 0.05626134301270436,
     "fip_252": -0.003968253968253968,
     "fip_126": -0.007936507936507936,
     "fip_63": -0.031746031746031744,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 4.059591200584625,
-    "delta_momentum_21_63": -0.0037129166208802467,
+    "atr14_percent": 4.083442223819047,
+    "delta_momentum_21_63": 0.0,
     "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.04306220095693747,
@@ -1717,6 +1717,12 @@
       "close": 278.75,
       "volume": 5023061.0,
       "return": 0.04303086997193639
+    },
+    {
+      "date": "2026-11-05",
+      "close": 291.0,
+      "volume": 7804503.0,
+      "return": 0.04394618834080721
     }
   ],
   "monthly_history": [
@@ -1879,14 +1885,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.11499999999999999,
+      "momentum": 0.16399999999999992,
       "fip": -1.0,
-      "positive": 3,
+      "positive": 4,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 3,
-      "sessions": 3,
-      "expected_sessions": 3,
+      "classified_returns": 4,
+      "sessions": 4,
+      "expected_sessions": 4,
       "session_gap": 0
     }
   ],

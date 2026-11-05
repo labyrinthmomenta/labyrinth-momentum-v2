@@ -7,24 +7,24 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-04",
+    "viop_as_of": "2026-11-05",
     "first_trade_date": "2007-05-04"
   },
   "snapshot": {
-    "as_of": "2026-11-04",
+    "as_of": "2026-11-05",
     "observations": 252,
-    "momentum_12_1": -0.3538050333123912,
+    "momentum_12_1": -0.3833333623752653,
     "fip_12_1": -0.11255411255411256,
-    "momentum_252": -0.4699599265785339,
-    "momentum_126": -0.5858111619394704,
-    "momentum_63": -0.37233199235914627,
-    "momentum_21": -0.1797520860639814,
+    "momentum_252": -0.5067901608130291,
+    "momentum_126": -0.5738666788736979,
+    "momentum_63": -0.372841450968339,
+    "momentum_21": -0.20020022311129504,
     "fip_252": -0.12301587301587301,
-    "fip_126": -0.20634920634920634,
+    "fip_126": -0.19047619047619047,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 7.681886347195009,
-    "delta_momentum_21_63": 0.19257990629516486,
+    "atr14_percent": 7.562348997508981,
+    "delta_momentum_21_63": 0.17264122785704394,
     "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.20410494244679123,
@@ -1717,6 +1717,12 @@
       "close": 7.940000057220459,
       "volume": 242547.0,
       "return": 0.06008014684293039
+    },
+    {
+      "date": "2026-11-05",
+      "close": 7.989999771118164,
+      "volume": 180475.0,
+      "return": 0.0062971931407276305
     }
   ],
   "monthly_history": [
@@ -1879,14 +1885,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1375358217082645,
+      "momentum": 0.1446991044820578,
       "fip": -1.0,
-      "positive": 3,
+      "positive": 4,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 3,
-      "sessions": 3,
-      "expected_sessions": 3,
+      "classified_returns": 4,
+      "sessions": 4,
+      "expected_sessions": 4,
       "session_gap": 0
     }
   ],

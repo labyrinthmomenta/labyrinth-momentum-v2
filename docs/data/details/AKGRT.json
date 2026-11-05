@@ -7,24 +7,24 @@
     "industry": "SİGORTA ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-04",
+    "viop_as_of": "2026-11-05",
     "first_trade_date": "1994-12-05"
   },
   "snapshot": {
-    "as_of": "2026-11-04",
+    "as_of": "2026-11-05",
     "observations": 252,
-    "momentum_12_1": -0.2674094213594225,
+    "momentum_12_1": -0.2769230865675515,
     "fip_12_1": -0.16017316017316016,
-    "momentum_252": -0.32729804468203305,
-    "momentum_126": -0.3139204616650697,
-    "momentum_63": -0.2603369420339101,
-    "momentum_21": -0.0817491038906647,
+    "momentum_252": -0.33146851104164843,
+    "momentum_126": -0.32770743740539976,
+    "momentum_63": -0.2566095898258517,
+    "momentum_21": -0.07543516251289206,
     "fip_252": -0.15476190476190477,
-    "fip_126": -0.2222222222222222,
+    "fip_126": -0.23809523809523808,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.09523809523809523,
-    "atr14_percent": 3.4850452102974097,
-    "delta_momentum_21_63": 0.17858783814324541,
+    "atr14_percent": 3.464225740731044,
+    "delta_momentum_21_63": 0.18117442731295963,
     "delta_fip_21_63": 0.14285714285714285,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.10567513654478944,
@@ -1717,6 +1717,12 @@
       "close": 4.829999923706055,
       "volume": 10759375.0,
       "return": 0.04094828937233741
+    },
+    {
+      "date": "2026-11-05",
+      "close": 4.78000020980835,
+      "volume": 8834558.0,
+      "return": -0.010351907802793603
     }
   ],
   "monthly_history": [
@@ -1879,14 +1885,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.0568927225992113,
-      "fip": -1.0,
+      "momentum": 0.045951866577420786,
+      "fip": -0.5,
       "positive": 3,
-      "negative": 0,
+      "negative": 1,
       "flat": 0,
-      "classified_returns": 3,
-      "sessions": 3,
-      "expected_sessions": 3,
+      "classified_returns": 4,
+      "sessions": 4,
+      "expected_sessions": 4,
       "session_gap": 0
     }
   ],
