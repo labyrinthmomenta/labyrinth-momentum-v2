@@ -7,24 +7,24 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-05",
+    "viop_as_of": "2026-11-06",
     "first_trade_date": "2021-11-12"
   },
   "snapshot": {
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "observations": 252,
-    "momentum_12_1": 1.0528088962674453,
+    "momentum_12_1": 1.2275756720799378,
     "fip_12_1": -0.06493506493506493,
-    "momentum_252": 1.220213336106538,
-    "momentum_126": 0.13860908090039548,
-    "momentum_63": 0.016702329048266407,
-    "momentum_21": 0.08154896451563443,
-    "fip_252": -0.06349206349206349,
+    "momentum_252": 1.1878963745234006,
+    "momentum_126": 0.1388088103750973,
+    "momentum_63": 0.02863339996779457,
+    "momentum_21": -0.017812771998667487,
+    "fip_252": -0.05555555555555555,
     "fip_126": 0.06349206349206349,
     "fip_63": 0.031746031746031744,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.784019276538689,
-    "delta_momentum_21_63": 0.06484663546736802,
+    "atr14_percent": 6.58457583165637,
+    "delta_momentum_21_63": -0.04644617196646206,
     "delta_fip_21_63": -0.07936507936507936,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.11730147576848027,
@@ -1723,6 +1723,12 @@
       "close": 47.47999954223633,
       "volume": 3541531.0,
       "return": 0.006358610324715075
+    },
+    {
+      "date": "2026-11-06",
+      "close": 47.41999816894531,
+      "volume": 1657033.0,
+      "return": -0.001263718910478051
     }
   ],
   "monthly_history": [
@@ -1885,14 +1891,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.1390752814402635,
-      "fip": -0.5,
+      "momentum": -0.1401632482876054,
+      "fip": -0.6,
       "positive": 1,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 4,
-      "sessions": 4,
-      "expected_sessions": 4,
+      "classified_returns": 5,
+      "sessions": 5,
+      "expected_sessions": 5,
       "session_gap": 0
     }
   ],

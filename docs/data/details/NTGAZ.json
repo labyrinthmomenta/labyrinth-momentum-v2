@@ -7,24 +7,24 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-05",
+    "viop_as_of": "2026-11-06",
     "first_trade_date": "2021-04-01"
   },
   "snapshot": {
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "observations": 252,
-    "momentum_12_1": -0.04385211602944383,
+    "momentum_12_1": -0.05638769355176587,
     "fip_12_1": -0.09090909090909091,
-    "momentum_252": -0.24591570322737932,
-    "momentum_126": -0.36861049380897815,
-    "momentum_63": -0.1826653465135335,
-    "momentum_21": -0.2113308940860008,
+    "momentum_252": -0.2555066497565225,
+    "momentum_126": -0.3288324299560689,
+    "momentum_63": -0.21028037758016838,
+    "momentum_21": -0.21101776104875336,
     "fip_252": -0.12301587301587301,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.47619047619047616,
-    "atr14_percent": 3.976616324639379,
-    "delta_momentum_21_63": -0.02866554757246731,
+    "atr14_percent": 4.145174520570747,
+    "delta_momentum_21_63": -0.0007373834685849845,
     "delta_fip_21_63": -0.25396825396825395,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.08820709965247131,
@@ -1723,6 +1723,12 @@
       "close": 8.770000457763672,
       "volume": 12940622.0,
       "return": -0.024471559394392384
+    },
+    {
+      "date": "2026-11-06",
+      "close": 8.449999809265137,
+      "volume": 12089778.0,
+      "return": -0.03648809940656883
     }
   ],
   "monthly_history": [
@@ -1885,14 +1891,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.07781280266122248,
+      "momentum": -0.11146166078918485,
       "fip": -1.0,
       "positive": 0,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 4,
-      "sessions": 4,
-      "expected_sessions": 4,
+      "classified_returns": 5,
+      "sessions": 5,
+      "expected_sessions": 5,
       "session_gap": 0
     }
   ],

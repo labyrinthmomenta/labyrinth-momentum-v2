@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-05",
+    "viop_as_of": "2026-11-06",
     "first_trade_date": "2006-05-12"
   },
   "snapshot": {
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "observations": 252,
-    "momentum_12_1": 0.5743048436778779,
+    "momentum_12_1": 0.5013648563157314,
     "fip_12_1": -0.07792207792207792,
-    "momentum_252": 0.3470757036342387,
-    "momentum_126": -0.12022540585561114,
-    "momentum_63": -0.21067415730337158,
-    "momentum_21": -0.14433617539585852,
+    "momentum_252": 0.33303000878942246,
+    "momentum_126": -0.1367118289066216,
+    "momentum_63": -0.18656304811118973,
+    "momentum_21": -0.11212121212121207,
     "fip_252": -0.05555555555555555,
     "fip_126": 0.007936507936507936,
     "fip_63": -0.031746031746031744,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 4.035338063261169,
-    "delta_momentum_21_63": 0.06633798190751306,
+    "atr14_percent": 4.110456156771095,
+    "delta_momentum_21_63": 0.07444183598997767,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.05616525042638898,
@@ -1723,6 +1723,12 @@
       "close": 70.25,
       "volume": 15218296.0,
       "return": -0.02226859440640605
+    },
+    {
+      "date": "2026-11-06",
+      "close": 73.25,
+      "volume": 11221389.0,
+      "return": 0.04270462633451966
     }
   ],
   "monthly_history": [
@@ -1885,14 +1891,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.038987668038461654,
-      "fip": -0.5,
-      "positive": 1,
+      "momentum": 0.002052004500821214,
+      "fip": 0.2,
+      "positive": 2,
       "negative": 3,
       "flat": 0,
-      "classified_returns": 4,
-      "sessions": 4,
-      "expected_sessions": 4,
+      "classified_returns": 5,
+      "sessions": 5,
+      "expected_sessions": 5,
       "session_gap": 0
     }
   ],

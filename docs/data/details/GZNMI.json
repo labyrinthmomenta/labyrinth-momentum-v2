@@ -7,24 +7,24 @@
     "industry": "SEYAHAT ACENTESİ, TUR OPERATÖRÜ VE DİĞER REZERVASYON HİZMETLERİ İLE İLGİLİ FAALİYETLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-05",
+    "viop_as_of": "2026-11-06",
     "first_trade_date": "2022-03-08"
   },
   "snapshot": {
-    "as_of": "2026-11-05",
+    "as_of": "2026-11-06",
     "observations": 252,
-    "momentum_12_1": -0.8969594594594593,
+    "momentum_12_1": -0.8992070471137629,
     "fip_12_1": -0.24675324675324675,
-    "momentum_252": -0.9340878370645883,
-    "momentum_126": -0.7305248643964719,
-    "momentum_63": -0.6764510700542277,
-    "momentum_21": -0.36032786134813655,
+    "momentum_252": -0.9330396475770923,
+    "momentum_126": -0.7333333333333333,
+    "momentum_63": -0.6774193631955685,
+    "momentum_21": -0.3356643445253127,
     "fip_252": -0.24603174603174602,
     "fip_126": -0.2857142857142857,
     "fip_63": -0.3492063492063492,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 10.826803872012949,
-    "delta_momentum_21_63": 0.3161232087060911,
+    "atr14_percent": 11.04512148099123,
+    "delta_momentum_21_63": 0.3417550186702558,
     "delta_fip_21_63": 0.1111111111111111,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.4885177478658964,
@@ -1723,6 +1723,12 @@
       "close": 19.510000228881836,
       "volume": 257827.0,
       "return": 0.09977453375884093
+    },
+    {
+      "date": "2026-11-06",
+      "close": 19.0,
+      "volume": 2028995.0,
+      "return": -0.026140452224436728
     }
   ],
   "monthly_history": [
@@ -1885,14 +1891,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.3272109171447095,
-      "fip": -0.5,
+      "momentum": 0.2925170235733374,
+      "fip": -0.2,
       "positive": 3,
-      "negative": 1,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 4,
-      "sessions": 4,
-      "expected_sessions": 4,
+      "classified_returns": 5,
+      "sessions": 5,
+      "expected_sessions": 5,
       "session_gap": 0
     }
   ],
