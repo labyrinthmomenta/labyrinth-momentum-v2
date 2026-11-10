@@ -7,24 +7,24 @@
     "industry": "GİRİŞİM SERMAYESİ YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2022-06-15"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.37829916944337993,
-    "fip_12_1": -0.06060606060606061,
-    "momentum_252": -0.5029325484491354,
-    "momentum_126": -0.63548386716363,
-    "momentum_63": -0.5375170340806514,
-    "momentum_21": -0.20047163021186432,
-    "fip_252": -0.07142857142857142,
+    "momentum_12_1": -0.3161876112514814,
+    "fip_12_1": -0.05194805194805195,
+    "momentum_252": -0.48865356554797534,
+    "momentum_126": -0.6357758515885412,
+    "momentum_63": -0.5432432491296915,
+    "momentum_21": -0.2522123862250186,
+    "fip_252": -0.06349206349206349,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 10.797319917699525,
-    "delta_momentum_21_63": 0.3370454038687871,
+    "atr14_percent": 9.788812692551268,
+    "delta_momentum_21_63": 0.29103086290467284,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.14058354749898927,
@@ -1729,6 +1729,18 @@
       "close": 3.390000104904175,
       "volume": 5073436.0,
       "return": -0.028653267724730536
+    },
+    {
+      "date": "2026-11-09",
+      "close": 3.4000000953674316,
+      "volume": 2946249.0,
+      "return": 0.0029498496028923515
+    },
+    {
+      "date": "2026-11-10",
+      "close": 3.38,
+      "volume": 2482231.0,
+      "return": -0.0058823808254248044
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.04629632559441821,
+      "momentum": 0.04320987347258476,
       "fip": 0.0,
-      "positive": 2,
-      "negative": 2,
+      "positive": 3,
+      "negative": 3,
       "flat": 1,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

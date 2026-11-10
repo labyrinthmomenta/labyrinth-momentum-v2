@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2014-11-20"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.16075948931586148,
-    "fip_12_1": -0.047619047619047616,
-    "momentum_252": -0.19873419654539504,
-    "momentum_126": -0.3193548608727631,
-    "momentum_63": -0.22235876453020598,
-    "momentum_21": -0.045248896765692215,
-    "fip_252": -0.05555555555555555,
-    "fip_126": -0.05555555555555555,
+    "momentum_12_1": -0.09567496829939248,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": -0.19397117853770462,
+    "momentum_126": -0.35194940481274906,
+    "momentum_63": -0.236972744439079,
+    "momentum_21": -0.10869566449295709,
+    "fip_252": -0.047619047619047616,
+    "fip_126": -0.07142857142857142,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.210050588217426,
-    "delta_momentum_21_63": 0.17710986776451376,
+    "atr14_percent": 4.457263763028118,
+    "delta_momentum_21_63": 0.12827707994612192,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.0017064422895636255,
@@ -1729,6 +1729,18 @@
       "close": 6.329999923706055,
       "volume": 6168107.0,
       "return": 0.0015822392045994338
+    },
+    {
+      "date": "2026-11-09",
+      "close": 6.46999979019165,
+      "volume": 4614347.0,
+      "return": 0.022116882807737825
+    },
+    {
+      "date": "2026-11-10",
+      "close": 6.15,
+      "volume": 7015916.0,
+      "return": -0.0494590109070423
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.0783645736141545,
-      "fip": -1.0,
-      "positive": 5,
-      "negative": 0,
+      "momentum": 0.04770019078360699,
+      "fip": -0.7142857142857143,
+      "positive": 6,
+      "negative": 1,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

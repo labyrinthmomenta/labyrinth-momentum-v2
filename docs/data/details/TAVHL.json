@@ -7,25 +7,25 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2007-02-23"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": 0.011948529411766273,
+    "momentum_12_1": 0.024231127679404052,
     "fip_12_1": 0.008658008658008658,
-    "momentum_252": 0.08272058823529593,
-    "momentum_126": 0.016393442622951948,
-    "momentum_63": 0.0777676120768529,
-    "momentum_21": 0.06993642143505885,
+    "momentum_252": 0.12581547064305743,
+    "momentum_126": 0.06338028169014231,
+    "momentum_63": 0.08243727598566397,
+    "momentum_21": 0.0991810737033667,
     "fip_252": -0.003968253968253968,
     "fip_126": -0.007936507936507936,
-    "fip_63": -0.06349206349206349,
+    "fip_63": -0.031746031746031744,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.995309710070808,
-    "delta_momentum_21_63": -0.00783119064179405,
-    "delta_fip_21_63": -0.07936507936507936,
+    "atr14_percent": 3.8885924111719246,
+    "delta_momentum_21_63": 0.016743797717702735,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.04306220095693747,
     "completed_month_fip": 0.047619047619047616,
@@ -1729,6 +1729,18 @@
       "close": 294.5,
       "volume": 3172985.0,
       "return": 0.012027491408934665
+    },
+    {
+      "date": "2026-11-09",
+      "close": 303.75,
+      "volume": 3127459.0,
+      "return": 0.03140916808149408
+    },
+    {
+      "date": "2026-11-10",
+      "close": 302.0,
+      "volume": 3304253.0,
+      "return": -0.0057613168724279795
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.17799999999999994,
-      "fip": -1.0,
-      "positive": 5,
-      "negative": 0,
+      "momentum": 0.20799999999999996,
+      "fip": -0.7142857142857143,
+      "positive": 6,
+      "negative": 1,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

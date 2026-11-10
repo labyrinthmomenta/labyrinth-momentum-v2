@@ -7,25 +7,25 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2015-08-03"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.5349206384047058,
+    "momentum_12_1": -0.527243572402988,
     "fip_12_1": -0.2510822510822511,
-    "momentum_252": -0.5555555765801212,
-    "momentum_126": -0.4766355136022037,
-    "momentum_63": -0.41544885707408363,
-    "momentum_21": -0.044368638730031495,
+    "momentum_252": -0.5448717781777919,
+    "momentum_126": -0.46313799234789055,
+    "momentum_63": -0.3957446563292428,
+    "momentum_21": -0.03728813559322064,
     "fip_252": -0.23412698412698413,
-    "fip_126": -0.30158730158730157,
-    "fip_63": -0.2698412698412698,
+    "fip_126": -0.2857142857142857,
+    "fip_63": -0.25396825396825395,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 8.27996439185438,
-    "delta_momentum_21_63": 0.37108021834405214,
-    "delta_fip_21_63": 0.2222222222222222,
+    "atr14_percent": 8.371800545101655,
+    "delta_momentum_21_63": 0.3584565207360222,
+    "delta_fip_21_63": 0.20634920634920634,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.11481479159435026,
     "completed_month_fip": -0.14285714285714285,
@@ -1729,6 +1729,18 @@
       "close": 2.799999952316284,
       "volume": 482411.0,
       "return": 0.018181800842285156
+    },
+    {
+      "date": "2026-11-09",
+      "close": 2.8499999046325684,
+      "volume": 831187.0,
+      "return": 0.017857126131349377
+    },
+    {
+      "date": "2026-11-10",
+      "close": 2.84,
+      "volume": 718467.0,
+      "return": -0.0035087385849782438
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.17154804578075455,
-      "fip": -0.6,
-      "positive": 4,
-      "negative": 1,
+      "momentum": 0.1882844666711292,
+      "fip": -0.42857142857142855,
+      "positive": 5,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

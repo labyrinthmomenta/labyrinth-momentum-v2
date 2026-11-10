@@ -7,25 +7,25 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.08945261639092539,
-    "fip_12_1": -0.008658008658008658,
-    "momentum_252": -0.054739634171031226,
-    "momentum_126": -0.2732249959324039,
-    "momentum_63": -0.0580931046680222,
-    "momentum_21": 0.03812320242171774,
+    "momentum_12_1": -0.07568296192708424,
+    "fip_12_1": 0.0,
+    "momentum_252": -0.05418718888670959,
+    "momentum_126": -0.2760925260566389,
+    "momentum_63": -0.07001317254828887,
+    "momentum_21": 0.023255844212490828,
     "fip_252": 0.003968253968253968,
     "fip_126": -0.07142857142857142,
     "fip_63": 0.06349206349206349,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.4024487076153256,
-    "delta_momentum_21_63": 0.09621630708973994,
-    "delta_fip_21_63": -0.20634920634920634,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 3.1828070067185306,
+    "delta_momentum_21_63": 0.0932690167607797,
+    "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.06525914589221715,
     "completed_month_fip": -0.047619047619047616,
@@ -1729,6 +1729,18 @@
       "close": 42.47999954223633,
       "volume": 3939419.0,
       "return": -0.00047059900620405326
+    },
+    {
+      "date": "2026-11-09",
+      "close": 42.68000030517578,
+      "volume": 4617360.0,
+      "return": 0.004708115939139779
+    },
+    {
+      "date": "2026-11-10",
+      "close": 42.24,
+      "volume": 4005696.0,
+      "return": -0.010309285427123616
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.09034908984806833,
-      "fip": -0.6,
-      "positive": 4,
-      "negative": 1,
+      "momentum": 0.08418893718184361,
+      "fip": -0.42857142857142855,
+      "positive": 5,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

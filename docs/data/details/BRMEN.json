@@ -7,25 +7,25 @@
     "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "1996-07-22"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.6385224120596107,
-    "fip_12_1": -0.10822510822510822,
-    "momentum_252": -0.7361477546002206,
-    "momentum_126": -0.1913746713872253,
-    "momentum_63": -0.6850393574647822,
-    "momentum_21": -0.27007301641259496,
-    "fip_252": -0.11904761904761904,
+    "momentum_12_1": -0.5601391643974245,
+    "fip_12_1": -0.09090909090909091,
+    "momentum_252": -0.6391650249912905,
+    "momentum_126": -0.19063547559906824,
+    "momentum_63": -0.574193529333457,
+    "momentum_21": -0.1796610523089801,
+    "fip_252": -0.10317460317460317,
     "fip_126": -0.07142857142857142,
-    "fip_63": -0.38095238095238093,
+    "fip_63": -0.31746031746031744,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 8.563573567950868,
-    "delta_momentum_21_63": 0.4149663410521872,
-    "delta_fip_21_63": 0.14285714285714285,
+    "atr14_percent": 7.299898527175581,
+    "delta_momentum_21_63": 0.3945324770244769,
+    "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.4618704874565749,
     "completed_month_fip": -0.3333333333333333,
@@ -1729,6 +1729,18 @@
       "close": 6.0,
       "volume": 532144.0,
       "return": 0.09890109122348911
+    },
+    {
+      "date": "2026-11-09",
+      "close": 6.599999904632568,
+      "volume": 197358.0,
+      "return": 0.09999998410542799
+    },
+    {
+      "date": "2026-11-10",
+      "close": 7.26,
+      "volume": 468776.0,
+      "return": 0.10000001589457219
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.6042780707755113,
+      "momentum": 0.9411764656383685,
       "fip": -1.0,
-      "positive": 5,
+      "positive": 7,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

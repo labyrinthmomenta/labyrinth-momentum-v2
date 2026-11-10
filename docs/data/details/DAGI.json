@@ -7,24 +7,24 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2011-06-01"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.29001205806923747,
+    "momentum_12_1": -0.30884179635192843,
     "fip_12_1": 0.03463203463203463,
-    "momentum_252": -0.2069795644015312,
-    "momentum_126": -0.10945945031630633,
-    "momentum_63": -0.33835340086866705,
-    "momentum_21": 0.11694916035039249,
+    "momentum_252": -0.2004981054184264,
+    "momentum_126": -0.04888888888888876,
+    "momentum_63": -0.33882595522366477,
+    "momentum_21": 0.1567567170029125,
     "fip_252": 0.047619047619047616,
-    "fip_126": 0.07142857142857142,
+    "fip_126": 0.05555555555555555,
     "fip_63": -0.047619047619047616,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 6.847447609865926,
-    "delta_momentum_21_63": 0.45530256121905954,
+    "atr14_percent": 6.560390846330229,
+    "delta_momentum_21_63": 0.49558267222657726,
     "delta_fip_21_63": -0.14285714285714285,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.10663988575096339,
@@ -1729,6 +1729,18 @@
       "close": 6.590000152587891,
       "volume": 2539357.0,
       "return": 0.012288774330780017
+    },
+    {
+      "date": "2026-11-09",
+      "close": 6.510000228881836,
+      "volume": 2312631.0,
+      "return": -0.012139593604506782
+    },
+    {
+      "date": "2026-11-10",
+      "close": 6.42,
+      "volume": 2461333.0,
+      "return": -0.013824919465063479
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.19818184592507104,
-      "fip": -1.0,
+      "momentum": 0.16727272727272724,
+      "fip": -0.42857142857142855,
       "positive": 5,
-      "negative": 0,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

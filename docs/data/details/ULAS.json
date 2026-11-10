@@ -7,24 +7,24 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2012-08-06"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.5723646472535161,
-    "fip_12_1": -0.19047619047619047,
-    "momentum_252": -0.6606837502801253,
-    "momentum_126": -0.5907216600933052,
-    "momentum_63": -0.4092261935735598,
-    "momentum_21": -0.2065290029446364,
-    "fip_252": -0.1865079365079365,
+    "momentum_12_1": -0.5136363867557414,
+    "fip_12_1": -0.17316017316017315,
+    "momentum_252": -0.6163636363636367,
+    "momentum_126": -0.5720081124863694,
+    "momentum_63": -0.4056337815274448,
+    "momentum_21": -0.21121491577599627,
+    "fip_252": -0.17063492063492064,
     "fip_126": -0.2857142857142857,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.7601826168059755,
-    "delta_momentum_21_63": 0.20269719062892344,
+    "atr14_percent": 7.644444179828354,
+    "delta_momentum_21_63": 0.1944188657514485,
     "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.21820915175728328,
@@ -1729,6 +1729,18 @@
       "close": 11.90999984741211,
       "volume": 57107.0,
       "return": 0.01621156792272571
+    },
+    {
+      "date": "2026-11-09",
+      "close": 12.210000038146973,
+      "volume": 203232.0,
+      "return": 0.025188933213970532
+    },
+    {
+      "date": "2026-11-10",
+      "close": 12.66,
+      "volume": 208678.0,
+      "return": 0.03685503361565279
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.14629446139202473,
+      "momentum": 0.2184792667630744,
       "fip": -1.0,
-      "positive": 5,
+      "positive": 7,
       "negative": 0,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

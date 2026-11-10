@@ -7,24 +7,24 @@
     "industry": "VARLIK YÖNETİM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2022-12-15"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.4262108435997589,
+    "momentum_12_1": -0.39079102321984116,
     "fip_12_1": -0.10822510822510822,
-    "momentum_252": -0.6100284761173429,
-    "momentum_126": -0.6667964728572582,
-    "momentum_63": -0.5567357179606429,
-    "momentum_21": -0.3203574526761598,
+    "momentum_252": -0.5950413077233068,
+    "momentum_126": -0.6794392523364483,
+    "momentum_63": -0.5383580270366015,
+    "momentum_21": -0.33527129817256796,
     "fip_252": -0.11904761904761904,
-    "fip_126": -0.1111111111111111,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.07936507936507936,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 9.735407434089078,
-    "delta_momentum_21_63": 0.23637826528448314,
+    "atr14_percent": 9.874102521732707,
+    "delta_momentum_21_63": 0.20308672886403356,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.5452991232146422,
@@ -1729,6 +1729,18 @@
       "close": 34.220001220703125,
       "volume": 419677.0,
       "return": 0.09961440545854727
+    },
+    {
+      "date": "2026-11-09",
+      "close": 34.099998474121094,
+      "volume": 2350468.0,
+      "return": -0.00350680135304704
+    },
+    {
+      "date": "2026-11-10",
+      "close": 34.3,
+      "volume": 1807402.0,
+      "return": 0.005865147648926872
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.6080827122424977,
-      "fip": -1.0,
-      "positive": 5,
-      "negative": 0,
+      "momentum": 0.611842053253566,
+      "fip": -0.7142857142857143,
+      "positive": 6,
+      "negative": 1,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

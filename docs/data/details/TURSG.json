@@ -7,25 +7,25 @@
     "industry": "SİGORTA ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "1994-11-28"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.15337423357751467,
-    "fip_12_1": -0.012987012987012988,
-    "momentum_252": -0.4861963321422412,
-    "momentum_126": -0.5254957603705503,
-    "momentum_63": -0.4690966822486373,
-    "momentum_21": -0.3931159572087023,
+    "momentum_12_1": -0.15606056785671052,
+    "fip_12_1": -0.004329004329004329,
+    "momentum_252": -0.48939393201588055,
+    "momentum_126": -0.5374056183134801,
+    "momentum_63": -0.46592709499843177,
+    "momentum_21": -0.39497308866422864,
     "fip_252": -0.023809523809523808,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.14285714285714285,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 9.087226864742052,
-    "delta_momentum_21_63": 0.07598072503993503,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 8.424776652968697,
+    "delta_momentum_21_63": 0.07095400633420312,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.3907407585649004,
     "completed_month_fip": -0.23809523809523808,
@@ -1729,6 +1729,18 @@
       "close": 3.3499999046325684,
       "volume": 149001065.0,
       "return": -0.05099152074109947
+    },
+    {
+      "date": "2026-11-09",
+      "close": 3.4600000381469727,
+      "volume": 165534678.0,
+      "return": 0.03283586168533614
+    },
+    {
+      "date": "2026-11-10",
+      "close": 3.37,
+      "volume": 187427145.0,
+      "return": -0.02601157143199706
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.01823706488608834,
-      "fip": -0.2,
-      "positive": 3,
-      "negative": 2,
+      "momentum": 0.024316121299258198,
+      "fip": -0.14285714285714285,
+      "positive": 4,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

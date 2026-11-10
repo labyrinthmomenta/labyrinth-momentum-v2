@@ -7,24 +7,24 @@
     "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2011-01-17"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.49216297941492404,
-    "fip_12_1": -0.03463203463203463,
-    "momentum_252": -0.5473354309385219,
-    "momentum_126": -0.5548705243009985,
-    "momentum_63": -0.36943232223031586,
-    "momentum_21": -0.10864204318943493,
-    "fip_252": -0.051587301587301584,
-    "fip_126": -0.14285714285714285,
+    "momentum_12_1": -0.4427339705490798,
+    "fip_12_1": -0.025974025974025976,
+    "momentum_252": -0.5258620622831545,
+    "momentum_126": -0.5361445889726988,
+    "momentum_63": -0.3474576376663201,
+    "momentum_21": -0.1491712886500216,
+    "fip_252": -0.04365079365079365,
+    "fip_126": -0.12698412698412698,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 8.291851264707617,
-    "delta_momentum_21_63": 0.2607902790408809,
+    "atr14_percent": 7.840942953813398,
+    "delta_momentum_21_63": 0.1982863490162985,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2298137065386634,
@@ -1729,6 +1729,18 @@
       "close": 7.21999979019165,
       "volume": 308772.0,
       "return": 0.06489669126363329
+    },
+    {
+      "date": "2026-11-09",
+      "close": 7.670000076293945,
+      "volume": 321888.0,
+      "return": 0.06232691124362888
+    },
+    {
+      "date": "2026-11-10",
+      "close": 7.7,
+      "volume": 755185.0,
+      "return": 0.003911332908428156
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.16451613101701246,
-      "fip": -0.2,
-      "positive": 3,
+      "momentum": 0.24193552207748437,
+      "fip": -0.42857142857142855,
+      "positive": 5,
       "negative": 2,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

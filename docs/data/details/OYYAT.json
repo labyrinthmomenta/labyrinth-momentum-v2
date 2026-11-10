@@ -7,25 +7,25 @@
     "industry": "ARACI KURUMLAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2021-06-10"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.5147778877880025,
-    "fip_12_1": -0.047619047619047616,
-    "momentum_252": -0.5789664792219703,
-    "momentum_126": -0.5782016415047941,
-    "momentum_63": -0.3170588437248686,
-    "momentum_21": -0.132287028596758,
+    "momentum_12_1": -0.47867298578199025,
+    "fip_12_1": -0.03896103896103896,
+    "momentum_252": -0.5484360189573455,
+    "momentum_126": -0.5605166113523842,
+    "momentum_63": -0.30715534438737446,
+    "momentum_21": -0.13381818181818184,
     "fip_252": -0.07142857142857142,
     "fip_126": -0.24603174603174602,
     "fip_63": -0.23809523809523808,
-    "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.593255714879335,
-    "delta_momentum_21_63": 0.18477181512811058,
-    "delta_fip_21_63": -0.09523809523809523,
+    "fip_21": -0.42857142857142855,
+    "atr14_percent": 6.349303929991176,
+    "delta_momentum_21_63": 0.17333716256919263,
+    "delta_fip_21_63": -0.19047619047619047,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.27431058100290406,
     "completed_month_fip": -0.6190476190476191,
@@ -1729,6 +1729,18 @@
       "close": 23.219999313354492,
       "volume": 287255.0,
       "return": 0.024713127524859102
+    },
+    {
+      "date": "2026-11-09",
+      "close": 24.399999618530273,
+      "volume": 856296.0,
+      "return": 0.05081827476614653
+    },
+    {
+      "date": "2026-11-10",
+      "close": 23.82,
+      "volume": 323835.0,
+      "return": -0.023770476540901253
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.16099996566772456,
-      "fip": -0.6,
-      "positive": 4,
-      "negative": 1,
+      "momentum": 0.19100000000000006,
+      "fip": -0.42857142857142855,
+      "positive": 5,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

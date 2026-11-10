@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2006-11-09"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.8297958087049973,
-    "fip_12_1": -0.1774891774891775,
-    "momentum_252": -0.9462923175990101,
-    "momentum_126": -0.9322831998995649,
-    "momentum_63": -0.9448703822679303,
-    "momentum_21": -0.6844514697766622,
-    "fip_252": -0.1984126984126984,
-    "fip_126": -0.25396825396825395,
+    "momentum_12_1": -0.8191780821917807,
+    "fip_12_1": -0.16883116883116883,
+    "momentum_252": -0.9338082191780821,
+    "momentum_126": -0.9151685393258426,
+    "momentum_63": -0.9388354430379746,
+    "momentum_21": -0.6339393939393939,
+    "fip_252": -0.19047619047619047,
+    "fip_126": -0.2222222222222222,
     "fip_63": -0.47619047619047616,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 33.25581057134937,
-    "delta_momentum_21_63": 0.26041891249126814,
+    "atr14_percent": 24.916254464149258,
+    "delta_momentum_21_63": 0.3048960490985807,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.7417663748108083,
@@ -1729,6 +1729,18 @@
       "close": 99.94999694824219,
       "volume": 168045.0,
       "return": 0.09955990396531278
+    },
+    {
+      "date": "2026-11-09",
+      "close": 109.9000015258789,
+      "volume": 66830.0,
+      "return": 0.09954982372624976
+    },
+    {
+      "date": "2026-11-10",
+      "close": 120.8,
+      "volume": 28416.0,
+      "return": 0.09918105844206382
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.11782882386523019,
-      "fip": -0.2,
-      "positive": 2,
+      "momentum": 0.06619591126415103,
+      "fip": -0.14285714285714285,
+      "positive": 4,
       "negative": 3,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

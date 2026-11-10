@@ -7,24 +7,24 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2013-02-05"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.4335664144453788,
-    "fip_12_1": -0.025974025974025976,
-    "momentum_252": -0.47902099930795305,
-    "momentum_126": -0.7596774255075764,
-    "momentum_63": -0.7741055211439837,
-    "momentum_21": -0.08024698044355483,
-    "fip_252": -0.05952380952380952,
+    "momentum_12_1": -0.47152775450621165,
+    "fip_12_1": -0.03463203463203463,
+    "momentum_252": -0.5020833201430468,
+    "momentum_126": -0.7610000000000003,
+    "momentum_63": -0.766144812926175,
+    "momentum_21": -0.05781867618853853,
+    "fip_252": -0.06746031746031746,
     "fip_126": -0.2222222222222222,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 8.473106272937516,
-    "delta_momentum_21_63": 0.6938585407004288,
+    "atr14_percent": 7.865158273605323,
+    "delta_momentum_21_63": 0.7083261367376364,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.03719602823967527,
@@ -1729,6 +1729,18 @@
       "close": 7.449999809265137,
       "volume": 50865.0,
       "return": -0.009308533489218451
+    },
+    {
+      "date": "2026-11-09",
+      "close": 7.25,
+      "volume": 131516.0,
+      "return": -0.026845612669198826
+    },
+    {
+      "date": "2026-11-10",
+      "close": 7.17,
+      "volume": 105828.0,
+      "return": -0.011034482758620734
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.027586180588294873,
-      "fip": 0.6,
+      "momentum": -0.011034482758620512,
+      "fip": -0.7142857142857143,
       "positive": 1,
-      "negative": 4,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

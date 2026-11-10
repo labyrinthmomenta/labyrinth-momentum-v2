@@ -7,25 +7,25 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2026-07-29"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
-    "observations": 71,
+    "as_of": "2026-11-10",
+    "observations": 73,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.09679942889725424,
-    "momentum_21": 0.04611204845010208,
+    "momentum_63": -0.13454267602608327,
+    "momentum_21": 0.028751112512918064,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.14285714285714285,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 6.5108340838635925,
-    "delta_momentum_21_63": 0.14291147734735632,
-    "delta_fip_21_63": 0.19047619047619047,
+    "fip_63": -0.20634920634920634,
+    "fip_21": 0.14285714285714285,
+    "atr14_percent": 6.137522759050109,
+    "delta_momentum_21_63": 0.16329378853900134,
+    "delta_fip_21_63": 0.3492063492063492,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.08576813165487873,
     "completed_month_fip": -0.3333333333333333,
@@ -463,6 +463,18 @@
       "close": 23.139999389648438,
       "volume": 6199699.0,
       "return": 0.01938319876302974
+    },
+    {
+      "date": "2026-11-09",
+      "close": 23.040000915527344,
+      "volume": 3463842.0,
+      "return": -0.004321455348258452
+    },
+    {
+      "date": "2026-11-10",
+      "close": 22.9,
+      "volume": 2582280.0,
+      "return": -0.006076428383863242
     }
   ],
   "monthly_history": [
@@ -521,14 +533,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.19278349714738297,
-      "fip": -1.0,
+      "momentum": 0.18041239434492717,
+      "fip": -0.42857142857142855,
       "positive": 5,
-      "negative": 0,
+      "negative": 2,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

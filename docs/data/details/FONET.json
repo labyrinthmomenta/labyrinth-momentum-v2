@@ -7,24 +7,24 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2017-05-04"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": 0.3793103499820234,
-    "fip_12_1": 0.05194805194805195,
-    "momentum_252": 0.2382445068435084,
-    "momentum_126": -0.2712177136380002,
-    "momentum_63": -0.213147397870172,
-    "momentum_21": -0.10227273589323382,
-    "fip_252": 0.05555555555555555,
-    "fip_126": -0.031746031746031744,
+    "momentum_12_1": 0.3966666857401544,
+    "fip_12_1": 0.04329004329004329,
+    "momentum_252": 0.32666666666666777,
+    "momentum_126": -0.33666666666666656,
+    "momentum_63": -0.22265623262501288,
+    "momentum_21": -0.05011934471422619,
+    "fip_252": 0.047619047619047616,
+    "fip_126": -0.047619047619047616,
     "fip_63": -0.07936507936507936,
     "fip_21": -0.09523809523809523,
-    "atr14_percent": 5.558391434654256,
-    "delta_momentum_21_63": 0.11087466197693818,
+    "atr14_percent": 5.670577230069045,
+    "delta_momentum_21_63": 0.1725368879107867,
     "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.1474201763500732,
@@ -1729,6 +1729,18 @@
       "close": 3.950000047683716,
       "volume": 29123377.0,
       "return": 0.01804121937581038
+    },
+    {
+      "date": "2026-11-09",
+      "close": 4.079999923706055,
+      "volume": 17122277.0,
+      "return": 0.03291136062101341
+    },
+    {
+      "date": "2026-11-10",
+      "close": 3.98,
+      "volume": 13458412.0,
+      "return": -0.02450978568039286
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1383285346155263,
-      "fip": -0.8,
-      "positive": 4,
-      "negative": 0,
+      "momentum": 0.1469740539437494,
+      "fip": -0.5714285714285714,
+      "positive": 5,
+      "negative": 1,
       "flat": 1,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

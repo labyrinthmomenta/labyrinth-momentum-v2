@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "1998-07-02"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
+    "as_of": "2026-11-10",
     "observations": 252,
-    "momentum_12_1": -0.773052240374183,
+    "momentum_12_1": -0.7752520549889842,
     "fip_12_1": -0.021645021645021644,
-    "momentum_252": -0.8907424359027702,
-    "momentum_126": -0.8907424359027702,
-    "momentum_63": -0.8907424359027702,
-    "momentum_21": -0.5185783535498676,
+    "momentum_252": -0.8875343705627046,
+    "momentum_126": -0.8875343705627046,
+    "momentum_63": -0.8875343705627046,
+    "momentum_21": -0.4995921789995317,
     "fip_252": -0.05555555555555555,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.42857142857142855,
-    "atr14_percent": 49.00002639949164,
-    "delta_momentum_21_63": 0.37216408235290266,
+    "atr14_percent": 42.76756557932838,
+    "delta_momentum_21_63": 0.3879421915631729,
     "delta_fip_21_63": -0.20634920634920634,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.8919340039881245,
@@ -1729,6 +1729,18 @@
       "close": 11.920000076293945,
       "volume": 6387818.0,
       "return": 0.010169481662661628
+    },
+    {
+      "date": "2026-11-09",
+      "close": 11.16,
+      "volume": 4446396.0,
+      "return": -0.06375839525415816
+    },
+    {
+      "date": "2026-11-10",
+      "close": 12.27,
+      "volume": 2474829.0,
+      "return": 0.09946236559139776
     }
   ],
   "monthly_history": [
@@ -1891,14 +1903,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.01102629994011406,
-      "fip": -0.2,
-      "positive": 3,
-      "negative": 2,
+      "momentum": 0.040712468193384144,
+      "fip": -0.14285714285714285,
+      "positive": 4,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

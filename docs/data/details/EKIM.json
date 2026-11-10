@@ -7,25 +7,25 @@
     "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2026-07-09"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
-    "observations": 84,
+    "as_of": "2026-11-10",
+    "observations": 86,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.12821979731881605,
-    "momentum_21": -0.0679314932671996,
+    "momentum_63": -0.07785467939493729,
+    "momentum_21": -0.17662204236965773,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.047619047619047616,
+    "fip_63": 0.0,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.560628140345095,
-    "delta_momentum_21_63": 0.06028830405161645,
-    "delta_fip_21_63": 0.0,
+    "atr14_percent": 7.48174029900201,
+    "delta_momentum_21_63": -0.09876736297472044,
+    "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.19475987188280697,
     "completed_month_fip": -0.047619047619047616,
@@ -541,6 +541,18 @@
       "close": 15.229999542236328,
       "volume": 5903886.0,
       "return": -0.018052913121439307
+    },
+    {
+      "date": "2026-11-09",
+      "close": 15.850000381469727,
+      "volume": 6128053.0,
+      "return": 0.0407091830511217
+    },
+    {
+      "date": "2026-11-10",
+      "close": 15.99,
+      "volume": 19132104.0,
+      "return": 0.008832783290904311
     }
   ],
   "monthly_history": [
@@ -599,14 +611,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.11330403526921784,
-      "fip": -0.6,
-      "positive": 4,
+      "momentum": 0.16885962304768642,
+      "fip": -0.7142857142857143,
+      "positive": 6,
       "negative": 1,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],

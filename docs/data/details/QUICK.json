@@ -7,25 +7,25 @@
     "industry": "SİGORTA ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-06",
+    "viop_as_of": "2026-11-10",
     "first_trade_date": "2026-08-06"
   },
   "snapshot": {
-    "as_of": "2026-11-06",
-    "observations": 65,
+    "as_of": "2026-11-10",
+    "observations": 67,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.4249510293552784,
-    "momentum_21": -0.14274582734508812,
+    "momentum_63": -0.4248041660877394,
+    "momentum_21": -0.10953919952262337,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.12698412698412698,
+    "fip_63": -0.14285714285714285,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.316976519161174,
-    "delta_momentum_21_63": 0.2822052020101903,
-    "delta_fip_21_63": 0.07936507936507936,
+    "atr14_percent": 6.173445008218827,
+    "delta_momentum_21_63": 0.31526496656511604,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.02302297772831563,
     "completed_month_fip": -0.047619047619047616,
@@ -427,6 +427,18 @@
       "close": 44.02000045776367,
       "volume": 1392000.0,
       "return": 0.047097989988506894
+    },
+    {
+      "date": "2026-11-09",
+      "close": 45.779998779296875,
+      "volume": 2399811.0,
+      "return": 0.03998178789711471
+    },
+    {
+      "date": "2026-11-10",
+      "close": 44.06,
+      "volume": 905007.0,
+      "return": -0.03757096603669441
     }
   ],
   "monthly_history": [
@@ -472,14 +484,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.12756146069288743,
-      "fip": -1.0,
-      "positive": 5,
-      "negative": 0,
+      "momentum": 0.12858603910729038,
+      "fip": -0.7142857142857143,
+      "positive": 6,
+      "negative": 1,
       "flat": 0,
-      "classified_returns": 5,
-      "sessions": 5,
-      "expected_sessions": 5,
+      "classified_returns": 7,
+      "sessions": 7,
+      "expected_sessions": 7,
       "session_gap": 0
     }
   ],
