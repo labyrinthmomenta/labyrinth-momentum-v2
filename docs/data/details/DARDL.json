@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "1994-08-22"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.52263377170627,
+    "momentum_12_1": -0.526970977139221,
     "fip_12_1": -0.14285714285714285,
-    "momentum_252": -0.6131687349069028,
-    "momentum_126": -0.6066945779327955,
-    "momentum_63": -0.4371257340383574,
-    "momentum_21": -0.18965514909639858,
+    "momentum_252": -0.614107894592875,
+    "momentum_126": -0.6025640849295917,
+    "momentum_63": -0.4397590205707116,
+    "momentum_21": -0.18421050980480713,
     "fip_252": -0.15873015873015872,
     "fip_126": -0.24603174603174602,
     "fip_63": -0.3333333333333333,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.00467161856978,
-    "delta_momentum_21_63": 0.24747058494195884,
+    "atr14_percent": 6.096550455838101,
+    "delta_momentum_21_63": 0.25554851076590446,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.17431197376345786,
@@ -1741,6 +1741,12 @@
       "close": 0.94,
       "volume": 18688056.0,
       "return": -0.06930692190516752
+    },
+    {
+      "date": "2026-11-11",
+      "close": 0.9300000071525574,
+      "volume": 14043596.0,
+      "return": -0.010638290263236816
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.04444447211277436,
-      "fip": -0.14285714285714285,
+      "momentum": 0.033333368654605566,
+      "fip": 0.0,
       "positive": 4,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

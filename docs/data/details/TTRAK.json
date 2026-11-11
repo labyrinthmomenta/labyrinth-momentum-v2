@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2004-06-11"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.29406474820143924,
+    "momentum_12_1": -0.2855178735105415,
     "fip_12_1": -0.03463203463203463,
-    "momentum_252": -0.3345323741007199,
-    "momentum_126": -0.1832229580573963,
-    "momentum_63": -0.10411622276029042,
-    "momentum_21": -0.057324840764330975,
+    "momentum_252": -0.3290559120073331,
+    "momentum_126": -0.18711826762909567,
+    "momentum_63": -0.10948905109488982,
+    "momentum_21": -0.06093649775497101,
     "fip_252": -0.051587301587301584,
     "fip_126": -0.11904761904761904,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.3616284506914758,
-    "delta_momentum_21_63": 0.04679138199595945,
+    "atr14_percent": 3.3361500464594442,
+    "delta_momentum_21_63": 0.048552553339918814,
     "delta_fip_21_63": -0.1111111111111111,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.1769041769041768,
@@ -1741,6 +1741,12 @@
       "close": 370.0,
       "volume": 87123.0,
       "return": -0.012016021361815787
+    },
+    {
+      "date": "2026-11-11",
+      "close": 366.0,
+      "volume": 64075.0,
+      "return": -0.010810810810810811
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.10447761194029859,
-      "fip": -0.42857142857142855,
+      "momentum": 0.092537313432836,
+      "fip": -0.25,
       "positive": 5,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

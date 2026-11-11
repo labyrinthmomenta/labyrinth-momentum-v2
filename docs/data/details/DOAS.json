@@ -7,24 +7,24 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2004-06-17"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.19408813418543125,
+    "momentum_12_1": -0.20369331011811376,
     "fip_12_1": -0.08658008658008658,
-    "momentum_252": -0.27607363195341794,
-    "momentum_126": -0.30177512500469905,
-    "momentum_63": -0.3323045057855455,
-    "momentum_21": -0.1017301038062276,
+    "momentum_252": -0.3027420223727828,
+    "momentum_126": -0.32502711617327407,
+    "momentum_63": -0.28595989413111056,
+    "momentum_21": -0.12438513139875851,
     "fip_252": -0.09126984126984126,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.414288104851917,
-    "delta_momentum_21_63": 0.2305744019793179,
+    "atr14_percent": 4.625470251581209,
+    "delta_momentum_21_63": 0.16157476273235205,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.03467406453409794,
@@ -1741,6 +1741,12 @@
       "close": 129.8,
       "volume": 2614671.0,
       "return": -0.06146061362396882
+    },
+    {
+      "date": "2026-11-11",
+      "close": 124.5999984741211,
+      "volume": 2142379.0,
+      "return": -0.04006164503758791
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.1300267918569198,
-      "fip": -0.14285714285714285,
+      "momentum": -0.1648793497137595,
+      "fip": -0.25,
       "positive": 3,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

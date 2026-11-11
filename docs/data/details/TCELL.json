@@ -7,24 +7,24 @@
     "industry": "TELEKOMÜNİKASYON",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2000-07-11"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": 0.017027879255895995,
+    "momentum_12_1": 0.008294484987771078,
     "fip_12_1": -0.004329004329004329,
-    "momentum_252": 0.00877191393948551,
-    "momentum_126": -0.18541666666666745,
-    "momentum_63": -0.06099902562150017,
-    "momentum_21": -0.008117737463058883,
+    "momentum_252": -0.01192321340457414,
+    "momentum_126": -0.2182116336436145,
+    "momentum_63": -0.07565466089042805,
+    "momentum_21": -0.020051382501205195,
     "fip_252": 0.0,
-    "fip_126": -0.015873015873015872,
+    "fip_126": -0.031746031746031744,
     "fip_63": 0.047619047619047616,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 3.232862248223439,
-    "delta_momentum_21_63": 0.052881288158441286,
+    "atr14_percent": 3.3377005076470136,
+    "delta_momentum_21_63": 0.055603278389222854,
     "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.06243496457094899,
@@ -1741,6 +1741,12 @@
       "close": 97.75,
       "volume": 41703178.0,
       "return": 0.06134638023329053
+    },
+    {
+      "date": "2026-11-11",
+      "close": 95.30000305175781,
+      "volume": 15813050.0,
+      "return": -0.02506390739889708
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.08490567875066213,
-      "fip": -0.42857142857142855,
+      "momentum": 0.05771370328191794,
+      "fip": -0.25,
       "positive": 5,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

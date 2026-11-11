@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2026-07-01"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
-    "observations": 92,
+    "as_of": "2026-11-11",
+    "observations": 93,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.5747663551401868,
-    "momentum_21": -0.21280275777536595,
+    "momentum_63": -0.5543478277258538,
+    "momentum_21": -0.2080772981574711,
     "fip_252": null,
     "fip_126": null,
     "fip_63": -0.31746031746031744,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 8.204317360504481,
-    "delta_momentum_21_63": 0.36196359736482087,
+    "atr14_percent": 8.10398136018841,
+    "delta_momentum_21_63": 0.34627052956838267,
     "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2036199095022624,
@@ -589,6 +589,12 @@
       "close": 45.5,
       "volume": 3857266.0,
       "return": -0.02276635184764153
+    },
+    {
+      "date": "2026-11-11",
+      "close": 45.099998474121094,
+      "volume": 5977516.0,
+      "return": -0.008791242327008897
     }
   ],
   "monthly_history": [
@@ -647,14 +653,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.03409090909090895,
-      "fip": -0.42857142857142855,
+      "momentum": 0.024999965320933848,
+      "fip": -0.25,
       "positive": 5,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

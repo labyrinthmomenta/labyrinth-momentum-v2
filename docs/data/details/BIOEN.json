@@ -7,24 +7,24 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2021-04-28"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.5499999955848422,
+    "momentum_12_1": -0.5471349137180331,
     "fip_12_1": -0.2077922077922078,
-    "momentum_252": -0.42824075083837376,
-    "momentum_126": -0.3952007858052169,
-    "momentum_63": -0.27395650594815846,
-    "momentum_21": 0.2705760967818498,
+    "momentum_252": -0.42097966329125946,
+    "momentum_126": -0.36812910836212254,
+    "momentum_63": -0.27780982954020206,
+    "momentum_21": 0.27857137643908714,
     "fip_252": -0.1865079365079365,
-    "fip_126": -0.1746031746031746,
+    "fip_126": -0.15873015873015872,
     "fip_63": -0.1746031746031746,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.858826086350388,
-    "delta_momentum_21_63": 0.5445326027300083,
+    "atr14_percent": 6.665058620921865,
+    "delta_momentum_21_63": 0.5563812059792892,
     "delta_fip_21_63": 0.12698412698412698,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.08045983795969336,
@@ -1741,6 +1741,12 @@
       "close": 12.35,
       "volume": 4997184.0,
       "return": -0.023715385579207493
+    },
+    {
+      "date": "2026-11-11",
+      "close": 12.529999732971191,
+      "volume": 5400134.0,
+      "return": 0.01457487716365935
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1875000435572418,
-      "fip": -0.42857142857142855,
-      "positive": 5,
+      "momentum": 0.2048077108239288,
+      "fip": -0.5,
+      "positive": 6,
       "negative": 2,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

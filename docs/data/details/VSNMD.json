@@ -7,24 +7,24 @@
     "industry": "DİĞER MADENCİLİK VE TAŞ OCAKÇILIĞI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2025-02-11"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.6607410411456665,
+    "momentum_12_1": -0.6667377741584961,
     "fip_12_1": -0.22510822510822512,
-    "momentum_252": -0.7477925154527895,
-    "momentum_126": -0.6437134896366388,
-    "momentum_63": -0.5751527362878723,
-    "momentum_21": -0.25659300081888214,
+    "momentum_252": -0.7477883118058615,
+    "momentum_126": -0.6392090383099418,
+    "momentum_63": -0.5747316068231427,
+    "momentum_21": -0.2432034937134222,
     "fip_252": -0.25,
     "fip_126": -0.3888888888888889,
     "fip_63": -0.5238095238095238,
     "fip_21": -0.5238095238095238,
-    "atr14_percent": 7.520245609990719,
-    "delta_momentum_21_63": 0.3185597354689902,
+    "atr14_percent": 7.570527821002421,
+    "delta_momentum_21_63": 0.3315281131097205,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.4048316101569247,
@@ -1741,6 +1741,12 @@
       "close": 20.86,
       "volume": 1361488.0,
       "return": -0.04574568080652408
+    },
+    {
+      "date": "2026-11-11",
+      "close": 20.600000381469727,
+      "volume": 1512787.0,
+      "return": -0.012464027733953609
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.28290281096967096,
-      "fip": -0.42857142857142855,
+      "momentum": 0.266912674753778,
+      "fip": -0.25,
       "positive": 5,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

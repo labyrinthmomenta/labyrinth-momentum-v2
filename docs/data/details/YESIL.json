@@ -7,24 +7,24 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2004-03-04"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.647727284016031,
+    "momentum_12_1": -0.6602316508130586,
     "fip_12_1": -0.1645021645021645,
-    "momentum_252": -0.7045454662857631,
-    "momentum_126": -0.524390239753871,
-    "momentum_63": -0.3500000258286786,
-    "momentum_21": -0.16129032903109564,
+    "momentum_252": -0.7027027002147704,
+    "momentum_126": -0.5217391465310952,
+    "momentum_63": -0.3529412236121734,
+    "momentum_21": -0.12500001693313778,
     "fip_252": -0.1746031746031746,
     "fip_126": -0.1984126984126984,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 5.531537765881073,
-    "delta_momentum_21_63": 0.18870969679758298,
+    "atr14_percent": 5.481428333989742,
+    "delta_momentum_21_63": 0.2279412066790356,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.15000000372528988,
@@ -1741,6 +1741,12 @@
       "close": 0.78,
       "volume": 8515339.0,
       "return": -0.025000014528631875
+    },
+    {
+      "date": "2026-11-11",
+      "close": 0.7699999809265137,
+      "volume": 5187757.0,
+      "return": -0.012820537273700472
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.14705881146411204,
-      "fip": -0.2857142857142857,
+      "momentum": 0.1323529012166098,
+      "fip": -0.125,
       "positive": 4,
-      "negative": 2,
+      "negative": 3,
       "flat": 1,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

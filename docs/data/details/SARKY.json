@@ -7,24 +7,24 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "1986-01-03"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": 0.29752609053684864,
+    "momentum_12_1": 0.24210522353153818,
     "fip_12_1": 0.09523809523809523,
-    "momentum_252": 0.074869815691879,
-    "momentum_126": -0.415782028793945,
-    "momentum_63": -0.3688837883677101,
-    "momentum_21": -0.1716006147921435,
+    "momentum_252": 0.07302629411881068,
+    "momentum_126": -0.4422024762786557,
+    "momentum_63": -0.3628906553552941,
+    "momentum_21": -0.13612287124274747,
     "fip_252": 0.10714285714285714,
-    "fip_126": -0.1746031746031746,
+    "fip_126": -0.19047619047619047,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.484903667232572,
-    "delta_momentum_21_63": 0.19728317357556657,
+    "atr14_percent": 5.352653893872417,
+    "delta_momentum_21_63": 0.2267677841125466,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.23884377527756906,
@@ -1741,6 +1741,12 @@
       "close": 16.51,
       "volume": 2429959.0,
       "return": -0.02133970487992909
+    },
+    {
+      "date": "2026-11-11",
+      "close": 16.309999465942383,
+      "volume": 2067442.0,
+      "return": -0.012113902729110726
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.09993336097569872,
-      "fip": -0.14285714285714285,
+      "momentum": 0.08660887523233529,
+      "fip": 0.0,
       "positive": 4,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

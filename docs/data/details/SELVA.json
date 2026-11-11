@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2021-06-25"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.4528301748867857,
+    "momentum_12_1": -0.4567307515962583,
     "fip_12_1": -0.1774891774891775,
-    "momentum_252": -0.5330188427161552,
-    "momentum_126": -0.6024096400769947,
-    "momentum_63": -0.4734042539835084,
-    "momentum_21": -0.14655169958024972,
+    "momentum_252": -0.5384615318485968,
+    "momentum_126": -0.6065573950699339,
+    "momentum_63": -0.4636871513960673,
+    "momentum_21": -0.1504424932802354,
     "fip_252": -0.19047619047619047,
     "fip_126": -0.2857142857142857,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 5.323893272393485,
-    "delta_momentum_21_63": 0.32685255440325867,
+    "atr14_percent": 5.3957224797385726,
+    "delta_momentum_21_63": 0.3132446581158319,
     "delta_fip_21_63": -0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.23893803722642382,
@@ -1741,6 +1741,12 @@
       "close": 0.99,
       "volume": 16821209.0,
       "return": -0.03883492475810357
+    },
+    {
+      "date": "2026-11-11",
+      "close": 0.9599999785423279,
+      "volume": 5724805.0,
+      "return": -0.030303051977446538
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1511627715494004,
-      "fip": -0.42857142857142855,
+      "momentum": 0.11627902624863751,
+      "fip": -0.25,
       "positive": 5,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],

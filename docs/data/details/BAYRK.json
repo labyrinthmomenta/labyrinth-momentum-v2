@@ -7,24 +7,24 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-10",
+    "viop_as_of": "2026-11-11",
     "first_trade_date": "2020-06-04"
   },
   "snapshot": {
-    "as_of": "2026-11-10",
+    "as_of": "2026-11-11",
     "observations": 252,
-    "momentum_12_1": -0.6163000927712257,
+    "momentum_12_1": -0.5867274913639937,
     "fip_12_1": -0.15151515151515152,
-    "momentum_252": -0.5902865463613629,
-    "momentum_126": -0.3811395077466836,
-    "momentum_63": -0.2588235294117647,
-    "momentum_21": 0.06779659290965778,
+    "momentum_252": -0.5664973526628474,
+    "momentum_126": -0.40119763214670323,
+    "momentum_63": -0.29078014504191385,
+    "momentum_21": 0.048951087426345685,
     "fip_252": -0.1349206349206349,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.12698412698412698,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.772645699986491,
-    "delta_momentum_21_63": 0.32662012232142246,
+    "atr14_percent": 7.127139140456775,
+    "delta_momentum_21_63": 0.33973123246825954,
     "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.08921933250244374,
@@ -1741,6 +1741,12 @@
       "close": 3.15,
       "volume": 4950061.0,
       "return": 0.022727298061006707
+    },
+    {
+      "date": "2026-11-11",
+      "close": 3.0,
+      "volume": 6302555.0,
+      "return": -0.04761904761904756
     }
   ],
   "monthly_history": [
@@ -1903,14 +1909,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.07508529973730838,
-      "fip": -0.14285714285714285,
+      "momentum": 0.023890761654579373,
+      "fip": 0.0,
       "positive": 4,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 7,
-      "sessions": 7,
-      "expected_sessions": 7,
+      "classified_returns": 8,
+      "sessions": 8,
+      "expected_sessions": 8,
       "session_gap": 0
     }
   ],
