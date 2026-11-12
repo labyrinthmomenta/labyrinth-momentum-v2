@@ -7,24 +7,24 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-11",
+    "viop_as_of": "2026-11-12",
     "first_trade_date": "2015-08-07"
   },
   "snapshot": {
-    "as_of": "2026-11-11",
+    "as_of": "2026-11-12",
     "observations": 252,
-    "momentum_12_1": 0.6845582375758217,
+    "momentum_12_1": 0.6937602453432825,
     "fip_12_1": 0.03896103896103896,
-    "momentum_252": 0.21387284766492942,
-    "momentum_126": -0.034165552250374986,
-    "momentum_63": -0.5219512195121951,
-    "momentum_21": -0.27941176470588247,
+    "momentum_252": 0.23973724315781797,
+    "momentum_126": 0.016150698505439598,
+    "momentum_63": -0.5535846267553584,
+    "momentum_21": -0.26805623962052905,
     "fip_252": 0.047619047619047616,
-    "fip_126": -0.047619047619047616,
+    "fip_126": 0.031746031746031744,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 10.48827305476578,
-    "delta_momentum_21_63": 0.24253945480631267,
+    "atr14_percent": 10.124451470645432,
+    "delta_momentum_21_63": 0.2855283871348293,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.3215202456390781,
@@ -1747,6 +1747,12 @@
       "close": 147.0,
       "volume": 927217.0,
       "return": -0.041720990873533315
+    },
+    {
+      "date": "2026-11-12",
+      "close": 151.0,
+      "volume": 1478865.0,
+      "return": 0.027210884353741527
     }
   ],
   "monthly_history": [
@@ -1909,14 +1915,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.11279328696479007,
-      "fip": -0.25,
-      "positive": 5,
+      "momentum": 0.1430733764060088,
+      "fip": -0.3333333333333333,
+      "positive": 6,
       "negative": 3,
       "flat": 0,
-      "classified_returns": 8,
-      "sessions": 8,
-      "expected_sessions": 8,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
       "session_gap": 0
     }
   ],

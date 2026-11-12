@@ -7,24 +7,24 @@
     "industry": "HAM PETROL VE DOĞAL GAZ ÇIKARTILMASI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-11",
+    "viop_as_of": "2026-11-12",
     "first_trade_date": "2000-06-30"
   },
   "snapshot": {
-    "as_of": "2026-11-11",
+    "as_of": "2026-11-12",
     "observations": 252,
-    "momentum_12_1": 0.39082812087132646,
+    "momentum_12_1": 0.35515318824733355,
     "fip_12_1": -0.05194805194805195,
-    "momentum_252": 0.060917135692508895,
-    "momentum_126": -0.1910229902797691,
-    "momentum_63": -0.20103092783505205,
-    "momentum_21": -0.23720471295341305,
+    "momentum_252": 0.052228410036373685,
+    "momentum_126": -0.2089004916046302,
+    "momentum_63": -0.20431800442352221,
+    "momentum_21": -0.22353545033734812,
     "fip_252": -0.027777777777777776,
     "fip_126": -0.07936507936507936,
     "fip_63": -0.20634920634920634,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.673517636408247,
-    "delta_momentum_21_63": -0.036173785118361,
+    "atr14_percent": 5.593333442018351,
+    "delta_momentum_21_63": -0.019217445913825904,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2879499104172959,
@@ -1747,6 +1747,12 @@
       "close": 77.5,
       "volume": 1596787.0,
       "return": -0.003215434083601254
+    },
+    {
+      "date": "2026-11-12",
+      "close": 75.55000305175781,
+      "volume": 1143210.0,
+      "return": -0.025161250945060498
     }
   ],
   "monthly_history": [
@@ -1909,14 +1915,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1355311355311355,
-      "fip": -0.5,
+      "momentum": 0.10695975167410698,
+      "fip": -0.3333333333333333,
       "positive": 6,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 8,
-      "sessions": 8,
-      "expected_sessions": 8,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
       "session_gap": 0
     }
   ],

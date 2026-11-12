@@ -7,24 +7,24 @@
     "industry": "METAL CEVHERİ MADENCİLİĞİ",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-11",
+    "viop_as_of": "2026-11-12",
     "first_trade_date": "2003-02-20"
   },
   "snapshot": {
-    "as_of": "2026-11-11",
+    "as_of": "2026-11-12",
     "observations": 252,
-    "momentum_12_1": 0.5002769406812682,
+    "momentum_12_1": 0.5300113412717049,
     "fip_12_1": -0.13852813852813853,
-    "momentum_252": 0.2409972299168981,
-    "momentum_126": -0.1284046692606996,
-    "momentum_63": -0.150227637278448,
-    "momentum_21": -0.1728212330229062,
+    "momentum_252": 0.22650055842327443,
+    "momentum_126": -0.1585081148423676,
+    "momentum_63": -0.14454972861713,
+    "momentum_21": -0.19837159023681505,
     "fip_252": -0.11507936507936507,
-    "fip_126": 0.07936507936507936,
+    "fip_126": 0.06349206349206349,
     "fip_63": 0.015873015873015872,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.757217307109057,
-    "delta_momentum_21_63": -0.022593595744458184,
+    "atr14_percent": 5.792447007593468,
+    "delta_momentum_21_63": -0.05382186161968505,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2997021525344873,
@@ -1747,6 +1747,12 @@
       "close": 112.0,
       "volume": 3941065.0,
       "return": -0.0017825311942959443
+    },
+    {
+      "date": "2026-11-12",
+      "close": 108.30000305175781,
+      "volume": 5650977.0,
+      "return": -0.033035687037876627
     }
   ],
   "monthly_history": [
@@ -1909,14 +1915,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.19085588905684459,
-      "fip": -0.5,
+      "momentum": 0.15151514659875032,
+      "fip": -0.3333333333333333,
       "positive": 6,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 8,
-      "sessions": 8,
-      "expected_sessions": 8,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
       "session_gap": 0
     }
   ],

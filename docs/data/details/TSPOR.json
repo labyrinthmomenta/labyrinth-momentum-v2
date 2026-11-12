@@ -7,23 +7,23 @@
     "industry": "SPOR FAALİYETLERİ EĞLENCE VE OYUN FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-11",
+    "viop_as_of": "2026-11-12",
     "first_trade_date": "2005-04-15"
   },
   "snapshot": {
-    "as_of": "2026-11-11",
+    "as_of": "2026-11-12",
     "observations": 252,
-    "momentum_12_1": -0.36923075159625873,
-    "fip_12_1": -0.08225108225108226,
-    "momentum_252": -0.43076920255401396,
-    "momentum_126": -0.27450978100551837,
+    "momentum_12_1": -0.3543307045963725,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.4173228183854898,
+    "momentum_126": -0.2815533688430427,
     "momentum_63": -0.27450978100551804,
     "momentum_21": -0.09756095610793902,
-    "fip_252": -0.0992063492063492,
-    "fip_126": -0.10317460317460317,
+    "fip_252": -0.09523809523809523,
+    "fip_126": -0.1111111111111111,
     "fip_63": -0.15873015873015872,
     "fip_21": -0.2857142857142857,
-    "atr14_percent": 4.230306728012161,
+    "atr14_percent": 4.121191963504358,
     "delta_momentum_21_63": 0.17694882489757902,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-10",
@@ -1747,6 +1747,12 @@
       "close": 0.7400000095367432,
       "volume": 69218457.0,
       "return": -0.013333320617675781
+    },
+    {
+      "date": "2026-11-12",
+      "close": 0.7400000095367432,
+      "volume": 131743966.0,
+      "return": 0.0
     }
   ],
   "monthly_history": [
@@ -1913,10 +1919,10 @@
       "fip": 0.0,
       "positive": 3,
       "negative": 3,
-      "flat": 2,
-      "classified_returns": 8,
-      "sessions": 8,
-      "expected_sessions": 8,
+      "flat": 3,
+      "classified_returns": 9,
+      "sessions": 9,
+      "expected_sessions": 9,
       "session_gap": 0
     }
   ],
