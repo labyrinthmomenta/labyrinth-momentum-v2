@@ -7,24 +7,24 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "1999-01-26"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.08982041228423732,
+    "momentum_12_1": -0.07326000714731673,
     "fip_12_1": -0.08658008658008658,
-    "momentum_252": -0.10179644822005407,
-    "momentum_126": -0.2454728051697972,
-    "momentum_63": -0.1258741181013382,
-    "momentum_21": -0.013157882353605155,
+    "momentum_252": -0.09157503804508504,
+    "momentum_126": -0.24467007420457276,
+    "momentum_63": -0.11004780349745236,
+    "momentum_21": -0.019762858017371876,
     "fip_252": -0.09126984126984126,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.860664862371342,
-    "delta_momentum_21_63": 0.11271623574773304,
+    "atr14_percent": 5.697146679301632,
+    "delta_momentum_21_63": 0.09028494548008048,
     "delta_fip_21_63": 0.0,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.04155495190272673,
@@ -1753,6 +1753,12 @@
       "close": 7.5,
       "volume": 121987.0,
       "return": 0.014884998038128039
+    },
+    {
+      "date": "2026-11-13",
+      "close": 7.440000057220459,
+      "volume": 107598.0,
+      "return": -0.007999992370605447
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.048951034960032835,
-      "fip": -0.1111111111111111,
+      "momentum": 0.04055943468321388,
+      "fip": 0.0,
       "positive": 5,
-      "negative": 4,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

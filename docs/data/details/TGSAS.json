@@ -7,24 +7,24 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "2012-06-07"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.4506614946043266,
+    "momentum_12_1": -0.4334580623083779,
     "fip_12_1": -0.10822510822510822,
-    "momentum_252": -0.39525909239642887,
-    "momentum_126": -0.33109757958388886,
-    "momentum_63": -0.4515000152587889,
-    "momentum_21": 0.10085293796762618,
+    "momentum_252": -0.38802781258782326,
+    "momentum_126": -0.3056397559852114,
+    "momentum_63": -0.46620046620046607,
+    "momentum_21": 0.08018867924528261,
     "fip_252": -0.09523809523809523,
     "fip_126": 0.0,
     "fip_63": -0.09523809523809523,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 9.444278494928241,
-    "delta_momentum_21_63": 0.5523529532264151,
+    "atr14_percent": 8.919828745622958,
+    "delta_momentum_21_63": 0.5463891454457487,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.10120610047516676,
@@ -1753,6 +1753,12 @@
       "close": 109.69999694824219,
       "volume": 875959.0,
       "return": -0.0072398466222426405
+    },
+    {
+      "date": "2026-11-13",
+      "close": 114.5,
+      "volume": 790264.0,
+      "return": 0.04375572639279568
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.04476187569754497,
-      "fip": 0.1111111111111111,
-      "positive": 4,
+      "momentum": 0.09047619047619082,
+      "fip": 0.0,
+      "positive": 5,
       "negative": 5,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

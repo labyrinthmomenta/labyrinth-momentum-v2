@@ -7,23 +7,23 @@
     "industry": "PERAKENDE TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "2026-08-18"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
-    "observations": 61,
+    "as_of": "2026-11-13",
+    "observations": 62,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
     "momentum_63": null,
-    "momentum_21": -0.08210099746257471,
+    "momentum_21": 0.053191489361701816,
     "fip_252": null,
     "fip_126": null,
     "fip_63": null,
-    "fip_21": 0.09523809523809523,
-    "atr14_percent": 11.029949126194062,
+    "fip_21": -0.19047619047619047,
+    "atr14_percent": 9.960346664969014,
     "delta_momentum_21_63": null,
     "delta_fip_21_63": null,
     "completed_month": "2026-10",
@@ -403,6 +403,12 @@
       "close": 90.0,
       "volume": 804990.0,
       "return": 0.09957240901422537
+    },
+    {
+      "date": "2026-11-13",
+      "close": 99.0,
+      "volume": 441246.0,
+      "return": 0.10000000000000009
     }
   ],
   "monthly_history": [
@@ -448,14 +454,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.016949152542373058,
-      "fip": 0.0,
-      "positive": 4,
+      "momentum": 0.11864406779661052,
+      "fip": -0.1,
+      "positive": 5,
       "negative": 4,
       "flat": 1,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

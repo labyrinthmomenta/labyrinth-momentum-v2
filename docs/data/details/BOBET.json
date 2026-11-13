@@ -7,24 +7,24 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "2021-06-03"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.1921024264548652,
+    "momentum_12_1": -0.22489312173581788,
     "fip_12_1": 0.0,
-    "momentum_252": -0.14087510255561309,
-    "momentum_126": -0.1752049178325551,
-    "momentum_63": -0.18439713433908722,
-    "momentum_21": 0.06340819130630759,
+    "momentum_252": -0.14262821443530838,
+    "momentum_126": -0.1735324833158557,
+    "momentum_63": -0.1618799187061103,
+    "momentum_21": 0.10613363086744676,
     "fip_252": 0.011904761904761904,
     "fip_126": -0.03968253968253968,
     "fip_63": 0.015873015873015872,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.566803248299325,
-    "delta_momentum_21_63": 0.24780532564539481,
+    "atr14_percent": 5.332140616458028,
+    "delta_momentum_21_63": 0.26801354957355705,
     "delta_fip_21_63": -0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.1440355599490193,
@@ -1753,6 +1753,12 @@
       "close": 16.100000381469727,
       "volume": 2326318.0,
       "return": 0.004366793002231972
+    },
+    {
+      "date": "2026-11-13",
+      "close": 16.049999237060547,
+      "volume": 1135801.0,
+      "return": -0.003105661069842447
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.19347669789732125,
-      "fip": -0.5555555555555556,
+      "momentum": 0.18977016377889733,
+      "fip": -0.4,
       "positive": 7,
-      "negative": 2,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

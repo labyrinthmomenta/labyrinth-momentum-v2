@@ -7,24 +7,24 @@
     "industry": "ULAŞTIRMA VE DEPOLAMA",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "2013-04-26"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.34291375570739513,
+    "momentum_12_1": -0.3560079400255317,
     "fip_12_1": -0.17316017316017315,
-    "momentum_252": -0.2160555274735695,
-    "momentum_126": -0.12062255522214516,
-    "momentum_63": 0.04284772663652503,
-    "momentum_21": 0.19306176218982696,
+    "momentum_252": -0.2288976774667677,
+    "momentum_126": -0.12259885281492833,
+    "momentum_63": 0.027116443030876347,
+    "momentum_21": 0.19737861762426667,
     "fip_252": -0.15873015873015872,
     "fip_126": -0.15873015873015872,
     "fip_63": 0.12698412698412698,
     "fip_21": 0.0,
-    "atr14_percent": 3.601846751400358,
-    "delta_momentum_21_63": 0.15021403555330193,
+    "atr14_percent": 3.549607589641689,
+    "delta_momentum_21_63": 0.17026217459339033,
     "delta_fip_21_63": -0.12698412698412698,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.15503310181681607,
@@ -1753,6 +1753,12 @@
       "close": 158.1999969482422,
       "volume": 12910291.0,
       "return": 0.021963784428011834
+    },
+    {
+      "date": "2026-11-13",
+      "close": 155.3000030517578,
+      "volume": 7141429.0,
+      "return": -0.01833118806843692
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.3756521473760188,
-      "fip": -1.0,
+      "momentum": 0.3504348091457199,
+      "fip": -0.8,
       "positive": 9,
-      "negative": 0,
+      "negative": 1,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

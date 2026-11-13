@@ -7,24 +7,24 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "1992-11-27"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.23107791974401648,
+    "momentum_12_1": -0.24660768762099017,
     "fip_12_1": -0.21212121212121213,
-    "momentum_252": -0.35321096903988103,
-    "momentum_126": -0.3163636178681345,
-    "momentum_63": -0.2869784751723967,
-    "momentum_21": -0.158836704565962,
+    "momentum_252": -0.34513274336283206,
+    "momentum_126": -0.3126934984520118,
+    "momentum_63": -0.29073482428114994,
+    "momentum_21": -0.13077523373012134,
     "fip_252": -0.21031746031746032,
     "fip_126": -0.29365079365079366,
     "fip_63": -0.2222222222222222,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 4.025071912214125,
-    "delta_momentum_21_63": 0.12814177060643472,
+    "atr14_percent": 4.1585363256483685,
+    "delta_momentum_21_63": 0.1599595905510286,
     "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.14666664273131103,
@@ -1753,6 +1753,12 @@
       "close": 112.80000305175781,
       "volume": 33731.0,
       "return": 0.0162162437095299
+    },
+    {
+      "date": "2026-11-13",
+      "close": 111.0,
+      "volume": 52870.0,
+      "return": -0.01595747343137821
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.036764704851130814,
-      "fip": -0.2222222222222222,
+      "momentum": 0.020220559618878253,
+      "fip": -0.1,
       "positive": 5,
-      "negative": 3,
+      "negative": 4,
       "flat": 1,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

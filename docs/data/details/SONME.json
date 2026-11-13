@@ -7,24 +7,24 @@
     "industry": "GAYRİMENKUL FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "1991-09-23"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.2624242609197446,
+    "momentum_12_1": -0.2576419355302374,
     "fip_12_1": -0.23809523809523808,
-    "momentum_252": -0.3515151515151518,
-    "momentum_126": -0.21897810218978053,
-    "momentum_63": -0.23352438881229143,
-    "momentum_21": -0.12078880293229566,
+    "momentum_252": -0.34185902687764735,
+    "momentum_126": -0.2271062271062262,
+    "momentum_63": -0.2410071942446037,
+    "momentum_21": -0.11344537815126043,
     "fip_252": -0.23412698412698413,
     "fip_126": -0.2698412698412698,
     "fip_63": -0.36507936507936506,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 6.98030632686989,
-    "delta_momentum_21_63": 0.11273558587999577,
+    "atr14_percent": 6.966558150265091,
+    "delta_momentum_21_63": 0.12756181609334327,
     "delta_fip_21_63": 0.1746031746031746,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.1495370511655456,
@@ -1753,6 +1753,12 @@
       "close": 107.0,
       "volume": 21173.0,
       "return": 0.0018726305480090133
+    },
+    {
+      "date": "2026-11-13",
+      "close": 105.5,
+      "volume": 37356.0,
+      "return": -0.014018691588784993
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.16494286094242505,
-      "fip": -0.3333333333333333,
+      "momentum": 0.14861188625631638,
+      "fip": -0.2,
       "positive": 6,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-12",
+    "viop_as_of": "2026-11-13",
     "first_trade_date": "2006-06-15"
   },
   "snapshot": {
-    "as_of": "2026-11-12",
+    "as_of": "2026-11-13",
     "observations": 252,
-    "momentum_12_1": -0.29904306220095733,
+    "momentum_12_1": -0.29826732673267287,
     "fip_12_1": -0.1471861471861472,
-    "momentum_252": -0.4755980934252583,
-    "momentum_126": -0.5718750059604651,
-    "momentum_63": -0.44646465417110537,
-    "momentum_21": -0.2518771435213577,
+    "momentum_252": -0.4628712871287125,
+    "momentum_126": -0.5657828914457231,
+    "momentum_63": -0.4506329113924049,
+    "momentum_21": -0.23456790123456794,
     "fip_252": -0.14682539682539683,
     "fip_126": -0.1746031746031746,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.206170596660823,
-    "delta_momentum_21_63": 0.19458751064974766,
+    "atr14_percent": 6.3677103595368,
+    "delta_momentum_21_63": 0.21606501015783697,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.3645885083839878,
@@ -1753,6 +1753,12 @@
       "close": 219.1999969482422,
       "volume": 24458.0,
       "return": 0.03689689345770386
+    },
+    {
+      "date": "2026-11-13",
+      "close": 217.0,
+      "volume": 19162.0,
+      "return": -0.01003648256784262
     }
   ],
   "monthly_history": [
@@ -1915,14 +1921,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.14704338015303509,
-      "fip": -0.3333333333333333,
+      "momentum": 0.13553109926356988,
+      "fip": -0.2,
       "positive": 6,
-      "negative": 3,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 9,
-      "sessions": 9,
-      "expected_sessions": 9,
+      "classified_returns": 10,
+      "sessions": 10,
+      "expected_sessions": 10,
       "session_gap": 0
     }
   ],
