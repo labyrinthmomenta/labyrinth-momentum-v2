@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1990-10-16"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.35857715952787783,
-    "fip_12_1": -0.15151515151515152,
-    "momentum_252": -0.41824440762764237,
-    "momentum_126": -0.42189278760338966,
-    "momentum_63": -0.29632201782810974,
-    "momentum_21": -0.09302326692302709,
-    "fip_252": -0.17063492063492064,
+    "momentum_12_1": -0.35459328852540695,
+    "fip_12_1": -0.14285714285714285,
+    "momentum_252": -0.4101813715625079,
+    "momentum_126": -0.4272727272727269,
+    "momentum_63": -0.3293413309826203,
+    "momentum_21": -0.08612876508534628,
+    "fip_252": -0.1626984126984127,
     "fip_126": -0.30158730158730157,
     "fip_63": -0.3492063492063492,
     "fip_21": -0.38095238095238093,
-    "atr14_percent": 4.54002978965668,
-    "delta_momentum_21_63": 0.20329875090508265,
+    "atr14_percent": 4.475759016564716,
+    "delta_momentum_21_63": 0.24321256589727402,
     "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.19484536089231397,
@@ -1759,6 +1759,18 @@
       "close": 50.70000076293945,
       "volume": 96958.0,
       "return": -0.005882337981579333
+    },
+    {
+      "date": "2026-11-16",
+      "close": 51.54999923706055,
+      "volume": 137893.0,
+      "return": 0.016765255647538835
+    },
+    {
+      "date": "2026-11-17",
+      "close": 50.4,
+      "volume": 175209.0,
+      "return": -0.0223084239394864
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.08194622498019366,
-      "fip": 0.2,
-      "positive": 4,
-      "negative": 6,
+      "momentum": 0.07554416012675924,
+      "fip": 0.16666666666666666,
+      "positive": 5,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

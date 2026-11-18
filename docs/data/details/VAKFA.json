@@ -7,24 +7,24 @@
     "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2025-11-20"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
-    "observations": 246,
+    "as_of": "2026-11-17",
+    "observations": 248,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.2872670633843183,
-    "momentum_63": -0.1662125236751163,
-    "momentum_21": 0.04081639714373497,
+    "momentum_126": -0.28186857341121274,
+    "momentum_63": -0.17545454545454497,
+    "momentum_21": 0.04133179796513731,
     "fip_252": null,
     "fip_126": -0.14285714285714285,
     "fip_63": -0.15873015873015872,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 5.315421624232853,
-    "delta_momentum_21_63": 0.20702892081885127,
+    "atr14_percent": 4.968416135173705,
+    "delta_momentum_21_63": 0.21678634341968228,
     "delta_fip_21_63": 0.20634920634920634,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.05574513916321622,
@@ -1513,6 +1513,18 @@
       "close": 9.180000305175781,
       "volume": 2695323.0,
       "return": -0.005417035703171091
+    },
+    {
+      "date": "2026-11-16",
+      "close": 9.199999809265137,
+      "volume": 4329502.0,
+      "return": 0.0021785951442812035
+    },
+    {
+      "date": "2026-11-17",
+      "close": 9.07,
+      "volume": 2731228.0,
+      "return": -0.014130414343510811
     }
   ],
   "monthly_history": [
@@ -1675,14 +1687,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.10602410773715953,
+      "momentum": 0.092771059225357,
       "fip": 0.0,
-      "positive": 5,
-      "negative": 5,
+      "positive": 6,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

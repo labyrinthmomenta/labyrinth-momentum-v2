@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2023-10-12"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.567441876325302,
+    "momentum_12_1": -0.555012228715809,
     "fip_12_1": -0.11688311688311688,
-    "momentum_252": -0.627906987704477,
-    "momentum_126": -0.6029776822473301,
-    "momentum_63": -0.4576271193289815,
-    "momentum_21": -0.13978494003420283,
+    "momentum_252": -0.6063569829010165,
+    "momentum_126": -0.6014851447519467,
+    "momentum_63": -0.4429065946164098,
+    "momentum_21": -0.11538464087907807,
     "fip_252": -0.12301587301587301,
     "fip_126": -0.24603174603174602,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 6.6396713403871725,
-    "delta_momentum_21_63": 0.31784217929477865,
+    "atr14_percent": 6.291567622292586,
+    "delta_momentum_21_63": 0.32752195373733173,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2653061075540253,
@@ -1759,6 +1759,18 @@
       "close": 1.600000023841858,
       "volume": 5616923.0,
       "return": 0.012658215432457043
+    },
+    {
+      "date": "2026-11-16",
+      "close": 1.6100000143051147,
+      "volume": 8311626.0,
+      "return": 0.006249993946403354
+    },
+    {
+      "date": "2026-11-17",
+      "close": 1.61,
+      "volume": 7632684.0,
+      "return": -8.885164270999724e-09
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.11111108351636934,
-      "fip": -0.2,
-      "positive": 6,
-      "negative": 4,
+      "momentum": 0.11805551112802148,
+      "fip": -0.16666666666666666,
+      "positive": 7,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

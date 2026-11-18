@@ -7,25 +7,25 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1998-08-20"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.47011832513752794,
+    "momentum_12_1": -0.5000000000000002,
     "fip_12_1": -0.16883116883116883,
-    "momentum_252": -0.5955621392063841,
-    "momentum_126": -0.5665821192339405,
-    "momentum_63": -0.5829774190395062,
-    "momentum_21": -0.2367392948650554,
+    "momentum_252": -0.5830303030303032,
+    "momentum_126": -0.5648324013665547,
+    "momentum_63": -0.6453608247422679,
+    "momentum_21": -0.16606060606060602,
     "fip_252": -0.1746031746031746,
     "fip_126": -0.2222222222222222,
-    "fip_63": -0.2698412698412698,
+    "fip_63": -0.30158730158730157,
     "fip_21": -0.23809523809523808,
-    "atr14_percent": 10.088784885767835,
-    "delta_momentum_21_63": 0.34623812417445077,
-    "delta_fip_21_63": 0.031746031746031744,
+    "atr14_percent": 9.847907946159237,
+    "delta_momentum_21_63": 0.47930021868166184,
+    "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.09547118376644104,
     "completed_month_fip": -0.14285714285714285,
@@ -1759,6 +1759,18 @@
       "close": 68.3499984741211,
       "volume": 137249.0,
       "return": 0.004408455678321044
+    },
+    {
+      "date": "2026-11-16",
+      "close": 70.0,
+      "volume": 156372.0,
+      "return": 0.024140476411329104
+    },
+    {
+      "date": "2026-11-17",
+      "close": 68.8,
+      "volume": 110447.0,
+      "return": -0.017142857142857237
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.0751015282430576,
-      "fip": -0.2,
-      "positive": 4,
-      "negative": 6,
+      "momentum": -0.06901219784268797,
+      "fip": -0.16666666666666666,
+      "positive": 5,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

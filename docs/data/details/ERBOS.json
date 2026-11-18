@@ -7,25 +7,25 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1995-04-14"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.41666666666666585,
-    "fip_12_1": -0.06926406926406926,
-    "momentum_252": -0.4873655996014985,
-    "momentum_126": -0.5355577347454663,
-    "momentum_63": -0.38044183069782933,
-    "momentum_21": -0.12119817074542771,
+    "momentum_12_1": -0.4455709449848162,
+    "fip_12_1": -0.07792207792207792,
+    "momentum_252": -0.49252933245808284,
+    "momentum_126": -0.5324483635510875,
+    "momentum_63": -0.3812621868039169,
+    "momentum_21": -0.08469683731127808,
     "fip_252": -0.08333333333333333,
     "fip_126": -0.21428571428571427,
     "fip_63": -0.23809523809523808,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.4014536565535725,
-    "delta_momentum_21_63": 0.2592436599524016,
-    "delta_fip_21_63": 0.0,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 5.528543159993252,
+    "delta_momentum_21_63": 0.2965653494926388,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.21539125016711824,
     "completed_month_fip": -0.42857142857142855,
@@ -1759,6 +1759,18 @@
       "close": 95.3499984741211,
       "volume": 13539.0,
       "return": -0.010892147667403651
+    },
+    {
+      "date": "2026-11-16",
+      "close": 96.0999984741211,
+      "volume": 33112.0,
+      "return": 0.007865757860537004
+    },
+    {
+      "date": "2026-11-17",
+      "close": 95.1,
+      "volume": 40851.0,
+      "return": -0.010405811550458943
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.044931490127354756,
-      "fip": -0.2,
-      "positive": 6,
-      "negative": 4,
+      "momentum": 0.0421917808219181,
+      "fip": -0.16666666666666666,
+      "positive": 7,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

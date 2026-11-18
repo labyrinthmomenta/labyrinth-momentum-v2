@@ -7,24 +7,24 @@
     "industry": "KONAKLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1991-09-10"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.5921722232945511,
+    "momentum_12_1": -0.589473672312835,
     "fip_12_1": -0.11255411255411256,
-    "momentum_252": -0.575733849213781,
-    "momentum_126": -0.2806900881152049,
-    "momentum_63": -0.14240506157204968,
-    "momentum_21": 0.040307146839198005,
+    "momentum_252": -0.564522417153996,
+    "momentum_126": -0.2563248850231933,
+    "momentum_63": -0.12392156862744985,
+    "momentum_21": 0.060778696702377566,
     "fip_252": -0.10714285714285714,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.07936507936507936,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 6.077966616618941,
-    "delta_momentum_21_63": 0.1827122084112477,
+    "atr14_percent": 6.443366566112456,
+    "delta_momentum_21_63": 0.18470026532982742,
     "delta_fip_21_63": 0.12698412698412698,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.08136340598329106,
@@ -1759,6 +1759,18 @@
       "close": 108.4000015258789,
       "volume": 225355.0,
       "return": -0.019004511078018926
+    },
+    {
+      "date": "2026-11-16",
+      "close": 119.19999694824219,
+      "volume": 616692.0,
+      "return": 0.09963095267839961
+    },
+    {
+      "date": "2026-11-17",
+      "close": 111.7,
+      "volume": 586150.0,
+      "return": -0.06291943909611641
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.10218610277256146,
-      "fip": -0.2,
-      "positive": 6,
-      "negative": 4,
+      "momentum": 0.1357397227554782,
+      "fip": -0.16666666666666666,
+      "positive": 7,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

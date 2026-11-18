@@ -7,25 +7,25 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2004-03-04"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.6470588515197289,
+    "momentum_12_1": -0.6653386545954045,
     "fip_12_1": -0.16017316017316016,
-    "momentum_252": -0.6764706118060875,
-    "momentum_126": -0.512658253156915,
-    "momentum_63": -0.3529412236121734,
-    "momentum_21": -0.08333332742017385,
-    "fip_252": -0.16666666666666666,
-    "fip_126": -0.18253968253968253,
+    "momentum_252": -0.6772908354272534,
+    "momentum_126": -0.4873417860765217,
+    "momentum_63": -0.33057853350115907,
+    "momentum_21": -0.035714255607856904,
+    "fip_252": -0.15873015873015872,
+    "fip_126": -0.16666666666666666,
     "fip_63": -0.12698412698412698,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.349180616300588,
-    "delta_momentum_21_63": 0.26960789619199954,
-    "delta_fip_21_63": -0.1111111111111111,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 5.146692270471132,
+    "delta_momentum_21_63": 0.29486427789330216,
+    "delta_fip_21_63": -0.015873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.15000000372528988,
     "completed_month_fip": -0.14285714285714285,
@@ -1759,6 +1759,18 @@
       "close": 0.7699999809265137,
       "volume": 8787987.0,
       "return": -0.025316506313829312
+    },
+    {
+      "date": "2026-11-16",
+      "close": 0.800000011920929,
+      "volume": 16662794.0,
+      "return": 0.03896108017862199
+    },
+    {
+      "date": "2026-11-17",
+      "close": 0.81,
+      "volume": 13009501.0,
+      "return": 0.012499984912574647
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1323529012166098,
-      "fip": -0.1,
-      "positive": 5,
+      "momentum": 0.19117645805888572,
+      "fip": -0.25,
+      "positive": 7,
       "negative": 4,
       "flat": 1,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

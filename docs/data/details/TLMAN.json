@@ -7,24 +7,24 @@
     "industry": "ULAŞTIRMA VE DEPOLAMA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2018-01-24"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.39087096140455124,
-    "fip_12_1": -0.07792207792207792,
-    "momentum_252": -0.45120674121430815,
-    "momentum_126": -0.4497633081759974,
-    "momentum_63": -0.3466583729766384,
-    "momentum_21": -0.09905254221483395,
-    "fip_252": -0.08333333333333333,
-    "fip_126": -0.11904761904761904,
+    "momentum_12_1": -0.3854838545604421,
+    "fip_12_1": -0.06926406926406926,
+    "momentum_252": -0.432795698924731,
+    "momentum_126": -0.44356541875636624,
+    "momentum_63": -0.3393863367812595,
+    "momentum_21": -0.07699040084690945,
+    "fip_252": -0.07539682539682539,
+    "fip_126": -0.1111111111111111,
     "fip_63": -0.19047619047619047,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 5.683386717980169,
-    "delta_momentum_21_63": 0.24760583076180442,
+    "atr14_percent": 5.346624290563286,
+    "delta_momentum_21_63": 0.26239593593435007,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.22330096128520505,
@@ -1759,6 +1759,18 @@
       "close": 52.29999923706055,
       "volume": 88922.0,
       "return": 0.004803074037741606
+    },
+    {
+      "date": "2026-11-16",
+      "close": 53.5,
+      "volume": 98676.0,
+      "return": 0.022944565591678234
+    },
+    {
+      "date": "2026-11-17",
+      "close": 52.75,
+      "volume": 97029.0,
+      "return": -0.014018691588784993
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.08958331743876147,
-      "fip": -0.2,
-      "positive": 6,
-      "negative": 4,
+      "momentum": 0.09895833333333348,
+      "fip": -0.16666666666666666,
+      "positive": 7,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

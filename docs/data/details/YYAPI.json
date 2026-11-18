@@ -7,24 +7,24 @@
     "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1995-05-01"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.7432432497740659,
+    "momentum_12_1": -0.7573221933670361,
     "fip_12_1": -0.2597402597402597,
-    "momentum_252": -0.7612612772254949,
-    "momentum_126": -0.504672948216044,
-    "momentum_63": -0.3690476334081494,
-    "momentum_21": -0.07017547712211614,
+    "momentum_252": -0.7740585873230955,
+    "momentum_126": -0.5135135197831031,
+    "momentum_63": -0.3571428370719051,
+    "momentum_21": -0.06896549045118139,
     "fip_252": -0.25396825396825395,
     "fip_126": -0.25396825396825395,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.19047619047619047,
-    "atr14_percent": 4.131978631047792,
-    "delta_momentum_21_63": 0.29887215628603325,
+    "atr14_percent": 3.874729490784428,
+    "delta_momentum_21_63": 0.2881773466207237,
     "delta_fip_21_63": 0.047619047619047616,
     "completed_month": "2026-10",
     "completed_month_momentum": 2.220446049250313e-16,
@@ -1759,6 +1759,18 @@
       "close": 0.5299999713897705,
       "volume": 2108613.0,
       "return": -0.01851861050099135
+    },
+    {
+      "date": "2026-11-16",
+      "close": 0.550000011920929,
+      "volume": 1724214.0,
+      "return": 0.03773592756753197
+    },
+    {
+      "date": "2026-11-17",
+      "close": 0.54,
+      "volume": 1962415.0,
+      "return": -0.01818183946215368
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.019230751596258422,
-      "fip": 0.1,
-      "positive": 3,
-      "negative": 4,
+      "momentum": 0.038461576552082155,
+      "fip": 0.08333333333333333,
+      "positive": 4,
+      "negative": 5,
       "flat": 3,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2021-11-11"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": 0.6276687325972747,
+    "momentum_12_1": 0.6042216252610393,
     "fip_12_1": -0.021645021645021644,
-    "momentum_252": 0.0751494719592376,
-    "momentum_126": -0.43288287600955533,
-    "momentum_63": -0.492338703524682,
-    "momentum_21": -0.33945436781622107,
+    "momentum_252": 0.07124013429345122,
+    "momentum_126": -0.46951220922404424,
+    "momentum_63": -0.4958609398883307,
+    "momentum_21": -0.3322368197604003,
     "fip_252": -0.007936507936507936,
-    "fip_126": -0.1111111111111111,
-    "fip_63": -0.20634920634920634,
+    "fip_126": -0.14285714285714285,
+    "fip_63": -0.23809523809523808,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.676100564461076,
-    "delta_momentum_21_63": 0.15288433570846094,
-    "delta_fip_21_63": 0.06349206349206349,
+    "atr14_percent": 7.362988981908833,
+    "delta_momentum_21_63": 0.16362412012793037,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2802056555269925,
     "completed_month_fip": -0.42857142857142855,
@@ -1759,6 +1759,18 @@
       "close": 62.95000076293945,
       "volume": 761687.0,
       "return": 0.0007949004109319979
+    },
+    {
+      "date": "2026-11-16",
+      "close": 62.45000076293945,
+      "volume": 582568.0,
+      "return": -0.007942811659096383
+    },
+    {
+      "date": "2026-11-17",
+      "close": 60.9,
+      "volume": 511915.0,
+      "return": -0.024819867798293038
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.10071427481515105,
-      "fip": 0.4,
+      "momentum": -0.13000000000000045,
+      "fip": 0.16666666666666666,
       "positive": 7,
-      "negative": 3,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

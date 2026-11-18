@@ -7,24 +7,24 @@
     "industry": "İNŞAAT VE BAYINDIRLIK İŞLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2026-01-22"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
-    "observations": 202,
+    "as_of": "2026-11-17",
+    "observations": 204,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.5836109323986605,
-    "momentum_63": -0.5604782079722208,
-    "momentum_21": -0.08825674943692541,
+    "momentum_126": -0.6218411743299348,
+    "momentum_63": -0.5263752989305337,
+    "momentum_21": -0.049167946588468125,
     "fip_252": null,
-    "fip_126": -0.19047619047619047,
+    "fip_126": -0.20634920634920634,
     "fip_63": -0.2857142857142857,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.339329304746899,
-    "delta_momentum_21_63": 0.4722214585352954,
+    "atr14_percent": 6.298943229105523,
+    "delta_momentum_21_63": 0.47720735234206557,
     "delta_fip_21_63": 0.14285714285714285,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.3025152819663559,
@@ -1249,6 +1249,18 @@
       "close": 12.5,
       "volume": 3781217.0,
       "return": 0.035625543997334974
+    },
+    {
+      "date": "2026-11-16",
+      "close": 12.609999656677246,
+      "volume": 4614207.0,
+      "return": 0.008799972534179634
+    },
+    {
+      "date": "2026-11-17",
+      "close": 12.57,
+      "volume": 4286020.0,
+      "return": -0.003172058506446085
     }
   ],
   "monthly_history": [
@@ -1385,14 +1397,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.21832355956606908,
-      "fip": -0.4,
-      "positive": 7,
-      "negative": 3,
+      "momentum": 0.22514617149963922,
+      "fip": -0.3333333333333333,
+      "positive": 8,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

@@ -7,24 +7,24 @@
     "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1998-06-18"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.2526150975615764,
-    "fip_12_1": -0.07792207792207792,
-    "momentum_252": -0.2876569410179389,
-    "momentum_126": -0.41918978923513717,
-    "momentum_63": -0.41089968031287116,
-    "momentum_21": -0.04688593968386967,
-    "fip_252": -0.08333333333333333,
-    "fip_126": -0.1349206349206349,
+    "momentum_12_1": -0.2588614624733281,
+    "fip_12_1": -0.08658008658008658,
+    "momentum_252": -0.28732548861977825,
+    "momentum_126": -0.4316916581067425,
+    "momentum_63": -0.37990653100248195,
+    "momentum_21": -0.03840581039199542,
+    "fip_252": -0.09126984126984126,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.23809523809523808,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.5452198720350765,
-    "delta_momentum_21_63": 0.3640137406290015,
+    "atr14_percent": 6.486034468437035,
+    "delta_momentum_21_63": 0.34150072061048653,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.22077920147732844,
@@ -1759,6 +1759,18 @@
       "close": 27.239999771118164,
       "volume": 664455.0,
       "return": 0.038901620307982165
+    },
+    {
+      "date": "2026-11-16",
+      "close": 27.1200008392334,
+      "volume": 557331.0,
+      "return": -0.004405247169348314
+    },
+    {
+      "date": "2026-11-17",
+      "close": 26.54,
+      "volume": 761004.0,
+      "return": -0.02138646096184249
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.13499999046325706,
-      "fip": -0.4,
+      "momentum": 0.10583333333333322,
+      "fip": -0.16666666666666666,
       "positive": 7,
-      "negative": 3,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "TAŞ VE TOPRAĞA DAYALI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2012-09-18"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.5243266902033381,
-    "fip_12_1": -0.21645021645021645,
-    "momentum_252": -0.5655951433038566,
-    "momentum_126": -0.4229659524509981,
-    "momentum_63": -0.30843706959758166,
-    "momentum_21": -0.08675797496008308,
+    "momentum_12_1": -0.5483732913063444,
+    "fip_12_1": -0.22510822510822512,
+    "momentum_252": -0.5569349430832812,
+    "momentum_126": -0.3968531414899237,
+    "momentum_63": -0.29109590893325044,
+    "momentum_21": -0.018957363707965302,
     "fip_252": -0.21031746031746032,
     "fip_126": -0.20634920634920634,
     "fip_63": -0.2698412698412698,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 3.923688776324874,
-    "delta_momentum_21_63": 0.22167909463749857,
-    "delta_fip_21_63": 0.12698412698412698,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 3.665106027282438,
+    "delta_momentum_21_63": 0.27213854522528513,
+    "delta_fip_21_63": 0.2222222222222222,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.0467661948367033,
     "completed_month_fip": -0.047619047619047616,
@@ -1759,6 +1759,18 @@
       "close": 10.0,
       "volume": 33645.0,
       "return": 0.0020040539760575182
+    },
+    {
+      "date": "2026-11-16",
+      "close": 10.460000038146973,
+      "volume": 37567.0,
+      "return": 0.046000003814697266
+    },
+    {
+      "date": "2026-11-17",
+      "close": 10.35,
+      "volume": 28239.0,
+      "return": -0.010516255998643365
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.043841344429934814,
+      "momentum": 0.08037579148498253,
       "fip": 0.0,
-      "positive": 5,
-      "negative": 5,
+      "positive": 6,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2026-01-05"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
-    "observations": 215,
+    "as_of": "2026-11-17",
+    "observations": 217,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.6572847642384516,
-    "momentum_63": -0.569109068100603,
-    "momentum_21": -0.15094333570565377,
+    "momentum_126": -0.6280822014983136,
+    "momentum_63": -0.4818702063758592,
+    "momentum_21": -0.10910579377899188,
     "fip_252": null,
-    "fip_126": -0.09523809523809523,
-    "fip_63": -0.14285714285714285,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 6.848652617798469,
-    "delta_momentum_21_63": 0.41816573239494925,
-    "delta_fip_21_63": 0.19047619047619047,
+    "fip_126": -0.06349206349206349,
+    "fip_63": -0.07936507936507936,
+    "fip_21": 0.14285714285714285,
+    "atr14_percent": 6.175217806528045,
+    "delta_momentum_21_63": 0.3727644125968673,
+    "delta_fip_21_63": 0.2222222222222222,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.35384618318997885,
     "completed_month_fip": -0.14285714285714285,
@@ -1327,6 +1327,18 @@
       "close": 10.350000381469727,
       "volume": 1174083.0,
       "return": 0.01371208058762785
+    },
+    {
+      "date": "2026-11-16",
+      "close": 10.470000267028809,
+      "volume": 3272637.0,
+      "return": 0.011594191414130428
+    },
+    {
+      "date": "2026-11-17",
+      "close": 10.86,
+      "volume": 3178818.0,
+      "return": 0.037249257213425535
     }
   ],
   "monthly_history": [
@@ -1463,14 +1475,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.23214295851130506,
-      "fip": -0.6,
-      "positive": 8,
+      "momentum": 0.2928572015697477,
+      "fip": -0.6666666666666666,
+      "positive": 10,
       "negative": 2,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

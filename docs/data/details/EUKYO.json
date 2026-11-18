@@ -7,25 +7,25 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2011-08-15"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": 0.8175899074277235,
-    "fip_12_1": -0.10822510822510822,
-    "momentum_252": 0.526384600201337,
-    "momentum_126": 0.023591064959218144,
-    "momentum_63": -0.3922179213284773,
-    "momentum_21": -0.16021507713943273,
-    "fip_252": -0.0873015873015873,
+    "momentum_12_1": 0.785940562288,
+    "fip_12_1": -0.09956709956709957,
+    "momentum_252": 0.5769475817604428,
+    "momentum_126": 0.09354411503799898,
+    "momentum_63": -0.37121211212638106,
+    "momentum_21": -0.11702124076280163,
+    "fip_252": -0.07936507936507936,
     "fip_126": -0.14285714285714285,
-    "fip_63": -0.015873015873015872,
+    "fip_63": -0.047619047619047616,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 7.624406000934317,
-    "delta_momentum_21_63": 0.2320028441890446,
-    "delta_fip_21_63": -0.12698412698412698,
+    "atr14_percent": 7.367455887803022,
+    "delta_momentum_21_63": 0.25419087136357943,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.166666616367386,
     "completed_month_fip": -0.14285714285714285,
@@ -1759,6 +1759,18 @@
       "close": 7.809999942779541,
       "volume": 856958.0,
       "return": 0.1000000067160165
+    },
+    {
+      "date": "2026-11-16",
+      "close": 8.3100004196167,
+      "volume": 1444026.0,
+      "return": 0.06402054807944224
+    },
+    {
+      "date": "2026-11-17",
+      "close": 8.3,
+      "volume": 464808.0,
+      "return": -0.0012034198690401565
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.011392424240686538,
+      "momentum": 0.05063289870934673,
       "fip": 0.0,
-      "positive": 5,
-      "negative": 5,
+      "positive": 6,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

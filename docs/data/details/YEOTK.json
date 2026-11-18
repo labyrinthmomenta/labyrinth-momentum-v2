@@ -7,25 +7,25 @@
     "industry": "MİMARLIK VE MÜHENDİSLİK FAALİYETLERİ; TEKNİK MUAYENE VE ANALİZ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2021-09-03"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": 0.7056742237395606,
+    "momentum_12_1": 0.5830399189087019,
     "fip_12_1": -0.004329004329004329,
-    "momentum_252": 0.8013679464068697,
-    "momentum_126": -0.3486253301431127,
-    "momentum_63": -0.32444230173495625,
-    "momentum_21": 0.05610316515043956,
-    "fip_252": -0.003968253968253968,
-    "fip_126": -0.15079365079365079,
+    "momentum_252": 0.7548029004417762,
+    "momentum_126": -0.3897501254083203,
+    "momentum_63": -0.24239069002744795,
+    "momentum_21": 0.10850199005182537,
+    "fip_252": 0.003968253968253968,
+    "fip_126": -0.18253968253968253,
     "fip_63": -0.2222222222222222,
-    "fip_21": 0.0,
-    "atr14_percent": 6.721485165683766,
-    "delta_momentum_21_63": 0.3805454668853958,
-    "delta_fip_21_63": 0.2222222222222222,
+    "fip_21": 0.09523809523809523,
+    "atr14_percent": 6.571726302640381,
+    "delta_momentum_21_63": 0.3508926800792733,
+    "delta_fip_21_63": 0.31746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.20950963498009334,
     "completed_month_fip": -0.14285714285714285,
@@ -1759,6 +1759,18 @@
       "close": 27.860000610351562,
       "volume": 19408708.0,
       "return": 0.022760677108770277
+    },
+    {
+      "date": "2026-11-16",
+      "close": 27.799999237060547,
+      "volume": 15214424.0,
+      "return": -0.002153674514591475
+    },
+    {
+      "date": "2026-11-17",
+      "close": 27.38,
+      "volume": 10212600.0,
+      "return": -0.015107886639818324
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.30921051275319744,
-      "fip": -0.1,
+      "momentum": 0.2866540938216513,
+      "fip": 0.08333333333333333,
       "positive": 5,
-      "negative": 4,
+      "negative": 6,
       "flat": 1,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

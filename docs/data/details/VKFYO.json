@@ -7,25 +7,25 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1991-08-28"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.08793261153239473,
+    "momentum_12_1": -0.14797358582723164,
     "fip_12_1": -0.19913419913419914,
-    "momentum_252": -0.1777361733499857,
-    "momentum_126": -0.4646772277094313,
-    "momentum_63": -0.22894734596611666,
-    "momentum_21": -0.09846154237404858,
+    "momentum_252": -0.21489158628222682,
+    "momentum_126": -0.4711111111111108,
+    "momentum_63": -0.25425246704530147,
+    "momentum_21": -0.07853981912047414,
     "fip_252": -0.17857142857142858,
     "fip_126": -0.24603174603174602,
-    "fip_63": -0.14285714285714285,
+    "fip_63": -0.1746031746031746,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 5.989408335810596,
-    "delta_momentum_21_63": 0.13048580359206807,
-    "delta_fip_21_63": 0.19047619047619047,
+    "atr14_percent": 6.319870671689769,
+    "delta_momentum_21_63": 0.17571264792482733,
+    "delta_fip_21_63": 0.2222222222222222,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.01506024061776956,
     "completed_month_fip": -0.047619047619047616,
@@ -1759,6 +1759,18 @@
       "close": 17.579999923706055,
       "volume": 270213.0,
       "return": 0.0045714242117744774
+    },
+    {
+      "date": "2026-11-16",
+      "close": 17.489999771118164,
+      "volume": 172370.0,
+      "return": -0.005119462626761884
+    },
+    {
+      "date": "2026-11-17",
+      "close": 16.66,
+      "volume": 296295.0,
+      "return": -0.04745567649970872
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.07522932804517524,
-      "fip": -0.4,
+      "momentum": 0.01896022087446636,
+      "fip": -0.16666666666666666,
       "positive": 7,
-      "negative": 3,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

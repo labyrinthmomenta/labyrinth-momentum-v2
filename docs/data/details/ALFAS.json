@@ -7,25 +7,25 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2022-11-16"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": -0.34696827495558646,
+    "momentum_12_1": -0.40725622915864756,
     "fip_12_1": -0.08658008658008658,
-    "momentum_252": -0.40038500354071127,
-    "momentum_126": -0.5221476635254236,
-    "momentum_63": -0.3907090673205432,
-    "momentum_21": -0.08179806054827066,
-    "fip_252": -0.08333333333333333,
-    "fip_126": -0.25396825396825395,
+    "momentum_252": -0.4507936317908753,
+    "momentum_126": -0.5208704180900721,
+    "momentum_63": -0.3871457560865995,
+    "momentum_21": -0.07345062870999042,
+    "fip_252": -0.09126984126984126,
+    "fip_126": -0.2698412698412698,
     "fip_63": -0.30158730158730157,
-    "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.191171903931928,
-    "delta_momentum_21_63": 0.30891100677227257,
-    "delta_fip_21_63": 0.25396825396825395,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 6.075682864539074,
+    "delta_momentum_21_63": 0.3136951273766091,
+    "delta_fip_21_63": 0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.19494589809194884,
     "completed_month_fip": -0.23809523809523808,
@@ -1759,6 +1759,18 @@
       "close": 24.920000076293945,
       "volume": 1589169.0,
       "return": -0.0039968177314200215
+    },
+    {
+      "date": "2026-11-16",
+      "close": 24.8799991607666,
+      "volume": 1449655.0,
+      "return": -0.0016051731703402572
+    },
+    {
+      "date": "2026-11-17",
+      "close": 24.22,
+      "volume": 1497398.0,
+      "return": -0.026527298353263618
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.11748883089104334,
-      "fip": -0.2,
+      "momentum": 0.08609869186670593,
+      "fip": 0.0,
       "positive": 6,
-      "negative": 4,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

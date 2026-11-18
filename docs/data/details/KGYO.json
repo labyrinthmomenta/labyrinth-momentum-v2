@@ -7,25 +7,25 @@
     "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "1998-06-18"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-17",
     "observations": 252,
-    "momentum_12_1": 0.29383116682055666,
+    "momentum_12_1": 0.23348013055955708,
     "fip_12_1": -0.1341991341991342,
-    "momentum_252": 0.21915591151140834,
-    "momentum_126": -0.3958165692276998,
-    "momentum_63": -0.4498168176732552,
-    "momentum_21": -0.05771638311407645,
-    "fip_252": -0.10714285714285714,
-    "fip_126": -0.023809523809523808,
+    "momentum_252": 0.02790015547972491,
+    "momentum_126": -0.44134077021722995,
+    "momentum_63": -0.43043124314667813,
+    "momentum_21": -0.1666666288224461,
+    "fip_252": -0.09126984126984126,
+    "fip_126": -0.03968253968253968,
     "fip_63": 0.0,
-    "fip_21": -0.19047619047619047,
-    "atr14_percent": 7.129127328926109,
-    "delta_momentum_21_63": 0.39210043455917876,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_21": -0.38095238095238093,
+    "atr14_percent": 7.5256686509011805,
+    "delta_momentum_21_63": 0.26376461432423204,
+    "delta_fip_21_63": -0.38095238095238093,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.20108109551507058,
     "completed_month_fip": -0.047619047619047616,
@@ -1759,6 +1759,18 @@
       "close": 7.510000228881836,
       "volume": 8359550.0,
       "return": 0.0
+    },
+    {
+      "date": "2026-11-16",
+      "close": 7.5,
+      "volume": 8496661.0,
+      "return": -0.0013315883591290545
+    },
+    {
+      "date": "2026-11-17",
+      "close": 7.0,
+      "volume": 12328601.0,
+      "return": -0.06666666666666665
     }
   ],
   "monthly_history": [
@@ -1921,14 +1933,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.016238209007344295,
-      "fip": 0.1,
+      "momentum": -0.0527740018310805,
+      "fip": -0.25,
       "positive": 4,
-      "negative": 5,
+      "negative": 7,
       "flat": 1,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

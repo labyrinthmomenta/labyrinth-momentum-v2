@@ -7,24 +7,24 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2026-07-17"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
-    "observations": 84,
+    "as_of": "2026-11-17",
+    "observations": 86,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.468079472219707,
-    "momentum_21": 0.1217877291415701,
+    "momentum_63": -0.459867549668874,
+    "momentum_21": 0.18892130924416817,
     "fip_252": null,
     "fip_126": null,
     "fip_63": -0.14285714285714285,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 7.3102924724287,
-    "delta_momentum_21_63": 0.5898672013612771,
+    "atr14_percent": 7.573646151723572,
+    "delta_momentum_21_63": 0.6487888589130422,
     "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.24172739676863264,
@@ -541,6 +541,18 @@
       "close": 40.15999984741211,
       "volume": 3741496.0,
       "return": 0.09967140874622404
+    },
+    {
+      "date": "2026-11-16",
+      "close": 39.880001068115234,
+      "volume": 34515465.0,
+      "return": -0.006972081184281165
+    },
+    {
+      "date": "2026-11-17",
+      "close": 40.78,
+      "volume": 31129404.0,
+      "return": 0.022567675721662184
     }
   ],
   "monthly_history": [
@@ -599,14 +611,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.4852070446621466,
-      "fip": -0.6,
-      "positive": 8,
-      "negative": 2,
+      "momentum": 0.5081360436116942,
+      "fip": -0.5,
+      "positive": 9,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],

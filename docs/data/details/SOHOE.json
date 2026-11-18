@@ -7,25 +7,25 @@
     "industry": "TEKSTİL, GİYİM EŞYASI VE DERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-13",
+    "viop_as_of": "2026-11-17",
     "first_trade_date": "2026-07-06"
   },
   "snapshot": {
-    "as_of": "2026-11-13",
-    "observations": 92,
+    "as_of": "2026-11-17",
+    "observations": 94,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.2823194047331977,
-    "momentum_21": 0.07092198389683757,
+    "momentum_63": -0.27917834056929647,
+    "momentum_21": 0.05034014968275402,
     "fip_252": null,
     "fip_126": null,
     "fip_63": -0.015873015873015872,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 4.724443024541102,
-    "delta_momentum_21_63": 0.3532413886300353,
-    "delta_fip_21_63": -0.12698412698412698,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 4.541049770971121,
+    "delta_momentum_21_63": 0.3295184902520505,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.03626223516251659,
     "completed_month_fip": -0.047619047619047616,
@@ -589,6 +589,18 @@
       "close": 7.550000190734863,
       "volume": 2431427.0,
       "return": 0.0013262903093407274
+    },
+    {
+      "date": "2026-11-16",
+      "close": 7.510000228881836,
+      "volume": 4063690.0,
+      "return": -0.005298008058610915
+    },
+    {
+      "date": "2026-11-17",
+      "close": 7.72,
+      "volume": 6104074.0,
+      "return": 0.027962685049003122
     }
   ],
   "monthly_history": [
@@ -647,14 +659,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.09261944391539201,
-      "fip": -0.4,
-      "positive": 7,
-      "negative": 3,
+      "momentum": 0.11722144290513214,
+      "fip": -0.3333333333333333,
+      "positive": 8,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 10,
-      "sessions": 10,
-      "expected_sessions": 10,
+      "classified_returns": 12,
+      "sessions": 12,
+      "expected_sessions": 12,
       "session_gap": 0
     }
   ],
