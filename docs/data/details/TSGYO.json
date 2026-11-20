@@ -7,25 +7,25 @@
     "industry": "GAYRİMENKUL YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2010-04-09"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.35686274314253674,
-    "fip_12_1": -0.021645021645021644,
-    "momentum_252": -0.46013072568443747,
-    "momentum_126": -0.3881481481481486,
-    "momentum_63": -0.3082076808804346,
-    "momentum_21": -0.16056911870802715,
+    "momentum_12_1": -0.37702701701309926,
+    "fip_12_1": -0.030303030303030304,
+    "momentum_252": -0.47837838510077246,
+    "momentum_126": -0.383386604014634,
+    "momentum_63": -0.33790736697878887,
+    "momentum_21": -0.16268982902233575,
     "fip_252": -0.05555555555555555,
     "fip_126": -0.12698412698412698,
-    "fip_63": -0.23809523809523808,
-    "fip_21": -0.42857142857142855,
-    "atr14_percent": 4.640177675517937,
-    "delta_momentum_21_63": 0.14763856217240745,
-    "delta_fip_21_63": -0.19047619047619047,
+    "fip_63": -0.2698412698412698,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 4.771707381402931,
+    "delta_momentum_21_63": 0.17521753795645312,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.15923566750013562,
     "completed_month_fip": -0.42857142857142855,
@@ -1771,6 +1771,24 @@
       "close": 4.13,
       "volume": 1320116.0,
       "return": -0.01666662201048641
+    },
+    {
+      "date": "2026-11-18",
+      "close": 3.930000066757202,
+      "volume": 1067807.0,
+      "return": -0.04842613395709383
+    },
+    {
+      "date": "2026-11-19",
+      "close": 3.940000057220459,
+      "volume": 849476.0,
+      "return": 0.00254452679221151
+    },
+    {
+      "date": "2026-11-20",
+      "close": 3.86,
+      "volume": 1204541.0,
+      "return": -0.020304582755995337
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.04292928288267839,
-      "fip": 0.0,
-      "positive": 6,
-      "negative": 6,
+      "momentum": -0.02525253464233923,
+      "fip": -0.06666666666666667,
+      "positive": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

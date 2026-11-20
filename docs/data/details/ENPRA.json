@@ -7,25 +7,25 @@
     "industry": "BANKALAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2026-04-07"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
-    "observations": 152,
+    "as_of": "2026-11-20",
+    "observations": 155,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.4441798829614524,
-    "momentum_63": -0.22329018142023838,
-    "momentum_21": 0.08973025164634962,
+    "momentum_126": -0.4060126653983607,
+    "momentum_63": -0.3425569001194648,
+    "momentum_21": 0.08748550122215071,
     "fip_252": null,
     "fip_126": -0.2619047619047619,
-    "fip_63": -0.25396825396825395,
+    "fip_63": -0.2857142857142857,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.600550747807957,
-    "delta_momentum_21_63": 0.313020433066588,
-    "delta_fip_21_63": 0.30158730158730157,
+    "atr14_percent": 4.2239240960786395,
+    "delta_momentum_21_63": 0.43004240134161553,
+    "delta_fip_21_63": 0.3333333333333333,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.06787763246249023,
     "completed_month_fip": -0.2857142857142857,
@@ -949,6 +949,24 @@
       "close": 42.02,
       "volume": 41298.0,
       "return": -0.011294117647058788
+    },
+    {
+      "date": "2026-11-18",
+      "close": 40.0,
+      "volume": 33137.0,
+      "return": -0.04807234650166592
+    },
+    {
+      "date": "2026-11-19",
+      "close": 38.29999923706055,
+      "volume": 50111.0,
+      "return": -0.04250001907348633
+    },
+    {
+      "date": "2026-11-20",
+      "close": 37.54,
+      "volume": 50004.0,
+      "return": -0.019843322511744144
     }
   ],
   "monthly_history": [
@@ -1046,14 +1064,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.07743589743589752,
-      "fip": 0.0,
+      "momentum": -0.03743589743589737,
+      "fip": -0.2,
       "positive": 6,
-      "negative": 6,
+      "negative": 9,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

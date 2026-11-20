@@ -7,25 +7,25 @@
     "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "1995-09-04"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.6941025562775436,
+    "momentum_12_1": -0.7019271948608139,
     "fip_12_1": -0.1645021645021645,
-    "momentum_252": -0.6671794871794867,
-    "momentum_126": -0.7955905511811023,
-    "momentum_63": -0.6916864608076009,
-    "momentum_21": 0.0880133837355126,
-    "fip_252": -0.13095238095238096,
+    "momentum_252": -0.6765167737330482,
+    "momentum_126": -0.7892093023255815,
+    "momentum_63": -0.7340375586854458,
+    "momentum_21": 0.08524904214559292,
+    "fip_252": -0.1388888888888889,
     "fip_126": -0.19047619047619047,
-    "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 9.601705934400243,
-    "delta_momentum_21_63": 0.7796998445431135,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_63": -0.23809523809523808,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 10.610341597025242,
+    "delta_momentum_21_63": 0.8192866008310388,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.26340322222476475,
     "completed_month_fip": -0.047619047619047616,
@@ -1771,6 +1771,24 @@
       "close": 129.8,
       "volume": 544144.0,
       "return": 0.026898721780671764
+    },
+    {
+      "date": "2026-11-18",
+      "close": 116.9000015258789,
+      "volume": 500634.0,
+      "return": -0.09938365542466177
+    },
+    {
+      "date": "2026-11-19",
+      "close": 116.5,
+      "volume": 373113.0,
+      "return": -0.0034217409808190435
+    },
+    {
+      "date": "2026-11-20",
+      "close": 113.3,
+      "volume": 279466.0,
+      "return": -0.02746781115879826
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.36919826815968904,
-      "fip": -0.5,
+      "momentum": 0.1951476408512538,
+      "fip": -0.2,
       "positive": 9,
-      "negative": 3,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2004-07-23"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.5426540181272712,
-    "fip_12_1": -0.09956709956709957,
-    "momentum_252": -0.5687203577047233,
-    "momentum_126": -0.6951423678456159,
-    "momentum_63": -0.1946902620884815,
-    "momentum_21": -0.056994793024564006,
-    "fip_252": -0.07539682539682539,
-    "fip_126": -0.2222222222222222,
-    "fip_63": -0.1111111111111111,
+    "momentum_12_1": -0.6313993147215308,
+    "fip_12_1": -0.10822510822510822,
+    "momentum_252": -0.6359499415372687,
+    "momentum_126": -0.6978281441083822,
+    "momentum_63": -0.2982456052292307,
+    "momentum_21": -0.012345681919446072,
+    "fip_252": -0.08333333333333333,
+    "fip_126": -0.20634920634920634,
+    "fip_63": -0.14285714285714285,
     "fip_21": 0.19047619047619047,
-    "atr14_percent": 6.17410555572936,
-    "delta_momentum_21_63": 0.1376954690639175,
-    "delta_fip_21_63": 0.30158730158730157,
+    "atr14_percent": 7.137028278078591,
+    "delta_momentum_21_63": 0.28589992330978464,
+    "delta_fip_21_63": 0.3333333333333333,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.3893129632061898,
     "completed_month_fip": -0.38095238095238093,
@@ -1771,6 +1771,24 @@
       "close": 3.64,
       "volume": 26091725.0,
       "return": 0.040000000000000036
+    },
+    {
+      "date": "2026-11-18",
+      "close": 3.319999933242798,
+      "volume": 18094539.0,
+      "return": -0.08791210625197865
+    },
+    {
+      "date": "2026-11-19",
+      "close": 3.3399999141693115,
+      "volume": 7837785.0,
+      "return": 0.006024090761646228
+    },
+    {
+      "date": "2026-11-20",
+      "close": 3.2,
+      "volume": 4878952.0,
+      "return": -0.04191614304401281
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.5166666063997507,
-      "fip": -0.8333333333333334,
-      "positive": 11,
-      "negative": 1,
+      "momentum": 0.3333332803514293,
+      "fip": -0.6,
+      "positive": 12,
+      "negative": 3,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

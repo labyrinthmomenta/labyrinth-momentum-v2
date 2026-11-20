@@ -7,25 +7,25 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2024-08-13"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": 2.1670875115787522,
-    "fip_12_1": -0.03896103896103896,
-    "momentum_252": 2.741582455539549,
-    "momentum_126": 0.48290239981042893,
-    "momentum_63": 0.4304102625481452,
-    "momentum_21": 0.18139534883720954,
+    "momentum_12_1": 1.7601546391182086,
+    "fip_12_1": -0.030303030303030304,
+    "momentum_252": 2.6092842794262037,
+    "momentum_126": 0.7890699380651189,
+    "momentum_63": 0.4589522890837796,
+    "momentum_21": 0.3076384302073989,
     "fip_252": -0.047619047619047616,
-    "fip_126": -0.11904761904761904,
+    "fip_126": -0.15079365079365079,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.626511157363925,
-    "delta_momentum_21_63": -0.24901491371093565,
-    "delta_fip_21_63": 0.031746031746031744,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 5.935568726632157,
+    "delta_momentum_21_63": -0.1513138588763807,
+    "delta_fip_21_63": -0.06349206349206349,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.12652535217962046,
     "completed_month_fip": -0.14285714285714285,
@@ -1771,6 +1771,24 @@
       "close": 177.8,
       "volume": 987571.0,
       "return": 0.038551420382052726
+    },
+    {
+      "date": "2026-11-18",
+      "close": 186.89999389648438,
+      "volume": 992359.0,
+      "return": 0.05118106803422018
+    },
+    {
+      "date": "2026-11-19",
+      "close": 184.89999389648438,
+      "volume": 924640.0,
+      "return": -0.010700909926769198
+    },
+    {
+      "date": "2026-11-20",
+      "close": 186.6,
+      "volume": 563849.0,
+      "return": 0.009194192318185523
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.30735294117647083,
-      "fip": -0.5,
-      "positive": 9,
-      "negative": 3,
+      "momentum": 0.3720588235294118,
+      "fip": -0.4666666666666667,
+      "positive": 11,
+      "negative": 4,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

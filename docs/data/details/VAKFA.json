@@ -7,25 +7,25 @@
     "industry": "FİNANSAL KİRALAMA VE FAKTORİNG ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2025-11-20"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
-    "observations": 248,
+    "as_of": "2026-11-20",
+    "observations": 251,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.28186857341121274,
-    "momentum_63": -0.17545454545454497,
-    "momentum_21": 0.04133179796513731,
+    "momentum_126": -0.25086209360115774,
+    "momentum_63": -0.2430313287009792,
+    "momentum_21": 0.01282052182658222,
     "fip_252": null,
-    "fip_126": -0.14285714285714285,
-    "fip_63": -0.15873015873015872,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 4.968416135173705,
-    "delta_momentum_21_63": 0.21678634341968228,
-    "delta_fip_21_63": 0.20634920634920634,
+    "fip_126": -0.12698412698412698,
+    "fip_63": -0.19047619047619047,
+    "fip_21": 0.14285714285714285,
+    "atr14_percent": 4.8454529856412805,
+    "delta_momentum_21_63": 0.25585185052756143,
+    "delta_fip_21_63": 0.3333333333333333,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.05574513916321622,
     "completed_month_fip": -0.14285714285714285,
@@ -1525,6 +1525,24 @@
       "close": 9.07,
       "volume": 2731228.0,
       "return": -0.014130414343510811
+    },
+    {
+      "date": "2026-11-18",
+      "close": 8.850000381469727,
+      "volume": 3923697.0,
+      "return": -0.024255746254715937
+    },
+    {
+      "date": "2026-11-19",
+      "close": 8.949999809265137,
+      "volume": 3643227.0,
+      "return": 0.011299369885315658
+    },
+    {
+      "date": "2026-11-20",
+      "close": 8.69,
+      "volume": 1604324.0,
+      "return": -0.029050258637545734
     }
   ],
   "monthly_history": [
@@ -1687,14 +1705,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.092771059225357,
-      "fip": 0.0,
-      "positive": 6,
-      "negative": 6,
+      "momentum": 0.04698792774733773,
+      "fip": 0.06666666666666667,
+      "positive": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "KAĞIT VE KAĞIT ÜRÜNLERİ BASIM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "1986-01-06"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": 0.2645963112019609,
-    "fip_12_1": 0.12121212121212122,
-    "momentum_252": 0.29192546583851,
-    "momentum_126": -0.137645096883506,
-    "momentum_63": -0.4157303370786515,
-    "momentum_21": 0.021610971338808405,
-    "fip_252": 0.11507936507936507,
+    "momentum_12_1": 0.006777515859785366,
+    "fip_12_1": 0.1341991341991342,
+    "momentum_252": 0.1386321412518201,
+    "momentum_126": -0.08514851485148489,
+    "momentum_63": -0.46403710399502374,
+    "momentum_21": 0.130966994509637,
+    "fip_252": 0.12698412698412698,
     "fip_126": -0.1746031746031746,
-    "fip_63": -0.2698412698412698,
+    "fip_63": -0.30158730158730157,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 8.860557940344236,
-    "delta_momentum_21_63": 0.4373413084174599,
-    "delta_fip_21_63": 0.31746031746031744,
+    "atr14_percent": 9.1828503104486,
+    "delta_momentum_21_63": 0.5950040985046607,
+    "delta_fip_21_63": 0.3492063492063492,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.29742666147752184,
     "completed_month_fip": 0.047619047619047616,
@@ -1771,6 +1771,24 @@
       "close": 104.0,
       "volume": 1599553.0,
       "return": -0.0019193565652552147
+    },
+    {
+      "date": "2026-11-18",
+      "close": 102.69999694824219,
+      "volume": 896501.0,
+      "return": -0.012500029343825103
+    },
+    {
+      "date": "2026-11-19",
+      "close": 98.8499984741211,
+      "volume": 282973.0,
+      "return": -0.037487814883396586
+    },
+    {
+      "date": "2026-11-20",
+      "close": 92.4,
+      "volume": 653325.0,
+      "return": -0.06525036493358871
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.040590419409066936,
-      "fip": -0.16666666666666666,
+      "momentum": -0.1476014880134402,
+      "fip": -0.3333333333333333,
       "positive": 5,
-      "negative": 7,
+      "negative": 10,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "BİLİŞİM",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2026-02-05"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
-    "observations": 194,
+    "as_of": "2026-11-20",
+    "observations": 197,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
-    "momentum_126": -0.46599423631123815,
-    "momentum_63": -0.2884024410781607,
-    "momentum_21": 0.1924067392398534,
+    "momentum_126": -0.41966101694915203,
+    "momentum_63": -0.32915359699349245,
+    "momentum_21": 0.06799748434641528,
     "fip_252": null,
     "fip_126": -0.11904761904761904,
-    "fip_63": -0.09523809523809523,
-    "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.1302653478913305,
-    "delta_momentum_21_63": 0.4808091803180141,
-    "delta_fip_21_63": -0.047619047619047616,
+    "fip_63": -0.12698412698412698,
+    "fip_21": 0.047619047619047616,
+    "atr14_percent": 6.359811227486454,
+    "delta_momentum_21_63": 0.39715108133990773,
+    "delta_fip_21_63": 0.1746031746031746,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.09624996185302681,
     "completed_month_fip": -0.14285714285714285,
@@ -1201,6 +1201,24 @@
       "close": 92.65,
       "volume": 3095049.0,
       "return": -0.0318703975496647
+    },
+    {
+      "date": "2026-11-18",
+      "close": 89.30000305175781,
+      "volume": 2809814.0,
+      "return": -0.03615754936041227
+    },
+    {
+      "date": "2026-11-19",
+      "close": 86.44999694824219,
+      "volume": 2198856.0,
+      "return": -0.03191496087479162
+    },
+    {
+      "date": "2026-11-20",
+      "close": 85.6,
+      "volume": 1823040.0,
+      "return": -0.009832238036411867
     }
   ],
   "monthly_history": [
@@ -1324,14 +1342,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.05644245409357507,
-      "fip": 0.0,
+      "momentum": -0.02394523399449533,
+      "fip": -0.2,
       "positive": 6,
-      "negative": 6,
+      "negative": 9,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

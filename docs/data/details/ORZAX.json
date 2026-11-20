@@ -7,25 +7,25 @@
     "industry": "KİMYA İLAÇ PETROL LASTİK VE PLASTİK ÜRÜNLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2026-07-07"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
-    "observations": 93,
+    "as_of": "2026-11-20",
+    "observations": 96,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.3662109469441931,
-    "momentum_21": 0.04508859250690267,
+    "momentum_63": -0.3512475817674158,
+    "momentum_21": 0.10187451803304093,
     "fip_252": null,
     "fip_126": null,
     "fip_63": -0.14285714285714285,
-    "fip_21": 0.047619047619047616,
-    "atr14_percent": 7.461874808226389,
-    "delta_momentum_21_63": 0.41129953945109576,
-    "delta_fip_21_63": 0.19047619047619047,
+    "fip_21": -0.047619047619047616,
+    "atr14_percent": 6.867397341056983,
+    "delta_momentum_21_63": 0.4531220998004567,
+    "delta_fip_21_63": 0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.21917808219178092,
     "completed_month_fip": -0.23809523809523808,
@@ -595,6 +595,24 @@
       "close": 64.9,
       "volume": 2245588.0,
       "return": -0.01592110685109238
+    },
+    {
+      "date": "2026-11-18",
+      "close": 64.0,
+      "volume": 1854752.0,
+      "return": -0.013867488443759735
+    },
+    {
+      "date": "2026-11-19",
+      "close": 66.0,
+      "volume": 1243597.0,
+      "return": 0.03125
+    },
+    {
+      "date": "2026-11-20",
+      "close": 67.6,
+      "volume": 1927270.0,
+      "return": 0.024242424242424176
     }
   ],
   "monthly_history": [
@@ -653,14 +671,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1385964912280706,
-      "fip": -0.16666666666666666,
-      "positive": 7,
-      "negative": 5,
+      "momentum": 0.1859649122807021,
+      "fip": -0.2,
+      "positive": 9,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

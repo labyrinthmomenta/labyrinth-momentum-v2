@@ -7,25 +7,25 @@
     "industry": "İNSAN SAĞLIĞI VE SOSYAL HİZMETLER",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2023-01-11"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": 0.0883720752804773,
+    "momentum_12_1": 0.07606685239430289,
     "fip_12_1": -0.047619047619047616,
-    "momentum_252": -0.0027906976744185297,
-    "momentum_126": -0.16640744275339836,
-    "momentum_63": -0.22933140779333516,
-    "momentum_21": -0.08376066882403532,
+    "momentum_252": -0.025046358038894656,
+    "momentum_126": -0.07644992141405194,
+    "momentum_63": -0.2766689474776163,
+    "momentum_21": -0.0939655470366133,
     "fip_252": 0.031746031746031744,
-    "fip_126": -0.06349206349206349,
-    "fip_63": -0.12698412698412698,
+    "fip_126": -0.047619047619047616,
+    "fip_63": -0.15873015873015872,
     "fip_21": -0.14285714285714285,
-    "atr14_percent": 6.05880512168958,
-    "delta_momentum_21_63": 0.14557073896929984,
-    "delta_fip_21_63": -0.015873015873015872,
+    "atr14_percent": 5.70995868503531,
+    "delta_momentum_21_63": 0.18270340044100297,
+    "delta_fip_21_63": 0.015873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.15040000915527318,
     "completed_month_fip": -0.23809523809523808,
@@ -1771,6 +1771,24 @@
       "close": 21.44,
       "volume": 1170273.0,
       "return": -2.4909403095740856e-08
+    },
+    {
+      "date": "2026-11-18",
+      "close": 21.219999313354492,
+      "volume": 947756.0,
+      "return": -0.010261226056227146
+    },
+    {
+      "date": "2026-11-19",
+      "close": 21.860000610351562,
+      "volume": 1434022.0,
+      "return": 0.030160288299080795
+    },
+    {
+      "date": "2026-11-20",
+      "close": 21.02,
+      "volume": 943682.0,
+      "return": -0.03842637634482915
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.009416206734324195,
-      "fip": 0.0,
-      "positive": 6,
-      "negative": 6,
+      "momentum": -0.010357804778195479,
+      "fip": -0.06666666666666667,
+      "positive": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

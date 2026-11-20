@@ -7,25 +7,25 @@
     "industry": "SİGORTA ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2026-08-06"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
-    "observations": 72,
+    "as_of": "2026-11-20",
+    "observations": 75,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.35321402287827475,
-    "momentum_21": 0.16190476190476133,
+    "momentum_63": -0.3866479400688827,
+    "momentum_21": 0.11554195274865364,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": -0.14285714285714285,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.611776118873914,
-    "delta_momentum_21_63": 0.5151187847830361,
-    "delta_fip_21_63": -0.09523809523809523,
+    "fip_63": -0.20634920634920634,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 6.255901474605801,
+    "delta_momentum_21_63": 0.5021898928175363,
+    "delta_fip_21_63": 0.06349206349206349,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.02302297772831563,
     "completed_month_fip": -0.047619047619047616,
@@ -469,6 +469,24 @@
       "close": 48.8,
       "volume": 2680039.0,
       "return": 0.04946236559139772
+    },
+    {
+      "date": "2026-11-18",
+      "close": 45.70000076293945,
+      "volume": 853312.0,
+      "return": -0.06352457452992921
+    },
+    {
+      "date": "2026-11-19",
+      "close": 45.15999984741211,
+      "volume": 679132.0,
+      "return": -0.011816212396330128
+    },
+    {
+      "date": "2026-11-20",
+      "close": 43.64,
+      "volume": 722577.0,
+      "return": -0.033658101252168504
     }
   ],
   "monthly_history": [
@@ -514,14 +532,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.24999997068624058,
-      "fip": -0.6666666666666666,
+      "momentum": 0.11782784263826929,
+      "fip": -0.3333333333333333,
       "positive": 10,
-      "negative": 2,
+      "negative": 5,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

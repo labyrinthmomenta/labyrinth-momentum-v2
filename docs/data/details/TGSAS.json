@@ -7,24 +7,24 @@
     "industry": "TOPTAN TİCARET",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2012-06-07"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.41457859066839875,
-    "fip_12_1": -0.09956709956709957,
-    "momentum_252": -0.35307519332867643,
-    "momentum_126": -0.3685380552855033,
-    "momentum_63": -0.4138286986008921,
-    "momentum_21": 0.10505833295359457,
+    "momentum_12_1": -0.31002203281681395,
+    "fip_12_1": -0.09090909090909091,
+    "momentum_252": -0.3854625757204775,
+    "momentum_126": -0.3669880994429894,
+    "momentum_63": -0.44807120828707747,
+    "momentum_21": -0.1093376114771425,
     "fip_252": -0.0873015873015873,
     "fip_126": 0.0,
     "fip_63": -0.06349206349206349,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 9.280376195918668,
-    "delta_momentum_21_63": 0.5188870315544867,
+    "atr14_percent": 9.09618645592141,
+    "delta_momentum_21_63": 0.338733596809935,
     "delta_fip_21_63": 0.015873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.10120610047516676,
@@ -1771,6 +1771,24 @@
       "close": 113.6,
       "volume": 3466954.0,
       "return": -0.0786699335902371
+    },
+    {
+      "date": "2026-11-18",
+      "close": 110.5,
+      "volume": 918963.0,
+      "return": -0.027288732394366133
+    },
+    {
+      "date": "2026-11-19",
+      "close": 111.5,
+      "volume": 816504.0,
+      "return": 0.009049773755656076
+    },
+    {
+      "date": "2026-11-20",
+      "close": 111.6,
+      "volume": 721979.0,
+      "return": 0.0008968609865469546
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.08190476190476215,
-      "fip": 0.0,
-      "positive": 6,
-      "negative": 6,
+      "momentum": 0.06285714285714294,
+      "fip": -0.06666666666666667,
+      "positive": 8,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

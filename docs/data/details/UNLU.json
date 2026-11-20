@@ -7,25 +7,25 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2021-06-07"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.28502077912149026,
-    "fip_12_1": -0.11255411255411256,
-    "momentum_252": -0.3841886301652344,
-    "momentum_126": -0.36115106160420607,
-    "momentum_63": -0.1792975738947774,
-    "momentum_21": -0.13870032603450289,
+    "momentum_12_1": -0.33850494269614617,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.3956276575768549,
+    "momentum_126": -0.3144,
+    "momentum_63": -0.2462620856412958,
+    "momentum_21": -0.08635395570986037,
     "fip_252": -0.12698412698412698,
-    "fip_126": -0.1746031746031746,
-    "fip_63": -0.20634920634920634,
-    "fip_21": -0.2857142857142857,
-    "atr14_percent": 7.597033976861233,
-    "delta_momentum_21_63": 0.04059724786027452,
-    "delta_fip_21_63": -0.07936507936507936,
+    "fip_126": -0.15873015873015872,
+    "fip_63": -0.2698412698412698,
+    "fip_21": -0.23809523809523808,
+    "atr14_percent": 6.986422542339027,
+    "delta_momentum_21_63": 0.15990812993143544,
+    "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2797783706663516,
     "completed_month_fip": -0.6190476190476191,
@@ -1771,6 +1771,24 @@
       "close": 8.88,
       "volume": 1987939.0,
       "return": -0.02417586508212799
+    },
+    {
+      "date": "2026-11-18",
+      "close": 8.609999656677246,
+      "volume": 1359785.0,
+      "return": -0.030405444067877818
+    },
+    {
+      "date": "2026-11-19",
+      "close": 8.729999542236328,
+      "volume": 758828.0,
+      "return": 0.013937269494084026
+    },
+    {
+      "date": "2026-11-20",
+      "close": 8.57,
+      "volume": 973898.0,
+      "return": -0.0183275544817888
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.13846151062252599,
-      "fip": 0.0,
-      "positive": 6,
-      "negative": 6,
+      "momentum": 0.09871792185079364,
+      "fip": 0.06666666666666667,
+      "positive": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

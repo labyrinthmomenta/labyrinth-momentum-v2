@@ -7,25 +7,25 @@
     "industry": "GIDA, İÇECEK VE TÜTÜN",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2023-08-16"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.0572962763772501,
+    "momentum_12_1": -0.11785395124139064,
     "fip_12_1": -0.08658008658008658,
-    "momentum_252": -0.20644581538285478,
-    "momentum_126": -0.23122291713895515,
-    "momentum_63": -0.27344262295082,
-    "momentum_21": -0.1582146492775406,
+    "momentum_252": -0.26754615448309826,
+    "momentum_126": -0.2476964562254006,
+    "momentum_63": -0.3826537897110286,
+    "momentum_21": -0.1696909524815764,
     "fip_252": -0.10714285714285714,
     "fip_126": -0.15079365079365079,
-    "fip_63": -0.20634920634920634,
+    "fip_63": -0.23809523809523808,
     "fip_21": -0.3333333333333333,
-    "atr14_percent": 6.329323282342172,
-    "delta_momentum_21_63": 0.11522797367327942,
-    "delta_fip_21_63": -0.12698412698412698,
+    "atr14_percent": 6.399035519071967,
+    "delta_momentum_21_63": 0.2129628372294522,
+    "delta_fip_21_63": -0.09523809523809523,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.27581231359454794,
     "completed_month_fip": -0.42857142857142855,
@@ -1771,6 +1771,24 @@
       "close": 44.32,
       "volume": 404844.0,
       "return": -0.011155727314339003
+    },
+    {
+      "date": "2026-11-18",
+      "close": 42.63999938964844,
+      "volume": 392232.0,
+      "return": -0.037906150955585804
+    },
+    {
+      "date": "2026-11-19",
+      "close": 43.52000045776367,
+      "volume": 152468.0,
+      "return": 0.020637924031698507
+    },
+    {
+      "date": "2026-11-20",
+      "close": 41.64,
+      "volume": 215654.0,
+      "return": -0.04319853947584906
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.10468597158354731,
-      "fip": 0.0,
-      "positive": 6,
-      "negative": 6,
+      "momentum": 0.03788636860872985,
+      "fip": 0.06666666666666667,
+      "positive": 7,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

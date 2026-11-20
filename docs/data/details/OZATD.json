@@ -7,25 +7,25 @@
     "industry": "METAL EŞYA MAKİNE ELEKTRİKLİ CİHAZLAR VE ULAŞIM ARAÇLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2024-09-05"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": 1.4544449752581814,
-    "fip_12_1": -0.1341991341991342,
-    "momentum_252": -0.3981226044923696,
-    "momentum_126": -0.8871635610766045,
-    "momentum_63": -0.9749712973593571,
-    "momentum_21": -0.7547806524184475,
-    "fip_252": 0.07142857142857142,
-    "fip_126": -0.05555555555555555,
-    "fip_63": -0.5555555555555556,
-    "fip_21": -0.6190476190476191,
-    "atr14_percent": 41.860687298539034,
-    "delta_momentum_21_63": 0.22019064494090956,
-    "delta_fip_21_63": -0.06349206349206349,
+    "momentum_12_1": 0.7796377905105571,
+    "fip_12_1": -0.11688311688311688,
+    "momentum_252": -0.2047200744950508,
+    "momentum_126": -0.8663284132841328,
+    "momentum_63": -0.9675294117647059,
+    "momentum_21": -0.5531225905936779,
+    "fip_252": 0.07936507936507936,
+    "fip_126": -0.03968253968253968,
+    "fip_63": -0.5238095238095238,
+    "fip_21": -0.3333333333333333,
+    "atr14_percent": 26.865955524137075,
+    "delta_momentum_21_63": 0.414406821171028,
+    "delta_fip_21_63": 0.19047619047619052,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.8898596958238252,
     "completed_month_fip": -1.0,
@@ -1771,6 +1771,24 @@
       "close": 109.0,
       "volume": 6315290.0,
       "return": 0.09989910876198627
+    },
+    {
+      "date": "2026-11-18",
+      "close": 119.9000015258789,
+      "volume": 5475658.0,
+      "return": 0.10000001399888903
+    },
+    {
+      "date": "2026-11-19",
+      "close": 131.8000030517578,
+      "volume": 1307125.0,
+      "return": 0.09924938594192123
+    },
+    {
+      "date": "2026-11-20",
+      "close": 144.9,
+      "volume": 2097586.0,
+      "return": 0.0993929942710079
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": -0.36884770164375247,
-      "fip": -0.3333333333333333,
-      "positive": 4,
+      "momentum": -0.1609727703502728,
+      "fip": -0.06666666666666667,
+      "positive": 7,
       "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

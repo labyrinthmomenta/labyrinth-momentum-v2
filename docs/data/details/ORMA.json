@@ -7,25 +7,25 @@
     "industry": "ORMAN ÜRÜNLERİ VE MOBİLYA",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2013-05-07"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.2768524002749225,
-    "fip_12_1": -0.1471861471861472,
-    "momentum_252": -0.2567490208871005,
-    "momentum_126": -0.3838095238095248,
-    "momentum_63": -0.22048192771084374,
-    "momentum_21": 0.02779982868706843,
+    "momentum_12_1": -0.27225432644000713,
+    "fip_12_1": -0.13852813852813853,
+    "momentum_252": -0.30635838150289063,
+    "momentum_126": -0.38493082395737777,
+    "momentum_63": -0.2678462204471507,
+    "momentum_21": -0.04686260090843741,
     "fip_252": -0.11507936507936507,
-    "fip_126": -0.21428571428571427,
+    "fip_126": -0.2222222222222222,
     "fip_63": -0.14285714285714285,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 3.8451864877527777,
-    "delta_momentum_21_63": 0.24828175639791217,
-    "delta_fip_21_63": -0.09523809523809523,
+    "fip_21": 0.14285714285714285,
+    "atr14_percent": 4.0791579034705805,
+    "delta_momentum_21_63": 0.22098361953871326,
+    "delta_fip_21_63": 0.2857142857142857,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.03993853356470767,
     "completed_month_fip": -0.09523809523809523,
@@ -1771,6 +1771,24 @@
       "close": 129.4,
       "volume": 6740.0,
       "return": -0.023396226415094312
+    },
+    {
+      "date": "2026-11-18",
+      "close": 125.5,
+      "volume": 1770.0,
+      "return": -0.030139103554868707
+    },
+    {
+      "date": "2026-11-19",
+      "close": 126.9000015258789,
+      "volume": 2976.0,
+      "return": 0.011155390644453478
+    },
+    {
+      "date": "2026-11-20",
+      "close": 120.0,
+      "volume": 3442.0,
+      "return": -0.054373533829089715
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.035199999999999676,
-      "fip": -0.3333333333333333,
-      "positive": 8,
-      "negative": 4,
+      "momentum": -0.04000000000000048,
+      "fip": 0.2,
+      "positive": 9,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "KİRALAMA VE LEASING FAALİYETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2026-07-09"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
-    "observations": 91,
+    "as_of": "2026-11-20",
+    "observations": 94,
     "momentum_12_1": null,
     "fip_12_1": null,
     "momentum_252": null,
     "momentum_126": null,
-    "momentum_63": -0.1616000000000002,
-    "momentum_21": -0.026625364005389618,
+    "momentum_63": -0.24499226921301143,
+    "momentum_21": -0.04669261172059547,
     "fip_252": null,
     "fip_126": null,
-    "fip_63": 0.0,
+    "fip_63": -0.031746031746031744,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 7.1420956526492425,
-    "delta_momentum_21_63": 0.13497463599461057,
-    "delta_fip_21_63": 0.047619047619047616,
+    "atr14_percent": 7.485854467024546,
+    "delta_momentum_21_63": 0.19829965749241596,
+    "delta_fip_21_63": 0.07936507936507936,
     "completed_month": "2026-10",
     "completed_month_momentum": 0.19475987188280697,
     "completed_month_fip": -0.047619047619047616,
@@ -583,6 +583,24 @@
       "close": 15.72,
       "volume": 7848830.0,
       "return": -0.00882721687943444
+    },
+    {
+      "date": "2026-11-18",
+      "close": 14.579999923706055,
+      "volume": 9990679.0,
+      "return": -0.07251908882277014
+    },
+    {
+      "date": "2026-11-19",
+      "close": 15.329999923706055,
+      "volume": 6779375.0,
+      "return": 0.05144032948728294
+    },
+    {
+      "date": "2026-11-20",
+      "close": 14.7,
+      "volume": 5451827.0,
+      "return": -0.04109588563870992
     }
   ],
   "monthly_history": [
@@ -641,14 +659,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.14912278138271629,
-      "fip": -0.3333333333333333,
-      "positive": 8,
-      "negative": 4,
+      "momentum": 0.07456137953727282,
+      "fip": -0.2,
+      "positive": 9,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

@@ -7,25 +7,25 @@
     "industry": "ELEKTRİK GAZ VE BUHAR",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2011-02-24"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.4232614083002143,
-    "fip_12_1": -0.06493506493506493,
-    "momentum_252": -0.46282974603905047,
-    "momentum_126": -0.549748735087577,
-    "momentum_63": -0.4336283076584755,
-    "momentum_21": -0.06860705752708296,
+    "momentum_12_1": -0.4459295022584585,
+    "fip_12_1": -0.0735930735930736,
+    "momentum_252": -0.5030376394299738,
+    "momentum_126": -0.544543406626784,
+    "momentum_63": -0.47765005876728794,
+    "momentum_21": -0.1030701641836107,
     "fip_252": -0.07936507936507936,
     "fip_126": -0.21428571428571427,
-    "fip_63": -0.30158730158730157,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 5.522496671627721,
-    "delta_momentum_21_63": 0.3650212501313925,
-    "delta_fip_21_63": 0.06349206349206349,
+    "fip_63": -0.31746031746031744,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 5.991957984972089,
+    "delta_momentum_21_63": 0.37457989458367724,
+    "delta_fip_21_63": 0.1746031746031746,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.28037383677355765,
     "completed_month_fip": -0.42857142857142855,
@@ -1771,6 +1771,24 @@
       "close": 4.48,
       "volume": 1031687.0,
       "return": -0.0022271206298243307
+    },
+    {
+      "date": "2026-11-18",
+      "close": 4.190000057220459,
+      "volume": 1508646.0,
+      "return": -0.06473213008471912
+    },
+    {
+      "date": "2026-11-19",
+      "close": 4.21999979019165,
+      "volume": 391658.0,
+      "return": 0.007159840706802312
+    },
+    {
+      "date": "2026-11-20",
+      "close": 4.09,
+      "volume": 650769.0,
+      "return": -0.030805639017756126
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.1636363924605233,
-      "fip": -0.16666666666666666,
-      "positive": 7,
-      "negative": 5,
+      "momentum": 0.062337688652575496,
+      "fip": -0.06666666666666667,
+      "positive": 8,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

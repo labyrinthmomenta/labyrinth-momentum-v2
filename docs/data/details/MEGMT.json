@@ -7,25 +7,25 @@
     "industry": "ANA METAL SANAYİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2023-12-15"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.1718765966567528,
-    "fip_12_1": 0.008658008658008658,
-    "momentum_252": -0.008328732279837325,
-    "momentum_126": -0.5794495265663053,
-    "momentum_63": -0.38001687418362884,
-    "momentum_21": 0.19749214152945171,
-    "fip_252": 0.027777777777777776,
+    "momentum_12_1": -0.3123209469717755,
+    "fip_12_1": -0.008658008658008658,
+    "momentum_252": -0.22063040656801236,
+    "momentum_126": -0.555616028423356,
+    "momentum_63": -0.3741130619345979,
+    "momentum_21": 0.13333333333333286,
+    "fip_252": 0.003968253968253968,
     "fip_126": -0.1111111111111111,
     "fip_63": -0.1746031746031746,
-    "fip_21": -0.23809523809523808,
-    "atr14_percent": 6.051539111615513,
-    "delta_momentum_21_63": 0.5775090157130806,
-    "delta_fip_21_63": -0.06349206349206349,
+    "fip_21": -0.14285714285714285,
+    "atr14_percent": 6.71012560765471,
+    "delta_momentum_21_63": 0.5074463952679308,
+    "delta_fip_21_63": 0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.2140845072314368,
     "completed_month_fip": -0.23809523809523808,
@@ -1771,6 +1771,24 @@
       "close": 3.82,
       "volume": 35125888.0,
       "return": 0.0026246869739223744
+    },
+    {
+      "date": "2026-11-18",
+      "close": 3.6700000762939453,
+      "volume": 31765540.0,
+      "return": -0.039266995734569266
+    },
+    {
+      "date": "2026-11-19",
+      "close": 3.630000114440918,
+      "volume": 16613725.0,
+      "return": -0.010899171940459529
+    },
+    {
+      "date": "2026-11-20",
+      "close": 3.4,
+      "volume": 24781393.0,
+      "return": -0.06336091107158048
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.36917564596053953,
-      "fip": -0.5,
+      "momentum": 0.21863800949367396,
+      "fip": -0.2,
       "positive": 9,
-      "negative": 3,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

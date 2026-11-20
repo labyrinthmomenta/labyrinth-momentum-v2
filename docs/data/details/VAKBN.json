@@ -7,25 +7,25 @@
     "industry": "BANKALAR",
     "is_viop": true,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2005-11-18"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": 0.21793925751964127,
+    "momentum_12_1": 0.24039931265134618,
     "fip_12_1": -0.004329004329004329,
-    "momentum_252": 0.22461084360942785,
-    "momentum_126": 0.0727272992995438,
-    "momentum_63": 0.06580645161290288,
-    "momentum_21": 0.005477765864426942,
+    "momentum_252": 0.267281061435082,
+    "momentum_126": 0.10961668641463018,
+    "momentum_63": 0.051625267130624986,
+    "momentum_21": 0.021671850757701838,
     "fip_252": 0.0,
     "fip_126": 0.0,
-    "fip_63": 0.047619047619047616,
+    "fip_63": 0.07936507936507936,
     "fip_21": 0.047619047619047616,
-    "atr14_percent": 3.701941447605867,
-    "delta_momentum_21_63": -0.06032868574847594,
-    "delta_fip_21_63": 0.0,
+    "atr14_percent": 3.6628877754824556,
+    "delta_momentum_21_63": -0.029953416372923147,
+    "delta_fip_21_63": -0.031746031746031744,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.10477369301381767,
     "completed_month_fip": -0.3333333333333333,
@@ -1771,6 +1771,24 @@
       "close": 33.04,
       "volume": 22018818.0,
       "return": -0.004819299977789737
+    },
+    {
+      "date": "2026-11-18",
+      "close": 32.779998779296875,
+      "volume": 19857986.0,
+      "return": -0.007869286340893566
+    },
+    {
+      "date": "2026-11-19",
+      "close": 33.36000061035156,
+      "volume": 26820854.0,
+      "return": 0.017693772198094315
+    },
+    {
+      "date": "2026-11-20",
+      "close": 33.0,
+      "volume": 30390770.0,
+      "return": -0.010791385004946807
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.14404435457480003,
-      "fip": -0.16666666666666666,
-      "positive": 7,
-      "negative": 5,
+      "momentum": 0.14265931298330514,
+      "fip": -0.06666666666666667,
+      "positive": 8,
+      "negative": 7,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

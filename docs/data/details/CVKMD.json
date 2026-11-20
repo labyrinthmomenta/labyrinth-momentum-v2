@@ -7,25 +7,25 @@
     "industry": "METAL CEVHERİ MADENCİLİĞİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "2023-04-13"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.3471337531255114,
-    "fip_12_1": 0.0,
-    "momentum_252": -0.3163482008660826,
-    "momentum_126": -0.7039080459770116,
-    "momentum_63": -0.2174969188090543,
-    "momentum_21": 0.04715445530659679,
+    "momentum_12_1": -0.30887570598705527,
+    "fip_12_1": 0.008658008658008658,
+    "momentum_252": -0.33609465957042695,
+    "momentum_126": -0.7189378628597162,
+    "momentum_63": -0.30526314148476286,
+    "momentum_21": -0.039383586742882226,
     "fip_252": 0.003968253968253968,
     "fip_126": -0.07936507936507936,
-    "fip_63": -0.1746031746031746,
+    "fip_63": -0.20634920634920634,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.322114358684325,
-    "delta_momentum_21_63": 0.2646513741156511,
-    "delta_fip_21_63": 0.12698412698412698,
+    "atr14_percent": 7.190868442715296,
+    "delta_momentum_21_63": 0.26587955474188063,
+    "delta_fip_21_63": 0.15873015873015872,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.07927333322570695,
     "completed_month_fip": -0.14285714285714285,
@@ -1771,6 +1771,24 @@
       "close": 12.88,
       "volume": 26025906.0,
       "return": -0.003095981119020097
+    },
+    {
+      "date": "2026-11-18",
+      "close": 12.489999771118164,
+      "volume": 19895801.0,
+      "return": -0.030279520875919008
+    },
+    {
+      "date": "2026-11-19",
+      "close": 12.460000038146973,
+      "volume": 24863242.0,
+      "return": -0.0024019002018368374
+    },
+    {
+      "date": "2026-11-20",
+      "close": 11.22,
+      "volume": 59375070.0,
+      "return": -0.09951846182589441
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.15515699019349105,
-      "fip": -0.16666666666666666,
+      "momentum": 0.006278061333149676,
+      "fip": 0.06666666666666667,
       "positive": 7,
-      "negative": 5,
+      "negative": 8,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

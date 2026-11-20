@@ -7,25 +7,25 @@
     "industry": "HOLDİNGLER VE YATIRIM ŞİRKETLERİ",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "1995-05-29"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.48792999374269896,
-    "fip_12_1": -0.19913419913419914,
-    "momentum_252": -0.49064573594190763,
-    "momentum_126": -0.5671794871794871,
-    "momentum_63": -0.2589991319638073,
-    "momentum_21": -0.00530345883575134,
-    "fip_252": -0.19047619047619047,
+    "momentum_12_1": -0.5414462245666681,
+    "fip_12_1": -0.21645021645021645,
+    "momentum_252": -0.5555555715030783,
+    "momentum_126": -0.5711854867194442,
+    "momentum_63": -0.39712919393865953,
+    "momentum_21": -0.03076923076923066,
+    "fip_252": -0.20634920634920634,
     "fip_126": -0.2698412698412698,
-    "fip_63": -0.25396825396825395,
+    "fip_63": -0.31746031746031744,
     "fip_21": -0.09523809523809523,
-    "atr14_percent": 7.238720266834912,
-    "delta_momentum_21_63": 0.25369567312805597,
-    "delta_fip_21_63": 0.15873015873015872,
+    "atr14_percent": 8.20917012339202,
+    "delta_momentum_21_63": 0.36635996316942887,
+    "delta_fip_21_63": 0.2222222222222222,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.06887756914260346,
     "completed_month_fip": -0.14285714285714285,
@@ -1771,6 +1771,24 @@
       "close": 84.4,
       "volume": 77407.0,
       "return": 0.09967426710097738
+    },
+    {
+      "date": "2026-11-18",
+      "close": 81.0,
+      "volume": 67960.0,
+      "return": -0.04028436018957349
+    },
+    {
+      "date": "2026-11-19",
+      "close": 77.80000305175781,
+      "volume": 50281.0,
+      "return": -0.03950613516348378
+    },
+    {
+      "date": "2026-11-20",
+      "close": 75.6,
+      "volume": 38142.0,
+      "return": -0.028277673077907517
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.15616438356164397,
-      "fip": -0.25,
+      "momentum": 0.03561643835616435,
+      "fip": 0.0,
       "positive": 7,
-      "negative": 4,
+      "negative": 7,
       "flat": 1,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],

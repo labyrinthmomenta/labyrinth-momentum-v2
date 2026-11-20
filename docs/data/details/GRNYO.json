@@ -7,25 +7,25 @@
     "industry": "MENKUL KIYMET YATIRIM ORTAKLIKLARI",
     "is_viop": false,
     "viop_source": "BIST_VIOP_UNDERLYINGS",
-    "viop_as_of": "2026-11-17",
+    "viop_as_of": "2026-11-20",
     "first_trade_date": "1996-11-18"
   },
   "snapshot": {
-    "as_of": "2026-11-17",
+    "as_of": "2026-11-20",
     "observations": 252,
-    "momentum_12_1": -0.41074020007921497,
-    "fip_12_1": -0.17316017316017315,
-    "momentum_252": -0.40783743409837014,
-    "momentum_126": -0.6114285714285717,
-    "momentum_63": -0.40826685840661103,
-    "momentum_21": 0.004926122537520561,
-    "fip_252": -0.15476190476190477,
+    "momentum_12_1": -0.465081739312064,
+    "fip_12_1": -0.18181818181818182,
+    "momentum_252": -0.4257057965756009,
+    "momentum_126": -0.5808026151776331,
+    "momentum_63": -0.4478571428571426,
+    "momentum_21": 0.07361113955209353,
+    "fip_252": -0.1626984126984127,
     "fip_126": -0.25396825396825395,
-    "fip_63": -0.23809523809523808,
+    "fip_63": -0.2698412698412698,
     "fip_21": -0.047619047619047616,
-    "atr14_percent": 6.423260704044195,
-    "delta_momentum_21_63": 0.4131929809441316,
-    "delta_fip_21_63": 0.19047619047619047,
+    "atr14_percent": 6.355540568380877,
+    "delta_momentum_21_63": 0.5214682824092362,
+    "delta_fip_21_63": 0.2222222222222222,
     "completed_month": "2026-10",
     "completed_month_momentum": -0.1316146275785275,
     "completed_month_fip": -0.3333333333333333,
@@ -1771,6 +1771,24 @@
       "close": 8.16,
       "volume": 215567.0,
       "return": 0.0012270407285650542
+    },
+    {
+      "date": "2026-11-18",
+      "close": 7.989999771118164,
+      "volume": 101119.0,
+      "return": -0.020833361382577964
+    },
+    {
+      "date": "2026-11-19",
+      "close": 7.829999923706055,
+      "volume": 55360.0,
+      "return": -0.020025012765390593
+    },
+    {
+      "date": "2026-11-20",
+      "close": 7.73,
+      "volume": 110069.0,
+      "return": -0.012771382462379743
     }
   ],
   "monthly_history": [
@@ -1933,14 +1951,14 @@
     {
       "month": "2026-11",
       "is_current": true,
-      "momentum": 0.27499998100101974,
-      "fip": -0.5,
+      "momentum": 0.2078124820021916,
+      "fip": -0.2,
       "positive": 9,
-      "negative": 3,
+      "negative": 6,
       "flat": 0,
-      "classified_returns": 12,
-      "sessions": 12,
-      "expected_sessions": 12,
+      "classified_returns": 15,
+      "sessions": 15,
+      "expected_sessions": 15,
       "session_gap": 0
     }
   ],
